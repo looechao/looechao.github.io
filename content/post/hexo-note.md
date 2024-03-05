@@ -2,7 +2,7 @@
 title = 'Hexo框架的博客搭建笔记'
 date = 2023-02-25T21:31:13+08:00
 draft = false
-summary = "第一次尝试建站"
+summary = "第一次尝试建立hexo框架的站点"
 tags = ["笔记", "hexo"]
 
 +++
@@ -72,7 +72,7 @@ hexo s
 
 ### 将文件部署到github上
 
--   在github上新建库，库名必须和自己github的id相同![pic1](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/702de09807174db5a90a760207deb808~tplv-k3u1fbpfcp-zoom-1.image)
+-   在github上新建库，库名必须和自己github的id相同![pic1](https://raw.githubusercontent.com/looechao/blogimg/main/picserver/702de09807174db5a90a760207deb808%7Etplv-k3u1fbpfcp-zoom-1.png)
 -   在blog目录下安装git部署插件：
 
 ```
