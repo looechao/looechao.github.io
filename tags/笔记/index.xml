@@ -6,7 +6,7 @@
     <description>Recent content in 笔记 on Lu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Mar 2024 11:32:56 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 Mar 2024 14:16:44 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AuroraAssetEditor使用笔记</title>
@@ -20,7 +20,7 @@
       <link>https://looechao.github.io/post/hexo-note/</link>
       <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
       <guid>https://looechao.github.io/post/hexo-note/</guid>
-      <description>第一次尝试建站</description>
+      <description>第一次尝试建立hexo框架的站点</description>
     </item>
   </channel>
 </rss>
