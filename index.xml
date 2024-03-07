@@ -6,7 +6,7 @@
     <description>Recent content on Lu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 07 Mar 2024 15:23:31 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 Mar 2024 16:40:48 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>24年3月第一组</title>
@@ -37,11 +37,11 @@
       <description>第一次尝试建立hexo框架的站点</description>
     </item>
     <item>
-      <title></title>
+      <title>readme文档</title>
       <link>https://looechao.github.io/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://looechao.github.io/readme/</guid>
-      <description>ABOUT ME Name: looe Country: CN Recently: C++/Zen/Minimalism 后续可能主要会更新生活/刷题/技术方面的文章 MY SETUP GPU: Intel i5-1135G7 CPU: Nvidia MX450 RAM: 16 GB DDR4 4266Mhz SSD: 512 GB Windows 10 Monitor: XIAOMI FASTIPS 165Hz Mouse: G305 MousePad: Beesir Skills C++ Java Microsoft Office Github Language Chinese-Native English-Intermediate(Daily Conversation) ABOUT GAME Favourite Game : CounterStrike Favourite Position : Suicide Favourite Maps : De_Mirage Favourite Gun : AK-47 Favourite Pro Player : Twistzz CONSOLE Favourite Consoles: wiiu,xbox360,psp,ps2.</description>
+      <description>readme</description>
     </item>
   </channel>
 </rss>
