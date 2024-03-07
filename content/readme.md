@@ -1,9 +1,9 @@
-
----
 #####  ABOUT ME
-- Age : xx
 - Name: looe
 - Country: CN
+- Recently: C++/Zen/Minimalism 
+- 后续可能主要会更新生活/刷题/技术方面的文章
+
 ---
 ##### MY SETUP
 - GPU: Intel i5-1135G7
@@ -14,15 +14,28 @@
 - Monitor: XIAOMI FASTIPS 165Hz
 - Mouse: G305
 - MousePad: Beesir
+
+---
+##### Skills
+- C++
+- Java
+- Microsoft Office
+- Github
+---
+##### Language
+- Chinese-Native
+- English-Intermediate(Daily Conversation)
+
 ---
 ##### ABOUT GAME
-- Favourite Game : CS:GO
+- Favourite Game : CounterStrike
 - Favourite Position : Suicide
-- Favourite Maps : De_Dust2 , De_Canals
-- Favourite Gun : AK-47, Deagle
+- Favourite Maps : De_Mirage
+- Favourite Gun : AK-47
 - Favourite Pro Player : Twistzz
 ---
 ##### CONSOLE
+
 - Favourite Consoles: wiiu,xbox360,psp,ps2.
 ---
 ##### THE END
