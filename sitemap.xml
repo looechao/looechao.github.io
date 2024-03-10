@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://looechao.github.io/post/2024-week09/</loc>
+    <lastmod>2024-03-10T21:50:18+08:00</lastmod>
+  </url><url>
     <loc>https://looechao.github.io/</loc>
-    <lastmod>2024-03-10T17:25:21+08:00</lastmod>
+    <lastmod>2024-03-10T21:50:18+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/post/</loc>
-    <lastmod>2024-03-10T17:25:21+08:00</lastmod>
+    <lastmod>2024-03-10T21:50:18+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/</loc>
-    <lastmod>2024-03-10T17:25:21+08:00</lastmod>
+    <lastmod>2024-03-10T21:50:18+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/tags/%E5%91%A8%E6%8A%A5/</loc>
+    <lastmod>2024-03-10T21:50:18+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/%E5%88%B7%E9%A2%98/</loc>
     <lastmod>2024-03-10T17:25:21+08:00</lastmod>
