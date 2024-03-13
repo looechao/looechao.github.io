@@ -6,8 +6,15 @@
     <description>Recent content on Lu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 11 Mar 2024 14:39:21 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2024 10:20:59 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>刷题笔记-24年3月第四组</title>
+      <link>https://looechao.github.io/post/coding-24-03-04/</link>
+      <pubDate>Tue, 12 Mar 2024 14:57:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/coding-24-03-04/</guid>
+      <description>洛谷入门题库P1597-P1765</description>
+    </item>
     <item>
       <title>刷题笔记-24年3月第三组</title>
       <link>https://looechao.github.io/post/coding-24-03-03/</link>
