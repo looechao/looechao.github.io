@@ -4,7 +4,7 @@ title = 'AuroraAssetEditor使用笔记'
 date = 2023-02-25T21:31:13+08:00
 draft = false
 summary = "通过FTP编辑xbox360游戏的封面"
-tags = ["xbox360", "工具", "笔记"]
+tags = ["xbox360", "工具", "笔记", "数码"]
 
 +++
 

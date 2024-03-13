@@ -4,6 +4,12 @@ title = "Lu's blog"
 theme= "github-style"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+buildFuture = true
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
   author = "Looe"
