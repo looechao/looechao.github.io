@@ -6,12 +6,20 @@
     <description>Recent content in Posts on Lu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
+<<<<<<< HEAD
     <lastBuildDate>Sun, 17 Mar 2024 20:40:34 +0800</lastBuildDate>
+=======
+    <lastBuildDate>Sun, 17 Mar 2024 20:23:14 +0800</lastBuildDate>
+>>>>>>> 33aa687a7ed9980ff4ea4e73ea591249dbee41ce
     <atom:link href="https://looechao.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024第十一周周报</title>
       <link>https://looechao.github.io/post/2024-week11/</link>
+<<<<<<< HEAD
       <pubDate>Sun, 17 Mar 2024 21:50:13 +0800</pubDate>
+=======
+      <pubDate>Sun, 17 Mar 2024 20:23:13 +0800</pubDate>
+>>>>>>> 33aa687a7ed9980ff4ea4e73ea591249dbee41ce
       <guid>https://looechao.github.io/post/2024-week11/</guid>
       <description>你好，三月</description>
     </item>
@@ -23,11 +31,19 @@
       <description>洛谷入门题库P1789-P1909</description>
     </item>
     <item>
+<<<<<<< HEAD
       <title>关于内卷的一些思考</title>
       <link>https://looechao.github.io/post/involution/</link>
       <pubDate>Fri, 15 Mar 2024 20:50:13 +0800</pubDate>
       <guid>https://looechao.github.io/post/involution/</guid>
       <description>只许向上爬，不准往下走的竞争</description>
+=======
+      <title>内卷有解吗？</title>
+      <link>https://looechao.github.io/post/involution/</link>
+      <pubDate>Fri, 15 Mar 2024 20:50:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/involution/</guid>
+      <description>只许向上爬，不准往下走！</description>
+>>>>>>> 33aa687a7ed9980ff4ea4e73ea591249dbee41ce
     </item>
     <item>
       <title>做一个乐观的悲观主义者</title>
