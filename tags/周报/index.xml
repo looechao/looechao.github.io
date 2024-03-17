@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>周报 on Lu&#39;s blog</title>
+    <link>https://looechao.github.io/tags/%E5%91%A8%E6%8A%A5/</link>
+    <description>Recent content in 周报 on Lu&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 17 Mar 2024 20:38:31 +0800</lastBuildDate>
+    <atom:link href="https://looechao.github.io/tags/%E5%91%A8%E6%8A%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024第十一周周报</title>
+      <link>https://looechao.github.io/post/2024-week11/</link>
+      <pubDate>Sun, 17 Mar 2024 21:50:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024-week11/</guid>
+      <description>你好，三月</description>
+    </item>
+    <item>
+      <title>2024第十周周报</title>
+      <link>https://looechao.github.io/post/2024-week10/</link>
+      <pubDate>Sun, 10 Mar 2024 21:50:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024-week10/</guid>
+      <description>你好，三月</description>
+    </item>
+  </channel>
+</rss>
