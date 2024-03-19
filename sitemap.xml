@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://looechao.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2024-03-18T17:35:55+08:00</lastmod>
-  </url><url>
     <loc>https://looechao.github.io/</loc>
-    <lastmod>2024-03-18T17:35:55+08:00</lastmod>
+    <lastmod>2024-03-19T15:08:34+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/post/</loc>
-    <lastmod>2024-03-18T17:35:55+08:00</lastmod>
+    <lastmod>2024-03-19T15:08:34+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/</loc>
+    <lastmod>2024-03-19T15:08:34+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/post/msstore/</loc>
+    <lastmod>2024-03-19T15:08:34+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2024-03-19T15:08:34+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/tags/c&#43;&#43;/</loc>
     <lastmod>2024-03-18T17:35:55+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/%E5%88%B7%E9%A2%98/</loc>
@@ -87,9 +93,6 @@
     <lastmod>2024-03-17T20:33:54+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/%E6%95%B0%E7%A0%81/</loc>
-    <lastmod>2024-03-17T20:33:54+08:00</lastmod>
-  </url><url>
-    <loc>https://looechao.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2024-03-17T20:33:54+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/readme/</loc>
