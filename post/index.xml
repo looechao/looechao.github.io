@@ -2,129 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Lu&#39;s blog</title>
-    <link>https://looechao.github.io/post/</link>
+    <link>https://github.io/post/</link>
     <description>Recent content in Posts on Lu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 21 Mar 2024 10:25:16 +0800</lastBuildDate>
-    <atom:link href="https://looechao.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>刷题笔记-24年3月第八组</title>
-      <link>https://looechao.github.io/post/coding-24-03-08/</link>
+      <link>https://github.io/post/coding-24-03-08/</link>
       <pubDate>Thu, 21 Mar 2024 10:25:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/coding-24-03-08/</guid>
+      <guid>https://github.io/post/coding-24-03-08/</guid>
       <description>洛谷入门题库P2955-P4327</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第七组</title>
-      <link>https://looechao.github.io/post/coding-24-03-07/</link>
+      <link>https://github.io/post/coding-24-03-07/</link>
       <pubDate>Wed, 20 Mar 2024 16:30:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/coding-24-03-07/</guid>
+      <guid>https://github.io/post/coding-24-03-07/</guid>
       <description>洛谷入门题库P2550-P2911</description>
     </item>
     <item>
       <title>用Powershell直接安装MicrosoftStore的应用</title>
-      <link>https://looechao.github.io/post/msstore/</link>
+      <link>https://github.io/post/msstore/</link>
       <pubDate>Tue, 19 Mar 2024 14:40:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/msstore/</guid>
+      <guid>https://github.io/post/msstore/</guid>
       <description>没有商店照样可以安装应用</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第六组</title>
-      <link>https://looechao.github.io/post/coding-24-03-06/</link>
+      <link>https://github.io/post/coding-24-03-06/</link>
       <pubDate>Mon, 18 Mar 2024 17:35:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/coding-24-03-06/</guid>
+      <guid>https://github.io/post/coding-24-03-06/</guid>
       <description>洛谷入门题库P1914-P2525</description>
     </item>
     <item>
       <title>2024第十一周周报</title>
-      <link>https://looechao.github.io/post/2024-week11/</link>
+      <link>https://github.io/post/2024-week11/</link>
       <pubDate>Sun, 17 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/2024-week11/</guid>
+      <guid>https://github.io/post/2024-week11/</guid>
       <description>阴雨绵绵的三月&amp;hellip;</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第五组</title>
-      <link>https://looechao.github.io/post/coding-24-03-05/</link>
+      <link>https://github.io/post/coding-24-03-05/</link>
       <pubDate>Sun, 17 Mar 2024 11:28:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/coding-24-03-05/</guid>
+      <guid>https://github.io/post/coding-24-03-05/</guid>
       <description>洛谷入门题库P1789-P1909</description>
     </item>
     <item>
       <title>关于内卷的一些思考</title>
-      <link>https://looechao.github.io/post/involution/</link>
+      <link>https://github.io/post/involution/</link>
       <pubDate>Fri, 15 Mar 2024 20:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/involution/</guid>
+      <guid>https://github.io/post/involution/</guid>
       <description>只许向上爬，不准往下走的竞争</description>
     </item>
     <item>
       <title>做一个乐观的悲观主义者</title>
-      <link>https://looechao.github.io/post/positiveornegative/</link>
+      <link>https://github.io/post/positiveornegative/</link>
       <pubDate>Thu, 14 Mar 2024 08:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/positiveornegative/</guid>
+      <guid>https://github.io/post/positiveornegative/</guid>
       <description>悲观者往往正确 乐观者往往成功</description>
     </item>
     <item>
       <title>写在22岁之前</title>
-      <link>https://looechao.github.io/post/before22/</link>
+      <link>https://github.io/post/before22/</link>
       <pubDate>Wed, 13 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/before22/</guid>
+      <guid>https://github.io/post/before22/</guid>
       <description>黄金时代</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第四组</title>
-      <link>https://looechao.github.io/post/coding-24-03-04/</link>
+      <link>https://github.io/post/coding-24-03-04/</link>
       <pubDate>Tue, 12 Mar 2024 14:57:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/coding-24-03-04/</guid>
+      <guid>https://github.io/post/coding-24-03-04/</guid>
       <description>洛谷入门题库P1597-P1765</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第三组</title>
-      <link>https://looechao.github.io/post/coding-24-03-03/</link>
+      <link>https://github.io/post/coding-24-03-03/</link>
       <pubDate>Mon, 11 Mar 2024 14:57:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/coding-24-03-03/</guid>
+      <guid>https://github.io/post/coding-24-03-03/</guid>
       <description>洛谷入门题库P1424-P1567</description>
     </item>
     <item>
       <title>2024第十周周报</title>
-      <link>https://looechao.github.io/post/2024-week10/</link>
+      <link>https://github.io/post/2024-week10/</link>
       <pubDate>Sun, 10 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/2024-week10/</guid>
+      <guid>https://github.io/post/2024-week10/</guid>
       <description>你好呀！三月！</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第二组</title>
-      <link>https://looechao.github.io/post/coding-24-03-02/</link>
+      <link>https://github.io/post/coding-24-03-02/</link>
       <pubDate>Sun, 10 Mar 2024 15:53:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/coding-24-03-02/</guid>
+      <guid>https://github.io/post/coding-24-03-02/</guid>
       <description>洛谷入门题库p1307-p1423</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第一组</title>
-      <link>https://looechao.github.io/post/coding-24-03-01/</link>
+      <link>https://github.io/post/coding-24-03-01/</link>
       <pubDate>Thu, 07 Mar 2024 14:57:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/coding-24-03-01/</guid>
+      <guid>https://github.io/post/coding-24-03-01/</guid>
       <description>洛谷入门题库p1047-p1304</description>
     </item>
     <item>
       <title>哲理名句收集</title>
-      <link>https://looechao.github.io/post/quote/</link>
+      <link>https://github.io/post/quote/</link>
       <pubDate>Sun, 03 Mar 2024 21:31:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/quote/</guid>
+      <guid>https://github.io/post/quote/</guid>
       <description>偶尔也会想要喝鸡汤</description>
     </item>
     <item>
       <title>AuroraAssetEditor使用笔记</title>
-      <link>https://looechao.github.io/post/xbox360ftp/</link>
+      <link>https://github.io/post/xbox360ftp/</link>
       <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/xbox360ftp/</guid>
+      <guid>https://github.io/post/xbox360ftp/</guid>
       <description>通过FTP编辑xbox360游戏的封面</description>
     </item>
     <item>
       <title>Hexo框架的博客搭建笔记</title>
-      <link>https://looechao.github.io/post/hexo-note/</link>
+      <link>https://github.io/post/hexo-note/</link>
       <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/hexo-note/</guid>
+      <guid>https://github.io/post/hexo-note/</guid>
       <description>第一次尝试建立hexo框架的站点</description>
     </item>
   </channel>
