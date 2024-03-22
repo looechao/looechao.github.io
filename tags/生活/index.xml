@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>生活 on Lu&#39;s blog</title>
-    <link>https://github.io/tags/%E7%94%9F%E6%B4%BB/</link>
+    <link>https://looechao.github.io/tags/%E7%94%9F%E6%B4%BB/</link>
     <description>Recent content in 生活 on Lu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 17 Mar 2024 20:33:54 +0800</lastBuildDate>
-    <atom:link href="https://github.io/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://looechao.github.io/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>做一个乐观的悲观主义者</title>
-      <link>https://github.io/post/positiveornegative/</link>
+      <link>https://looechao.github.io/post/positiveornegative/</link>
       <pubDate>Thu, 14 Mar 2024 08:50:13 +0800</pubDate>
-      <guid>https://github.io/post/positiveornegative/</guid>
+      <guid>https://looechao.github.io/post/positiveornegative/</guid>
       <description>悲观者往往正确 乐观者往往成功</description>
     </item>
     <item>
       <title>写在22岁之前</title>
-      <link>https://github.io/post/before22/</link>
+      <link>https://looechao.github.io/post/before22/</link>
       <pubDate>Wed, 13 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://github.io/post/before22/</guid>
+      <guid>https://looechao.github.io/post/before22/</guid>
       <description>黄金时代</description>
     </item>
   </channel>
