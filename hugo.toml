@@ -1,4 +1,4 @@
-baseURL = 'https://looechao.github.io/'
+baseURL = 'https://looechao.github.io'
 languageCode = 'zh-cn'
 title = "Lu's blog"
 theme= "github-style"
@@ -17,7 +17,7 @@ buildFuture = true
   github = "looechao"
   linkedin = "lu-chao-a592a5279"
   email = "lu.chao.personal@foxmail.com"
-  url = "https://looechao.github.io/"
+  url = "https://looechao.github.io"
   keywords = "blog, google analytics"
   rss = true
   lastmod = true
@@ -25,8 +25,9 @@ buildFuture = true
   avatar = "/images/profile.png"
   headerIcon = "/images/github.png"
   location = "China"
-  userStatusEmoji = "😀"
+  userStatusEmoji = "✨"
   enableGitalk = true
+  googleAnalytics = "G-T6EYNX397W"
 
   [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
