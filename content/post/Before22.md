@@ -13,8 +13,9 @@ tags = [ "生活",  "杂谈", "年度总结", "成长"]
 #### 心态
 
 <div style="width: 20%; margin: auto;">
-    <img src="https://img3.doubanio.com/view/subject/l/public/s1076372.jpg" alt="shotonspf" style="width: 100%;" />
+    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/goldentime.jpg" style="width: 100%;" />
 </div>
+
 
 ”那一天我二十一岁，在我一生的黄金时代。
 我有好多奢望，我想爱，想吃，还想在一瞬间变成天上半明半暗的云。

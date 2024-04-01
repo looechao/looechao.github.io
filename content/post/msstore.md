@@ -2,7 +2,7 @@
 title = '用Powershell直接安装MicrosoftStore的应用'
 date = 2024-03-19T14:40:13+08:00
 draft = false
-summary = "没有商店照样可以安装应用"
+summary = "没有商店也可以安装应用"
 tags = [ "笔记"]
 
 +++
