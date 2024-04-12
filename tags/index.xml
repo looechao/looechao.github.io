@@ -6,20 +6,27 @@
     <description>Recent content in Tags on Lu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 09 Apr 2024 09:46:13 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 12 Apr 2024 10:08:43 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>周报</title>
-      <link>https://looechao.github.io/tags/%E5%91%A8%E6%8A%A5/</link>
-      <pubDate>Sun, 07 Apr 2024 20:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/tags/%E5%91%A8%E6%8A%A5/</guid>
+      <title>数码</title>
+      <link>https://looechao.github.io/tags/%E6%95%B0%E7%A0%81/</link>
+      <pubDate>Thu, 11 Apr 2024 21:50:13 +0800</pubDate>
+      <guid>https://looechao.github.io/tags/%E6%95%B0%E7%A0%81/</guid>
       <description></description>
     </item>
     <item>
       <title>生活</title>
       <link>https://looechao.github.io/tags/%E7%94%9F%E6%B4%BB/</link>
-      <pubDate>Fri, 05 Apr 2024 21:50:13 +0800</pubDate>
+      <pubDate>Thu, 11 Apr 2024 21:50:13 +0800</pubDate>
       <guid>https://looechao.github.io/tags/%E7%94%9F%E6%B4%BB/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>周报</title>
+      <link>https://looechao.github.io/tags/%E5%91%A8%E6%8A%A5/</link>
+      <pubDate>Sun, 07 Apr 2024 20:50:13 +0800</pubDate>
+      <guid>https://looechao.github.io/tags/%E5%91%A8%E6%8A%A5/</guid>
       <description></description>
     </item>
     <item>
@@ -104,13 +111,6 @@
       <link>https://looechao.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
       <guid>https://looechao.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>数码</title>
-      <link>https://looechao.github.io/tags/%E6%95%B0%E7%A0%81/</link>
-      <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
-      <guid>https://looechao.github.io/tags/%E6%95%B0%E7%A0%81/</guid>
       <description></description>
     </item>
   </channel>
