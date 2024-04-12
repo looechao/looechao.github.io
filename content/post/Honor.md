@@ -14,3 +14,8 @@ tags = [ "成长"]
 - NEPCS 省级二等奖
 - 20年高考卷一 143/150
 - 24年考研英二  86/100
+</br>
+</br>
+<div style="width: 50%; margin: auto;">
+    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/honor/modeling.jpg" alt="shotonspf" style="width: 100%;" />
+</div>
