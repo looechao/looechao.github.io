@@ -6,13 +6,6 @@ summary = "looe's cool digital devices..."
 tags = [ "生活",  "数码"]
 +++
 我喜欢捣鼓各种有趣的数码产品，但一般绝不会动大手笔，所以我玩的基本都是那些被认为是时代眼泪的老古董，但是足够好玩就已经很让人满意了😋
-#### iPhone SE
-</br>
-<div style="width: 30%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/Cool-tech/cooltech-iphonese.jpg" alt="shotonspf" style="width: 100%;" />
-</div>
-</br>
-大概是21年初买来玩的, 中学时候心里最想要的iPhone, 在当年被誉为性能小钢炮, 延续5s的外观也足够经典, 小巧可爱, 很适合把玩
 
 #### PSP-E1000
 </br>
@@ -29,6 +22,14 @@ tags = [ "生活",  "数码"]
 </div>
 </br>
 ZX系列最后一部主推3.5mm接口的非智能机器, 续航给力, 内存也大, 虽然系统操作逻辑还是有点死板, 但总的来说还是很踏实的一部机器, zx系列的质感一贯是非常出色的
+
+#### iPhone SE
+</br>
+<div style="width: 30%; margin: auto;">
+    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/Cool-tech/cooltech-iphonese.jpg" alt="shotonspf" style="width: 100%;" />
+</div>
+</br>
+大概是21年初买来玩的, 中学时候心里最想要的iPhone, 在当年被誉为性能小钢炮, 延续5s的外观也足够经典, 小巧可爱, 很适合把玩
 
 #### 小爱音响-HD
 </br>
@@ -88,3 +89,12 @@ ZX系列最后一部主推3.5mm接口的非智能机器, 续航给力, 内存也
 </div>
 </br>
 老古董了，键盘手感一流，这台机器最神的地方在于你可以轻松的买到它几乎所有部位的零件，改造升级的空间很大，我给它加装了内存条、换了ips屏幕，而且换了固态硬盘（对速度的提升非常大） 用它装了n次系统，包括archlinux，切切实实让人体会到了安装各种发行版的乐趣
+
+#### Google Pixel C
+</br>
+<div style="width: 50%; margin: auto;">
+    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/Cool-tech/cooltech-googlepixelc.jpg" alt="shotonspf" style="width: 100%;" />
+</div>
+</br>
+和iPad Pro同时期发布的产品，做工可以用越级来形容，显示效果格外的细腻，看漫画神了
+还搭配了键盘，怎么放都舒服

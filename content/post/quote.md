@@ -27,7 +27,7 @@ tags = ["哲理"]
 16. 枯木逢春犹再发，人无两度再少年。
 
 
-### 简中哲言
+### 中文哲言
  1. 人只有对未来有信心的时候才会投入足够的热情去改变它。
  2. 铁饭碗不是在一个地方吃一辈子饭，而是在任何地方都有饭吃。
  3. 直到有一天，我意识到自己被喂了太多的狼奶，需要一点一点的吐干净。
@@ -38,6 +38,6 @@ tags = ["哲理"]
  8. 大廈將傾，塵埃四起，迷霧中，一艘方舟正在成形，這是權貴的艙船，一待風雲譎變，它便駛離這片土地，留下滿目瘡痍。
 
 
-### quote
+### 英文哲言
   1. I wanna buy my mom big house,I wanna be the great father,I wanna help people，That's the drive. 			- __James Scholz__
   2. Great minds discuss ideas; average minds discuss events; small minds discuss people.
