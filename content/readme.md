@@ -26,8 +26,8 @@ summary = "readme"
 ##### Skills
 - C++
 - Java
+- Git
 - Microsoft Office
-- Github
 ---
 ##### Language
 - Chinese-Native
@@ -36,18 +36,15 @@ summary = "readme"
 ---
 ##### ABOUT GAME
 - Favourite Game : CounterStrike
-- Favourite Position : Suicide
-- Favourite Maps : De_Mirage
-- Favourite Gun : AK-47
-- Favourite Pro Player : Twistzz
+- Favourite Map : De_Mirage
+- Favourite Pro Player : Yekindar
 ---
 ##### CONSOLE
 
-- Favourite Consoles: wiiu,xbox360,psp,ps2.
+- Favourite Consoles:  wiiu | xbox360 | psp | ps2.
 ---
 ##### THE END
 ---
 <p align="right">
   <a href="https://count.getloli.com/"><img src="https://count.getloli.com/get/@looechao?theme=rule34" style="width:27%;"></a>
 </p>
-
