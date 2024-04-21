@@ -11,12 +11,14 @@ tags = [ "生活",  "杂谈", "年度总结", "成长"]
 - 运动量少了很多，长跑只坚持到了五月就停下了
 - 自习室太昏暗，总是视疲劳，近视涨了100度,但是积累了在网上配镜的经验
 #### 心态
+</br>
 
 <div style="width: 20%; margin: auto;">
     <img src="https://raw.githubusercontent.com/looechao/blogimg/main/goldentime.jpg" style="width: 100%;" />
 </div>
 
-
+</br>
+</br>
 ”那一天我二十一岁，在我一生的黄金时代。
 我有好多奢望，我想爱，想吃，还想在一瞬间变成天上半明半暗的云。
 后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。
@@ -48,7 +50,12 @@ tags = [ "生活",  "杂谈", "年度总结", "成长"]
 现状是已经付出了一年的沉没成本，而初试的排名擦边，有进复试的可能，所以这个月的主要任务应该放在准备复试上了，即使失败也不过是一个月的时间
 
 #### 留张照片
+</br>
+
 <div style="width: 50%; margin: auto;">
     <img src="https://raw.githubusercontent.com/looechao/blogimg/main/before22.jpg" alt="shotonspf" style="width: 100%;" />
 </div>
+
+</br>
+</br>
 感谢阿涛的摄影，真的很棒！
