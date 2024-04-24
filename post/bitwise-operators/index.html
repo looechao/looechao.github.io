@@ -141,9 +141,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Wed, 24 Apr 2024 22:11:20 &#43;0800"
+                  Modified <relative-time datetime="Wed, 24 Apr 2024 22:24:04 &#43;0800"
                     class="no-wrap">
-                    Wed, 24 Apr 2024 22:11:20 &#43;0800</relative-time>
+                    Wed, 24 Apr 2024 22:24:04 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -173,7 +173,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      191 Words
+                      175 Words
                     
 
                   </div>
@@ -206,15 +206,38 @@
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
                 <article class="markdown-body entry-content container-lg"><h4 id="六种位运算符">六种位运算符</h4>
-<p>| 符号|含义 |
-|:-:|:- :|
-| &laquo; |左移位 |
-| &raquo; |右移位 |
-| ~ |按位取反 |
-| &amp; |按位与（相同为1） |
-| ^ |按位异或(不同为1) |</p>
+<table>
+    <tr>
+        <td>符号</td>
+        <td>含义</td>
+    </tr>
+    <tr>
+        <td>&lt;&lt;</td>
+        <td>左移位</td>
+    </tr>
+    <tr>
+        <td>&gt;&gt;</td>
+        <td>右移位</td>
+    </tr>
+    <tr>
+        <td>~</td>
+        <td>按位取反</td>
+    </tr>
+    <tr>
+        <td>&amp;</td>
+        <td>按位与（相同为1）</td>
+    </tr>
+    <tr>
+        <td>^</td>
+        <td>按位异或 (不同为1)</td>
+    </tr>
+    <tr>
+        <td>|</td>
+        <td>按位或 (有1为1)</td>
+    </tr>
+</table>
 <ul>
-<li>按位与的应用场景：掩码asds</li>
+<li>按位与的应用场景：</li>
 </ul>
 <p>eg.测试0xCAFE最后 4 位中是不是最少有 3 位为 1.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
