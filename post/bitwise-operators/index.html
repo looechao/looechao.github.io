@@ -141,9 +141,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Wed, 24 Apr 2024 22:24:04 &#43;0800"
+                  Modified <relative-time datetime="Fri, 26 Apr 2024 16:06:29 &#43;0800"
                     class="no-wrap">
-                    Wed, 24 Apr 2024 22:24:04 &#43;0800</relative-time>
+                    Fri, 26 Apr 2024 16:06:29 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -173,7 +173,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      175 Words
+                      552 Words
                     
 
                   </div>
@@ -236,10 +236,16 @@
         <td>按位或 (有1为1)</td>
     </tr>
 </table>
+<h5 id="位运算的基础应用">位运算的基础应用</h5>
 <ul>
-<li>按位与的应用场景：</li>
+<li>按位与的应用场景：掩码
+<ul>
+<li>判断一个数是否为奇数: n&amp;0x1</li>
+<li>判断一个数是否为2的幂: /
+eg.测试0xCAFE最后 4 位中是不是最少有 3 位为 1.</li>
 </ul>
-<p>eg.测试0xCAFE最后 4 位中是不是最少有 3 位为 1.</p>
+</li>
+</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
@@ -269,7 +275,76 @@
 </span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%x&#34;</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div></article>
+</span></span></code></pre></div><ul>
+<li>异或的良好性质
+<ul>
+<li>a^0=a</li>
+<li>a^a=a</li>
+<li>a^b=b^a</li>
+<li>(a^b)^c=a^(b^c)</li>
+</ul>
+</li>
+</ul>
+<h5 id="位运算的拓展应用">位运算的拓展应用</h5>
+<ul>
+<li>
+<p>eg1. 找出last set bit:</p>
+<ul>
+<li>令xor=3, 找到xor的last set bit
+<ul>
+<li>3的补码表示是0011</li>
+<li>3的反码表示是1100</li>
+<li>**3的反码+1表示是1101</li>
+<li>-3的补码表示是1101**
+可用的操作:
+1101
+0011按位做与运算得到last set bit</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">lsb</span><span class="o">=</span><span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">^</span><span class="n">xor</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> 
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">lsb</span><span class="o">=</span><span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">-</span><span class="n">xor</span><span class="p">)</span>
+</span></span></code></pre></div></li>
+<li>
+<p>eg2.筛出数组中单独的数（其余的都出现了两次）singlenum</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">nums</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">xor</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">      <span class="n">xor</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="n">xor</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></div><p>不断做异或运算，可以保留得到最后唯一的那个元素</p>
+</li>
+<li>
+<p>eg3. 拓展：晒出数组中的两个只单独的数（其余的都出现了两次）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">nums</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">xor</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">      <span class="n">xor</span> <span class="o">^=</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>  
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">lsb</span> <span class="o">=</span> <span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">xor</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>    <span class="c1">//last set bit;a与b在这一位上不同，用作分类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">      <span class="k">if</span><span class="p">(</span><span class="n">lsb</span><span class="o">&amp;</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]){</span>
+</span></span><span class="line"><span class="cl">          <span class="n">a</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="n">b</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;[%d %d]&#34;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>用0与整个数组异或的结果的lsb可以将数组分为两个只包含一个唯一元素的数组，再按照eg2的方法可以筛出唯一元素</p>
+</li>
+</ul>
+</article>
               </div>
             </div>
           </div>
