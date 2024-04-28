@@ -24,8 +24,8 @@ summary = "readme"
 
 ---
 ##### Skills
-- C++
-- Java
+- C/C++
+- Golang
 - Git
 - Microsoft Office
 ---
