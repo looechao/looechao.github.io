@@ -1,6 +1,6 @@
 baseURL = 'https://looechao.github.io'
 languageCode = 'zh-cn'
-title = "Lu's blog"
+title = "looechao's blog"
 theme= "github-style"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
@@ -25,7 +25,7 @@ buildFuture = true
   avatar = "/images/profile.png"
   headerIcon = "/images/github.png"
   location = "China"
-  userStatusEmoji = "✨"
+  userStatusEmoji = "😋"
   enableGitalk = true
   googleAnalytics = "G-T6EYNX397W"
 
