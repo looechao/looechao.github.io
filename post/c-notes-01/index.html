@@ -141,9 +141,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Sun, 28 Apr 2024 22:55:36 &#43;0800"
+                  Modified <relative-time datetime="Mon, 29 Apr 2024 09:12:54 &#43;0800"
                     class="no-wrap">
-                    Sun, 28 Apr 2024 22:55:36 &#43;0800</relative-time>
+                    Mon, 29 Apr 2024 09:12:54 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -173,7 +173,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      4011 Words
+                      4173 Words
                     
 
                   </div>
@@ -887,7 +887,28 @@ Your hand: 9c 7d 3c 5d kd</p>
 </span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;wins:%d losses:%d&#34;</span><span class="p">,</span><span class="n">wins</span><span class="p">,</span> <span class="n">losses</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>    
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h4 id="变量分类与存储期限">变量分类与存储期限</h4>
+</span></span></code></pre></div><h4 id="参数传递">参数传递</h4>
+<ul>
+<li>传递什么： 实参传递给形参</li>
+<li>方式：
+<ul>
+<li>值传递：
+<ul>
+<li>不能通过修改形参来修改实参</li>
+<li>解决方法 - 指针</li>
+</ul>
+</li>
+<li>例外：数组
+传递数组是，数组会退化成指向第一个元素的指针：
+<ul>
+<li>丢失长度信息</li>
+<li>需要额外传递数组的长度</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="变量分类与存储期限">变量分类与存储期限</h4>
 <h5 id="变量-1">变量</h5>
 <ul>
 <li>
@@ -898,7 +919,7 @@ Your hand: 9c 7d 3c 5d kd</p>
 </ul>
 </li>
 <li>
-<p>全局变量</p>
+<p>全局变量（外部变量）</p>
 <ul>
 <li>定义：定义在函数外面的变量</li>
 <li>作用域：<strong>文件作用域</strong>，从定义的开始到文件末尾</li>
@@ -972,6 +993,20 @@ Your hand: 9c 7d 3c 5d kd</p>
 </li>
 </ul>
 <h4 id="递归">递归</h4>
+<ul>
+<li>Recursion : 走重复的路，递是将大问题分解成子问题，归是把子问题的解合并成大的问题的解
+<ul>
+<li>例子
+<ul>
+<li>电影院的例子</li>
+<li>Fibonacci数列</li>
+<li>汉诺塔问题</li>
+<li>约瑟夫环问题</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h5 id="递归的三个原则">递归的三个原则</h5>
 <ol>
 <li>找到问题的递归结构</li>
