@@ -6,7 +6,7 @@
     <description>Recent content on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 May 2024 15:39:18 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2024 22:37:54 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C语言学习笔记-24年4月第二组</title>
@@ -28,6 +28,13 @@
       <pubDate>Sun, 28 Apr 2024 20:50:13 +0800</pubDate>
       <guid>https://looechao.github.io/post/2024-week17/</guid>
       <description>充实的一星期</description>
+    </item>
+    <item>
+      <title>2024第十八周周报</title>
+      <link>https://looechao.github.io/post/2024-week18/</link>
+      <pubDate>Sun, 28 Apr 2024 20:50:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024-week18/</guid>
+      <description>被恐惧愧疚羞耻裹挟着的人，是很难体验到什么叫全力以赴</description>
     </item>
     <item>
       <title>C语言中的六种位运算符</title>
