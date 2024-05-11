@@ -141,9 +141,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Fri, 10 May 2024 22:29:55 &#43;0800"
+                  Modified <relative-time datetime="Sat, 11 May 2024 16:10:40 &#43;0800"
                     class="no-wrap">
-                    Fri, 10 May 2024 22:29:55 &#43;0800</relative-time>
+                    Sat, 11 May 2024 16:10:40 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -173,7 +173,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      11075 Words
+                      11076 Words
                     
 
                   </div>
@@ -327,7 +327,7 @@ curr-&gt;next = new_node;
 <pre tabindex="0"><code>NODE    []]-----&gt;[]]-----&gt;[]]----&gt;[]]----&gt;[]]
          ^                                 ^
          |                                 |
-LIST   head							     tail
+LIST   head                              tail
 </code></pre><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">typedef</span> <span class="kt">int</span> <span class="n">E</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">node</span><span class="p">{</span>
@@ -563,13 +563,13 @@ LIST   head							     tail
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>1<span class="o">][</span>*<span class="o">]</span>---&gt;<span class="o">[</span>2<span class="o">][</span>*<span class="o">]</span>---&gt;<span class="o">[</span>3<span class="o">][</span>*<span class="o">]</span>---&gt;<span class="o">[</span>4<span class="o">][</span>*<span class="o">]</span>----&gt;NULL
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        			 &lt;----------- ^
-</span></span><span class="line"><span class="cl">					 <span class="p">|</span>            <span class="p">|</span>
+</span></span><span class="line"><span class="cl">                     &lt;----------- ^
+</span></span><span class="line"><span class="cl">                     <span class="p">|</span>            <span class="p">|</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span>1<span class="o">][</span>*<span class="o">]</span>---&gt;<span class="o">[</span>2<span class="o">][</span>*<span class="o">]</span>---&gt;<span class="o">[</span>3<span class="o">][</span>*<span class="o">]</span>---&gt;<span class="o">[</span>4<span class="o">][</span>*<span class="o">]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> &lt;------------------------------ ^
-</span></span><span class="line"><span class="cl"> <span class="p">|</span>					             <span class="p">|</span>
+</span></span><span class="line"><span class="cl">  &lt;------------------------------ ^
+</span></span><span class="line"><span class="cl">  <span class="p">|</span>                               <span class="p">|</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span>1<span class="o">][</span>*<span class="o">]</span>---&gt;<span class="o">[</span>2<span class="o">][</span>*<span class="o">]</span>---&gt;<span class="o">[</span>3<span class="o">][</span>*<span class="o">]</span>---&gt;<span class="o">[</span>4<span class="o">][</span>*<span class="o">]</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">hasCycle</span><span class="p">(</span><span class="k">struct</span> <span class="n">ListNode</span> <span class="o">*</span><span class="n">heaed</span><span class="p">);</span>
 </span></span></code></pre></div><ul>
@@ -597,7 +597,7 @@ LIST   head							     tail
 <p>可以类比跑道</p>
 <hr>
 <p>​               fast</p>
-<p>                 ↓</p>
+<p>                  ↓</p>
 <p>  ↑</p>
 <p>slow</p>
 <hr>
@@ -1099,11 +1099,11 @@ LIST   head							     tail
 </ul>
 <h3 id="模型-2">模型</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">							 ┌────────hash桶-<span class="o">[]</span>
-</span></span><span class="line"><span class="cl">							 <span class="p">|</span>
+</span></span><span class="line"><span class="cl">                             ┌────────hash桶-<span class="o">[]</span>
+</span></span><span class="line"><span class="cl">                             <span class="p">|</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span>Key的取值范围<span class="o">]</span>---取出key---&gt;hash函数────hash桶-<span class="o">[]</span>-<span class="o">[]</span>
-</span></span><span class="line"><span class="cl">					     	 <span class="p">|</span>
-</span></span><span class="line"><span class="cl">					     	 └────────hash桶<span class="o">(</span>容器<span class="o">)</span>
+</span></span><span class="line"><span class="cl">                             <span class="p">|</span>
+</span></span><span class="line"><span class="cl">                             └────────hash桶<span class="o">(</span>容器<span class="o">)</span>
 </span></span></code></pre></div><p>注意</p>
 <ul>
 <li>
@@ -1517,11 +1517,11 @@ LIST   head							     tail
 </span></span><span class="line"><span class="cl">    <span class="nf">memset</span><span class="p">(</span><span class="n">bm</span><span class="o">-&gt;</span><span class="n">array</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="n">bytes</span><span class="p">);</span> 
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>关于memoryset</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">										   	  <span class="err">长度</span>    
+<p>一个字节一个字节地设置</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">                                              <span class="err">长度</span>    
 </span></span><span class="line"><span class="cl"><span class="nf">memset</span><span class="p">(</span><span class="n">bm</span><span class="o">-&gt;</span><span class="n">array</span> <span class="o">+</span> <span class="nf">BITMAP_SIZE</span><span class="p">(</span><span class="n">bm</span><span class="o">-&gt;</span><span class="n">bits</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="n">bytes</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">                     <span class="err">起始地址</span>              <span class="o">|</span>  
 </span></span><span class="line"><span class="cl">                                     <span class="err">每一个字节的值（</span><span class="mi">0</span><span class="o">~</span><span class="mh">0xFF</span><span class="err">）</span>
-</span></span><span class="line"><span class="cl"><span class="err">一个字节一个字节地设置</span>
 </span></span></code></pre></div><p>总结</p>
 <table>
 <thead>
@@ -2131,9 +2131,10 @@ LIST   head							     tail
 </li>
 <li>
 <p>比较：
+</p>
 $$
-n(n-1) + ··· + 1 = \frac{n(n-1)}{2}
-$$</p>
+  n(n-1) + ··· + 1 = \frac{n(n-1)}{2}
+  $$
 </li>
 <li>
 <p>交换次数：n-1</p>
@@ -2192,10 +2193,11 @@ $$</p>
 <ul>
 <li>
 <p>平均时间复杂度
+</p>
 $$
-交换次数=逆序对 = \frac{n(n-1)}{4}  \
-交换次数&lt;=比较次数&lt;=\frac{n(n-1)}{2}
-$$</p>
+  交换次数=逆序对 = \frac{n(n-1)}{4}  \\
+  交换次数<=比较次数<=\frac{n(n-1)}{2}
+  $$
 </li>
 <li>
 <p>空间复杂度:O(1)</p>
@@ -2271,17 +2273,18 @@ $$</p>
 <ul>
 <li>
 <p>平均时间复杂度
+</p>
 $$
-逆序时：逆序对 = 顺序对 = \frac{C_{n}^{2}}{2} = \frac{(n-1)}{4}
-$$</p>
-<p>$$
-比较：大于等于比较次数，小于等于 \frac{n(n-1)}{2}
-$$</p>
+  逆序时：逆序对 = 顺序对 = \frac{C_{n}^{2}}{2} = \frac{(n-1)}{4}
+  $$
+$$
+  比较：大于等于比较次数，小于等于 \frac{n(n-1)}{2}
+  $$
 </li>
 </ul>
-<p>$$
+$$
 平均时间复杂度复杂度 = O(n^2)
-$$</p>
+$$
 <p>空间</p>
 <ul>
 <li>空间复杂度：0(1)</li>
@@ -2335,9 +2338,10 @@ $$</p>
 <ul>
 <li>
 <p>时间复杂度：
+</p>
 $$
-和gap序列相关，一般来说，平均情况小于O(n^2)
-$$</p>
+  和gap序列相关，一般来说，平均情况小于O(n^2)
+  $$
 </li>
 <li>
 <p>空间复杂度：O(1)</p>
@@ -2425,10 +2429,10 @@ $$</p>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p><strong>时间复杂度</strong></p>
-<p>$$
-T(n) = 2 T\frac{n}{2} + O(n)  \
+$$
+T(n) = 2 T\frac{n}{2} + O(n)  \\
 T(n) = log_2n·O(n) = O(nlog_2n)=O(nlogn)
-$$</p>
+$$
 <ul>
 <li>
 <p>对于递归算法尝试用递归树分析时间复杂度</p>
@@ -2438,9 +2442,10 @@ $$</p>
 </li>
 </ul>
 <p><strong>空间复杂度</strong>：
+</p>
 $$
 O(logn)+O(n) = O(n)
-$$</p>
+$$
 <p><strong>稳定性</strong>： 稳定</p>
 <h3 id="快速排序">快速排序</h3>
 <p><strong>算法步骤</strong></p>
@@ -2482,15 +2487,17 @@ $$</p>
 </li>
 </ul>
 <p>单向分区的不变式</p>
-<p>$$
-[o,store)&lt;= pivot，满足条件\
-遍历时，[store, i) &gt; pivot，不满足条件 \
-终止 i = n-1
 $$
+  [o,store)<= pivot，满足条件\\
+  遍历时，[store, i) > pivot，不满足条件 \\
+  终止 i = n-1
+  $$
+<p>
 <strong>平均操作次数：</strong>
+</p>
 $$
-\frac{n}{2}·3=1.5n (赋值)
-$$</p>
+  \frac{n}{2}·3=1.5n (赋值)
+  $$
 </li>
 <li>
 <p>b.双向分区</p>
@@ -2504,14 +2511,16 @@ $$</p>
 <li>j：下一个&gt;=pivot的元素置于的位置</li>
 </ul>
 <p>双向分区的不变式</p>
-<p>$$
-[o,)&lt;= pivot，满足条件\
-[j, n-1) &gt;= pivot，不满足条件 \
 $$
+  [o,)<= pivot，满足条件\\
+  [j, n-1) >= pivot，不满足条件 \\
+  $$
+<p>
 <strong>平均操作次数：</strong>
+</p>
 $$
-\frac{n}{2}·1=0.5n (赋值)
-$$</p>
+  \frac{n}{2}·1=0.5n (赋值)
+  $$
 </li>
 <li>
 <p>c.三向分区</p>
@@ -2574,25 +2583,28 @@ $$</p>
 <li>
 <p>最好情况 O(nlogn)</p>
 <p>每次分区基准值都在中间
+</p>
 $$
-T(n) = O(n) + T(\frac{n}{2})+T(\frac{n}{2})\
-= O(n) + 2·T(\frac{n}{2})\
-=O(n·logn)
-$$</p>
+  T(n) = O(n) + T(\frac{n}{2})+T(\frac{n}{2})\\
+  = O(n) + 2·T(\frac{n}{2})\\
+  =O(n·logn)
+  $$
 </li>
 <li>
 <p>最坏情况 O(n^2)</p>
 <p>每次分区，基准值都位于两边
+</p>
 $$
-T(n) = c·n+c·(n-1)+···+c·2+c = c·\frac{n·(n-1)}{2}=O(n^2)
-$$</p>
+  T(n) = c·n+c·(n-1)+···+c·2+c = c·\frac{n·(n-1)}{2}=O(n^2)
+  $$
 </li>
 <li>
 <p>平均复杂度 O(n·logn)</p>
 <p>假定每次分区，都分成大约为9：1的区间
+</p>
 $$
-T(n) &lt;= log_\frac{10}{9}n·c·n=O(nlogn)
-$$</p>
+  T(n) <= log_\frac{10}{9}n·c·n=O(nlogn)
+  $$
 </li>
 </ul>
 <p>空间：O(logn)</p>
@@ -2714,16 +2726,16 @@ $$</p>
 <li>
 <p>时间复杂度：对数据不敏感</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="nf">build_heap</span><span class="p">()</span>  <span class="err">复杂度为</span><span class="n">O</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-</span></span></code></pre></div><p>$$
-调整次数=2^0·h+2^1·(h-1)+2^2·(h-2)+···+·2^{h-1}·1\
-=2^1·h+2^2·(h-1)+···+2^{h-1}·2+2^h·1\
-=2^0·h+(2^1+2^2+···+2{h-1}+2{h})\
-= 2^{h+1}-2-h\
-=2·n-2-log_2n\
-$$</p>
-<p>$$
-T(n) = O(n)+(n-1)·O(logn) = O(nlogn)
-$$</p>
+</span></span></code></pre></div>$$
+  调整次数=2^0·h+2^1·(h-1)+2^2·(h-2)+···+·2^{h-1}·1\\
+  =2^1·h+2^2·(h-1)+···+2^{h-1}·2+2^h·1\\
+  =2^0·h+(2^1+2^2+···+2{h-1}+2{h})\\
+  = 2^{h+1}-2-h\\
+  =2·n-2-log_2n\\
+  $$
+$$
+  T(n) = O(n)+(n-1)·O(logn) = O(nlogn)
+  $$
 </li>
 <li>
 <p>空间复杂度：O(1)</p>
