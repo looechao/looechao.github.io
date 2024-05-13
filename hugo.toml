@@ -10,6 +10,13 @@ buildFuture = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
 
 [params]
   author = "Looe"
@@ -27,12 +34,15 @@ buildFuture = true
   location = "China"
   userStatusEmoji = "😋"
   enableGitalk = true
+  math = true
   googleAnalytics = "G-T6EYNX397W"
 
   [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
 
   enableGitalk = true
+
+  
 
   [params.gitalk]
     clientID = "4fad9f9325f73f2c2891"
