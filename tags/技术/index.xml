@@ -6,8 +6,15 @@
     <description>Recent content in 技术 on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 14 May 2024 00:50:02 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 May 2024 22:22:21 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux学习笔记-24年5月第一组</title>
+      <link>https://looechao.github.io/post/linux-01/</link>
+      <pubDate>Sun, 19 May 2024 15:38:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/linux-01/</guid>
+      <description>Linux基础知识-排版待整理</description>
+    </item>
     <item>
       <title>常用的数据结构和算法</title>
       <link>https://looechao.github.io/post/c-data-structure-algorithm/</link>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on looechao&#39;s blog</title>
+    <link>https://looechao.github.io/tags/linux/</link>
+    <description>Recent content in Linux on looechao&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 19 May 2024 22:22:21 +0800</lastBuildDate>
+    <atom:link href="https://looechao.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux学习笔记-24年5月第一组</title>
+      <link>https://looechao.github.io/post/linux-01/</link>
+      <pubDate>Sun, 19 May 2024 15:38:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/linux-01/</guid>
+      <description>Linux基础知识-排版待整理</description>
+    </item>
+  </channel>
+</rss>
