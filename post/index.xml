@@ -6,7 +6,7 @@
     <description>Recent content in Posts on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 27 May 2024 15:40:01 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 02 Jun 2024 23:10:43 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024第二十一周周报</title>
@@ -252,6 +252,13 @@
       <pubDate>Sun, 03 Mar 2024 21:31:13 +0800</pubDate>
       <guid>https://looechao.github.io/post/quote/</guid>
       <description>偶尔也会想要喝鸡汤</description>
+    </item>
+    <item>
+      <title>2023年的冬天记忆</title>
+      <link>https://looechao.github.io/post/2023-lastweek/</link>
+      <pubDate>Sun, 31 Dec 2023 20:50:13 +2301</pubDate>
+      <guid>https://looechao.github.io/post/2023-lastweek/</guid>
+      <description>心情摇摆的那几天，知己，未来，电影，聊天</description>
     </item>
     <item>
       <title>AuroraAssetEditor使用笔记</title>
