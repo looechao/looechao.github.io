@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>成长 on looechao&#39;s blog</title>
-    <link>https://looechao.github.io/tags/%E6%88%90%E9%95%BF/</link>
+    <link>http://localhost:1313/tags/%E6%88%90%E9%95%BF/</link>
     <description>Recent content in 成长 on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 25 May 2024 17:54:25 +0800</lastBuildDate>
-    <atom:link href="https://looechao.github.io/tags/%E6%88%90%E9%95%BF/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E6%88%90%E9%95%BF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自我规划(定期更新版)</title>
-      <link>https://looechao.github.io/post/to-do-list/</link>
+      <link>http://localhost:1313/post/to-do-list/</link>
       <pubDate>Tue, 02 Apr 2024 21:09:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/to-do-list/</guid>
+      <guid>http://localhost:1313/post/to-do-list/</guid>
       <description>成功的标准交给自己来定义</description>
     </item>
     <item>
       <title>关于内卷的思考</title>
-      <link>https://looechao.github.io/post/involution/</link>
+      <link>http://localhost:1313/post/involution/</link>
       <pubDate>Fri, 15 Mar 2024 20:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/involution/</guid>
+      <guid>http://localhost:1313/post/involution/</guid>
       <description>只许向上爬，不准往下走的竞争</description>
     </item>
     <item>
       <title>做一个乐观的悲观主义者</title>
-      <link>https://looechao.github.io/post/positiveornegative/</link>
+      <link>http://localhost:1313/post/positiveornegative/</link>
       <pubDate>Thu, 14 Mar 2024 08:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/positiveornegative/</guid>
+      <guid>http://localhost:1313/post/positiveornegative/</guid>
       <description>悲观者往往正确 乐观者往往成功</description>
     </item>
     <item>
       <title>写在22岁之前</title>
-      <link>https://looechao.github.io/post/before22/</link>
+      <link>http://localhost:1313/post/before22/</link>
       <pubDate>Wed, 13 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/before22/</guid>
+      <guid>http://localhost:1313/post/before22/</guid>
       <description>黄金时代</description>
     </item>
     <item>
       <title>我的成就清单</title>
-      <link>https://looechao.github.io/post/honor/</link>
+      <link>http://localhost:1313/post/honor/</link>
       <pubDate>Sat, 01 Jan 2022 21:09:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/honor/</guid>
+      <guid>http://localhost:1313/post/honor/</guid>
       <description>A list of my achievements</description>
     </item>
   </channel>

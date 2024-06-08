@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数码 on looechao&#39;s blog</title>
-    <link>https://looechao.github.io/tags/%E6%95%B0%E7%A0%81/</link>
+    <link>http://localhost:1313/tags/%E6%95%B0%E7%A0%81/</link>
     <description>Recent content in 数码 on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 12 Apr 2024 16:14:53 +0800</lastBuildDate>
-    <atom:link href="https://looechao.github.io/tags/%E6%95%B0%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E6%95%B0%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>汇总这些年玩过的有趣的数码产品</title>
-      <link>https://looechao.github.io/post/cooltech/</link>
+      <link>http://localhost:1313/post/cooltech/</link>
       <pubDate>Thu, 11 Apr 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/cooltech/</guid>
+      <guid>http://localhost:1313/post/cooltech/</guid>
       <description>looe&amp;rsquo;s cool digital devices&amp;hellip;</description>
     </item>
     <item>
       <title>AuroraAssetEditor使用笔记</title>
-      <link>https://looechao.github.io/post/xbox360ftp/</link>
+      <link>http://localhost:1313/post/xbox360ftp/</link>
       <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/xbox360ftp/</guid>
+      <guid>http://localhost:1313/post/xbox360ftp/</guid>
       <description>通过FTP编辑xbox360游戏的封面</description>
     </item>
   </channel>
