@@ -11,7 +11,9 @@ tags = [ "周报"]
 
 寒假的主要任务是完成开题报告，但是这几天就应该先爽玩！
 
-今年最意外的经历是跟阿Tao一起跨年，吃了寿司和炸鸡柳，然后一块熬夜看了李安的色戒
+今年最意外的经历是跟阿Tao一起跨年，吃了寿司和炸鸡柳，然后一块熬夜看了李安的色戒，我们最喜欢的梁朝伟的一句台词：
+
+> 我对钻石不感兴趣，我只想看它戴在你的手上
 
 空闲时间就是在聊天聊地，玩黄金矿工和agar，最快乐的几天
 
@@ -79,8 +81,9 @@ tags = [ "周报"]
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">愉快的miner时间，但某人一直抓到TNT</div>
+    padding: 2px;">某人一直抓到TNT</div>
 </center>
 </div>
+
 
 </br>
