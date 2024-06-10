@@ -1,0 +1,58 @@
+baseURL = 'https://looechao.github.io'
+languageCode = 'zh-cn'
+title = "looechao's blog"
+theme= "github-style"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+buildFuture = true
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
+
+[params]
+  author = "Looe"
+  description = "禅与极简生活."
+  github = "looechao"
+  linkedin = "lu-chao-a592a5279"
+  email = "lu.chao.personal@foxmail.com"
+  url = "https://looechao.github.io"
+  keywords = "blog, google analytics"
+  rss = true
+  lastmod = true
+  favicon = "/images/favicon2.png"
+  avatar = "/images/profile.png"
+  headerIcon = "/images/github.png"
+  location = "China"
+  userStatusEmoji = "😋"
+  enableGitalk = true
+  math = true
+  googleAnalytics = "G-T6EYNX397W"
+
+  [frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+  enableGitalk = true
+
+  
+
+  [params.gitalk]
+    clientID = "4fad9f9325f73f2c2891"
+    clientSecret = "109ed02ced3608e776a41f87de4ef9986f5b5fd6"
+    repo = "hugo-comments"
+    owner = "looechao"
+    admin = "looechao"
+    id = "location.pathname"
+    labels = "gitalk"
+    perPage = 50
+    pagerDirection = "last"
+    createIssueManually = true
+    distractionFreeMode = false
