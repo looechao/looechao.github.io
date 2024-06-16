@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网络编程 on looechao&#39;s blog</title>
+    <link>http://localhost:1313/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 网络编程 on looechao&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 16 Jun 2024 17:22:11 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网络编程基础-TCP和UDP通信模型</title>
+      <link>http://localhost:1313/post/linux-network-programming/</link>
+      <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
+      <guid>http://localhost:1313/post/linux-network-programming/</guid>
+      <description>TCP和UDP的通信模型</description>
+    </item>
+  </channel>
+</rss>

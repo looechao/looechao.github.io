@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>生活 on looechao&#39;s blog</title>
-    <link>https://looechao.github.io/tags/%E7%94%9F%E6%B4%BB/</link>
+    <link>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB/</link>
     <description>Recent content in 生活 on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 12 Jun 2024 09:05:39 +0800</lastBuildDate>
-    <atom:link href="https://looechao.github.io/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>汇总这些年玩过的有趣的数码产品</title>
-      <link>https://looechao.github.io/post/cooltech/</link>
+      <link>http://localhost:1313/post/cooltech/</link>
       <pubDate>Thu, 11 Apr 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/cooltech/</guid>
+      <guid>http://localhost:1313/post/cooltech/</guid>
       <description>looe&amp;rsquo;s cool digital devices&amp;hellip;</description>
     </item>
     <item>
       <title>禅与极简生活艺术-阅读笔记</title>
-      <link>https://looechao.github.io/post/zenlife/</link>
+      <link>http://localhost:1313/post/zenlife/</link>
       <pubDate>Fri, 05 Apr 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/zenlife/</guid>
+      <guid>http://localhost:1313/post/zenlife/</guid>
       <description>边读边写边总结</description>
     </item>
     <item>
       <title>做一个乐观的悲观主义者</title>
-      <link>https://looechao.github.io/post/positiveornegative/</link>
+      <link>http://localhost:1313/post/positiveornegative/</link>
       <pubDate>Thu, 14 Mar 2024 08:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/positiveornegative/</guid>
+      <guid>http://localhost:1313/post/positiveornegative/</guid>
       <description>悲观者往往正确 乐观者往往成功</description>
     </item>
     <item>
       <title>写在22岁之前</title>
-      <link>https://looechao.github.io/post/before22/</link>
+      <link>http://localhost:1313/post/before22/</link>
       <pubDate>Wed, 13 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/before22/</guid>
+      <guid>http://localhost:1313/post/before22/</guid>
       <description>黄金时代</description>
     </item>
   </channel>
