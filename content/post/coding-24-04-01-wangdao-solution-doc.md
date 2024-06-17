@@ -1,8 +1,8 @@
 +++
-title = '刷题笔记-24年4月-训练营基础题'
+title = '刷题笔记-24年4月-夏令营基础题'
 date = 2024-04-14T20:25:13+08:00
 draft = false
-summary = "训练营作业P01-P60，C语言和部分C++Primer相关"
+summary = "夏令营作业P01-P60，C语言和部分C++Primer相关"
 tags = [ "刷题", "C/C++"]
 
 +++

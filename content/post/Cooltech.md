@@ -2,6 +2,7 @@
 title = '汇总这些年玩过的有趣的数码产品'
 date = 2024-04-11T21:50:13+08:00
 draft = false
+pin = true
 summary = "looe's cool digital devices..."
 tags = [ "生活",  "数码"]
 +++
