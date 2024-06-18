@@ -45,6 +45,8 @@ summary = "readme"
 ---
 ##### THE END
 ---
+
+
 <p align="right">
-  <a href="https://count.getloli.com/"><img src="https://count.getloli.com/get/@looechao?theme=rule34" style="width:27%;"></a>
+    <img src="https://komarev.com/ghpvc/?username=looechao&color=ff69b4"  style="width:15%;"/>
 </p>

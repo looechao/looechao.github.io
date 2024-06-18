@@ -3,7 +3,7 @@ title = '网络编程基础-TCP和UDP通信模型'
 date = 2024-06-16T15:38:13+08:00
 draft = false
 summary = "TCP和UDP的通信模型"
-tags = [ "技术", "Linux", "网络编程"]
+tags = [ "技术", "Linux", "网络编程", "TCP", "UDP", "即时通信系统"]
 +++
 # TCP 通信
 
@@ -286,7 +286,7 @@ int main(int argc, char* argv[])
 
 # UDP通信
 
-##　UDP鸟瞰图
+## UDP鸟瞰图
 
 ```bash
    客户端           服务端
