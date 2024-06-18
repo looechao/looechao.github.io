@@ -6,13 +6,20 @@
     <description>Recent content in Linux on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 18 Jun 2024 19:59:33 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jun 2024 20:35:37 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>网络编程基础-EPOLL的使用</title>
+      <link>https://looechao.github.io/post/linux-network-programming-02-epoll/</link>
+      <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/linux-network-programming-02-epoll/</guid>
+      <description>用EPOLL代替SELECT</description>
+    </item>
+    <item>
       <title>网络编程基础-TCP和UDP通信模型</title>
-      <link>https://looechao.github.io/post/linux-network-programming/</link>
+      <link>https://looechao.github.io/post/linux-network-programming-01-tcp/</link>
       <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/linux-network-programming/</guid>
+      <guid>https://looechao.github.io/post/linux-network-programming-01-tcp/</guid>
       <description>TCP和UDP的通信模型</description>
     </item>
     <item>
