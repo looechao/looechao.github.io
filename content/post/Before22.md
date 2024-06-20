@@ -12,13 +12,24 @@ tags = [ "生活",  "杂谈", "年度总结", "成长"]
 - 运动量少了很多，长跑只坚持到了五月就停下了
 - 自习室太昏暗，总是视疲劳，近视涨了100度,但是积累了在网上配镜的经验
 #### 心态
+
 </br>
 
-<div style="width: 20%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/goldentime.jpg" style="width: 100%;" />
+<div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/goldentime.jpg" width="30%">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">黄金时代</div>
+</center>
 </div>
 
-</br>
+
+
 </br>
 ”那一天我二十一岁，在我一生的黄金时代。
 我有好多奢望，我想爱，想吃，还想在一瞬间变成天上半明半暗的云。
@@ -64,10 +75,19 @@ tags = [ "生活",  "杂谈", "年度总结", "成长"]
 #### 留张照片
 </br>
 
-<div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/before22.jpg" alt="shotonspf" style="width: 100%;" />
+<div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/before22.jpg" width="50%">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">我的21岁</div>
+</center>
 </div>
 
 </br>
-</br>
+
 感谢阿涛的摄影，真的很棒！
