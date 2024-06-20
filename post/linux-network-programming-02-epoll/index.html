@@ -142,9 +142,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Tue, 18 Jun 2024 20:35:37 &#43;0800"
+                  Modified <relative-time datetime="Thu, 20 Jun 2024 21:10:20 &#43;0800"
                     class="no-wrap">
-                    Tue, 18 Jun 2024 20:35:37 &#43;0800</relative-time>
+                    Thu, 20 Jun 2024 21:10:20 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -174,7 +174,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      2711 Words
+                      2703 Words
                     
 
                   </div>
@@ -248,7 +248,7 @@
 <li>监听和就绪耦合</li>
 <li>fd_set固定了大小为1024，不方便更改</li>
 <li>每次调用select，都要把fd_set从用户态换成内核态，资源开销很大</li>
-<li>**就绪机制不合理：**轮询机制是用户层面的，在海量连接的状态下表现很差（海量连接，少量就绪）</li>
+<li><strong>就绪机制不合理</strong>：轮询机制是用户层面的，在海量连接的状态下表现很差（海量连接，少量就绪）</li>
 </ul>
 <p>由以上缺陷可以引出了EPOLL，它解决了select的缺点，效率是十分高的，E for event, poll means 轮询，Epoll只用处理就绪的实践，<strong>只有Linux支持Epoll</strong>,mac和windows平台使用其他的多路复用</p>
 <h2 id="操作流程">操作流程</h2>
@@ -284,7 +284,7 @@
 </li>
 <li>
 <p>epoll_wait 陷入等待，类比select</p>
-<p>**注意：**要先准备好一个epoll_event数组来保存就绪事件，返回值是event的长度</p>
+<p><strong>注意</strong>：要先准备好一个epoll_event数组来保存就绪事件，返回值是event的长度</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">                 <span class="err">文件对象</span>                   <span class="n">events数组</span>     <span class="err">数组长度</span>      <span class="err">超时时间</span>
 </span></span><span class="line"><span class="cl">                    <span class="o">|</span>                          <span class="o">|</span>           <span class="o">|</span>             <span class="o">|</span>     
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">epoll_wait</span><span class="p">(</span><span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="k">struct</span> <span class="n">epoll_event</span> <span class="o">*</span><span class="n">events</span><span class="p">,</span><span class="kt">int</span> <span class="n">maxevents</span><span class="p">,</span> <span class="kt">int</span> <span class="n">timeout</span><span class="p">);</span>
