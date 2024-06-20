@@ -2,8 +2,8 @@
 title = '2023年的冬天记忆'
 date = 2023-12-31T20:50:13+23:01
 draft = false
-summary = "心情摇摆的那几天，知己，未来，电影，聊天"
-tags = [ "周报"]
+summary = "轻松愉悦的那几天，知己，未来，电影，聊天"
+tags = [ "周报", "肖洪涛"]
 
 +++
 
@@ -27,12 +27,13 @@ tags = [ "周报"]
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-4.jpg" width="50%">
     <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">熟悉的路</div>
+    padding: 2px;">走过无数遍的路</div>
 </center>
 </div>
+
 
 </br>
 
@@ -44,12 +45,13 @@ tags = [ "周报"]
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-1.jpg" width="50%">
     <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">My setup</div>
+    padding: 2px;">惬意时刻</div>
 </center>
 </div>
+
 
 </br>
 
@@ -61,10 +63,10 @@ tags = [ "周报"]
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-2.jpg" width="50%">
     <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">ometv</div>
+    padding: 2px;">最近很流行的Omegle</div>
 </center>
 </div>
 
@@ -78,12 +80,13 @@ tags = [ "周报"]
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-3.jpg" width="50%">
     <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">某人一直抓到TNT</div>
+    padding: 2px;">黄金矿工😋</div>
 </center>
 </div>
+
 
 
 </br>
