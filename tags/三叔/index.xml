@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>三叔 on looechao&#39;s blog</title>
-    <link>http://localhost:1313/tags/%E4%B8%89%E5%8F%94/</link>
+    <link>https://looechao.github.io/tags/%E4%B8%89%E5%8F%94/</link>
     <description>Recent content in 三叔 on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 20 Jun 2024 21:40:01 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E4%B8%89%E5%8F%94/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://looechao.github.io/tags/%E4%B8%89%E5%8F%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024第23周周报</title>
-      <link>http://localhost:1313/post/2024-week23/</link>
+      <link>https://looechao.github.io/post/2024-week23/</link>
       <pubDate>Sun, 09 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/post/2024-week23/</guid>
+      <guid>https://looechao.github.io/post/2024-week23/</guid>
       <description>勇气与爱</description>
     </item>
     <item>
       <title>2024第十12周周报</title>
-      <link>http://localhost:1313/post/2024-week12/</link>
+      <link>https://looechao.github.io/post/2024-week12/</link>
       <pubDate>Sun, 24 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024-week12/</guid>
+      <guid>https://looechao.github.io/post/2024-week12/</guid>
       <description>尘埃落定，步履不停</description>
     </item>
   </channel>

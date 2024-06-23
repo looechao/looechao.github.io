@@ -2,234 +2,234 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on looechao&#39;s blog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://looechao.github.io/tags/</link>
     <description>Recent content in Tags on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 20 Jun 2024 21:53:14 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://looechao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EPOLL</title>
-      <link>http://localhost:1313/tags/epoll/</link>
+      <link>https://looechao.github.io/tags/epoll/</link>
       <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/epoll/</guid>
+      <guid>https://looechao.github.io/tags/epoll/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://looechao.github.io/tags/linux/</link>
       <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://looechao.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>SELECT</title>
-      <link>http://localhost:1313/tags/select/</link>
+      <link>https://looechao.github.io/tags/select/</link>
       <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/select/</guid>
+      <guid>https://looechao.github.io/tags/select/</guid>
       <description></description>
     </item>
     <item>
       <title>技术</title>
-      <link>http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/</link>
+      <link>https://looechao.github.io/tags/%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/</guid>
+      <guid>https://looechao.github.io/tags/%E6%8A%80%E6%9C%AF/</guid>
       <description></description>
     </item>
     <item>
       <title>海量连接处理</title>
-      <link>http://localhost:1313/tags/%E6%B5%B7%E9%87%8F%E8%BF%9E%E6%8E%A5%E5%A4%84%E7%90%86/</link>
+      <link>https://looechao.github.io/tags/%E6%B5%B7%E9%87%8F%E8%BF%9E%E6%8E%A5%E5%A4%84%E7%90%86/</link>
       <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%B5%B7%E9%87%8F%E8%BF%9E%E6%8E%A5%E5%A4%84%E7%90%86/</guid>
+      <guid>https://looechao.github.io/tags/%E6%B5%B7%E9%87%8F%E8%BF%9E%E6%8E%A5%E5%A4%84%E7%90%86/</guid>
       <description></description>
     </item>
     <item>
       <title>网络编程</title>
-      <link>http://localhost:1313/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</link>
+      <link>https://looechao.github.io/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</link>
       <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</guid>
+      <guid>https://looechao.github.io/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</guid>
       <description></description>
     </item>
     <item>
       <title>TCP</title>
-      <link>http://localhost:1313/tags/tcp/</link>
+      <link>https://looechao.github.io/tags/tcp/</link>
       <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/tcp/</guid>
+      <guid>https://looechao.github.io/tags/tcp/</guid>
       <description></description>
     </item>
     <item>
       <title>UDP</title>
-      <link>http://localhost:1313/tags/udp/</link>
+      <link>https://looechao.github.io/tags/udp/</link>
       <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/udp/</guid>
+      <guid>https://looechao.github.io/tags/udp/</guid>
       <description></description>
     </item>
     <item>
       <title>即时通信系统</title>
-      <link>http://localhost:1313/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://looechao.github.io/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://looechao.github.io/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/</guid>
       <description></description>
     </item>
     <item>
       <title>三叔</title>
-      <link>http://localhost:1313/tags/%E4%B8%89%E5%8F%94/</link>
+      <link>https://looechao.github.io/tags/%E4%B8%89%E5%8F%94/</link>
       <pubDate>Sun, 09 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/tags/%E4%B8%89%E5%8F%94/</guid>
+      <guid>https://looechao.github.io/tags/%E4%B8%89%E5%8F%94/</guid>
       <description></description>
     </item>
     <item>
       <title>周报</title>
-      <link>http://localhost:1313/tags/%E5%91%A8%E6%8A%A5/</link>
+      <link>https://looechao.github.io/tags/%E5%91%A8%E6%8A%A5/</link>
       <pubDate>Sun, 09 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/tags/%E5%91%A8%E6%8A%A5/</guid>
+      <guid>https://looechao.github.io/tags/%E5%91%A8%E6%8A%A5/</guid>
       <description></description>
     </item>
     <item>
       <title>夏夜约会</title>
-      <link>http://localhost:1313/tags/%E5%A4%8F%E5%A4%9C%E7%BA%A6%E4%BC%9A/</link>
+      <link>https://looechao.github.io/tags/%E5%A4%8F%E5%A4%9C%E7%BA%A6%E4%BC%9A/</link>
       <pubDate>Sun, 02 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/tags/%E5%A4%8F%E5%A4%9C%E7%BA%A6%E4%BC%9A/</guid>
+      <guid>https://looechao.github.io/tags/%E5%A4%8F%E5%A4%9C%E7%BA%A6%E4%BC%9A/</guid>
       <description></description>
     </item>
     <item>
       <title>毕业季</title>
-      <link>http://localhost:1313/tags/%E6%AF%95%E4%B8%9A%E5%AD%A3/</link>
+      <link>https://looechao.github.io/tags/%E6%AF%95%E4%B8%9A%E5%AD%A3/</link>
       <pubDate>Sun, 02 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/tags/%E6%AF%95%E4%B8%9A%E5%AD%A3/</guid>
+      <guid>https://looechao.github.io/tags/%E6%AF%95%E4%B8%9A%E5%AD%A3/</guid>
       <description></description>
     </item>
     <item>
       <title>返校</title>
-      <link>http://localhost:1313/tags/%E8%BF%94%E6%A0%A1/</link>
+      <link>https://looechao.github.io/tags/%E8%BF%94%E6%A0%A1/</link>
       <pubDate>Sun, 26 May 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/tags/%E8%BF%94%E6%A0%A1/</guid>
+      <guid>https://looechao.github.io/tags/%E8%BF%94%E6%A0%A1/</guid>
       <description></description>
     </item>
     <item>
       <title>轻食店</title>
-      <link>http://localhost:1313/tags/%E8%BD%BB%E9%A3%9F%E5%BA%97/</link>
+      <link>https://looechao.github.io/tags/%E8%BD%BB%E9%A3%9F%E5%BA%97/</link>
       <pubDate>Sun, 19 May 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/tags/%E8%BD%BB%E9%A3%9F%E5%BA%97/</guid>
+      <guid>https://looechao.github.io/tags/%E8%BD%BB%E9%A3%9F%E5%BA%97/</guid>
       <description></description>
     </item>
     <item>
       <title>C/C&#43;&#43;</title>
-      <link>http://localhost:1313/tags/c/c&#43;&#43;/</link>
+      <link>https://looechao.github.io/tags/c/c&#43;&#43;/</link>
       <pubDate>Fri, 10 May 2024 22:53:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/c/c&#43;&#43;/</guid>
+      <guid>https://looechao.github.io/tags/c/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
       <title>刷题</title>
-      <link>http://localhost:1313/tags/%E5%88%B7%E9%A2%98/</link>
+      <link>https://looechao.github.io/tags/%E5%88%B7%E9%A2%98/</link>
       <pubDate>Tue, 23 Apr 2024 20:25:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E5%88%B7%E9%A2%98/</guid>
+      <guid>https://looechao.github.io/tags/%E5%88%B7%E9%A2%98/</guid>
       <description></description>
     </item>
     <item>
       <title>数码</title>
-      <link>http://localhost:1313/tags/%E6%95%B0%E7%A0%81/</link>
+      <link>https://looechao.github.io/tags/%E6%95%B0%E7%A0%81/</link>
       <pubDate>Thu, 11 Apr 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%95%B0%E7%A0%81/</guid>
+      <guid>https://looechao.github.io/tags/%E6%95%B0%E7%A0%81/</guid>
       <description></description>
     </item>
     <item>
       <title>生活</title>
-      <link>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB/</link>
+      <link>https://looechao.github.io/tags/%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Thu, 11 Apr 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB/</guid>
+      <guid>https://looechao.github.io/tags/%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
     <item>
       <title>ArchLinux</title>
-      <link>http://localhost:1313/tags/archlinux/</link>
+      <link>https://looechao.github.io/tags/archlinux/</link>
       <pubDate>Sun, 07 Apr 2024 20:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/archlinux/</guid>
+      <guid>https://looechao.github.io/tags/archlinux/</guid>
       <description></description>
     </item>
     <item>
       <title>阅读</title>
-      <link>http://localhost:1313/tags/%E9%98%85%E8%AF%BB/</link>
+      <link>https://looechao.github.io/tags/%E9%98%85%E8%AF%BB/</link>
       <pubDate>Fri, 05 Apr 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E9%98%85%E8%AF%BB/</guid>
+      <guid>https://looechao.github.io/tags/%E9%98%85%E8%AF%BB/</guid>
       <description></description>
     </item>
     <item>
       <title>成长</title>
-      <link>http://localhost:1313/tags/%E6%88%90%E9%95%BF/</link>
+      <link>https://looechao.github.io/tags/%E6%88%90%E9%95%BF/</link>
       <pubDate>Tue, 02 Apr 2024 21:09:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%88%90%E9%95%BF/</guid>
+      <guid>https://looechao.github.io/tags/%E6%88%90%E9%95%BF/</guid>
       <description></description>
     </item>
     <item>
       <title>规划</title>
-      <link>http://localhost:1313/tags/%E8%A7%84%E5%88%92/</link>
+      <link>https://looechao.github.io/tags/%E8%A7%84%E5%88%92/</link>
       <pubDate>Tue, 02 Apr 2024 21:09:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E8%A7%84%E5%88%92/</guid>
+      <guid>https://looechao.github.io/tags/%E8%A7%84%E5%88%92/</guid>
       <description></description>
     </item>
     <item>
       <title>樱花节</title>
-      <link>http://localhost:1313/tags/%E6%A8%B1%E8%8A%B1%E8%8A%82/</link>
+      <link>https://looechao.github.io/tags/%E6%A8%B1%E8%8A%B1%E8%8A%82/</link>
       <pubDate>Sun, 31 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%A8%B1%E8%8A%B1%E8%8A%82/</guid>
+      <guid>https://looechao.github.io/tags/%E6%A8%B1%E8%8A%B1%E8%8A%82/</guid>
       <description></description>
     </item>
     <item>
       <title>笔记</title>
-      <link>http://localhost:1313/tags/%E7%AC%94%E8%AE%B0/</link>
+      <link>https://looechao.github.io/tags/%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Tue, 19 Mar 2024 14:40:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://looechao.github.io/tags/%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
     <item>
       <title>杂谈</title>
-      <link>http://localhost:1313/tags/%E6%9D%82%E8%B0%88/</link>
+      <link>https://looechao.github.io/tags/%E6%9D%82%E8%B0%88/</link>
       <pubDate>Fri, 15 Mar 2024 20:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E6%9D%82%E8%B0%88/</guid>
+      <guid>https://looechao.github.io/tags/%E6%9D%82%E8%B0%88/</guid>
       <description></description>
     </item>
     <item>
       <title>年度总结</title>
-      <link>http://localhost:1313/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
+      <link>https://looechao.github.io/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
       <pubDate>Wed, 13 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://looechao.github.io/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
       <description></description>
     </item>
     <item>
       <title>哲理</title>
-      <link>http://localhost:1313/tags/%E5%93%B2%E7%90%86/</link>
+      <link>https://looechao.github.io/tags/%E5%93%B2%E7%90%86/</link>
       <pubDate>Sun, 03 Mar 2024 21:31:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E5%93%B2%E7%90%86/</guid>
+      <guid>https://looechao.github.io/tags/%E5%93%B2%E7%90%86/</guid>
       <description></description>
     </item>
     <item>
       <title>肖洪涛</title>
-      <link>http://localhost:1313/tags/%E8%82%96%E6%B4%AA%E6%B6%9B/</link>
+      <link>https://looechao.github.io/tags/%E8%82%96%E6%B4%AA%E6%B6%9B/</link>
       <pubDate>Sun, 31 Dec 2023 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/tags/%E8%82%96%E6%B4%AA%E6%B6%9B/</guid>
+      <guid>https://looechao.github.io/tags/%E8%82%96%E6%B4%AA%E6%B6%9B/</guid>
       <description></description>
     </item>
     <item>
       <title>Hexo</title>
-      <link>http://localhost:1313/tags/hexo/</link>
+      <link>https://looechao.github.io/tags/hexo/</link>
       <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/hexo/</guid>
+      <guid>https://looechao.github.io/tags/hexo/</guid>
       <description></description>
     </item>
     <item>
       <title>Xbox360</title>
-      <link>http://localhost:1313/tags/xbox360/</link>
+      <link>https://looechao.github.io/tags/xbox360/</link>
       <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/xbox360/</guid>
+      <guid>https://looechao.github.io/tags/xbox360/</guid>
       <description></description>
     </item>
     <item>
       <title>工具</title>
-      <link>http://localhost:1313/tags/%E5%B7%A5%E5%85%B7/</link>
+      <link>https://looechao.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E5%B7%A5%E5%85%B7/</guid>
+      <guid>https://looechao.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
   </channel>

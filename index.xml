@@ -2,318 +2,318 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>looechao&#39;s blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://looechao.github.io/</link>
     <description>Recent content on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 20 Jun 2024 21:53:14 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://looechao.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网络编程基础-EPOLL的使用</title>
-      <link>http://localhost:1313/post/linux-network-programming-02-epoll/</link>
+      <link>https://looechao.github.io/post/linux-network-programming-02-epoll/</link>
       <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/linux-network-programming-02-epoll/</guid>
+      <guid>https://looechao.github.io/post/linux-network-programming-02-epoll/</guid>
       <description>用EPOLL代替SELECT</description>
     </item>
     <item>
       <title>网络编程基础-TCP和UDP通信模型</title>
-      <link>http://localhost:1313/post/linux-network-programming-01-tcp/</link>
+      <link>https://looechao.github.io/post/linux-network-programming-01-tcp/</link>
       <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/linux-network-programming-01-tcp/</guid>
+      <guid>https://looechao.github.io/post/linux-network-programming-01-tcp/</guid>
       <description>TCP和UDP的通信模型</description>
     </item>
     <item>
       <title>2024第23周周报</title>
-      <link>http://localhost:1313/post/2024-week23/</link>
+      <link>https://looechao.github.io/post/2024-week23/</link>
       <pubDate>Sun, 09 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/post/2024-week23/</guid>
+      <guid>https://looechao.github.io/post/2024-week23/</guid>
       <description>勇气与爱</description>
     </item>
     <item>
       <title>2024第22周周报</title>
-      <link>http://localhost:1313/post/2024-week22/</link>
+      <link>https://looechao.github.io/post/2024-week22/</link>
       <pubDate>Sun, 02 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/post/2024-week22/</guid>
+      <guid>https://looechao.github.io/post/2024-week22/</guid>
       <description>诗酒趁年华</description>
     </item>
     <item>
       <title>2024第21周周报</title>
-      <link>http://localhost:1313/post/2024-week21/</link>
+      <link>https://looechao.github.io/post/2024-week21/</link>
       <pubDate>Sun, 26 May 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/post/2024-week21/</guid>
+      <guid>https://looechao.github.io/post/2024-week21/</guid>
       <description>所有因为顾虑不敢做的事，将来只会顾虑更多</description>
     </item>
     <item>
       <title>2024第20周周报</title>
-      <link>http://localhost:1313/post/2024-week20/</link>
+      <link>https://looechao.github.io/post/2024-week20/</link>
       <pubDate>Sun, 19 May 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/post/2024-week20/</guid>
+      <guid>https://looechao.github.io/post/2024-week20/</guid>
       <description>用肌肉记忆做事情更加的省精力</description>
     </item>
     <item>
       <title>Linux学习笔记-24年5月第一组</title>
-      <link>http://localhost:1313/post/linux-01/</link>
+      <link>https://looechao.github.io/post/linux-01/</link>
       <pubDate>Sat, 18 May 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/linux-01/</guid>
+      <guid>https://looechao.github.io/post/linux-01/</guid>
       <description>Linux基础知识-排版待整理</description>
     </item>
     <item>
       <title>2024年第19周周报</title>
-      <link>http://localhost:1313/post/2024-week19/</link>
+      <link>https://looechao.github.io/post/2024-week19/</link>
       <pubDate>Sun, 12 May 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/post/2024-week19/</guid>
+      <guid>https://looechao.github.io/post/2024-week19/</guid>
       <description>脏水也可以洗身</description>
     </item>
     <item>
       <title>常用的数据结构和算法</title>
-      <link>http://localhost:1313/post/c-data-structure-algorithm/</link>
+      <link>https://looechao.github.io/post/c-data-structure-algorithm/</link>
       <pubDate>Fri, 10 May 2024 22:53:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/c-data-structure-algorithm/</guid>
+      <guid>https://looechao.github.io/post/c-data-structure-algorithm/</guid>
       <description>动态数组，链表，栈，队列，哈希表，位图，二叉树，排序，二分查找</description>
     </item>
     <item>
       <title>2024第18周周报</title>
-      <link>http://localhost:1313/post/2024-week18/</link>
+      <link>https://looechao.github.io/post/2024-week18/</link>
       <pubDate>Sun, 05 May 2024 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/post/2024-week18/</guid>
+      <guid>https://looechao.github.io/post/2024-week18/</guid>
       <description>被恐惧愧疚羞耻裹挟着的人，是很难体验到什么叫全力以赴</description>
     </item>
     <item>
       <title>C语言学习笔记-24年4月第二组</title>
-      <link>http://localhost:1313/post/c-notes-02/</link>
+      <link>https://looechao.github.io/post/c-notes-02/</link>
       <pubDate>Fri, 03 May 2024 15:38:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/c-notes-02/</guid>
+      <guid>https://looechao.github.io/post/c-notes-02/</guid>
       <description>指针及相关应用</description>
     </item>
     <item>
       <title>C语言学习笔记-24年4月第一组</title>
-      <link>http://localhost:1313/post/c-notes-01/</link>
+      <link>https://looechao.github.io/post/c-notes-01/</link>
       <pubDate>Sun, 28 Apr 2024 22:53:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/c-notes-01/</guid>
+      <guid>https://looechao.github.io/post/c-notes-01/</guid>
       <description>类型，表达式，语句，数组，函数</description>
     </item>
     <item>
       <title>2024第17周周报</title>
-      <link>http://localhost:1313/post/2024-week17/</link>
+      <link>https://looechao.github.io/post/2024-week17/</link>
       <pubDate>Sun, 28 Apr 2024 20:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024-week17/</guid>
+      <guid>https://looechao.github.io/post/2024-week17/</guid>
       <description>充实的一星期</description>
     </item>
     <item>
       <title>C语言中的六种位运算符</title>
-      <link>http://localhost:1313/post/bitwise-operators/</link>
+      <link>https://looechao.github.io/post/bitwise-operators/</link>
       <pubDate>Wed, 24 Apr 2024 21:09:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/bitwise-operators/</guid>
+      <guid>https://looechao.github.io/post/bitwise-operators/</guid>
       <description>应用场景小总结</description>
     </item>
     <item>
       <title>刷题笔记-24年4月-第二组</title>
-      <link>http://localhost:1313/post/coding-24-04-02-leetcode-solution-doc/</link>
+      <link>https://looechao.github.io/post/coding-24-04-02-leetcode-solution-doc/</link>
       <pubDate>Tue, 23 Apr 2024 20:25:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/coding-24-04-02-leetcode-solution-doc/</guid>
+      <guid>https://looechao.github.io/post/coding-24-04-02-leetcode-solution-doc/</guid>
       <description>leetcode刷题笔记</description>
     </item>
     <item>
       <title>2024第16周周报</title>
-      <link>http://localhost:1313/post/2024-week16/</link>
+      <link>https://looechao.github.io/post/2024-week16/</link>
       <pubDate>Sun, 21 Apr 2024 20:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024-week16/</guid>
+      <guid>https://looechao.github.io/post/2024-week16/</guid>
       <description>四月中下旬开启的新篇章</description>
     </item>
     <item>
       <title>2024第15周周报</title>
-      <link>http://localhost:1313/post/2024-week15/</link>
+      <link>https://looechao.github.io/post/2024-week15/</link>
       <pubDate>Sun, 14 Apr 2024 20:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024-week15/</guid>
+      <guid>https://looechao.github.io/post/2024-week15/</guid>
       <description>DDL提高不了任务完成的质量，只会增加提交一堆Trash的勇气</description>
     </item>
     <item>
       <title>刷题笔记-24年4月-夏令营基础题</title>
-      <link>http://localhost:1313/post/coding-24-04-01-wangdao-solution-doc/</link>
+      <link>https://looechao.github.io/post/coding-24-04-01-wangdao-solution-doc/</link>
       <pubDate>Sun, 14 Apr 2024 20:25:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/coding-24-04-01-wangdao-solution-doc/</guid>
+      <guid>https://looechao.github.io/post/coding-24-04-01-wangdao-solution-doc/</guid>
       <description>夏令营作业P01-P60，C语言和部分C++Primer相关</description>
     </item>
     <item>
       <title>时代的眼泪</title>
-      <link>http://localhost:1313/post/cooltech/</link>
+      <link>https://looechao.github.io/post/cooltech/</link>
       <pubDate>Thu, 11 Apr 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/cooltech/</guid>
+      <guid>https://looechao.github.io/post/cooltech/</guid>
       <description>looe&amp;rsquo;s cool digital devices&amp;hellip;</description>
     </item>
     <item>
       <title>2024第14周周报</title>
-      <link>http://localhost:1313/post/2024-week14/</link>
+      <link>https://looechao.github.io/post/2024-week14/</link>
       <pubDate>Sun, 07 Apr 2024 20:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024-week14/</guid>
+      <guid>https://looechao.github.io/post/2024-week14/</guid>
       <description>有点手忙脚乱的一周</description>
     </item>
     <item>
       <title>禅与极简生活艺术-阅读笔记</title>
-      <link>http://localhost:1313/post/zenlife/</link>
+      <link>https://looechao.github.io/post/zenlife/</link>
       <pubDate>Fri, 05 Apr 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/zenlife/</guid>
+      <guid>https://looechao.github.io/post/zenlife/</guid>
       <description>边读边写边总结</description>
     </item>
     <item>
       <title>自我规划(定期更新版)</title>
-      <link>http://localhost:1313/post/to-do-list/</link>
+      <link>https://looechao.github.io/post/to-do-list/</link>
       <pubDate>Tue, 02 Apr 2024 21:09:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/to-do-list/</guid>
+      <guid>https://looechao.github.io/post/to-do-list/</guid>
       <description>成功的标准交给自己来定义</description>
     </item>
     <item>
       <title>2024第13周周报</title>
-      <link>http://localhost:1313/post/2024-week13/</link>
+      <link>https://looechao.github.io/post/2024-week13/</link>
       <pubDate>Sun, 31 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024-week13/</guid>
+      <guid>https://looechao.github.io/post/2024-week13/</guid>
       <description>你好，四月</description>
     </item>
     <item>
       <title>2024第十12周周报</title>
-      <link>http://localhost:1313/post/2024-week12/</link>
+      <link>https://looechao.github.io/post/2024-week12/</link>
       <pubDate>Sun, 24 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024-week12/</guid>
+      <guid>https://looechao.github.io/post/2024-week12/</guid>
       <description>尘埃落定，步履不停</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第八组</title>
-      <link>http://localhost:1313/post/coding-24-03-08/</link>
+      <link>https://looechao.github.io/post/coding-24-03-08/</link>
       <pubDate>Thu, 21 Mar 2024 10:25:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/coding-24-03-08/</guid>
+      <guid>https://looechao.github.io/post/coding-24-03-08/</guid>
       <description>洛谷入门题库P2955-P4327</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第七组</title>
-      <link>http://localhost:1313/post/coding-24-03-07/</link>
+      <link>https://looechao.github.io/post/coding-24-03-07/</link>
       <pubDate>Wed, 20 Mar 2024 16:30:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/coding-24-03-07/</guid>
+      <guid>https://looechao.github.io/post/coding-24-03-07/</guid>
       <description>洛谷入门题库P2550-P2911</description>
     </item>
     <item>
       <title>用Powershell直接安装MicrosoftStore的应用</title>
-      <link>http://localhost:1313/post/msstore/</link>
+      <link>https://looechao.github.io/post/msstore/</link>
       <pubDate>Tue, 19 Mar 2024 14:40:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/msstore/</guid>
+      <guid>https://looechao.github.io/post/msstore/</guid>
       <description>没有商店也可以安装应用</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第六组</title>
-      <link>http://localhost:1313/post/coding-24-03-06/</link>
+      <link>https://looechao.github.io/post/coding-24-03-06/</link>
       <pubDate>Mon, 18 Mar 2024 17:35:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/coding-24-03-06/</guid>
+      <guid>https://looechao.github.io/post/coding-24-03-06/</guid>
       <description>洛谷入门题库P1914-P2525</description>
     </item>
     <item>
       <title>2024第11周周报</title>
-      <link>http://localhost:1313/post/2024-week11/</link>
+      <link>https://looechao.github.io/post/2024-week11/</link>
       <pubDate>Sun, 17 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024-week11/</guid>
+      <guid>https://looechao.github.io/post/2024-week11/</guid>
       <description>阴雨绵绵的三月&amp;hellip;</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第五组</title>
-      <link>http://localhost:1313/post/coding-24-03-05/</link>
+      <link>https://looechao.github.io/post/coding-24-03-05/</link>
       <pubDate>Sun, 17 Mar 2024 11:28:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/coding-24-03-05/</guid>
+      <guid>https://looechao.github.io/post/coding-24-03-05/</guid>
       <description>洛谷入门题库P1789-P1909</description>
     </item>
     <item>
       <title>关于内卷的思考</title>
-      <link>http://localhost:1313/post/involution/</link>
+      <link>https://looechao.github.io/post/involution/</link>
       <pubDate>Fri, 15 Mar 2024 20:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/involution/</guid>
+      <guid>https://looechao.github.io/post/involution/</guid>
       <description>只许向上爬，不准往下走的竞争</description>
     </item>
     <item>
       <title>做一个乐观的悲观主义者</title>
-      <link>http://localhost:1313/post/positiveornegative/</link>
+      <link>https://looechao.github.io/post/positiveornegative/</link>
       <pubDate>Thu, 14 Mar 2024 08:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/positiveornegative/</guid>
+      <guid>https://looechao.github.io/post/positiveornegative/</guid>
       <description>悲观者往往正确 乐观者往往成功</description>
     </item>
     <item>
       <title>写在22岁之前</title>
-      <link>http://localhost:1313/post/before22/</link>
+      <link>https://looechao.github.io/post/before22/</link>
       <pubDate>Wed, 13 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/before22/</guid>
+      <guid>https://looechao.github.io/post/before22/</guid>
       <description>黄金时代</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第四组</title>
-      <link>http://localhost:1313/post/coding-24-03-04/</link>
+      <link>https://looechao.github.io/post/coding-24-03-04/</link>
       <pubDate>Tue, 12 Mar 2024 14:57:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/coding-24-03-04/</guid>
+      <guid>https://looechao.github.io/post/coding-24-03-04/</guid>
       <description>洛谷入门题库P1597-P1765</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第三组</title>
-      <link>http://localhost:1313/post/coding-24-03-03/</link>
+      <link>https://looechao.github.io/post/coding-24-03-03/</link>
       <pubDate>Mon, 11 Mar 2024 14:57:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/coding-24-03-03/</guid>
+      <guid>https://looechao.github.io/post/coding-24-03-03/</guid>
       <description>洛谷入门题库P1424-P1567</description>
     </item>
     <item>
       <title>2024第10周周报</title>
-      <link>http://localhost:1313/post/2024-week10/</link>
+      <link>https://looechao.github.io/post/2024-week10/</link>
       <pubDate>Sun, 10 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024-week10/</guid>
+      <guid>https://looechao.github.io/post/2024-week10/</guid>
       <description>你好呀！三月！</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第二组</title>
-      <link>http://localhost:1313/post/coding-24-03-02/</link>
+      <link>https://looechao.github.io/post/coding-24-03-02/</link>
       <pubDate>Sun, 10 Mar 2024 15:53:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/coding-24-03-02/</guid>
+      <guid>https://looechao.github.io/post/coding-24-03-02/</guid>
       <description>洛谷入门题库p1307-p1423</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第一组</title>
-      <link>http://localhost:1313/post/coding-24-03-01/</link>
+      <link>https://looechao.github.io/post/coding-24-03-01/</link>
       <pubDate>Thu, 07 Mar 2024 14:57:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/coding-24-03-01/</guid>
+      <guid>https://looechao.github.io/post/coding-24-03-01/</guid>
       <description>洛谷入门题库p1047-p1304</description>
     </item>
     <item>
       <title>哲理名句收集</title>
-      <link>http://localhost:1313/post/quote/</link>
+      <link>https://looechao.github.io/post/quote/</link>
       <pubDate>Sun, 03 Mar 2024 21:31:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/quote/</guid>
+      <guid>https://looechao.github.io/post/quote/</guid>
       <description>偶尔也会想要喝鸡汤</description>
     </item>
     <item>
       <title>2023年的冬天记忆</title>
-      <link>http://localhost:1313/post/2023-lastweek/</link>
+      <link>https://looechao.github.io/post/2023-lastweek/</link>
       <pubDate>Sun, 31 Dec 2023 20:50:13 +2301</pubDate>
-      <guid>http://localhost:1313/post/2023-lastweek/</guid>
+      <guid>https://looechao.github.io/post/2023-lastweek/</guid>
       <description>轻松愉悦的那几天，知己，未来，电影，聊天</description>
     </item>
     <item>
       <title>AuroraAssetEditor使用笔记</title>
-      <link>http://localhost:1313/post/xbox360ftp/</link>
+      <link>https://looechao.github.io/post/xbox360ftp/</link>
       <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/xbox360ftp/</guid>
+      <guid>https://looechao.github.io/post/xbox360ftp/</guid>
       <description>通过FTP编辑xbox360游戏的封面</description>
     </item>
     <item>
       <title>Hexo框架的博客搭建笔记</title>
-      <link>http://localhost:1313/post/hexo-note/</link>
+      <link>https://looechao.github.io/post/hexo-note/</link>
       <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/hexo-note/</guid>
+      <guid>https://looechao.github.io/post/hexo-note/</guid>
       <description>第一次尝试建立hexo框架的站点</description>
     </item>
     <item>
       <title>我的成就清单</title>
-      <link>http://localhost:1313/post/honor/</link>
+      <link>https://looechao.github.io/post/honor/</link>
       <pubDate>Sat, 01 Jan 2022 21:09:13 +0800</pubDate>
-      <guid>http://localhost:1313/post/honor/</guid>
+      <guid>https://looechao.github.io/post/honor/</guid>
       <description>A list of my achievements</description>
     </item>
     <item>
       <title>readme文档</title>
-      <link>http://localhost:1313/readme/</link>
+      <link>https://looechao.github.io/readme/</link>
       <pubDate>Tue, 10 Mar 1970 21:50:13 +0800</pubDate>
-      <guid>http://localhost:1313/readme/</guid>
+      <guid>https://looechao.github.io/readme/</guid>
       <description>readme</description>
     </item>
   </channel>
