@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TCP on looechao&#39;s blog</title>
-    <link>https://looechao.github.io/tags/tcp/</link>
+    <link>http://localhost:1313/tags/tcp/</link>
     <description>Recent content in TCP on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 18 Jun 2024 20:32:48 +0800</lastBuildDate>
-    <atom:link href="https://looechao.github.io/tags/tcp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/tcp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网络编程基础-TCP和UDP通信模型</title>
-      <link>https://looechao.github.io/post/linux-network-programming-01-tcp/</link>
+      <link>http://localhost:1313/post/linux-network-programming-01-tcp/</link>
       <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/linux-network-programming-01-tcp/</guid>
+      <guid>http://localhost:1313/post/linux-network-programming-01-tcp/</guid>
       <description>TCP和UDP的通信模型</description>
     </item>
   </channel>

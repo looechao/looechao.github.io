@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on looechao&#39;s blog</title>
-    <link>https://looechao.github.io/tags/linux/</link>
+    <link>http://localhost:1313/tags/linux/</link>
     <description>Recent content in Linux on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 20 Jun 2024 21:10:20 +0800</lastBuildDate>
-    <atom:link href="https://looechao.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网络编程基础-EPOLL的使用</title>
-      <link>https://looechao.github.io/post/linux-network-programming-02-epoll/</link>
+      <link>http://localhost:1313/post/linux-network-programming-02-epoll/</link>
       <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/linux-network-programming-02-epoll/</guid>
+      <guid>http://localhost:1313/post/linux-network-programming-02-epoll/</guid>
       <description>用EPOLL代替SELECT</description>
     </item>
     <item>
       <title>网络编程基础-TCP和UDP通信模型</title>
-      <link>https://looechao.github.io/post/linux-network-programming-01-tcp/</link>
+      <link>http://localhost:1313/post/linux-network-programming-01-tcp/</link>
       <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/linux-network-programming-01-tcp/</guid>
+      <guid>http://localhost:1313/post/linux-network-programming-01-tcp/</guid>
       <description>TCP和UDP的通信模型</description>
     </item>
     <item>
       <title>Linux学习笔记-24年5月第一组</title>
-      <link>https://looechao.github.io/post/linux-01/</link>
+      <link>http://localhost:1313/post/linux-01/</link>
       <pubDate>Sat, 18 May 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/linux-01/</guid>
+      <guid>http://localhost:1313/post/linux-01/</guid>
       <description>Linux基础知识-排版待整理</description>
     </item>
   </channel>
