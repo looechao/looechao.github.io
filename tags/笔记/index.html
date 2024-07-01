@@ -58,7 +58,6 @@
 
 
 
-
 </head>
 
 <body>
@@ -72,10 +71,7 @@
     <div class="Header-item d-md-none">
       <button class="Header-link btn-link js-details-target" type="button"
         onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
-        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
-          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
-          </path>
-        </svg>
+        <img height="24" class="octicon octicon-three-bars" width="24" src="/images/github.png">
       </button>
     </div>
     <div style="display: none;" id="header-search"
@@ -139,7 +135,7 @@
               </svg>
               Overview
             </a>
-            <a class="UnderlineNav-item " href="https://looechao.github.io/post/">
+            <a class="UnderlineNav-item " href="https://looechao.github.io//post/">
               <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16"
                 version="1.1" width="16">
                 <path fill-rule="evenodd"
@@ -648,14 +644,16 @@ var style = localStorage.getItem('data-color-mode');
 iconElement = document.getElementById('github-icon');
 twitterIconElement = document.getElementById('twitter-icon');
 if (style == 'light') {
-  iconElement.setAttribute('fill', '#24292e');
-  twitterIconElement.setAttribute("fill","black")
+  if (iconElement) iconElement.setAttribute('fill', '#24292e');
+  if (twitterIconElement) twitterIconElement.setAttribute("fill","black")
 }
 else {
-  iconElement.removeAttribute('fill');
-  iconElement.setAttribute('class', 'octicon');
-  iconElement.setAttribute('color', '#f0f6fc');
-  twitterIconElement.setAttribute("fill","white")
+  if (iconElement) {
+    iconElement.removeAttribute('fill');
+    iconElement.setAttribute('class', 'octicon');
+    iconElement.setAttribute('color', '#f0f6fc');
+  }
+  if (twitterIconElement) twitterIconElement.setAttribute("fill","white")
 }
 </script>
 
