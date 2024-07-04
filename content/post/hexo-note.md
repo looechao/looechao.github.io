@@ -1,5 +1,5 @@
 +++
-title = 'Hexo框架的博客搭建笔记'
+title = 'Hexo框架的博客搭建小记'
 date = 2023-02-25T21:31:13+08:00
 draft = false
 summary = "第一次尝试建立hexo框架的站点"

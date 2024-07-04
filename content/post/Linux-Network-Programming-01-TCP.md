@@ -1,5 +1,5 @@
 +++
-title = '网络编程基础-TCP和UDP通信模型'
+title = '网络编程-TCP和UDP通信模型'
 date = 2024-06-16T15:38:13+08:00
 draft = false
 summary = "TCP和UDP的通信模型"
