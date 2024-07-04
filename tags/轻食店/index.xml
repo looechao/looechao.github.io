@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>轻食店 on looechao&#39;s blog</title>
-    <link>https://looechao.github.io/tags/%E8%BD%BB%E9%A3%9F%E5%BA%97/</link>
+    <link>http://localhost:1313/tags/%E8%BD%BB%E9%A3%9F%E5%BA%97/</link>
     <description>Recent content in 轻食店 on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 01 Jul 2024 17:07:27 +0800</lastBuildDate>
-    <atom:link href="https://looechao.github.io/tags/%E8%BD%BB%E9%A3%9F%E5%BA%97/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E8%BD%BB%E9%A3%9F%E5%BA%97/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024第20周周报</title>
-      <link>https://looechao.github.io/post/weekly/2024/2024-week20/</link>
+      <link>http://localhost:1313/weekly/2024/2024-week20/</link>
       <pubDate>Sun, 19 May 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/post/weekly/2024/2024-week20/</guid>
+      <guid>http://localhost:1313/weekly/2024/2024-week20/</guid>
       <description>用肌肉记忆做事情更加的省精力</description>
     </item>
   </channel>
