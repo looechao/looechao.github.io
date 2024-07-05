@@ -9,9 +9,7 @@ summary = "readme"
 - Name: looe
 - Country: CN
 - Recently: C++/Zen/Minimalism 
-- 后续可能主要会更新生活/刷题/技术方面的文章
 
----
 ##### MY SETUP
 - GPU: Intel i5-1135G7
 - CPU: Nvidia MX450
@@ -49,4 +47,3 @@ summary = "readme"
 <p align="right">
   <a href="https://count.getloli.com/"><img src="https://count.getloli.com/get/@looechao?theme=asoul" style="width:24%;"></a>
 </p>
-
