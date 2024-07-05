@@ -1,6 +1,6 @@
 +++
 title = 'Past-Ten-Years‘'
-date = 2024-7-5T10:33:13+23:01
+date = 2024-07-05T10:33:13+23:01
 draft = false
 summary = "Reprinted from '2014-2024, Just 10 Years' Elephant Corporation"
 tags = [ "转载", "观察", "分析"]
