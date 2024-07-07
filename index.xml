@@ -6,7 +6,7 @@
     <description>Recent content on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 05 Jul 2024 13:58:52 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2024 16:10:56 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>转载：2014-2024，仅仅十年</title>
@@ -28,6 +28,13 @@
       <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
       <guid>https://looechao.github.io/post/linux-network-programming-01-tcp/</guid>
       <description>TCP和UDP的通信模型</description>
+    </item>
+    <item>
+      <title>2024第24周周报</title>
+      <link>https://looechao.github.io/weekly/2024/2024-week24/</link>
+      <pubDate>Sun, 16 Jun 2024 20:50:13 +2301</pubDate>
+      <guid>https://looechao.github.io/weekly/2024/2024-week24/</guid>
+      <description></description>
     </item>
     <item>
       <title>2024第23周周报</title>
@@ -244,7 +251,7 @@
       <link>https://looechao.github.io/post/before22/</link>
       <pubDate>Wed, 13 Mar 2024 21:50:13 +0800</pubDate>
       <guid>https://looechao.github.io/post/before22/</guid>
-      <description>黄金时代</description>
+      <description>黄金时代，在中南林的几乎一整年</description>
     </item>
     <item>
       <title>刷题笔记-24年3月第四组</title>
@@ -322,6 +329,27 @@
       <pubDate>Tue, 10 Mar 1970 21:50:13 +0800</pubDate>
       <guid>https://looechao.github.io/readme/</guid>
       <description>readme</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://looechao.github.io/weekly/2024/2024-week25/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://looechao.github.io/weekly/2024/2024-week25/</guid>
+      <description>title = &amp;lsquo;2024第25周周报&amp;rsquo; date = 2024-06-23T20:50:13+23:01 draft = false type = &amp;ldquo;weekly&amp;rdquo; summary = &amp;quot; &amp;quot; tags = [ &amp;ldquo;2024Weekly&amp;rdquo;]&#xA;+++&#xA;2024年第25周周报 网盘项目&#xA;生活 本周的状态 平平淡淡又有点紧张 一期一期的做项目 周末坚持了跑步 本周的娱乐时间 户外运动&#xA;乌云涌起的天气&#xD;让人心情舒畅的蓝天&#xD;饮食 囤积了牛奶&#xA;和大家尝试了大秦来面馆，偶尔吃很不错&#xA;周末仍然吃肯德基&#xA;周日中午去青海面馆吃的很舒服&#xA;牛奶和卡宾熊&#xD;KFC&#xD;心情 赶项目，偶尔和Asumi聊天 学习 数据库的知识掌握的不够到位 单词没没怎么背 技术 意识到了和大家的差距，VIM的使用不如大家熟练 git的版本控制我们都有了较深的认识，接下来就需要通过实战来熟悉了 数码 还是优点痴迷老旧手机&#xA;minimize distraction, maxmize focus</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://looechao.github.io/weekly/2024/2024-week26/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://looechao.github.io/weekly/2024/2024-week26/</guid>
+      <description>title = &amp;lsquo;2024第26周周报&amp;rsquo; date = 2024-06-30T20:50:13+23:01 draft = false type = &amp;ldquo;weekly&amp;rdquo; summary = &amp;quot; &amp;quot; tags = [ &amp;ldquo;2024Weekly&amp;rdquo;]&#xA;+++&#xA;2024年第26周周报 东湖旅行&#xA;生活 本周的状态 提交完了项目 进入新的学习阶段 周末完成了长跑，重温了电影 INCEPTION 本周的娱乐时间 东湖骑行&#xA;东湖&#xD;猫仔&#xD;饮食 和大家一起聚餐，在武汉的火锅店吃到热干面，真的让我没绷住，但是很好吃&#xA;发现了很好吃的酸奶&#xA;买了今年第一个西瓜&#xA;周日吃青海美食&#xA;厚·酸奶&#xD;西瓜&#xD;青海盖饭&#xD;心情 有点迷茫，但是旅途中玩的很开心 学习 用notion整理了很多问题，但是复盘的还是不够多 预习的不够到位 技术 修好了vim的ycm，改正了之前的用户权限问题 </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://looechao.github.io/weekly/2024/2024-week27/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://looechao.github.io/weekly/2024/2024-week27/</guid>
+      <description>title = &amp;lsquo;2024第27周周报&amp;rsquo; date = 2024-07-07T20:50:13+23:01 draft = false type = &amp;ldquo;weekly&amp;rdquo; summary = &amp;quot; &amp;quot; tags = [ &amp;ldquo;2024Weekly&amp;rdquo;]&#xA;+++&#xA;2024年第27周周报 学习上到了比较难的阶段&#xA;生活 本周的状态 自从上次跑完步之后，经历很充沛&#xA;睡眠时间需要调整&#xA;心理状态并不太好&#xA;温柔粉红晚霞&#xD;本周的娱乐时间 看blog，刷youtube&#xA;听立党的视频&#xA;买了一只肋骨牡丹的多肉，让他陪我度过剩下的一个多月&#xA;用1.5倍速跟着范李猿的第二节课，很累，汗流浃背&#xA;青海盖饭&#xD;饮食 狂炫火龙果，超好吃&#xA;思泊湖的新品，烧茄子盖饭，很好吃&#xA;周末吃的全家桶，很开心&#xA;烧茄子盖饭&#xD;红龙果季&#xD;心情 羡慕Asumi在海南玩地很开心&#xA;思考到曾经做过的错误决定，让我有点沮丧，但是后悔没有任何作用，要尽早找回自信的积极状态，意识会矫正行为，行为会触发结果&#xA;学习 用notion整理的问题更多了 一些困难的任务还是需要提前预习一下的，不然听起来确实会吃力 技术 对播客地主题进行修补，参考了许多人的定制结果 为github-style这一项目做了贡献，很开心 </description>
     </item>
   </channel>
 </rss>
