@@ -2,13 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://looechao.github.io/</loc>
-    <lastmod>2024-07-07T16:10:56+08:00</lastmod>
+    <loc>https://looechao.github.io/tags/2024weekly/</loc>
+    <lastmod>2024-07-07T16:17:33+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.github.io/post/</loc>
-    <lastmod>2024-07-07T16:10:56+08:00</lastmod>
+    <loc>https://looechao.github.io/weekly/2024/2024-week27/</loc>
+    <lastmod>2024-07-07T16:17:33+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/</loc>
+    <lastmod>2024-07-07T16:17:33+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/</loc>
+    <lastmod>2024-07-07T16:17:33+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/weekly/</loc>
+    <lastmod>2024-07-07T16:17:33+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/post/</loc>
     <lastmod>2024-07-07T16:10:56+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/%E5%88%86%E6%9E%90/</loc>
@@ -22,6 +31,12 @@
   </url><url>
     <loc>https://looechao.github.io/post/past-ten-years/</loc>
     <lastmod>2024-07-05T13:58:52+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/weekly/2024/2024-week26/</loc>
+    <lastmod>2024-07-07T16:17:31+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/weekly/2024/2024-week25/</loc>
+    <lastmod>2024-07-07T16:17:30+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/epoll/</loc>
     <lastmod>2024-07-04T20:17:47+08:00</lastmod>
@@ -56,17 +71,11 @@
     <loc>https://looechao.github.io/post/linux-network-programming-01-tcp/</loc>
     <lastmod>2024-07-07T16:07:51+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.github.io/tags/2024weekly/</loc>
-    <lastmod>2024-07-07T15:29:17+08:00</lastmod>
-  </url><url>
     <loc>https://looechao.github.io/weekly/2024/2024-week24/</loc>
-    <lastmod>2024-07-07T10:43:45+08:00</lastmod>
-  </url><url>
-    <loc>https://looechao.github.io/weekly/</loc>
-    <lastmod>2024-07-07T15:29:17+08:00</lastmod>
+    <lastmod>2024-07-07T16:17:29+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/weekly/2024/2024-week23/</loc>
-    <lastmod>2024-07-04T16:41:46+08:00</lastmod>
+    <lastmod>2024-07-07T16:15:00+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/weekly/2024/2024-week22/</loc>
     <lastmod>2024-07-04T16:41:37+08:00</lastmod>
@@ -265,15 +274,6 @@
   </url><url>
     <loc>https://looechao.github.io/readme/</loc>
     <lastmod>2024-07-05T09:00:54+08:00</lastmod>
-  </url><url>
-    <loc>https://looechao.github.io/weekly/2024/2024-week25/</loc>
-    <lastmod>2024-07-07T13:35:23+08:00</lastmod>
-  </url><url>
-    <loc>https://looechao.github.io/weekly/2024/2024-week26/</loc>
-    <lastmod>2024-07-07T15:12:29+08:00</lastmod>
-  </url><url>
-    <loc>https://looechao.github.io/weekly/2024/2024-week27/</loc>
-    <lastmod>2024-07-07T15:29:09+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/categories/</loc>
   </url>
