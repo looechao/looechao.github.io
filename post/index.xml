@@ -6,7 +6,7 @@
     <description>Recent content in Posts on looechao&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 08 Jul 2024 14:23:42 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jul 2024 13:50:28 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>转载：2014-2024，仅仅十年</title>
@@ -56,6 +56,13 @@
       <pubDate>Sun, 28 Apr 2024 22:53:13 +0800</pubDate>
       <guid>https://looechao.github.io/post/c-notes-01/</guid>
       <description>类型，表达式，语句，数组，函数</description>
+    </item>
+    <item>
+      <title>浅谈C&#43;&#43;中string的SSO策略</title>
+      <link>https://looechao.github.io/post/string-sso-strategy/</link>
+      <pubDate>Sun, 28 Apr 2024 22:53:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/string-sso-strategy/</guid>
+      <description>短字符串的优化策略</description>
     </item>
     <item>
       <title>C语言中的六种位运算符</title>
