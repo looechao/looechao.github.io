@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>24 on looechao&#39;s blog</title>
+    <link>http://localhost:1313/tags/24/</link>
+    <description>Recent content in 24 on looechao&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 11 Jul 2024 17:51:43 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/24/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C语言复习笔记-01</title>
+      <link>http://localhost:1313/post/c-notes-01/</link>
+      <pubDate>Sun, 28 Apr 2024 22:53:13 +0800</pubDate>
+      <guid>http://localhost:1313/post/c-notes-01/</guid>
+      <description>类型，表达式，语句，数组，函数</description>
+    </item>
+  </channel>
+</rss>
