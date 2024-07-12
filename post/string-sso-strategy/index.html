@@ -46,7 +46,7 @@
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2024-04-28 22:53:13 &#43;0800 CST" />
+<meta property="article:published_time" content="2024-07-10 22:53:13 &#43;0800 CST" />
 
 
 
@@ -131,15 +131,15 @@
                             
                             <div class="d-block text-small text-gray">
                                 <span class="d-inline-block">
-                                    Created at <time datetime="2024-04-28 22:53" class="no-wrap">
-                                        2024-04-28 22:53</time>
+                                    Created at <time datetime="2024-07-10 22:53" class="no-wrap">
+                                        2024-07-10 22:53</time>
                                 </span>
 
                                 
                                 <span class="file-info-divider"></span>
                                 <span class="d-inline-block">
-                                    Updated at <time datetime="2024-07-10 09:39" class="no-wrap">
-                                        2024-07-10 09:39</time>
+                                    Updated at <time datetime="2024-07-12 11:58" class="no-wrap">
+                                        2024-07-12 11:58</time>
                                     
                                 </span>
                             </div>
@@ -168,7 +168,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      127 Words
+                      196 Words
                     
 
                   </div>
@@ -255,7 +255,12 @@
 </span></span><span class="line"><span class="cl">0x7ffcdfdd77e0
 </span></span><span class="line"><span class="cl">0x7ffcdfdd77b0
 </span></span><span class="line"><span class="cl">0xbe2f2b0
-</span></span></code></pre></div></article>
+</span></span></code></pre></div><p>可以发现SSO的策略如下：</p>
+<ul>
+<li>针对16个字节以内的字符串，直接使用栈上的空间存储buffer</li>
+<li>针对16个字节以上的字符串，将buffer存在堆区</li>
+</ul>
+</article>
               </div>
             </div>
           </div>
