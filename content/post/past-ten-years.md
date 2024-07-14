@@ -1,8 +1,8 @@
 +++
-title = 'Past-Ten-Years‘'
+title = '转载：2014-2024，仅仅十年'
 date = 2024-07-05T10:33:13+23:01
 draft = false
-summary = "Reprinted from '2014-2024, Just 10 Years' Elephant Corporation"
+summary = "转载自大象公社"
 tags = [ "转载", "观察", "分析"]
 +++
 十年前的夏天，年轻人不愿当公务员，国考人数锐减36万，热帖称“机关钱少活多”。 
