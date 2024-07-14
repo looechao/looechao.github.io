@@ -5,6 +5,11 @@ draft = false
 summary = "TCP和UDP的通信模型"
 tags = [ "技术", "Linux", "网络编程", "TCP", "UDP", "即时通信系统"]
 +++
+
+<div style="width: 80%; margin: auto;">
+    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/post/TCP-UDP.jpg" alt="shotonspf" style="width: 100%;" />
+</div>
+
 # TCP 通信
 
 这里的应用编写属于应用层的实现，而SOCKET的实现属于传输层

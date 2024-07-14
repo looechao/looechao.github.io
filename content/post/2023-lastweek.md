@@ -11,7 +11,7 @@ tags = [ "肖洪涛", "生活", "跨年", "Omegle"]
 
 寒假的主要任务是完成开题报告，但是这几天就应该先爽玩！
 
-今年最意外的经历是跟阿Tao一起跨年，吃了寿司和炸鸡柳，然后一块熬夜看了李安的色戒，我们最喜欢的梁朝伟的一句台词：
+今年最意外的经历是跟阿Tao一起跨年，吃了寿司和炸鸡柳，然后一块熬夜看了电影，我们最喜欢易墨成的那一句台词：
 
 > 我对钻石不感兴趣，我只想看它戴在你的手上
 
@@ -66,9 +66,10 @@ tags = [ "肖洪涛", "生活", "跨年", "Omegle"]
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">最近很流行的Omegle</div>
+    padding: 2px;">Omegle时间</div>
 </center>
 </div>
+
 
 </br>
 
@@ -83,9 +84,10 @@ tags = [ "肖洪涛", "生活", "跨年", "Omegle"]
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">黄金矿工😋</div>
+    padding: 2px;">Gold Miner😋</div>
 </center>
 </div>
+
 
 
 

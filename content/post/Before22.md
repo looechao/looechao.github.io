@@ -2,9 +2,10 @@
 title = '写在22岁之前'
 date = 2024-03-13T21:50:13+08:00
 draft = false
-summary = "黄金时代"
+summary = "黄金时代，在中南林的几乎一整年"
 pin = true
 tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
+
 +++
 # 21岁的年度总结
 
@@ -29,7 +30,6 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 </div>
 
 
-
 </br>
 ”那一天我二十一岁，在我一生的黄金时代。
 我有好多奢望，我想爱，想吃，还想在一瞬间变成天上半明半暗的云。
@@ -43,12 +43,118 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 
 我了解到民营经济为我国贡献了50%以上的税收，解决了80%以上的就业，还是我国第一大外贸主体，但是过去的几年里，外资撤退成了常态，被各种媒体熏陶下的年轻小将们对资本家的恨也愈来愈深，这种种迹象表明衰退好像成了不可避免的一件事情。
 
+<div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-4.jpg" width="50%">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">树人楼的一隅</div>
+</center>
+</div>
+</br>
+
 就这样从社会性沉重的话题蔓延到了个人性沉重的话题，对未来的不确定性和焦虑成了我心底的情感基调。
 
+#### 关于考研
+
+<div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-5.jpg" width="50%">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">留校申请</div>
+</center>
+</div>
+</br>
+
+暑假也还是迷茫期，匆匆提交了留校申请就没有回家，现在想想真的是很幼稚
+
+<div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-3.jpg" width="50%">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">在南105的暑假</div>
+</center>
+</div>
+</br>
+
+
+<div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-7.jpg" width="50%">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">早饭</div>
+</center>
+</div>
+
+目前从体感上来说，我觉得考研/考公/考编都是用自己一年或多年的时间去赌一个小概率事件，从个人发展的角度来看性价比过于低了
+
+<div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-1.jpg" width="50%">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">昏暗的南112</div>
+</center>
+</div>
+
+<div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-2.jpg" width="50%">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">408选择题</div>
+</center>
+</div>
+</br>
+
+
+<div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-6.jpg" width="50%">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">林大桥</div>
+</center>
+</div>
+</br>
+
 #### 转折点
+
 人只有对未来有信心的时候才会投入足够的热情去改变它，我必须选择一条我认为正确的路坚定的走下去，也许这条路就是多去看看外面的世界。
 
 达成这个目标需要哪些条件呢？我可以罗列到下面：
+
 - 一个健康又尽量年轻的身体
 - 扎实的语言基础
 - 过硬的专业或者技术实力
@@ -57,11 +163,23 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 
 身体 | 语言 | 技术 永远是绕不开的三个基点，要从细节上把握好才行。
 
-#### 关于考研
-目前从体感上来说，我觉得考研/考公/考编都是用自己一年或多年的时间去赌一个小概率事件，从个人发展的角度来看性价比过于低了
 现状是已经付出了一年的沉没成本，而初试的排名擦边，有进复试的可能，所以这个月的主要任务应该放在准备复试上了，即使失败也不过是一个月的时间
 
 到时候正好是22岁的生日左右，如果失败了，就踏踏实实的敲代码，学好技术，走另外一条路(PlanB)！
+
+<div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-8.jpg" width="50%">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;"></div>
+</center>
+</div>
+</br>
 
 #### PlanB
 

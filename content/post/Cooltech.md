@@ -5,16 +5,18 @@ draft = false
 pin = true
 summary = "looe's cool digital devices..."
 tags = [ "生活",  "数码"]
+
 +++
-我喜欢捣鼓各种有趣的数码产品，但一般绝不会动大手笔，所以我玩的基本都是那些被认为是时代眼泪的老古董，但是足够好玩就已经很让人满意了😋
+我喜欢捣鼓各种有趣的数码产品，但一般不会动大手笔，所以买到手的基本都是那些被认为是时代眼泪的老古董，但是足够好玩就已经很让人满意了😋
 
 #### PSP-E1000
 </br>
+
 <div style="width: 50%; margin: auto;">
     <img src="https://raw.githubusercontent.com/looechao/blogimg/main/Cool-tech/cooltech-sonypsp.jpg" alt="shotonspf" style="width: 100%;" />
 </div>
 </br>
-21年夏天在海鲜淘的, 一直很想玩的掌机, 当时做足了功课, 买了这台年代比较近的E1000, 我以为屏幕会是他的强项, 但发现可视角度很窄, 基本只可以从正面看, 后续还是想要收一台
+21年夏天在海鲜淘的, 一直很想玩的掌机, 当时做足了功课, 买了这台年代比较近的E1000, 我以为屏幕会是它的强项, 但发现可视角度很窄, 基本只可以从正面看, 后续还是想要收一台3000
 
 #### NW-ZX100
 </br>
@@ -76,7 +78,23 @@ ZX系列最后一部主推3.5mm接口的非智能机器, 续航给力, 内存也
 国产品牌，颜值即正义，做工很扎实，耐用
 
 #### WiiU
+
+<div>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/Cool-tech/cooltech-wiiu-1.gif" width="100%">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">马里奥3D世界</div>
+</center>
+</div>
+
+
 </br>
+
 <div style="width: 50%; margin: auto;">
     <img src="https://raw.githubusercontent.com/looechao/blogimg/main/Cool-tech/cooltech-wiiu.jpg" alt="shotonspf" style="width: 100%;" />
 </div>
@@ -85,6 +103,7 @@ ZX系列最后一部主推3.5mm接口的非智能机器, 续航给力, 内存也
 
 #### Thinkpad X230
 </br>
+
 <div style="width: 50%; margin: auto;">
     <img src="https://raw.githubusercontent.com/looechao/blogimg/main/Cool-tech/cooltech-thinkpadx230.jpg" alt="shotonspf" style="width: 100%;" />
 </div>
@@ -93,6 +112,14 @@ ZX系列最后一部主推3.5mm接口的非智能机器, 续航给力, 内存也
 
 #### Google Pixel C
 </br>
+
+<div style="width: 50%; margin: auto;">
+    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/Cool-tech/cooltech-googlepixelc2.jpg" alt="shotonspf" style="width: 100%;" />
+</div>
+
+</br>
+
+
 <div style="width: 50%; margin: auto;">
     <img src="https://raw.githubusercontent.com/looechao/blogimg/main/Cool-tech/cooltech-googlepixelc.jpg" alt="shotonspf" style="width: 100%;" />
 </div>
