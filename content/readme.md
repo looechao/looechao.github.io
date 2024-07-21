@@ -9,17 +9,6 @@ summary = "readme"
 - Name: looe
 - Country: CN
 - Recently: C++/Zen/Minimalism 
-
-##### MY SETUP
-- GPU: Intel i5-1135G7
-- CPU: Nvidia MX450
-- RAM: 16 GB DDR4 4266Mhz
-- SSD: 512 GB
-- Windows 10
-- Monitor: XIAOMI FASTIPS 165Hz
-- Mouse: G305
-- MousePad: Beesir
-
 ---
 ##### Skills
 - C/C++
@@ -32,7 +21,21 @@ summary = "readme"
 - English-Intermediate(Daily Conversation)
 
 ---
+##### MY SETUP
+
+- GPU: Intel i5-1135G7
+- CPU: Nvidia MX450
+- RAM: 16 GB DDR4 4266Mhz
+- SSD: 512 GB
+- Windows 10
+- Monitor: XIAOMI FASTIPS 165Hz
+- Mouse: G305
+- MousePad: Beesir
+
+---
+
 ##### ABOUT GAME
+
 - Favourite Game : CounterStrike
 - Favourite Map : De_Mirage
 - Favourite Pro Player : Yekindar
@@ -42,6 +45,7 @@ summary = "readme"
 - Favourite Consoles:  wiiu | xbox360 | psp | ps2.
 ---
 ##### THE END
+
 ---
 
 <p align="right">
