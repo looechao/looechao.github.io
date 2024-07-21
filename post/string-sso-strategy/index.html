@@ -138,8 +138,8 @@
                                 
                                 <span class="file-info-divider"></span>
                                 <span class="d-inline-block">
-                                    Updated at <time datetime="2024-07-12 11:58" class="no-wrap">
-                                        2024-07-12 11:58</time>
+                                    Updated at <time datetime="2024-07-12 13:54" class="no-wrap">
+                                        2024-07-12 13:54</time>
                                     
                                 </span>
                             </div>
@@ -168,7 +168,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      196 Words
+                      209 Words
                     
 
                   </div>
@@ -218,7 +218,8 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">string</span> <span class="p">{</span>
+                <article class="markdown-body entry-content container-lg"><h2 id="string的存储结构">string的存储结构</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">string</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl"> 	<span class="k">union</span> <span class="nc">Buffer</span><span class="p">{</span>
 </span></span><span class="line"><span class="cl"> 		<span class="kt">char</span> <span class="o">*</span> <span class="n">_pointer</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"> 		<span class="kt">char</span> <span class="n">_local</span><span class="p">[</span><span class="mi">16</span><span class="p">];</span>
@@ -229,6 +230,7 @@
 </span></span><span class="line"><span class="cl">	<span class="n">Buffer</span> <span class="n">_buffer</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span></code></pre></div><p>string对象共占32个字节，buffer 占 16个字节，size和capacity共占用16个字节</p>
+<h2 id="验证">验证</h2>
 <p>可以通过如下程序进行验证：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
