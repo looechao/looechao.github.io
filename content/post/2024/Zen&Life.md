@@ -21,7 +21,7 @@ tags = [ "生活",  "阅读", "禅", "极简主义"]
 - 多形成肌肉记忆：即使没有想什么，身体也会主动行动起来；如果能够拥有一段这样的事件，内心就会变得很轻松
 - 不完美，才是人生：正因为处在未完成的（不完美的）状态，人生才有前进的状态
 - 敢于后悔是好事，吸气为此刻，呼气为过去，禅宗教义让我们关注“此刻”这个瞬间，但是后悔常常会干扰我们的“此刻”（世上没有从未后悔过的人），拔出后悔的刺能让我们更好的过好“此刻”：一是反省自己，二是等刺掉落
-- 空出来的空间，不是让你填满的，正是因为有了它们，我们的内心才能从容
+-  class Solution {public:    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {        vector<vector<int>> ret;        dqueue<TreeNode*> q;        q.push_back(root);        //forward的默认值应该是false        bool forward = false;        while(!q.empty()){            //构建每一层的vec和dequeue            vector<int> vec;            deque<TreeNode*> nq;            while(!q.empty()){                TreeNode* u = q.front();                q.pop_front();                if( u != nullptr && forward == true){                    vec.push_back(u->val);                    nq.push_front(u->left);                    nq.push_front(u->right);                }                if( u != nullptr && forward == false){                    vec.push_back(u->val);                    nq.push_back(u->left);                    nq.push_back(u->right);                }            }            forward = !forward;            if(!vec.empty()){                ret.push_back(vec);                vec.clear();            }            q = nq;        }        return ret;};cpp
 - 禅对于意识的解释：意是主观感受，是自己想的，识是识别和客观的计量，很多时候我们不能过分的患得患失，过分计较得失的话，我们会连自己真正想要什么都不知道了
 - 苏轼曾言：胜亦欣然败亦喜，我们要时刻保持这种心态，得也开心，失也淡定，拥有这种心态的人，生活一定不会太差
 - 放得下才能过得好，有些烦恼是可以通过自身的努力去解决的，提升自己就好了，而有些事情无论怎么做都改变不了，就不要为之烦恼了
