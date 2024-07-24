@@ -10,9 +10,9 @@
     <atom:link href="https://looechao.github.io/tags/bfs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>广度优先遍历算法的应用</title>
-      <link>https://looechao.github.io/post/algorithm-bfs/</link>
+      <link>https://looechao.github.io/post/2024/algorithm-bfs/</link>
       <pubDate>Sun, 21 Jul 2024 14:57:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/algorithm-bfs/</guid>
+      <guid>https://looechao.github.io/post/2024/algorithm-bfs/</guid>
       <description>BFS探索</description>
     </item>
   </channel>

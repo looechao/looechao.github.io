@@ -10,23 +10,23 @@
     <atom:link href="https://looechao.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网络编程-EPOLL的使用</title>
-      <link>https://looechao.github.io/post/linux-network-programming-02-epoll/</link>
+      <link>https://looechao.github.io/post/2024/linux-network-programming-02-epoll/</link>
       <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/linux-network-programming-02-epoll/</guid>
+      <guid>https://looechao.github.io/post/2024/linux-network-programming-02-epoll/</guid>
       <description>用EPOLL代替SELECT</description>
     </item>
     <item>
       <title>网络编程-TCP和UDP通信模型</title>
-      <link>https://looechao.github.io/post/linux-network-programming-01-tcp/</link>
+      <link>https://looechao.github.io/post/2024/linux-network-programming-01-tcp/</link>
       <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/linux-network-programming-01-tcp/</guid>
+      <guid>https://looechao.github.io/post/2024/linux-network-programming-01-tcp/</guid>
       <description>TCP和UDP的通信模型</description>
     </item>
     <item>
       <title>Linux学习笔记-24年5月第一组</title>
-      <link>https://looechao.github.io/post/linux-01/</link>
+      <link>https://looechao.github.io/post/2024/linux-01/</link>
       <pubDate>Sat, 18 May 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/linux-01/</guid>
+      <guid>https://looechao.github.io/post/2024/linux-01/</guid>
       <description>Linux基础知识-排版待整理</description>
     </item>
   </channel>
