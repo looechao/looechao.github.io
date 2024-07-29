@@ -7,7 +7,7 @@ tags = ["C/C++", "OOP"]
 
 +++
 
-## 01单一职责原则 **(Single Responsibility Principle, SRP)**
+## 01 单一职责原则 (Single Responsibility Principle, SRP)
 
 - A class should have only one reason to change.
 - 一个类应该只有一个引起它变化的原因。
@@ -80,7 +80,7 @@ int main()
 }
 ```
 
-## 02开放闭合原则**(Open/Closed Principle, OCP)**
+## 02 开放闭合原则(Open/Closed Principle, OCP)
 
 - Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
 - 软件实体（类、模块、函数等）应该对扩展开放，对修改关闭。
@@ -158,7 +158,7 @@ int main()
 }
 ```
 
-## 03里氏替换原则**(Liskov Substitution Principle, LSP)**
+## 03 里氏替换原则(Liskov Substitution Principle, LSP)
 
 - Subtypes must be substitutable for their base types.
 - 派生类必须能够替换其基类。
@@ -253,7 +253,7 @@ int main()
 }
 ```
 
-## 04接口分离原则**(Interface Segregation Principle, ISP)**
+## 04 接口分离原则(Interface Segregation Principle, ISP)
 
 - Clients should not be forced to depend on interfaces they do not use.
 - 客户端不应该被迫依赖于它们不使用的接口。
@@ -354,7 +354,7 @@ int main() {
 }
 ```
 
-## 05依赖倒置原则**(Dependency Inversion Principle, DIP)**
+## 05 依赖倒置原则(Dependency Inversion Principle, DIP)
 
 - High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
 - 高层模块不应该依赖于低层模块，两者都应该依赖于抽象。抽象不应该依赖于细节，细节应该依赖于抽象。
@@ -427,7 +427,7 @@ int main() {
 }
 ```
 
-## 06**迪米特原则 (Law of Demeter, LoD) **
+## 06 迪米特原则 (Law of Demeter, LoD) 
 
 - 又称为最少知道原则 (Principle of Least Knowledge)
 
@@ -514,7 +514,7 @@ int main()
 }
 ```
 
-## 07组合复用原则Composition Over Inheritance Principle)
+## 07 组合复用原则Composition Over Inheritance Principle)
 
 - Favor composition over inheritance as a reuse mechanism.
 - 在复用时，优先使用组合而不是继承。
