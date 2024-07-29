@@ -40,8 +40,6 @@ buildFuture = true
   [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
 
-  enableGitalk = true
-
   
 
   [params.gitalk]
