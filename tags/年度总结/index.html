@@ -65,26 +65,27 @@
   <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
     <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
       <a class="Header-link" href="https://looechao.github.io/">
-        <svg class="octicon" height="32" viewBox="0 0 16 16" version="1.1" width="32">
-          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-          </path>
-        </svg>
+        <img class="octicon" height="32" width="32" src="/images/github.png">
       </a>
     </div>
     <div class="Header-item d-md-none">
-      <button class="Header-link btn-link js-details-target" type="button" onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
-        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
-          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
-          </path>
-        </svg>
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <img height="24" class="octicon octicon-three-bars" width="24" src="/images/github.png">
       </button>
     </div>
-    <div style="display: none;" id="header-search" class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
-      <div class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
         <div class="position-relative">
-          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get" autocomplete="off">
-            <label class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
-              <input type="text" class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable" name="q" value="" placeholder="Search" autocomplete="off">
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
               <input type="hidden" name="q" value="site:https://looechao.github.io/">
             </label>
           </form>
@@ -93,17 +94,16 @@
     </div>
 
     <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
-      <a class="Header-link " href="site:https://looechao.github.io/">
-        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32">
-          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-          </path>
-        </svg>
+      <a class="Header-link " href="https://looechao.github.io/">
+        <img class="octicon octicon-mark-github v-align-middle" height="32" width="32" src="/images/github.png">
       </a>
     </div>
     <div class="Header-item" style="margin-right: 0;">
       <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
-        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
           </path>
         </svg>
       </a>
@@ -115,10 +115,6 @@
 <div class="application-main">
   <main>
     
-
-
-
-
 
 
 <div class="mt-4 position-sticky top-0 d-none d-md-block bg-white width-full border-bottom color-border-secondary"
@@ -139,7 +135,7 @@
               </svg>
               Overview
             </a>
-            <a class="UnderlineNav-item " href="https://looechao.github.io/post/">
+            <a class="UnderlineNav-item " href="https://looechao.github.io//post/">
               <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16"
                 version="1.1" width="16">
                 <path fill-rule="evenodd"
@@ -147,24 +143,7 @@
                 </path>
               </svg>
               Posts
-              <span class="Counter">33</span>
-            
-              <a class="UnderlineNav-item " href="https://looechao.github.io//weekly">
-              <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                <path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v1.5A1.75 1.75 0 0 1 14.25 6H1.75A1.75 1.75 0 0 1 0 4.25ZM1.75 7a.75.75 0 0 1 .75.75v5.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-5.5a.75.75 0 0 1 1.5 0v5.5A1.75 1.75 0 0 1 13.25 15H2.75A1.75 1.75 0 0 1 1 13.25v-5.5A.75.75 0 0 1 1.75 7Zm0-4.5a.25.25 0 0 0-.25.25v1.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-1.5a.25.25 0 0 0-.25-.25ZM6.25 8h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1 0-1.5Z"/>
-              </svg>
-              Weekly
-              <span class="Counter">21</span>
-            </a>
-
-            <a class="UnderlineNav-item  selected " href="https://looechao.github.io//tags">
-              <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                <path fill-rule="evenodd"
-                  d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                </path>
-              </svg>
-              Tags
-              <span class="Counter">43</span>
+              <span class="Counter">34</span>
             </a>
           </nav>
           <div class="profile-color-modes js-promo-color-modes-banner-profile isInitialToggle">
@@ -306,7 +285,7 @@
         <div class="clearfix d-flex d-md-block flex-items-center mb-4 mb-md-0">
           <div class="position-relative d-inline-block col-2 col-md-12 mr-3 mr-md-0 flex-shrink-0" style="z-index:4;">
             
-            <a href="https://looechao.github.io/">
+            <a href="/images/profile.png">
               <img style="height:auto;" alt="Avatar" width="260" height="260" id="headerImg"
                 class="avatar avatar-user width-full border bg-white" src="/images/profile.png">
             </a>
@@ -420,30 +399,11 @@
           
          </div>
         </div>
-
-        <div class="border-top py-2 clearfix hide-sm hide-md">
-          <h2 class="mb-1 h4 py-1">My projects</h2>
-          <div style="display: flex; align-items: center;">
-            <div style="margin-right: 10px; margin-top: 10px;">
-              <a href="https://github.com/looechao/CSUFT-Tally">
-                <img src="https://raw.githubusercontent.com/looechao/CSUFT-Tally/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" style="max-width: 60%; height: auto;" alt="CSUFT-Tally" class="appreach__icon">
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-
       </div>
     </div>
 
     <div class="flex-shrink-0 col-12 col-md-9 mb-4 mb-md-0">
       
-
-
-
-
-
 
 <div class="UnderlineNav user-profile-nav d-block d-md-none position-sticky top-0 pl-3 ml-n3 mr-n3 pr-3 bg-white"
   style="z-index:3;">
@@ -457,7 +417,7 @@
       </svg>
       Overview
     </a>
-    <a class='UnderlineNav-item  '
+    <a class='UnderlineNav-item   selected '
       href="https://looechao.github.io//post/">
       <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16" version="1.1"
         width="16">
@@ -466,521 +426,17 @@
         </path>
       </svg>
       Posts
-      <span class="Counter ">33</span>
-    </a>
-
-    <a class="UnderlineNav-item " href="https://looechao.github.io//weekly">
-      <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-        <path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v1.5A1.75 1.75 0 0 1 14.25 6H1.75A1.75 1.75 0 0 1 0 4.25ZM1.75 7a.75.75 0 0 1 .75.75v5.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-5.5a.75.75 0 0 1 1.5 0v5.5A1.75 1.75 0 0 1 13.25 15H2.75A1.75 1.75 0 0 1 1 13.25v-5.5A.75.75 0 0 1 1.75 7Zm0-4.5a.25.25 0 0 0-.25.25v1.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-1.5a.25.25 0 0 0-.25-.25ZM6.25 8h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1 0-1.5Z"/>
-      </svg>
-      Weekly
-      <span class="Counter">21</span>
-    </a>
-
-    <a class="UnderlineNav-item  selected " href="https://looechao.github.io//tags">
-      <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-        <path fill-rule="evenodd"
-          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-        </path>
-      </svg>
-      Tags
-      <span class="Counter">43</span>
+      <span class="Counter ">34</span>
     </a>
   </nav>
 </div>
 
       
       
-
 <div>
   <div class="position-relative">
     <div>
       
-        
-          <style>
-	.tags { padding: 15px 0; }
-</style>
-<div class="f6 text-gray mt-2 tags border-bottom">
-	
-	
-	
-	
-	<a class="muted-link mr-3" href="/tags/2024weekly/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		2024weekly
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/bfs/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		bfs
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/c/c&#43;&#43;/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		c/c&#43;&#43;
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/epoll/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		epoll
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/hexo/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		hexo
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/linux/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		linux
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/microsoft-store/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		microsoft store
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/omegle/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		omegle
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/oop/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		oop
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/select/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		select
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/sso/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		sso
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/string/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		string
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/tcp/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		tcp
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/udp/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		udp
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/xbox360/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		xbox360
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E4%B9%90%E8%A7%82%E4%B8%BB%E4%B9%89/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		乐观主义
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		位运算符
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E5%86%85%E5%8D%B7/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		内卷
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E5%88%86%E6%9E%90/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		分析
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E5%88%B7%E9%A2%98/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		刷题
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		即时通信系统
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E5%93%B2%E7%90%86/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		哲理
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E5%B7%A5%E5%85%B7/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		工具
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		年度总结
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E6%84%9F%E6%82%9F/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		感悟
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E6%88%90%E5%B0%B1/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		成就
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E6%88%90%E9%95%BF/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		成长
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E6%8A%80%E6%9C%AF/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		技术
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E6%95%B0%E7%A0%81/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		数码
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E6%9D%82%E8%B0%88/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		杂谈
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		极简主义
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E6%B5%B7%E9%87%8F%E8%BF%9E%E6%8E%A5%E5%A4%84%E7%90%86/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		海量连接处理
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E7%94%9F%E6%B4%BB/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		生活
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E7%A6%85/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		禅
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E7%AC%94%E8%AE%B0/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		笔记
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E7%AE%97%E6%B3%95/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		算法
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		网络编程
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E8%82%96%E6%B4%AA%E6%B6%9B/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		肖洪涛
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E8%A7%82%E5%AF%9F/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		观察
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E8%A7%84%E5%88%92/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		规划
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E8%B7%A8%E5%B9%B4/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		跨年
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E8%BD%AC%E8%BD%BD/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		转载
-	</a>
-	
-	<a class="muted-link mr-3" href="/tags/%E9%98%85%E8%AF%BB/">
-		
-		<svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-			<path fill-rule="evenodd"
-				d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-			</path>
-		</svg>
-		
-		阅读
-	</a>
-	
-	
-</div>
-        
       <div class="TableObject border-bottom border-gray-light py-3">
         <div class="user-repo-search-results-summary TableObject-item TableObject-item--primary v-align-top">
           <strong>1</strong>
@@ -988,7 +444,7 @@
           for <strong>年度总结</strong>
         </div>
         <div class="TableObject-item text-right v-align-top">
-          <a class="issues-reset-query text-normal d-inline-block ml-3" href="https://looechao.github.io//tags/">
+          <a class="issues-reset-query text-normal d-inline-block ml-3" href="https://looechao.github.io//post/">
             <svg class="octicon octicon-x issues-reset-query-icon mt-1" viewBox="0 0 16 16" version="1.1" width="16"
               height="16">
               <path fill-rule="evenodd"
@@ -1110,26 +566,25 @@ window.onscroll = function (e) {
   }
 };
 
-var style = localStorage.getItem('data-color-mode')
-githubIconElement = document.getElementById('github-icon')
-twitterIconElement = document.getElementById('twitter-icon')
+var style = localStorage.getItem('data-color-mode');
+iconElement = document.getElementById('github-icon');
+twitterIconElement = document.getElementById('twitter-icon');
 if (style == 'light') {
-  if (githubIconElement) githubIconElement.setAttribute('fill', '#24292e')
-  if (twitterIconElement) twitterIconElement.setAttribute('fill', 'black')
+  if (iconElement) iconElement.setAttribute('fill', '#24292e');
+  if (twitterIconElement) twitterIconElement.setAttribute("fill","black")
 }
 else {
-  if (githubIconElement) {
-    githubIconElement.removeAttribute('fill')
-    githubIconElement.setAttribute('class', 'octicon')
-    githubIconElement.setAttribute('color', '#f0f6fc')
+  if (iconElement) {
+    iconElement.removeAttribute('fill');
+    iconElement.setAttribute('class', 'octicon');
+    iconElement.setAttribute('color', '#f0f6fc');
   }
-  if (twitterIconElement)  twitterIconElement.setAttribute('fill', 'white') 
+  if (twitterIconElement) twitterIconElement.setAttribute("fill","white")
 }
 </script>
 
 
     
-
 
 </div>
 
