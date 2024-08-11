@@ -6,8 +6,22 @@
     <description>Recent content in Weeklies on looechao&#39;s blog</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 11 Aug 2024 20:59:01 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Aug 2024 21:09:00 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/weekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024第32周周报</title>
+      <link>https://looechao.github.io/weekly/2024/2024-week32/</link>
+      <pubDate>Sun, 11 Aug 2024 20:50:13 +2301</pubDate>
+      <guid>https://looechao.github.io/weekly/2024/2024-week32/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024第31周周报</title>
+      <link>https://looechao.github.io/weekly/2024/2024-week31/</link>
+      <pubDate>Sun, 04 Aug 2024 20:50:13 +2301</pubDate>
+      <guid>https://looechao.github.io/weekly/2024/2024-week31/</guid>
+      <description></description>
+    </item>
     <item>
       <title>2024第30周周报</title>
       <link>https://looechao.github.io/weekly/2024/2024-week30/</link>
@@ -154,20 +168,6 @@
       <pubDate>Sun, 10 Mar 2024 21:50:13 +0800</pubDate>
       <guid>https://looechao.github.io/weekly/2024/2024-week10/</guid>
       <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://looechao.github.io/weekly/2024/2024-week31/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week31/</guid>
-      <description>title = &amp;lsquo;2024第31周周报&amp;rsquo; date = 2024-08-04T20:50:13+23:01 draft = false type = &amp;ldquo;weekly&amp;rdquo; summary = &amp;quot; &amp;quot; tags = [ &amp;ldquo;2024Weekly&amp;rdquo;]&#xA;+++&#xA;2024年第31周周报 生活 本周的状态&#xA;缓慢的布置新机器的环境 写了一篇 linux 的setup 文章 本周的娱乐时间&#xA;用上了YesPlayMusic这个宝藏软件 奥运会的金艺智很帅，手枪速射 配置wakatime，很有意思 饮食&#xA;试了思泊湖的手感粉 心情&#xA;和秦昊去湖边散步，聊天停不下来 散步&#xD;学习 reactor学的很仓促就结束了&#xA;技术 配置环境耽误太久，用notion整理了gatech的申请信息&#xA;闪念胶囊 王叔的长文引发了我很多的思考，自律、食品安全、贫富差距很残酷</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://looechao.github.io/weekly/2024/2024-week32/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week32/</guid>
-      <description>title = &amp;lsquo;2024第32周周报&amp;rsquo; date = 2024-08-11T20:50:13+23:01 draft = false type = &amp;ldquo;weekly&amp;rdquo; summary = &amp;quot; &amp;quot; tags = [ &amp;ldquo;2024Weekly&amp;rdquo;]&#xA;+++&#xA;2024年第32周周报 清单 试着用obsidian 每日英文写作锻炼 解决kernel power 41 搭建个人媒体库 生活 本周的状态&#xA;学习状态还不错&#xA;新机器用的很爽&#xA;睡眠质量不够好&#xA;本周的娱乐时间&#xA;去了KTV&#xA;魅KTV&#xD;去了长江大桥，户部巷步行街&#xA;夜游长江大桥&#xD;看了老友记前两集&#xA;用notion搭建了书库&#xA;和asumi一起抢陶喆的票&#xA;帮菲菲选手机&#xA;看到温柔晚霞&#xA;动漫晚霞&#xD;饮食&#xA;吃了武汉小龙虾+烧烤，感觉龙虾吃起来很无聊&#xA;小龙虾&#xD;牛油&#xD;吃了KFC的脆皮鸡，感觉很一般&#xA;心情&#xA;整体平淡的一周&#xA;学习 整理归纳的不错 技术 google my map用起来还不错 对Notion的理解更深了 完成了一个小项目，YoutubeAutoSubscribe, 赚到两个陌生人的Star 闪念胶囊 kernel power 41 异常关机这个问题真的很难解决，让人心烦</description>
     </item>
   </channel>
 </rss>
