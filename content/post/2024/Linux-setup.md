@@ -1,6 +1,6 @@
 +++
 title = 'How I setting a brand new fedora system'
-date = 2024-06-17T15:38:13+08:00
+date = 2024-08-02T15:38:13+08:00
 draft = false
 summary = "My personal fedora setup"
 tags = [ "Linux" ]
@@ -9,13 +9,13 @@ tags = [ "Linux" ]
 
 # Basic Settings
 
-## 0 Terminal shortcuts
+## Terminal shortcuts
 
 ```bash
 gnome-terminal
 ```
 
-## 1 SSH service for winscp/xshell
+## SSH service for winscp/xshell
 
 - install openssh-server
 
@@ -35,15 +35,15 @@ gnome-terminal
   $ sudo systemctl enable sshd
   ```
 
-- now we can get access to host by SSH service
+- now we can get access to host by  using SSH service
 
-## 2 Soft Link
+## Soft Link
 
 ```bash
 $ ln -s src linkname
 ```
 
-## 3 Valgrind tool package
+## Valgrind tool package
 
 Installation
 
@@ -69,9 +69,9 @@ add alias
 alias memcheck='valgrind --tool=memcheck --leak-check=full --show-reachable=yes
 ```
 
-## 4 PS1 Customize
+## PS1 Customize
 
-config file
+config the file
 
 ```bash
 $ vim ~/.bashrc
@@ -83,27 +83,25 @@ add this:
 export PS1="\[\e[1;35m\]$\[\e[m\] "
 ```
 
-make it work
+enable the settings
 
 ```bash
 $ source ~/.bashrc
 ```
 
-## 5 Generate Pivate Key
+## Generate Pivate Key
 
 ```bash
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
-position
-
 ```bash
 $ cd ~/.ssh
 ```
 
-## 6 Git 
+## Git 
 
-global config set
+git global config set
 
 ```bash
 $ git config --global user.name "Your Name"
@@ -113,8 +111,8 @@ $ git config --global user.email "your_email@example.com"
 proxy settings
 
 ```bash
-git config --global http.proxy http://127.0.0.1:7890
-git config --global https.proxy http://127.0.0.1:7890
+git config --global http.proxy http://127.0.0.1:xxxx
+git config --global https.proxy http://127.0.0.1:xxxx
 ```
 
 # Software settings
