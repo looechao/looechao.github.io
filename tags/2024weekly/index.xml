@@ -4,169 +4,22 @@
     <title>2024Weekly on looechao&#39;s blog</title>
     <link>https://looechao.github.io/tags/2024weekly/</link>
     <description>Recent content in 2024Weekly on looechao&#39;s blog</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 16 Aug 2024 17:51:45 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 Sep 2024 23:25:11 +0800</lastBuildDate>
     <atom:link href="https://looechao.github.io/tags/2024weekly/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2024第32周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week32/</link>
-      <pubDate>Sun, 11 Aug 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week32/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第31周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week31/</link>
-      <pubDate>Sun, 04 Aug 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week31/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第30周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week30/</link>
-      <pubDate>Mon, 29 Jul 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week30/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第29周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week29/</link>
-      <pubDate>Sun, 21 Jul 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week29/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第28周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week28/</link>
-      <pubDate>Sun, 14 Jul 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week28/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第27周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week27/</link>
-      <pubDate>Sun, 07 Jul 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week27/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第26周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week26/</link>
-      <pubDate>Sun, 30 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week26/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第25周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week25/</link>
-      <pubDate>Sun, 23 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week25/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第24周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week24/</link>
-      <pubDate>Sun, 16 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week24/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第23周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week23/</link>
+      <title>2024年夏</title>
+      <link>https://looechao.github.io/weekly/2024/2024-summer/</link>
       <pubDate>Sun, 09 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week23/</guid>
+      <guid>https://looechao.github.io/weekly/2024/2024-summer/</guid>
       <description></description>
     </item>
     <item>
-      <title>2024第22周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week22/</link>
-      <pubDate>Sun, 02 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week22/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第21周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week21/</link>
-      <pubDate>Sun, 26 May 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week21/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第20周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week20/</link>
-      <pubDate>Sun, 19 May 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week20/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第19周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week19/</link>
-      <pubDate>Sun, 12 May 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week19/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第18周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week18/</link>
-      <pubDate>Sun, 05 May 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week18/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第17周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week17/</link>
-      <pubDate>Sun, 28 Apr 2024 20:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week17/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第16周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week16/</link>
-      <pubDate>Sun, 21 Apr 2024 20:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week16/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第15周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week15/</link>
-      <pubDate>Sun, 14 Apr 2024 20:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week15/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第14周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week14/</link>
-      <pubDate>Sun, 07 Apr 2024 20:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week14/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第13周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week13/</link>
-      <pubDate>Sun, 31 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week13/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第12周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week12/</link>
-      <pubDate>Sun, 24 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week12/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第11周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week11/</link>
-      <pubDate>Sun, 17 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week11/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024第10周周报</title>
-      <link>https://looechao.github.io/weekly/2024/2024-week10/</link>
+      <title>2024年春</title>
+      <link>https://looechao.github.io/weekly/2024/2024-spring/</link>
       <pubDate>Sun, 10 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/weekly/2024/2024-week10/</guid>
+      <guid>https://looechao.github.io/weekly/2024/2024-spring/</guid>
       <description></description>
     </item>
   </channel>
