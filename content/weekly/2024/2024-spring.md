@@ -93,19 +93,6 @@ tags = [ "2024Weekly"]
 
 
 
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-6.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">记忆碎片</div>
-</center>
-</div>
-
 
 4. 心情
 
@@ -451,22 +438,7 @@ tags = [ "2024Weekly"]
 3. 饮食
 
 - 吃的面食还是偏多，习惯了吃公安锅盔和包子
-
-- <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week18-4.jpg" width="30%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">试笔记本的前置摄像头</div>
-  </center>
-  </div>
-
 - 早餐终于从三明治退坑，但是又总是会遇到牛奶刺客
-
 - 又尝试了血橙，感觉不如伦晚橙好吃
 
 </br>

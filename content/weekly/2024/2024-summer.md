@@ -19,7 +19,7 @@ tags = [ "2024Weekly"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week35-2.gif" width="50%">
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-2.gif" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -32,7 +32,7 @@ tags = [ "2024Weekly"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week35-3.jpg" height="50%" width="50%">
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-3.jpg" height="50%" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -40,6 +40,7 @@ tags = [ "2024Weekly"]
     padding: 2px;">HN</div>
 </center>
 </div>
+
 
 #### 学习
 
@@ -51,7 +52,7 @@ tags = [ "2024Weekly"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week35-1.gif" width="50%">
+    src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-1.gif" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -59,6 +60,7 @@ tags = [ "2024Weekly"]
     padding: 2px;">gogh</div>
 </center>
 </div>
+
 
 #### 技术
 
@@ -78,7 +80,7 @@ tags = [ "2024Weekly"]
   <center>
       <img style="border-radius: 0.3125em;
       box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week34-2.jpg" width="50%">
+      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week34-2.jpg" width="50%">
       <br>
       <div style="color:orange; border-bottom: 0px solid #d9d9d9;
       display: inline-block;
@@ -95,7 +97,7 @@ tags = [ "2024Weekly"]
   <center>
       <img style="border-radius: 0.3125em;
       box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week34-1.jpg" width="50%">
+      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week34-1.jpg" width="50%">
       <br>
       <div style="color:orange; border-bottom: 0px solid #d9d9d9;
       display: inline-block;
@@ -133,7 +135,7 @@ tags = [ "2024Weekly"]
   <center>
       <img style="border-radius: 0.3125em;
       box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week33-5.jpg" width="50%">
+      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-5.jpg" width="50%">
       <br>
       <div style="color:orange; border-bottom: 0px solid #d9d9d9;
       display: inline-block;
@@ -148,7 +150,7 @@ tags = [ "2024Weekly"]
   <center>
       <img style="border-radius: 0.3125em;
       box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week33-3.jpg" width="50%">
+      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-3.jpg" width="50%">
       <br>
       <div style="color:orange; border-bottom: 0px solid #d9d9d9;
       display: inline-block;
@@ -161,7 +163,7 @@ tags = [ "2024Weekly"]
   <center>
       <img style="border-radius: 0.3125em;
       box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week33-4.jpg" width="50%">
+      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-4.jpg" width="50%">
       <br>
       <div style="color:orange; border-bottom: 0px solid #d9d9d9;
       display: inline-block;
@@ -176,7 +178,7 @@ tags = [ "2024Weekly"]
   <center>
       <img style="border-radius: 0.3125em;
       box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week33-2.jpg" width="50%">
+      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-2.jpg" width="50%">
       <br>
       <div style="color:orange; border-bottom: 0px solid #d9d9d9;
       display: inline-block;
@@ -222,7 +224,7 @@ tags = [ "2024Weekly"]
      <center>
          <img style="border-radius: 0.3125em;
          box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-         src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week32-4.jpg" width="50%">
+         src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-4.jpg" width="50%">
          <br>
          <div style="color:orange; border-bottom: 0px solid #d9d9d9;
          display: inline-block;
@@ -237,7 +239,7 @@ tags = [ "2024Weekly"]
      <center>
          <img style="border-radius: 0.3125em;
          box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-         src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week32-5.jpg" width="50%">
+         src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-11.jpg" width="50%">
          <br>
          <div style="color:orange; border-bottom: 0px solid #d9d9d9;
          display: inline-block;
@@ -258,7 +260,7 @@ tags = [ "2024Weekly"]
      <center>
          <img style="border-radius: 0.3125em;
          box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-         src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week32-3.jpg" width="50%">
+         src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-3.jpg" width="50%">
          <br>
          <div style="color:orange; border-bottom: 0px solid #d9d9d9;
          display: inline-block;
@@ -275,20 +277,32 @@ tags = [ "2024Weekly"]
    <div style="display: flex; justify-content: center; align-items: flex-start;">
        <div style="margin: 10px; text-align: center;">
            <img style="border-radius: 0.3125em; box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-                src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week32-1.jpg" width="250px">
+                src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-1.jpg" width="250px">
            <br>
            <div style="color: orange; border-bottom: 0px solid #d9d9d9; color: #999; padding: 2px;">小龙虾</div>
        </div>
        <div style="margin: 10px; text-align: center;">
            <img style="border-radius: 0.3125em; box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-                src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week32-2.jpg" width="250px">
+                src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-2.jpg" width="250px">
            <br>
            <div style="color: orange; border-bottom: 0px solid #d9d9d9; color: #999; padding: 2px;">牛油</div>
        </div>
+   </div>   
+
+   <div>
+   <center>
+       <img style="border-radius: 0.3125em;
+       box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+       src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-10.jpg" width="50%">
+       <br>
+       <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+       display: inline-block;
+       color: #999;
+       padding: 2px;">黄鹤楼</div>
+   </center>
    </div>
 
-
-   吃了KFC的脆皮鸡，感觉很一般
+吃了KFC的脆皮鸡，感觉很一般
 
 
 4. 心情
@@ -341,7 +355,7 @@ kernel power 41 异常关机这个问题真的很难解决，让人心烦
    <center>
        <img style="border-radius: 0.3125em;
        box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-       src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week31-1.jpg" width="50%">
+       src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week31-1.jpg" width="50%">
        <br>
        <div style="color:orange; border-bottom: 0px solid #d9d9d9;
        display: inline-block;
@@ -392,7 +406,7 @@ reactor学的很仓促就结束了
    <center>
        <img style="border-radius: 0.3125em;
        box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-       src="https://looe-blogimg.oss-cn-beijing.aliyuncs.com/24-weekly/week30-1.png" width="50%">
+       src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week30-1.png" width="50%">
        <br>
        <div style="color:orange; border-bottom: 0px solid #d9d9d9;
        display: inline-block;
@@ -400,6 +414,7 @@ reactor学的很仓促就结束了
        padding: 2px;">吴倩莲</div>
    </center>
    </div>
+   
    
    
    
@@ -963,7 +978,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 继续坚持使用Beancount记账
 
-- 经历了一次武汉的暴风雨
+- 经历了一次武汉的暴风雨，目睹一只小麻雀被风吹到树上撞晕了
 
   <div>
   <center>
