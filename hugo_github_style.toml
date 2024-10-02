@@ -52,5 +52,5 @@ buildFuture = true
     labels = "gitalk"
     perPage = 50
     pagerDirection = "last"
-    createIssueManually = true
+    createIssueManually = false
     distractionFreeMode = false
