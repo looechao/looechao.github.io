@@ -39,10 +39,7 @@ buildFuture = true
   googleAnalytics = "G-T6EYNX397W"
 
   [frontmatter]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
-
-  enableGitalk = true
-
+  ## lastmod = ["lastmod", ":fileModTime", ":default"]
   
 
   [params.gitalk]
