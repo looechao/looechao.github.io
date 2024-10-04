@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>杂谈 on looechao&#39;s blog</title>
+    <link>https://looechao.github.io/tags/%E6%9D%82%E8%B0%88/</link>
+    <description>Recent content in 杂谈 on looechao&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 15 Mar 2024 20:50:13 +0800</lastBuildDate>
+    <atom:link href="https://looechao.github.io/tags/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于内卷的思考</title>
+      <link>https://looechao.github.io/post/2024/involution/</link>
+      <pubDate>Fri, 15 Mar 2024 20:50:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/involution/</guid>
+      <description>只许向上爬，不准往下走的竞争</description>
+    </item>
+    <item>
+      <title>写在22岁之前</title>
+      <link>https://looechao.github.io/post/2024/before22/</link>
+      <pubDate>Wed, 13 Mar 2024 21:50:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/before22/</guid>
+      <description>黄金时代，在中南林的几乎一整年</description>
+    </item>
+  </channel>
+</rss>

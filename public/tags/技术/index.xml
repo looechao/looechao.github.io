@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on looechao&#39;s blog</title>
+    <link>https://looechao.github.io/tags/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on looechao&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 10 Jul 2024 22:53:13 +0800</lastBuildDate>
+    <atom:link href="https://looechao.github.io/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>浅谈C&#43;&#43;中string的SSO策略</title>
+      <link>https://looechao.github.io/post/2024/string-sso-strategy/</link>
+      <pubDate>Wed, 10 Jul 2024 22:53:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/string-sso-strategy/</guid>
+      <description>短字符串的优化策略</description>
+    </item>
+    <item>
+      <title>网络编程-EPOLL的使用</title>
+      <link>https://looechao.github.io/post/2024/linux-network-programming-02-epoll/</link>
+      <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/linux-network-programming-02-epoll/</guid>
+      <description>用EPOLL代替SELECT</description>
+    </item>
+    <item>
+      <title>网络编程-TCP和UDP通信模型</title>
+      <link>https://looechao.github.io/post/2024/linux-network-programming-01-tcp/</link>
+      <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/linux-network-programming-01-tcp/</guid>
+      <description>TCP和UDP的通信模型</description>
+    </item>
+    <item>
+      <title>Linux学习笔记-24年5月第一组</title>
+      <link>https://looechao.github.io/post/2024/linux-01/</link>
+      <pubDate>Sat, 18 May 2024 15:38:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/linux-01/</guid>
+      <description>Linux基础知识-排版待整理</description>
+    </item>
+    <item>
+      <title>常用的数据结构和算法</title>
+      <link>https://looechao.github.io/post/2024/c-data-structure-algorithm/</link>
+      <pubDate>Fri, 10 May 2024 22:53:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/c-data-structure-algorithm/</guid>
+      <description>动态数组，链表，栈，队列，哈希表，位图，二叉树，排序，二分查找</description>
+    </item>
+    <item>
+      <title>C语言复习笔记-02</title>
+      <link>https://looechao.github.io/post/2024/c-notes-02/</link>
+      <pubDate>Fri, 03 May 2024 15:38:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/c-notes-02/</guid>
+      <description>指针及相关应用</description>
+    </item>
+    <item>
+      <title>C语言复习笔记-01</title>
+      <link>https://looechao.github.io/post/2024/c-notes-01/</link>
+      <pubDate>Sun, 28 Apr 2024 22:53:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/c-notes-01/</guid>
+      <description>类型，表达式，语句，数组，函数</description>
+    </item>
+    <item>
+      <title>C语言中的六种位运算符</title>
+      <link>https://looechao.github.io/post/2024/bitwise-operators/</link>
+      <pubDate>Wed, 24 Apr 2024 21:09:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/bitwise-operators/</guid>
+      <description>位运算符的灵活应用</description>
+    </item>
+  </channel>
+</rss>

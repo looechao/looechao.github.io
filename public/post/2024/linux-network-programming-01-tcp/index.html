@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://looechao.github.io/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://looechao.github.io/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://looechao.github.io/css/github.min.css' />
+    <link rel="stylesheet" href='https://looechao.github.io/css/github-style.css' />
+    <link rel="stylesheet" href='https://looechao.github.io/css/light.css' />
+    <link rel="stylesheet" href='https://looechao.github.io/css/dark.css' />
+    <link rel="stylesheet" href='https://looechao.github.io/css/syntax.css' />
+    <title>网络编程-TCP和UDP通信模型 - looechao&#39;s blog</title>
+    
+    <link rel="icon" type="image/x-icon" href='/images/favicon.png'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    <meta name="description"
+  content="TCP和UDP的通信模型" />
+<meta name="keywords"
+  content='blog, google analytics' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://looechao.github.io/post/2024/linux-network-programming-01-tcp/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="网络编程-TCP和UDP通信模型 - looechao&#39;s blog" />
+<meta name="twitter:description"
+  content="TCP和UDP的通信模型" />
+<meta name="twitter:site" content="https://looechao.github.io/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://looechao.github.io/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="网络编程-TCP和UDP通信模型 - looechao&#39;s blog">
+<meta property="og:description"
+  content="TCP和UDP的通信模型" />
+<meta property="og:url" content="https://looechao.github.io/post/2024/linux-network-programming-01-tcp/" />
+<meta property="og:site_name" content="网络编程-TCP和UDP通信模型" />
+<meta property="og:image"
+  content="https://looechao.github.io/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2024-06-16 15:38:13 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://looechao.github.io/">
+        <svg class="octicon" height="32" viewBox="0 0 16 16" version="1.1" width="32">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button" onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search" class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get" autocomplete="off">
+            <label class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text" class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable" name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:https://looechao.github.io/">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="site:https://looechao.github.io/">
+        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  
+<div>
+  <main>
+    <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav pt-lg-4 "> 
+                <div class="repohead-details-container clearfix container-lg p-responsive d-lg-block"> 
+                    <div class="d-flex">
+                        <h1 class="public css-truncate float-none flex-auto width-fit pl-0">
+                            <a class="avatar mr-1" href="https://looechao.github.io/">
+                            
+                                <img src="/images/profile.png" class="avatar-user" width="26" height="26" title="Looe">
+                            
+                            </a>
+                            
+                            <strong itemprop="name"><a href="https://looechao.github.io/post/2024/linux-network-programming-01-tcp/">网络编程-TCP和UDP通信模型</a></strong>
+
+                            
+
+                            
+                            <div class="d-block text-small text-gray">
+                                <span class="d-inline-block">
+                                    Created at <time datetime="2024-06-16 15:38" class="no-wrap">
+                                        2024-06-16 15:38</time>
+                                </span>
+
+                                
+                                </span>
+                            </div>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      2168 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="/tags/%E6%8A%80%E6%9C%AF">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      技术
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="/tags/linux">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      Linux
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      网络编程
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="/tags/tcp">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      TCP
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="/tags/udp">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      UDP
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      即时通信系统
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><div style="width: 80%; margin: auto;">
+    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/post/TCP-UDP.jpg" alt="shotonspf" style="width: 100%;" />
+</div>
+<h1 id="tcp-通信">TCP 通信</h1>
+<p>这里的应用编写属于应用层的实现，而SOCKET的实现属于传输层</p>
+<h2 id="tcp鸟瞰图">TCP鸟瞰图</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">socket                socket
+</span></span><span class="line"><span class="cl">   <span class="p">|</span>                    <span class="p">|</span>
+</span></span><span class="line"><span class="cl">   <span class="p">|</span>                   <span class="nb">bind</span>
+</span></span><span class="line"><span class="cl">   <span class="p">|</span>                    <span class="p">|</span>
+</span></span><span class="line"><span class="cl">   <span class="p">|</span>                  lisent
+</span></span><span class="line"><span class="cl">connect-----------------<span class="p">|</span>
+</span></span><span class="line"><span class="cl">   <span class="p">|</span>                  accept
+</span></span><span class="line"><span class="cl">   <span class="p">|</span>                    <span class="p">|</span>
+</span></span><span class="line"><span class="cl"> send                 recv
+</span></span><span class="line"><span class="cl">   <span class="p">|</span>                    <span class="p">|</span>
+</span></span><span class="line"><span class="cl"> close                close
+</span></span></code></pre></div><h2 id="网络也是一种文件">网络也是一种文件</h2>
+<p>socket文件对象实在内核态空间创建的，有两个缓冲区，分别是snd和rcv缓冲区，为了实现全双工通信，需要两个管道</p>
+<h2 id="各个api的作用">各个api的作用</h2>
+<ul>
+<li>
+<p>socket</p>
+<p>创建一个套接字设备（规定地址类型例如ipv4、TCP流式传输和UDP数据报通信、默认socket协议）</p>
+</li>
+<li>
+<p>bind</p>
+<p>给套接字赋予一个本地地址，在TCP传输中，服务端必须要bind一个IP地址，因为客户端总是需要向服务端发送请求的，<strong>如果都绑定了地址</strong>，在断连后重连会浪费更多的时间，所以在tcp协议中，并不建议两端都bind，<strong>不bind本地ip地址会报错</strong>，<strong>bind 0.0.0.0 相当于绑定外网地址</strong></p>
+<ul>
+<li>bind的流程
+<ol>
+<li>先创建struct sockaddr_in</li>
+<li>设置好地址内容参数</li>
+<li>传递参数</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>connect</p>
+<p>建立连接，要请求一个服务端的ip和端口，调用该api时，传输层会进行三次握手协议</p>
+</li>
+<li>
+<p>listen</p>
+<p>服务端开启监听，可以接受客户端的连接，执行listen之后，会复制一个socket文件对象，将snd和rcv缓冲区换成半连接队列和全连接队列，<strong>也就是说listen之后，socket将不再能够发送和接受数据，只能新建连接，处理三次握手相关的内容</strong>；所以我们把listen之后的socket称作服务端socket</p>
+</li>
+<li>
+<p>accept</p>
+<p>用于从服务端socket中的全连接队列中取出内容，构建一个新的文件对象（Net Socket），netsocket才是真正用于通信的</p>
+</li>
+<li>
+<p>send</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">send</span><span class="p">(</span><span class="kt">int</span> <span class="n">s</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span> <span class="o">*</span><span class="n">msg</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">len</span><span class="p">,</span> <span class="kt">int</span> <span class="n">flags</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">ssize_t</span> <span class="nf">write</span><span class="p">(</span><span class="kt">int</span> <span class="n">fd</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span> <span class="o">*</span><span class="n">buf</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">count</span><span class="p">);</span>
+</span></span></code></pre></div><p>send是一个特殊的write函数</p>
+</li>
+<li>
+<p>recv</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">ssize_t</span> <span class="nf">recv</span><span class="p">(</span><span class="kt">int</span> <span class="n">sockfd</span><span class="p">,</span> <span class="kt">void</span> <span class="n">buf</span><span class="p">[.</span><span class="n">len</span><span class="p">],</span> <span class="kt">size_t</span> <span class="n">len</span><span class="p">,</span><span class="kt">int</span> <span class="n">flags</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">ssize_t</span> <span class="nf">read</span><span class="p">(</span><span class="kt">int</span> <span class="n">fd</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">buf</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">count</span><span class="p">);</span>
+</span></span></code></pre></div><p>recv是一个特殊的read函数</p>
+<p>send/recv只是把数据在buf和select之间来回拷贝，真正的发送和接收行为是内核协议栈来完成的，如果服务端调用recv函数时，接收缓冲区是空的，则会阻塞；<strong>send/recv不是简单的收发关系，不是一一对应的</strong>，TCP数据是没有边界的，应用层的表现和两根管道是一模一样的</p>
+<ul>
+<li>
+<p>rcv缓冲区为空时，recv会阻塞</p>
+</li>
+<li>
+<p>rcv非空时，recv的返回值在（0，count）</p>
+<p>如果recv的ret为0，表示对面close了</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="即时通信系统">即时通信系统</h2>
+<p>服务端：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ./2_aqiang 192.168.68.128 1234
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//socket 是两端通信的端点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">ARGS_CHECK</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="nf">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="nf">htons</span><span class="p">(</span><span class="nf">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="nf">inet_addr</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="nf">connect</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">addr</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;connect&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fd_set</span> <span class="n">rdset</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">4096</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">FD_ZERO</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rdset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">FD_SET</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">FD_SET</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">select</span><span class="p">(</span><span class="n">sockfd</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="k">if</span><span class="p">(</span><span class="nf">FD_ISSET</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">             <span class="c1">//memset(buf, 0, sizeof(buf));
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">             <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">read</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">             <span class="c1">//send(sockfd, buf, strlen(buf), 0);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="nf">send</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">sret</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>                  
+</span></span><span class="line"><span class="cl">         <span class="k">if</span><span class="p">(</span><span class="nf">FD_ISSET</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">             <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">             <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>                                 
+</span></span><span class="line"><span class="cl">             <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;buf = %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>                       
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>                           
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>客户端</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ./2_aqiang 192.168.68.128 1234
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//socket 是两端通信的端点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">ARGS_CHECK</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="nf">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="nf">htons</span><span class="p">(</span><span class="nf">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="nf">inet_addr</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="nf">connect</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">addr</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;connect&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fd_set</span> <span class="n">rdset</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">4096</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">FD_ZERO</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rdset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">FD_SET</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">FD_SET</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">select</span><span class="p">(</span><span class="n">sockfd</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="k">if</span><span class="p">(</span><span class="nf">FD_ISSET</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">             <span class="c1">//memset(buf, 0, sizeof(buf));
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">             <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">read</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">             <span class="c1">//send(sockfd, buf, strlen(buf), 0);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="nf">send</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">sret</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>                  
+</span></span><span class="line"><span class="cl">         <span class="k">if</span><span class="p">(</span><span class="nf">FD_ISSET</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">             <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">             <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>                                 
+</span></span><span class="line"><span class="cl">             <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;buf = %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>                       
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>                           
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="聊天室">聊天室</h2>
+<p>server</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">conn_s</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">netfd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">is_alive</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="kt">conn_t</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ./2_server 192.168.68.128 1234
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">ARGS_CHECK</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="nf">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span><span class="p">;</span> <span class="c1">//服务端地址的结构体初始化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//向ip结构体中传入ip地址和端口号参数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="nf">htons</span><span class="p">(</span><span class="nf">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="nf">inet_addr</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="nf">bind</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">addr</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;bind&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">listen</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>   <span class="c1">//DDOS攻击的点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="kt">conn_t</span> <span class="n">clientArr</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>  <span class="c1">//保存所有炼乳客户端的信息
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">curidx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//保存下一个炼乳客户端的下标
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">4096</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fd_set</span> <span class="n">rdset</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fd_set</span> <span class="n">monitorset</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">FD_ZERO</span><span class="p">(</span><span class="o">&amp;</span><span class="n">monitorset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">FD_SET</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">monitorset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rdset</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">monitorset</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">fd_set</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">select</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="nf">FD_ISSET</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">clientAddr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">socklen_t</span> <span class="n">clientAddrSize</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">);</span> <span class="c1">//该变量必须初始化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="kt">int</span> <span class="n">netfd</span> <span class="o">=</span>  <span class="nf">accept</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">clientAddr</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">clientAddrSize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;netfd = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">netfd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;client ip = %s, port = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">               <span class="nf">inet_ntoa</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">),</span> <span class="nf">ntohs</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_port</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">            <span class="n">clientArr</span><span class="p">[</span><span class="n">curidx</span><span class="p">].</span><span class="n">netfd</span> <span class="o">=</span> <span class="n">netfd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">clientArr</span><span class="p">[</span><span class="n">curidx</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//1 表示存货 0表示已经断开
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nf">FD_SET</span><span class="p">(</span><span class="n">netfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">monitorset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="o">++</span><span class="n">curidx</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">curidx</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">&amp;&amp;</span> <span class="nf">FD_ISSET</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//读取该客户端发送的消息并且转发给其它所有的客户端
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">isalive</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//i号客户端已经终止
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="nf">FD_CLR</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">monitorset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="nf">close</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//转发给其他所有的客户端
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">curidx</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span><span class="p">(</span><span class="n">j</span> <span class="o">==</span> <span class="n">i</span> <span class="o">||</span> <span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">continue</span><span class="p">;</span> <span class="c1">//发送的目标是自己或者发送的目标已经关闭，就继续
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">//相当于做一个广播的操作
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                   <span class="nf">send</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="nf">strlen</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="mi">0</span><span class="p">);;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">close</span><span class="p">(</span><span class="n">sockfd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>client</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ./2_aqiang 192.168.68.128 1234
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//socket 是两端通信的端点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">ARGS_CHECK</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="nf">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="nf">htons</span><span class="p">(</span><span class="nf">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="nf">inet_addr</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="nf">connect</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">addr</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;connect&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fd_set</span> <span class="n">rdset</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">4096</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">FD_ZERO</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rdset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">FD_SET</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">FD_SET</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="nf">select</span><span class="p">(</span><span class="n">sockfd</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="k">if</span><span class="p">(</span><span class="nf">FD_ISSET</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">             <span class="c1">//memset(buf, 0, sizeof(buf));
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">             <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">read</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">             <span class="c1">//send(sockfd, buf, strlen(buf), 0);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="nf">send</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">sret</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>                  
+</span></span><span class="line"><span class="cl">         <span class="k">if</span><span class="p">(</span><span class="nf">FD_ISSET</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rdset</span><span class="p">)){</span>
+</span></span><span class="line"><span class="cl">             <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">             <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>                                 
+</span></span><span class="line"><span class="cl">             <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;buf = %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>                       
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>                           
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="杂项">杂项</h2>
+<ul>
+<li>
+<p>端口号的选择：</p>
+<p>0-65535之间进行选择，0-1000的端口属于悉知端口号，尽量不要选择</p>
+</li>
+</ul>
+<h1 id="udp通信">UDP通信</h1>
+<h2 id="udp鸟瞰图">UDP鸟瞰图</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">   客户端           服务端
+</span></span><span class="line"><span class="cl">   socket          socket
+</span></span><span class="line"><span class="cl">      <span class="p">|</span>              <span class="p">|</span>
+</span></span><span class="line"><span class="cl">      <span class="p">|</span>             <span class="nb">bind</span>
+</span></span><span class="line"><span class="cl">      <span class="p">|</span>              <span class="p">|</span>
+</span></span><span class="line"><span class="cl">    sendto -------&gt; recvfrom
+</span></span><span class="line"><span class="cl">      <span class="p">|</span>              <span class="p">|</span>
+</span></span><span class="line"><span class="cl">   recvfrom &lt;------ sendto
+</span></span><span class="line"><span class="cl">      <span class="p">|</span>
+</span></span><span class="line"><span class="cl">     close
+</span></span></code></pre></div><p>问题？</p>
+<blockquote>
+<p>TCP和UDP能否bind同一个端口?</p>
+<p>可以bind，tcp和udp走的信道不同，不会产生干扰，因此可以bind同一个端口</p>
+</blockquote>
+<blockquote>
+<p>UDP 需要listen 和 connect 吗？</p>
+<p>不需要，UDP是无连接的</p>
+</blockquote>
+<h2 id="api功能概览">API功能概览</h2>
+<ol>
+<li>
+<p>socket函数</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">socket</span><span class="p">(</span><span class="kt">int</span> <span class="n">domain</span><span class="p">,</span> <span class="kt">int</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">protocal</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>domain 指定通讯选用的协议，常用的有IPv4网络协议，AF_INET</li>
+<li>type 用于指定通讯的语义，SOCK_STREAM 提供可靠有序的字节流通讯，而SOCK_DGRAM 提供数据报通讯</li>
+<li>protocal 用于指定套接字的协议</li>
+</ul>
+</li>
+<li>
+<p>sendto 和 recvfrom 函数</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">ssize_t</span> <span class="nf">send</span><span class="p">(</span><span class="kt">int</span> <span class="n">sockfd</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span> <span class="n">buf</span><span class="p">[.</span><span class="n">len</span><span class="p">],</span> <span class="kt">size_t</span> <span class="n">len</span><span class="p">,</span> <span class="kt">int</span> <span class="n">flags</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">ssize_t</span> <span class="nf">sendto</span><span class="p">(</span><span class="kt">int</span> <span class="n">sockfd</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span> <span class="n">buf</span><span class="p">[.</span><span class="n">len</span><span class="p">],</span> <span class="kt">size_t</span> <span class="n">len</span><span class="p">,</span> <span class="kt">int</span> <span class="n">flags</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">               <span class="k">const</span> <span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="n">dest_addr</span><span class="p">,</span> <span class="kt">socklen_t</span> <span class="n">addrlen</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">ssize_t</span> <span class="nf">recv</span><span class="p">(</span><span class="kt">int</span> <span class="n">sockfd</span><span class="p">,</span> <span class="kt">void</span> <span class="n">buf</span><span class="p">[.</span><span class="n">len</span><span class="p">],</span> <span class="kt">size_t</span> <span class="n">len</span><span class="p">,</span> <span class="kt">int</span> <span class="n">flags</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">ssize_t</span> <span class="nf">recvfrom</span><span class="p">(</span><span class="kt">int</span> <span class="n">sockfd</span><span class="p">,</span> <span class="kt">void</span> <span class="n">buf</span><span class="p">[</span><span class="kr">restrict</span> <span class="p">.</span><span class="n">len</span><span class="p">],</span> <span class="kt">size_t</span> <span class="n">len</span><span class="p">,</span> <span class="kt">int</span> <span class="n">flags</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                 <span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="kr">restrict</span> <span class="n">src_addr</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                 <span class="kt">socklen_t</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="kr">restrict</span> <span class="n">addrlen</span><span class="p">);</span>
+</span></span></code></pre></div><p>UDP的 sendto 和 recvfrom 每次收发数据都需要绑定一个地址信息，而TCP不需要</p>
+</li>
+<li>
+<p>UDP 必须客户端先 sendto ， 服务端先 recvfrom，客户端的地址不是固定的，而服务端</p>
+</li>
+</ol>
+<h2 id="udp通信例子">UDP通信例子</h2>
+<p>一个简单的UDP通信例子：</p>
+<ul>
+<li>
+<p>服务端server</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;func.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ./4_server 0.0.0.0 1234
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">ARGS_CHECK</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="nf">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_DGRAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>  <span class="c1">//UDP SOCK_DGRAM
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">serverAddr</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">serverAddr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">serverAddr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="nf">htons</span><span class="p">(</span><span class="nf">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">    <span class="n">serverAddr</span><span class="p">.</span><span class="n">sin_addr</span> <span class="o">=</span> <span class="nf">inet_addr</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 进行bind操作
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="nf">bind</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">serverAddr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">serverAddr</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;bind&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 服务端先recvfrom
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">clientAddr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">socklen_t</span> <span class="n">clientAddrSize</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">4096</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">recvfrom</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">clientAddr</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">clientAddrSize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;client ip = %s, port = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nf">inent_ntoa</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">),</span> <span class="nf">ntohs</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_port</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;buf = %s&#34;</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">close</span><span class="p">(</span><span class="n">sockfd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>客户端</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;func.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ./4_client 192.168.68.128 1234
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">ARGS_CHECK</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="nf">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_DGRAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>  <span class="c1">//UDP SOCK_DGRAM
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">serverAddr</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">serverAddr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">serverAddr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="nf">htons</span><span class="p">(</span><span class="nf">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">    <span class="n">serverAddr</span><span class="p">.</span><span class="n">sin_addr</span> <span class="o">=</span> <span class="nf">inet_addr</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 客户端先 sendto
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">sendto</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="s">&#34;zaima&#34;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">serverAddr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">serverAddr</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+</ul>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://looechao.github.io/js/toc.js'></script>
+<link rel="stylesheet" href='https://looechao.github.io/css/toc.css' />
+
+
+<div id="gitalk-container" class="gitalk-container"></div>
+<link rel="stylesheet" href='https://looechao.github.io/css/gitalk.css'>
+<script src='https://looechao.github.io/js/gitalk.min.js'></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '4fad9f9325f73f2c2891',
+    clientSecret: '109ed02ced3608e776a41f87de4ef9986f5b5fd6',
+    repo: 'hugo-comments',
+    owner: 'looechao',
+    admin: ['looechao'],
+    id: eval("location.pathname"), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://looechao.github.io/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+</body>
+
+<script type="application/javascript" src="https://looechao.github.io/js/github-style.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+  integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
+  integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+  integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+</html>

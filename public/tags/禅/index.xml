@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>禅 on looechao&#39;s blog</title>
+    <link>https://looechao.github.io/tags/%E7%A6%85/</link>
+    <description>Recent content in 禅 on looechao&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 05 Apr 2024 21:50:13 +0800</lastBuildDate>
+    <atom:link href="https://looechao.github.io/tags/%E7%A6%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>禅与极简生活艺术-阅读笔记</title>
+      <link>https://looechao.github.io/post/2024/zenlife/</link>
+      <pubDate>Fri, 05 Apr 2024 21:50:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/zenlife/</guid>
+      <description>边读边写边总结</description>
+    </item>
+  </channel>
+</rss>
