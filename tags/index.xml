@@ -4,10 +4,17 @@
     <title>Tags on looechao&#39;s blog</title>
     <link>https://looechao.github.io/tags/</link>
     <description>Recent content in Tags on looechao&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 19 Sep 2024 21:10:23 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Sep 2024 20:50:13 +2301</lastBuildDate>
     <atom:link href="https://looechao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024Weekly</title>
+      <link>https://looechao.github.io/tags/2024weekly/</link>
+      <pubDate>Sun, 08 Sep 2024 20:50:13 +2301</pubDate>
+      <guid>https://looechao.github.io/tags/2024weekly/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Linux</title>
       <link>https://looechao.github.io/tags/linux/</link>
@@ -132,13 +139,6 @@
       <link>https://looechao.github.io/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
       <guid>https://looechao.github.io/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2024Weekly</title>
-      <link>https://looechao.github.io/tags/2024weekly/</link>
-      <pubDate>Sun, 09 Jun 2024 20:50:13 +2301</pubDate>
-      <guid>https://looechao.github.io/tags/2024weekly/</guid>
       <description></description>
     </item>
     <item>

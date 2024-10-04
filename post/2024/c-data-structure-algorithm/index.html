@@ -136,11 +136,6 @@
                                 </span>
 
                                 
-                                <span class="file-info-divider"></span>
-                                <span class="d-inline-block">
-                                    Updated at <time datetime="2024-09-14 12:35" class="no-wrap">
-                                        2024-09-14 12:35</time>
-                                    
                                 </span>
                             </div>
                         </h1>
@@ -259,34 +254,34 @@
 </ul>
 <h3 id="单链表操作">单链表操作</h3>
 <table>
-<thead>
-<tr>
-<th style="text-align:center">操作</th>
-<th style="text-align:center">复杂度</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">增(某个节点后面添加)</td>
-<td style="text-align:center">O(1)</td>
-</tr>
-<tr>
-<td style="text-align:center">删(某个节点后面删除)</td>
-<td style="text-align:center">O(1)</td>
-</tr>
-<tr>
-<td style="text-align:center">查（根据索引）</td>
-<td style="text-align:center">O(n)</td>
-</tr>
-<tr>
-<td style="text-align:center">查（与特定值相等的点）</td>
-<td style="text-align:center">O(n)</td>
-</tr>
-<tr>
-<td style="text-align:center">遍历</td>
-<td style="text-align:center">O(n)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">操作</th>
+          <th style="text-align: center">复杂度</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">增(某个节点后面添加)</td>
+          <td style="text-align: center">O(1)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">删(某个节点后面删除)</td>
+          <td style="text-align: center">O(1)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">查（根据索引）</td>
+          <td style="text-align: center">O(n)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">查（与特定值相等的点）</td>
+          <td style="text-align: center">O(n)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">遍历</td>
+          <td style="text-align: center">O(n)</td>
+      </tr>
+  </tbody>
 </table>
 <ul>
 <li>
@@ -473,28 +468,28 @@ LIST   head                              tail
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">//优化
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Static</span> <span class="n">Node</span><span class="o">*</span> <span class="n">last</span><span class="p">;</span>  <span class="c1">//记录上一次查找的节点
 </span></span></span></code></pre></div><table>
-<thead>
-<tr>
-<th style="text-align:center">操作</th>
-<th style="text-align:center">根据索引查</th>
-<th style="text-align:center">遍历时间</th>
-<th style="text-align:center">根据定值查</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">单链表</td>
-<td style="text-align:center">O(n)</td>
-<td style="text-align:center">n/2</td>
-<td style="text-align:center">效率低</td>
-</tr>
-<tr>
-<td style="text-align:center">双链表</td>
-<td style="text-align:center">O(n)</td>
-<td style="text-align:center">n/4</td>
-<td style="text-align:center">效率高(优化)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">操作</th>
+          <th style="text-align: center">根据索引查</th>
+          <th style="text-align: center">遍历时间</th>
+          <th style="text-align: center">根据定值查</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">单链表</td>
+          <td style="text-align: center">O(n)</td>
+          <td style="text-align: center">n/2</td>
+          <td style="text-align: center">效率低</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">双链表</td>
+          <td style="text-align: center">O(n)</td>
+          <td style="text-align: center">n/4</td>
+          <td style="text-align: center">效率高(优化)</td>
+      </tr>
+  </tbody>
 </table>
 <ul>
 <li>查找前驱节点：O(1)</li>
@@ -813,34 +808,34 @@ LIST   head                              tail
                     |
   0  1  2  3       rear
 </code></pre><table>
-<thead>
-<tr>
-<th>操作</th>
-<th>时间复杂度/方法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>入队</td>
-<td>O(1)</td>
-</tr>
-<tr>
-<td>出队</td>
-<td>o(n)</td>
-</tr>
-<tr>
-<td>peek</td>
-<td>O(1)</td>
-</tr>
-<tr>
-<td>判空</td>
-<td>rear = 0</td>
-</tr>
-<tr>
-<td>判满</td>
-<td>rear = capacity</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">操作</th>
+          <th style="text-align: left">时间复杂度/方法</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">入队</td>
+          <td style="text-align: left">O(1)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">出队</td>
+          <td style="text-align: left">o(n)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">peek</td>
+          <td style="text-align: left">O(1)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">判空</td>
+          <td style="text-align: left">rear = 0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">判满</td>
+          <td style="text-align: left">rear = capacity</td>
+      </tr>
+  </tbody>
 </table>
 <p>缺点，出队复杂度过高</p>
 </li>
@@ -851,53 +846,53 @@ LIST   head                              tail
 </span></span><span class="line"><span class="cl">  <span class="p">|</span>                 <span class="p">|</span>
 </span></span><span class="line"><span class="cl">front              rear
 </span></span></code></pre></div><table>
-<thead>
-<tr>
-<th>操作</th>
-<th>时间复杂度/方法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>入队</td>
-<td>O(1)</td>
-</tr>
-<tr>
-<td>出队</td>
-<td>o(1)</td>
-</tr>
-<tr>
-<td>peek</td>
-<td>O(1)</td>
-</tr>
-<tr>
-<td>判空</td>
-<td>front - rear = 0</td>
-</tr>
-<tr>
-<td>判满</td>
-<td>rear - front = capacity</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">操作</th>
+          <th style="text-align: left">时间复杂度/方法</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">入队</td>
+          <td style="text-align: left">O(1)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">出队</td>
+          <td style="text-align: left">o(1)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">peek</td>
+          <td style="text-align: left">O(1)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">判空</td>
+          <td style="text-align: left">front - rear = 0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">判满</td>
+          <td style="text-align: left">rear - front = capacity</td>
+      </tr>
+  </tbody>
 </table>
 <p>两种判满方式的比较</p>
 <table>
-<thead>
-<tr>
-<th>方式</th>
-<th>缺点</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>rear = capacity</td>
-<td>浪费大量空间</td>
-</tr>
-<tr>
-<td>rear - front = capacity</td>
-<td>需要大量移动元素</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">方式</th>
+          <th style="text-align: left">缺点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">rear = capacity</td>
+          <td style="text-align: left">浪费大量空间</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">rear - front = capacity</td>
+          <td style="text-align: left">需要大量移动元素</td>
+      </tr>
+  </tbody>
 </table>
 </li>
 <li>
@@ -1032,53 +1027,53 @@ LIST   head                              tail
 <li>
 <p>扩展- Key-Value <strong>键值对数据</strong></p>
 <table>
-<thead>
-<tr>
-<th>键</th>
-<th>值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>单词</td>
-<td>释义</td>
-</tr>
-<tr>
-<td>账号</td>
-<td>账号信息</td>
-</tr>
-<tr>
-<td>关键字</td>
-<td>一串相关网页</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">键</th>
+          <th style="text-align: left">值</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">单词</td>
+          <td style="text-align: left">释义</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">账号</td>
+          <td style="text-align: left">账号信息</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">关键字</td>
+          <td style="text-align: left">一串相关网页</td>
+      </tr>
+  </tbody>
 </table>
 </li>
 <li>
 <p>统计一个文件中，字母出现的次数(不区分大小写)</p>
 <table>
-<thead>
-<tr>
-<th>值</th>
-<th>A</th>
-<th>B</th>
-<th>C</th>
-<th>D</th>
-<th>···</th>
-<th>Z</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>键</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>···</td>
-<td>25</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">值</th>
+          <th style="text-align: left">A</th>
+          <th style="text-align: left">B</th>
+          <th style="text-align: left">C</th>
+          <th style="text-align: left">D</th>
+          <th style="text-align: left">···</th>
+          <th style="text-align: left">Z</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">键</td>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">2</td>
+          <td style="text-align: left">3</td>
+          <td style="text-align: left">···</td>
+          <td style="text-align: left">25</td>
+      </tr>
+  </tbody>
 </table>
 </li>
 <li>
@@ -1347,26 +1342,26 @@ LIST   head                              tail
 </ul>
 <h4 id="性能">性能</h4>
 <table>
-<thead>
-<tr>
-<th style="text-align:center">操作</th>
-<th style="text-align:center">时间复杂度</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">get</td>
-<td style="text-align:center">O(L)</td>
-</tr>
-<tr>
-<td style="text-align:center">put</td>
-<td style="text-align:center">O(L)</td>
-</tr>
-<tr>
-<td style="text-align:center">delete</td>
-<td style="text-align:center">O(L)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">操作</th>
+          <th style="text-align: center">时间复杂度</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">get</td>
+          <td style="text-align: center">O(L)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">put</td>
+          <td style="text-align: center">O(L)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">delete</td>
+          <td style="text-align: center">O(L)</td>
+      </tr>
+  </tbody>
 </table>
 <p>L表示链表的平均长度</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">L</span> <span class="o">=</span> size/capacity
@@ -1519,26 +1514,26 @@ LIST   head                              tail
 </span></span><span class="line"><span class="cl">                                     <span class="err">每一个字节的值（</span><span class="mi">0</span><span class="o">~</span><span class="mh">0xFF</span><span class="err">）</span>
 </span></span></code></pre></div><p>总结</p>
 <table>
-<thead>
-<tr>
-<th style="text-align:center">操作</th>
-<th style="text-align:center">位操作</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">n * 32</td>
-<td style="text-align:center">n&laquo;5</td>
-</tr>
-<tr>
-<td style="text-align:center">n / 32</td>
-<td style="text-align:center">n&raquo;5</td>
-</tr>
-<tr>
-<td style="text-align:center">n % 32</td>
-<td style="text-align:center">n&amp;0x1F</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">操作</th>
+          <th style="text-align: center">位操作</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">n * 32</td>
+          <td style="text-align: center">n&laquo;5</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">n / 32</td>
+          <td style="text-align: center">n&raquo;5</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">n % 32</td>
+          <td style="text-align: center">n&amp;0x1F</td>
+      </tr>
+  </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="c1">//测设单元 main.c
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&#34;BitMap.h&#34;</span><span class="cp">
@@ -1858,30 +1853,30 @@ LIST   head                              tail
 <p>BST的性能分析</p>
 <p>h表示树高</p>
 <table>
-<thead>
-<tr>
-<th>操作</th>
-<th>性能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>查找(search)</td>
-<td>O(h)</td>
-</tr>
-<tr>
-<td>插入(insert)</td>
-<td>O(h)</td>
-</tr>
-<tr>
-<td>删除(delete)</td>
-<td>O(h)</td>
-</tr>
-<tr>
-<td>遍历</td>
-<td>O(n)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">操作</th>
+          <th style="text-align: left">性能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">查找(search)</td>
+          <td style="text-align: left">O(h)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">插入(insert)</td>
+          <td style="text-align: left">O(h)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">删除(delete)</td>
+          <td style="text-align: left">O(h)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">遍历</td>
+          <td style="text-align: left">O(n)</td>
+      </tr>
+  </tbody>
 </table>
 </li>
 <li>
@@ -1935,30 +1930,30 @@ LIST   head                              tail
 <li>
 <p>有序数组</p>
 <table>
-<thead>
-<tr>
-<th style="text-align:center">操作</th>
-<th style="text-align:center">性能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">增</td>
-<td style="text-align:center">O(n)</td>
-</tr>
-<tr>
-<td style="text-align:center">删</td>
-<td style="text-align:center">O(n)</td>
-</tr>
-<tr>
-<td style="text-align:center">查</td>
-<td style="text-align:center">O(logn)</td>
-</tr>
-<tr>
-<td style="text-align:center">遍历</td>
-<td style="text-align:center">O(n)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">操作</th>
+          <th style="text-align: center">性能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">增</td>
+          <td style="text-align: center">O(n)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">删</td>
+          <td style="text-align: center">O(n)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">查</td>
+          <td style="text-align: center">O(logn)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">遍历</td>
+          <td style="text-align: center">O(n)</td>
+      </tr>
+  </tbody>
 </table>
 <p>有序数组性能不如二叉搜索树，保证有序性，存储静态数据</p>
 </li>
@@ -2129,8 +2124,7 @@ LIST   head                              tail
 </p>
 $$
   n(n-1) + ··· + 1 = \frac{n(n-1)}{2}
-  $$
-</li>
+  $$</li>
 <li>
 <p>交换次数：n-1</p>
 </li>
@@ -2155,35 +2149,35 @@ $$
 <li>最好和最坏情况</li>
 </ul>
 <table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center">最好情况</th>
-<th style="text-align:center">最坏情况</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">数组状态</td>
-<td style="text-align:center">原数组有序</td>
-<td style="text-align:center">原数组逆序</td>
-</tr>
-<tr>
-<td style="text-align:center">比较次数</td>
-<td style="text-align:center">n-1</td>
-<td style="text-align:center">n(n-1)/2</td>
-</tr>
-<tr>
-<td style="text-align:center">交换次数</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">n(n-1)/2</td>
-</tr>
-<tr>
-<td style="text-align:center">时间复杂度</td>
-<td style="text-align:center">O(n)</td>
-<td style="text-align:center">O(n^2)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center"></th>
+          <th style="text-align: center">最好情况</th>
+          <th style="text-align: center">最坏情况</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">数组状态</td>
+          <td style="text-align: center">原数组有序</td>
+          <td style="text-align: center">原数组逆序</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">比较次数</td>
+          <td style="text-align: center">n-1</td>
+          <td style="text-align: center">n(n-1)/2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">交换次数</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">n(n-1)/2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">时间复杂度</td>
+          <td style="text-align: center">O(n)</td>
+          <td style="text-align: center">O(n^2)</td>
+      </tr>
+  </tbody>
 </table>
 <ul>
 <li>
@@ -2192,8 +2186,7 @@ $$
 $$
   交换次数=逆序对 = \frac{n(n-1)}{4}  \\
   交换次数<=比较次数<=\frac{n(n-1)}{2}
-  $$
-</li>
+  $$</li>
 <li>
 <p>空间复杂度:O(1)</p>
 </li>
@@ -2235,35 +2228,35 @@ $$
 </span></span></code></pre></div><h4 id="分析">分析</h4>
 <p>时间：</p>
 <table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center">最好情况</th>
-<th style="text-align:center">最坏情况</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">数组状态</td>
-<td style="text-align:center">原数组有序</td>
-<td style="text-align:center">原数组逆序</td>
-</tr>
-<tr>
-<td style="text-align:center">比较次数</td>
-<td style="text-align:center">n-1</td>
-<td style="text-align:center">n(n-1)/2</td>
-</tr>
-<tr>
-<td style="text-align:center">交换次数</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">n(n-1)/2</td>
-</tr>
-<tr>
-<td style="text-align:center">时间复杂度</td>
-<td style="text-align:center">O(n)</td>
-<td style="text-align:center">O(n^2)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center"></th>
+          <th style="text-align: center">最好情况</th>
+          <th style="text-align: center">最坏情况</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">数组状态</td>
+          <td style="text-align: center">原数组有序</td>
+          <td style="text-align: center">原数组逆序</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">比较次数</td>
+          <td style="text-align: center">n-1</td>
+          <td style="text-align: center">n(n-1)/2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">交换次数</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">n(n-1)/2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">时间复杂度</td>
+          <td style="text-align: center">O(n)</td>
+          <td style="text-align: center">O(n^2)</td>
+      </tr>
+  </tbody>
 </table>
 <ul>
 <li>
@@ -2271,16 +2264,13 @@ $$
 </p>
 $$
   逆序时：逆序对 = 顺序对 = \frac{C_{n}^{2}}{2} = \frac{(n-1)}{4}
-  $$
-$$
+  $$$$
   比较：大于等于比较次数，小于等于 \frac{n(n-1)}{2}
-  $$
-</li>
+  $$</li>
 </ul>
 $$
 平均时间复杂度复杂度 = O(n^2)
-$$
-<p>空间</p>
+$$<p>空间</p>
 <ul>
 <li>空间复杂度：0(1)</li>
 <li>稳定性：稳定（交换相邻元素，能够保证原先的次序）</li>
@@ -2336,8 +2326,7 @@ $$
 </p>
 $$
   和gap序列相关，一般来说，平均情况小于O(n^2)
-  $$
-</li>
+  $$</li>
 <li>
 <p>空间复杂度：O(1)</p>
 </li>
@@ -2427,8 +2416,7 @@ $$
 $$
 T(n) = 2 T\frac{n}{2} + O(n)  \\
 T(n) = log_2n·O(n) = O(nlog_2n)=O(nlogn)
-$$
-<ul>
+$$<ul>
 <li>
 <p>对于递归算法尝试用递归树分析时间复杂度</p>
 </li>
@@ -2440,8 +2428,7 @@ $$
 </p>
 $$
 O(logn)+O(n) = O(n)
-$$
-<p><strong>稳定性</strong>： 稳定</p>
+$$<p><strong>稳定性</strong>： 稳定</p>
 <h3 id="快速排序">快速排序</h3>
 <p><strong>算法步骤</strong></p>
 <ol>
@@ -2486,14 +2473,12 @@ $$
   [o,store)<= pivot，满足条件\\
   遍历时，[store, i) > pivot，不满足条件 \\
   终止 i = n-1
-  $$
-<p>
+  $$<p>
 <strong>平均操作次数：</strong>
 </p>
 $$
   \frac{n}{2}·3=1.5n (赋值)
-  $$
-</li>
+  $$</li>
 <li>
 <p>b.双向分区</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  <span class="m">3</span> <span class="m">7</span> <span class="m">8</span> <span class="m">5</span> <span class="m">2</span> <span class="m">1</span> <span class="m">9</span> <span class="m">5</span> <span class="m">4</span>
@@ -2509,14 +2494,12 @@ $$
 $$
   [o,)<= pivot，满足条件\\
   [j, n-1) >= pivot，不满足条件 \\
-  $$
-<p>
+  $$<p>
 <strong>平均操作次数：</strong>
 </p>
 $$
   \frac{n}{2}·1=0.5n (赋值)
-  $$
-</li>
+  $$</li>
 <li>
 <p>c.三向分区</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>&lt;<span class="o">=</span>pivot<span class="o">][</span>p<span class="o">][</span>&gt;<span class="o">=</span>pivot<span class="o">]</span>
@@ -2583,24 +2566,21 @@ $$
   T(n) = O(n) + T(\frac{n}{2})+T(\frac{n}{2})\\
   = O(n) + 2·T(\frac{n}{2})\\
   =O(n·logn)
-  $$
-</li>
+  $$</li>
 <li>
 <p>最坏情况 O(n^2)</p>
 <p>每次分区，基准值都位于两边
 </p>
 $$
   T(n) = c·n+c·(n-1)+···+c·2+c = c·\frac{n·(n-1)}{2}=O(n^2)
-  $$
-</li>
+  $$</li>
 <li>
 <p>平均复杂度 O(n·logn)</p>
 <p>假定每次分区，都分成大约为9：1的区间
 </p>
 $$
   T(n) <= log_\frac{10}{9}n·c·n=O(nlogn)
-  $$
-</li>
+  $$</li>
 </ul>
 <p>空间：O(logn)</p>
 <p>稳定性：不稳定</p>
@@ -2727,11 +2707,9 @@ $$
   =2^0·h+(2^1+2^2+···+2{h-1}+2{h})\\
   = 2^{h+1}-2-h\\
   =2·n-2-log_2n\\
-  $$
-$$
+  $$$$
   T(n) = O(n)+(n-1)·O(logn) = O(nlogn)
-  $$
-</li>
+  $$</li>
 <li>
 <p>空间复杂度：O(1)</p>
 </li>
@@ -2741,26 +2719,26 @@ $$
 </ul>
 <h2 id="如何设计一个通用的排序算法">如何设计一个通用的排序算法</h2>
 <table>
-<thead>
-<tr>
-<th style="text-align:center">数据量</th>
-<th style="text-align:center">方法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">数据量少</td>
-<td style="text-align:center">插入排序</td>
-</tr>
-<tr>
-<td style="text-align:center">数据量大</td>
-<td style="text-align:center">快速排序</td>
-</tr>
-<tr>
-<td style="text-align:center">数据量大&amp;&amp;需要稳定性</td>
-<td style="text-align:center">堆排序</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">数据量</th>
+          <th style="text-align: center">方法</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">数据量少</td>
+          <td style="text-align: center">插入排序</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">数据量大</td>
+          <td style="text-align: center">快速排序</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">数据量大&amp;&amp;需要稳定性</td>
+          <td style="text-align: center">堆排序</td>
+      </tr>
+  </tbody>
 </table>
 </article>
               </div>

@@ -136,11 +136,6 @@
                                 </span>
 
                                 
-                                <span class="file-info-divider"></span>
-                                <span class="d-inline-block">
-                                    Updated at <time datetime="2024-09-14 12:35" class="no-wrap">
-                                        2024-09-14 12:35</time>
-                                    
                                 </span>
                             </div>
                         </h1>
@@ -506,30 +501,30 @@
 <h2 id="非阻塞和阻塞的区别">非阻塞和阻塞的区别</h2>
 <p>read操作的阻塞状况</p>
 <table>
-<thead>
-<tr>
-<th>类型</th>
-<th>是否会阻塞</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>文件</td>
-<td>不会阻塞</td>
-</tr>
-<tr>
-<td>管道</td>
-<td>会阻塞</td>
-</tr>
-<tr>
-<td>stdin</td>
-<td>会阻塞</td>
-</tr>
-<tr>
-<td>socket</td>
-<td>会阻塞</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">类型</th>
+          <th style="text-align: left">是否会阻塞</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">文件</td>
+          <td style="text-align: left">不会阻塞</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">管道</td>
+          <td style="text-align: left">会阻塞</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">stdin</td>
+          <td style="text-align: left">会阻塞</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">socket</td>
+          <td style="text-align: left">会阻塞</td>
+      </tr>
+  </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
 </span></span><span class="line"><span class="cl">	<span class="nf">read</span><span class="p">(</span><span class="err">磁盘文件</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">ret</span><span class="p">;</span>

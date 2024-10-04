@@ -136,11 +136,6 @@
                                 </span>
 
                                 
-                                <span class="file-info-divider"></span>
-                                <span class="d-inline-block">
-                                    Updated at <time datetime="2024-09-14 12:35" class="no-wrap">
-                                        2024-09-14 12:35</time>
-                                    
                                 </span>
                             </div>
                         </h1>
@@ -305,35 +300,35 @@
 <h2 id="常量指针-和-指针常量">常量指针 和 指针常量</h2>
 <p>本质：限制指针变量的写权限</p>
 <table>
-<thead>
-<tr>
-<th style="text-align:left">表达式</th>
-<th style="text-align:center">p代指的内存</th>
-<th style="text-align:center">i代指的内存</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">int* p = &amp;i</td>
-<td style="text-align:center">r/w</td>
-<td style="text-align:center">r/w</td>
-</tr>
-<tr>
-<td style="text-align:left">int* const p = &amp;i</td>
-<td style="text-align:center">r</td>
-<td style="text-align:center">r/w</td>
-</tr>
-<tr>
-<td style="text-align:left">const int* p = &amp;i</td>
-<td style="text-align:center">r/w</td>
-<td style="text-align:center">r</td>
-</tr>
-<tr>
-<td style="text-align:left">const int* const p = &amp;i</td>
-<td style="text-align:center">r</td>
-<td style="text-align:center">r</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">表达式</th>
+          <th style="text-align: center">p代指的内存</th>
+          <th style="text-align: center">i代指的内存</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">int* p = &amp;i</td>
+          <td style="text-align: center">r/w</td>
+          <td style="text-align: center">r/w</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">int* const p = &amp;i</td>
+          <td style="text-align: center">r</td>
+          <td style="text-align: center">r/w</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">const int* p = &amp;i</td>
+          <td style="text-align: center">r/w</td>
+          <td style="text-align: center">r</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">const int* const p = &amp;i</td>
+          <td style="text-align: center">r</td>
+          <td style="text-align: center">r</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="常量指针">常量指针</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">const</span> <span class="kt">int</span><span class="o">*</span> <span class="n">p</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">i</span><span class="p">;</span>
@@ -412,35 +407,35 @@
 </span></span><span class="line"><span class="cl">  <span class="n">sum</span> <span class="o">+=</span> <span class="o">*</span><span class="n">p</span><span class="o">++</span><span class="p">;</span>  <span class="c1">//*和++ --的组合
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
 </span></span></code></pre></div><table>
-<thead>
-<tr>
-<th style="text-align:center">组合形式</th>
-<th style="text-align:center">表达式值</th>
-<th style="text-align:center">副作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">*p++      *(p++)</td>
-<td style="text-align:center">*p</td>
-<td style="text-align:center">p自增</td>
-</tr>
-<tr>
-<td style="text-align:center">(*p)++</td>
-<td style="text-align:center">*p</td>
-<td style="text-align:center">*p自增</td>
-</tr>
-<tr>
-<td style="text-align:center">*++p</td>
-<td style="text-align:center">*(++p)</td>
-<td style="text-align:center">p自增</td>
-</tr>
-<tr>
-<td style="text-align:center">++*p  ++(*p)</td>
-<td style="text-align:center">(*p)+1</td>
-<td style="text-align:center">*p自增</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">组合形式</th>
+          <th style="text-align: center">表达式值</th>
+          <th style="text-align: center">副作用</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">*p++      *(p++)</td>
+          <td style="text-align: center">*p</td>
+          <td style="text-align: center">p自增</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">(*p)++</td>
+          <td style="text-align: center">*p</td>
+          <td style="text-align: center">*p自增</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">*++p</td>
+          <td style="text-align: center">*(++p)</td>
+          <td style="text-align: center">p自增</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">++*p  ++(*p)</td>
+          <td style="text-align: center">(*p)+1</td>
+          <td style="text-align: center">*p自增</td>
+      </tr>
+  </tbody>
 </table>
 <ul>
 <li>
@@ -497,24 +492,26 @@
 <li>C语言中的字符串依赖在字符数组存在</li>
 <li>C语言中的字符串是一种“逻辑类型”
 <table>
-<thead>
-<tr>
-<th style="text-align:center">h</th>
-<th style="text-align:center">e</th>
-<th style="text-align:center">l</th>
-<th style="text-align:center">l</th>
-<th style="text-align:center">o</th>
-<th style="text-align:center">\</th>
-<th style="text-align:center">0</th>
-<th style="text-align:center">w</th>
-<th style="text-align:center">o</th>
-<th style="text-align:center">r</th>
-<th style="text-align:center">l</th>
-<th style="text-align:center">d</th>
-<th style="text-align:center">\</th>
-<th style="text-align:center">n</th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th style="text-align: center">h</th>
+          <th style="text-align: center">e</th>
+          <th style="text-align: center">l</th>
+          <th style="text-align: center">l</th>
+          <th style="text-align: center">o</th>
+          <th style="text-align: center">\</th>
+          <th style="text-align: center">0</th>
+          <th style="text-align: center">w</th>
+          <th style="text-align: center">o</th>
+          <th style="text-align: center">r</th>
+          <th style="text-align: center">l</th>
+          <th style="text-align: center">d</th>
+          <th style="text-align: center">\</th>
+          <th style="text-align: center">n</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 </li>
 </ul>
@@ -540,30 +537,30 @@
 <ul>
 <li>扩展-各种&rsquo;空'
 <table>
-<thead>
-<tr>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">类型</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">void</td>
-<td style="text-align:center">空类型</td>
-</tr>
-<tr>
-<td style="text-align:center">\0</td>
-<td style="text-align:center">空字符</td>
-</tr>
-<tr>
-<td style="text-align:center">NULL</td>
-<td style="text-align:center">空指针</td>
-</tr>
-<tr>
-<td style="text-align:center">“ ”</td>
-<td style="text-align:center">空字符串</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">名称</th>
+          <th style="text-align: center">类型</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">void</td>
+          <td style="text-align: center">空类型</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">\0</td>
+          <td style="text-align: center">空字符</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">NULL</td>
+          <td style="text-align: center">空指针</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">“ ”</td>
+          <td style="text-align: center">空字符串</td>
+      </tr>
+  </tbody>
 </table>
 </li>
 </ul>
@@ -816,26 +813,26 @@
 <li>
 <p>会按类型声明的顺序存放每一个成员</p>
 <table>
-<thead>
-<tr>
-<th>id(int)</th>
-<th>name(char)</th>
-<th>gender(char)</th>
-<th>chinese(int)</th>
-<th>math(int)</th>
-<th>english(int)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>4</td>
-<td>25</td>
-<td>1+2</td>
-<td>4</td>
-<td>4</td>
-<td>4</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">id(int)</th>
+          <th style="text-align: left">name(char)</th>
+          <th style="text-align: left">gender(char)</th>
+          <th style="text-align: left">chinese(int)</th>
+          <th style="text-align: left">math(int)</th>
+          <th style="text-align: left">english(int)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">4</td>
+          <td style="text-align: left">25</td>
+          <td style="text-align: left">1+2</td>
+          <td style="text-align: left">4</td>
+          <td style="text-align: left">4</td>
+          <td style="text-align: left">4</td>
+      </tr>
+  </tbody>
 </table>
 </li>
 <li>
@@ -949,38 +946,38 @@
 <h3 id="动态内存分配-">动态内存分配 ⭐</h3>
 <p>进程的虚拟内存空间, 堆空间的管理常用算法(freelist/伙伴算法)</p>
 <table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">高地址</td>
-<td style="text-align:center">内核区</td>
-</tr>
-<tr>
-<td style="text-align:center">动态</td>
-<td style="text-align:center"><strong>栈</strong>（管理函数调用）</td>
-</tr>
-<tr>
-<td style="text-align:center">动态</td>
-<td style="text-align:center">↓ ↑</td>
-</tr>
-<tr>
-<td style="text-align:center">动态</td>
-<td style="text-align:center"><strong>堆</strong>（存放动态数据）</td>
-</tr>
-<tr>
-<td style="text-align:center">数据</td>
-<td style="text-align:center"><strong>数据段</strong></td>
-</tr>
-<tr>
-<td style="text-align:center">低地址（指令）</td>
-<td style="text-align:center"><strong>代码段</strong></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center"></th>
+          <th style="text-align: center"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">高地址</td>
+          <td style="text-align: center">内核区</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">动态</td>
+          <td style="text-align: center"><strong>栈</strong>（管理函数调用）</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">动态</td>
+          <td style="text-align: center">↓ ↑</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">动态</td>
+          <td style="text-align: center"><strong>堆</strong>（存放动态数据）</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">数据</td>
+          <td style="text-align: center"><strong>数据段</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">低地址（指令）</td>
+          <td style="text-align: center"><strong>代码段</strong></td>
+      </tr>
+  </tbody>
 </table>
 <ul>
 <li>
@@ -1027,22 +1024,22 @@
 </span></span><span class="line"><span class="cl">      <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span></code></pre></div><table>
-<thead>
-<tr>
-<th>栈帧</th>
-<th style="text-align:center">变量</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>main</td>
-<td style="text-align:center">p ↓</td>
-</tr>
-<tr>
-<td>堆</td>
-<td style="text-align:center">一串数组（连续空间）</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">栈帧</th>
+          <th style="text-align: center">变量</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">main</td>
+          <td style="text-align: center">p ↓</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">堆</td>
+          <td style="text-align: center">一串数组（连续空间）</td>
+      </tr>
+  </tbody>
 </table>
 <p>​    用栈上的指针访问堆中的数据</p>
 <p>​    分配size个字节的内存块</p>
@@ -1122,22 +1119,22 @@
 <p>从内存模型开始逐步分析实现一个Vector</p>
 <h3 id="内存模型-1">内存模型</h3>
 <table>
-<thead>
-<tr>
-<th>elements</th>
-<th>*</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>capacity</td>
-<td>int</td>
-</tr>
-<tr>
-<td>size</td>
-<td>int</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">elements</th>
+          <th style="text-align: left">*</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">capacity</td>
+          <td style="text-align: left">int</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">size</td>
+          <td style="text-align: left">int</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="头文件">头文件</h3>
 <p>vector.h</p>
@@ -1326,25 +1323,25 @@
 </span></span><span class="line"><span class="cl">    <span class="n">ptr2</span>           <span class="n">ptr1</span>    
 </span></span><span class="line"><span class="cl"><span class="kt">int</span><span class="o">**</span> <span class="n">ptr2</span>        <span class="kt">int</span><span class="o">*</span> <span class="n">ptr1</span>
 </span></span></code></pre></div><table>
-<thead>
-<tr>
-<th style="text-align:center">表达式</th>
-<th style="text-align:center">访存次数</th>
-<th style="text-align:center">等价于</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">**ptr2</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">*ptr1</td>
-</tr>
-<tr>
-<td style="text-align:center">*ptr1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">ptr1</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">表达式</th>
+          <th style="text-align: center">访存次数</th>
+          <th style="text-align: center">等价于</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">**ptr2</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">*ptr1</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">*ptr1</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">ptr1</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="使用时的问题">使用时的问题</h3>
 <p>QA：传一级指针还是传二级指针？</p>

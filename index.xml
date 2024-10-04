@@ -4,10 +4,17 @@
     <title>looechao&#39;s blog</title>
     <link>https://looechao.github.io/</link>
     <description>Recent content on looechao&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 19 Sep 2024 21:10:23 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Sep 2024 20:50:13 +2301</lastBuildDate>
     <atom:link href="https://looechao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024年秋</title>
+      <link>https://looechao.github.io/weekly/2024/2024-fall/</link>
+      <pubDate>Sun, 08 Sep 2024 20:50:13 +2301</pubDate>
+      <guid>https://looechao.github.io/weekly/2024/2024-fall/</guid>
+      <description></description>
+    </item>
     <item>
       <title>How I setting a brand new fedora system</title>
       <link>https://looechao.github.io/post/2024/linux-setup/</link>
