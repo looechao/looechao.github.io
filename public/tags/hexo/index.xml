@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hexo on looechao&#39;s blog</title>
+    <link>https://looechao.github.io/tags/hexo/</link>
+    <description>Recent content in Hexo on looechao&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 25 Feb 2023 21:31:13 +0800</lastBuildDate>
+    <atom:link href="https://looechao.github.io/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hexo框架的博客搭建小记</title>
+      <link>https://looechao.github.io/post/2023/hexo-note/</link>
+      <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2023/hexo-note/</guid>
+      <description>第一次尝试建立hexo框架的站点</description>
+    </item>
+  </channel>
+</rss>

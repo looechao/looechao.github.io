@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>String on looechao&#39;s blog</title>
+    <link>https://looechao.github.io/tags/string/</link>
+    <description>Recent content in String on looechao&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 10 Jul 2024 22:53:13 +0800</lastBuildDate>
+    <atom:link href="https://looechao.github.io/tags/string/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>浅谈C&#43;&#43;中string的SSO策略</title>
+      <link>https://looechao.github.io/post/2024/string-sso-strategy/</link>
+      <pubDate>Wed, 10 Jul 2024 22:53:13 +0800</pubDate>
+      <guid>https://looechao.github.io/post/2024/string-sso-strategy/</guid>
+      <description>短字符串的优化策略</description>
+    </item>
+  </channel>
+</rss>
