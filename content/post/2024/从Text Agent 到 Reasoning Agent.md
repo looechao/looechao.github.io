@@ -1,3 +1,12 @@
++++
+title = 'Reasonning Agent的来龙去脉'
+date = 2024-10-24T15:01:13+08:00
+draft = false
+summary = "从Text Agent到 ReAct Agent"
+tags = [ "Lectures", "Agent", "llm"]
+
++++
+
 ## LLM agent 的三个层次
 
 <img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-1.png" alt="3-level" style="zoom: 50%;" />
@@ -7,6 +16,10 @@
    > 观察和响应文本
    >
    > eg. ELIZA、LSTM-DQN
+
+   最早的ChatBot
+
+   ![Eliza](https://upload.wikimedia.org/wikipedia/commons/4/4e/ELIZA_conversation.jpg)
 
 2. LLM agent
 
@@ -104,3 +117,6 @@ reAct agent的思考和行动方式非常像真正的人类行为，当时将其
 
 1. 人类可能更习惯VSCode这样的交互界面，但是对于digital的agent来说，这样的界面接口可能并不友好
 
+## 参考
+
+1. [CS 194/294-196 (LLM Agents) - Lecture 2, Shunyu Yao](https://www.youtube.com/watch?v=RM6ZArd2nVc)
