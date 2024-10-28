@@ -1,5 +1,5 @@
 +++
-title = 'Reasonning Agent的来龙去脉'
+title = 'Reasoning Agent的来龙去脉'
 date = 2024-10-24T15:01:13+08:00
 draft = false
 summary = "从Text Agent到 ReAct Agent"
@@ -55,8 +55,6 @@ tags = [ "Lectures", "Agent", "llm"]
 
 ### 推理和行动的手段
 
-
-
 #### **推理** Reasoning
 
 主要是通过思维链(Chain of thoughts)增强可持续时间
@@ -79,7 +77,7 @@ tags = [ "Lectures", "Agent", "llm"]
 
 ### 让Agent的推理和行动协同
 
-但用推理无法获得新信息，但用行动又无法再一次推理
+只用推理无法获得新信息，只用行动又无法再一次推理
 
 推理可以帮助行动，行动又可以帮助推理，这种思路很像人类解决问题的方法，将两者结合使用可以协同增效
 
@@ -113,9 +111,9 @@ llm的记忆一般是很短的，像金鱼一样只有七秒的记忆，如果�
 
 ### 和human的区别
 
-reAct agent的思考和行动方式非常像真正的人类行为，当时将其应用到生产活动中还需要很多方面的调整
+ReAct agent的思考和行动方式非常像真正的人类行为，但是将其应用到生产活动中还有需要调整的地方
 
-1. 人类可能更习惯VSCode这样的交互界面，但是对于digital的agent来说，这样的界面接口可能并不友好
+例如人类可能更习惯VSCode这样的交互界面，但是对于digital的agent来说，这样的界面接口可能并不友好
 
 ## 参考
 
