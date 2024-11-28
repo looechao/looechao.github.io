@@ -163,7 +163,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      209 Words
+                      417 Words
                     
 
                   </div>
@@ -253,7 +253,23 @@
 </span></span><span class="line"><span class="cl">0x7ffcdfdd77b0
 </span></span><span class="line"><span class="cl">0xbe2f2b0
 </span></span></code></pre></div><p>可以发现SSO的策略如下：</p>
-<ul>
+<pre class="mermaid">graph TD
+    A[String对象: 32字节] --&gt; B{字符串长度}
+    B --&gt;| &lt; 15字节| C[使用SSO策略]
+    B --&gt;| 超过15字节| D[使用堆内存]
+    
+    C --&gt; E[Buffer._local存储&lt;br&gt;直接使用栈空间&lt;br&gt;16字节]
+    D --&gt; F[Buffer._pointer指向&lt;br&gt;堆上分配的内存]
+    
+    subgraph &#34;String对象结构&#34; 
+    direction TB
+    G[_size: 8字节]
+    H[_capacity: 8字节]
+    I[Buffer联合体: 16字节]
+    G --&gt; H --&gt; I
+    end
+  </pre>
+  <ul>
 <li>针对16个字节以内的字符串，直接使用栈上的空间存储buffer</li>
 <li>针对16个字节以上的字符串，将buffer存在堆区</li>
 </ul>
@@ -266,6 +282,14 @@
     </div>
   </main>
 </div>
+
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+
+
 <script type="application/javascript" src='https://looechao.github.io/js/toc.js'></script>
 <link rel="stylesheet" href='https://looechao.github.io/css/toc.css' />
 

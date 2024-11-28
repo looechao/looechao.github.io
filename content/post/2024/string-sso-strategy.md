@@ -61,5 +61,32 @@ int main()
 
 可以发现SSO的策略如下：
 
+
+
+```mermaid
+graph TD
+    A[String对象: 32字节] --> B{字符串长度}
+    B -->| < 15字节| C[使用SSO策略]
+    B -->| 超过15字节| D[使用堆内存]
+    
+    C --> E[Buffer._local存储<br>直接使用栈空间<br>16字节]
+    D --> F[Buffer._pointer指向<br>堆上分配的内存]
+    
+    subgraph "String对象结构" 
+    direction TB
+    G[_size: 8字节]
+    H[_capacity: 8字节]
+    I[Buffer联合体: 16字节]
+    G --> H --> I
+    end
+```
+
+
+
+
+
 - 针对16个字节以内的字符串，直接使用栈上的空间存储buffer
 - 针对16个字节以上的字符串，将buffer存在堆区
+
+
+
