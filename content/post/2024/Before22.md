@@ -3,7 +3,7 @@ title = '写在22岁之前'
 date = 2024-03-13T21:50:13+08:00
 draft = false
 summary = "黄金时代，在中南林的几乎一整年"
-pin = true
+pin = false
 tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 
 +++

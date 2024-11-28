@@ -16,6 +16,8 @@ buildFuture = true
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['\[', '\]'], ['$$', '$$']]
           inline = [['\(', '\)']]
+  [markup.highlight]
+    style = "dracula"  # 选择一个内置主题
 
 
 [params]

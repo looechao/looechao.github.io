@@ -46,7 +46,11 @@ summary = "readme"
 
 ##### Trip
 
-<div class="embed" style="margin-top:16px;margin-bottom:16px"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gRnLdjkCbjBbVaMKE7TA-bBVkqvpn1E&ehbc=2E312F" width="640" height="480"></iframe></div>
+<div style="margin-top:16px; margin-bottom:16px; width: 100%;">
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gRnLdjkCbjBbVaMKE7TA-bBVkqvpn1E&ehbc=2E312F" style="width: 100%; height: 480px; border: 0;" allowfullscreen></iframe>
+</div>
+
+
 
 
 
