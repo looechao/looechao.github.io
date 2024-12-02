@@ -38,7 +38,7 @@ buildFuture = true
   userStatusEmoji = "🙏"
   enableGitalk = true
   math = true
-  googleAnalytics = "G-T6EYNX397W"
+  googleAnalytics = "G-9W970VLJ6X"
 
   [frontmatter]
   ## lastmod = ["lastmod", ":fileModTime", ":default"]
