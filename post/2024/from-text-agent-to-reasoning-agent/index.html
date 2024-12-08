@@ -58,6 +58,20 @@
 
 
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9W970VLJ6X"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9W970VLJ6X');
+        }
+      </script>
 
 
 </head>
@@ -209,7 +223,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      878 Words
+                      1173 Words
                     
 
                   </div>
@@ -277,8 +291,34 @@
 </blockquote>
 </li>
 </ol>
-<h2 id="关于question-answering的问题">关于Question answering的问题</h2>
-<ol>
+<pre class="mermaid">graph TD
+    A[LLM Agent Types] --&gt; B[Text Agent]
+    A --&gt; C[LLM Agent]
+    A --&gt; D[Reasoning Agent]
+    
+    B --&gt; B1[ELIZA]
+    B --&gt; B2[LSTM-DQN]
+    
+    C --&gt; C1[SayCan]
+    C --&gt; C2[Language Planner]
+    
+    D --&gt; D1[ReAct]
+    D --&gt; D2[AutoGPT]
+  </pre>
+  <h2 id="关于question-answering的问题">关于Question answering的问题</h2>
+<pre class="mermaid">graph TB
+    A[Question Types] --&gt; B[需要推理]
+    A --&gt; C[需要行动]
+    A --&gt; D[需要新知识]
+    
+    C --&gt; C1[搜索]
+    C --&gt; C2[计算]
+    C --&gt; C3[编程]
+    
+    B --&gt; B1[逻辑推理问题]
+    D --&gt; D1[实时信息问题]
+  </pre>
+  <ol>
 <li>
 <p>需要推理</p>
 <blockquote>
@@ -302,7 +342,21 @@
 </li>
 </ol>
 <h3 id="推理和行动的手段">推理和行动的手段</h3>
-<h4 id="推理-reasoning"><strong>推理</strong> Reasoning</h4>
+<pre class="mermaid">sequenceDiagram
+    participant User
+    participant Agent
+    participant Tools
+    
+    User-&gt;&gt;Agent: 提出问题
+    loop ReAct Process
+        Agent-&gt;&gt;Agent: 推理思考
+        Agent-&gt;&gt;Tools: 执行行动
+        Tools-&gt;&gt;Agent: 返回结果
+        Agent-&gt;&gt;Agent: 分析结果
+    end
+    Agent-&gt;&gt;User: 返回最终答案
+  </pre>
+  <h4 id="推理-reasoning"><strong>推理</strong> Reasoning</h4>
 <p>主要是通过思维链(Chain of thoughts)增强可持续时间</p>
 <img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-2.png" style="zoom:50%;" />
 <h4 id="行动-acting"><strong>行动</strong> Acting</h4>
@@ -326,7 +380,21 @@
 </li>
 </ol>
 <h3 id="让agent的推理和行动协同">让Agent的推理和行动协同</h3>
-<p>只用推理无法获得新信息，只用行动又无法再一次推理</p>
+<pre class="mermaid">graph LR
+    A[Agent Capabilities] --&gt; B[Reasoning]
+    A --&gt; C[Acting]
+    
+    B --&gt; B1[Chain of Thoughts]
+    
+    C --&gt; C1[RAG技术]
+    C --&gt; C2[Tool Use]
+    
+    C2 --&gt; D1[搜索引擎]
+    C2 --&gt; D2[计算器]
+    C2 --&gt; D3[特殊任务模型]
+    C2 --&gt; D4[API接口]
+  </pre>
+  <p>只用推理无法获得新信息，只用行动又无法再一次推理</p>
 <p>推理可以帮助行动，行动又可以帮助推理，这种思路很像人类解决问题的方法，将两者结合使用可以协同增效</p>
 <p>例如 zero-shot ReAct Prompt：</p>
 <blockquote>
@@ -341,7 +409,6 @@
 <li>行动：你可以使用的action</li>
 </ul>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-4.png" alt=""></p>
 <h3 id="long-termmemory">Long-Termmemory</h3>
 <p>llm的记忆一般是很短的，像金鱼一样只有七秒的记忆，如果让llm生成一段程序，但是有错误，那么短期记忆的大模型再修改的过程就无法具备反思的能力，更长的记忆可以让llm的分析和决策能力更强</p>
 <p>可以看论文cognitive architectures for language agents(CoALA)</p>
@@ -351,10 +418,35 @@
 <p>Decision Making</p>
 </blockquote>
 <p>这样的架构可以构建出有很强的创造力的Agent</p>
-<h3 id="和human的区别">和human的区别</h3>
+<pre class="mermaid">graph TB
+    A[CoALA Architecture] --&gt; B[Memory]
+    A --&gt; C[Action Space]
+    A --&gt; D[Decision Making]
+    
+    B --&gt; B1[Long-Term Memory]
+    B --&gt; B2[Short-Term Memory]
+    
+    C --&gt; C1[Available Actions]
+    C --&gt; C2[Tool Integration]
+    
+    D --&gt; D1[Analysis]
+    D --&gt; D2[Planning]
+  </pre>
+  <h3 id="和human的区别">和human的区别</h3>
 <p>ReAct agent的思考和行动方式非常像真正的人类行为，但是将其应用到生产活动中还有需要调整的地方</p>
 <p>例如人类可能更习惯VSCode这样的交互界面，但是对于digital的agent来说，这样的界面接口可能并不友好</p>
-<h2 id="参考">参考</h2>
+<pre class="mermaid">graph LR
+    A[Interaction Models] --&gt; B[Human Interface]
+    A --&gt; C[Agent Interface]
+    
+    B --&gt; B1[Visual IDE]
+    B --&gt; B2[GUI Tools]
+    
+    C --&gt; C1[API Calls]
+    C --&gt; C2[Command Line]
+    C --&gt; C3[Direct Text]
+  </pre>
+  <h2 id="参考">参考</h2>
 <ol>
 <li><a href="https://www.youtube.com/watch?v=RM6ZArd2nVc">CS 194/294-196 (LLM Agents) - Lecture 2, Shunyu Yao</a></li>
 </ol>
@@ -368,6 +460,11 @@
   </main>
 </div>
 
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
 
 
 <script type="application/javascript" src='https://looechao.github.io/js/toc.js'></script>

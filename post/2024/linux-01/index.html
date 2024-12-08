@@ -58,6 +58,20 @@
 
 
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9W970VLJ6X"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9W970VLJ6X');
+        }
+      </script>
 
 
 </head>
@@ -256,50 +270,50 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">命令类型</th>
-          <th style="text-align: left">效果</th>
+          <th>命令类型</th>
+          <th>效果</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">短命令</td>
-          <td style="text-align: left">直接敲</td>
+          <td>短命令</td>
+          <td>直接敲</td>
       </tr>
       <tr>
-          <td style="text-align: left">底部命令</td>
-          <td style="text-align: left">冒号开头，enter结尾</td>
+          <td>底部命令</td>
+          <td>冒号开头，enter结尾</td>
       </tr>
       <tr>
-          <td style="text-align: left">motion(移动光标)</td>
-          <td style="text-align: left">h j k l [n]- [n]G gg 0 ^ $ w/W b/B t/T f/F</td>
+          <td>motion(移动光标)</td>
+          <td>h j k l [n]- [n]G gg 0 ^ $ w/W b/B t/T f/F</td>
       </tr>
       <tr>
-          <td style="text-align: left">text object</td>
-          <td style="text-align: left"></td>
+          <td>text object</td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">action</td>
-          <td style="text-align: left"></td>
+          <td>action</td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">组合</td>
-          <td style="text-align: left">action+textobject  <br />action+motion</td>
+          <td>组合</td>
+          <td>action+textobject  <br />action+motion</td>
       </tr>
       <tr>
-          <td style="text-align: left">撤销和恢复</td>
-          <td style="text-align: left">u（u for undo）<br />[ctrl] + r<br />类比入栈和出栈</td>
+          <td>撤销和恢复</td>
+          <td>u（u for undo）<br />[ctrl] + r<br />类比入栈和出栈</td>
       </tr>
       <tr>
-          <td style="text-align: left">粘贴</td>
-          <td style="text-align: left">p/P</td>
+          <td>粘贴</td>
+          <td>p/P</td>
       </tr>
       <tr>
-          <td style="text-align: left">查找文本</td>
-          <td style="text-align: left">/pattern 向下查找<br />?pattern 向上查找<br />搭配使用 n/N 移动光标</td>
+          <td>查找文本</td>
+          <td>/pattern 向下查找<br />?pattern 向上查找<br />搭配使用 n/N 移动光标</td>
       </tr>
       <tr>
-          <td style="text-align: left">替换</td>
-          <td style="text-align: left">substitute<br />:s/pattern/replace             替换所在行的第一个匹配项<br />:s/pattern/replace/g         替换所在行的所有匹配项<br />:m,n s/pattern/replace/g 限定范围[m,n]<br />:% s/pattern/replace/g     全文替换</td>
+          <td>替换</td>
+          <td>substitute<br />:s/pattern/replace             替换所在行的第一个匹配项<br />:s/pattern/replace/g         替换所在行的所有匹配项<br />:m,n s/pattern/replace/g 限定范围[m,n]<br />:% s/pattern/replace/g     全文替换</td>
       </tr>
   </tbody>
 </table>
@@ -337,26 +351,26 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">按键</th>
-          <th style="text-align: left">操作</th>
+          <th>按键</th>
+          <th>操作</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">O</td>
-          <td style="text-align: left">行首</td>
+          <td>O</td>
+          <td>行首</td>
       </tr>
       <tr>
-          <td style="text-align: left">$</td>
-          <td style="text-align: left">行尾</td>
+          <td>$</td>
+          <td>行尾</td>
       </tr>
       <tr>
-          <td style="text-align: left">w(word)</td>
-          <td style="text-align: left">下一个词首</td>
+          <td>w(word)</td>
+          <td>下一个词首</td>
       </tr>
       <tr>
-          <td style="text-align: left">b(before)</td>
-          <td style="text-align: left">上一个词首</td>
+          <td>b(before)</td>
+          <td>上一个词首</td>
       </tr>
   </tbody>
 </table>
@@ -364,22 +378,22 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">按键</th>
-          <th style="text-align: left">操作</th>
+          <th>按键</th>
+          <th>操作</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">d</td>
-          <td style="text-align: left">delete</td>
+          <td>d</td>
+          <td>delete</td>
       </tr>
       <tr>
-          <td style="text-align: left">y</td>
-          <td style="text-align: left">yank</td>
+          <td>y</td>
+          <td>yank</td>
       </tr>
       <tr>
-          <td style="text-align: left">c(change)</td>
-          <td style="text-align: left">删除并进入插入模式</td>
+          <td>c(change)</td>
+          <td>删除并进入插入模式</td>
       </tr>
   </tbody>
 </table>
@@ -396,30 +410,30 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">类型</th>
-          <th style="text-align: left">操作</th>
+          <th>类型</th>
+          <th>操作</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">水平分割</td>
-          <td style="text-align: left">:split /:sp :new</td>
+          <td>水平分割</td>
+          <td>:split /:sp :new</td>
       </tr>
       <tr>
-          <td style="text-align: left">垂直分割</td>
-          <td style="text-align: left">:/vsplit /:vsp :vnew</td>
+          <td>垂直分割</td>
+          <td>:/vsplit /:vsp :vnew</td>
       </tr>
       <tr>
-          <td style="text-align: left">切换窗口</td>
-          <td style="text-align: left">[ctrl]+ww</td>
+          <td>切换窗口</td>
+          <td>[ctrl]+ww</td>
       </tr>
       <tr>
-          <td style="text-align: left">退出窗口</td>
-          <td style="text-align: left">:q :only :qa</td>
+          <td>退出窗口</td>
+          <td>:q :only :qa</td>
       </tr>
       <tr>
-          <td style="text-align: left">保存</td>
-          <td style="text-align: left">:W :wa</td>
+          <td>保存</td>
+          <td>:W :wa</td>
       </tr>
   </tbody>
 </table>
@@ -453,18 +467,18 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">给用户的接口</th>
-          <th style="text-align: left">包装的系统调用</th>
+          <th>给用户的接口</th>
+          <th>包装的系统调用</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">malloc</td>
-          <td style="text-align: left">sbrk</td>
+          <td>malloc</td>
+          <td>sbrk</td>
       </tr>
       <tr>
-          <td style="text-align: left">printf</td>
-          <td style="text-align: left">write</td>
+          <td>printf</td>
+          <td>write</td>
       </tr>
   </tbody>
 </table>
@@ -535,46 +549,46 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">目录名</th>
-          <th style="text-align: left">功能</th>
+          <th>目录名</th>
+          <th>功能</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">/bin(binary)</td>
-          <td style="text-align: left">存放可执行文件</td>
+          <td>/bin(binary)</td>
+          <td>存放可执行文件</td>
       </tr>
       <tr>
-          <td style="text-align: left">/sys(system)</td>
-          <td style="text-align: left">存放系统文件</td>
+          <td>/sys(system)</td>
+          <td>存放系统文件</td>
       </tr>
       <tr>
-          <td style="text-align: left">/dev(device)</td>
-          <td style="text-align: left">设备文件</td>
+          <td>/dev(device)</td>
+          <td>设备文件</td>
       </tr>
       <tr>
-          <td style="text-align: left">/etc</td>
-          <td style="text-align: left">配置文件（passwd放用户信息/shadow存放密码）</td>
+          <td>/etc</td>
+          <td>配置文件（passwd放用户信息/shadow存放密码）</td>
       </tr>
       <tr>
-          <td style="text-align: left">/lib(library)</td>
-          <td style="text-align: left">库文件</td>
+          <td>/lib(library)</td>
+          <td>库文件</td>
       </tr>
       <tr>
-          <td style="text-align: left">/var(variable)</td>
-          <td style="text-align: left">日志文件等会发生变化的文件</td>
+          <td>/var(variable)</td>
+          <td>日志文件等会发生变化的文件</td>
       </tr>
       <tr>
-          <td style="text-align: left">/proc(process)</td>
-          <td style="text-align: left">进程文件</td>
+          <td>/proc(process)</td>
+          <td>进程文件</td>
       </tr>
       <tr>
-          <td style="text-align: left">/root</td>
-          <td style="text-align: left">根目录</td>
+          <td>/root</td>
+          <td>根目录</td>
       </tr>
       <tr>
-          <td style="text-align: left">/home(username)</td>
-          <td style="text-align: left">普通用户的家目录</td>
+          <td>/home(username)</td>
+          <td>普通用户的家目录</td>
       </tr>
   </tbody>
 </table>
@@ -725,26 +739,26 @@ tail -n +5 bible
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">标准流</th>
-          <th style="text-align: left">文件描述符</th>
-          <th style="text-align: left">重定向符号</th>
+          <th>标准流</th>
+          <th>文件描述符</th>
+          <th>重定向符号</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">stdin</td>
-          <td style="text-align: left">0</td>
-          <td style="text-align: left">&lt;</td>
+          <td>stdin</td>
+          <td>0</td>
+          <td>&lt;</td>
       </tr>
       <tr>
-          <td style="text-align: left">stdout</td>
-          <td style="text-align: left">1</td>
-          <td style="text-align: left">&gt;和&raquo;</td>
+          <td>stdout</td>
+          <td>1</td>
+          <td>&gt;和&raquo;</td>
       </tr>
       <tr>
-          <td style="text-align: left">stderr</td>
-          <td style="text-align: left">2</td>
-          <td style="text-align: left">2&gt;或2&raquo;</td>
+          <td>stderr</td>
+          <td>2</td>
+          <td>2&gt;或2&raquo;</td>
       </tr>
   </tbody>
 </table>
@@ -781,22 +795,22 @@ tail -n +5 bible
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">操作</th>
-          <th style="text-align: left">效果</th>
+          <th>操作</th>
+          <th>效果</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">ab</td>
-          <td style="text-align: left">ab</td>
+          <td>ab</td>
+          <td>ab</td>
       </tr>
       <tr>
-          <td style="text-align: left">[abc]x</td>
-          <td style="text-align: left">ax bx cx</td>
+          <td>[abc]x</td>
+          <td>ax bx cx</td>
       </tr>
       <tr>
-          <td style="text-align: left">.txt</td>
-          <td style="text-align: left">atxt btxt</td>
+          <td>.txt</td>
+          <td>atxt btxt</td>
       </tr>
   </tbody>
 </table>
@@ -842,22 +856,22 @@ tail -n +5 bible
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">类型</th>
-          <th style="text-align: left">权限</th>
+          <th>类型</th>
+          <th>权限</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">r</td>
-          <td style="text-align: left">可读</td>
+          <td>r</td>
+          <td>可读</td>
       </tr>
       <tr>
-          <td style="text-align: left">w</td>
-          <td style="text-align: left">可写</td>
+          <td>w</td>
+          <td>可写</td>
       </tr>
       <tr>
-          <td style="text-align: left">x</td>
-          <td style="text-align: left">可执行</td>
+          <td>x</td>
+          <td>可执行</td>
       </tr>
   </tbody>
 </table>
@@ -879,22 +893,22 @@ tail -n +5 bible
 </span></span></code></pre></div><table>
   <thead>
       <tr>
-          <th style="text-align: left">目录文件的权限</th>
-          <th style="text-align: left">说明</th>
+          <th>目录文件的权限</th>
+          <th>说明</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">r</td>
-          <td style="text-align: left">ls tree</td>
+          <td>r</td>
+          <td>ls tree</td>
       </tr>
       <tr>
-          <td style="text-align: left">w</td>
-          <td style="text-align: left">删除目录项，添加目录项</td>
+          <td>w</td>
+          <td>删除目录项，添加目录项</td>
       </tr>
       <tr>
-          <td style="text-align: left">x</td>
-          <td style="text-align: left">最基本的权限(cd, ls , w ,r)</td>
+          <td>x</td>
+          <td>最基本的权限(cd, ls , w ,r)</td>
       </tr>
   </tbody>
 </table>
@@ -941,54 +955,54 @@ tail -n +5 bible
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">过程</th>
-          <th style="text-align: left">生成文件</th>
+          <th>过程</th>
+          <th>生成文件</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">gcc -E</td>
-          <td style="text-align: left">预处理后文件(*.i)</td>
+          <td>gcc -E</td>
+          <td>预处理后文件(*.i)</td>
       </tr>
       <tr>
-          <td style="text-align: left">gcc -S</td>
-          <td style="text-align: left">汇编代码(*.s)</td>
+          <td>gcc -S</td>
+          <td>汇编代码(*.s)</td>
       </tr>
       <tr>
-          <td style="text-align: left">gcc -C</td>
-          <td style="text-align: left">目标文件(*.o)</td>
+          <td>gcc -C</td>
+          <td>目标文件(*.o)</td>
       </tr>
       <tr>
-          <td style="text-align: left">无</td>
-          <td style="text-align: left">可执行程序</td>
+          <td>无</td>
+          <td>可执行程序</td>
       </tr>
       <tr>
-          <td style="text-align: left">gcc -l$</td>
-          <td style="text-align: left">链接&amp;{lib}库</td>
+          <td>gcc -l$</td>
+          <td>链接&amp;{lib}库</td>
       </tr>
       <tr>
-          <td style="text-align: left">gcc -Wall</td>
-          <td style="text-align: left">警告消息</td>
+          <td>gcc -Wall</td>
+          <td>警告消息</td>
       </tr>
       <tr>
-          <td style="text-align: left">gcc -g</td>
-          <td style="text-align: left">补充调试信息</td>
+          <td>gcc -g</td>
+          <td>补充调试信息</td>
       </tr>
       <tr>
-          <td style="text-align: left">gcc -O1 -O2 -O3</td>
-          <td style="text-align: left">指定优化级别</td>
+          <td>gcc -O1 -O2 -O3</td>
+          <td>指定优化级别</td>
       </tr>
       <tr>
-          <td style="text-align: left">gcc -D${macro}</td>
-          <td style="text-align: left">#define &amp;{macro}定义宏</td>
+          <td>gcc -D${macro}</td>
+          <td>#define &amp;{macro}定义宏</td>
       </tr>
       <tr>
-          <td style="text-align: left">gcc -D${macro} = ${value}</td>
-          <td style="text-align: left">#define &amp;{macro} ${value}</td>
+          <td>gcc -D${macro} = ${value}</td>
+          <td>#define &amp;{macro} ${value}</td>
       </tr>
       <tr>
-          <td style="text-align: left">gcc -l${dir}</td>
-          <td style="text-align: left">#include&lt;&gt;${dir} -&gt; 系统的include目录下搜索<br />#include&quot; &ldquo;${dir} -&gt; 当前工作目录下搜索</td>
+          <td>gcc -l${dir}</td>
+          <td>#include&lt;&gt;${dir} -&gt; 系统的include目录下搜索<br />#include&quot; &ldquo;${dir} -&gt; 当前工作目录下搜索</td>
       </tr>
   </tbody>
 </table>

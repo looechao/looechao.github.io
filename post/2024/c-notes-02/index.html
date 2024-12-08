@@ -58,6 +58,20 @@
 
 
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9W970VLJ6X"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9W970VLJ6X');
+        }
+      </script>
 
 
 </head>
@@ -861,22 +875,22 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">id(int)</th>
-          <th style="text-align: left">name(char)</th>
-          <th style="text-align: left">gender(char)</th>
-          <th style="text-align: left">chinese(int)</th>
-          <th style="text-align: left">math(int)</th>
-          <th style="text-align: left">english(int)</th>
+          <th>id(int)</th>
+          <th>name(char)</th>
+          <th>gender(char)</th>
+          <th>chinese(int)</th>
+          <th>math(int)</th>
+          <th>english(int)</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">4</td>
-          <td style="text-align: left">25</td>
-          <td style="text-align: left">1+2</td>
-          <td style="text-align: left">4</td>
-          <td style="text-align: left">4</td>
-          <td style="text-align: left">4</td>
+          <td>4</td>
+          <td>25</td>
+          <td>1+2</td>
+          <td>4</td>
+          <td>4</td>
+          <td>4</td>
       </tr>
   </tbody>
 </table>
@@ -1072,17 +1086,17 @@
 </span></span></code></pre></div><table>
   <thead>
       <tr>
-          <th style="text-align: left">栈帧</th>
+          <th>栈帧</th>
           <th style="text-align: center">变量</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">main</td>
+          <td>main</td>
           <td style="text-align: center">p ↓</td>
       </tr>
       <tr>
-          <td style="text-align: left">堆</td>
+          <td>堆</td>
           <td style="text-align: center">一串数组（连续空间）</td>
       </tr>
   </tbody>
@@ -1167,18 +1181,18 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">elements</th>
-          <th style="text-align: left">*</th>
+          <th>elements</th>
+          <th>*</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">capacity</td>
-          <td style="text-align: left">int</td>
+          <td>capacity</td>
+          <td>int</td>
       </tr>
       <tr>
-          <td style="text-align: left">size</td>
-          <td style="text-align: left">int</td>
+          <td>size</td>
+          <td>int</td>
       </tr>
   </tbody>
 </table>

@@ -58,6 +58,20 @@
 
 
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9W970VLJ6X"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9W970VLJ6X');
+        }
+      </script>
 
 
 </head>
@@ -549,26 +563,26 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">类型</th>
-          <th style="text-align: left">是否会阻塞</th>
+          <th>类型</th>
+          <th>是否会阻塞</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">文件</td>
-          <td style="text-align: left">不会阻塞</td>
+          <td>文件</td>
+          <td>不会阻塞</td>
       </tr>
       <tr>
-          <td style="text-align: left">管道</td>
-          <td style="text-align: left">会阻塞</td>
+          <td>管道</td>
+          <td>会阻塞</td>
       </tr>
       <tr>
-          <td style="text-align: left">stdin</td>
-          <td style="text-align: left">会阻塞</td>
+          <td>stdin</td>
+          <td>会阻塞</td>
       </tr>
       <tr>
-          <td style="text-align: left">socket</td>
-          <td style="text-align: left">会阻塞</td>
+          <td>socket</td>
+          <td>会阻塞</td>
       </tr>
   </tbody>
 </table>

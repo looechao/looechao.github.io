@@ -58,6 +58,20 @@
 
 
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9W970VLJ6X"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9W970VLJ6X');
+        }
+      </script>
 
 
 </head>
@@ -209,7 +223,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      11076 Words
+                      10988 Words
                     
 
                   </div>
@@ -856,30 +870,30 @@ LIST   head                              tail
 </code></pre><table>
   <thead>
       <tr>
-          <th style="text-align: left">操作</th>
-          <th style="text-align: left">时间复杂度/方法</th>
+          <th>操作</th>
+          <th>时间复杂度/方法</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">入队</td>
-          <td style="text-align: left">O(1)</td>
+          <td>入队</td>
+          <td>O(1)</td>
       </tr>
       <tr>
-          <td style="text-align: left">出队</td>
-          <td style="text-align: left">o(n)</td>
+          <td>出队</td>
+          <td>o(n)</td>
       </tr>
       <tr>
-          <td style="text-align: left">peek</td>
-          <td style="text-align: left">O(1)</td>
+          <td>peek</td>
+          <td>O(1)</td>
       </tr>
       <tr>
-          <td style="text-align: left">判空</td>
-          <td style="text-align: left">rear = 0</td>
+          <td>判空</td>
+          <td>rear = 0</td>
       </tr>
       <tr>
-          <td style="text-align: left">判满</td>
-          <td style="text-align: left">rear = capacity</td>
+          <td>判满</td>
+          <td>rear = capacity</td>
       </tr>
   </tbody>
 </table>
@@ -894,30 +908,30 @@ LIST   head                              tail
 </span></span></code></pre></div><table>
   <thead>
       <tr>
-          <th style="text-align: left">操作</th>
-          <th style="text-align: left">时间复杂度/方法</th>
+          <th>操作</th>
+          <th>时间复杂度/方法</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">入队</td>
-          <td style="text-align: left">O(1)</td>
+          <td>入队</td>
+          <td>O(1)</td>
       </tr>
       <tr>
-          <td style="text-align: left">出队</td>
-          <td style="text-align: left">o(1)</td>
+          <td>出队</td>
+          <td>o(1)</td>
       </tr>
       <tr>
-          <td style="text-align: left">peek</td>
-          <td style="text-align: left">O(1)</td>
+          <td>peek</td>
+          <td>O(1)</td>
       </tr>
       <tr>
-          <td style="text-align: left">判空</td>
-          <td style="text-align: left">front - rear = 0</td>
+          <td>判空</td>
+          <td>front - rear = 0</td>
       </tr>
       <tr>
-          <td style="text-align: left">判满</td>
-          <td style="text-align: left">rear - front = capacity</td>
+          <td>判满</td>
+          <td>rear - front = capacity</td>
       </tr>
   </tbody>
 </table>
@@ -925,18 +939,18 @@ LIST   head                              tail
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">方式</th>
-          <th style="text-align: left">缺点</th>
+          <th>方式</th>
+          <th>缺点</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">rear = capacity</td>
-          <td style="text-align: left">浪费大量空间</td>
+          <td>rear = capacity</td>
+          <td>浪费大量空间</td>
       </tr>
       <tr>
-          <td style="text-align: left">rear - front = capacity</td>
-          <td style="text-align: left">需要大量移动元素</td>
+          <td>rear - front = capacity</td>
+          <td>需要大量移动元素</td>
       </tr>
   </tbody>
 </table>
@@ -1075,22 +1089,22 @@ LIST   head                              tail
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">键</th>
-          <th style="text-align: left">值</th>
+          <th>键</th>
+          <th>值</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">单词</td>
-          <td style="text-align: left">释义</td>
+          <td>单词</td>
+          <td>释义</td>
       </tr>
       <tr>
-          <td style="text-align: left">账号</td>
-          <td style="text-align: left">账号信息</td>
+          <td>账号</td>
+          <td>账号信息</td>
       </tr>
       <tr>
-          <td style="text-align: left">关键字</td>
-          <td style="text-align: left">一串相关网页</td>
+          <td>关键字</td>
+          <td>一串相关网页</td>
       </tr>
   </tbody>
 </table>
@@ -1100,24 +1114,24 @@ LIST   head                              tail
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">值</th>
-          <th style="text-align: left">A</th>
-          <th style="text-align: left">B</th>
-          <th style="text-align: left">C</th>
-          <th style="text-align: left">D</th>
-          <th style="text-align: left">···</th>
-          <th style="text-align: left">Z</th>
+          <th>值</th>
+          <th>A</th>
+          <th>B</th>
+          <th>C</th>
+          <th>D</th>
+          <th>···</th>
+          <th>Z</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">键</td>
-          <td style="text-align: left">0</td>
-          <td style="text-align: left">1</td>
-          <td style="text-align: left">2</td>
-          <td style="text-align: left">3</td>
-          <td style="text-align: left">···</td>
-          <td style="text-align: left">25</td>
+          <td>键</td>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>···</td>
+          <td>25</td>
       </tr>
   </tbody>
 </table>
@@ -1901,26 +1915,26 @@ LIST   head                              tail
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">操作</th>
-          <th style="text-align: left">性能</th>
+          <th>操作</th>
+          <th>性能</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">查找(search)</td>
-          <td style="text-align: left">O(h)</td>
+          <td>查找(search)</td>
+          <td>O(h)</td>
       </tr>
       <tr>
-          <td style="text-align: left">插入(insert)</td>
-          <td style="text-align: left">O(h)</td>
+          <td>插入(insert)</td>
+          <td>O(h)</td>
       </tr>
       <tr>
-          <td style="text-align: left">删除(delete)</td>
-          <td style="text-align: left">O(h)</td>
+          <td>删除(delete)</td>
+          <td>O(h)</td>
       </tr>
       <tr>
-          <td style="text-align: left">遍历</td>
-          <td style="text-align: left">O(n)</td>
+          <td>遍历</td>
+          <td>O(n)</td>
       </tr>
   </tbody>
 </table>
@@ -2166,8 +2180,6 @@ LIST   head                              tail
 <p>任何情况下都是O(n^2)</p>
 </li>
 <li>
-<p>比较：
-</p>
 $$
   n(n-1) + ··· + 1 = \frac{n(n-1)}{2}
   $$</li>
@@ -2227,8 +2239,6 @@ $$
 </table>
 <ul>
 <li>
-<p>平均时间复杂度
-</p>
 $$
   交换次数=逆序对 = \frac{n(n-1)}{4}  \\
   交换次数<=比较次数<=\frac{n(n-1)}{2}
@@ -2306,8 +2316,6 @@ $$
 </table>
 <ul>
 <li>
-<p>平均时间复杂度
-</p>
 $$
   逆序时：逆序对 = 顺序对 = \frac{C_{n}^{2}}{2} = \frac{(n-1)}{4}
   $$$$
@@ -2368,8 +2376,6 @@ $$<p>空间</p>
 <p>分析：</p>
 <ul>
 <li>
-<p>时间复杂度：
-</p>
 $$
   和gap序列相关，一般来说，平均情况小于O(n^2)
   $$</li>
@@ -2470,8 +2476,6 @@ $$<ul>
 <p>归并排序对数据不敏感，任何情况都是O(nlogn)</p>
 </li>
 </ul>
-<p><strong>空间复杂度</strong>：
-</p>
 $$
 O(logn)+O(n) = O(n)
 $$<p><strong>稳定性</strong>： 稳定</p>
@@ -2519,10 +2523,7 @@ $$
   [o,store)<= pivot，满足条件\\
   遍历时，[store, i) > pivot，不满足条件 \\
   终止 i = n-1
-  $$<p>
-<strong>平均操作次数：</strong>
-</p>
-$$
+  $$$$
   \frac{n}{2}·3=1.5n (赋值)
   $$</li>
 <li>
@@ -2540,10 +2541,7 @@ $$
 $$
   [o,)<= pivot，满足条件\\
   [j, n-1) >= pivot，不满足条件 \\
-  $$<p>
-<strong>平均操作次数：</strong>
-</p>
-$$
+  $$$$
   \frac{n}{2}·1=0.5n (赋值)
   $$</li>
 <li>
@@ -2606,8 +2604,6 @@ $$
 <ul>
 <li>
 <p>最好情况 O(nlogn)</p>
-<p>每次分区基准值都在中间
-</p>
 $$
   T(n) = O(n) + T(\frac{n}{2})+T(\frac{n}{2})\\
   = O(n) + 2·T(\frac{n}{2})\\
@@ -2615,15 +2611,11 @@ $$
   $$</li>
 <li>
 <p>最坏情况 O(n^2)</p>
-<p>每次分区，基准值都位于两边
-</p>
 $$
   T(n) = c·n+c·(n-1)+···+c·2+c = c·\frac{n·(n-1)}{2}=O(n^2)
   $$</li>
 <li>
 <p>平均复杂度 O(n·logn)</p>
-<p>假定每次分区，都分成大约为9：1的区间
-</p>
 $$
   T(n) <= log_\frac{10}{9}n·c·n=O(nlogn)
   $$</li>
