@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://looechao.github.io/css/light.css' />
     <link rel="stylesheet" href='https://looechao.github.io/css/dark.css' />
     <link rel="stylesheet" href='https://looechao.github.io/css/syntax.css' />
-    <title>2023年冬末 - looechao&#39;s blog</title>
+    <title>怎么更好地学习LLM应用开发 - looechao&#39;s blog</title>
     
     <link rel="icon" type="image/x-icon" href='/images/favicon.png'>
     
@@ -18,17 +18,43 @@
 
     
     <meta name="description"
-  content="轻松愉悦的那几天，知己，未来，电影，聊天" />
+  content="我们很少会遇到一个机会，既新，又能把大家的起跑线拉到一个水平
+大模型时代就是这样的一个机会
+基础知识 熟悉一下 Transformer 和 Diffusion 的架构，了解大致框架，建立一些感性的认识
+实践 Prompt Engineering，做一个小的plugin，调用一些公开的接口，写一个不少于500字的prompt，
+并且要建立一些datasets，懂得测试和评估它是否在绝大情况下是好用的，检测出在哪些场景下做的不好
+RAG：建立一个调用Grok API 接口的 RAG System，看看是否会比 pplx 好用一点
+SFT\RLHF：暂时没有配置条件
+试用一下多模态的模型：文生图，图生视频，了解大概应用
+AI Agent：搭建两个能够互相调用的 Agents, 观察是否有推理能力的提升，Memory 是否可持续和更新，同时试用一些多模态的功能，从目前用人单位的角度来看，搭建 Agent 的能力是越来越重要的
+也许每天花一个多小时学习和尝试，一两个月的时间就能做出很多有意思的事情
+AI Agent会发展到什么程度我们都不知道，也许当年面对iPhone的塞班工程师也是同样的感觉&hellip;
+最起码我们可以先从个人的 project 做起
+参考 课代表立正的视频
+" />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://looechao.github.io/post/2023/2023-lastweek/" />
+<link rel="canonical" href="https://looechao.github.io/post/2024/how-to-learn-llm/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="2023年冬末 - looechao&#39;s blog" />
+<meta name="twitter:title" content="怎么更好地学习LLM应用开发 - looechao&#39;s blog" />
 <meta name="twitter:description"
-  content="轻松愉悦的那几天，知己，未来，电影，聊天" />
+  content="我们很少会遇到一个机会，既新，又能把大家的起跑线拉到一个水平
+大模型时代就是这样的一个机会
+基础知识 熟悉一下 Transformer 和 Diffusion 的架构，了解大致框架，建立一些感性的认识
+实践 Prompt Engineering，做一个小的plugin，调用一些公开的接口，写一个不少于500字的prompt，
+并且要建立一些datasets，懂得测试和评估它是否在绝大情况下是好用的，检测出在哪些场景下做的不好
+RAG：建立一个调用Grok API 接口的 RAG System，看看是否会比 pplx 好用一点
+SFT\RLHF：暂时没有配置条件
+试用一下多模态的模型：文生图，图生视频，了解大概应用
+AI Agent：搭建两个能够互相调用的 Agents, 观察是否有推理能力的提升，Memory 是否可持续和更新，同时试用一些多模态的功能，从目前用人单位的角度来看，搭建 Agent 的能力是越来越重要的
+也许每天花一个多小时学习和尝试，一两个月的时间就能做出很多有意思的事情
+AI Agent会发展到什么程度我们都不知道，也许当年面对iPhone的塞班工程师也是同样的感觉&hellip;
+最起码我们可以先从个人的 project 做起
+参考 课代表立正的视频
+" />
 <meta name="twitter:site" content="https://looechao.github.io/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -36,17 +62,30 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="2023年冬末 - looechao&#39;s blog">
+<meta property="og:title" content="怎么更好地学习LLM应用开发 - looechao&#39;s blog">
 <meta property="og:description"
-  content="轻松愉悦的那几天，知己，未来，电影，聊天" />
-<meta property="og:url" content="https://looechao.github.io/post/2023/2023-lastweek/" />
-<meta property="og:site_name" content="2023年冬末" />
+  content="我们很少会遇到一个机会，既新，又能把大家的起跑线拉到一个水平
+大模型时代就是这样的一个机会
+基础知识 熟悉一下 Transformer 和 Diffusion 的架构，了解大致框架，建立一些感性的认识
+实践 Prompt Engineering，做一个小的plugin，调用一些公开的接口，写一个不少于500字的prompt，
+并且要建立一些datasets，懂得测试和评估它是否在绝大情况下是好用的，检测出在哪些场景下做的不好
+RAG：建立一个调用Grok API 接口的 RAG System，看看是否会比 pplx 好用一点
+SFT\RLHF：暂时没有配置条件
+试用一下多模态的模型：文生图，图生视频，了解大概应用
+AI Agent：搭建两个能够互相调用的 Agents, 观察是否有推理能力的提升，Memory 是否可持续和更新，同时试用一些多模态的功能，从目前用人单位的角度来看，搭建 Agent 的能力是越来越重要的
+也许每天花一个多小时学习和尝试，一两个月的时间就能做出很多有意思的事情
+AI Agent会发展到什么程度我们都不知道，也许当年面对iPhone的塞班工程师也是同样的感觉&hellip;
+最起码我们可以先从个人的 project 做起
+参考 课代表立正的视频
+" />
+<meta property="og:url" content="https://looechao.github.io/post/2024/how-to-learn-llm/" />
+<meta property="og:site_name" content="怎么更好地学习LLM应用开发" />
 <meta property="og:image"
   content="https://looechao.github.io/">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2023-12-31 20:50:13 &#43;2301 &#43;2301" />
+<meta property="article:published_time" content="2024-12-08 21:50:13 &#43;0800 CST" />
 
 
 
@@ -170,15 +209,15 @@
                             
                             </a>
                             
-                            <strong itemprop="name"><a href="https://looechao.github.io/post/2023/2023-lastweek/">2023年冬末</a></strong>
+                            <strong itemprop="name"><a href="https://looechao.github.io/post/2024/how-to-learn-llm/">怎么更好地学习LLM应用开发</a></strong>
 
                             
 
                             
                             <div class="d-block text-small text-gray">
                                 <span class="d-inline-block">
-                                    Created at <time datetime="2023-12-31 20:50" class="no-wrap">
-                                        2023-12-31 20:50</time>
+                                    Created at <time datetime="2024-12-08 21:50" class="no-wrap">
+                                        2024-12-08 21:50</time>
                                 </span>
 
                                 
@@ -209,47 +248,38 @@
                         </div>
                       </div>
                     </details-menu>
-                      203 Words
+                      460 Words
                     
 
                   </div>
                   <div class="file-actions flex-order-2 pt-0">
                     
                     
-                    <a class="muted-link mr-3" href="/tags/%E8%82%96%E6%B4%AA%E6%B6%9B">
+                    <a class="muted-link mr-3" href="/tags/llm">
                       <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd"
                           d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                         </path>
                       </svg>
-                      肖洪涛
+                      LLM
                     </a>
                     
-                    <a class="muted-link mr-3" href="/tags/%E7%94%9F%E6%B4%BB">
+                    <a class="muted-link mr-3" href="/tags/agent">
                       <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd"
                           d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                         </path>
                       </svg>
-                      生活
+                      Agent
                     </a>
                     
-                    <a class="muted-link mr-3" href="/tags/%E8%B7%A8%E5%B9%B4">
+                    <a class="muted-link mr-3" href="/tags/%E6%9D%82%E8%B0%88">
                       <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd"
                           d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                         </path>
                       </svg>
-                      跨年
-                    </a>
-                    
-                    <a class="muted-link mr-3" href="/tags/omegle">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      Omegle
+                      杂谈
                     </a>
                     
                     
@@ -259,70 +289,35 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><p>考试完后的一周，不论结果如何，重担应该往下放一放了，美美的睡懒觉，看电影</p>
-<p>寒假的主要任务是完成开题报告，但是这几天就应该先爽玩！</p>
-<p>今年最意外的经历是跟阿Tao一起跨年，吃了寿司和炸鸡柳，然后一块熬夜看了电影，我们最喜欢易墨成的那一句台词：</p>
-<blockquote>
-<p>我对钻石不感兴趣，我只想看它戴在你的手上</p>
-</blockquote>
-<p>空闲时间就是在聊天聊地，玩黄金矿工和agar，最快乐的几天</p>
-<p>还有一起玩ome.tv</p>
-</br>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-4.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">走过无数遍的路</div>
-</center>
-</div>
-</br>
-</br>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-1.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">惬意时刻</div>
-</center>
-</div>
-</br>
-</br>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-2.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">Omegle时间</div>
-</center>
-</div>
-</br>
-</br>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-3.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">Gold Miner😋</div>
-</center>
-</div>
-</br></article>
+                <article class="markdown-body entry-content container-lg"><p>我们很少会遇到一个机会，既新，又能把大家的起跑线拉到一个水平</p>
+<p>大模型时代就是这样的一个机会</p>
+<h2 id="基础知识">基础知识</h2>
+<p>熟悉一下 Transformer 和 Diffusion 的架构，了解大致框架，建立一些感性的认识</p>
+<h2 id="实践">实践</h2>
+<ol>
+<li>
+<p><strong>Prompt Engineering</strong>，做一个小的plugin，调用一些公开的接口，写一个不少于500字的prompt，</p>
+<p>并且要建立一些datasets，懂得测试和评估它是否在绝大情况下是好用的，检测出在哪些场景下做的不好</p>
+</li>
+<li>
+<p><strong>RAG</strong>：建立一个调用Grok API 接口的 RAG System，看看是否会比 pplx 好用一点</p>
+</li>
+<li>
+<p><strong>SFT\RLHF</strong>：暂时没有配置条件</p>
+</li>
+<li>
+<p><strong>试用一下多模态的模型</strong>：文生图，图生视频，了解大概应用</p>
+</li>
+<li>
+<p><strong>AI Agent</strong>：搭建两个能够互相调用的 Agents, 观察是否有推理能力的提升，Memory 是否可持续和更新，同时试用一些多模态的功能，从目前用人单位的角度来看，搭建 Agent 的能力是越来越重要的</p>
+</li>
+</ol>
+<p>也许每天花一个多小时学习和尝试，一两个月的时间就能做出很多有意思的事情</p>
+<p>AI Agent会发展到什么程度我们都不知道，也许当年面对iPhone的塞班工程师也是同样的感觉&hellip;</p>
+<p>最起码我们可以先从个人的 project 做起</p>
+<h2 id="参考">参考</h2>
+<p><a href="https://www.youtube.com/watch?v=A12Z_CHi7PE">课代表立正的视频</a></p>
+</article>
               </div>
             </div>
           </div>
