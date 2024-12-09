@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://looechao.github.io/css/light.css' />
     <link rel="stylesheet" href='https://looechao.github.io/css/dark.css' />
     <link rel="stylesheet" href='https://looechao.github.io/css/syntax.css' />
-    <title>写在22岁之前 - looechao&#39;s blog</title>
+    <title>怎么更好地学习LLM应用开发 - looechao&#39;s blog</title>
     
     <link rel="icon" type="image/x-icon" href='/images/favicon.png'>
     
@@ -18,17 +18,43 @@
 
     
     <meta name="description"
-  content="黄金时代，在中南林的几乎一整年" />
+  content="我们很少会遇到一个机会，既新，又能把大家的起跑线拉到一个水平
+大模型时代就是这样的一个机会
+基础知识 熟悉一下 Transformer 和 Diffusion 的架构，了解大致框架，建立一些感性的认识
+实践 Prompt Engineering，做一个小的plugin，调用一些公开的接口，写一个不少于500字的prompt，
+并且要建立一些datasets，懂得测试和评估它是否在绝大情况下是好用的，检测出在哪些场景下做的不好
+RAG：建立一个调用Grok API 接口的 RAG System，看看是否会比 pplx 好用一点
+SFT\RLHF：暂时没有配置条件
+试用一下多模态的模型：文生图，图生视频，了解大概应用
+AI Agent：搭建两个能够互相调用的 Agents, 观察是否有推理能力的提升，Memory 是否可持续和更新，同时试用一些多模态的功能，从目前用人单位的角度来看，搭建 Agent 的能力是越来越重要的
+也许每天花一个多小时学习和尝试，一两个月的时间就能做出很多有意思的事情
+AI Agent会发展到什么程度我们都不知道，也许当年面对iPhone的塞班工程师也是同样的感觉&hellip;
+最起码我们可以先从个人的 project 做起
+参考 课代表立正的视频
+" />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://looechao.github.io/post/2024/before22/" />
+<link rel="canonical" href="https://looechao.github.io/post/2024/how-to-learn-llm/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="写在22岁之前 - looechao&#39;s blog" />
+<meta name="twitter:title" content="怎么更好地学习LLM应用开发 - looechao&#39;s blog" />
 <meta name="twitter:description"
-  content="黄金时代，在中南林的几乎一整年" />
+  content="我们很少会遇到一个机会，既新，又能把大家的起跑线拉到一个水平
+大模型时代就是这样的一个机会
+基础知识 熟悉一下 Transformer 和 Diffusion 的架构，了解大致框架，建立一些感性的认识
+实践 Prompt Engineering，做一个小的plugin，调用一些公开的接口，写一个不少于500字的prompt，
+并且要建立一些datasets，懂得测试和评估它是否在绝大情况下是好用的，检测出在哪些场景下做的不好
+RAG：建立一个调用Grok API 接口的 RAG System，看看是否会比 pplx 好用一点
+SFT\RLHF：暂时没有配置条件
+试用一下多模态的模型：文生图，图生视频，了解大概应用
+AI Agent：搭建两个能够互相调用的 Agents, 观察是否有推理能力的提升，Memory 是否可持续和更新，同时试用一些多模态的功能，从目前用人单位的角度来看，搭建 Agent 的能力是越来越重要的
+也许每天花一个多小时学习和尝试，一两个月的时间就能做出很多有意思的事情
+AI Agent会发展到什么程度我们都不知道，也许当年面对iPhone的塞班工程师也是同样的感觉&hellip;
+最起码我们可以先从个人的 project 做起
+参考 课代表立正的视频
+" />
 <meta name="twitter:site" content="https://looechao.github.io/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -36,17 +62,30 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="写在22岁之前 - looechao&#39;s blog">
+<meta property="og:title" content="怎么更好地学习LLM应用开发 - looechao&#39;s blog">
 <meta property="og:description"
-  content="黄金时代，在中南林的几乎一整年" />
-<meta property="og:url" content="https://looechao.github.io/post/2024/before22/" />
-<meta property="og:site_name" content="写在22岁之前" />
+  content="我们很少会遇到一个机会，既新，又能把大家的起跑线拉到一个水平
+大模型时代就是这样的一个机会
+基础知识 熟悉一下 Transformer 和 Diffusion 的架构，了解大致框架，建立一些感性的认识
+实践 Prompt Engineering，做一个小的plugin，调用一些公开的接口，写一个不少于500字的prompt，
+并且要建立一些datasets，懂得测试和评估它是否在绝大情况下是好用的，检测出在哪些场景下做的不好
+RAG：建立一个调用Grok API 接口的 RAG System，看看是否会比 pplx 好用一点
+SFT\RLHF：暂时没有配置条件
+试用一下多模态的模型：文生图，图生视频，了解大概应用
+AI Agent：搭建两个能够互相调用的 Agents, 观察是否有推理能力的提升，Memory 是否可持续和更新，同时试用一些多模态的功能，从目前用人单位的角度来看，搭建 Agent 的能力是越来越重要的
+也许每天花一个多小时学习和尝试，一两个月的时间就能做出很多有意思的事情
+AI Agent会发展到什么程度我们都不知道，也许当年面对iPhone的塞班工程师也是同样的感觉&hellip;
+最起码我们可以先从个人的 project 做起
+参考 课代表立正的视频
+" />
+<meta property="og:url" content="https://looechao.github.io/post/2024/how-to-learn-llm/" />
+<meta property="og:site_name" content="怎么更好地学习LLM应用开发" />
 <meta property="og:image"
   content="https://looechao.github.io/">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2024-03-13 21:50:13 &#43;0800 CST" />
+<meta property="article:published_time" content="2024-12-08 21:50:13 &#43;0800 CST" />
 
 
 
@@ -184,15 +223,15 @@
                             
                             </a>
                             
-                            <strong itemprop="name"><a href="https://looechao.github.io/post/2024/before22/">写在22岁之前</a></strong>
+                            <strong itemprop="name"><a href="https://looechao.github.io/post/2024/how-to-learn-llm/">怎么更好地学习LLM应用开发</a></strong>
 
                             
 
                             
                             <div class="d-block text-small text-gray">
                                 <span class="d-inline-block">
-                                    Created at <time datetime="2024-03-13 21:50" class="no-wrap">
-                                        2024-03-13 21:50</time>
+                                    Created at <time datetime="2024-12-08 21:50" class="no-wrap">
+                                        2024-12-08 21:50</time>
                                 </span>
 
                                 
@@ -223,20 +262,29 @@
                         </div>
                       </div>
                     </details-menu>
-                      1162 Words
+                      460 Words
                     
 
                   </div>
                   <div class="file-actions flex-order-2 pt-0">
                     
                     
-                    <a class="muted-link mr-3" href="/tags/%E7%94%9F%E6%B4%BB">
+                    <a class="muted-link mr-3" href="/tags/llm">
                       <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd"
                           d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                         </path>
                       </svg>
-                      生活
+                      LLM
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="/tags/agent">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      Agent
                     </a>
                     
                     <a class="muted-link mr-3" href="/tags/%E6%9D%82%E8%B0%88">
@@ -248,33 +296,6 @@
                       杂谈
                     </a>
                     
-                    <a class="muted-link mr-3" href="/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      年度总结
-                    </a>
-                    
-                    <a class="muted-link mr-3" href="/tags/%E6%88%90%E9%95%BF">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      成长
-                    </a>
-                    
-                    <a class="muted-link mr-3" href="/tags/%E6%84%9F%E6%82%9F">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      感悟
-                    </a>
-                    
                     
                   </div>
                 </div>
@@ -282,173 +303,34 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><h1 id="21岁的年度总结">21岁的年度总结</h1>
-<h4 id="身体状态">身体状态</h4>
-<ul>
-<li>运动量少了很多，长跑只坚持到了五月就停下了</li>
-<li>自习室太昏暗，总是视疲劳，近视涨了100度,但是积累了在网上配镜的经验</li>
-</ul>
-<h4 id="心态">心态</h4>
-</br>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/goldentime.jpg" width="30%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">黄金时代</div>
-</center>
-</div>
-</br>
-”那一天我二十一岁，在我一生的黄金时代。
-我有好多奢望，我想爱，想吃，还想在一瞬间变成天上半明半暗的云。
-后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。
-可是我过二十一岁生日时没有预见到这一点。
-我觉得自己会永远生猛下去，什么也锤不了我。”
-<p>这是王小波在《黄金时代》里写的一段话，初读这本书的时候我还在大一，当时还完全没有深入地思考过无忧无虑的青春原来是这样易逝。</p>
-<p>过去一年，我总是被一些宏观上的事情吸引走注意力，2023年先是冒出来了年轻人失业率过高的新闻，到后来官方宣布不再公布就业率，这些都是与我们的生活息息相关的事情；人民日报后来下场发表了一篇劝年轻人脱下孔乙己的长衫的文章，看到这些，我也感觉到了寒意，因为这总归是我会面临到的问题，再后来网上关于这篇文章的讨论度越来越高，甚至还有人改编出了一首歌曲《阳光开朗孔乙己》来讽刺现状，但随即遭遇到的是歌曲和视频都被下架&hellip;&hellip;</p>
-<p>我了解到民营经济为我国贡献了50%以上的税收，解决了80%以上的就业，还是我国第一大外贸主体，但是过去的几年里，外资撤退成了常态，被各种媒体熏陶下的年轻小将们对资本家的恨也愈来愈深，这种种迹象表明衰退好像成了不可避免的一件事情。</p>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-4.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">树人楼的一隅</div>
-</center>
-</div>
-</br>
-<p>就这样从社会性沉重的话题蔓延到了个人性沉重的话题，对未来的不确定性和焦虑成了我心底的情感基调。</p>
-<h4 id="关于考研">关于考研</h4>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-5.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">留校申请</div>
-</center>
-</div>
-</br>
-<p>暑假也还是迷茫期，匆匆提交了留校申请就没有回家，现在想想真的是很幼稚</p>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-3.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">在南105的暑假</div>
-</center>
-</div>
-</br>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-7.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">早饭</div>
-</center>
-</div>
-<p>目前从体感上来说，我觉得考研/考公/考编都是用自己一年或多年的时间去赌一个小概率事件，从个人发展的角度来看性价比过于低了</p>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-1.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">昏暗的南附112</div>
-</center>
-</div>
-</br>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-2.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">408选择题</div>
-</center>
-</div>
-</br>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-6.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">林大桥</div>
-</center>
-</div>
-</br>
-<h4 id="转折点">转折点</h4>
-<p>人只有对未来有信心的时候才会投入足够的热情去改变它，我必须选择一条我认为正确的路坚定的走下去，也许这条路就是多去看看外面的世界。</p>
-<p>达成这个目标需要哪些条件呢？我可以罗列到下面：</p>
-<ul>
-<li>一个健康又尽量年轻的身体</li>
-<li>扎实的语言基础</li>
-<li>过硬的专业或者技术实力</li>
-<li>足够的资金保障</li>
-<li>勇气</li>
-</ul>
-<p>身体 | 语言 | 技术 永远是绕不开的三个基点，要从细节上把握好才行。</p>
-<p>现状是已经付出了一年的沉没成本，而初试的排名擦边，有进复试的可能，所以这个月的主要任务应该放在准备复试上了，即使失败也不过是一个月的时间</p>
-<p>到时候正好是22岁的生日左右，如果失败了，就踏踏实实的敲代码，学好技术，走另外一条路(PlanB)！</p>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-8.jpg" width="50%">
-</center>
-</div>
-<h4 id="planb">PlanB</h4>
-<ul>
-<li>当一个合格的码农，攒钱</li>
-<li>考雅思，申请gatech omscs，提高进外企的机会</li>
-<li>抽空学日语</li>
-<li>如果能申请到澳洲的WHV签证，一定会去体验
-下当地生活</li>
-</ul>
-<h4 id="留张照片">留张照片</h4>
-</br>
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/before22.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">我的21岁</div>
-</center>
-</div>
-</br>
-<p>感谢阿涛的摄影，真的很棒！</p>
+                <article class="markdown-body entry-content container-lg"><p>我们很少会遇到一个机会，既新，又能把大家的起跑线拉到一个水平</p>
+<p>大模型时代就是这样的一个机会</p>
+<h2 id="基础知识">基础知识</h2>
+<p>熟悉一下 Transformer 和 Diffusion 的架构，了解大致框架，建立一些感性的认识</p>
+<h2 id="实践">实践</h2>
+<ol>
+<li>
+<p><strong>Prompt Engineering</strong>，做一个小的plugin，调用一些公开的接口，写一个不少于500字的prompt，</p>
+<p>并且要建立一些datasets，懂得测试和评估它是否在绝大情况下是好用的，检测出在哪些场景下做的不好</p>
+</li>
+<li>
+<p><strong>RAG</strong>：建立一个调用Grok API 接口的 RAG System，看看是否会比 pplx 好用一点</p>
+</li>
+<li>
+<p><strong>SFT\RLHF</strong>：暂时没有配置条件</p>
+</li>
+<li>
+<p><strong>试用一下多模态的模型</strong>：文生图，图生视频，了解大概应用</p>
+</li>
+<li>
+<p><strong>AI Agent</strong>：搭建两个能够互相调用的 Agents, 观察是否有推理能力的提升，Memory 是否可持续和更新，同时试用一些多模态的功能，从目前用人单位的角度来看，搭建 Agent 的能力是越来越重要的</p>
+</li>
+</ol>
+<p>也许每天花一个多小时学习和尝试，一两个月的时间就能做出很多有意思的事情</p>
+<p>AI Agent会发展到什么程度我们都不知道，也许当年面对iPhone的塞班工程师也是同样的感觉&hellip;</p>
+<p>最起码我们可以先从个人的 project 做起</p>
+<h2 id="参考">参考</h2>
+<p><a href="https://www.youtube.com/watch?v=A12Z_CHi7PE">课代表立正的视频</a></p>
 </article>
               </div>
             </div>
