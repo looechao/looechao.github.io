@@ -1,4 +1,5 @@
 baseURL = 'https://looechao.github.io'
+googleAnalytics = "G-9W970VLJ6X"
 languageCode = 'zh-cn'
 title = "looechao's blog"
 theme= "github-style"
@@ -31,11 +32,10 @@ buildFuture = true
   favicon = "/images/favicon.png"
   avatar = "/images/profile.png"
   headerIcon = "/images/github.png"
-  location = "China"
+  location = "Shenzhen"
   userStatusEmoji = ""
   enableGitalk = true
   math = true
-  googleAnalytics = true
 
   [frontmatter]
   ## lastmod = ["lastmod", ":fileModTime", ":default"]
