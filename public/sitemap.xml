@@ -2,25 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://looechao.github.io/</loc>
+    <lastmod>2025-01-05T15:01:13+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/post/</loc>
+    <lastmod>2025-01-05T15:01:13+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/tags/</loc>
+    <lastmod>2025-01-05T15:01:13+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/tags/%E5%81%A5%E5%BA%B7/</loc>
+    <lastmod>2025-01-05T15:01:13+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/tags/%E5%8C%BB%E7%96%97/</loc>
+    <lastmod>2025-01-05T15:01:13+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/post/2025/gastroenteritis/</loc>
+    <lastmod>2025-01-05T15:01:13+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2025-01-05T15:01:13+08:00</lastmod>
+  </url><url>
     <loc>https://looechao.github.io/tags/agent/</loc>
-    <lastmod>2024-10-24T15:01:13+08:00</lastmod>
+    <lastmod>2024-12-08T21:50:13+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/tags/llm/</loc>
+    <lastmod>2024-12-08T21:50:13+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/post/2024/how-to-learn-llm/</loc>
+    <lastmod>2024-12-08T21:50:13+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/tags/%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2024-12-08T21:50:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/lectures/</loc>
     <lastmod>2024-10-24T15:01:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.github.io/tags/llm/</loc>
-    <lastmod>2024-10-24T15:01:13+08:00</lastmod>
-  </url><url>
-    <loc>https://looechao.github.io/</loc>
-    <lastmod>2024-10-24T15:01:13+08:00</lastmod>
-  </url><url>
-    <loc>https://looechao.github.io/post/</loc>
-    <lastmod>2024-10-24T15:01:13+08:00</lastmod>
-  </url><url>
     <loc>https://looechao.github.io/post/2024/from-text-agent-to-reasoning-agent/</loc>
-    <lastmod>2024-10-24T15:01:13+08:00</lastmod>
-  </url><url>
-    <loc>https://looechao.github.io/tags/</loc>
     <lastmod>2024-10-24T15:01:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/2024weekly/</loc>
@@ -143,9 +161,6 @@
     <loc>https://looechao.github.io/post/2024/cooltech/</loc>
     <lastmod>2024-04-11T21:50:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2024-04-11T21:50:13+08:00</lastmod>
-  </url><url>
     <loc>https://looechao.github.io/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/</loc>
     <lastmod>2024-04-05T21:50:13+08:00</lastmod>
   </url><url>
@@ -192,9 +207,6 @@
     <lastmod>2024-03-15T20:50:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/%E5%86%85%E5%8D%B7/</loc>
-    <lastmod>2024-03-15T20:50:13+08:00</lastmod>
-  </url><url>
-    <loc>https://looechao.github.io/tags/%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2024-03-15T20:50:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.github.io/tags/%E4%B9%90%E8%A7%82%E4%B8%BB%E4%B9%89/</loc>
@@ -268,6 +280,8 @@
   </url><url>
     <loc>https://looechao.github.io/readme/</loc>
     <lastmod>1970-03-10T21:50:13+08:00</lastmod>
+  </url><url>
+    <loc>https://looechao.github.io/post/2024/sa-algo/</loc>
   </url><url>
     <loc>https://looechao.github.io/categories/</loc>
   </url>
