@@ -2,7 +2,7 @@
 title = '时代的眼泪'
 date = 2024-04-11T21:50:13+08:00
 draft = false
-pin = true
+pin = false
 summary = "looe's cool digital devices..."
 tags = [ "生活",  "数码"]
 
