@@ -1,3 +1,7 @@
 [submodule "themes/themes/github-style"]
 	path = themes/themes/github-style
 	url = git@github.com:MeiK2333/github-style.git
+[submodule "public"]
+	path = public
+	url = git@github.com:looechao/looechao.github.io.git
+	branch = main
