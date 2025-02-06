@@ -2,7 +2,7 @@
 title = '新的一年，我会越来越不完美'
 date = 2025-02-06T15:01:13+08:00
 draft = false
-pin = true
+pin = false
 summary = "避开完美主义这条崎岖的弯路"
 tags = [ "感悟", "生活", "杂谈", "成长"]
 
