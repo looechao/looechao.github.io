@@ -36,39 +36,9 @@ tags = [ "Lectures", "Agent", "llm"]
    >
    > eg. ReAct, AutoGPT
 
-```mermaid
-graph TD
-    A[LLM Agent Types] --> B[Text Agent]
-    A --> C[LLM Agent]
-    A --> D[Reasoning Agent]
-    
-    B --> B1[ELIZA]
-    B --> B2[LSTM-DQN]
-    
-    C --> C1[SayCan]
-    C --> C2[Language Planner]
-    
-    D --> D1[ReAct]
-    D --> D2[AutoGPT]
-```
-
 
 
 ## 关于Question answering的问题
-
-```mermaid
-graph TB
-    A[Question Types] --> B[需要推理]
-    A --> C[需要行动]
-    A --> D[需要新知识]
-    
-    C --> C1[搜索]
-    C --> C2[计算]
-    C --> C3[编程]
-    
-    B --> B1[逻辑推理问题]
-    D --> D1[实时信息问题]
-```
 
 
 
@@ -132,24 +102,6 @@ sequenceDiagram
 
 ### 让Agent的推理和行动协同
 
-```mermaid
-graph LR
-    A[Agent Capabilities] --> B[Reasoning]
-    A --> C[Acting]
-    
-    B --> B1[Chain of Thoughts]
-    
-    C --> C1[RAG技术]
-    C --> C2[Tool Use]
-    
-    C2 --> D1[搜索引擎]
-    C2 --> D2[计算器]
-    C2 --> D3[特殊任务模型]
-    C2 --> D4[API接口]
-```
-
-
-
 只用推理无法获得新信息，只用行动又无法再一次推理
 
 推理可以帮助行动，行动又可以帮助推理，这种思路很像人类解决问题的方法，将两者结合使用可以协同增效
@@ -166,7 +118,7 @@ graph LR
 > - 推理思考：观察和分析从搜索行为中得到的信息
 > - 行动：你可以使用的action
 
-### Long-Termmemory
+### Long-Term memory
 
 llm的记忆一般是很短的，像金鱼一样只有七秒的记忆，如果让llm生成一段程序，但是有错误，那么短期记忆的大模型再修改的过程就无法具备反思的能力，更长的记忆可以让llm的分析和决策能力更强
 
@@ -179,24 +131,6 @@ llm的记忆一般是很短的，像金鱼一样只有七秒的记忆，如果�
 > Decision Making
 
 这样的架构可以构建出有很强的创造力的Agent
-
-```mermaid
-graph TB
-    A[CoALA Architecture] --> B[Memory]
-    A --> C[Action Space]
-    A --> D[Decision Making]
-    
-    B --> B1[Long-Term Memory]
-    B --> B2[Short-Term Memory]
-    
-    C --> C1[Available Actions]
-    C --> C2[Tool Integration]
-    
-    D --> D1[Analysis]
-    D --> D2[Planning]
-```
-
-
 
 ### 和human的区别
 
