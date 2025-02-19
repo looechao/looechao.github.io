@@ -24,4 +24,9 @@ git push origin main
 # 返回上级目录
 cd ..
 
+# Git 操作在 Hugo 博客根目录
+git add .
+git commit -m "$commit_msg"
+git push origin main
+
 echo "Deploy completed!"
