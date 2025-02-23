@@ -20,7 +20,7 @@ buildFuture = true
 
 [params]
   author = "Looe"
-  description = "禅与极简生活."
+  description = "Radical notions."
   github = "looechao"
   linkedin = "lu-chao-a592a5279"
   email = "lu.chao.personal@foxmail.com"
