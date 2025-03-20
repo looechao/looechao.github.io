@@ -4,19 +4,18 @@ title = 'readme文档'
 draft = false
 date = 1970-03-10T21:50:13+08:00
 summary = "readme"
+
 +++
 ## _ABOUT_
 
-_My Chinese name can be romanized as Lu Chao or Lu Zhao. Looe is my common online handle, derived from my favorite manga 'Kylooe' while keeping the pronunciation similar to my real name Lu."_
+- 现居深圳，为稻粱谋的码农
+- 喜欢书、影、音、游、电子产品
+- ID灵感源自我最爱的漫画  _[kylooe 憂鬱的蜻蜓：告別彩虹](https://neodb.social/book/5gkFtRhMS8G37m8Sq283hq)_
+- 消化信息、创作新内容
 
-_An entry-level software engineer passionate about crafting things. Continuously learning to build fun full-stack projects._
+我的开发
 
-## _RECENTLY_
-_Exploring Kotlin for building Android apps and server-side applications._
-
-## _GAME_
-
-_Retro game console enthusiast (WiiU/Xbox360/PSP)_
+- `玩意` [Findoria](https://github.com/looechao/Findoria)|[YoutubeAutoSubscribe](https://chromewebstore.google.com/detail/youtube-auto-subscribe)
 
 ## _Trip_
 
