@@ -8,14 +8,18 @@ summary = "readme"
 +++
 ## _ABOUT_
 
-- 现居深圳，为稻粱谋的码农
+- 现居深圳，为稻粱谋的SWE
 - 喜欢书、影、音、游、电子产品
-- ID灵感源自我最爱的漫画  _[kylooe 憂鬱的蜻蜓：告別彩虹](https://neodb.social/book/5gkFtRhMS8G37m8Sq283hq)_
-- 消化信息、创作新内容
+- ID灵感源自真名和我最爱的漫画  _[kylooe 憂鬱的蜻蜓：告別彩虹](https://neodb.social/book/5gkFtRhMS8G37m8Sq283hq)_
+- 消化内容、用心创作
 
-我的开发
+快速了解我：
 
-- `玩意` [Findoria](https://github.com/looechao/Findoria)|[YoutubeAutoSubscribe](https://chromewebstore.google.com/detail/youtube-auto-subscribe)
+- `捣鼓` [Findoria](https://github.com/looechao/Findoria) | [YoutubeAutoSubscribe](https://chromewebstore.google.com/detail/youtube-auto-subscribe/pgidfiofpgjbnfnjfplkloacifhfnomi)
+- `数码` [时代的眼泪](https://looechao.github.io/post/2024/cooltech/) | [AuroraAssetEditor使用指南](https://looechao.github.io/post/2023/xbox360ftp/)
+
+- `生活` [平淡生活中的刺](https://looechao.github.io/post/2025/gastroenteritis/) | [不完美宣言](https://looechao.github.io/post/2025/imperfection/)
+- `读书` [禅与极简生活艺术](https://looechao.github.io/post/2024/zenlife/) | [关于内卷的思考](https://looechao.github.io/post/2024/involution/)
 
 ## _Trip_
 
