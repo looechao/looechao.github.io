@@ -271,8 +271,7 @@
 <p>Text agent</p>
 <blockquote>
 <p>观察和响应文本</p>
-<p>eg. ELIZA、LSTM-DQN</p>
-</blockquote>
+<p>eg. ELIZA、LSTM-DQN</p></blockquote>
 <p>最早的ChatBot</p>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/ELIZA_conversation.jpg" alt="Eliza"></p>
 </li>
@@ -280,15 +279,13 @@
 <p>LLM agent</p>
 <blockquote>
 <p>仅仅使用LLM做出相应</p>
-<p>eg. SayCan、Language Planner</p>
-</blockquote>
+<p>eg. SayCan、Language Planner</p></blockquote>
 </li>
 <li>
 <p>Reasoning agent</p>
 <blockquote>
 <p>为LLM加上执行动作和更强的推理能力，Resoning 和 Action</p>
-<p>eg. ReAct, AutoGPT</p>
-</blockquote>
+<p>eg. ReAct, AutoGPT</p></blockquote>
 </li>
 </ol>
 <h2 id="关于question-answering的问题">关于Question answering的问题</h2>
@@ -297,22 +294,19 @@
 <p>需要推理</p>
 <blockquote>
 <p>Q: 有人说真话，有人说假话，根据他们的话来判断谁说了真话。例如：“A说‘B在撒谎’，B说‘C在撒谎’，C说‘A在撒谎’。其中只有一个人说了真话，谁说了真话？</p>
-<p>A: 需要推理</p>
-</blockquote>
+<p>A: 需要推理</p></blockquote>
 </li>
 <li>
 <p>需要行动（搜索，计算，编程）</p>
 <blockquote>
 <p>Q: 一个袋子里有5个红球和3个蓝球，随机抽取一个球，抽到红球的概率是多少？</p>
-<p>Q: 需要计算</p>
-</blockquote>
+<p>Q: 需要计算</p></blockquote>
 </li>
 <li>
 <p>需要新知识</p>
 <blockquote>
 <p>Q: 今年英国首相是谁</p>
-<p>A: 需要最新资料</p>
-</blockquote>
+<p>A: 需要最新资料</p></blockquote>
 </li>
 </ol>
 <h3 id="推理和行动的手段">推理和行动的手段</h3>
@@ -339,8 +333,7 @@
 <li>
 <p>RAG技术</p>
 <blockquote>
-<p>LLM 通过获得额外的最新资料或者retriver来产生新回答</p>
-</blockquote>
+<p>LLM 通过获得额外的最新资料或者retriver来产生新回答</p></blockquote>
 </li>
 <li>
 <p>Tool Use</p>
@@ -349,8 +342,7 @@
 <li>调用搜索引擎，计算器</li>
 <li>其它特殊任务模型，例如翻译工具</li>
 <li>API接口，例如查询天气接口等</li>
-</ol>
-</blockquote>
+</ol></blockquote>
 </li>
 </ol>
 <h3 id="让agent的推理和行动协同">让Agent的推理和行动协同</h3>
@@ -367,16 +359,14 @@
 <ul>
 <li>推理思考：观察和分析从搜索行为中得到的信息</li>
 <li>行动：你可以使用的action</li>
-</ul>
-</blockquote>
+</ul></blockquote>
 <h3 id="long-term-memory">Long-Term memory</h3>
 <p>llm的记忆一般是很短的，像金鱼一样只有七秒的记忆，如果让llm生成一段程序，但是有错误，那么短期记忆的大模型再修改的过程就无法具备反思的能力，更长的记忆可以让llm的分析和决策能力更强</p>
 <p>可以看论文cognitive architectures for language agents(CoALA)</p>
 <blockquote>
 <p>Memory</p>
 <p>Action Space</p>
-<p>Decision Making</p>
-</blockquote>
+<p>Decision Making</p></blockquote>
 <p>这样的架构可以构建出有很强的创造力的Agent</p>
 <h3 id="和human的区别">和human的区别</h3>
 <p>ReAct agent的思考和行动方式非常像真正的人类行为，但是将其应用到生产活动中还有需要调整的地方</p>
