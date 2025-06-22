@@ -9,7 +9,47 @@ tags = [ "2025Weekly"]
 
 +++
 
-## 250608 第24周
+## 250622 第25周
+
+#### 生活
+
+睡眠状态不太好，发现最近无法规律入眠了，需要更多的调整；
+
+1. 饮食
+
+   - 用速食代替外卖；
+
+   - 刷到早起吃苹果会对牙齿好，囤货准备尝试一段时间；
+
+   - 运动后吃麦已经成为习惯；
+
+     <img src="https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/weekly/week25-01.jpg" alt="mcdonalds" width="400" style="display: block; margin: 0 auto; margin-bottom: 20px;">
+
+2. 运动
+
+   - 5km 完成，发现前一天的睡眠质量会影响跑步时的呼吸和心率；
+   - 跑步的时候，看到了形形色色的身体：有年轻的、有老去的、有健康的、有残缺的，总能让我联想到人生的无常和光阴的易逝，强风吹拂在脸上，思绪也跟着涌动，我喜欢这个过程迸发出来的灵感，把它们放进了备忘录；
+
+3. 娱乐
+
+   - 音乐：重温 PSYLIFE 25 专辑；在公司听了好多遍肖邦的夜曲，被圈粉；
+   - 影视：在Netflix看了两集 [Love, Death & Robots](https://en.wikipedia.org/wiki/Love,_Death_%26_Robots) S04，还没有遇到特别喜欢的剧情；
+   - 游戏：继续和 Florian 玩了 split fiction，真是年度最好玩的双人游戏；
+
+4. 心情
+
+   - 平淡+偶尔emo
+
+#### 闪念胶囊
+
+- 计划重新开始制作手工皂，应该会很治愈；
+
+
+
+
+
+
+## 250608 第23周
 
 #### 生活
 
