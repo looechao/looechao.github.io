@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一起练琴年中汇报 - 赵禄</title>
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.3.1/dist/theme/white.css">
+    <style>
+        .reveal .slides section {
+            text-align: left;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .reveal .title-slide {
+            text-align: center;
+        }
+        .reveal .center {
+            text-align: center;
+        }
+        .reveal .large-text {
+            font-size: 1.5em;
+        }
+        .reveal .medium-text {
+            font-size: 1.2em;
+        }
+        .reveal .small-text {
+            font-size: 0.9em;
+        }
+        .reveal .highlight {
+            background: #f39c12;
+            color: white;
+            padding: 0.2em 0.5em;
+            border-radius: 4px;
+        }
+        .reveal .quote {
+            font-style: italic;
+            color: #7f8c8d;
+            border-left: 4px solid #3498db;
+            padding-left: 1em;
+            margin: 1em 0;
+        }
+        .reveal .emoji {
+            font-size: 1.5em;
+        }
+        .reveal .progress-bar {
+            background: #3498db;
+            height: 4px;
+            border-radius: 2px;
+            margin: 1em 0;
+        }
+        .reveal img {
+            max-width: 70%;
+            height: auto;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .reveal .two-column {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .reveal .column {
+            flex: 1;
+            padding: 0 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- 标题页 -->
+            <section class="title-slide" data-background-color="#3498db">
+                <h1 style="color: white;">年中工作汇报</h1>
+                <h2 style="color: white;">赵禄</h2>
+                <p style="color: white; font-size: 1.2em;">业务开发</p>
+                <p style="color: white; font-size: 0.9em;">2025年中总结</p>
+            </section>
+
+            <!-- 自我介绍 -->
+            <section>
+                <h2>关于我</h2>
+                <div class="medium-text">
+                    <p>大家好，我是<span class="highlight">赵禄</span></p>
+                    <p>过去半年主要负责：</p>
+                    <ul>
+                        <li>「一起练琴」Android端开发</li>
+                        <li>App维护与优化</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 工作概述 -->
+            <section>
+                <h2>📊 工作概述</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>🎯 产品功能</h3>
+                        <ul>
+                            <li>唱谱功能适配</li>
+                            <li>版本更新维护</li>
+                            <li>用户体验优化</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>📈 数据采集</h3>
+                        <ul>
+                            <li>音频数据优化</li>
+                            <li>视频数据采集</li>
+                            <li>为后续AI应用提供数据支持</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 黑天鹅事件 -->
+            <section>
+                <h2>🦢 黑天鹅事件</h2>
+                <div class="medium-text">
+                    <p><span class="emoji">🎼</span> Android唱谱功能上线</p>
+                    <ul>
+                        <li>使用林瓒留下的接口</li>
+                        <li>顺利完成流程测试</li>
+                        <li>成功发版上线</li>
+                    </ul>
+                    <p class="center"><strong>但是...</strong></p>
+                </div>
+            </section>
+
+            <!-- 危机时刻 -->
+            <section data-background-color="#e74c3c">
+                <h2 style="color: white;">⚠️ 危机时刻</h2>
+                <div class="medium-text" style="color: white;">
+                    <p><strong>大量小米设备用户崩溃反馈</strong></p>
+                    <div class="center">
+                        <img src="https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/presentation/user_feedbacks.png" alt="用户反馈截图" style="max-width: 60%; margin: 20px 0;">
+                    </div>
+                    <div class="quote" style="color: white; border-left-color: white;">
+                        "第一次独立完成完整版本更新，却出现了大面积崩溃"
+                    </div>
+                    <div class="center">
+                        <img src="https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/presentation/sweating.gif" alt="汗流浃背表情包" style="max-width: 30%; margin: 10px 0;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 问题排查 -->
+            <section>
+                <h2>🔍 问题排查</h2>
+                <div class="medium-text">
+                    <p>冷静分析后发现：</p>
+                    <ul>
+                        <li>❌ 不在业务代码</li>
+                        <li>❌ 不在算法实现</li>
+                        <li>✅ 第三方音频合成库：<span class="highlight">FluidSynth</span></li>
+                    </ul>
+                    <p class="center">问题定位到底层崩溃</p>
+                </div>
+            </section>
+
+            <!-- 解决方案 -->
+            <section>
+                <h2>💡 解决方案</h2>
+                <div class="medium-text">
+                    <p>向FluidSynth提交修复：</p>
+                    <ul>
+                        <li>📋 整理崩溃日志</li>
+                        <li>🔄 提供复现流程</li>
+                        <li>💻 提交修改建议</li>
+                        <li>📤 发起GitHub PR</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 成功时刻 -->
+            <section data-background-color="#27ae60">
+                <h2 style="color: white;">🎉 转机</h2>
+                <div class="center" style="color: white;">
+                    <p style="font-size: 1.3em; margin-bottom: 15px;">德国电信教授亲自合并PR</p>
+                    <div class="center">
+                        <img src="https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/presentation/mergedPR.jpg" alt="PR合并截图" style="max-width: 50%; margin: 10px 0;">
+                    </div>
+                    <div class="quote" style="color: white; border-left-color: white; font-size: 1.3em; margin: 10px 0;">
+                        "Excellent Finding."
+                    </div>
+                    <p style="font-size: 1.1em;">这半年最有力量的记忆</p>
+                </div>
+            </section>
+
+            <!-- 感悟 -->
+            <section>
+                <h2>💭 深刻感悟</h2>
+                <div class="center large-text">
+                    <p>一个看似棘手的问题</p>
+                    <p>只要认真钻研、解决</p>
+                    <p class="highlight">危机就能变成积累</p>
+                </div>
+            </section>
+
+            <!-- 数据采集工作 -->
+            <section>
+                <h2>🎧 数据采集 - AI的基石</h2>
+                <div class="medium-text">
+                    <p>核心工作重点：音频数据采集优化</p>
+                    <div class="two-column">
+                        <div class="column">
+                            <h3>🎥 视频双声道</h3>
+                            <p>分离存储老师学生声音</p>
+                        </div>
+                        <div class="column">
+                            <h3>🎹 MIDI同步</h3>
+                            <p>电钢琴评测数据采集</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 个人成长 -->
+            <section>
+                <h2>🌱 最大的变化</h2>
+                <div class="center large-text">
+                    <p>从</p>
+                    <p><span class="highlight">功能开发者</span></p>
+                    <p>到</p>
+                    <p><span class="highlight">为未来打基础的人</span></p>
+                </div>
+            </section>
+
+            <!-- 未来展望 -->
+            <section>
+                <h2>🚀 未来展望</h2>
+                <div class="medium-text">
+                    <p>未来的产品都需要我们的基础建设：</p>
+                    <ul>
+                        <li>🤖 芒果同学</li>
+                        <li>🎹 魔法钢琴</li>
+                        <li>📚 更多教育AI产品</li>
+                    </ul>
+                    <p class="center">点点滴滴的数据采集与系统建设</p>
+                </div>
+            </section>
+
+            <!-- 感谢与展望 -->
+            <section>
+                <h2>🙏 感谢与展望</h2>
+                <div class="medium-text">
+                    <p>感谢：</p>
+                    <ul>
+                        <li>团队的信任</li>
+                        <li>"事故"带来的成长</li>
+                    </ul>
+                    <p>接下来半年的目标：</p>
+                    <ul>
+                        <li>保持对系统底层的敏感</li>
+                        <li>保持对产品价值的思考</li>
+                        <li>保持对技术演进的好奇</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 结束语 -->
+            <section data-background-color="#3498db">
+                <div class="center" style="color: white;">
+                    <h2 style="color: white;">🎯 继续寻找下一个</h2>
+                    <p class="large-text">"Excellent Finding"</p>
+                    <p class="medium-text">谢谢大家！</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/reveal.js@4.3.1/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            controls: true,
+            progress: true,
+            center: true,
+            touch: true,
+            loop: false,
+            rtl: false,
+            navigationMode: 'default',
+            shuffleOrder: false,
+            fragments: true,
+            fragmentInURL: false,
+            embedded: false,
+            help: true,
+            showNotes: false,
+            autoPlayMedia: null,
+            controlsTutorial: true,
+            controlsLayout: 'bottom-right',
+            controlsBackArrows: 'faded',
+            previewLinks: false,
+            postMessage: true,
+            postMessageEvents: false,
+            focusBodyOnPageVisibilityChange: true,
+            minScale: 0.2,
+            maxScale: 2.0,
+            autoSlide: 0,
+            autoSlideStoppable: true,
+            mouseWheel: false,
+            hideInactiveCursor: true,
+            hideCursorTime: 5000,
+            keyboard: true,
+            overview: true,
+            disableLayout: false,
+            width: 960,
+            height: 700,
+            margin: 0.04,
+            viewDistance: 3,
+            mobileViewDistance: 2
+        });
+    </script>
+</body>
+</html>
