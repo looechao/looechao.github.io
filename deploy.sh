@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# 删除 public 下除了 .git 之外的所有文件
-cd public
-find . -not -path './.git/*' -not -name '.git' -delete
-cd ..
-
 # 使用生产环境构建
 HUGO_ENV=production hugo
 
@@ -30,3 +25,4 @@ git commit -m "$commit_msg"
 git push origin main
 
 echo "Deploy completed!"
+
