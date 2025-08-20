@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>感悟 on looechao&#39;s blog</title>
-    <link>https://looechao.github.io/tags/%E6%84%9F%E6%82%9F/</link>
+    <link>https://looechao.com/tags/%E6%84%9F%E6%82%9F/</link>
     <description>Recent content in 感悟 on looechao&#39;s blog</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 06 Feb 2025 15:01:13 +0800</lastBuildDate>
-    <atom:link href="https://looechao.github.io/tags/%E6%84%9F%E6%82%9F/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://looechao.com/tags/%E6%84%9F%E6%82%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>新的一年，我会越来越不完美</title>
-      <link>https://looechao.github.io/post/2025/imperfection/</link>
+      <link>https://looechao.com/post/2025/imperfection/</link>
       <pubDate>Thu, 06 Feb 2025 15:01:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/2025/imperfection/</guid>
+      <guid>https://looechao.com/post/2025/imperfection/</guid>
       <description>避开完美主义这条崎岖的弯路</description>
     </item>
     <item>
       <title>写在22岁之前</title>
-      <link>https://looechao.github.io/post/2024/before22/</link>
+      <link>https://looechao.com/post/2024/before22/</link>
       <pubDate>Wed, 13 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/2024/before22/</guid>
+      <guid>https://looechao.com/post/2024/before22/</guid>
       <description>黄金时代，在中南林的几乎一整年</description>
     </item>
   </channel>

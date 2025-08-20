@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LLM on looechao&#39;s blog</title>
-    <link>https://looechao.github.io/tags/llm/</link>
+    <link>https://looechao.com/tags/llm/</link>
     <description>Recent content in LLM on looechao&#39;s blog</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 08 Dec 2024 21:50:13 +0800</lastBuildDate>
-    <atom:link href="https://looechao.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://looechao.com/tags/llm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>怎么更好地学习LLM应用开发</title>
-      <link>https://looechao.github.io/post/2024/how-to-learn-llm/</link>
+      <link>https://looechao.com/post/2024/how-to-learn-llm/</link>
       <pubDate>Sun, 08 Dec 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/2024/how-to-learn-llm/</guid>
+      <guid>https://looechao.com/post/2024/how-to-learn-llm/</guid>
       <description></description>
     </item>
     <item>
       <title>Reasoning Agent的来龙去脉</title>
-      <link>https://looechao.github.io/post/2024/from-text-agent-to-reasoning-agent/</link>
+      <link>https://looechao.com/post/2024/from-text-agent-to-reasoning-agent/</link>
       <pubDate>Thu, 24 Oct 2024 15:01:13 +0800</pubDate>
-      <guid>https://looechao.github.io/post/2024/from-text-agent-to-reasoning-agent/</guid>
+      <guid>https://looechao.com/post/2024/from-text-agent-to-reasoning-agent/</guid>
       <description>从Text Agent到 ReAct Agent</description>
     </item>
   </channel>
