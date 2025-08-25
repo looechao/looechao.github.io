@@ -1,16 +1,19 @@
 +++
 
-title = 'readme文档'
+title = 'About'
 draft = false
 date = 1970-03-10T21:50:13+08:00
 summary = "readme"
+type = "page"
+layout = "minimal"
 
 +++
 ## _ABOUT_
 
-- 现居深圳
+- Software Developer, always getting my hands dirty.	
+
 - 喜欢书、影、音、游、电子产品
-- ID灵感源自真名和我最爱的漫画  _[kylooe 憂鬱的蜻蜓：告別彩虹](https://neodb.social/book/5gkFtRhMS8G37m8Sq283hq)_
+- ID灵感来源是自己最爱的漫画  _[kylooe 憂鬱的蜻蜓：告別彩虹](https://neodb.social/book/5gkFtRhMS8G37m8Sq283hq)_
 - 消化内容、用心创作
 
 快速了解我：
