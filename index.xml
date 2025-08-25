@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>looechao</title>
     <link>https://looechao.com/</link>
-    <description>Recent content on </description>
+    <description>Recent content on looechao</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 22 Jun 2025 15:01:13 +0800</lastBuildDate>
@@ -318,9 +318,9 @@
     </item>
     <item>
       <title>readme文档</title>
-      <link>https://looechao.com/readme/</link>
+      <link>https://looechao.com/about/</link>
       <pubDate>Tue, 10 Mar 1970 21:50:13 +0800</pubDate>
-      <guid>https://looechao.com/readme/</guid>
+      <guid>https://looechao.com/about/</guid>
       <description>readme</description>
     </item>
   </channel>
