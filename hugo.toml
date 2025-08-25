@@ -1,9 +1,10 @@
 baseURL = 'https://looechao.com'
+buildFuture = true
 languageCode = 'zh-cn'
-theme = "lucid"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-buildFuture = true
+title = 'looechao'
+theme = "lucid"
 [markup]
 defaultMarkdownHandler = "goldmark"
 [markup.goldmark]
@@ -16,28 +17,24 @@ enable = true
 block = [['\[', '\]'], ['$$', '$$']]
 inline = [['\(', '\)']]
 
-
 [pagination]
 pagerSize = 15
-
 
 [params]
 author = "looechao"
 description = "looechao's blog."
 favicon = "/images/favicon.png"
 
-
 [params.profile]
-name = "Looe"
-bio = "looechao"
 avatar = "/images/profile.png"
+bio = "looechao"
 favicon = "/images/favicon.png"
+name = "Looe"
 
-
-  [params.social]
-    email = "lu.chao.personal@gmail.com"
-    github = "https://www.github.com/looechao"
-    rss = ""
+[params.social]
+email = "lu.chao.personal@gmail.com"
+github = "https://www.github.com/looechao"
+rss = ""
 
 [menus]
 [[menus.main]]
@@ -60,7 +57,6 @@ name = 'Tags'
 pageRef = '/tags'
 weight = 30
 
-
 [frontmatter]
 ## lastmod = ["lastmod", ":fileModTime", ":default"]
 
@@ -68,17 +64,16 @@ weight = 30
 [services.googleAnalytics]
 id = 'G-9W970VLJ6X'
 
-
 [params.gitalk]
-    enable = true
-    clientID = "4fad9f9325f73f2c2891"
-    clientSecret = "109ed02ced3608e776a41f87de4ef9986f5b5fd6"
-    repo = "hugo-comments"
-    owner = "looechao"
-    admin = "looechao"
-    id = "location.pathname"
-    labels = "gitalk"
-    perPage = 50
-    pagerDirection = "last"
-    createIssueManually = false
-    distractionFreeMode = false
+admin = "looechao"
+clientID = "4fad9f9325f73f2c2891"
+clientSecret = "109ed02ced3608e776a41f87de4ef9986f5b5fd6"
+createIssueManually = false
+distractionFreeMode = false
+enable = true
+id = "location.pathname"
+labels = "gitalk"
+owner = "looechao"
+pagerDirection = "last"
+perPage = 50
+repo = "hugo-comments"
