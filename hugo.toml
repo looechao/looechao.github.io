@@ -1,47 +1,73 @@
 baseURL = 'https://looechao.com'
 googleAnalytics = "G-9W970VLJ6X"
 languageCode = 'zh-cn'
-title = "looechao's blog"
-theme= "github-style"
+theme = "lucid"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 buildFuture = true
 [markup]
-  defaultMarkdownHandler = "goldmark"
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-    [markup.goldmark.extensions]
-      [markup.goldmark.extensions.passthrough]
-        enable = true
-        [markup.goldmark.extensions.passthrough.delimiters]
-          block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)']]
+defaultMarkdownHandler = "goldmark"
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)']]
+
+
+[pagination]
+pagerSize = 15
+
 
 [params]
-  author = "Looe"
-  description = "Radical notions."
-  github = "looechao"
-  linkedin = "lu-chao-a592a5279"
-  email = "lu.chao.personal@foxmail.com"
-  url = "https://looechao.github.io"
-  keywords = "blog, google analytics"
-  rss = true
-  csufttally = true
-  lastmod = true
-  favicon = "/images/favicon.png"
-  avatar = "/images/profile.png"
-  headerIcon = "/images/github.png"
-  location = "Shenzhen"
-  userStatusEmoji = ""
-  enableGitalk = true
-  math = true
+author = "looechao"
+description = "looechao's blog."
+favicon = "/images/favicon.png"
 
-  [frontmatter]
-  ## lastmod = ["lastmod", ":fileModTime", ":default"]
-  
 
-  [params.gitalk]
+[params.profile]
+name = "Looe"
+bio = "looechao"
+avatar = "/images/profile.png"
+favicon = "/images/favicon.png"
+
+
+  [params.social]
+    email = "lu.chao.personal@gmail.com"
+    github = "https://www.github.com/looechao"
+    rss = ""
+
+[menus]
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/post'
+weight = 20
+
+[[menus.main]]
+name = 'Archive'
+pageRef = '/post'
+weight = 25
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+
+[frontmatter]
+## lastmod = ["lastmod", ":fileModTime", ":default"]
+
+
+[params.gitalk]
+    enable = true
     clientID = "4fad9f9325f73f2c2891"
     clientSecret = "109ed02ced3608e776a41f87de4ef9986f5b5fd6"
     repo = "hugo-comments"
@@ -55,5 +81,5 @@ buildFuture = true
     distractionFreeMode = false
 
 [services]
-  [services.googleAnalytics]
-    id = 'G-9W970VLJ6X'
+[services.googleAnalytics]
+id = 'G-9W970VLJ6X'
