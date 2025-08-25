@@ -1,5 +1,4 @@
 baseURL = 'https://looechao.com'
-googleAnalytics = "G-9W970VLJ6X"
 languageCode = 'zh-cn'
 theme = "lucid"
 pygmentsCodeFences = true
@@ -79,7 +78,3 @@ weight = 30
     pagerDirection = "last"
     createIssueManually = false
     distractionFreeMode = false
-
-[services]
-[services.googleAnalytics]
-id = 'G-9W970VLJ6X'
