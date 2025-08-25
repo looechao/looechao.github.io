@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LLM on looechao</title>
+    <title>Llm on looechao</title>
     <link>https://looechao.com/tags/llm/</link>
-    <description>Recent content in LLM on looechao</description>
+    <description>Recent content in Llm on looechao</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 08 Dec 2024 21:50:13 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2024 15:01:13 +0800</lastBuildDate>
     <atom:link href="https://looechao.com/tags/llm/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>怎么更好地学习LLM应用开发</title>
-      <link>https://looechao.com/post/2024/how-to-learn-llm/</link>
-      <pubDate>Sun, 08 Dec 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.com/post/2024/how-to-learn-llm/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Reasoning Agent的来龙去脉</title>
       <link>https://looechao.com/post/2024/from-text-agent-to-reasoning-agent/</link>
