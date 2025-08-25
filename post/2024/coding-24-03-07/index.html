@@ -1,261 +1,512 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <script type="application/javascript" src='https://looechao.com/js/theme-mode.js'></script>
-    <link rel="stylesheet" href='https://looechao.com/css/frameworks.min.css' />
-    <link rel="stylesheet" href='https://looechao.com/css/github.min.css' />
-    <link rel="stylesheet" href='https://looechao.com/css/github-style.css' />
-    <link rel="stylesheet" href='https://looechao.com/css/light.css' />
-    <link rel="stylesheet" href='https://looechao.com/css/dark.css' />
-    <link rel="stylesheet" href='https://looechao.com/css/syntax.css' />
-    <title>刷题笔记-24年3月第七组 - looechao&#39;s blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刷题笔记-24年3月第七组 | </title>
     
-    <link rel="icon" type="image/x-icon" href='/images/favicon.png'>
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
     
-    <meta name="theme-color" content="#1e2327">
-
+    <link rel="preload" href="/css/components/right-panel.css" as="style">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components/sidebar.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+    <link rel="stylesheet" href="/css/components/right-panel.css">
+    <link rel="stylesheet" href="/css/syntax.css">
     
-    <meta name="description"
-  content="洛谷入门题库P2550-P2911" />
-<meta name="keywords"
-  content='blog, google analytics' />
-<meta name="robots" content="noodp" />
-<link rel="canonical" href="https://looechao.com/post/2024/coding-24-03-07/" />
-
-
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="刷题笔记-24年3月第七组 - looechao&#39;s blog" />
-<meta name="twitter:description"
-  content="洛谷入门题库P2550-P2911" />
-<meta name="twitter:site" content="https://looechao.com/" />
-<meta name="twitter:creator" content="" />
-<meta name="twitter:image"
-  content="https://looechao.com/">
-
-
-<meta property="og:type" content="article" />
-<meta property="og:title" content="刷题笔记-24年3月第七组 - looechao&#39;s blog">
-<meta property="og:description"
-  content="洛谷入门题库P2550-P2911" />
-<meta property="og:url" content="https://looechao.com/post/2024/coding-24-03-07/" />
-<meta property="og:site_name" content="刷题笔记-24年3月第七组" />
-<meta property="og:image"
-  content="https://looechao.com/">
-<meta property="og:image:width" content="2048">
-<meta property="og:image:height" content="1024">
-
-<meta property="article:published_time" content="2024-03-20 16:30:13 &#43;0800 CST" />
-
-
-
-
-
-
-
-
-
-
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9W970VLJ6X"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-9W970VLJ6X');
-        }
-      </script>
-
-
+    <link rel="stylesheet" href="/css/pages/single.css">
+    
+    
+    
 </head>
 
 <body>
-  <div style="position: relative">
-  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
-    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
-      <a class="Header-link" href="https://looechao.com/">
-        <svg width="32" height="32" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_d_87_7821)">
-            <rect x="1" y="2" width="14" height="12" rx="0.5" fill="#283544"></rect>
-          </g>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6075 2H14.5774C14.7887 2 14.9472 2.14458 15 2.38554V13.6145C15 13.8072 14.7887 14 14.5774 14H9.71702C9.50566 13.3253 9.4 12.6506 9.29434 11.9759C10.5623 11.7349 11.7245 11.1566 12.517 10.2409C12.7811 9.85542 12.3057 9.61446 12.0943 9.85542C11.5132 10.7229 10.4038 11.253 9.24152 11.4458C9.08302 9.51807 9.24152 7.9759 9.24152 7.9759H7.18182C7.18182 7.9759 7.18182 4.89157 8.6075 2ZM11.2491 6.53012C11.5132 6.53012 11.6717 6.33735 11.6717 6.14458V5.37349C11.6717 5.13253 11.4604 4.98795 11.2491 4.98795C10.985 4.98795 10.8265 5.18072 10.8265 5.37349V6.14458C10.8265 6.38554 11.0377 6.53012 11.2491 6.53012Z" fill="url(#paint0_linear_87_7821)"></path>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97359 12.0723C6.23019 12.0723 4.48679 11.4458 3.43019 10.2409C3.16509 9.85542 3.64056 9.61446 3.85212 9.85542C4.69811 10.9639 6.33585 11.5422 7.97359 11.5422C8.35156 11.5422 8.81887 11.494 8.81887 11.494C8.66038 10.1446 8.71321 8.93976 8.76603 8.36145H6.75849V7.9759C6.75849 7.9759 6.75849 4.89157 8.18417 2H1.42264C1.15849 2 1 2.19277 1 2.38554V13.6145C1 13.8072 1.21132 14 1.42264 14H9.25C9.22494 13.8948 9.19988 13.7926 9.17516 13.6918C9.04623 13.1655 8.92696 12.6792 8.8717 12.0241C8.8717 12.0241 8.25781 12.0723 7.97359 12.0723ZM4.69811 4.98795C4.43396 4.98795 4.27547 5.18072 4.27547 5.37349V6.14458C4.27547 6.33735 4.48679 6.48193 4.69811 6.48193C4.90943 6.48193 5.12075 6.33735 5.12075 6.14458V5.37349C5.12075 5.18072 4.96226 4.98795 4.69811 4.98795Z" fill="url(#paint1_linear_87_7821)"></path>
-          <defs>
-            <filter id="filter0_d_87_7821" x="0.5" y="1.75" width="15" height="13" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-              <feOffset dy="0.25"></feOffset>
-              <feGaussianBlur stdDeviation="0.25"></feGaussianBlur>
-              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_87_7821"></feBlend>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_87_7821" result="shape"></feBlend>
-            </filter>
-            <linearGradient id="paint0_linear_87_7821" x1="11.0906" y1="2" x2="11.0906" y2="14" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#F7F6F7"></stop>
-              <stop offset="1" stop-color="#D9E4F0"></stop>
-            </linearGradient>
-            <linearGradient id="paint1_linear_87_7821" x1="5.125" y1="2" x2="5.125" y2="14" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#2FD4FB"></stop>
-              <stop offset="1" stop-color="#2777EE"></stop>
-            </linearGradient>
-          </defs>
-        </svg>
-      </a>
-    </div>
-    <div class="Header-item d-md-none">
-      <button class="Header-link btn-link js-details-target" type="button" onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
-        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
-          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
-          </path>
-        </svg>
-      </button>
-    </div>
-    <div style="display: none;" id="header-search" class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
-      <div class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
-        <div class="position-relative">
-          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get" autocomplete="off">
-            <label class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
-              <input type="text" class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable" name="q" value="" placeholder="Search" autocomplete="off">
-              <input type="hidden" name="q" value="site:https://looechao.com/">
-            </label>
-          </form>
+    <div class="site-container">
+        <aside class="site-sidebar">
+            <aside class="sidebar">
+    
+    <div class="profile">
+        <a href="https://looechao.com/" class="avatar">
+            
+            <img src="/images/profile.png" alt="Looe" />
+            
+        </a>
+        <div class="profile-text">
+            <p class="name">Looe</p>
+            <p class="bio">looechao</p>
         </div>
-      </div>
     </div>
 
-    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
-      <a class="Header-link " href="site:https://looechao.com/">
-        <svg width="32" height="32" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_d_87_7821)">
-            <rect x="1" y="2" width="14" height="12" rx="0.5" fill="#283544"></rect>
-          </g>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6075 2H14.5774C14.7887 2 14.9472 2.14458 15 2.38554V13.6145C15 13.8072 14.7887 14 14.5774 14H9.71702C9.50566 13.3253 9.4 12.6506 9.29434 11.9759C10.5623 11.7349 11.7245 11.1566 12.517 10.2409C12.7811 9.85542 12.3057 9.61446 12.0943 9.85542C11.5132 10.7229 10.4038 11.253 9.24152 11.4458C9.08302 9.51807 9.24152 7.9759 9.24152 7.9759H7.18182C7.18182 7.9759 7.18182 4.89157 8.6075 2ZM11.2491 6.53012C11.5132 6.53012 11.6717 6.33735 11.6717 6.14458V5.37349C11.6717 5.13253 11.4604 4.98795 11.2491 4.98795C10.985 4.98795 10.8265 5.18072 10.8265 5.37349V6.14458C10.8265 6.38554 11.0377 6.53012 11.2491 6.53012Z" fill="url(#paint0_linear_87_7821)"></path>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97359 12.0723C6.23019 12.0723 4.48679 11.4458 3.43019 10.2409C3.16509 9.85542 3.64056 9.61446 3.85212 9.85542C4.69811 10.9639 6.33585 11.5422 7.97359 11.5422C8.35156 11.5422 8.81887 11.494 8.81887 11.494C8.66038 10.1446 8.71321 8.93976 8.76603 8.36145H6.75849V7.9759C6.75849 7.9759 6.75849 4.89157 8.18417 2H1.42264C1.15849 2 1 2.19277 1 2.38554V13.6145C1 13.8072 1.21132 14 1.42264 14H9.25C9.22494 13.8948 9.19988 13.7926 9.17516 13.6918C9.04623 13.1655 8.92696 12.6792 8.8717 12.0241C8.8717 12.0241 8.25781 12.0723 7.97359 12.0723ZM4.69811 4.98795C4.43396 4.98795 4.27547 5.18072 4.27547 5.37349V6.14458C4.27547 6.33735 4.48679 6.48193 4.69811 6.48193C4.90943 6.48193 5.12075 6.33735 5.12075 6.14458V5.37349C5.12075 5.18072 4.96226 4.98795 4.69811 4.98795Z" fill="url(#paint1_linear_87_7821)"></path>
-          <defs>
-            <filter id="filter0_d_87_7821" x="0.5" y="1.75" width="15" height="13" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-              <feOffset dy="0.25"></feOffset>
-              <feGaussianBlur stdDeviation="0.25"></feGaussianBlur>
-              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_87_7821"></feBlend>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_87_7821" result="shape"></feBlend>
-            </filter>
-            <linearGradient id="paint0_linear_87_7821" x1="11.0906" y1="2" x2="11.0906" y2="14" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#F7F6F7"></stop>
-              <stop offset="1" stop-color="#D9E4F0"></stop>
-            </linearGradient>
-            <linearGradient id="paint1_linear_87_7821" x1="5.125" y1="2" x2="5.125" y2="14" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#2FD4FB"></stop>
-              <stop offset="1" stop-color="#2777EE"></stop>
-            </linearGradient>
-          </defs>
-        </svg>
-      </a>
+    
+    <nav class="nav">
+        <a href="https://looechao.com/" >BLOG</a>
+        <a href="/about" >ABOUT</a>
+    </nav>
+
+    
+    <div class="site--icons">
+        
+        <a href="mailto:lu.chao.personal@gmail.com" target="_blank" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
+                <g id="evaEmailFill0">
+                    <g id="evaEmailFill1">
+                        <path id="evaEmailFill2" fill="currentColor"
+                            d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm0 2l-6.5 4.47a1 1 0 0 1-1 0L5 6Z" />
+                    </g>
+                </g>
+            </svg> </a>
+        
+        
+        <a href="https://www.github.com/looechao" target="_blank" title="Github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 20 20">
+                <path fill="currentColor"
+                    d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799zm4.526-4.683c.149-.365.155-2.439-.635-4.426c0 0-1.811.199-4.551 2.08c-.575-.16-1.548-.238-2.519-.238c-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002l1.732-.002c1.506 0 7.467-.115 7.467-7.301c0-1.652-.566-2.863-1.494-3.871zm-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115c0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531c.735.676 1.045 1.49 1.045 2.369c0 3.666-2.937 4.115-6.709 4.115zm-3.207-5.606c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801c.719 0 1.301-.807 1.301-1.801c0-.992-.582-1.799-1.301-1.799z" />
+            </svg>
+        </a>
+        
+        
     </div>
-    <div class="Header-item" style="margin-right: 0;">
-      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
-        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
-          </path>
-        </svg>
-      </a>
+</aside>
+        </aside>
+        <aside class="site-right-panel">
+            <div class="right-panel">
+    <div class="panel-module tags-module">
+        <h3 class="module-title">Tags</h3>
+        <div class="tags-cloud">
+            
+            
+            
+            <a href="https://looechao.com/tags/2024weekly/" class="tag-item tag-alphanumeric" data-count="4">
+                2024Weekly<span class="tag-count">4</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/2025weekly/" class="tag-item tag-alphanumeric" data-count="1">
+                2025Weekly<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/agent/" class="tag-item tag-alphanumeric" data-count="2">
+                Agent<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/bfs/" class="tag-item tag-alphanumeric" data-count="1">
+                BFS<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/c/c&#43;&#43;/" class="tag-item tag-alphanumeric" data-count="17">
+                C/C&#43;&#43;<span class="tag-count">17</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/epoll/" class="tag-item tag-alphanumeric" data-count="1">
+                EPOLL<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/hexo/" class="tag-item tag-alphanumeric" data-count="1">
+                Hexo<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/lectures/" class="tag-item tag-alphanumeric" data-count="1">
+                Lectures<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/linux/" class="tag-item tag-alphanumeric" data-count="4">
+                Linux<span class="tag-count">4</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/llm/" class="tag-item tag-alphanumeric" data-count="2">
+                LLM<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/microsoft-store/" class="tag-item tag-alphanumeric" data-count="1">
+                Microsoft Store<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/omegle/" class="tag-item tag-alphanumeric" data-count="1">
+                Omegle<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/oop/" class="tag-item tag-alphanumeric" data-count="1">
+                OOP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/select/" class="tag-item tag-alphanumeric" data-count="1">
+                SELECT<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/sso/" class="tag-item tag-alphanumeric" data-count="1">
+                SSO<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/string/" class="tag-item tag-alphanumeric" data-count="1">
+                String<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/tcp/" class="tag-item tag-alphanumeric" data-count="1">
+                TCP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/udp/" class="tag-item tag-alphanumeric" data-count="1">
+                UDP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/xbox360/" class="tag-item tag-alphanumeric" data-count="1">
+                Xbox360<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%88%B7%E9%A2%98/" class="tag-item tag-chinese" data-count="10">
+                刷题<span class="tag-count">10</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%8A%80%E6%9C%AF/" class="tag-item tag-chinese" data-count="8">
+                技术<span class="tag-count">8</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%94%9F%E6%B4%BB/" class="tag-item tag-chinese" data-count="8">
+                生活<span class="tag-count">8</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%88%90%E9%95%BF/" class="tag-item tag-chinese" data-count="6">
+                成长<span class="tag-count">6</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%9D%82%E8%B0%88/" class="tag-item tag-chinese" data-count="4">
+                杂谈<span class="tag-count">4</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%95%B0%E7%A0%81/" class="tag-item tag-chinese" data-count="3">
+                数码<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%AC%94%E8%AE%B0/" class="tag-item tag-chinese" data-count="3">
+                笔记<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%84%9F%E6%82%9F/" class="tag-item tag-chinese" data-count="2">
+                感悟<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" class="tag-item tag-chinese" data-count="2">
+                网络编程<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E4%B9%90%E8%A7%82%E4%B8%BB%E4%B9%89/" class="tag-item tag-chinese" data-count="1">
+                乐观主义<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/" class="tag-item tag-chinese" data-count="1">
+                位运算符<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%81%A5%E5%BA%B7/" class="tag-item tag-chinese" data-count="1">
+                健康<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%86%85%E5%8D%B7/" class="tag-item tag-chinese" data-count="1">
+                内卷<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%88%86%E6%9E%90/" class="tag-item tag-chinese" data-count="1">
+                分析<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%8C%BB%E7%96%97/" class="tag-item tag-chinese" data-count="1">
+                医疗<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/" class="tag-item tag-chinese" data-count="1">
+                即时通信系统<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%93%B2%E7%90%86/" class="tag-item tag-chinese" data-count="1">
+                哲理<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%B7%A5%E5%85%B7/" class="tag-item tag-chinese" data-count="1">
+                工具<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" class="tag-item tag-chinese" data-count="1">
+                年度总结<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%88%90%E5%B0%B1/" class="tag-item tag-chinese" data-count="1">
+                成就<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/" class="tag-item tag-chinese" data-count="1">
+                极简主义<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%B5%B7%E9%87%8F%E8%BF%9E%E6%8E%A5%E5%A4%84%E7%90%86/" class="tag-item tag-chinese" data-count="1">
+                海量连接处理<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E9%99%B7%E9%98%B1/" class="tag-item tag-chinese" data-count="1">
+                消费主义陷阱<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%A6%85/" class="tag-item tag-chinese" data-count="1">
+                禅<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%AE%97%E6%B3%95/" class="tag-item tag-chinese" data-count="1">
+                算法<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%82%96%E6%B4%AA%E6%B6%9B/" class="tag-item tag-chinese" data-count="1">
+                肖洪涛<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%A7%82%E5%AF%9F/" class="tag-item tag-chinese" data-count="1">
+                观察<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%A7%84%E5%88%92/" class="tag-item tag-chinese" data-count="1">
+                规划<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%B7%A8%E5%B9%B4/" class="tag-item tag-chinese" data-count="1">
+                跨年<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%BD%AC%E8%BD%BD/" class="tag-item tag-chinese" data-count="1">
+                转载<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E9%98%85%E8%AF%BB/" class="tag-item tag-chinese" data-count="1">
+                阅读<span class="tag-count">1</span>
+            </a>
+            
+            
+        </div>
     </div>
-  </header>
+    
+    
 </div>
-
-  
-<div>
-  <main>
-    <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav pt-lg-4 "> 
-                <div class="repohead-details-container clearfix container-lg p-responsive d-lg-block"> 
-                    <div class="d-flex">
-                        <h1 class="public css-truncate float-none flex-auto width-fit pl-0">
-                            <a class="avatar mr-1" href="https://looechao.com/">
-                            
-                                <img src="/images/profile.png" class="avatar-user" width="26" height="26" title="Looe">
-                            
-                            </a>
-                            
-                            <strong itemprop="name"><a href="https://looechao.com/post/2024/coding-24-03-07/">刷题笔记-24年3月第七组</a></strong>
-
-                            
-
-                            
-                            <div class="d-block text-small text-gray">
-                                <span class="d-inline-block">
-                                    Created at <time datetime="2024-03-20 16:30" class="no-wrap">
-                                        2024-03-20 16:30</time>
-                                </span>
-
-                                
-                                </span>
-                            </div>
-                        </h1>
-                    </div>
-                </div>
+        </aside>
+        <div class="site-middle">
+            <main class="site-content">
+                
+<article class="single-article">
+    <div class="article-header">
+        <h1 class="article-title">刷题笔记-24年3月第七组</h1>
+        <div class="article-meta">
+            <time class="article-date">Mar 20, 2024</time>
+            
+            <div class="article-tags">
+                
+                <a href="/tags/%E5%88%B7%E9%A2%98" class="article-tag">刷题</a>
+                
+                <a href="/tags/c/c&#43;&#43;" class="article-tag">C/C&#43;&#43;</a>
+                
             </div>
+            
+        </div>
+    </div>
 
-    <div class="container-lg px-3 new-discussion-timeline">
-      <div class="repository-content gist-content">
-        <div>
-          <div class="js-gist-file-update-container js-task-list-container file-box">
-            <div id="file-pytest" class="file my-2">
-              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
-                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
-                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-                    
-                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
-                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
-                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
-                      </svg>
-                    </summary>
-                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
-                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
-                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
-                        </div>
-                      </div>
-                    </details-menu>
-                      1171 Words
-                    
-
-                  </div>
-                  <div class="file-actions flex-order-2 pt-0">
-                    
-                    
-                    <a class="muted-link mr-3" href="/tags/%E5%88%B7%E9%A2%98">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      刷题
-                    </a>
-                    
-                    <a class="muted-link mr-3" href="/tags/c/c&#43;&#43;">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      C/C&#43;&#43;
-                    </a>
-                    
-                    
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><h1 id="24年-3月-第七组">24年-3月-第七组</h1>
+    <div class="article-content">
+        <h1 id="24年-3月-第七组">24年-3月-第七组</h1>
 <h1 id="p2550">P2550★</h1>
 <p>彩票摇奖：输入n表示张数，输入彩票的设定和小明买的彩票；输出中奖情况。</p>
 <h4 id="思路">思路</h4>
@@ -403,77 +654,43 @@
 </ul>
 <h4 id="总结-8">总结</h4>
 <p>还算简单的一道题，独立完成了，再次用到了algorithm库中maxelement函数和distance函数</p>
-</article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
-  </main>
+</article>
+
+                <footer>
+    <p>&copy; 2025 <a href="https://looechao.com/" style="color: inherit; text-decoration: none;">looechao</a>. All rights reserved.</p>
+</footer>
+            </main>
+            
+<div class="comments-wrapper">
+    <div id="gitalk-container" class="comments-section"></div>
 </div>
-
-
-
-<script type="application/javascript" src='https://looechao.com/js/toc.js'></script>
-<link rel="stylesheet" href='https://looechao.com/css/toc.css' />
-
-
-<div id="gitalk-container" class="gitalk-container"></div>
-<link rel="stylesheet" href='https://looechao.com/css/gitalk.css'>
-<script src='https://looechao.com/js/gitalk.min.js'></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
+<link rel="stylesheet" href="/css/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
 <script>
-  const gitalk = new Gitalk({
-    clientID: '4fad9f9325f73f2c2891',
-    clientSecret: '109ed02ced3608e776a41f87de4ef9986f5b5fd6',
-    repo: 'hugo-comments',
-    owner: 'looechao',
-    admin: ['looechao'],
-    id: eval("location.pathname"), 
-    distractionFreeMode: false 
-  });
-  (function() {
-    gitalk.render('gitalk-container');
-  })();
+    document.addEventListener('DOMContentLoaded', function() {
+        var gitalk = new Gitalk({
+            clientID: '4fad9f9325f73f2c2891',
+            clientSecret: '109ed02ced3608e776a41f87de4ef9986f5b5fd6',
+            repo: 'hugo-comments',
+            owner: 'looechao',
+            admin: 'looechao',
+            id: window.location.pathname,
+            perPage: '50',
+            pagerDirection: 'last',
+            createIssueManually:  false ,
+            distractionFreeMode:  false ,
+            language: 'en-US'
+        });
+        gitalk.render('gitalk-container');
+    });
 </script>
 
 
-  <div class="footer container-xl width-full p-responsive">
-  <div
-    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
-    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://looechao.com/">
-      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
-        <path fill-rule="evenodd"
-          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-        </path>
-      </svg>
-    </a>
-    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-      
-      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
-      
-    </ul>
-  </div>
-  <div class="d-flex flex-justify-center pb-6">
-    <span class="f6 text-gray-light"></span>
-  </div>
-
-
-</div>
+        </div>
+    </div>
 </body>
-
-<script type="application/javascript" src="https://looechao.com/js/github-style.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
-  integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
-  integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
-  integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"></script>
-
-
-
-
 
 </html>
