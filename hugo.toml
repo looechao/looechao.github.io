@@ -64,6 +64,10 @@ weight = 30
 [frontmatter]
 ## lastmod = ["lastmod", ":fileModTime", ":default"]
 
+[services]
+[services.googleAnalytics]
+id = 'G-9W970VLJ6X'
+
 
 [params.gitalk]
     enable = true
