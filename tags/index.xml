@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on looechao</title>
+    <title>Tags on Looechao</title>
     <link>https://looechao.com/tags/</link>
-    <description>Recent content in Tags on looechao</description>
+    <description>Recent content in Tags on Looechao</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 22 Jun 2025 15:01:13 +0800</lastBuildDate>
@@ -233,10 +233,10 @@
       <description></description>
     </item>
     <item>
-      <title>刷题</title>
-      <link>https://looechao.com/tags/%E5%88%B7%E9%A2%98/</link>
+      <title>LeetCode</title>
+      <link>https://looechao.com/tags/leetcode/</link>
       <pubDate>Tue, 23 Apr 2024 20:25:13 +0800</pubDate>
-      <guid>https://looechao.com/tags/%E5%88%B7%E9%A2%98/</guid>
+      <guid>https://looechao.com/tags/leetcode/</guid>
       <description></description>
     </item>
     <item>

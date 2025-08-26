@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>looechao</title>
+    <title>Looechao</title>
     <link>https://looechao.com/</link>
-    <description>Recent content on looechao</description>
+    <description>Recent content on Looechao</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 22 Jun 2025 15:01:13 +0800</lastBuildDate>
@@ -177,7 +177,7 @@
       <description>边读边写边总结</description>
     </item>
     <item>
-      <title>自我规划(定期更新版)</title>
+      <title>也谈一些规划</title>
       <link>https://looechao.com/post/2024/to-do-list/</link>
       <pubDate>Tue, 02 Apr 2024 21:09:13 +0800</pubDate>
       <guid>https://looechao.com/post/2024/to-do-list/</guid>
@@ -315,6 +315,13 @@
       <pubDate>Tue, 10 Mar 1970 21:50:13 +0800</pubDate>
       <guid>https://looechao.com/about/</guid>
       <description>readme</description>
+    </item>
+    <item>
+      <title>Changelog</title>
+      <link>https://looechao.com/changelog/</link>
+      <pubDate>Tue, 10 Mar 1970 21:50:13 +0800</pubDate>
+      <guid>https://looechao.com/changelog/</guid>
+      <description>changelog</description>
     </item>
   </channel>
 </rss>

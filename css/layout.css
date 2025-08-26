@@ -5,7 +5,7 @@ body {
 .site-container {
     display: flex;
     width: 100%;
-    max-width: 80rem;
+    max-width: 85rem;
     margin: 0 auto;
     min-height: 100vh;
     background-color: #FAFAFA;
@@ -31,7 +31,7 @@ body {
     top: 0;
     background: #FAFAFA;
     overflow-y: auto;
-    padding: 6rem 3rem;
+    padding: 3rem 2.5rem;
 }
 
 .site-middle {
@@ -44,7 +44,7 @@ body {
 }
 
 .site-content {
-    padding: 1rem;
+    padding: 0rem;
     border-radius: 16px;
     background: #FFFFFF;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -82,7 +82,7 @@ body {
 
     .site-middle {
         flex: 1;
-        margin: 1.25rem;
+        margin: 0.5rem;
     }
 
     .site-right-panel {
