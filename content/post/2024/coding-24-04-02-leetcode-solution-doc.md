@@ -3,7 +3,7 @@ title = '刷题笔记-24年4月-第二组'
 date = 2024-04-23T20:25:13+08:00
 draft = false
 summary = "leetcode刷题笔记"
-tags = [ "刷题", "C/C++"]
+tags = [ "LeetCode", "C/C++"]
 
 +++
 # P0001★

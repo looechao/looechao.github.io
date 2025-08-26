@@ -3,7 +3,7 @@ buildFuture = true
 languageCode = 'zh-cn'
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-title = 'looechao'
+title = 'Looechao'
 theme = "lucid"
 [markup]
 defaultMarkdownHandler = "goldmark"
@@ -18,7 +18,7 @@ block = [['\[', '\]'], ['$$', '$$']]
 inline = [['\(', '\)']]
 
 [pagination]
-pagerSize = 15
+pagerSize = 30
 
 [params]
 author = "looechao"
@@ -64,16 +64,14 @@ weight = 30
 [services.googleAnalytics]
 id = 'G-9W970VLJ6X'
 
-[params.gitalk]
-admin = "looechao"
-clientID = "4fad9f9325f73f2c2891"
-clientSecret = "109ed02ced3608e776a41f87de4ef9986f5b5fd6"
-createIssueManually = false
-distractionFreeMode = false
+[params.giscus]
 enable = true
-id = "location.pathname"
-labels = "gitalk"
-owner = "looechao"
-pagerDirection = "last"
-perPage = 50
-repo = "hugo-comments"
+repo = "looechao/hugo-comments"
+repo_id = "R_kgDOLbUd7g"
+category = "Announcements"
+category_id = "DIC_kwDOLbUd7s4Cum0P"
+mapping = "pathname"
+reactions_enabled = true
+emit_metadata = false
+theme = "light"
+lang = "en"
