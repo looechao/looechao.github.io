@@ -7,88 +7,42 @@ tags = [ "肖洪涛", "生活", "跨年", "Omegle"]
 
 +++
 
-考试完后的一周，不论结果如何，重担应该往下放一放了，美美的睡懒觉，看电影
+对今年冬末的印象很深，尤其是考完试后的这一周，每天都可以睡懒觉，看电影
 
-寒假的主要任务是完成开题报告，但是这几天就应该先爽玩！
+虽然寒假的开题任务接踵而至，但是完全没有妨碍到最近的好心情
 
-今年最意外的经历是跟阿Tao一起跨年，吃了寿司和炸鸡柳，然后一块熬夜看了电影，我们最喜欢易墨成的那一句台词：
+跨年夜，我带肖洪涛吃了自己最近研究出来的寿司+炸鸡柳，还一起看了张爱玲写的《色戒》......的电影版，配乐到情节都十分细腻，剧中邝裕民演绎出的热血状态让我很熟悉，这是青春可怕的一面
 
-> 我对钻石不感兴趣，我只想看它戴在你的手上
-
-空闲时间就是在聊天聊地，玩黄金矿工和agar，最快乐的几天
-
-还有一起玩ome.tv
-
-</br>
+还有聊天、玩 Omegle，一块看 IShowSpeed 的切片，很开心
 
 <div>
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-4.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">走过无数遍的路</div>
 </center>
 </div>
-
-
-</br>
-
-</br>
 
 <div>
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-1.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">惬意时刻</div>
 </center>
 </div>
-
-
-</br>
-
-</br>
 
 <div>
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-2.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">Omegle时间</div>
 </center>
 </div>
-
-
-</br>
-
-</br>
 
 <div>
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-3.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">Gold Miner😋</div>
 </center>
 </div>
-
-
-
-
-</br>
