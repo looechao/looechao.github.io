@@ -8,7 +8,7 @@ type = "page"
 layout = "minimal"
 
 +++
-## _ABOUT_
+## ABOUT
 
 - Software Developer, always getting my hands dirty.	
 
@@ -24,7 +24,7 @@ layout = "minimal"
 - `生活` [平淡生活中的刺](https://looechao.github.io/post/2025/gastroenteritis/) | [不完美宣言](https://looechao.github.io/post/2025/imperfection/)
 - `读书` [禅与极简生活艺术](https://looechao.github.io/post/2024/zenlife/) | [关于内卷的思考](https://looechao.github.io/post/2024/involution/)
 
-## _Trip_
+## TRIP
 
 <div style="margin-top:16px; margin-bottom:16px; width: 100%;">
   <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gRnLdjkCbjBbVaMKE7TA-bBVkqvpn1E&ehbc=2E312F" style="width: 100%; height: 480px; border: 0;" allowfullscreen></iframe>
@@ -32,7 +32,7 @@ layout = "minimal"
 
 ---
 
-## _THE END_
+## THE END
 
 <p align="right">
   <a href="https://count.getloli.com/"><img src="https://count.getloli.com/get/@looechao?theme=asoul" style="width:24%;"></a>
