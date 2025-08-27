@@ -10,9 +10,9 @@
     <atom:link href="https://looechao.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C语言中的六种位运算符</title>
-      <link>https://looechao.com/post/2024/bitwise-operators/</link>
+      <link>https://looechao.com/posts/2024/bitwise-operators/</link>
       <pubDate>Wed, 24 Apr 2024 21:09:13 +0800</pubDate>
-      <guid>https://looechao.com/post/2024/bitwise-operators/</guid>
+      <guid>https://looechao.com/posts/2024/bitwise-operators/</guid>
       <description>位运算符的灵活应用</description>
     </item>
   </channel>

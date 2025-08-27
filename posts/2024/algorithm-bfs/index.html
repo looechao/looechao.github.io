@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广度优先遍历算法的应用 | Looechao</title>
+    
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    
+    <link rel="preload" href="/css/components/right-panel.css" as="style">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components/sidebar.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+    <link rel="stylesheet" href="/css/components/right-panel.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    <link rel="stylesheet" href="/css/pages/single.css">
+    
+    
+    
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9W970VLJ6X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9W970VLJ6X');
+    </script>
+    
+</head>
+
+<body>
+    <div class="site-container">
+        <aside class="site-sidebar">
+            <aside class="sidebar">
+    
+    <div class="profile">
+        <a href="https://looechao.com/" class="avatar">
+            
+            <img src="/images/profile.png" alt="Looe" />
+            
+        </a>
+        <div class="profile-text">
+            <p class="name">Looe</p>
+            <p class="bio">looechao</p>
+        </div>
+    </div>
+
+    
+    <nav class="nav">
+        <a href="https://looechao.com/" >BLOG</a>
+        <a href="/about" >ABOUT</a>
+    </nav>
+
+    
+    <div class="site--icons">
+        
+        <a href="mailto:lu.chao.personal@gmail.com" target="_blank" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
+                <g id="evaEmailFill0">
+                    <g id="evaEmailFill1">
+                        <path id="evaEmailFill2" fill="currentColor"
+                            d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm0 2l-6.5 4.47a1 1 0 0 1-1 0L5 6Z" />
+                    </g>
+                </g>
+            </svg> </a>
+        
+        
+        <a href="https://www.github.com/looechao" target="_blank" title="Github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 20 20">
+                <path fill="currentColor"
+                    d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799zm4.526-4.683c.149-.365.155-2.439-.635-4.426c0 0-1.811.199-4.551 2.08c-.575-.16-1.548-.238-2.519-.238c-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002l1.732-.002c1.506 0 7.467-.115 7.467-7.301c0-1.652-.566-2.863-1.494-3.871zm-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115c0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531c.735.676 1.045 1.49 1.045 2.369c0 3.666-2.937 4.115-6.709 4.115zm-3.207-5.606c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801c.719 0 1.301-.807 1.301-1.801c0-.992-.582-1.799-1.301-1.799z" />
+            </svg>
+        </a>
+        
+        
+    </div>
+</aside>
+        </aside>
+        <aside class="site-right-panel">
+            <div class="right-panel">
+    <div class="panel-module tags-module">
+        <h3 class="module-title">Tags</h3>
+        <div class="tags-cloud">
+            
+            
+            
+            <a href="https://looechao.com/tags/2024weekly/" class="tag-item tag-alphanumeric" data-count="4">
+                2024Weekly<span class="tag-count">4</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/2025weekly/" class="tag-item tag-alphanumeric" data-count="1">
+                2025Weekly<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/agent/" class="tag-item tag-alphanumeric" data-count="1">
+                Agent<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/bfs/" class="tag-item tag-alphanumeric" data-count="1">
+                BFS<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/c/c&#43;&#43;/" class="tag-item tag-alphanumeric" data-count="17">
+                C/C&#43;&#43;<span class="tag-count">17</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/epoll/" class="tag-item tag-alphanumeric" data-count="1">
+                EPOLL<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/hexo/" class="tag-item tag-alphanumeric" data-count="1">
+                Hexo<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/lectures/" class="tag-item tag-alphanumeric" data-count="1">
+                Lectures<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/leetcode/" class="tag-item tag-alphanumeric" data-count="10">
+                LeetCode<span class="tag-count">10</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/linux/" class="tag-item tag-alphanumeric" data-count="4">
+                Linux<span class="tag-count">4</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/llm/" class="tag-item tag-alphanumeric" data-count="1">
+                Llm<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/microsoft-store/" class="tag-item tag-alphanumeric" data-count="1">
+                Microsoft Store<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/omegle/" class="tag-item tag-alphanumeric" data-count="1">
+                Omegle<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/oop/" class="tag-item tag-alphanumeric" data-count="1">
+                OOP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/select/" class="tag-item tag-alphanumeric" data-count="1">
+                SELECT<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/sso/" class="tag-item tag-alphanumeric" data-count="1">
+                SSO<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/string/" class="tag-item tag-alphanumeric" data-count="1">
+                String<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/tcp/" class="tag-item tag-alphanumeric" data-count="1">
+                TCP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/udp/" class="tag-item tag-alphanumeric" data-count="1">
+                UDP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/xbox360/" class="tag-item tag-alphanumeric" data-count="1">
+                Xbox360<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%8A%80%E6%9C%AF/" class="tag-item tag-chinese" data-count="8">
+                技术<span class="tag-count">8</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%94%9F%E6%B4%BB/" class="tag-item tag-chinese" data-count="8">
+                生活<span class="tag-count">8</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%88%90%E9%95%BF/" class="tag-item tag-chinese" data-count="6">
+                成长<span class="tag-count">6</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%95%B0%E7%A0%81/" class="tag-item tag-chinese" data-count="3">
+                数码<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%9D%82%E8%B0%88/" class="tag-item tag-chinese" data-count="3">
+                杂谈<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%AC%94%E8%AE%B0/" class="tag-item tag-chinese" data-count="3">
+                笔记<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%84%9F%E6%82%9F/" class="tag-item tag-chinese" data-count="2">
+                感悟<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" class="tag-item tag-chinese" data-count="2">
+                网络编程<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E4%B9%90%E8%A7%82%E4%B8%BB%E4%B9%89/" class="tag-item tag-chinese" data-count="1">
+                乐观主义<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/" class="tag-item tag-chinese" data-count="1">
+                位运算符<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%81%A5%E5%BA%B7/" class="tag-item tag-chinese" data-count="1">
+                健康<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%86%85%E5%8D%B7/" class="tag-item tag-chinese" data-count="1">
+                内卷<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%88%86%E6%9E%90/" class="tag-item tag-chinese" data-count="1">
+                分析<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%8C%BB%E7%96%97/" class="tag-item tag-chinese" data-count="1">
+                医疗<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/" class="tag-item tag-chinese" data-count="1">
+                即时通信系统<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%93%B2%E7%90%86/" class="tag-item tag-chinese" data-count="1">
+                哲理<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%B7%A5%E5%85%B7/" class="tag-item tag-chinese" data-count="1">
+                工具<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" class="tag-item tag-chinese" data-count="1">
+                年度总结<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%88%90%E5%B0%B1/" class="tag-item tag-chinese" data-count="1">
+                成就<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/" class="tag-item tag-chinese" data-count="1">
+                极简主义<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%B5%B7%E9%87%8F%E8%BF%9E%E6%8E%A5%E5%A4%84%E7%90%86/" class="tag-item tag-chinese" data-count="1">
+                海量连接处理<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E9%99%B7%E9%98%B1/" class="tag-item tag-chinese" data-count="1">
+                消费主义陷阱<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%A6%85/" class="tag-item tag-chinese" data-count="1">
+                禅<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%AE%97%E6%B3%95/" class="tag-item tag-chinese" data-count="1">
+                算法<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%82%96%E6%B4%AA%E6%B6%9B/" class="tag-item tag-chinese" data-count="1">
+                肖洪涛<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%A7%82%E5%AF%9F/" class="tag-item tag-chinese" data-count="1">
+                观察<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%A7%84%E5%88%92/" class="tag-item tag-chinese" data-count="1">
+                规划<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%B7%A8%E5%B9%B4/" class="tag-item tag-chinese" data-count="1">
+                跨年<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%BD%AC%E8%BD%BD/" class="tag-item tag-chinese" data-count="1">
+                转载<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E9%98%85%E8%AF%BB/" class="tag-item tag-chinese" data-count="1">
+                阅读<span class="tag-count">1</span>
+            </a>
+            
+            
+        </div>
+    </div>
+    
+    
+</div>
+        </aside>
+        <div class="site-middle">
+            <main class="site-content">
+                
+<article class="single-article">
+    <div class="article-header">
+        <h1 class="article-title">广度优先遍历算法的应用</h1>
+        <div class="article-meta">
+            <time class="article-date">Jul 21, 2024</time>
+            
+            <div class="article-tags">
+                
+                <a href="/tags/%E7%AE%97%E6%B3%95" class="article-tag">算法</a>
+                
+                <a href="/tags/bfs" class="article-tag">BFS</a>
+                
+                <a href="/tags/c/c&#43;&#43;" class="article-tag">C/C&#43;&#43;</a>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="article-content">
+        <p>几则使用广度优先遍历算法求解的题目</p>
+<h3 id="广度优先遍历bfs">广度优先遍历(BFS)</h3>
+<h4 id="p0101">P0101★</h4>
+<p>题目描述：  <a href="https://leetcode.cn/problems/symmetric-tree/">Symmetric Tree</a>, 判断一棵树是不是对称树</p>
+<h5 id="思路">思路</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">      <span class="o">[</span>1<span class="o">]</span>
+</span></span><span class="line"><span class="cl">      /  <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>     /     <span class="se">\ </span>
+</span></span><span class="line"><span class="cl">   <span class="o">[</span>1<span class="o">]</span>     <span class="o">[</span>1<span class="o">]</span>
+</span></span><span class="line"><span class="cl">   / <span class="se">\ </span>    / <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span> <span class="o">[</span>1<span class="o">]</span> <span class="o">[</span>1<span class="o">]</span> <span class="o">[</span>1<span class="o">]</span> <span class="o">[</span>1<span class="o">]</span>
+</span></span></code></pre></div><ol>
+<li>
+<p>广度优先遍历：往队列中Push元素，最开始两个元素是树的根节点</p>
+</li>
+<li>
+<p>使用队列，按照树的对称位置顺序，输入每一层的节点TreeNode，保证队列的前两个节点总是一双对称位置的节点</p>
+</li>
+<li>
+<p>不是对称树的情况：对称节点中有一个为空(nullptr) 或者 两节点的值(value)不相等</p>
+</li>
+<li>
+<p>继续入队，将这两个节点的子节点按照 1423 对称序Push到队列中</p>
+</li>
+</ol>
+<h5 id="总结">总结</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Definition for a binary tree node.
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * struct TreeNode {
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *     int val;
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *     TreeNode *left;
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *     TreeNode *right;
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * };
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">bool</span> <span class="n">isSymmetric</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nf">check</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">root</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kt">bool</span> <span class="nf">check</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">u</span><span class="p">,</span> <span class="n">TreeNode</span><span class="o">*</span> <span class="n">v</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//创建队列并且压入前两个节点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">queue</span><span class="o">&lt;</span><span class="n">TreeNode</span><span class="o">*&gt;</span> <span class="n">q</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">u</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//遍历队列进行判断
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//取出一双对称位置节点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">u</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="n">v</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//判断对称性
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">u</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">v</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        	<span class="k">if</span><span class="p">((</span><span class="o">!</span><span class="n">u</span> <span class="o">||</span> <span class="o">!</span><span class="n">v</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">val</span> <span class="o">!=</span> <span class="n">v</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">))</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//将子节点按照对称序入队
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">v</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">v</span><span class="o">-&gt;</span><span class="n">lefy</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><h4 id="p0102">P0102★</h4>
+<p>题目描述：<a href="https://leetcode.cn/problems/binary-tree-level-order-traversal/"> Binary Tree Level Order Traversal</a>，对一颗二叉树进行层序遍历</p>
+<h5 id="思路-1">思路</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">      <span class="o">[</span>3<span class="o">]</span>
+</span></span><span class="line"><span class="cl">      /  <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>     /     <span class="se">\ </span>
+</span></span><span class="line"><span class="cl">   <span class="o">[</span>9<span class="o">]</span>     <span class="o">[</span>2<span class="o">]</span>
+</span></span><span class="line"><span class="cl">           / <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>         <span class="o">[</span>4<span class="o">]</span> <span class="o">[</span>7<span class="o">]</span>
+</span></span></code></pre></div><p>使用队列的广度优先遍历思想，将每一层的节点入队，在将该层节点的数值插入到vector当中去</p>
+<h5 id="总结-1">总结</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">levelOrder</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">queue</span><span class="o">&lt;</span><span class="n">TreeNode</span><span class="o">*&gt;</span> <span class="n">q</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">ret</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">root</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//每一层节点的读取，放入到一个vector&lt;int&gt;当中去
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="c1">//同时构建下一层节点的元素到nq当中去
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">vec</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">queue</span><span class="o">&lt;</span><span class="n">TreeNode</span><span class="o">*&gt;</span> <span class="n">nq</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">                <span class="n">TreeNode</span><span class="o">*</span> <span class="n">u</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="n">u</span> <span class="o">!=</span> <span class="k">nullptr</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                	<span class="n">nq</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">nq</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span><span class="c1">//到这里，nq构建完成，vec也存储完成
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">vec</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ret</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">vec</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">vec</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span> <span class="o">=</span> <span class="n">nq</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><h4 id="p0103">P0103★</h4>
+<p>题目描述：<a href="https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/">Binary Tree Zigzag Level Order Traversal</a>, 锯齿层序遍历</p>
+<h5 id="思路-2">思路</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">      <span class="o">[</span>3<span class="o">]</span>
+</span></span><span class="line"><span class="cl">      /  <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>     /     <span class="se">\ </span>
+</span></span><span class="line"><span class="cl">   <span class="o">[</span>9<span class="o">]</span>     <span class="o">[</span>20<span class="o">]</span>
+</span></span><span class="line"><span class="cl">           /  <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>        <span class="o">[</span>15<span class="o">]</span>  <span class="o">[</span>7<span class="o">]</span>
+</span></span></code></pre></div><p>一开始尝试使用普通队列，但是行不通</p>
+<p>正确的做法是使用双端队列和一个bool标记进行遍历</p>
+<h5 id="总结-2">总结</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">zigzagLevelOrder</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">ret</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dqueue</span><span class="o">&lt;</span><span class="n">TreeNode</span><span class="o">*&gt;</span> <span class="n">q</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">q</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">root</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//forward的默认值应该是false
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">bool</span> <span class="n">forward</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//构建每一层的vec和dequeue
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">vec</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">deque</span><span class="o">&lt;</span><span class="n">TreeNode</span><span class="o">*&gt;</span> <span class="n">nq</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">                <span class="n">TreeNode</span><span class="o">*</span> <span class="n">u</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                <span class="n">q</span><span class="p">.</span><span class="n">pop_front</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span> <span class="n">u</span> <span class="o">!=</span> <span class="k">nullptr</span> <span class="o">&amp;&amp;</span> <span class="n">forward</span> <span class="o">==</span> <span class="nb">true</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">nq</span><span class="p">.</span><span class="n">push_front</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">nq</span><span class="p">.</span><span class="n">push_front</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span> <span class="n">u</span> <span class="o">!=</span> <span class="k">nullptr</span> <span class="o">&amp;&amp;</span> <span class="n">forward</span> <span class="o">==</span> <span class="nb">false</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">nq</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">nq</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">forward</span> <span class="o">=</span> <span class="o">!</span><span class="n">forward</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">vec</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ret</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">vec</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">vec</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span> <span class="o">=</span> <span class="n">nq</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div>
+    </div>
+</article>
+
+
+<link rel="stylesheet" href="/css/image-modal.css">
+<script src="/js/image-zoom.js"></script>
+
+                <footer>
+  <p style="display: flex; justify-content: space-between; align-items: center; margin: 0;">
+    <span>&copy; 2025 <a href="https://looechao.com/" style="color: inherit; text-decoration: none;">looechao</a>. All rights reserved.</span>
+    <a href="/changelog" style="color: inherit; text-decoration: none;">Changelog</a>
+  </p>
+</footer>
+
+            </main>
+            
+<div class="comments-wrapper">
+    <div id="giscus-container" class="comments-section"></div>
+    <script src="https://giscus.app/client.js" data-repo="looechao/hugo-comments"
+        data-repo-id="R_kgDOLbUd7g" data-category="Announcements"
+        data-category-id="DIC_kwDOLbUd7s4Cum0P"
+        data-mapping="pathname" data-strict="0"
+        data-reactions-enabled="true"
+        data-emit-metadata="false" data-input-position="top"
+        data-theme="light"
+        data-lang="en" crossorigin="anonymous" async>
+        </script>
+</div>
+
+        </div>
+    </div>
+</body>
+
+</html>

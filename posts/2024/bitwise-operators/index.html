@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C语言中的六种位运算符 | Looechao</title>
+    
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    
+    <link rel="preload" href="/css/components/right-panel.css" as="style">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components/sidebar.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+    <link rel="stylesheet" href="/css/components/right-panel.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    <link rel="stylesheet" href="/css/pages/single.css">
+    
+    
+    
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9W970VLJ6X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9W970VLJ6X');
+    </script>
+    
+</head>
+
+<body>
+    <div class="site-container">
+        <aside class="site-sidebar">
+            <aside class="sidebar">
+    
+    <div class="profile">
+        <a href="https://looechao.com/" class="avatar">
+            
+            <img src="/images/profile.png" alt="Looe" />
+            
+        </a>
+        <div class="profile-text">
+            <p class="name">Looe</p>
+            <p class="bio">looechao</p>
+        </div>
+    </div>
+
+    
+    <nav class="nav">
+        <a href="https://looechao.com/" >BLOG</a>
+        <a href="/about" >ABOUT</a>
+    </nav>
+
+    
+    <div class="site--icons">
+        
+        <a href="mailto:lu.chao.personal@gmail.com" target="_blank" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
+                <g id="evaEmailFill0">
+                    <g id="evaEmailFill1">
+                        <path id="evaEmailFill2" fill="currentColor"
+                            d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm0 2l-6.5 4.47a1 1 0 0 1-1 0L5 6Z" />
+                    </g>
+                </g>
+            </svg> </a>
+        
+        
+        <a href="https://www.github.com/looechao" target="_blank" title="Github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 20 20">
+                <path fill="currentColor"
+                    d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799zm4.526-4.683c.149-.365.155-2.439-.635-4.426c0 0-1.811.199-4.551 2.08c-.575-.16-1.548-.238-2.519-.238c-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002l1.732-.002c1.506 0 7.467-.115 7.467-7.301c0-1.652-.566-2.863-1.494-3.871zm-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115c0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531c.735.676 1.045 1.49 1.045 2.369c0 3.666-2.937 4.115-6.709 4.115zm-3.207-5.606c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801c.719 0 1.301-.807 1.301-1.801c0-.992-.582-1.799-1.301-1.799z" />
+            </svg>
+        </a>
+        
+        
+    </div>
+</aside>
+        </aside>
+        <aside class="site-right-panel">
+            <div class="right-panel">
+    <div class="panel-module tags-module">
+        <h3 class="module-title">Tags</h3>
+        <div class="tags-cloud">
+            
+            
+            
+            <a href="https://looechao.com/tags/2024weekly/" class="tag-item tag-alphanumeric" data-count="4">
+                2024Weekly<span class="tag-count">4</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/2025weekly/" class="tag-item tag-alphanumeric" data-count="1">
+                2025Weekly<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/agent/" class="tag-item tag-alphanumeric" data-count="1">
+                Agent<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/bfs/" class="tag-item tag-alphanumeric" data-count="1">
+                BFS<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/c/c&#43;&#43;/" class="tag-item tag-alphanumeric" data-count="17">
+                C/C&#43;&#43;<span class="tag-count">17</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/epoll/" class="tag-item tag-alphanumeric" data-count="1">
+                EPOLL<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/hexo/" class="tag-item tag-alphanumeric" data-count="1">
+                Hexo<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/lectures/" class="tag-item tag-alphanumeric" data-count="1">
+                Lectures<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/leetcode/" class="tag-item tag-alphanumeric" data-count="10">
+                LeetCode<span class="tag-count">10</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/linux/" class="tag-item tag-alphanumeric" data-count="4">
+                Linux<span class="tag-count">4</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/llm/" class="tag-item tag-alphanumeric" data-count="1">
+                Llm<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/microsoft-store/" class="tag-item tag-alphanumeric" data-count="1">
+                Microsoft Store<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/omegle/" class="tag-item tag-alphanumeric" data-count="1">
+                Omegle<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/oop/" class="tag-item tag-alphanumeric" data-count="1">
+                OOP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/select/" class="tag-item tag-alphanumeric" data-count="1">
+                SELECT<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/sso/" class="tag-item tag-alphanumeric" data-count="1">
+                SSO<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/string/" class="tag-item tag-alphanumeric" data-count="1">
+                String<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/tcp/" class="tag-item tag-alphanumeric" data-count="1">
+                TCP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/udp/" class="tag-item tag-alphanumeric" data-count="1">
+                UDP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/xbox360/" class="tag-item tag-alphanumeric" data-count="1">
+                Xbox360<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%8A%80%E6%9C%AF/" class="tag-item tag-chinese" data-count="8">
+                技术<span class="tag-count">8</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%94%9F%E6%B4%BB/" class="tag-item tag-chinese" data-count="8">
+                生活<span class="tag-count">8</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%88%90%E9%95%BF/" class="tag-item tag-chinese" data-count="6">
+                成长<span class="tag-count">6</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%95%B0%E7%A0%81/" class="tag-item tag-chinese" data-count="3">
+                数码<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%9D%82%E8%B0%88/" class="tag-item tag-chinese" data-count="3">
+                杂谈<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%AC%94%E8%AE%B0/" class="tag-item tag-chinese" data-count="3">
+                笔记<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%84%9F%E6%82%9F/" class="tag-item tag-chinese" data-count="2">
+                感悟<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" class="tag-item tag-chinese" data-count="2">
+                网络编程<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E4%B9%90%E8%A7%82%E4%B8%BB%E4%B9%89/" class="tag-item tag-chinese" data-count="1">
+                乐观主义<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/" class="tag-item tag-chinese" data-count="1">
+                位运算符<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%81%A5%E5%BA%B7/" class="tag-item tag-chinese" data-count="1">
+                健康<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%86%85%E5%8D%B7/" class="tag-item tag-chinese" data-count="1">
+                内卷<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%88%86%E6%9E%90/" class="tag-item tag-chinese" data-count="1">
+                分析<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%8C%BB%E7%96%97/" class="tag-item tag-chinese" data-count="1">
+                医疗<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/" class="tag-item tag-chinese" data-count="1">
+                即时通信系统<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%93%B2%E7%90%86/" class="tag-item tag-chinese" data-count="1">
+                哲理<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%B7%A5%E5%85%B7/" class="tag-item tag-chinese" data-count="1">
+                工具<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" class="tag-item tag-chinese" data-count="1">
+                年度总结<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%88%90%E5%B0%B1/" class="tag-item tag-chinese" data-count="1">
+                成就<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/" class="tag-item tag-chinese" data-count="1">
+                极简主义<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%B5%B7%E9%87%8F%E8%BF%9E%E6%8E%A5%E5%A4%84%E7%90%86/" class="tag-item tag-chinese" data-count="1">
+                海量连接处理<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E9%99%B7%E9%98%B1/" class="tag-item tag-chinese" data-count="1">
+                消费主义陷阱<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%A6%85/" class="tag-item tag-chinese" data-count="1">
+                禅<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%AE%97%E6%B3%95/" class="tag-item tag-chinese" data-count="1">
+                算法<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%82%96%E6%B4%AA%E6%B6%9B/" class="tag-item tag-chinese" data-count="1">
+                肖洪涛<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%A7%82%E5%AF%9F/" class="tag-item tag-chinese" data-count="1">
+                观察<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%A7%84%E5%88%92/" class="tag-item tag-chinese" data-count="1">
+                规划<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%B7%A8%E5%B9%B4/" class="tag-item tag-chinese" data-count="1">
+                跨年<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%BD%AC%E8%BD%BD/" class="tag-item tag-chinese" data-count="1">
+                转载<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E9%98%85%E8%AF%BB/" class="tag-item tag-chinese" data-count="1">
+                阅读<span class="tag-count">1</span>
+            </a>
+            
+            
+        </div>
+    </div>
+    
+    
+</div>
+        </aside>
+        <div class="site-middle">
+            <main class="site-content">
+                
+<article class="single-article">
+    <div class="article-header">
+        <h1 class="article-title">C语言中的六种位运算符</h1>
+        <div class="article-meta">
+            <time class="article-date">Apr 24, 2024</time>
+            
+            <div class="article-tags">
+                
+                <a href="/tags/c/c&#43;&#43;" class="article-tag">C/C&#43;&#43;</a>
+                
+                <a href="/tags/%E6%8A%80%E6%9C%AF" class="article-tag">技术</a>
+                
+                <a href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6" class="article-tag">位运算符</a>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="article-content">
+        <h4 id="六种位运算符">六种位运算符</h4>
+<table>
+    <tr>
+        <td>符号</td>
+        <td>含义</td>
+    </tr>
+    <tr>
+        <td>&lt;&lt;</td>
+        <td>左移位</td>
+    </tr>
+    <tr>
+        <td>&gt;&gt;</td>
+        <td>右移位</td>
+    </tr>
+    <tr>
+        <td>~</td>
+        <td>按位取反</td>
+    </tr>
+    <tr>
+        <td>&amp;</td>
+        <td>按位与（相同为1）</td>
+    </tr>
+    <tr>
+        <td>^</td>
+        <td>按位异或 (不同为1)</td>
+    </tr>
+    <tr>
+        <td>|</td>
+        <td>按位或 (有1为1)</td>
+    </tr>
+</table>
+<h5 id="位运算的基础应用">位运算的基础应用</h5>
+<ul>
+<li>按位与的应用场景：掩码
+<ul>
+<li>判断一个数是否为奇数: n&amp;0x1</li>
+<li>判断一个数是否为2的幂: /</li>
+</ul>
+</li>
+</ul>
+<p>eg.测试0xCAFE最后 4 位中是不是最少有 3 位为 1.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mh">0xCAFE</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">mask</span><span class="o">=</span><span class="mh">0x000F</span><span class="p">;</span>   <span class="c1">//掩码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">mask</span> <span class="o">&amp;</span> <span class="n">n</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">result</span><span class="o">==</span><span class="mh">0xF</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0x7</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0xB</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0xD</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0xE</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;至少有三个1&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>移码的应用：</li>
+</ul>
+<p>eg. 逆转0xCAFE的字节序</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">left</span><span class="o">=</span><span class="mh">0xCAFE</span><span class="p">,</span><span class="n">right</span><span class="o">=</span><span class="mh">0xCAFE</span><span class="p">,</span><span class="n">n</span> <span class="o">=</span> <span class="mh">0xCAFE</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">left</span><span class="o">&lt;&lt;=</span><span class="mi">8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">right</span><span class="o">&gt;&gt;=</span><span class="mi">8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sum</span><span class="o">=</span><span class="n">left</span><span class="o">+</span><span class="n">right</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">mask</span><span class="o">=</span><span class="mh">0x00FFFF</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sum</span><span class="o">&amp;=</span><span class="n">mask</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%x&#34;</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>异或的良好性质
+<ul>
+<li>a^0=a</li>
+<li>a^a=a</li>
+<li>a^b=b^a</li>
+<li>(a^b)^c=a^(b^c)</li>
+</ul>
+</li>
+</ul>
+<h5 id="位运算的拓展应用">位运算的拓展应用</h5>
+<ul>
+<li>
+<p>eg1. 找出last set bit:</p>
+<ul>
+<li>令xor=3, 找到xor的last set bit
+<ul>
+<li>3的补码表示是0011</li>
+<li>3的反码表示是1100</li>
+<li>**3的反码+1表示是1101</li>
+<li>-3的补码表示是1101**
+可用的操作:
+1101
+0011按位做与运算得到last set bit</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">lsb</span><span class="o">=</span><span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">^</span><span class="n">xor</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> 
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">lsb</span><span class="o">=</span><span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">-</span><span class="n">xor</span><span class="p">)</span>
+</span></span></code></pre></div></li>
+<li>
+<p>eg2.筛出数组中单独的数（其余的都出现了两次）singlenum</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">nums</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">xor</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">      <span class="n">xor</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="n">xor</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></div><p>不断做异或运算，可以保留得到最后唯一的那个元素</p>
+</li>
+<li>
+<p>eg3. 拓展：筛出数组中的两个单独的数（其余的都出现了两次）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">nums</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">xor</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">      <span class="n">xor</span> <span class="o">^=</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>  
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">lsb</span> <span class="o">=</span> <span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">xor</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>    <span class="c1">//last set bit;a与b在这一位上不同，用作分类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">      <span class="k">if</span><span class="p">(</span><span class="n">lsb</span><span class="o">&amp;</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]){</span>
+</span></span><span class="line"><span class="cl">          <span class="n">a</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="n">b</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;[%d %d]&#34;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>用0与整个数组异或的结果的lsb可以将数组分为两个只包含一个唯一元素的数组，再按照eg2的方法可以筛出唯一元素</p>
+</li>
+</ul>
+
+    </div>
+</article>
+
+
+<link rel="stylesheet" href="/css/image-modal.css">
+<script src="/js/image-zoom.js"></script>
+
+                <footer>
+  <p style="display: flex; justify-content: space-between; align-items: center; margin: 0;">
+    <span>&copy; 2025 <a href="https://looechao.com/" style="color: inherit; text-decoration: none;">looechao</a>. All rights reserved.</span>
+    <a href="/changelog" style="color: inherit; text-decoration: none;">Changelog</a>
+  </p>
+</footer>
+
+            </main>
+            
+<div class="comments-wrapper">
+    <div id="giscus-container" class="comments-section"></div>
+    <script src="https://giscus.app/client.js" data-repo="looechao/hugo-comments"
+        data-repo-id="R_kgDOLbUd7g" data-category="Announcements"
+        data-category-id="DIC_kwDOLbUd7s4Cum0P"
+        data-mapping="pathname" data-strict="0"
+        data-reactions-enabled="true"
+        data-emit-metadata="false" data-input-position="top"
+        data-theme="light"
+        data-lang="en" crossorigin="anonymous" async>
+        </script>
+</div>
+
+        </div>
+    </div>
+</body>
+
+</html>

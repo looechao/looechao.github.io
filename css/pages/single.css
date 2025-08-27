@@ -151,8 +151,8 @@ body.dark-mode {
 /* 列表样式 */
 .article-content ul,
 .article-content ol {
-    margin: 0.5rem 0 0.1rem;
-    padding-left: 2rem;
+    margin: 0rem 0rem 0rem;
+    padding: 0rem 0rem 0.5rem 2rem;
 }
 
 .article-content li {
@@ -164,7 +164,7 @@ body.dark-mode {
     max-width: 100%;
     height: auto;
     margin: 1.5rem 0;
-    border-radius: var(--radius);
+    border-radius: 10px;
 }
 
 /* 引用块 */

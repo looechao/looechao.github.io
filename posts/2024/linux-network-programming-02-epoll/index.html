@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络编程-EPOLL的使用 | Looechao</title>
+    
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    
+    <link rel="preload" href="/css/components/right-panel.css" as="style">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components/sidebar.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+    <link rel="stylesheet" href="/css/components/right-panel.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    <link rel="stylesheet" href="/css/pages/single.css">
+    
+    
+    
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9W970VLJ6X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9W970VLJ6X');
+    </script>
+    
+</head>
+
+<body>
+    <div class="site-container">
+        <aside class="site-sidebar">
+            <aside class="sidebar">
+    
+    <div class="profile">
+        <a href="https://looechao.com/" class="avatar">
+            
+            <img src="/images/profile.png" alt="Looe" />
+            
+        </a>
+        <div class="profile-text">
+            <p class="name">Looe</p>
+            <p class="bio">looechao</p>
+        </div>
+    </div>
+
+    
+    <nav class="nav">
+        <a href="https://looechao.com/" >BLOG</a>
+        <a href="/about" >ABOUT</a>
+    </nav>
+
+    
+    <div class="site--icons">
+        
+        <a href="mailto:lu.chao.personal@gmail.com" target="_blank" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
+                <g id="evaEmailFill0">
+                    <g id="evaEmailFill1">
+                        <path id="evaEmailFill2" fill="currentColor"
+                            d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm0 2l-6.5 4.47a1 1 0 0 1-1 0L5 6Z" />
+                    </g>
+                </g>
+            </svg> </a>
+        
+        
+        <a href="https://www.github.com/looechao" target="_blank" title="Github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 20 20">
+                <path fill="currentColor"
+                    d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799zm4.526-4.683c.149-.365.155-2.439-.635-4.426c0 0-1.811.199-4.551 2.08c-.575-.16-1.548-.238-2.519-.238c-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002l1.732-.002c1.506 0 7.467-.115 7.467-7.301c0-1.652-.566-2.863-1.494-3.871zm-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115c0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531c.735.676 1.045 1.49 1.045 2.369c0 3.666-2.937 4.115-6.709 4.115zm-3.207-5.606c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801c.719 0 1.301-.807 1.301-1.801c0-.992-.582-1.799-1.301-1.799z" />
+            </svg>
+        </a>
+        
+        
+    </div>
+</aside>
+        </aside>
+        <aside class="site-right-panel">
+            <div class="right-panel">
+    <div class="panel-module tags-module">
+        <h3 class="module-title">Tags</h3>
+        <div class="tags-cloud">
+            
+            
+            
+            <a href="https://looechao.com/tags/2024weekly/" class="tag-item tag-alphanumeric" data-count="4">
+                2024Weekly<span class="tag-count">4</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/2025weekly/" class="tag-item tag-alphanumeric" data-count="1">
+                2025Weekly<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/agent/" class="tag-item tag-alphanumeric" data-count="1">
+                Agent<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/bfs/" class="tag-item tag-alphanumeric" data-count="1">
+                BFS<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/c/c&#43;&#43;/" class="tag-item tag-alphanumeric" data-count="17">
+                C/C&#43;&#43;<span class="tag-count">17</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/epoll/" class="tag-item tag-alphanumeric" data-count="1">
+                EPOLL<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/hexo/" class="tag-item tag-alphanumeric" data-count="1">
+                Hexo<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/lectures/" class="tag-item tag-alphanumeric" data-count="1">
+                Lectures<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/leetcode/" class="tag-item tag-alphanumeric" data-count="10">
+                LeetCode<span class="tag-count">10</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/linux/" class="tag-item tag-alphanumeric" data-count="4">
+                Linux<span class="tag-count">4</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/llm/" class="tag-item tag-alphanumeric" data-count="1">
+                Llm<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/microsoft-store/" class="tag-item tag-alphanumeric" data-count="1">
+                Microsoft Store<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/omegle/" class="tag-item tag-alphanumeric" data-count="1">
+                Omegle<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/oop/" class="tag-item tag-alphanumeric" data-count="1">
+                OOP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/select/" class="tag-item tag-alphanumeric" data-count="1">
+                SELECT<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/sso/" class="tag-item tag-alphanumeric" data-count="1">
+                SSO<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/string/" class="tag-item tag-alphanumeric" data-count="1">
+                String<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/tcp/" class="tag-item tag-alphanumeric" data-count="1">
+                TCP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/udp/" class="tag-item tag-alphanumeric" data-count="1">
+                UDP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/xbox360/" class="tag-item tag-alphanumeric" data-count="1">
+                Xbox360<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%8A%80%E6%9C%AF/" class="tag-item tag-chinese" data-count="8">
+                技术<span class="tag-count">8</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%94%9F%E6%B4%BB/" class="tag-item tag-chinese" data-count="8">
+                生活<span class="tag-count">8</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%88%90%E9%95%BF/" class="tag-item tag-chinese" data-count="6">
+                成长<span class="tag-count">6</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%95%B0%E7%A0%81/" class="tag-item tag-chinese" data-count="3">
+                数码<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%9D%82%E8%B0%88/" class="tag-item tag-chinese" data-count="3">
+                杂谈<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%AC%94%E8%AE%B0/" class="tag-item tag-chinese" data-count="3">
+                笔记<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%84%9F%E6%82%9F/" class="tag-item tag-chinese" data-count="2">
+                感悟<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" class="tag-item tag-chinese" data-count="2">
+                网络编程<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E4%B9%90%E8%A7%82%E4%B8%BB%E4%B9%89/" class="tag-item tag-chinese" data-count="1">
+                乐观主义<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/" class="tag-item tag-chinese" data-count="1">
+                位运算符<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%81%A5%E5%BA%B7/" class="tag-item tag-chinese" data-count="1">
+                健康<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%86%85%E5%8D%B7/" class="tag-item tag-chinese" data-count="1">
+                内卷<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%88%86%E6%9E%90/" class="tag-item tag-chinese" data-count="1">
+                分析<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%8C%BB%E7%96%97/" class="tag-item tag-chinese" data-count="1">
+                医疗<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/" class="tag-item tag-chinese" data-count="1">
+                即时通信系统<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%93%B2%E7%90%86/" class="tag-item tag-chinese" data-count="1">
+                哲理<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%B7%A5%E5%85%B7/" class="tag-item tag-chinese" data-count="1">
+                工具<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" class="tag-item tag-chinese" data-count="1">
+                年度总结<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%88%90%E5%B0%B1/" class="tag-item tag-chinese" data-count="1">
+                成就<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/" class="tag-item tag-chinese" data-count="1">
+                极简主义<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%B5%B7%E9%87%8F%E8%BF%9E%E6%8E%A5%E5%A4%84%E7%90%86/" class="tag-item tag-chinese" data-count="1">
+                海量连接处理<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E9%99%B7%E9%98%B1/" class="tag-item tag-chinese" data-count="1">
+                消费主义陷阱<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%A6%85/" class="tag-item tag-chinese" data-count="1">
+                禅<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%AE%97%E6%B3%95/" class="tag-item tag-chinese" data-count="1">
+                算法<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%82%96%E6%B4%AA%E6%B6%9B/" class="tag-item tag-chinese" data-count="1">
+                肖洪涛<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%A7%82%E5%AF%9F/" class="tag-item tag-chinese" data-count="1">
+                观察<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%A7%84%E5%88%92/" class="tag-item tag-chinese" data-count="1">
+                规划<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%B7%A8%E5%B9%B4/" class="tag-item tag-chinese" data-count="1">
+                跨年<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%BD%AC%E8%BD%BD/" class="tag-item tag-chinese" data-count="1">
+                转载<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E9%98%85%E8%AF%BB/" class="tag-item tag-chinese" data-count="1">
+                阅读<span class="tag-count">1</span>
+            </a>
+            
+            
+        </div>
+    </div>
+    
+    
+</div>
+        </aside>
+        <div class="site-middle">
+            <main class="site-content">
+                
+<article class="single-article">
+    <div class="article-header">
+        <h1 class="article-title">网络编程-EPOLL的使用</h1>
+        <div class="article-meta">
+            <time class="article-date">Jun 17, 2024</time>
+            
+            <div class="article-tags">
+                
+                <a href="/tags/%E6%8A%80%E6%9C%AF" class="article-tag">技术</a>
+                
+                <a href="/tags/linux" class="article-tag">Linux</a>
+                
+                <a href="/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B" class="article-tag">网络编程</a>
+                
+                <a href="/tags/select" class="article-tag">SELECT</a>
+                
+                <a href="/tags/epoll" class="article-tag">EPOLL</a>
+                
+                <a href="/tags/%E6%B5%B7%E9%87%8F%E8%BF%9E%E6%8E%A5%E5%A4%84%E7%90%86" class="article-tag">海量连接处理</a>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="article-content">
+        <h1 id="epoll">EPOLL</h1>
+<h2 id="select的缺陷">select的缺陷</h2>
+<ul>
+<li>监听和就绪耦合</li>
+<li>fd_set固定了大小为1024，不方便更改</li>
+<li>每次调用select，都要把fd_set从用户态换成内核态，资源开销很大</li>
+<li><strong>就绪机制不合理</strong>：轮询机制是用户层面的，在海量连接的状态下表现很差（海量连接，少量就绪）</li>
+</ul>
+<p>由以上缺陷可以引出了EPOLL，它解决了select的缺点，效率是十分高的，E for event, poll means 轮询，Epoll只用处理就绪的实践，<strong>只有Linux支持Epoll</strong>,mac和windows平台使用其他的多路复用</p>
+<h2 id="操作流程">操作流程</h2>
+<ol>
+<li>
+<p>建立一个文件对象：文件对象是分配在内核区的，所有操作对象都分配在epoll当中</p>
+</li>
+<li>
+<p>Epoll文件对象有<strong>监听集合</strong>和<strong>就序集合</strong>构成，监听集合中的数据结构使用的是红黑树（<strong>大小无限制</strong>），保证了轮询效率 O(logN)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">epoll文件对象
+</span></span><span class="line"><span class="cl"><span class="p">|</span>监听集合<span class="p">|</span>就绪集合<span class="p">|</span>      
+</span></span><span class="line"><span class="cl">   <span class="p">|</span>        <span class="p">|</span>
+</span></span><span class="line"><span class="cl"> 红黑树    线性表
+</span></span><span class="line"><span class="cl">------------<span class="p">|</span>----
+</span></span><span class="line"><span class="cl">            <span class="p">|</span>
+</span></span><span class="line"><span class="cl">         <span class="o">[][][][]</span>
+</span></span><span class="line"><span class="cl">用户只需要遍历用户集合即可，效率非常高
+</span></span></code></pre></div></li>
+<li>
+<p>监听和就绪分离</p>
+</li>
+<li>
+<p>用户只需要遍历就绪集合：保证了效率（尤其是在海量连接的情况下）</p>
+</li>
+</ol>
+<h2 id="相关api">相关api</h2>
+<ul>
+<li>
+<p>epoll_create 创建epoll文件对象，类比fd_set</p>
+</li>
+<li>
+<p>epoll_ctl 增加监听，类比fd_zero/fd_set，可以放在循环外面</p>
+</li>
+<li>
+<p>epoll_wait 陷入等待，类比select</p>
+<p><strong>注意</strong>：要先准备好一个epoll_event数组来保存就绪事件，返回值是event的长度</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">                 <span class="err">文件对象</span>                   <span class="n">events数组</span>     <span class="err">数组长度</span>      <span class="err">超时时间</span>
+</span></span><span class="line"><span class="cl">                    <span class="o">|</span>                          <span class="o">|</span>           <span class="o">|</span>             <span class="o">|</span>     
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">epoll_wait</span><span class="p">(</span><span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="k">struct</span> <span class="n">epoll_event</span> <span class="o">*</span><span class="n">events</span><span class="p">,</span><span class="kt">int</span> <span class="n">maxevents</span><span class="p">,</span> <span class="kt">int</span> <span class="n">timeout</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> <span class="o">|</span>
+</span></span><span class="line"><span class="cl"><span class="err">描述有多少个</span><span class="n">fd就绪</span>
+</span></span></code></pre></div><p>epoll_events数组将要存储就绪集合，当epoll_wait返回时，用户需要遍历events（这样做比遍历fd_set效率高很多）</p>
+</li>
+<li>
+<p>epoll_ctl</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">                 <span class="err">文件对象</span>  <span class="err">操作</span>                   <span class="err">事件</span>
+</span></span><span class="line"><span class="cl">                   <span class="o">|</span>       <span class="o">|</span>                     <span class="o">|</span> 
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">epoll_ctl</span><span class="p">(</span><span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="kt">int</span> <span class="n">op</span><span class="p">,</span> <span class="kt">int</span> <span class="n">fd</span><span class="p">,</span><span class="k">struct</span> <span class="n">epoll_event</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">event</span><span class="p">);</span>
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="案例-用epoll的即时聊天">案例-用epoll的即时聊天</h2>
+<p>用epoll取代select操作的server</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;func.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ./2_azhen.c 192.168.68.128 1234
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">ARGS_CHECK</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="nf">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span><span class="p">;</span> <span class="c1">//服务端地址的结构体初始化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//向ip结构体中传入ip地址和端口号参数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="nf">htons</span><span class="p">(</span><span class="nf">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="nf">inet_addr</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="nf">bind</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">addr</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;bind&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">listen</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>   <span class="c1">//DDOS攻击的点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">clientAddr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">socklen_t</span> <span class="n">clientAddrSize</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">);</span> <span class="c1">//该变量必须初始化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">netfd</span> <span class="o">=</span>  <span class="nf">accept</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">clientAddr</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">clientAddrSize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;netfd = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">netfd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;client ip = %s, port = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">           <span class="nf">inet_ntoa</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">),</span> <span class="nf">ntohs</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_port</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//1 fd_set rdset;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">epfd</span> <span class="o">=</span> <span class="nf">epoll_create</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="c1">//epoll_create 取代定义 fd_set这个对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//2 设置监听 取代fd_set
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//如果使用epoll_ctl 可以在循环外面使用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">struct</span> <span class="n">epoll_event</span> <span class="n">event</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">event</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">=</span> <span class="n">STDIN_FILENO</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">event</span><span class="p">.</span><span class="n">events</span> <span class="o">=</span> <span class="n">EPOLLIN</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_ADD</span><span class="p">,</span> <span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">event</span><span class="p">);</span> <span class="c1">//fd_set
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//每次用完event之后都要重新赋值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">event</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">=</span> <span class="n">netfd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">event</span><span class="p">.</span><span class="n">events</span> <span class="o">=</span> <span class="n">EPOLLIN</span><span class="p">;</span> <span class="c1">//读事件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_ADD</span><span class="p">,</span> <span class="n">netfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">event</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">4096</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//FD_ZERO(&amp;rdset);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">//FD_SET(STDIN_FILENO, &amp;rdset);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">//FD_SET(netfd, &amp;rdset);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">//select(netfd+1, &amp;rdset, NULL, NULL, NULL);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">// 4 更换成epoll wait
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">// 现申请一个数组
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">struct</span> <span class="n">epoll_event</span> <span class="n">readySet</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">readyNum</span> <span class="o">=</span> <span class="nf">epoll_wait</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">readySet</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span> <span class="c1">//永久等待使用-1参数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// if(FD_ISSET(STDIN_FILENO, &amp;rdset)){
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     //memset(buf, 0, sizeof(buf));
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     bzero(buf, sizeof(buf));
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     ssize_t sret = read(STDIN_FILENO, buf, sizeof(buf));
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     //send(sockfd, buf, strlen(buf), 0);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     send(netfd, buf, sret, 0);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// }
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// if(FD_ISSET(netfd, &amp;rdset)){
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     bzero(buf, sizeof(buf));
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     ssize_t sret = recv(netfd, buf, sizeof(buf), 0);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     printf(&#34;buf = %s\n&#34;, buf);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// }
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       
+</span></span><span class="line"><span class="cl">       <span class="c1">//从就绪事件集合中进行操作 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">readyNum</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">==</span> <span class="n">STDIN_FILENO</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//memset(buf, 0, sizeof(buf));
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">read</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//send(sockfd, buf, strlen(buf), 0);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="k">if</span><span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="nf">send</span><span class="p">(</span><span class="n">netfd</span><span class="p">,</span> <span class="s">&#34;nishigehaoren&#34;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">goto</span> <span class="n">end</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="nf">send</span><span class="p">(</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">sret</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">==</span> <span class="n">netfd</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;hehe</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">goto</span> <span class="n">end</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;buf = %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nl">end</span><span class="p">:</span>   
+</span></span><span class="line"><span class="cl">    <span class="nf">close</span><span class="p">(</span><span class="n">netfd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>
+<p>Q:说说你的高性能服务器？高性能体现在哪里？</p>
+<p>A:我们曾经有一个老版本的项目使用select来写的，当用户量非常大的时候我们会发现性能表现会非常差，这时候我们采用了新的IO复用技术EPOLL来代替select，EPOLL处理时间只选择处理就绪事件，大大提高的海量连接下的性能表现</p>
+</li>
+</ul>
+<h2 id="用epoll的聊天室">用epoll的聊天室</h2>
+<p>4_server_chatroom_epoll:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">conn_s</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">netfd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">is_alive</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">lastactive</span><span class="p">;</span> <span class="c1">//活跃时间
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="kt">conn_t</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ./4_server_chatroom_epoll 192.168.68.128 1234
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">ARGS_CHECK</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="nf">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span><span class="p">;</span> <span class="c1">//服务端地址的结构体初始化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//向ip结构体中传入ip地址和端口号参数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="nf">htons</span><span class="p">(</span><span class="nf">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
+</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="nf">inet_addr</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="nf">bind</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">addr</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;bind&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">listen</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>   <span class="c1">//DDOS攻击的点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="kt">conn_t</span> <span class="n">clientArr</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>  <span class="c1">//保存所有炼乳客户端的信息
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">curidx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//保存下一个炼乳客户端的下标
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">4096</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">epfd</span> <span class="o">=</span> <span class="nf">epoll_create</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">epoll_event</span> <span class="n">event</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">event</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">=</span> <span class="n">sockfd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">event</span><span class="p">.</span><span class="n">events</span> <span class="o">=</span> <span class="n">EPOLLIN</span><span class="p">;</span> <span class="c1">//sockfd accept 对应的也是读行为
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_ADD</span><span class="p">,</span> <span class="n">sockfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">event</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">time_t</span> <span class="n">curtime</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="k">struct</span> <span class="n">epoll_event</span> <span class="n">readySet</span><span class="p">[</span><span class="mi">1024</span><span class="p">];</span> <span class="c1">//聊天室弄得大一点
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">//select(100, &amp;rdset, NULL, NULL, NULL);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">readyNum</span> <span class="o">=</span> <span class="nf">epoll_wait</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">readySet</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>  <span class="c1">//等待最多1000毫秒
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">readyNum</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">==</span> <span class="n">sockfd</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">clientAddr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">socklen_t</span> <span class="n">clientAddrSize</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">);</span> <span class="c1">//该变量必须初始化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="kt">int</span> <span class="n">netfd</span> <span class="o">=</span>  <span class="nf">accept</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">clientAddr</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">clientAddrSize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;netfd = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">netfd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;client ip = %s, port = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                   <span class="nf">inet_ntoa</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">),</span> <span class="nf">ntohs</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_port</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                <span class="n">clientArr</span><span class="p">[</span><span class="n">curidx</span><span class="p">].</span><span class="n">netfd</span> <span class="o">=</span> <span class="n">netfd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="n">clientArr</span><span class="p">[</span><span class="n">curidx</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//1 表示存货 0表示已经断开
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">clientArr</span><span class="p">[</span><span class="n">curidx</span><span class="p">].</span><span class="n">lastactive</span> <span class="o">=</span> <span class="nf">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>  <span class="c1">//初始化活跃时间
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">event</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">=</span> <span class="n">netfd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="n">event</span><span class="p">.</span><span class="n">events</span> <span class="o">=</span> <span class="n">EPOLLIN</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_ADD</span><span class="p">,</span> <span class="n">netfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">event</span><span class="p">);</span>   <span class="c1">//将新连接加入到监听当中
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="o">++</span><span class="n">curidx</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// 从readySet[i].data.fd 读取数据转发给其它所有存活的客户端
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span><span class="c1">//客户端主动断开
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">curidx</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">netfd</span> <span class="o">==</span> <span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                            <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_DEL</span><span class="p">,</span> <span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">netfd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span> <span class="c1">//移除监听
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                            <span class="nf">close</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                            <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">curidx</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">netfd</span> <span class="o">==</span> <span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">continue</span><span class="p">;</span> <span class="c1">//如果是已经断开的 or 自己本身 就跳过
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">// 广播操作，发送给其它所有的活跃客户端
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="nf">send</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="nf">strlen</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span><span class="n">curidx</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span> <span class="o">==</span> <span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">lastactive</span> <span class="o">=</span> <span class="nf">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>    
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">        <span class="c1">//SELECT操作如下，如同大海捞针的轮询操作
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// for(int i = 0; i &lt; curidx; ++i){
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     if(clientArr[i].is_alive &amp;&amp; FD_ISSET(clientArr[i].netfd, &amp;rdset)){
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         //读取该客户端发送的消息并且转发给其它所有的客户端
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         bzero(buf, sizeof(buf));
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         ssize_t sret = recv(clientArr[i].netfd, buf, sizeof(buf), 0);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         if(sret == 0){
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             clientArr[i].is_alive = 0; //i号客户端已经终止
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             FD_CLR(clientArr[i].netfd, &amp;monitorset);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             close(clientArr[i].netfd);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         }
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         //转发给其他所有的客户端
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         for(int j = 0; j &lt; curidx; ++j){
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             if(j == i || clientArr[j].is_alive == 0){
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//                 continue; //发送的目标是自己或者发送的目标已经关闭，就继续
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             }
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             //相当于做一个广播的操作
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//            send(clientArr[j].netfd, buf, strlen(buf), 0);;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         }
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     }
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// }
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">curtime</span> <span class="o">=</span> <span class="nf">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;curtime = %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="nf">ctime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">curtime</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">       <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">curidx</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">           <span class="k">if</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">curtime</span> <span class="o">-</span> <span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">lastactive</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">               <span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">               <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_DEL</span><span class="p">,</span> <span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">               <span class="nf">close</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">           <span class="p">}</span>
+</span></span><span class="line"><span class="cl">       <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">close</span><span class="p">(</span><span class="n">sockfd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>断线重连问题尚未修复</p>
+<h2 id="非阻塞和阻塞的区别">非阻塞和阻塞的区别</h2>
+<p>read操作的阻塞状况</p>
+<table>
+  <thead>
+      <tr>
+          <th>类型</th>
+          <th>是否会阻塞</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>文件</td>
+          <td>不会阻塞</td>
+      </tr>
+      <tr>
+          <td>管道</td>
+          <td>会阻塞</td>
+      </tr>
+      <tr>
+          <td>stdin</td>
+          <td>会阻塞</td>
+      </tr>
+      <tr>
+          <td>socket</td>
+          <td>会阻塞</td>
+      </tr>
+  </tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">read</span><span class="p">(</span><span class="err">磁盘文件</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">ret</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ret为0则退出</span><span class="err">；</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">recv</span><span class="p">(</span><span class="n">socket</span><span class="p">);</span> <span class="err">一旦阻塞会陷入永久阻塞</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="把管道弄成非阻塞式">把管道弄成非阻塞式</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">setnonblock</span><span class="p">(</span><span class="kt">int</span> <span class="n">fd</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">flag</span> <span class="o">=</span> <span class="nf">fcntl</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">F_GETFL</span><span class="p">);</span> <span class="c1">//获取已经打开的fd的属性
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">flag</span> <span class="o">=</span> <span class="n">flag</span><span class="o">|</span><span class="n">O_NONBLOCK</span><span class="p">;</span> <span class="c1">//增加一个非阻塞属性
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="nf">fcntl</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">F_SETFL</span><span class="p">,</span> <span class="n">flag</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;fcntl&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">fd</span> <span class="o">=</span> <span class="nf">open</span><span class="p">(</span><span class="s">&#34;1.pipe&#34;</span><span class="p">,</span> <span class="n">O_RDONLY</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">setnonblock</span><span class="p">(</span><span class="n">fd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">1024</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">read</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;sret = %ld, buf = %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">sret</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span> 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 3, <span class="nv">buf</span> <span class="o">=</span> hel
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> lo
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span> 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span> 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span> 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 0, <span class="nv">buf</span> <span class="o">=</span> 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 0, <span class="nv">buf</span> <span class="o">=</span> 
+</span></span></code></pre></div><h2 id="5种io模型">5种IO模型</h2>
+<ul>
+<li>同步阻塞</li>
+<li>同步非阻塞</li>
+<li><strong>同步IO多路复用</strong></li>
+<li>异步IO</li>
+<li>信号驱动IO</li>
+</ul>
+<h2 id="epoll触发方式">EPOLL触发方式</h2>
+<p>socket怎么让epoll就绪：当socket被关闭或者读缓冲区有数据（水平触发）时，则认为读操作是就绪的</p>
+<ul>
+<li>
+<p>水平触发</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">数据量
+</span></span><span class="line"><span class="cl">  <span class="p">|</span>     _
+</span></span><span class="line"><span class="cl">  <span class="p">|</span>    /  <span class="se">\_</span>_
+</span></span><span class="line"><span class="cl">  <span class="p">|</span>___/_______<span class="se">\_</span>_____________t
+</span></span></code></pre></div><p>只要数据量大于0，不管数据量是上升、平稳、或者下降，都会进行水平触发</p>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
+</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> ni
+</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
+</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> sh
+</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
+</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> ig
+</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
+</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> eh
+</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
+</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> ao
+</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
+</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> re
+</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
+</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> n
+</span></span></code></pre></div><p>可以看到epoll默认情况下时水平触发的</p>
+<ul>
+<li>边缘触发的处理</li>
+</ul>
+<p>某些情况下使用边缘触发会更加公平</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">数据量
+</span></span><span class="line"><span class="cl">  <span class="p">|</span>     _
+</span></span><span class="line"><span class="cl">  <span class="p">|</span>    /<span class="p">|</span>  <span class="se">\_</span>_
+</span></span><span class="line"><span class="cl">  <span class="p">|</span>___/_<span class="p">|</span>______<span class="se">\_</span>_____________t
+</span></span><span class="line"><span class="cl">       <span class="p">|</span>
+</span></span><span class="line"><span class="cl"> 仅在该阶段进行触发
+</span></span></code></pre></div><p>仅当数据处于上升沿时，才会导致边缘触发</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">event</span><span class="p">.</span><span class="n">events</span> <span class="o">=</span> <span class="n">EPOLLIN</span><span class="o">|</span><span class="n">EPOLLET</span><span class="p">;</span> <span class="c1">//读数据。增加边缘触发属性
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
+</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> ni
+</span></span></code></pre></div><p>如果这样操作</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">ssize_t</span> <span class="n">sret</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;buf = %s </span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>虽然能够收取到所有的消息，但是会阻塞在recv函数里</p>
+<p>用while循环配合非阻塞</p>
+<p>因此需要在recv中加上MSG_DONTWAIT参数（非阻塞）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">   <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">   <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">MSG_DONTWAIT</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">   <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;sret = %ld, buf = %s </span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">sret</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">   <span class="k">if</span><span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">       <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl">   <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">       <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;hehe</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="k">goto</span> <span class="n">end</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ni 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> sh 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ig 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ah 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ao 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> re 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> n
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span>  
+</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ni 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ha 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> oh 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ua 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> i
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span>  
+</span></span></code></pre></div>
+    </div>
+</article>
+
+
+<link rel="stylesheet" href="/css/image-modal.css">
+<script src="/js/image-zoom.js"></script>
+
+                <footer>
+  <p style="display: flex; justify-content: space-between; align-items: center; margin: 0;">
+    <span>&copy; 2025 <a href="https://looechao.com/" style="color: inherit; text-decoration: none;">looechao</a>. All rights reserved.</span>
+    <a href="/changelog" style="color: inherit; text-decoration: none;">Changelog</a>
+  </p>
+</footer>
+
+            </main>
+            
+<div class="comments-wrapper">
+    <div id="giscus-container" class="comments-section"></div>
+    <script src="https://giscus.app/client.js" data-repo="looechao/hugo-comments"
+        data-repo-id="R_kgDOLbUd7g" data-category="Announcements"
+        data-category-id="DIC_kwDOLbUd7s4Cum0P"
+        data-mapping="pathname" data-strict="0"
+        data-reactions-enabled="true"
+        data-emit-metadata="false" data-input-position="top"
+        data-theme="light"
+        data-lang="en" crossorigin="anonymous" async>
+        </script>
+</div>
+
+        </div>
+    </div>
+</body>
+
+</html>

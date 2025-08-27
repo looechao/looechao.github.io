@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reasoning Agent的来龙去脉 | Looechao</title>
+    
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    
+    <link rel="preload" href="/css/components/right-panel.css" as="style">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components/sidebar.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+    <link rel="stylesheet" href="/css/components/right-panel.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    <link rel="stylesheet" href="/css/pages/single.css">
+    
+    
+    
+    
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9W970VLJ6X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9W970VLJ6X');
+    </script>
+    
+</head>
+
+<body>
+    <div class="site-container">
+        <aside class="site-sidebar">
+            <aside class="sidebar">
+    
+    <div class="profile">
+        <a href="https://looechao.com/" class="avatar">
+            
+            <img src="/images/profile.png" alt="Looe" />
+            
+        </a>
+        <div class="profile-text">
+            <p class="name">Looe</p>
+            <p class="bio">looechao</p>
+        </div>
+    </div>
+
+    
+    <nav class="nav">
+        <a href="https://looechao.com/" >BLOG</a>
+        <a href="/about" >ABOUT</a>
+    </nav>
+
+    
+    <div class="site--icons">
+        
+        <a href="mailto:lu.chao.personal@gmail.com" target="_blank" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
+                <g id="evaEmailFill0">
+                    <g id="evaEmailFill1">
+                        <path id="evaEmailFill2" fill="currentColor"
+                            d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm0 2l-6.5 4.47a1 1 0 0 1-1 0L5 6Z" />
+                    </g>
+                </g>
+            </svg> </a>
+        
+        
+        <a href="https://www.github.com/looechao" target="_blank" title="Github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 20 20">
+                <path fill="currentColor"
+                    d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799zm4.526-4.683c.149-.365.155-2.439-.635-4.426c0 0-1.811.199-4.551 2.08c-.575-.16-1.548-.238-2.519-.238c-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002l1.732-.002c1.506 0 7.467-.115 7.467-7.301c0-1.652-.566-2.863-1.494-3.871zm-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115c0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531c.735.676 1.045 1.49 1.045 2.369c0 3.666-2.937 4.115-6.709 4.115zm-3.207-5.606c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801c.719 0 1.301-.807 1.301-1.801c0-.992-.582-1.799-1.301-1.799z" />
+            </svg>
+        </a>
+        
+        
+    </div>
+</aside>
+        </aside>
+        <aside class="site-right-panel">
+            <div class="right-panel">
+    <div class="panel-module tags-module">
+        <h3 class="module-title">Tags</h3>
+        <div class="tags-cloud">
+            
+            
+            
+            <a href="https://looechao.com/tags/2024weekly/" class="tag-item tag-alphanumeric" data-count="4">
+                2024Weekly<span class="tag-count">4</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/2025weekly/" class="tag-item tag-alphanumeric" data-count="1">
+                2025Weekly<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/agent/" class="tag-item tag-alphanumeric" data-count="1">
+                Agent<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/bfs/" class="tag-item tag-alphanumeric" data-count="1">
+                BFS<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/c/c&#43;&#43;/" class="tag-item tag-alphanumeric" data-count="17">
+                C/C&#43;&#43;<span class="tag-count">17</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/epoll/" class="tag-item tag-alphanumeric" data-count="1">
+                EPOLL<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/hexo/" class="tag-item tag-alphanumeric" data-count="1">
+                Hexo<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/lectures/" class="tag-item tag-alphanumeric" data-count="1">
+                Lectures<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/leetcode/" class="tag-item tag-alphanumeric" data-count="10">
+                LeetCode<span class="tag-count">10</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/linux/" class="tag-item tag-alphanumeric" data-count="4">
+                Linux<span class="tag-count">4</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/llm/" class="tag-item tag-alphanumeric" data-count="1">
+                Llm<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/microsoft-store/" class="tag-item tag-alphanumeric" data-count="1">
+                Microsoft Store<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/omegle/" class="tag-item tag-alphanumeric" data-count="1">
+                Omegle<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/oop/" class="tag-item tag-alphanumeric" data-count="1">
+                OOP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/select/" class="tag-item tag-alphanumeric" data-count="1">
+                SELECT<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/sso/" class="tag-item tag-alphanumeric" data-count="1">
+                SSO<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/string/" class="tag-item tag-alphanumeric" data-count="1">
+                String<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/tcp/" class="tag-item tag-alphanumeric" data-count="1">
+                TCP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/udp/" class="tag-item tag-alphanumeric" data-count="1">
+                UDP<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/xbox360/" class="tag-item tag-alphanumeric" data-count="1">
+                Xbox360<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%8A%80%E6%9C%AF/" class="tag-item tag-chinese" data-count="8">
+                技术<span class="tag-count">8</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%94%9F%E6%B4%BB/" class="tag-item tag-chinese" data-count="8">
+                生活<span class="tag-count">8</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%88%90%E9%95%BF/" class="tag-item tag-chinese" data-count="6">
+                成长<span class="tag-count">6</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%95%B0%E7%A0%81/" class="tag-item tag-chinese" data-count="3">
+                数码<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%9D%82%E8%B0%88/" class="tag-item tag-chinese" data-count="3">
+                杂谈<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%AC%94%E8%AE%B0/" class="tag-item tag-chinese" data-count="3">
+                笔记<span class="tag-count">3</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%84%9F%E6%82%9F/" class="tag-item tag-chinese" data-count="2">
+                感悟<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" class="tag-item tag-chinese" data-count="2">
+                网络编程<span class="tag-count">2</span>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <a href="https://looechao.com/tags/%E4%B9%90%E8%A7%82%E4%B8%BB%E4%B9%89/" class="tag-item tag-chinese" data-count="1">
+                乐观主义<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/" class="tag-item tag-chinese" data-count="1">
+                位运算符<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%81%A5%E5%BA%B7/" class="tag-item tag-chinese" data-count="1">
+                健康<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%86%85%E5%8D%B7/" class="tag-item tag-chinese" data-count="1">
+                内卷<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%88%86%E6%9E%90/" class="tag-item tag-chinese" data-count="1">
+                分析<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%8C%BB%E7%96%97/" class="tag-item tag-chinese" data-count="1">
+                医疗<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/" class="tag-item tag-chinese" data-count="1">
+                即时通信系统<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%93%B2%E7%90%86/" class="tag-item tag-chinese" data-count="1">
+                哲理<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%B7%A5%E5%85%B7/" class="tag-item tag-chinese" data-count="1">
+                工具<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" class="tag-item tag-chinese" data-count="1">
+                年度总结<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%88%90%E5%B0%B1/" class="tag-item tag-chinese" data-count="1">
+                成就<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/" class="tag-item tag-chinese" data-count="1">
+                极简主义<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%B5%B7%E9%87%8F%E8%BF%9E%E6%8E%A5%E5%A4%84%E7%90%86/" class="tag-item tag-chinese" data-count="1">
+                海量连接处理<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E9%99%B7%E9%98%B1/" class="tag-item tag-chinese" data-count="1">
+                消费主义陷阱<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%A6%85/" class="tag-item tag-chinese" data-count="1">
+                禅<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E7%AE%97%E6%B3%95/" class="tag-item tag-chinese" data-count="1">
+                算法<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%82%96%E6%B4%AA%E6%B6%9B/" class="tag-item tag-chinese" data-count="1">
+                肖洪涛<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%A7%82%E5%AF%9F/" class="tag-item tag-chinese" data-count="1">
+                观察<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%A7%84%E5%88%92/" class="tag-item tag-chinese" data-count="1">
+                规划<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%B7%A8%E5%B9%B4/" class="tag-item tag-chinese" data-count="1">
+                跨年<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E8%BD%AC%E8%BD%BD/" class="tag-item tag-chinese" data-count="1">
+                转载<span class="tag-count">1</span>
+            </a>
+            
+            
+            
+            <a href="https://looechao.com/tags/%E9%98%85%E8%AF%BB/" class="tag-item tag-chinese" data-count="1">
+                阅读<span class="tag-count">1</span>
+            </a>
+            
+            
+        </div>
+    </div>
+    
+    
+</div>
+        </aside>
+        <div class="site-middle">
+            <main class="site-content">
+                
+<article class="single-article">
+    <div class="article-header">
+        <h1 class="article-title">Reasoning Agent的来龙去脉</h1>
+        <div class="article-meta">
+            <time class="article-date">Oct 24, 2024</time>
+            
+            <div class="article-tags">
+                
+                <a href="/tags/lectures" class="article-tag">Lectures</a>
+                
+                <a href="/tags/agent" class="article-tag">Agent</a>
+                
+                <a href="/tags/llm" class="article-tag">llm</a>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="article-content">
+        <h2 id="llm-agent-的三个层次">LLM agent 的三个层次</h2>
+<img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-1.png" alt="3-level" style="zoom: 50%;" />
+<ol>
+<li>
+<p>Text agent</p>
+<blockquote>
+<p>观察和响应文本</p>
+<p>eg. ELIZA、LSTM-DQN</p></blockquote>
+<p>最早的ChatBot</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/ELIZA_conversation.jpg" alt="Eliza"></p>
+</li>
+<li>
+<p>LLM agent</p>
+<blockquote>
+<p>仅仅使用LLM做出相应</p>
+<p>eg. SayCan、Language Planner</p></blockquote>
+</li>
+<li>
+<p>Reasoning agent</p>
+<blockquote>
+<p>为LLM加上执行动作和更强的推理能力，Resoning 和 Action</p>
+<p>eg. ReAct, AutoGPT</p></blockquote>
+</li>
+</ol>
+<h2 id="关于question-answering的问题">关于Question answering的问题</h2>
+<ol>
+<li>
+<p>需要推理</p>
+<blockquote>
+<p>Q: 有人说真话，有人说假话，根据他们的话来判断谁说了真话。例如：“A说‘B在撒谎’，B说‘C在撒谎’，C说‘A在撒谎’。其中只有一个人说了真话，谁说了真话？</p>
+<p>A: 需要推理</p></blockquote>
+</li>
+<li>
+<p>需要行动（搜索，计算，编程）</p>
+<blockquote>
+<p>Q: 一个袋子里有5个红球和3个蓝球，随机抽取一个球，抽到红球的概率是多少？</p>
+<p>Q: 需要计算</p></blockquote>
+</li>
+<li>
+<p>需要新知识</p>
+<blockquote>
+<p>Q: 今年英国首相是谁</p>
+<p>A: 需要最新资料</p></blockquote>
+</li>
+</ol>
+<h3 id="推理和行动的手段">推理和行动的手段</h3>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+    participant User
+    participant Agent
+    participant Tools
+    
+    User-&gt;&gt;Agent: 提出问题
+    loop ReAct Process
+        Agent-&gt;&gt;Agent: 推理思考
+        Agent-&gt;&gt;Tools: 执行行动
+        Tools-&gt;&gt;Agent: 返回结果
+        Agent-&gt;&gt;Agent: 分析结果
+    end
+    Agent-&gt;&gt;User: 返回最终答案
+</code></pre><h4 id="推理-reasoning"><strong>推理</strong> Reasoning</h4>
+<p>主要是通过思维链(Chain of thoughts)增强可持续时间</p>
+<img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-2.png" style="zoom:50%;" />
+<h4 id="行动-acting"><strong>行动</strong> Acting</h4>
+<img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-3.png" alt="Acting" style="zoom:50%;" />
+<ol>
+<li>
+<p>RAG技术</p>
+<blockquote>
+<p>LLM 通过获得额外的最新资料或者retriver来产生新回答</p></blockquote>
+</li>
+<li>
+<p>Tool Use</p>
+<blockquote>
+<ol>
+<li>调用搜索引擎，计算器</li>
+<li>其它特殊任务模型，例如翻译工具</li>
+<li>API接口，例如查询天气接口等</li>
+</ol></blockquote>
+</li>
+</ol>
+<h3 id="让agent的推理和行动协同">让Agent的推理和行动协同</h3>
+<p>只用推理无法获得新信息，只用行动又无法再一次推理</p>
+<p>推理可以帮助行动，行动又可以帮助推理，这种思路很像人类解决问题的方法，将两者结合使用可以协同增效</p>
+<p>例如 zero-shot ReAct Prompt：</p>
+<blockquote>
+<p>你现在是一个可以使用两种action的代理</p>
+<ul>
+<li>搜索【关键词】：用谷歌搜索关键词，也可以用它做数学计算</li>
+<li>结束【回答】：返回回答</li>
+</ul>
+<p>你的生成段落应该遵循如下的格式</p>
+<ul>
+<li>推理思考：观察和分析从搜索行为中得到的信息</li>
+<li>行动：你可以使用的action</li>
+</ul></blockquote>
+<h3 id="long-term-memory">Long-Term memory</h3>
+<p>llm的记忆一般是很短的，像金鱼一样只有七秒的记忆，如果让llm生成一段程序，但是有错误，那么短期记忆的大模型再修改的过程就无法具备反思的能力，更长的记忆可以让llm的分析和决策能力更强</p>
+<p>可以看论文cognitive architectures for language agents(CoALA)</p>
+<blockquote>
+<p>Memory</p>
+<p>Action Space</p>
+<p>Decision Making</p></blockquote>
+<p>这样的架构可以构建出有很强的创造力的Agent</p>
+<h3 id="和human的区别">和human的区别</h3>
+<p>ReAct agent的思考和行动方式非常像真正的人类行为，但是将其应用到生产活动中还有需要调整的地方</p>
+<p>例如人类可能更习惯VSCode这样的交互界面，但是对于digital的agent来说，这样的界面接口可能并不友好</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph LR
+    A[Interaction Models] --&gt; B[Human Interface]
+    A --&gt; C[Agent Interface]
+    
+    B --&gt; B1[Visual IDE]
+    B --&gt; B2[GUI Tools]
+    
+    C --&gt; C1[API Calls]
+    C --&gt; C2[Command Line]
+    C --&gt; C3[Direct Text]
+</code></pre><h2 id="参考">参考</h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=RM6ZArd2nVc">CS 194/294-196 (LLM Agents) - Lecture 2, Shunyu Yao</a></li>
+</ol>
+
+    </div>
+</article>
+
+
+<link rel="stylesheet" href="/css/image-modal.css">
+<script src="/js/image-zoom.js"></script>
+
+                <footer>
+  <p style="display: flex; justify-content: space-between; align-items: center; margin: 0;">
+    <span>&copy; 2025 <a href="https://looechao.com/" style="color: inherit; text-decoration: none;">looechao</a>. All rights reserved.</span>
+    <a href="/changelog" style="color: inherit; text-decoration: none;">Changelog</a>
+  </p>
+</footer>
+
+            </main>
+            
+<div class="comments-wrapper">
+    <div id="giscus-container" class="comments-section"></div>
+    <script src="https://giscus.app/client.js" data-repo="looechao/hugo-comments"
+        data-repo-id="R_kgDOLbUd7g" data-category="Announcements"
+        data-category-id="DIC_kwDOLbUd7s4Cum0P"
+        data-mapping="pathname" data-strict="0"
+        data-reactions-enabled="true"
+        data-emit-metadata="false" data-input-position="top"
+        data-theme="light"
+        data-lang="en" crossorigin="anonymous" async>
+        </script>
+</div>
+
+        </div>
+    </div>
+</body>
+
+</html>

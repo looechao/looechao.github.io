@@ -5,7 +5,7 @@
     <loc>https://looechao.com/</loc>
     <lastmod>2025-06-22T15:01:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/</loc>
+    <loc>https://looechao.com/posts/</loc>
     <lastmod>2025-06-22T15:01:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/</loc>
@@ -20,7 +20,7 @@
     <loc>https://looechao.com/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2025-06-22T15:01:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2025/new-pc/</loc>
+    <loc>https://looechao.com/posts/2025/new-pc/</loc>
     <lastmod>2025-06-22T15:01:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/2025weekly/</loc>
@@ -44,7 +44,7 @@
     <loc>https://looechao.com/tags/%E6%88%90%E9%95%BF/</loc>
     <lastmod>2025-02-06T15:01:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2025/imperfection/</loc>
+    <loc>https://looechao.com/posts/2025/imperfection/</loc>
     <lastmod>2025-02-06T15:01:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/%E6%9D%82%E8%B0%88/</loc>
@@ -56,7 +56,7 @@
     <loc>https://looechao.com/tags/%E5%8C%BB%E7%96%97/</loc>
     <lastmod>2025-01-05T15:01:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2025/gastroenteritis/</loc>
+    <loc>https://looechao.com/posts/2025/gastroenteritis/</loc>
     <lastmod>2025-01-05T15:01:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/agent/</loc>
@@ -68,13 +68,13 @@
     <loc>https://looechao.com/tags/llm/</loc>
     <lastmod>2024-10-24T15:01:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/from-text-agent-to-reasoning-agent/</loc>
+    <loc>https://looechao.com/posts/2024/from-text-agent-to-reasoning-agent/</loc>
     <lastmod>2024-10-24T15:01:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/weekly/2024/2024-fall/</loc>
     <lastmod>2024-09-08T20:50:13+23:01</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/linux-setup/</loc>
+    <loc>https://looechao.com/posts/2024/linux-setup/</loc>
     <lastmod>2024-08-02T15:38:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/linux/</loc>
@@ -86,13 +86,13 @@
     <loc>https://looechao.com/tags/oop/</loc>
     <lastmod>2024-07-24T21:31:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/cpp-oop-base/</loc>
+    <loc>https://looechao.com/posts/2024/cpp-oop-base/</loc>
     <lastmod>2024-07-24T21:31:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/bfs/</loc>
     <lastmod>2024-07-21T14:57:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/algorithm-bfs/</loc>
+    <loc>https://looechao.com/posts/2024/algorithm-bfs/</loc>
     <lastmod>2024-07-21T14:57:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/%E7%AE%97%E6%B3%95/</loc>
@@ -107,7 +107,7 @@
     <loc>https://looechao.com/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-07-10T22:53:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/string-sso-strategy/</loc>
+    <loc>https://looechao.com/posts/2024/string-sso-strategy/</loc>
     <lastmod>2024-07-10T22:53:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/%E5%88%86%E6%9E%90/</loc>
@@ -119,7 +119,7 @@
     <loc>https://looechao.com/tags/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2024-07-05T10:33:13+23:01</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/past-ten-years/</loc>
+    <loc>https://looechao.com/posts/2024/past-ten-years/</loc>
     <lastmod>2024-07-05T10:33:13+23:01</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/epoll/</loc>
@@ -134,7 +134,7 @@
     <loc>https://looechao.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2024-06-17T15:38:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/linux-network-programming-02-epoll/</loc>
+    <loc>https://looechao.com/posts/2024/linux-network-programming-02-epoll/</loc>
     <lastmod>2024-06-17T15:38:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/tcp/</loc>
@@ -146,25 +146,25 @@
     <loc>https://looechao.com/tags/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2024-06-16T15:38:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/linux-network-programming-01-tcp/</loc>
+    <loc>https://looechao.com/posts/2024/linux-network-programming-01-tcp/</loc>
     <lastmod>2024-06-16T15:38:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/weekly/2024/2024-summer/</loc>
     <lastmod>2024-06-09T20:50:13+23:01</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/linux-01/</loc>
+    <loc>https://looechao.com/posts/2024/linux-01/</loc>
     <lastmod>2024-05-18T15:38:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/c-data-structure-algorithm/</loc>
+    <loc>https://looechao.com/posts/2024/c-data-structure-algorithm/</loc>
     <lastmod>2024-05-10T22:53:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/c-notes-02/</loc>
+    <loc>https://looechao.com/posts/2024/c-notes-02/</loc>
     <lastmod>2024-05-03T15:38:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/c-notes-01/</loc>
+    <loc>https://looechao.com/posts/2024/c-notes-01/</loc>
     <lastmod>2024-04-28T22:53:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/bitwise-operators/</loc>
+    <loc>https://looechao.com/posts/2024/bitwise-operators/</loc>
     <lastmod>2024-04-24T21:09:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
@@ -173,13 +173,13 @@
     <loc>https://looechao.com/tags/leetcode/</loc>
     <lastmod>2024-04-23T20:25:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/coding-24-04-02-leetcode-solution-doc/</loc>
+    <loc>https://looechao.com/posts/2024/coding-24-04-02-leetcode-solution-doc/</loc>
     <lastmod>2024-04-23T20:25:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/coding-24-04-01-wangdao-solution-doc/</loc>
+    <loc>https://looechao.com/posts/2024/coding-24-04-01-wangdao-solution-doc/</loc>
     <lastmod>2024-04-14T20:25:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/cooltech/</loc>
+    <loc>https://looechao.com/posts/2024/cooltech/</loc>
     <lastmod>2024-04-11T21:50:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/</loc>
@@ -188,40 +188,40 @@
     <loc>https://looechao.com/tags/%E7%A6%85/</loc>
     <lastmod>2024-04-05T21:50:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/zenlife/</loc>
+    <loc>https://looechao.com/posts/2024/zenlife/</loc>
     <lastmod>2024-04-05T21:50:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/%E9%98%85%E8%AF%BB/</loc>
     <lastmod>2024-04-05T21:50:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/to-do-list/</loc>
+    <loc>https://looechao.com/posts/2024/to-do-list/</loc>
     <lastmod>2024-04-02T21:09:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/%E8%A7%84%E5%88%92/</loc>
     <lastmod>2024-04-02T21:09:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/coding-24-03-08/</loc>
+    <loc>https://looechao.com/posts/2024/coding-24-03-08/</loc>
     <lastmod>2024-03-21T10:25:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/coding-24-03-07/</loc>
+    <loc>https://looechao.com/posts/2024/coding-24-03-07/</loc>
     <lastmod>2024-03-20T16:30:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/microsoft-store/</loc>
     <lastmod>2024-03-19T14:40:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/msstore/</loc>
+    <loc>https://looechao.com/posts/2024/msstore/</loc>
     <lastmod>2024-03-19T14:40:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2024-03-19T14:40:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/coding-24-03-06/</loc>
+    <loc>https://looechao.com/posts/2024/coding-24-03-06/</loc>
     <lastmod>2024-03-18T17:35:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/coding-24-03-05/</loc>
+    <loc>https://looechao.com/posts/2024/coding-24-03-05/</loc>
     <lastmod>2024-03-17T11:28:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/involution/</loc>
+    <loc>https://looechao.com/posts/2024/involution/</loc>
     <lastmod>2024-03-15T20:50:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/%E5%86%85%E5%8D%B7/</loc>
@@ -230,37 +230,37 @@
     <loc>https://looechao.com/tags/%E4%B9%90%E8%A7%82%E4%B8%BB%E4%B9%89/</loc>
     <lastmod>2024-03-14T08:50:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/positiveornegative/</loc>
+    <loc>https://looechao.com/posts/2024/positiveornegative/</loc>
     <lastmod>2024-03-14T08:50:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/before22/</loc>
+    <loc>https://looechao.com/posts/2024/before22/</loc>
     <lastmod>2024-03-13T21:50:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2024-03-13T21:50:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/coding-24-03-04/</loc>
+    <loc>https://looechao.com/posts/2024/coding-24-03-04/</loc>
     <lastmod>2024-03-12T14:57:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/coding-24-03-03/</loc>
+    <loc>https://looechao.com/posts/2024/coding-24-03-03/</loc>
     <lastmod>2024-03-11T14:57:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/weekly/2024/2024-spring/</loc>
     <lastmod>2024-03-10T21:50:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/coding-24-03-02/</loc>
+    <loc>https://looechao.com/posts/2024/coding-24-03-02/</loc>
     <lastmod>2024-03-10T15:53:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/coding-24-03-01/</loc>
+    <loc>https://looechao.com/posts/2024/coding-24-03-01/</loc>
     <lastmod>2024-03-07T14:57:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/%E5%93%B2%E7%90%86/</loc>
     <lastmod>2024-03-03T21:31:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/quote/</loc>
+    <loc>https://looechao.com/posts/2024/quote/</loc>
     <lastmod>2024-03-03T21:31:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2023/2023-lastweek/</loc>
+    <loc>https://looechao.com/posts/2023/2023-lastweek/</loc>
     <lastmod>2023-12-31T20:50:13+23:01</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/omegle/</loc>
@@ -272,13 +272,13 @@
     <loc>https://looechao.com/tags/%E8%B7%A8%E5%B9%B4/</loc>
     <lastmod>2023-12-31T20:50:13+23:01</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2023/xbox360ftp/</loc>
+    <loc>https://looechao.com/posts/2023/xbox360ftp/</loc>
     <lastmod>2023-02-25T21:31:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/hexo/</loc>
     <lastmod>2023-02-25T21:31:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2023/hexo-note/</loc>
+    <loc>https://looechao.com/posts/2023/hexo-note/</loc>
     <lastmod>2023-02-25T21:31:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/tags/xbox360/</loc>
@@ -290,7 +290,7 @@
     <loc>https://looechao.com/tags/%E6%88%90%E5%B0%B1/</loc>
     <lastmod>2022-01-01T21:09:13+08:00</lastmod>
   </url><url>
-    <loc>https://looechao.com/post/2024/honor/</loc>
+    <loc>https://looechao.com/posts/2024/honor/</loc>
     <lastmod>2022-01-01T21:09:13+08:00</lastmod>
   </url><url>
     <loc>https://looechao.com/about/</loc>
