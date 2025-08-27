@@ -44,12 +44,12 @@ weight = 10
 
 [[menus.main]]
 name = 'Posts'
-pageRef = '/post'
+pageRef = '/posts'
 weight = 20
 
 [[menus.main]]
 name = 'Archive'
-pageRef = '/post'
+pageRef = '/posts'
 weight = 25
 
 [[menus.main]]
