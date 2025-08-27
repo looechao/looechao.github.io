@@ -11,7 +11,11 @@ layout = "minimal"
 
 ### Changelog
 
-##### 2025-08-25
+##### 2025-08-27
+
+- 新增图片弹窗
+
+##### 2025-08-26
 
 - 修复文章页面 Tags 栏加载过慢的问题
 - 评论系统从 Gitalk 迁移到 Giscus
@@ -20,4 +24,4 @@ layout = "minimal"
 
 ##### 2025-08-25
 
-- 从  github-style 主题换到本主题
+- 从  github-style 切换到 lucid
