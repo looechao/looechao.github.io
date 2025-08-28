@@ -8,6 +8,8 @@ tags = [ "感悟", "生活", "杂谈", "成长"]
 
 +++
 
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3yjCVb3jzXx6vQoUTMKxsd?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 偶然从友邻的剪报中发现了*蜜獾吃书* 的一期节目[^1]，系统地讲述了很多很具体的克服完美主义的方法，堪称提高执行力的秘籍，遂即简单的整理了一下：
 
 #### 完美主义怎么了？
