@@ -23,10 +23,10 @@ layout = "minimal"
 快速了解我：
 
 - `玩意` [Findoria](https://github.com/looechao/Findoria) | [YoutubeAutoSubscribe](https://chromewebstore.google.com/detail/youtube-auto-subscribe/pgidfiofpgjbnfnjfplkloacifhfnomi)
-- `数码` [时代的眼泪](https://looechao.github.io/post/2024/cooltech/) | [AuroraAssetEditor使用指南](https://looechao.github.io/post/2023/xbox360ftp/)
+- `数码` [时代的眼泪](https://looechao.com/posts/2024/cooltech/) | [AuroraAssetEditor使用指南](https://looechao.com/posts/2023/xbox360ftp/)
 
-- `生活` [平淡生活中的刺](https://looechao.github.io/post/2025/gastroenteritis/) | [不完美宣言](https://looechao.github.io/post/2025/imperfection/)
-- `读书` [禅与极简生活艺术](https://looechao.github.io/post/2024/zenlife/) | [关于内卷的思考](https://looechao.github.io/post/2024/involution/)
+- `生活` [平淡生活中的刺](https://looechao.com/posts/2025/gastroenteritis/) | [不完美宣言](https://looechao.com/posts/2025/imperfection/)
+- `读书` [禅与极简生活艺术](https://looechao.com/posts/2024/zenlife/) | [关于内卷的思考](https://looechao.com/posts/2024/involution/)
 
 ## TRIP
 
