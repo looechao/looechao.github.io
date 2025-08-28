@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Looechao</title>
+    <title>Categories on looechao</title>
     <link>https://looechao.com/categories/</link>
-    <description>Recent content in Categories on Looechao</description>
+    <description>Recent content in Categories on looechao</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <atom:link href="https://looechao.com/categories/index.xml" rel="self" type="application/rss+xml" />
