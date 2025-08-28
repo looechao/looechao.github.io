@@ -3,7 +3,7 @@ buildFuture = true
 languageCode = 'zh-cn'
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-title = 'Looechao'
+title = 'looechao'
 theme = "lucid"
 [markup]
 defaultMarkdownHandler = "goldmark"
