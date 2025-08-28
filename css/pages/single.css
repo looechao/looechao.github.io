@@ -15,7 +15,7 @@
     /* 背景颜色 */
     --bg-light-shade: #f8f9fa;
     --bg-code: #f5f5f5;
-    
+
     /* 代码块颜色 */
     --code-text-color: #495057;
     --code-border-color: #e9ecef;
@@ -163,8 +163,11 @@ body.dark-mode {
 .article-content img {
     max-width: 100%;
     height: auto;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
+    /* 上下1.5rem，左右自动 */
     border-radius: 10px;
+    display: block;
+    /* 让图片变成块级元素，margin auto 才生效 */
 }
 
 /* 引用块 */
