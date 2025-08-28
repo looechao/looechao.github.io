@@ -10,10 +10,14 @@ layout = "minimal"
 +++
 ## ABOUT
 
-- Software Developer, always getting my hands dirty.	
+- Dirty Hands Dev.
 
 - 喜欢书、影、音、游、电子产品
+
 - ID灵感来源是自己最爱的漫画  _[kylooe 憂鬱的蜻蜓：告別彩虹](https://neodb.social/book/5gkFtRhMS8G37m8Sq283hq)_
+
+  {{<neodb "https://neodb.social/book/5gkFtRhMS8G37m8Sq283hq">}}
+
 - 消化内容、用心创作
 
 快速了解我：
