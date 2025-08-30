@@ -163,11 +163,41 @@ body.dark-mode {
 .article-content img {
     max-width: 100%;
     height: auto;
-    margin: 1.5rem auto;
-    /* 上下1.5rem，左右自动 */
+    margin: 1rem 0;
     border-radius: 10px;
-    display: block;
-    /* 让图片变成块级元素，margin auto 才生效 */
+}
+
+/* 支持HTML align属性 */
+.article-content p[align="left"] { text-align: left; }
+.article-content p[align="center"] { text-align: center; }
+.article-content p[align="right"] { text-align: right; }
+
+/* neodb卡片高度优化 */
+.article-content .db-card-subject {
+    min-height: 150px !important;
+    align-items: center !important;
+}
+
+.article-content .db-card-post {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.article-content .db-card-post img {
+    margin: 0 !important;
+    max-width: none !important;
+    width: 100px !important;
+    height: 150px !important;
+    border-radius: 4px !important;
+    object-fit: cover !important;
+}
+
+.article-content .db-card-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    min-height: 150px !important;
 }
 
 /* 引用块 */
@@ -362,4 +392,78 @@ body.dark-mode {
     .article-nav-next {
         text-align: left;
     }
+}
+
+/* ==========================================================================
+   图片增强样式系统
+   ========================================================================== */
+
+/* 基础figcaption样式 */
+.article-content figure figcaption {
+    font-style: italic !important;
+    font-size: 0.9rem !important;
+    color: #666 !important;
+    margin-top: 0.5rem !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+    font-weight: 300 !important;
+}
+
+/* 图片大小控制 */
+.article-content figure.image-tiny img   { max-width: 15% !important; width: 15% !important; height: auto; }
+.article-content figure.image-small img  { max-width: 25% !important; width: 25% !important; height: auto; }
+.article-content figure.image-medium img { max-width: 50% !important; width: 50% !important; height: auto; }
+.article-content figure.image-large img  { max-width: 75% !important; width: 75% !important; height: auto; }
+
+/* 图片对齐样式 */
+.article-content figure.center-image {
+    text-align: center;
+    margin: 0rem;
+    display: block;
+}
+
+.article-content figure.center-image img {
+    display: block;
+    margin: 0 auto;
+}
+
+.article-content figure.left-image {
+    text-align: left;
+    margin: 1.5rem 0;
+}
+
+.article-content figure.right-image {
+    text-align: right;
+    margin: 1.5rem 0;
+}
+
+/* 文字环绕样式 */
+.article-content figure.float-left {
+    float: left;
+    margin: 0;
+    max-width: 50%;
+}
+
+.article-content figure.float-left img {
+    margin: 0;
+    display: block;
+}
+
+.article-content figure.float-right {
+    float: right;
+    margin: 0;
+    max-width: 50%;
+}
+
+.article-content figure.float-right img {
+    margin: 0 auto;
+    display: block;
+}
+
+/* 浮动图片caption调整 */
+.article-content figure.float-left figcaption,
+.article-content figure.float-right figcaption {
+    width: 100% !important;
+    max-width: none !important;
+    margin-top: 0rem !important;
 }
