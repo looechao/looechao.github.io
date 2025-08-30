@@ -30,7 +30,7 @@ layout = "minimal"
 
 ## TRIP
 
-<div style="position: relative; width: 100%; max-width: 900px; padding-bottom: 45%; height: 0; overflow: hidden;">
+<div style="position: relative; width: 69%; padding-bottom: 75%; height: 0; overflow: hidden;">
   <iframe 
     src="https://www.google.com/maps/d/u/0/embed?mid=1gRnLdjkCbjBbVaMKE7TA-bBVkqvpn1E&ehbc=2E312F" 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
