@@ -11,9 +11,10 @@ layout = "minimal"
 
 ### Changelog
 
-##### 2025-08-29
+##### 2025-08-31
 
 - 支持 NeoDB 书影音卡片
+- 添加 Miles (Running_Page) 
 
 ##### 2025-08-27
 
@@ -28,4 +29,4 @@ layout = "minimal"
 
 ##### 2025-08-25
 
-- 从  github-style 切换到 lucid
+- lucid theme.
