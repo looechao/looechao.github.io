@@ -8,7 +8,7 @@
 .list-container {
     width: 95%;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
 }
 
 /* 章节标题
@@ -127,7 +127,7 @@ body.dark-mode .post-item:hover {
    -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
     .list-container {
-        padding: 1.5rem 1rem;
+        padding: 0rem 1rem;
     }
     
     .section-title {

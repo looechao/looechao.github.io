@@ -521,7 +521,14 @@
 
     <div class="article-content">
         <h2 id="llm-agent-的三个层次">LLM agent 的三个层次</h2>
-<img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-1.png" alt="3-level" style="zoom: 50%;" />
+<p><figure class="image-large center-image">
+    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-1.png" 
+         alt="" 
+         
+         class="zoomable">
+    
+    
+</figure></p>
 <ol>
 <li>
 <p>Text agent</p>
@@ -529,7 +536,7 @@
 <p>观察和响应文本</p>
 <p>eg. ELIZA、LSTM-DQN</p></blockquote>
 <p>最早的ChatBot</p>
-<p><figure>
+<p><figure class="image-large center-image">
     <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/ELIZA_conversation.jpg" 
          alt="Eliza" 
          
@@ -575,7 +582,8 @@
 </li>
 </ol>
 <h3 id="推理和行动的手段">推理和行动的手段</h3>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+<pre class="mermaid">
+  sequenceDiagram
     participant User
     participant Agent
     participant Tools
@@ -588,11 +596,30 @@
         Agent-&gt;&gt;Agent: 分析结果
     end
     Agent-&gt;&gt;User: 返回最终答案
-</code></pre><h4 id="推理-reasoning"><strong>推理</strong> Reasoning</h4>
+</pre>
+<h4 id="推理-reasoning"><strong>推理</strong> Reasoning</h4>
 <p>主要是通过思维链(Chain of thoughts)增强可持续时间</p>
-<img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-2.png" style="zoom:50%;" />
+<p><figure class="image-medium center-image">
+    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-2.png" 
+         alt="Chin of Thought" 
+         
+         class="zoomable">
+    
+    
+    <figcaption>Chin of Thought</figcaption>
+    
+</figure></p>
 <h4 id="行动-acting"><strong>行动</strong> Acting</h4>
-<img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-3.png" alt="Acting" style="zoom:50%;" />
+<p><figure class="image-medium center-image">
+    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-3.png" 
+         alt="Actions" 
+         
+         class="zoomable">
+    
+    
+    <figcaption>Actions</figcaption>
+    
+</figure></p>
 <ol>
 <li>
 <p>RAG技术</p>
@@ -635,7 +662,8 @@
 <h3 id="和human的区别">和human的区别</h3>
 <p>ReAct agent的思考和行动方式非常像真正的人类行为，但是将其应用到生产活动中还有需要调整的地方</p>
 <p>例如人类可能更习惯VSCode这样的交互界面，但是对于digital的agent来说，这样的界面接口可能并不友好</p>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph LR
+<pre class="mermaid">
+  graph LR
     A[Interaction Models] --&gt; B[Human Interface]
     A --&gt; C[Agent Interface]
     
@@ -645,7 +673,8 @@
     C --&gt; C1[API Calls]
     C --&gt; C2[Command Line]
     C --&gt; C3[Direct Text]
-</code></pre><h2 id="参考">参考</h2>
+</pre>
+<h2 id="参考">参考</h2>
 <ol>
 <li><a href="https://www.youtube.com/watch?v=RM6ZArd2nVc">CS 194/294-196 (LLM Agents) - Lecture 2, Shunyu Yao</a></li>
 </ol>
@@ -681,6 +710,13 @@
 
         </div>
     </div>
+    
+    
+      <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+      </script>
+    
 </body>
 
 </html>
