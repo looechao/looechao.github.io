@@ -10,9 +10,9 @@ tags = [ "消费主义陷阱", "生活", "数码"]
 
 ### 起因
 
-发现自己很久没有玩游戏了
+太久没有玩游戏了
 
-本着书、影、音、游一样不落的原则，计划升级硬件
+本着书、影、音、游一样不落的原则，计划升级一下硬件
 
 虽然 PS5 和 XSX 现在到了比较甜点的价位，但是综合考虑后发现还是 PC 更合适自己：
 
@@ -30,7 +30,7 @@ tags = [ "消费主义陷阱", "生活", "数码"]
 - 电源：ENERMAX GN650
 - 机箱：SAMA M2 MESH
 
-<img src="https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/newpc.jpg" alt="newpc" width="400" width="400" style="display: block; margin: 0 auto; margin-bottom: 20px;">
+![New PC medium center](https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/newpc.jpg)
 
 ### 使用体验
 
@@ -38,6 +38,6 @@ tags = [ "消费主义陷阱", "生活", "数码"]
 
 ### 外设
 
-<img src="https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/xboxcontroller.jpg" alt="controller" width="400" width="400" style="display: block; margin: 0 auto; margin-bottom: 20px;">
+![Xbox Series Controller medium center](https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/xboxcontroller.jpg)
 
 Xbox Series 手柄，买了美版的，做工很好，美中不足的问题是过海关可能会被拆看检查，到手发现有遗留的灰尘。

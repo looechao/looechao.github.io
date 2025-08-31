@@ -15,51 +15,18 @@ tags = [ "2024Weekly"]
 
 告别，聚餐，散心，返湘
 
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-2.gif" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">Lake</div>
-</center>
-</div>
+![严西湖 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-2.gif)
 
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-3.jpg" height="50%" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">HN</div>
-</center>
-</div>
+![返湘 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-3.jpg)
+
 
 
 #### 学习
 
-制作简历，修改简历
-
 用gogh捏了一个asumi
 
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-1.gif" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">gogh</div>
-</center>
-</div>
+![gogh large center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-1.gif)
+
 
 
 #### 技术
@@ -76,52 +43,19 @@ tags = [ "2024Weekly"]
 
 - 散步很舒服，在环线每天下午都能看到跳伞
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week34-2.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">Cloud</div>
-  </center>
-  </div>
+  ![拍云 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week34-2.jpg)
 
 #### 学习
 
-- 跟着q神的步伐写项目，很累但是成就感满满
+- 写项目，很累但是成就感满满
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week34-1.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">Coding Time</div>
-  </center>
-  </div>
+  ![Coding Time meidum center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week34-1.jpg)
 
 #### 技术
 
-- 面向对象编程的底子还是在的，顺利地为Findoria接入了Deepseek大语言模型
+- 为Findoria接入了Deepseek大语言模型
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/Findoria/main/assets/demo.gif" width="100%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">Findoria</div>
-  </center>
-  </div>
+  ![Findoria](https://raw.githubusercontent.com/looechao/Findoria/main/assets/demo.gif)
 
 
 
@@ -131,61 +65,19 @@ tags = [ "2024Weekly"]
 
 - 看完了李安的喜宴，家庭三部曲已经看完了两部
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-5.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">喜宴</div>
-  </center>
-  </div>
-
+  {{<neodb "https://neodb.social/movie/32jHSKURaEuSQdR4NaRaiL">}}
+  
+  ![喜宴 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-5.jpg)
+  
 - 饭后习惯散步+看云
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-3.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">漂亮云朵</div>
-  </center>
-  </div>
-
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-4.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">不同视角</div>
-  </center>
-  </div>
-
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-3.jpg)
+  
+  ![漂亮云朵 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-4.jpg)
+  
 - 吃了老乡鸡的肉饼，感觉还不错
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-2.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">散步时间</div>
-  </center>
-  </div>
+  ![散步时间 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-2.jpg)
 
 #### 学习
 
@@ -220,54 +112,21 @@ tags = [ "2024Weekly"]
 
    - 去了KTV
 
-     <div>
-     <center>
-         <img style="border-radius: 0.3125em;
-         box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-         src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-4.jpg" width="50%">
-         <br>
-         <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-         display: inline-block;
-         color: #999;
-         padding: 2px;">魅KTV</div>
-     </center>
-     </div>
-
+     ![KTV medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-4.jpg)
+     
    - 去了长江大桥，户部巷步行街
-
-     <div>
-     <center>
-         <img style="border-radius: 0.3125em;
-         box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-         src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-11.jpg" width="50%">
-         <br>
-         <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-         display: inline-block;
-         color: #999;
-         padding: 2px;">夜游长江大桥</div>
-     </center>
-     </div>
-
+   
+     ![夜游长江大桥 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-11.jpg)
+     
    - 看了老友记前两集
-
+   
    - 和asumi一起抢陶喆的票
-
+   
    - 帮菲菲选手机
-
-   - 看到温柔晚霞
-
-     <div>
-     <center>
-         <img style="border-radius: 0.3125em;
-         box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-         src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-3.jpg" width="50%">
-         <br>
-         <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-         display: inline-block;
-         color: #999;
-         padding: 2px;">动漫晚霞</div>
-     </center>
-     </div>
+   
+- 看到温柔晚霞
+   
+  ![动漫晚霞 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-3.jpg)
 
 
 3. 饮食
@@ -277,30 +136,15 @@ tags = [ "2024Weekly"]
    <div style="display: flex; justify-content: center; align-items: flex-start;">
        <div style="margin: 10px; text-align: center;">
            <img style="border-radius: 0.3125em; box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-                src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-1.jpg" width="250px">
-           <br>
-           <div style="color: orange; border-bottom: 0px solid #d9d9d9; color: #999; padding: 2px;">小龙虾</div>
+                src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-1.jpg" width="250px" alt = "小龙虾">
        </div>
        <div style="margin: 10px; text-align: center;">
            <img style="border-radius: 0.3125em; box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
                 src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-2.jpg" width="250px">
-           <br>
-           <div style="color: orange; border-bottom: 0px solid #d9d9d9; color: #999; padding: 2px;">牛油</div>
        </div>
    </div>   
-
-   <div>
-   <center>
-       <img style="border-radius: 0.3125em;
-       box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-       src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-10.jpg" width="50%">
-       <br>
-       <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-       display: inline-block;
-       color: #999;
-       padding: 2px;">黄鹤楼</div>
-   </center>
-   </div>
+   
+   ![黄鹤楼 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-10.jpg)
 
 吃了KFC的脆皮鸡，感觉很一般
 
@@ -351,33 +195,20 @@ kernel power 41 异常关机这个问题真的很难解决，让人心烦
 
    - 和秦昊去湖边散步，聊天停不下来
 
-   <div>
-   <center>
-       <img style="border-radius: 0.3125em;
-       box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-       src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week31-1.jpg" width="50%">
-       <br>
-       <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-       display: inline-block;
-       color: #999;
-       padding: 2px;">散步</div>
-   </center>
-   </div>
+   ![散步 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week31-1.jpg)
 
 #### 学习
 
-reactor学的很仓促就结束了
+看 Reactor 模型，这里理解的不是很好
 
 
 #### 技术
 
-配置环境耽误太久，用notion整理了gatech的申请信息
+用notion整理了gatech的申请信息
 
 #### 闪念胶囊
 
 王叔的长文引发了我很多的思考，自律、食品安全、贫富差距很残酷
-
-
 
 ## 2024年第30周 07-29
 
@@ -400,25 +231,11 @@ reactor学的很仓促就结束了
 
 2. 本周的娱乐时间
 
-   看完了李安的饮食男女，很好看！
+   {{<neodb "https://neodb.social/movie/68rZRV2qwCmdudiSIQoO7V">}}
 
-   <div>
-   <center>
-       <img style="border-radius: 0.3125em;
-       box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-       src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week30-1.png" width="50%">
-       <br>
-       <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-       display: inline-block;
-       color: #999;
-       padding: 2px;">吴倩莲</div>
-   </center>
-   </div>
+   看完了李安的饮食男女，很好看，做了吴倩莲的截图：
    
-   
-   
-   
-   
+   ![吴倩莲 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week30-1.png)
    
    下载了台湾的高中课本，挖掘到了宝藏
 
@@ -443,7 +260,7 @@ reactor学的很仓促就结束了
 
 #### 技术
 
-- 试着调用openai 的 langchain  库
+- 试着调用 openai 的 langchain  库
 - 挖了一个坑，Lexiboost
 
 
@@ -469,18 +286,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 2. 本周的娱乐时间
 
-   <div>
-   <center>
-       <img style="border-radius: 0.3125em;
-       box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-       src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week29-2.jpg" width="50%">
-       <br>
-       <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-       display: inline-block;
-       color: #999;
-       padding: 2px;">湖边</div>
-   </center>
-   </div>
+   ![湖边 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week29-2.jpg)
 
 - 饭后的散步时间走到了之前发现的处很美的江边，采集到了香蒲
 
@@ -498,20 +304,11 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 在reddit上刷到了质量很高的漫画分享站点
 
+  {{<neodb "https://neodb.social/movie/60oiOnjHdxZwou950UgND6">}}
+
 - 看了电影**蝴蝶效应**，很震撼：
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week29-1.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">The Butterfly Effect (2004)</div>
-  </center>
-  </div>
+  ![蝴蝶效应 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week29-1.jpg)
 
 
   Evan回到过去怎么选都达不到完美的结局，
@@ -535,18 +332,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 周末吃KFC的吮指原味鸡+圣代
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week29-3.jpg" width="30%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">冰霜双皮奶</div>
-  </center>
-  </div>
+  ![冰霜双皮奶 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week29-3.jpg)
 
 
 4. 心情
@@ -602,18 +388,8 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 立下了去KTV、逛省博的flag，不知何时能完成
 
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week28-1.png" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">仙剑奇侠传一</div>
-</center>
-</div>
+  ![仙剑奇侠传 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week28-1.png)
+
 
 
 
@@ -661,18 +437,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 心理状态并不太好
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-1.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">温柔粉红晚霞</div>
-  </center>
-  </div>
+  ![粉色晚霞 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-1.jpg)
 
 2. 本周的娱乐时间
 
@@ -684,18 +449,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 用1.5倍速跟着范李猿的第二节课，很累，汗流浃背
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-4.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">肋骨牡丹</div>
-  </center>
-  </div>
+  ![肋骨牡丹 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-4.jpg)
 
 3. 饮食
 
@@ -705,32 +459,9 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 周末三个人一起吃全家桶太过瘾
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-2.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">烧茄子盖饭</div>
-  </center>
-  </div>
+  ![茄子 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-2.jpg)
+  ![火龙果季 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-3.jpg)
 
-
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-3.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">红龙果季</div>
-  </center>
-  </div>
 
 4. 心情
 
@@ -767,32 +498,10 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 东湖骑行
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-1.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">东湖</div>
-  </center>
-  </div>
+  ![东湖 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-1.jpg)
+  
+  ![猫咪 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-5.jpg)
 
-
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-5.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">猫仔</div>
-  </center>
-  </div>
 
 3. 饮食
 
@@ -804,46 +513,12 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 周日吃青海美食
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-4.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">厚·酸奶</div>
-  </center>
-  </div>
+  ![酸奶 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-4.jpg)
+  
+  ![夏天 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-2.jpg)
+  
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-3.jpg)
 
-
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-2.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">西瓜</div>
-  </center>
-  </div>
-
-
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-3.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">青海盖饭</div>
-  </center>
-  </div>
 
 4. 心情
 
@@ -878,32 +553,10 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 户外运动
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-1.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">乌云涌起的天气</div>
-  </center>
-  </div>
+  ![风起云涌 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-1.jpg)
+  
+  ![蓝天 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-4.jpg)
 
-
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-4.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">让人心情舒畅的蓝天</div>
-  </center>
-  </div>
 
 3. 饮食
 
@@ -915,32 +568,10 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 周日中午去青海面馆吃的很舒服
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-3.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">牛奶和卡宾熊</div>
-  </center>
-  </div>
+  ![早餐 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-3.jpg)
+  
+  ![KFC medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-2.jpg)
 
-
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-2.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">KFC</div>
-  </center>
-  </div>
 
 
   4. 心情
@@ -960,7 +591,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 #### 数码
 
-- 还是优点痴迷老旧手机
+- 还是痴迷老旧手机
 
   > minimize distraction, maxmize focus
 
@@ -978,34 +609,12 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 继续坚持使用Beancount记账
 
-- 经历了一次武汉的暴风雨，目睹一只小麻雀被风吹到树上撞晕了
+- 经历了一次的暴风雨，目睹一只小麻雀被风吹到树上撞晕了
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week24-3.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">天色骤变，风起云涌</div>
-  </center>
-  </div>
+  ![暴风 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week24-3.jpg)
+  
+  ![草莓 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week24-4.jpg)
 
-
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week24-4.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">浓郁草莓</div>
-  </center>
-  </div>
 
 2. 本周的娱乐时间
 
@@ -1020,32 +629,8 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 养成了周末吃肯德基的习惯
 
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week24-1.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">KFC</div>
-  </center>
-  </div>
+  ![乌龙茶 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week24-2.jpg)
 
-
-  <div>
-  <center>
-      <img style="border-radius: 0.3125em;
-      box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-      src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week24-2.jpg" width="50%">
-      <br>
-      <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-      display: inline-block;
-      color: #999;
-      padding: 2px;">乌龙茶</div>
-  </center>
-  </div>
 
 4. 心情
 

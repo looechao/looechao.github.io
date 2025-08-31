@@ -34,62 +34,17 @@ tags = [ "2024Weekly"]
 3. 饮食
 
 - 水果和牛奶的摄入量很充足
+
 - 爱上了罗森的饭团，和mini桶或者鱼排很搭配
 
 - 和大伙聚餐多次，吃湘菜
 
-</br>
+  ![和 Asumi 出去玩 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week22-2.png)
 
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week22-2.png" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">和Asumi出去玩</div>
-</center>
-</div>
+  ![答辩 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week22-3.jpg)
 
+  ![毕业 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week22-4.jpg)
 
-</br>
-
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week22-3.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">答辩</div>
-</center>
-</div>
-
-
-
-
-</br>
-
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week22-4.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">毕业照</div>
-</center>
-</div>
 
 
 
@@ -98,22 +53,7 @@ tags = [ "2024Weekly"]
 
 - 本周最开心的事情当然是和Asumi的夏夜约会
 
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week22-1.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">约定</div>
-</center>
-</div>
-
-</br>
+  ![约定 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week22-1.jpg)
 
 - 和四年生活中的好朋友一起拍照的时间让我感觉很幸福，感谢大家带给我的友谊和爱🙏
 
@@ -125,7 +65,7 @@ tags = [ "2024Weekly"]
 
 - 要补交2万字的思想报告，但是我的时间实在有限，只能退了积极分子
 
-记录一下总是语出惊人地涛哥
+记录一下总是语出惊人地涛哥:
 
 > 硬气一点，让他们知道谁是自己人生的主宰
 >
@@ -164,120 +104,22 @@ tags = [ "2024Weekly"]
 3. 饮食
 
 - 自从被疏狐的老板娘请客吃了一顿饭之后，午饭不好意思不去吃
+
 - 最近水果吃的很少
+
 - 罗森的饭团好好吃！
 
-</br>
+  ![疏狐 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-1.jpg)
 
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-1.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">疏狐</div>
-</center>
-</div>
+  ![蜡笔小新饼干 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-2.jpg)
 
+  ![小猫 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-3.jpg)
 
-</br>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-4.jpg)
 
-</br>
+  ![返校 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-5.jpg)
 
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-2.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">蜡笔小新中出现过的巧克力饼干</div>
-</center>
-</div>
-
-
-
-</br>
-
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-3.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">懒惰猫仔</div>
-</center>
-</div>
-
-
-
-</br>
-
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-4.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">返校</div>
-</center>
-</div>
-
-
-
-</br>
-
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-5.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">返校</div>
-</center>
-</div>
-
-
-
-</br>
-
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-6.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">记忆碎片</div>
-</center>
-</div>
-
-
-</br>
+  ![记忆碎片 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week21-6.jpg)
 
 4. 心情
 
@@ -332,61 +174,14 @@ tags = [ "2024Weekly"]
 3. 饮食
 
 - 发现了宝藏轻食店，老板娘送了我们咖啡展的门票！
+
 - 终于买了一箱牛奶
 
-</br>
+  ![椰香咖喱 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week20-1.jpg)
 
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week20-1.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">椰香咖喱</div>
-</center>
-</div>
+  ![宝藏店铺 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week20-2.jpg)
 
-
-
-
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week20-2.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">宝藏店铺</div>
-</center>
-</div>
-
-
-</br>
-
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week20-3.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">快剪(；′⌒`)</div>
-</center>
-</div>
-
-
-</br>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week20-3.jpg)
 
 4. 心情
 
@@ -438,62 +233,16 @@ tags = [ "2024Weekly"]
 3. 饮食
 
 - 吃的面食还是偏多，习惯了吃公安锅盔和包子
+
 - 早餐终于从三明治退坑，但是又总是会遇到牛奶刺客
+
 - 又尝试了血橙，感觉不如伦晚橙好吃
 
-</br>
+  ![锅盔 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week19-1.jpg)
 
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week19-1.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">公安锅盔的魅力</div>
-</center>
-</div>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week19-2.jpg)
 
-
-</br>
-
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week19-2.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">拉面</div>
-</center>
-</div>
-
-
-</br>
-
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week19-3.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">血橙</div>
-</center>
-</div>
-
-
-</br>
+  ![血橙 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week19-3.jpg)
 
 4. 心情
 
@@ -544,66 +293,25 @@ tags = [ "2024Weekly"]
 
 - 研究笔记本的前置摄像头，两台相差快十年的本子居然没有太大的区别，惊了(⁠☉⁠｡⁠☉⁠)⁠!
 
-</br>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week18-5.jpg)
 
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week18-5.jpg" width="50%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">和黄符合影</div>
-</center>
-</div>
-
-
-</br>
-
-</br>
-
-<div>
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week18-4.jpg" width="30%">
-    <br>
-    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">试笔记本的前置摄像头</div>
-</center>
-</div>
-
-
-</br>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week18-4.jpg)
 
 3. 饮食
 
 - 好像爱上了吃零食
+
 - 通过沙县找回了米饭作为主食
+
 - 一整周没有看到三明治!(X_x)
+
 - 早饭吃油炸糕居然也不错
+
 - 水果吃了好多，总是在吃橙子
 
-</br>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week18-2.jpg)
 
-<div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week18-2.jpg" alt="shotonspf" style="width: 100%;" />
-</div>
-
-
-</br>
-
-</br>
-
-<div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week18-3.jpg" alt="shotonspf" style="width: 100%;" />
-</div>
-
-</br>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week18-3.jpg)
 
 4. 心情
 
@@ -636,8 +344,6 @@ int** ptr2        int* ptr1
 
 
 
-
-
 ## 2024年第17周 04-28
 
 这周的安排紧张又充实，踏踏实实的学习C语言，不仅仅是查缺补漏（比如位运算），还纠正了很多自己原来一直理解错误的地方
@@ -659,41 +365,22 @@ int** ptr2        int* ptr1
 3. 饮食
 
 - 吃的面食明显变多了
+
 - 最爱的三明治早餐
 
-</br>
-
-<div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week17-1.jpg" alt="shotonspf" style="width: 100%;" />
-</div>
-
-
-</br>
+  ![三明治 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week17-1.jpg)
 
 - 周末快乐的KFC时光
 
-</br>
-
-<div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week17-3.jpg" alt="shotonspf" style="width: 100%;" />
-</div>
-
-
-
-</br>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week17-3.jpg)
 
 4. 心情
 
 - 对同学们的了解更加深入了
+
 - 又买到了ikea的博克尔杯子，无限回购！
 
-</br>
-
-<div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week17-2.jpg" alt="shotonspf" style="width: 100%;" />
-</div>
-
-</br>
+  ![ikea medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week17-2.jpg)
 
 - 和asumi的聊天总是能够擦除我一整天的坏心情
 
@@ -724,35 +411,16 @@ int** ptr2        int* ptr1
 1. 本周的状态
 
 - 跑了一次五公里，发现膝盖不会特别疼痛了
+
 - 睡觉时间还是偏晚
-- 来到武汉租的公寓，和大家还在磨合阶段
 
-</br>
+- 合租了碧桂园的房子
 
-<div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week16-1.jpg" alt="shotonspf" style="width: 100%;" />
-</div>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week16-1.jpg)
 
+  ![metro medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week16-2.jpg)
 
-</br>
-
-</br>
-
-<div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week16-2.jpg" alt="shotonspf" style="width: 100%;" />
-</div>
-
-
-</br>
-
-</br>
-
-<div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week16-3.jpg" alt="shotonspf" style="width: 100%;" />
-</div>
-
-
-</br>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week16-3.jpg)
 
 2. 本周的娱乐时间
 
@@ -863,9 +531,8 @@ int** ptr2        int* ptr1
 
 - 在林语吃的次数变多了，普洱牛腩还不错
 
-<div style="display: flex; justify-content: center;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week14_3.jpg" style="width: 50%;" /> 
-</div>
+  ![阿姨把最后的牛腩全给我了 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week14_3.jpg)
+
 
 
 </br>
@@ -888,19 +555,13 @@ int** ptr2        int* ptr1
 #### 技术
 
 - 给x230加换了一块固态，发现博通网卡对Linux的兼容性不好
+
 - 安装了地狱难度的Archlinux，安装完后会发现原来KDE Plasma这么好看
 
-<div style="display: flex; justify-content: center;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week14_1.jpg" style="width: 60%;" /> 
-</div>
+  ![Archlinux medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week14_1.jpg)
 
-</br>边看Archwiki边操作：</br>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week14_2.jpg)
 
-</br>
-
-<div style="display: flex; justify-content: center;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week14_2.jpg" style="width: 60%;" /> 
-</div>
 
 
 #### 数码
@@ -938,39 +599,27 @@ int** ptr2        int* ptr1
 2. 本周的娱乐时间
 
 - 和老姐逛了贺龙体育馆，第一次尝试了益阳麻辣烫，吃起来挺有趣的
+
 - 逛了迪卡侬和宜家，去了樱花节
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week13_4.jpg" style="width: 40%;" /> 
-</div>
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week13_4.jpg)
 
-
-​                
-
-<div style="display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week13_1.jpg" style="width: 40%;" /> 
-</div>
-
-
-
+  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week13_1.jpg)
 
 3. 饮食
 
 - 挖掘到了好店，大碗先生
+
 - 意外发现原来宜家的冰淇凌这么好吃
 
-<div style="display: flex; justify-content: center;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week13_5.jpg" style="width: 40%;" /> 
-</div>
+  ![icecream medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week13_5.jpg)
+
 
 
 
 - 吃了经典的寿司+鸡柳搭配
 
-<div style="display: flex; justify-content: center;">
-      <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week13_2.jpg" style="width: 40%;" /> 
-  </div>
-
+  ![sushi medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week13_2.jpg)
 
 4. 心情
 
@@ -1088,15 +737,9 @@ int** ptr2        int* ptr1
 
 - 居然挖掘出了豆花店的隐藏盖饭（土豆牛肉超好吃）
 
-<div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/doufu1.jpg" alt="shotonspf" style="width: 100%;" />
-</div>
-<p style="text-align:center;">辣椒炒肉</>
-<div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/doufu2.jpg" alt="shotonspf" style="width: 100%;" />
-</div>
-<p style="text-align:center;">土豆牛肉</>
+  ![辣椒炒肉 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/doufu1.jpg)
 
+  ![土豆牛肉 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/doufu2.jpg)
 
 - 又吃了一次沙县的炒米线，还是很好吃
 - 嚼炫迈上瘾(＠_＠:)

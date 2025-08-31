@@ -14,11 +14,11 @@ layout = "minimal"
 
 - 喜欢书、影、音、游、电子产品
 
-- ID灵感来源是自己最爱的漫画  _[kylooe 憂鬱的蜻蜓：告別彩虹](https://neodb.social/book/5gkFtRhMS8G37m8Sq283hq)_
+- ID灵感源于自己最喜欢的漫画  [kylooe](https://neodb.social/book/5gkFtRhMS8G37m8Sq283hq)
 
   {{<neodb "https://neodb.social/book/5gkFtRhMS8G37m8Sq283hq">}}
 
-- 消化内容、用心创作
+- 消化内容｜用心创作
 
 快速了解我：
 
@@ -30,13 +30,15 @@ layout = "minimal"
 
 ## TRIP
 
-<div style="position: relative; width: 100%; max-width: 900px; padding-bottom: 45%; height: 0; overflow: hidden;">
+<div style="position: relative; width: 100%; max-width: 900px; padding-bottom: 60%; height: 0; overflow: hidden;">
   <iframe 
     src="https://www.google.com/maps/d/u/0/embed?mid=1gRnLdjkCbjBbVaMKE7TA-bBVkqvpn1E&ehbc=2E312F" 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
     allowfullscreen>
   </iframe>
 </div>
+
+
 
 ---
 
