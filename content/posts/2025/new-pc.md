@@ -3,7 +3,6 @@ title = '装新电脑'
 date = 2025-06-22T15:01:13+08:00
 draft = false
 pin = false
-summary = "消费主义"
 tags = [ "消费主义陷阱", "生活", "数码"]
 
 +++

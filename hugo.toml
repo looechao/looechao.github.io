@@ -34,7 +34,7 @@ name = "Looe"
 [params.social]
 email = "lu.chao.personal@gmail.com"
 github = "https://www.github.com/looechao"
-rss = ""
+rss = "/posts/index.xml"
 
 [menus]
 [[menus.main]]
