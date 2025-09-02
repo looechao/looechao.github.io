@@ -2,12 +2,12 @@
 title = 'How I setting a brand new fedora system'
 date = 2024-08-02T15:38:13+08:00
 draft = false
-summary = "My personal fedora setup"
 tags = [ "Linux" ]
 
 +++
-
 # Basic Settings
+
+My personal fedora setup
 
 ## Terminal shortcuts
 

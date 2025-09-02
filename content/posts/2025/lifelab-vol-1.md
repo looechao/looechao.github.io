@@ -4,7 +4,6 @@ title = 'LifeLab Vol. 1 - 小站装修，步履不停'
 date = 2025-09-02T15:01:13+08:00
 draft = false
 pin = false
-summary = ""
 tags = [ "部落格复兴", "生活", "运动"]
 
 +++

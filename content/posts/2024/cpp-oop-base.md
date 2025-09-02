@@ -2,7 +2,6 @@
 title = 'OOP设计原则汇总'
 date = 2024-07-24T21:31:13+08:00
 draft = false
-summary = " "
 tags = ["C/C++", "OOP"]
 
 +++
