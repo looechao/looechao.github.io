@@ -4,282 +4,437 @@
     <title>Posts on looechao</title>
     <link>https://looechao.com/posts/</link>
     <description>Recent content in Posts on looechao</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 02 Sep 2025 15:01:13 +0800</lastBuildDate>
-    <atom:link href="https://looechao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Sep 2025 15:01:13 +0800</lastBuildDate><atom:link href="https://looechao.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LifeLab Vol. 1 - 小站装修，步履不停</title>
       <link>https://looechao.com/posts/2025/lifelab-vol-1/</link>
       <pubDate>Tue, 02 Sep 2025 15:01:13 +0800</pubDate>
+      
       <guid>https://looechao.com/posts/2025/lifelab-vol-1/</guid>
-      <description>&lt;h3 id=&#34;小站装修&#34;&gt;小站装修&lt;/h3&gt;&#xA;&lt;p&gt;Blog 自上线以来，一直在用 Meik 写的主题，虽然有很多不错的设计（比如文章更新热力图、资料卡），但时间久了发现想要更高程度的修改还是太麻烦，不如自己重写（Vibe）一套，记录一些可以折腾的点：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;域名&lt;/code&gt;：Cloudflare，续费无套路，还附带一些基础的分析功能；&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;评论系统&lt;/code&gt;：选了 Giscus，社区活跃度很高，而且评论和 Page 的映射匹配机制非常灵活，美中不足的是新讨论会出现在 GitHub Feed 里，容易社死；&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;NeoDB卡片&lt;/code&gt;：看了竹子和椒盐豆豉的教程后配置成功，引入媒体卡片时很好用；&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;分析工具&lt;/code&gt;：Google Analytics，沿用了以前注册的，数据似乎会比 Cloudflare 更加准确一点；&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;MILES&lt;/code&gt;： yihong 的 running_page，看到自己的历史跑步数据非常有爽感；&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;总之，搭建了博客发现想要折腾的地方实在太多了，后续还想要添加一个 Open Heart Protocol 红心（by benji）&lt;/p&gt;&#xA;&lt;h3 id=&#34;运动&#34;&gt;运动&lt;/h3&gt;&#xA;&lt;p&gt;坚持长跑 5 年，终于感觉到跑 5km 的 pace 有微小提升，从 31min、32min 慢慢变回到了 29min 左右（可能是换了跑道的缘故），有了 running_page 后，会很想要坚持下去，把Heat Map都点亮；&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;image-large center-image&#34;&gt;&#xA;    &lt;img src=&#34;https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/running_page.jpg&#34; &#xA;         alt=&#34;MILES&#34; &#xA;         &#xA;         class=&#34;zoomable&#34;&gt;&#xA;    &#xA;    &#xA;    &lt;figcaption&gt;MILES&lt;/figcaption&gt;&#xA;    &#xA;&lt;/figure&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;影&#34;&gt;影&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;    &#xA;        &#xA;        &lt;div class=&#34;db-card&#34;&gt;&#xA;            &lt;div class=&#34;db-card-subject&#34;&gt;&#xA;                &lt;div class=&#34;db-card-post&#34;&gt;&lt;img loading=&#34;lazy&#34; decoding=&#34;async&#34; referrerpolicy=&#34;no-referrer&#34; src=&#34;https://neodb.social/m/movie/2021/09/13a323aff4-4dab-4c57-a711-587db6402330.jpg&#34;&gt;&lt;/div&gt;&#xA;                &lt;div class=&#34;db-card-content&#34;&gt;&#xA;                    &lt;div class=&#34;db-card-title&#34;&gt;&lt;a href=&#34;https://neodb.social/movie/6D24EDZU8dlBTtO6hHx1Fr&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;穿普拉达的女王&lt;/a&gt;&lt;/div&gt;&#xA;                    &lt;div class=&#34;rating&#34;&gt;&lt;span class=&#34;allstardark&#34;&gt;&lt;span class=&#34;allstarlight&#34; style=&#34;width: 76%&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;rating_nums&#34;&gt;7.6&lt;/span&gt;&lt;/div&gt;&#xA;                    &lt;div class=&#34;db-card-abstract&#34;&gt;初涉社会的安德丽娅•桑切丝（安妮•海瑟薇 饰）来到了著名时尚杂志《RUNWAY》面试，莫名其妙就得到了主编米兰达•普雷斯丽（梅利尔•斯特里普 饰）的特许，让她担任自己的第二助理。开始的时候安德丽娅感到十分委屈，就算自己多努力工作也无法得到赞赏。后来经一位老前辈的指点，工作越来越顺，甚至取代了第一助理在米兰达心中的地位，甚至决定带着这个聪明的女孩前往法国。可安德丽娅的改变不仅让她失去了朋友，还危及到了与男友的爱，这令她非常矛盾。&#xD;&#xA;到法国后，她得知了米兰达的地位不保了就拼命想去提醒米兰达要注意，没想到米兰达竟然牺牲自己多年的好搭档保住了自己的地位，此事令安德丽娅深感失望，有了抽身离去的想法……&lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;                &lt;div class=&#34;db-card-cate&#34;&gt;movie&lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;    &#xA;&#xA;&lt;p&gt;拖了很久没看的电影，职场和个人成长的题材，有一段米兰达关于蓝色毛衣的解释，很震撼，我以前也觉得顶级设计师和自己的生活毫无关联，但是现在明白了好的设计是会不断的向下辐射并被成本稀释的，比如曾经昂贵无比的设计师版机械键盘，现在花费很少的钱就能在各大平台买到，设计师们是在无意中提升我们生活品质的那批人；&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;    &#xA;        &#xA;        &lt;div class=&#34;db-card&#34;&gt;&#xA;            &lt;div class=&#34;db-card-subject&#34;&gt;&#xA;                &lt;div class=&#34;db-card-post&#34;&gt;&lt;img loading=&#34;lazy&#34; decoding=&#34;async&#34; referrerpolicy=&#34;no-referrer&#34; src=&#34;https://neodb.social/m/movie/2021/10/2096d60101-06da-4e8e-852b-d638607b4bb5.jpg&#34;&gt;&lt;/div&gt;&#xA;                &lt;div class=&#34;db-card-content&#34;&gt;&#xA;                    &lt;div class=&#34;db-card-title&#34;&gt;&lt;a href=&#34;https://neodb.social/tv/season/7ISiZNpAGeUs0TOT0ONZsj&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Headspace睡眠指南&lt;/a&gt;&lt;/div&gt;&#xA;                    &lt;div class=&#34;rating&#34;&gt;&lt;span class=&#34;allstardark&#34;&gt;&lt;span class=&#34;allstarlight&#34; style=&#34;width: 74%&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;rating_nums&#34;&gt;7.4&lt;/span&gt;&lt;/div&gt;&#xA;                    &lt;div class=&#34;db-card-abstract&#34;&gt;跟随Headspace学习如何拥有更好的睡眠。每一集都将解读错误的认识、提供实用的技巧并以指导性的放松练习结尾&lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;                &lt;div class=&#34;db-card-cate&#34;&gt;tv&lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;    &#xA;&#xA;&lt;p&gt;最近睡眠质量不太好，在 Netflix 上看到了这部安眠指南，以为会是硬核科普，但发现每集有很多篇幅是在做冥想指引，睡前可以放着听吧（类似云梦的鲸鱼Sleep）&lt;/p&gt;&#xA;&lt;h3 id=&#34;游&#34;&gt;游&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;    &#xA;        &#xA;        &lt;div class=&#34;db-card&#34;&gt;&#xA;            &lt;div class=&#34;db-card-subject&#34;&gt;&#xA;                &lt;div class=&#34;db-card-post&#34;&gt;&lt;img loading=&#34;lazy&#34; decoding=&#34;async&#34; referrerpolicy=&#34;no-referrer&#34; src=&#34;https://neodb.social/m/item/doubangame/2024/07/16/ac32668d-9c50-40e6-989d-374c91f89f31.jpg&#34;&gt;&lt;/div&gt;&#xA;                &lt;div class=&#34;db-card-content&#34;&gt;&#xA;                    &lt;div class=&#34;db-card-title&#34;&gt;&lt;a href=&#34;https://neodb.social/game/5A3AkAZC7HvKZ5vO8lRhGb&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;死或生6&lt;/a&gt;&lt;/div&gt;&#xA;                    &lt;div class=&#34;rating&#34;&gt;&lt;span class=&#34;allstardark&#34;&gt;&lt;span class=&#34;allstarlight&#34; style=&#34;width: 0%&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;rating_nums&#34;&gt;0&lt;/span&gt;&lt;/div&gt;&#xA;                    &lt;div class=&#34;db-card-abstract&#34;&gt;Dead or Alive 6 is an Action game, developed by Team Ninja and published by Koei Tecmo Games, scheduled to be released in 2019.&lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;                &lt;div class=&#34;db-card-cate&#34;&gt;game&lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;    &#xA;&#xA;&lt;p&gt;中规中矩，和以前在 Xbox 360 上玩到的 5 代相比，似乎只有画质和提升了，暂时还没有挖掘到解锁衣服的乐趣，最近看到 Xiao Hai 又一次拿了 StreetFighter 6 的冠军，很想试试街霸6的格斗会不会更加纯粹；&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;小站装修&#34;&gt;小站装修&lt;/h3&gt;
+&lt;p&gt;Blog 自上线以来，一直在用 Meik 写的主题，虽然有很多不错的设计（比如文章更新热力图、资料卡），但时间久了发现想要更高程度的修改还是太麻烦，不如自己重写（Vibe）一套，记录一些可以折腾的点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;域名&lt;/code&gt;：Cloudflare，续费无套路，还附带一些基础的分析功能；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;评论系统&lt;/code&gt;：选了 Giscus，社区活跃度很高，而且评论和 Page 的映射匹配机制非常灵活，美中不足的是新讨论会出现在 GitHub Feed 里，容易社死；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NeoDB卡片&lt;/code&gt;：看了竹子和椒盐豆豉的教程后配置成功，引入媒体卡片时很好用；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;分析工具&lt;/code&gt;：Google Analytics，沿用了以前注册的，数据似乎会比 Cloudflare 更加准确一点；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MILES&lt;/code&gt;： yihong 的 running_page，看到自己的历史跑步数据非常有爽感；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总之，搭建了博客发现想要折腾的地方实在太多了，后续还想要添加一个 Open Heart Protocol 红心（by benji）&lt;/p&gt;
+&lt;h3 id=&#34;运动&#34;&gt;运动&lt;/h3&gt;
+&lt;p&gt;坚持长跑 5 年，终于感觉到跑 5km 的 pace 有微小提升，从 31min、32min 慢慢变回到了 29min 左右（可能是换了跑道的缘故），有了 running_page 后，会很想要坚持下去，把Heat Map都点亮；&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;image-large center-image&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/running_page.jpg&#34; 
+         alt=&#34;MILES&#34; 
+         
+         class=&#34;zoomable&#34;&gt;
+    
+    
+    &lt;figcaption&gt;MILES&lt;/figcaption&gt;
+    
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;影&#34;&gt;影&lt;/h3&gt;
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+    
+        
+        &lt;div class=&#34;db-card&#34;&gt;
+            &lt;div class=&#34;db-card-subject&#34;&gt;
+                &lt;div class=&#34;db-card-post&#34;&gt;&lt;img loading=&#34;lazy&#34; decoding=&#34;async&#34; referrerpolicy=&#34;no-referrer&#34; src=&#34;https://neodb.social/m/movie/2021/09/13a323aff4-4dab-4c57-a711-587db6402330.jpg&#34;&gt;&lt;/div&gt;
+                &lt;div class=&#34;db-card-content&#34;&gt;
+                    &lt;div class=&#34;db-card-title&#34;&gt;&lt;a href=&#34;https://neodb.social/movie/6D24EDZU8dlBTtO6hHx1Fr&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;穿普拉达的女王&lt;/a&gt;&lt;/div&gt;
+                    &lt;div class=&#34;rating&#34;&gt;&lt;span class=&#34;allstardark&#34;&gt;&lt;span class=&#34;allstarlight&#34; style=&#34;width: 76%&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;rating_nums&#34;&gt;7.6&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&#34;db-card-abstract&#34;&gt;初涉社会的安德丽娅•桑切丝（安妮•海瑟薇 饰）来到了著名时尚杂志《RUNWAY》面试，莫名其妙就得到了主编米兰达•普雷斯丽（梅利尔•斯特里普 饰）的特许，让她担任自己的第二助理。开始的时候安德丽娅感到十分委屈，就算自己多努力工作也无法得到赞赏。后来经一位老前辈的指点，工作越来越顺，甚至取代了第一助理在米兰达心中的地位，甚至决定带着这个聪明的女孩前往法国。可安德丽娅的改变不仅让她失去了朋友，还危及到了与男友的爱，这令她非常矛盾。
+到法国后，她得知了米兰达的地位不保了就拼命想去提醒米兰达要注意，没想到米兰达竟然牺牲自己多年的好搭档保住了自己的地位，此事令安德丽娅深感失望，有了抽身离去的想法……&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;db-card-cate&#34;&gt;movie&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    
+
+&lt;p&gt;拖了很久没看的电影，职场和个人成长的题材，有一段米兰达关于蓝色毛衣的解释，很震撼，我以前也觉得顶级设计师和自己的生活毫无关联，但是现在明白了好的设计是会不断的向下辐射并被成本稀释的，比如曾经昂贵无比的设计师版机械键盘，现在花费很少的钱就能在各大平台买到，设计师们是在无意中提升我们生活品质的那批人；&lt;/p&gt;
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+    
+        
+        &lt;div class=&#34;db-card&#34;&gt;
+            &lt;div class=&#34;db-card-subject&#34;&gt;
+                &lt;div class=&#34;db-card-post&#34;&gt;&lt;img loading=&#34;lazy&#34; decoding=&#34;async&#34; referrerpolicy=&#34;no-referrer&#34; src=&#34;https://neodb.social/m/movie/2021/10/2096d60101-06da-4e8e-852b-d638607b4bb5.jpg&#34;&gt;&lt;/div&gt;
+                &lt;div class=&#34;db-card-content&#34;&gt;
+                    &lt;div class=&#34;db-card-title&#34;&gt;&lt;a href=&#34;https://neodb.social/tv/season/7ISiZNpAGeUs0TOT0ONZsj&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;Headspace睡眠指南&lt;/a&gt;&lt;/div&gt;
+                    &lt;div class=&#34;rating&#34;&gt;&lt;span class=&#34;allstardark&#34;&gt;&lt;span class=&#34;allstarlight&#34; style=&#34;width: 74%&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;rating_nums&#34;&gt;7.4&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&#34;db-card-abstract&#34;&gt;跟随Headspace学习如何拥有更好的睡眠。每一集都将解读错误的认识、提供实用的技巧并以指导性的放松练习结尾&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;db-card-cate&#34;&gt;tv&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    
+
+&lt;p&gt;最近睡眠质量不太好，在 Netflix 上看到了这部安眠指南，以为会是硬核科普，但发现每集有很多篇幅是在做冥想指引，睡前可以放着听吧（类似云梦的鲸鱼Sleep）&lt;/p&gt;
+&lt;h3 id=&#34;游&#34;&gt;游&lt;/h3&gt;
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+    
+        
+        &lt;div class=&#34;db-card&#34;&gt;
+            &lt;div class=&#34;db-card-subject&#34;&gt;
+                &lt;div class=&#34;db-card-post&#34;&gt;&lt;img loading=&#34;lazy&#34; decoding=&#34;async&#34; referrerpolicy=&#34;no-referrer&#34; src=&#34;https://neodb.social/m/item/doubangame/2024/07/16/ac32668d-9c50-40e6-989d-374c91f89f31.jpg&#34;&gt;&lt;/div&gt;
+                &lt;div class=&#34;db-card-content&#34;&gt;
+                    &lt;div class=&#34;db-card-title&#34;&gt;&lt;a href=&#34;https://neodb.social/game/5A3AkAZC7HvKZ5vO8lRhGb&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;死或生6&lt;/a&gt;&lt;/div&gt;
+                    &lt;div class=&#34;rating&#34;&gt;&lt;span class=&#34;allstardark&#34;&gt;&lt;span class=&#34;allstarlight&#34; style=&#34;width: 0%&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;rating_nums&#34;&gt;0&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&#34;db-card-abstract&#34;&gt;Dead or Alive 6 is an Action game, developed by Team Ninja and published by Koei Tecmo Games, scheduled to be released in 2019.&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;db-card-cate&#34;&gt;game&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    
+
+&lt;p&gt;中规中矩，和以前在 Xbox 360 上玩到的 5 代相比，似乎只有画质和提升了，暂时还没有挖掘到解锁衣服的乐趣，最近看到 Xiao Hai 又一次拿了 StreetFighter 6 的冠军，很想试试街霸6的格斗会不会更加纯粹；&lt;/p&gt;</description>
     </item>
+    
     <item>
       <title>装新电脑</title>
       <link>https://looechao.com/posts/2025/new-pc/</link>
       <pubDate>Sun, 22 Jun 2025 15:01:13 +0800</pubDate>
+      
       <guid>https://looechao.com/posts/2025/new-pc/</guid>
-      <description>消费主义</description>
+      <description>&lt;h3 id=&#34;起因&#34;&gt;起因&lt;/h3&gt;
+&lt;p&gt;太久没有玩游戏了&lt;/p&gt;
+&lt;p&gt;本着书、影、音、游一样不落的原则，计划升级一下硬件&lt;/p&gt;
+&lt;p&gt;虽然 PS5 和 XSX 现在到了比较甜点的价位，但是综合考虑后发现还是 PC 更合适自己：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;游戏独占期：PlayStation 的独占周期已经缩短到了两年左右，优势不够明显&lt;/li&gt;
+&lt;li&gt;Steam 有完善的成就系统、存档管理、和各种促销活动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;specs&#34;&gt;SPECS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;CPU：AMD R5 7500F&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GPU：AMD 7650GRE&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内存：KingBank 16GBx2 6000Mhz DDR5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主板：MSI B650M BOMBER WIFI&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;硬盘：SN5000 1TB&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;电源：ENERMAX GN650&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;机箱：SAMA M2 MESH&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&#34;image-medium center-image&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/newpc.jpg&#34; 
+         alt=&#34;New PC&#34; 
+         
+         class=&#34;zoomable&#34;&gt;
+    
+    
+    &lt;figcaption&gt;New PC&lt;/figcaption&gt;
+    
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;使用体验&#34;&gt;使用体验&lt;/h3&gt;
+&lt;p&gt;超出预期，这次选择的 7500F CPU 和 7650GRE GPU，以及国产长鑫颗粒内存条，在社区讨论中几乎都会被视为雷点，但是这几天的体验中没有遇到任何不兼容的问题。&lt;/p&gt;
+&lt;h3 id=&#34;外设&#34;&gt;外设&lt;/h3&gt;
+&lt;p&gt;&lt;figure class=&#34;image-medium center-image&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/xboxcontroller.jpg&#34; 
+         alt=&#34;Xbox Series Controller&#34; 
+         
+         class=&#34;zoomable&#34;&gt;
+    
+    
+    &lt;figcaption&gt;Xbox Series Controller&lt;/figcaption&gt;
+    
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Xbox Series 手柄，买了美版的，做工很好，美中不足的问题是过海关可能会被拆看检查，到手发现有遗留的灰尘。&lt;/p&gt;</description>
     </item>
+    
     <item>
       <title>新的一年，我会越来越不完美</title>
       <link>https://looechao.com/posts/2025/imperfection/</link>
       <pubDate>Thu, 06 Feb 2025 15:01:13 +0800</pubDate>
+      
       <guid>https://looechao.com/posts/2025/imperfection/</guid>
-      <description>避开完美主义这条崎岖的弯路</description>
+      <description>&lt;p&gt;避开完美主义这条崎岖的弯路&lt;/p&gt;
+&lt;iframe data-testid=&#34;embed-iframe&#34; style=&#34;border-radius:12px&#34; src=&#34;https://open.spotify.com/embed/episode/3yjCVb3jzXx6vQoUTMKxsd?utm_source=generator&#34; width=&#34;100%&#34; height=&#34;152&#34; frameBorder=&#34;0&#34; allowfullscreen=&#34;&#34; allow=&#34;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;偶然从友邻的剪报中发现了&lt;em&gt;蜜獾吃书&lt;/em&gt; 的一期节目&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，系统地讲述了很多很具体的克服完美主义的方法，堪称提高执行力的秘籍，遂即简单的整理了一下：&lt;/p&gt;
+&lt;h4 id=&#34;完美主义怎么了&#34;&gt;完美主义怎么了？&lt;/h4&gt;
+&lt;p&gt;完美主义有毒，而不完美主义才是能够帮助我们提升效率、获得幸福的方法&lt;/p&gt;
+&lt;h4 id=&#34;什么会完美主义倾向&#34;&gt;什么会完美主义倾向？&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;教育让我们对任何事情都有过高的期待&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我们很容易纠结过去发生的事情，而不是活在当下&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;人有极强的认同需求，但是又特别害怕失败和尴尬，这样会让人很纠结&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;怎么践行不完美主义&#34;&gt;怎么践行不完美主义？&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;降低行动的标准，放弃对完美情境，完美数量，完美质量的执念&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每天只看5行书、回家后做一个俯卧撑&amp;hellip;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;改变说话方式，扔掉“本应该”&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;”我本应该&amp;hellip;.才对“ 这种表达换成 ”已经很好了，但是我还可以做的更好“&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重视和喜爱生活当中的各种失败，认识到失败很正常，更没什么象征意义&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;失败了不代表自己不好，不代表自己丧失了一切可能性&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;叛逆练习（例如平躺在大街上睡觉），意识到别人对你的评价不重要&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;也不要过分在意赞扬，很多时候批评比表扬更重要（迅速杀死Impostor syndrome）&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;做事情保持二进制思维，完成是1，没做是0，执行时的动作是否完美标准没那么重要，没必要过分纠结&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;模拟信号很注意细节，但现在是只有0和1的数字信号的天下&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;体态会影响心态&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;多晒太阳，多挺胸&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;看到这篇的友邻们，让我们一起向着不完美主义努力吧！&lt;/p&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://open.spotify.com/episode/3yjCVb3jzXx6vQoUTMKxsd&#34;&gt;如何成为真正的不完美主义者，浑身是劲儿&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
     </item>
+    
     <item>
       <title>平淡生活中的刺</title>
       <link>https://looechao.com/posts/2025/gastroenteritis/</link>
       <pubDate>Sun, 05 Jan 2025 15:01:13 +0800</pubDate>
+      
       <guid>https://looechao.com/posts/2025/gastroenteritis/</guid>
-      <description>记一次食物中毒的经历</description>
+      <description>&lt;p&gt;记一次食物中毒的经历&lt;/p&gt;
+&lt;h3 id=&#34;起因&#34;&gt;起因&lt;/h3&gt;
+&lt;p&gt;元旦假期后复工第一天，在公司的楼下常去的店点了从来没有尝试过的牛肉滑蛋饭作为午餐。&lt;/p&gt;
+&lt;p&gt;发现和从前吃过的蛋包饭还是有很大区别的：生的蛋液变多了，牛肉灰白里透着红色，似乎没有熟透。但商家有特别标注“使用无菌蛋”，于是顾虑都被打消了，只想着享受这份饭的特色。&lt;/p&gt;
+&lt;p&gt;幸运的是：不太符合自己的口味，到最后只吃了1/3左右。&lt;/p&gt;
+&lt;h3 id=&#34;症状&#34;&gt;症状&lt;/h3&gt;
+&lt;p&gt;午饭后大约三小时左右开始感到轻微的恶心和头晕，隐隐伴随着胃痛，开始想要提交请假申请，决定6点就回家休整&lt;/p&gt;
+&lt;p&gt;赶回家立马倒在了床上，胃痛和恶心的感觉加剧，辗转反侧后呕吐了两次，头痛有所缓解&lt;/p&gt;
+&lt;p&gt;夜间睡眠伴随着发烧，很像新冠斩腰株的症状，腰痛，每过几个睡眠周期就会自然醒来一次&lt;/p&gt;
+&lt;p&gt;Google滑蛋饭+呕吐，查到了香港食物安全中心发布的滑蛋饭引起的沙门氏菌食物中毒案例&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，完全符合自己的症状，感觉不妙&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二零一九年五月及六月，據報發生兩宗因進食滑蛋而導致食物中毒的個案，分別有7名及40名患者，他們在進食滑蛋飯或粉麵後出現腹痛、嘔吐、腹瀉及發燒徵狀，部分人需要入院。同類食物中毒個案亦曾於&lt;a href=&#34;https://www.cfs.gov.hk/tc_chi/multimedia/multimedia_pub/multimedia_pub_fsf_141_01.html&#34;&gt;二零一七年&lt;/a&gt;及&lt;a href=&#34;https://www.cfs.gov.hk/tc_chi/multimedia/multimedia_pub/multimedia_pub_fsf_152_01.html&#34;&gt;二零一八年&lt;/a&gt;發生。&lt;/p&gt;
+&lt;p&gt;上述個案是由於滑蛋未經徹底煮熟及/或烹煮後貯存溫度不當所致，而病原體是沙門氏菌。部分個案的現場調查發現，滑蛋煮至半熟後長時間置於室溫，未有再經加熱便上菜。這些食物事故闡明，進食未有適當加熱處理和貯存的滑蛋，存有食物安全風險。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;次日腹泻数次，其余时间都躺在床上，下午症状有所好转，喝了一瓶宝矿力后去医院做了检查&lt;/p&gt;
+&lt;h3 id=&#34;诊断&#34;&gt;诊断&lt;/h3&gt;
+&lt;p&gt;医生根据症状诊断为急性胃肠炎，具体属于病毒性还是细菌性需要验血才能知道&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/gastroenteritis.jpg&#34; 
+         alt=&#34;&#34; 
+         
+         class=&#34;zoomable&#34;&gt;
+    
+    
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;血常规报告显示淋巴细胞水平明显低于参考值（淋巴细胞的消耗大多是与病毒做对抗导致的），所以医生判定为病毒性急性胃肠炎&lt;/p&gt;
+&lt;p&gt;病毒的可能来源有很多：生冷食物、水，公共卫生间的气溶胶等都有可能作为传染源&lt;/p&gt;
+&lt;h3 id=&#34;心得&#34;&gt;心得&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;真正的无菌蛋的成本是非常高的，不要过分信任普通店铺的无菌蛋食品&lt;/li&gt;
+&lt;li&gt;呕吐尽量吐干净，否则残留物会刺激肠胃，更加难受：
+&lt;ul&gt;
+&lt;li&gt;有很多人分享水溶C可以缓解恶心和想要呕吐的感觉（待验证）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;发烧伴随着食欲衰退，会非常容易缺水，尽量多喝电解质水，补水快且持续时间久&lt;/li&gt;
+&lt;li&gt;保持饮食和作息的规律，维护一个饱有余力的身体状态才是最重要的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cfs.gov.hk/tc_chi/multimedia/multimedia_pub/multimedia_pub_fsf_156_01.html&#34;&gt;滑蛋烹煮及貯存溫度不當引致的沙門氏菌食物中毒個案&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
     </item>
+    
     <item>
       <title>Reasoning Agent的来龙去脉</title>
       <link>https://looechao.com/posts/2024/from-text-agent-to-reasoning-agent/</link>
       <pubDate>Thu, 24 Oct 2024 15:01:13 +0800</pubDate>
+      
       <guid>https://looechao.com/posts/2024/from-text-agent-to-reasoning-agent/</guid>
-      <description>从Text Agent到 ReAct Agent</description>
+      <description>&lt;h2 id=&#34;llm-agent-的三个层次&#34;&gt;LLM agent 的三个层次&lt;/h2&gt;
+&lt;p&gt;从Text Agent到 ReAct Agent&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;image-large center-image&#34;&gt;
+    &lt;img src=&#34;https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-1.png&#34; 
+         alt=&#34;&#34; 
+         
+         class=&#34;zoomable&#34;&gt;
+    
+    
+&lt;/figure&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Text agent&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;观察和响应文本&lt;/p&gt;
+&lt;p&gt;eg. ELIZA、LSTM-DQN&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;最早的ChatBot&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;image-large center-image&#34;&gt;
+    &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/4/4e/ELIZA_conversation.jpg&#34; 
+         alt=&#34;Eliza&#34; 
+         
+         class=&#34;zoomable&#34;&gt;
+    
+    
+    &lt;figcaption&gt;Eliza&lt;/figcaption&gt;
+    
+&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LLM agent&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;仅仅使用LLM做出相应&lt;/p&gt;
+&lt;p&gt;eg. SayCan、Language Planner&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reasoning agent&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为LLM加上执行动作和更强的推理能力，Resoning 和 Action&lt;/p&gt;
+&lt;p&gt;eg. ReAct, AutoGPT&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;关于question-answering的问题&#34;&gt;关于Question answering的问题&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;需要推理&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: 有人说真话，有人说假话，根据他们的话来判断谁说了真话。例如：“A说‘B在撒谎’，B说‘C在撒谎’，C说‘A在撒谎’。其中只有一个人说了真话，谁说了真话？&lt;/p&gt;
+&lt;p&gt;A: 需要推理&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;需要行动（搜索，计算，编程）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: 一个袋子里有5个红球和3个蓝球，随机抽取一个球，抽到红球的概率是多少？&lt;/p&gt;
+&lt;p&gt;Q: 需要计算&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;需要新知识&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: 今年英国首相是谁&lt;/p&gt;
+&lt;p&gt;A: 需要最新资料&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;推理和行动的手段&#34;&gt;推理和行动的手段&lt;/h3&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;
+  sequenceDiagram
+    participant User
+    participant Agent
+    participant Tools
+    
+    User-&amp;gt;&amp;gt;Agent: 提出问题
+    loop ReAct Process
+        Agent-&amp;gt;&amp;gt;Agent: 推理思考
+        Agent-&amp;gt;&amp;gt;Tools: 执行行动
+        Tools-&amp;gt;&amp;gt;Agent: 返回结果
+        Agent-&amp;gt;&amp;gt;Agent: 分析结果
+    end
+    Agent-&amp;gt;&amp;gt;User: 返回最终答案
+&lt;/pre&gt;
+&lt;h4 id=&#34;推理-reasoning&#34;&gt;&lt;strong&gt;推理&lt;/strong&gt; Reasoning&lt;/h4&gt;
+&lt;p&gt;主要是通过思维链(Chain of thoughts)增强可持续时间&lt;/p&gt;</description>
     </item>
+    
     <item>
       <title>How I setting a brand new fedora system</title>
       <link>https://looechao.com/posts/2024/linux-setup/</link>
       <pubDate>Fri, 02 Aug 2024 15:38:13 +0800</pubDate>
+      
       <guid>https://looechao.com/posts/2024/linux-setup/</guid>
-      <description>My personal fedora setup</description>
+      <description>&lt;h1 id=&#34;basic-settings&#34;&gt;Basic Settings&lt;/h1&gt;
+&lt;p&gt;My personal fedora setup&lt;/p&gt;
+&lt;h2 id=&#34;terminal-shortcuts&#34;&gt;Terminal shortcuts&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gnome-terminal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;ssh-service-for-winscpxshell&#34;&gt;SSH service for winscp/xshell&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;install openssh-server&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo dnf install openssh-server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;start ssh service to ensure that port 22 is not refused&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo systemctl start sshd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or use the enable command to set this service to start by default&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo systemctl &lt;span class=&#34;nb&#34;&gt;enable&lt;/span&gt; sshd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;now we can get access to host by  using SSH service&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;soft-link&#34;&gt;Soft Link&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ln -s src linkname
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;valgrind-tool-package&#34;&gt;Valgrind tool package&lt;/h2&gt;
+&lt;p&gt;Installation&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>OOP设计原则汇总</title>
-      <link>https://looechao.com/posts/2024/cpp-oop-base/</link>
-      <pubDate>Wed, 24 Jul 2024 21:31:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/cpp-oop-base/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>广度优先遍历算法的应用</title>
-      <link>https://looechao.com/posts/2024/algorithm-bfs/</link>
-      <pubDate>Sun, 21 Jul 2024 14:57:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/algorithm-bfs/</guid>
-      <description>BFS探索</description>
-    </item>
-    <item>
-      <title>浅谈C&#43;&#43;中string的SSO策略</title>
-      <link>https://looechao.com/posts/2024/string-sso-strategy/</link>
-      <pubDate>Wed, 10 Jul 2024 22:53:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/string-sso-strategy/</guid>
-      <description>短字符串的优化策略</description>
-    </item>
-    <item>
-      <title>转载：2014-2024，仅仅十年</title>
-      <link>https://looechao.com/posts/2024/past-ten-years/</link>
-      <pubDate>Fri, 05 Jul 2024 10:33:13 +2301</pubDate>
-      <guid>https://looechao.com/posts/2024/past-ten-years/</guid>
-      <description>转载自大象公社</description>
-    </item>
-    <item>
-      <title>网络编程-EPOLL的使用</title>
-      <link>https://looechao.com/posts/2024/linux-network-programming-02-epoll/</link>
-      <pubDate>Mon, 17 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/linux-network-programming-02-epoll/</guid>
-      <description>用EPOLL代替SELECT</description>
-    </item>
-    <item>
-      <title>网络编程-TCP和UDP通信模型</title>
-      <link>https://looechao.com/posts/2024/linux-network-programming-01-tcp/</link>
-      <pubDate>Sun, 16 Jun 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/linux-network-programming-01-tcp/</guid>
-      <description>TCP和UDP的通信模型</description>
-    </item>
-    <item>
-      <title>Linux学习笔记-24年5月第一组</title>
-      <link>https://looechao.com/posts/2024/linux-01/</link>
-      <pubDate>Sat, 18 May 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/linux-01/</guid>
-      <description>Linux基础知识-排版待整理</description>
-    </item>
-    <item>
-      <title>常用的数据结构和算法</title>
-      <link>https://looechao.com/posts/2024/c-data-structure-algorithm/</link>
-      <pubDate>Fri, 10 May 2024 22:53:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/c-data-structure-algorithm/</guid>
-      <description>动态数组，链表，栈，队列，哈希表，位图，二叉树，排序，二分查找</description>
-    </item>
-    <item>
-      <title>C语言复习笔记-02</title>
-      <link>https://looechao.com/posts/2024/c-notes-02/</link>
-      <pubDate>Fri, 03 May 2024 15:38:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/c-notes-02/</guid>
-      <description>指针及相关应用</description>
-    </item>
-    <item>
-      <title>C语言复习笔记-01</title>
-      <link>https://looechao.com/posts/2024/c-notes-01/</link>
-      <pubDate>Sun, 28 Apr 2024 22:53:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/c-notes-01/</guid>
-      <description>类型，表达式，语句，数组，函数</description>
-    </item>
-    <item>
-      <title>C语言中的六种位运算符</title>
-      <link>https://looechao.com/posts/2024/bitwise-operators/</link>
-      <pubDate>Wed, 24 Apr 2024 21:09:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/bitwise-operators/</guid>
-      <description>位运算符的灵活应用</description>
-    </item>
-    <item>
-      <title>刷题笔记-24年4月-第二组</title>
-      <link>https://looechao.com/posts/2024/coding-24-04-02-leetcode-solution-doc/</link>
-      <pubDate>Tue, 23 Apr 2024 20:25:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/coding-24-04-02-leetcode-solution-doc/</guid>
-      <description>leetcode刷题笔记</description>
-    </item>
-    <item>
-      <title>刷题笔记-24年4月-夏令营基础题</title>
-      <link>https://looechao.com/posts/2024/coding-24-04-01-wangdao-solution-doc/</link>
-      <pubDate>Sun, 14 Apr 2024 20:25:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/coding-24-04-01-wangdao-solution-doc/</guid>
-      <description>夏令营作业P01-P60，C语言和部分C++Primer相关</description>
-    </item>
-    <item>
-      <title>时代的眼泪</title>
-      <link>https://looechao.com/posts/2024/cooltech/</link>
-      <pubDate>Thu, 11 Apr 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/cooltech/</guid>
-      <description>looe&amp;rsquo;s cool digital devices&amp;hellip;</description>
-    </item>
-    <item>
-      <title>禅与极简生活艺术-阅读笔记</title>
-      <link>https://looechao.com/posts/2024/zenlife/</link>
-      <pubDate>Fri, 05 Apr 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/zenlife/</guid>
-      <description>边读边写边总结</description>
-    </item>
-    <item>
-      <title>也谈一些规划</title>
-      <link>https://looechao.com/posts/2024/to-do-list/</link>
-      <pubDate>Tue, 02 Apr 2024 21:09:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/to-do-list/</guid>
-      <description>成功的标准交给自己来定义</description>
-    </item>
-    <item>
-      <title>刷题笔记-24年3月第八组</title>
-      <link>https://looechao.com/posts/2024/coding-24-03-08/</link>
-      <pubDate>Thu, 21 Mar 2024 10:25:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/coding-24-03-08/</guid>
-      <description>洛谷入门题库P2955-P4327</description>
-    </item>
-    <item>
-      <title>刷题笔记-24年3月第七组</title>
-      <link>https://looechao.com/posts/2024/coding-24-03-07/</link>
-      <pubDate>Wed, 20 Mar 2024 16:30:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/coding-24-03-07/</guid>
-      <description>洛谷入门题库P2550-P2911</description>
-    </item>
-    <item>
-      <title>用Powershell直接安装MicrosoftStore的应用</title>
-      <link>https://looechao.com/posts/2024/msstore/</link>
-      <pubDate>Tue, 19 Mar 2024 14:40:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/msstore/</guid>
-      <description>没有商店也可以安装应用</description>
-    </item>
-    <item>
-      <title>刷题笔记-24年3月第六组</title>
-      <link>https://looechao.com/posts/2024/coding-24-03-06/</link>
-      <pubDate>Mon, 18 Mar 2024 17:35:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/coding-24-03-06/</guid>
-      <description>洛谷入门题库P1914-P2525</description>
-    </item>
-    <item>
-      <title>刷题笔记-24年3月第五组</title>
-      <link>https://looechao.com/posts/2024/coding-24-03-05/</link>
-      <pubDate>Sun, 17 Mar 2024 11:28:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/coding-24-03-05/</guid>
-      <description>洛谷入门题库P1789-P1909</description>
-    </item>
-    <item>
-      <title>关于内卷的思考</title>
-      <link>https://looechao.com/posts/2024/involution/</link>
-      <pubDate>Fri, 15 Mar 2024 20:50:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/involution/</guid>
-      <description>只许向上爬，不准往下走的竞争</description>
-    </item>
-    <item>
-      <title>做一个乐观的悲观主义者</title>
-      <link>https://looechao.com/posts/2024/positiveornegative/</link>
-      <pubDate>Thu, 14 Mar 2024 08:50:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/positiveornegative/</guid>
-      <description>悲观者往往正确 乐观者往往成功</description>
-    </item>
-    <item>
-      <title>写在22岁之前</title>
-      <link>https://looechao.com/posts/2024/before22/</link>
-      <pubDate>Wed, 13 Mar 2024 21:50:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/before22/</guid>
-      <description>黄金时代，在中南林的几乎一整年</description>
-    </item>
-    <item>
-      <title>刷题笔记-24年3月第四组</title>
-      <link>https://looechao.com/posts/2024/coding-24-03-04/</link>
-      <pubDate>Tue, 12 Mar 2024 14:57:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/coding-24-03-04/</guid>
-      <description>洛谷入门题库P1597-P1765</description>
-    </item>
-    <item>
-      <title>刷题笔记-24年3月第三组</title>
-      <link>https://looechao.com/posts/2024/coding-24-03-03/</link>
-      <pubDate>Mon, 11 Mar 2024 14:57:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/coding-24-03-03/</guid>
-      <description>洛谷入门题库P1424-P1567</description>
-    </item>
-    <item>
-      <title>刷题笔记-24年3月第二组</title>
-      <link>https://looechao.com/posts/2024/coding-24-03-02/</link>
-      <pubDate>Sun, 10 Mar 2024 15:53:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/coding-24-03-02/</guid>
-      <description>洛谷入门题库p1307-p1423</description>
-    </item>
-    <item>
-      <title>刷题笔记-24年3月第一组</title>
-      <link>https://looechao.com/posts/2024/coding-24-03-01/</link>
-      <pubDate>Thu, 07 Mar 2024 14:57:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/coding-24-03-01/</guid>
-      <description>洛谷入门题库p1047-p1304</description>
-    </item>
-    <item>
-      <title>哲理名句收集</title>
-      <link>https://looechao.com/posts/2024/quote/</link>
-      <pubDate>Sun, 03 Mar 2024 21:31:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/quote/</guid>
-      <description>偶尔也会想要喝鸡汤</description>
-    </item>
-    <item>
-      <title>2023年冬末</title>
-      <link>https://looechao.com/posts/2023/2023-lastweek/</link>
-      <pubDate>Sun, 31 Dec 2023 20:50:13 +2301</pubDate>
-      <guid>https://looechao.com/posts/2023/2023-lastweek/</guid>
-      <description>轻松愉悦的那几天，知己，未来，电影，聊天</description>
-    </item>
-    <item>
-      <title>AuroraAssetEditor使用笔记</title>
-      <link>https://looechao.com/posts/2023/xbox360ftp/</link>
-      <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2023/xbox360ftp/</guid>
-      <description>通过FTP编辑xbox360游戏的封面</description>
-    </item>
-    <item>
-      <title>Hexo框架的博客搭建小记</title>
-      <link>https://looechao.com/posts/2023/hexo-note/</link>
-      <pubDate>Sat, 25 Feb 2023 21:31:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2023/hexo-note/</guid>
-      <description>第一次尝试建立hexo框架的站点</description>
-    </item>
-    <item>
-      <title>我的成就清单</title>
-      <link>https://looechao.com/posts/2024/honor/</link>
-      <pubDate>Sat, 01 Jan 2022 21:09:13 +0800</pubDate>
-      <guid>https://looechao.com/posts/2024/honor/</guid>
-      <description>A list of my achievements</description>
-    </item>
+    
   </channel>
 </rss>
