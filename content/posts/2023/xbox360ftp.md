@@ -23,14 +23,14 @@ https://github.com/XboxUnity/AuroraAssetEditor
 
 ### 2.打开Aurora中的FTP功能：
 
-![img](https://raw.githubusercontent.com/looechao/blogimg/main/picserver/p2p6.jpg)
+![img](https://static.looechao.com/picserver/p2p6.jpg)
 
 
 
 
 ### 3.在Aurora菜单中确定FTP信息：
 
-![img](https://raw.githubusercontent.com/looechao/blogimg/main/picserver/p2p2.jpg)
+![img](https://static.looechao.com/picserver/p2p2.jpg)
 
 
 
@@ -39,26 +39,26 @@ https://github.com/XboxUnity/AuroraAssetEditor
 
 ### 4.确定机器的IP地址：
 
-![img](https://raw.githubusercontent.com/looechao/blogimg/main/picserver/p2p4.jpg)
+![img](https://static.looechao.com/picserver/p2p4.jpg)
 
 
 
 
 ### 5.在软件中填写相对应得到IP地址等信息：
 
-![img](https://raw.githubusercontent.com/looechao/blogimg/main/picserver/P2P11.png)
+![img](https://static.looechao.com/picserver/P2P11.png)
 
 
 
 ### 6.设定相应的封面（以秋之回忆为例）：
 
-![img](https://raw.githubusercontent.com/looechao/blogimg/main/picserver/p2p8.png)
+![img](https://static.looechao.com/picserver/p2p8.png)
 
 
 
 ### 7.实现效果:
 
-![img](https://raw.githubusercontent.com/looechao/blogimg/main/picserver/p2p3.jpg)
+![img](https://static.looechao.com/picserver/p2p3.jpg)
 
 ### 站点推荐:
 

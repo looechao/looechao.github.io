@@ -14,7 +14,7 @@ tags = [ "笔记", "Microsoft Store"]
 - 我这里以EasyConnect为例，先去找到网页端对应的链接
 
 <div style="width: 80%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/ms1.png" alt="shotonspf" style="width: 100%;" />
+    <img src="https://static.looechao.com/ms1.png" alt="shotonspf" style="width: 100%;" />
 </div>
 
 - 把对应的链接复制到online link generator 里
@@ -24,7 +24,7 @@ tags = [ "笔记", "Microsoft Store"]
 - 搜索到的Files里的 .appx 后缀的安装包
 
 <div style="width: 80%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/ms2.png" alt="shotonspf" style="width: 100%;" />
+    <img src="https://static.looechao.com/ms2.png" alt="shotonspf" style="width: 100%;" />
 </div>
 
 #### 用Powershell安装应用
@@ -36,9 +36,9 @@ tags = [ "笔记", "Microsoft Store"]
   ```
 - 输入完毕后按回车，开始部署：
 <div style="width: 80%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/ms3.png" alt="shotonspf" style="width: 100%;" />
+    <img src="https://static.looechao.com/ms3.png" alt="shotonspf" style="width: 100%;" />
 </div>
 - 等待进度结束就安装成功了
 <div style="width: 40%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/ms4.png" alt="shotonspf" style="width: 100%;" />
+    <img src="https://static.looechao.com/ms4.png" alt="shotonspf" style="width: 100%;" />
 </div>

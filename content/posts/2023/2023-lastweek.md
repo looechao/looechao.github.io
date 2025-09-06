@@ -19,7 +19,7 @@ tags = [ "肖洪涛", "生活", "跨年", "Omegle"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-4.jpg" width="50%">
+    src="https://static.looechao.com/2023/lastweek-4.jpg" width="50%">
 </center>
 </div>
 
@@ -27,7 +27,7 @@ tags = [ "肖洪涛", "生活", "跨年", "Omegle"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-1.jpg" width="50%">
+    src="https://static.looechao.com/2023/lastweek-1.jpg" width="50%">
 </center>
 </div>
 
@@ -35,7 +35,7 @@ tags = [ "肖洪涛", "生活", "跨年", "Omegle"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-2.jpg" width="50%">
+    src="https://static.looechao.com/2023/lastweek-2.jpg" width="50%">
 </center>
 </div>
 
@@ -43,6 +43,6 @@ tags = [ "肖洪涛", "生活", "跨年", "Omegle"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/lastweek-3.jpg" width="50%">
+    src="https://static.looechao.com/2023/lastweek-3.jpg" width="50%">
 </center>
 </div>

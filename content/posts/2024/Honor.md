@@ -17,5 +17,5 @@ tags = [ "成长", "成就"]
 </br>
 </br>
 <div style="width: 50%; margin: auto;">
-    <img src="https://raw.githubusercontent.com/looechao/blogimg/main/honor/modeling.jpg" alt="shotonspf" style="width: 100%;" />
+    <img src="https://static.looechao.com/honor/modeling.jpg" alt="shotonspf" style="width: 100%;" />
 </div>

@@ -29,7 +29,7 @@ tags = [ "消费主义陷阱", "生活", "数码"]
 - 电源：ENERMAX GN650
 - 机箱：SAMA M2 MESH
 
-![New PC medium center](https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/newpc.jpg)
+![New PC medium center](https://static.looechao.com/2025/newpc.jpg)
 
 ### 使用体验
 
@@ -37,6 +37,6 @@ tags = [ "消费主义陷阱", "生活", "数码"]
 
 ### 外设
 
-![Xbox Series Controller medium center](https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/xboxcontroller.jpg)
+![Xbox Series Controller medium center](https://static.looechao.com/2025/xboxcontroller.jpg)
 
 Xbox Series 手柄，买了美版的，做工很好，美中不足的问题是过海关可能会被拆看检查，到手发现有遗留的灰尘。
