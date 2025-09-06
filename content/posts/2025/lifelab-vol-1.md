@@ -24,7 +24,7 @@ Blog 自上线以来，一直在用 Meik 写的主题，虽然有很多不错的
 
 坚持长跑 5 年，终于感觉到跑 5km 的 pace 有微小提升，从 31min、32min 慢慢变回到了 29min 左右（可能是换了跑道的缘故），有了 running_page 后，会很想要坚持下去，把Heat Map都点亮；
 
-![MILES center large](https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/running_page.jpg)
+![MILES center large](https://static.looechao.com/2025/running_page.jpg)
 
 ### 影
 

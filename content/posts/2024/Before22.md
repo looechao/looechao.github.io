@@ -20,7 +20,7 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/goldentime.jpg" width="30%">
+    src="https://static.looechao.com/goldentime.jpg" width="30%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -47,7 +47,7 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-4.jpg" width="50%">
+    src="https://static.looechao.com/2023/before22-4.jpg" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -65,7 +65,7 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-5.jpg" width="50%">
+    src="https://static.looechao.com/2023/before22-5.jpg" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -81,7 +81,7 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-3.jpg" width="50%">
+    src="https://static.looechao.com/2023/before22-3.jpg" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -96,7 +96,7 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-7.jpg" width="50%">
+    src="https://static.looechao.com/2023/before22-7.jpg" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -111,7 +111,7 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-1.jpg" width="50%">
+    src="https://static.looechao.com/2023/before22-1.jpg" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -127,7 +127,7 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-2.jpg" width="50%">
+    src="https://static.looechao.com/2023/before22-2.jpg" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -142,7 +142,7 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-6.jpg" width="50%">
+    src="https://static.looechao.com/2023/before22-6.jpg" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -174,7 +174,7 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/2023/before22-8.jpg" width="50%">
+    src="https://static.looechao.com/2023/before22-8.jpg" width="50%">
 </center>
 </div>
 
@@ -193,7 +193,7 @@ tags = [ "生活",  "杂谈", "年度总结", "成长", "感悟"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/before22.jpg" width="50%">
+    src="https://static.looechao.com/before22.jpg" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;

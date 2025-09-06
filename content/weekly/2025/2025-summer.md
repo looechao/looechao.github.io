@@ -74,7 +74,7 @@ Tags：`女性视角` `都市生活`
 
    - 运动后吃麦已经成为习惯；
 
-     <img src="https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/weekly/week25-01.jpg" alt="mcdonalds" width="400" style="display: block; margin: 0 auto; margin-bottom: 20px;">
+     <img src="https://static.looechao.com/2025/weekly/week25-01.jpg" alt="mcdonalds" width="400" style="display: block; margin: 0 auto; margin-bottom: 20px;">
 
 2. 运动
 

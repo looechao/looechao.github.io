@@ -15,7 +15,7 @@ tags = ["C/C++", "OOP"]
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/OOP/01-srp.png" width="80%">
+    src="https://static.looechao.com/OOP/01-srp.png" width="80%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -88,7 +88,7 @@ int main()
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/OOP/02-ocp.png" width="100%">
+    src="https://static.looechao.com/OOP/02-ocp.png" width="100%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -166,7 +166,7 @@ int main()
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/OOP/03-lsp-1.png" width="50%">
+    src="https://static.looechao.com/OOP/03-lsp-1.png" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -179,7 +179,7 @@ int main()
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/OOP/03-lsp-2.png" width="50%">
+    src="https://static.looechao.com/OOP/03-lsp-2.png" width="50%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -261,7 +261,7 @@ int main()
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/OOP/04-isp.png" width="80%">
+    src="https://static.looechao.com/OOP/04-isp.png" width="80%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -362,7 +362,7 @@ int main() {
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/OOP/05-dip.png" width="80%">
+    src="https://static.looechao.com/OOP/05-dip.png" width="80%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -437,7 +437,7 @@ int main() {
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/OOP/06-lod.png" width="80%">
+    src="https://static.looechao.com/OOP/06-lod.png" width="80%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;
@@ -522,7 +522,7 @@ int main()
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://raw.githubusercontent.com/looechao/blogimg/main/OOP/07-coip.png" width="80%">
+    src="https://static.looechao.com/OOP/07-coip.png" width="80%">
     <br>
     <div style="color:orange; border-bottom: 0px solid #d9d9d9;
     display: inline-block;

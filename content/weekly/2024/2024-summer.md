@@ -14,9 +14,9 @@ tags = [ "2024Weekly"]
 
 告别，聚餐，散心，返湘
 
-![严西湖 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-2.gif)
+![严西湖 medium center](https://static.looechao.com/2024/week35-2.gif)
 
-![返湘 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-3.jpg)
+![返湘 medium center](https://static.looechao.com/2024/week35-3.jpg)
 
 
 
@@ -24,7 +24,7 @@ tags = [ "2024Weekly"]
 
 用gogh捏了一个asumi
 
-![gogh large center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week35-1.gif)
+![gogh large center](https://static.looechao.com/2024/week35-1.gif)
 
 
 
@@ -42,13 +42,13 @@ tags = [ "2024Weekly"]
 
 - 散步很舒服，在环线每天下午都能看到跳伞
 
-  ![拍云 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week34-2.jpg)
+  ![拍云 medium center](https://static.looechao.com/2024/week34-2.jpg)
 
 #### 学习
 
 - 写项目，很累但是成就感满满
 
-  ![Coding Time meidum center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week34-1.jpg)
+  ![Coding Time meidum center](https://static.looechao.com/2024/week34-1.jpg)
 
 #### 技术
 
@@ -66,17 +66,17 @@ tags = [ "2024Weekly"]
 
   {{<neodb "https://neodb.social/movie/32jHSKURaEuSQdR4NaRaiL">}}
   
-  ![喜宴 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-5.jpg)
+  ![喜宴 medium center](https://static.looechao.com/2024/week33-5.jpg)
   
 - 饭后习惯散步+看云
 
-  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-3.jpg)
+  ![medium center](https://static.looechao.com/2024/week33-3.jpg)
   
-  ![漂亮云朵 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-4.jpg)
+  ![漂亮云朵 medium center](https://static.looechao.com/2024/week33-4.jpg)
   
 - 吃了老乡鸡的肉饼，感觉还不错
 
-  ![散步时间 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week33-2.jpg)
+  ![散步时间 medium center](https://static.looechao.com/2024/week33-2.jpg)
 
 #### 学习
 
@@ -111,11 +111,11 @@ tags = [ "2024Weekly"]
 
    - 去了KTV
 
-     ![KTV medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-4.jpg)
+     ![KTV medium center](https://static.looechao.com/2024/week32-4.jpg)
      
    - 去了长江大桥，户部巷步行街
    
-     ![夜游长江大桥 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-11.jpg)
+     ![夜游长江大桥 medium center](https://static.looechao.com/2024/week32-11.jpg)
      
    - 看了老友记前两集
    
@@ -125,7 +125,7 @@ tags = [ "2024Weekly"]
    
 - 看到温柔晚霞
   
-  ![动漫晚霞 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-3.jpg)
+  ![动漫晚霞 medium center](https://static.looechao.com/2024/week32-3.jpg)
 
 
 3. 饮食
@@ -135,15 +135,15 @@ tags = [ "2024Weekly"]
    <div style="display: flex; justify-content: center; align-items: flex-start;">
        <div style="margin: 10px; text-align: center;">
            <img style="border-radius: 0.3125em; box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-                src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-1.jpg" width="250px" alt = "小龙虾">
+                src="https://static.looechao.com/2024/week32-1.jpg" width="250px" alt = "小龙虾">
        </div>
        <div style="margin: 10px; text-align: center;">
            <img style="border-radius: 0.3125em; box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-                src="https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-2.jpg" width="250px">
+                src="https://static.looechao.com/2024/week32-2.jpg" width="250px">
        </div>
    </div>   
    
-   ![黄鹤楼 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week32-10.jpg)
+   ![黄鹤楼 medium center](https://static.looechao.com/2024/week32-10.jpg)
 
 吃了KFC的脆皮鸡，感觉很一般
 
@@ -194,7 +194,7 @@ kernel power 41 异常关机这个问题真的很难解决，让人心烦
 
    - 和秦昊去湖边散步，聊天停不下来
 
-   ![散步 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week31-1.jpg)
+   ![散步 medium center](https://static.looechao.com/2024/week31-1.jpg)
 
 #### 学习
 
@@ -234,7 +234,7 @@ kernel power 41 异常关机这个问题真的很难解决，让人心烦
 
    看完了李安的饮食男女，很好看，做了吴倩莲的截图：
    
-   ![吴倩莲 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/2024/week30-1.png)
+   ![吴倩莲 medium center](https://static.looechao.com/2024/week30-1.png)
    
    下载了台湾的高中课本，挖掘到了宝藏
 
@@ -285,7 +285,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 2. 本周的娱乐时间
 
-   ![湖边 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week29-2.jpg)
+   ![湖边 medium center](https://static.looechao.com/week/week29-2.jpg)
 
 - 饭后的散步时间走到了之前发现的处很美的江边，采集到了香蒲
 
@@ -307,7 +307,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 看了电影**蝴蝶效应**，很震撼：
 
-  ![蝴蝶效应 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week29-1.jpg)
+  ![蝴蝶效应 medium center](https://static.looechao.com/week/week29-1.jpg)
 
 
   Evan回到过去怎么选都达不到完美的结局，
@@ -331,7 +331,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 周末吃KFC的吮指原味鸡+圣代
 
-  ![冰霜双皮奶 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week29-3.jpg)
+  ![冰霜双皮奶 medium center](https://static.looechao.com/week/week29-3.jpg)
 
 
 4. 心情
@@ -387,7 +387,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 立下了去KTV、逛省博的flag，不知何时能完成
 
-  ![仙剑奇侠传 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week28-1.png)
+  ![仙剑奇侠传 medium center](https://static.looechao.com/week/week28-1.png)
 
 
 
@@ -436,7 +436,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 心理状态并不太好
 
-  ![粉色晚霞 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-1.jpg)
+  ![粉色晚霞 medium center](https://static.looechao.com/week/week27-1.jpg)
 
 2. 本周的娱乐时间
 
@@ -448,7 +448,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 用1.5倍速跟着范李猿的第二节课，很累，汗流浃背
 
-  ![肋骨牡丹 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-4.jpg)
+  ![肋骨牡丹 medium center](https://static.looechao.com/week/week27-4.jpg)
 
 3. 饮食
 
@@ -458,8 +458,8 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 周末三个人一起吃全家桶太过瘾
 
-  ![茄子 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-2.jpg)
-  ![火龙果季 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week27-3.jpg)
+  ![茄子 medium center](https://static.looechao.com/week/week27-2.jpg)
+  ![火龙果季 medium center](https://static.looechao.com/week/week27-3.jpg)
 
 
 4. 心情
@@ -497,9 +497,9 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 东湖骑行
 
-  ![东湖 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-1.jpg)
+  ![东湖 medium center](https://static.looechao.com/week/week26-1.jpg)
   
-  ![猫咪 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-5.jpg)
+  ![猫咪 medium center](https://static.looechao.com/week/week26-5.jpg)
 
 
 3. 饮食
@@ -512,11 +512,11 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 周日吃青海美食
 
-  ![酸奶 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-4.jpg)
+  ![酸奶 medium center](https://static.looechao.com/week/week26-4.jpg)
   
-  ![夏天 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-2.jpg)
+  ![夏天 medium center](https://static.looechao.com/week/week26-2.jpg)
   
-  ![medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week26-3.jpg)
+  ![medium center](https://static.looechao.com/week/week26-3.jpg)
 
 
 4. 心情
@@ -552,9 +552,9 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 户外运动
 
-  ![风起云涌 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-1.jpg)
+  ![风起云涌 medium center](https://static.looechao.com/week/week25-1.jpg)
   
-  ![蓝天 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-4.jpg)
+  ![蓝天 medium center](https://static.looechao.com/week/week25-4.jpg)
 
 
 3. 饮食
@@ -567,9 +567,9 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 周日中午去青海面馆吃的很舒服
 
-  ![早餐 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-3.jpg)
+  ![早餐 medium center](https://static.looechao.com/week/week25-3.jpg)
   
-  ![KFC medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week25-2.jpg)
+  ![KFC medium center](https://static.looechao.com/week/week25-2.jpg)
 
 
 
@@ -610,9 +610,9 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 经历了一次的暴风雨，目睹一只小麻雀被风吹到树上撞晕了
 
-  ![暴风 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week24-3.jpg)
+  ![暴风 medium center](https://static.looechao.com/week/week24-3.jpg)
   
-  ![草莓 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week24-4.jpg)
+  ![草莓 medium center](https://static.looechao.com/week/week24-4.jpg)
 
 
 2. 本周的娱乐时间
@@ -628,7 +628,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 - 养成了周末吃肯德基的习惯
 
-  ![乌龙茶 medium center](https://raw.githubusercontent.com/looechao/blogimg/main/week/week24-2.jpg)
+  ![乌龙茶 medium center](https://static.looechao.com/week/week24-2.jpg)
 
 
 4. 心情
@@ -676,7 +676,7 @@ Georgia Tech 的Online项目语言要求比线下要高很多，这个项目口�
 
 4. PLOG
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">     <div style="width: 33%; text-align: center;">         <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week23-1.jpg" style="width: 100%;">         <div>9人于东北人家聚餐</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week23-2.jpg" style="width: 100%;">         <div>处理杂物</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week23-3.jpg" style="width: 100%;">         <div>临行</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week23-4.jpg" style="width: 100%;">         <div>长沙南站的温柔晚霞</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week23-5.jpg" style="width: 100%;">         <div>高铁上的聊天</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week23-6.jpg" style="width: 100%;">         <div>疏狐：冷面</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week23-7.jpg" style="width: 100%;">         <div>花山新城的长跑</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week23-9.jpg" style="width: 100%;">         <div>失眠</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://raw.githubusercontent.com/looechao/blogimg/main/week/week23-8.jpg" style="width: 100%;">         <div>牛奶储备完成！</div>     </div> </div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">     <div style="width: 33%; text-align: center;">         <img src="https://static.looechao.com/week/week23-1.jpg" style="width: 100%;">         <div>9人于东北人家聚餐</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://static.looechao.com/week/week23-2.jpg" style="width: 100%;">         <div>处理杂物</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://static.looechao.com/week/week23-3.jpg" style="width: 100%;">         <div>临行</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://static.looechao.com/week/week23-4.jpg" style="width: 100%;">         <div>长沙南站的温柔晚霞</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://static.looechao.com/week/week23-5.jpg" style="width: 100%;">         <div>高铁上的聊天</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://static.looechao.com/week/week23-6.jpg" style="width: 100%;">         <div>疏狐：冷面</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://static.looechao.com/week/week23-7.jpg" style="width: 100%;">         <div>花山新城的长跑</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://static.looechao.com/week/week23-9.jpg" style="width: 100%;">         <div>失眠</div>     </div>     <div style="width: 33%; text-align: center;">         <img src="https://static.looechao.com/week/week23-8.jpg" style="width: 100%;">         <div>牛奶储备完成！</div>     </div> </div>
 
 5. 心情
 

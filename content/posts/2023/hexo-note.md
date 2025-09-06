@@ -72,7 +72,7 @@ hexo s
 
 ### 将文件部署到github上
 
--   在github上新建库，库名必须和自己github的id相同![pic1](https://raw.githubusercontent.com/looechao/blogimg/main/picserver/702de09807174db5a90a760207deb808%7Etplv-k3u1fbpfcp-zoom-1.png)
+-   在github上新建库，库名必须和自己github的id相同![pic1](https://static.looechao.com/picserver/702de09807174db5a90a760207deb808%7Etplv-k3u1fbpfcp-zoom-1.png)
 -   在blog目录下安装git部署插件：
 
 ```
