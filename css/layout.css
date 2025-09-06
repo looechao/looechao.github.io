@@ -67,7 +67,7 @@ body {
 
 /* 右侧自然占据剩余的 20% 空间 */
 
-@media (max-width: 900px) {
+@media (max-width: 990px) {
     .site-container {
         flex-direction: column;
     }

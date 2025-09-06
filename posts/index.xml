@@ -30,7 +30,7 @@
 &lt;h3 id=&#34;运动&#34;&gt;运动&lt;/h3&gt;
 &lt;p&gt;坚持长跑 5 年，终于感觉到跑 5km 的 pace 有微小提升，从 31min、32min 慢慢变回到了 29min 左右（可能是换了跑道的缘故），有了 running_page 后，会很想要坚持下去，把Heat Map都点亮；&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&#34;image-large center-image&#34;&gt;
-    &lt;img src=&#34;https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/running_page.jpg&#34; 
+    &lt;img src=&#34;https://static.looechao.com/2025/running_page.jpg&#34; 
          alt=&#34;MILES&#34; 
          
          class=&#34;zoomable&#34;&gt;
@@ -173,7 +173,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;figure class=&#34;image-medium center-image&#34;&gt;
-    &lt;img src=&#34;https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/newpc.jpg&#34; 
+    &lt;img src=&#34;https://static.looechao.com/2025/newpc.jpg&#34; 
          alt=&#34;New PC&#34; 
          
          class=&#34;zoomable&#34;&gt;
@@ -186,7 +186,7 @@
 &lt;p&gt;超出预期，这次选择的 7500F CPU 和 7650GRE GPU，以及国产长鑫颗粒内存条，在社区讨论中几乎都会被视为雷点，但是这几天的体验中没有遇到任何不兼容的问题。&lt;/p&gt;
 &lt;h3 id=&#34;外设&#34;&gt;外设&lt;/h3&gt;
 &lt;p&gt;&lt;figure class=&#34;image-medium center-image&#34;&gt;
-    &lt;img src=&#34;https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/xboxcontroller.jpg&#34; 
+    &lt;img src=&#34;https://static.looechao.com/2025/xboxcontroller.jpg&#34; 
          alt=&#34;Xbox Series Controller&#34; 
          
          class=&#34;zoomable&#34;&gt;
@@ -289,7 +289,7 @@
 &lt;h3 id=&#34;诊断&#34;&gt;诊断&lt;/h3&gt;
 &lt;p&gt;医生根据症状诊断为急性胃肠炎，具体属于病毒性还是细菌性需要验血才能知道&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;
-    &lt;img src=&#34;https://raw.githubusercontent.com/looechao/blogimg/refs/heads/main/2025/gastroenteritis.jpg&#34; 
+    &lt;img src=&#34;https://static.looechao.com/2025/gastroenteritis.jpg&#34; 
          alt=&#34;&#34; 
          
          class=&#34;zoomable&#34;&gt;
@@ -329,7 +329,7 @@
       <description>&lt;h2 id=&#34;llm-agent-的三个层次&#34;&gt;LLM agent 的三个层次&lt;/h2&gt;
 &lt;p&gt;从Text Agent到 ReAct Agent&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&#34;image-large center-image&#34;&gt;
-    &lt;img src=&#34;https://raw.githubusercontent.com/looechao/blogimg/main/2024/llm-1.png&#34; 
+    &lt;img src=&#34;https://static.looechao.com/2024/llm-1.png&#34; 
          alt=&#34;&#34; 
          
          class=&#34;zoomable&#34;&gt;
