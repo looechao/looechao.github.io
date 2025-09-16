@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四联用药打卡</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #2c2c2c;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .medication-info {
+            background: #f9f9f9;
+            padding: 20px 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .medication-info h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .medication-schedule {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .schedule-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .schedule-item h4 {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: normal;
+        }
+
+        .medication-list {
+            list-style: none;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .medication-list li {
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .medication-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #999;
+        }
+
+        .progress-section {
+            padding: 25px 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .progress-title {
+            font-size: 16px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .progress-stats {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #4a4a4a;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .calendar-section {
+            padding: 30px;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .day-card {
+            background: #fafafa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.2s ease;
+        }
+
+        .day-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .day-number {
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .day-date {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .dose-checks {
+            display: flex;
+            gap: 15px;
+        }
+
+        .dose-item {
+            flex: 1;
+            background: white;
+            border: 1px solid #d0d0d0;
+            border-radius: 6px;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+
+        .dose-item:hover {
+            border-color: #999;
+        }
+
+        .dose-item.checked {
+            background: #4a4a4a;
+            color: white;
+            border-color: #4a4a4a;
+        }
+
+        .dose-label {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .dose-time {
+            font-size: 11px;
+            opacity: 0.7;
+        }
+
+        .completed-day {
+            background: #f0f0f0;
+            border-color: #ccc;
+        }
+
+        .completed-day .day-number {
+            color: #999;
+        }
+
+        .stats-section {
+            padding: 25px 30px;
+            background: #fafafa;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .stat-item {
+            flex: 1;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .footer {
+            padding: 20px 30px;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            background: #fafafa;
+        }
+
+        .reset-button {
+            background: #666;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .reset-button:hover {
+            background: #555;
+        }
+
+        @media (max-width: 600px) {
+            .calendar-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .medication-schedule {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>四联疗法打卡</h1>
+            <div class="subtitle">14天用药打卡记录</div>
+        </div>
+
+        <div class="medication-info">
+            <h3>用药方案</h3>
+            <div class="medication-schedule">
+                <div class="schedule-item">
+                    <h4>饭前（30分钟）</h4>
+                    <ul class="medication-list">
+                        <li>PPI（质子泵抑制剂）</li>
+                        <li>铋剂</li>
+                    </ul>
+                </div>
+                <div class="schedule-item">
+                    <h4>饭后（立即）</h4>
+                    <ul class="medication-list">
+                        <li>阿莫西林</li>
+                        <li>克拉霉素</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-section">
+            <div class="progress-header">
+                <div class="progress-title">治疗进度</div>
+                <div class="progress-stats">
+                    <span id="completedDoses">0</span> / <span id="totalDoses">28</span> 次用药
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="calendar-section">
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Days will be generated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-item">
+                <div class="stat-value" id="completedDays">0</div>
+                <div class="stat-label">已完成天数</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="remainingDays">14</div>
+                <div class="stat-label">剩余天数</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="completionRate">0%</div>
+                <div class="stat-label">完成率</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div style="margin-bottom: 15px;">
+                <button class="reset-button" onclick="exportData()" style="margin-right: 10px;">导出数据</button>
+                <button class="reset-button" onclick="document.getElementById('importFile').click()">导入数据</button>
+                <input type="file" id="importFile" accept=".json" style="display: none;" onchange="importData(event)">
+                <button class="reset-button" onclick="shareViaUrl()" style="margin-left: 10px;">生成分享链接</button>
+                <button class="reset-button" onclick="resetProgress()" style="margin-left: 10px; background: #999;">重置进度</button>
+            </div>
+            <p>请遵医嘱按时服药，完成全程治疗</p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize data structure
+        let medicationData = JSON.parse(localStorage.getItem('medicationData')) || {};
+
+        // Get start date
+        function getStartDate() {
+            if (!localStorage.getItem('startDate')) {
+                localStorage.setItem('startDate', new Date().toISOString());
+            }
+            return new Date(localStorage.getItem('startDate'));
+        }
+
+        // Calculate date for each day
+        function getDateForDay(dayNumber) {
+            const startDate = getStartDate();
+            const date = new Date(startDate);
+            date.setDate(date.getDate() + dayNumber - 1);
+            return date;
+        }
+
+        // Format date
+        function formatDate(date) {
+            const month = date.getMonth() + 1;
+            const day = date.getDate();
+            return `${month}月${day}日`;
+        }
+
+        // Generate calendar
+        function generateCalendar() {
+            const calendarGrid = document.getElementById('calendarGrid');
+            calendarGrid.innerHTML = '';
+
+            for (let i = 1; i <= 14; i++) {
+                const dayDate = getDateForDay(i);
+                const dayKey = `day${i}`;
+                const dayData = medicationData[dayKey] || { morning: false, evening: false };
+
+                const dayCard = document.createElement('div');
+                dayCard.className = 'day-card';
+                if (dayData.morning && dayData.evening) {
+                    dayCard.classList.add('completed-day');
+                }
+
+                dayCard.innerHTML = `
+                    <div class="day-header">
+                        <div class="day-number">第 ${i} 天</div>
+                        <div class="day-date">${formatDate(dayDate)}</div>
+                    </div>
+                    <div class="dose-checks">
+                        <div class="dose-item ${dayData.morning ? 'checked' : ''}"
+                             onclick="toggleDose('${dayKey}', 'morning')">
+                            <div class="dose-label">早晨</div>
+                            <div class="dose-time">饭前+饭后</div>
+                        </div>
+                        <div class="dose-item ${dayData.evening ? 'checked' : ''}"
+                             onclick="toggleDose('${dayKey}', 'evening')">
+                            <div class="dose-label">晚上</div>
+                            <div class="dose-time">饭前+饭后</div>
+                        </div>
+                    </div>
+                `;
+
+                calendarGrid.appendChild(dayCard);
+            }
+        }
+
+        // Toggle dose
+        function toggleDose(dayKey, time) {
+            if (!medicationData[dayKey]) {
+                medicationData[dayKey] = { morning: false, evening: false };
+            }
+            medicationData[dayKey][time] = !medicationData[dayKey][time];
+            localStorage.setItem('medicationData', JSON.stringify(medicationData));
+            updateUI();
+        }
+
+        // Update statistics
+        function updateStatistics() {
+            let completedDoses = 0;
+            let completedDays = 0;
+
+            for (let i = 1; i <= 14; i++) {
+                const dayKey = `day${i}`;
+                const dayData = medicationData[dayKey] || { morning: false, evening: false };
+
+                if (dayData.morning) completedDoses++;
+                if (dayData.evening) completedDoses++;
+
+                if (dayData.morning && dayData.evening) {
+                    completedDays++;
+                }
+            }
+
+            const totalDoses = 28;
+            const completionRate = Math.round((completedDoses / totalDoses) * 100);
+
+            document.getElementById('completedDoses').textContent = completedDoses;
+            document.getElementById('totalDoses').textContent = totalDoses;
+            document.getElementById('completedDays').textContent = completedDays;
+            document.getElementById('remainingDays').textContent = 14 - completedDays;
+            document.getElementById('completionRate').textContent = completionRate + '%';
+            document.getElementById('progressFill').style.width = completionRate + '%';
+        }
+
+        // Update UI
+        function updateUI() {
+            generateCalendar();
+            updateStatistics();
+        }
+
+        // Reset progress
+        function resetProgress() {
+            if (confirm('确定要重置所有打卡记录吗？')) {
+                localStorage.removeItem('medicationData');
+                localStorage.removeItem('startDate');
+                medicationData = {};
+                updateUI();
+            }
+        }
+
+        // Export data to JSON file
+        function exportData() {
+            const exportObj = {
+                medicationData: medicationData,
+                startDate: localStorage.getItem('startDate'),
+                exportDate: new Date().toISOString()
+            };
+
+            const dataStr = JSON.stringify(exportObj, null, 2);
+            const blob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `medication-backup-${new Date().toISOString().split('T')[0]}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('数据已导出！请妥善保存备份文件。');
+        }
+
+        // Import data from JSON file
+        function importData(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const importObj = JSON.parse(e.target.result);
+
+                    if (importObj.medicationData && importObj.startDate) {
+                        if (confirm('导入数据将覆盖当前进度，确定继续吗？')) {
+                            medicationData = importObj.medicationData;
+                            localStorage.setItem('medicationData', JSON.stringify(medicationData));
+                            localStorage.setItem('startDate', importObj.startDate);
+                            updateUI();
+                            alert('数据导入成功！');
+                        }
+                    } else {
+                        alert('文件格式不正确，请选择正确的备份文件。');
+                    }
+                } catch (error) {
+                    alert('导入失败，请检查文件格式。');
+                }
+                event.target.value = ''; // Reset file input
+            };
+            reader.readAsText(file);
+        }
+
+        // Share progress via URL
+        function shareViaUrl() {
+            const shareData = {
+                m: medicationData,
+                s: localStorage.getItem('startDate')
+            };
+
+            const compressed = btoa(encodeURIComponent(JSON.stringify(shareData)));
+            const shareUrl = `${window.location.origin}${window.location.pathname}?data=${compressed}`;
+
+            // Create a temporary textarea to copy the URL
+            const textarea = document.createElement('textarea');
+            textarea.value = shareUrl;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+
+            try {
+                document.execCommand('copy');
+                alert('分享链接已复制到剪贴板！\n\n可以发送给其他设备，打开链接即可同步进度。');
+            } catch (err) {
+                prompt('请复制以下链接分享：', shareUrl);
+            }
+
+            document.body.removeChild(textarea);
+        }
+
+        // Check for shared data in URL
+        function checkUrlData() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const data = urlParams.get('data');
+
+            if (data) {
+                try {
+                    const decoded = JSON.parse(decodeURIComponent(atob(data)));
+                    if (decoded.m && decoded.s) {
+                        if (confirm('检测到分享的进度数据，是否导入？')) {
+                            medicationData = decoded.m;
+                            localStorage.setItem('medicationData', JSON.stringify(medicationData));
+                            localStorage.setItem('startDate', decoded.s);
+
+                            // Clean URL
+                            window.history.replaceState({}, document.title, window.location.pathname);
+
+                            updateUI();
+                            alert('进度同步成功！');
+                        }
+                    }
+                } catch (error) {
+                    console.error('Failed to parse shared data:', error);
+                }
+            }
+        }
+
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', function() {
+            checkUrlData(); // Check for shared data first
+            updateUI();
+        });
+    </script>
+</body>
+</html>
