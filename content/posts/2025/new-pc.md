@@ -20,14 +20,14 @@ tags = [ "消费主义陷阱", "生活", "数码"]
 
 ### SPECS
 
-- CPU：AMD R5 7500F 
+- **CPU**：AMD R5 7500F 
 
-- GPU：AMD 7650GRE
-- 内存：KingBank 16GBx2 6000Mhz DDR5
-- 主板：MSI B650M BOMBER WIFI
-- 硬盘：SN5000 1TB
-- 电源：ENERMAX GN650
-- 机箱：SAMA M2 MESH
+- **GPU**：AMD 7650GRE
+- **内存**：KingBank 16GBx2 6000Mhz DDR5
+- **主板**：MSI B650M BOMBER WIFI
+- **硬盘**：SN5000 1TB
+- **电源**：ENERMAX GN650
+- **机箱**：SAMA M2 MESH
 
 ![New PC medium center](https://static.looechao.com/2025/newpc.jpg)
 

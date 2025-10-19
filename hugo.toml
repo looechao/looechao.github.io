@@ -1,12 +1,17 @@
 baseURL = 'https://looechao.com'
 buildFuture = true
 languageCode = 'zh-cn'
-pygmentsCodeFences = true
-pygmentsUseClasses = true
 title = 'looechao'
 theme = "lucid"
+
 [markup]
 defaultMarkdownHandler = "goldmark"
+
+[markup.highlight]
+style = 'github'  # https://swapoff.org/chroma/playground/
+lineNos = false
+lineNumbersInTable = true
+
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true

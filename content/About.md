@@ -8,7 +8,7 @@ type = "page"
 layout = "minimal"
 
 +++
-## ABOUT
+## **ABOUT**
 
 - Dirty Hands Dev.
 
@@ -28,7 +28,7 @@ layout = "minimal"
 - `生活` [平淡生活中的刺](https://looechao.com/posts/2025/gastroenteritis/) | [不完美宣言](https://looechao.com/posts/2025/imperfection/)
 - `读书` [禅与极简生活艺术](https://looechao.com/posts/2024/zenlife/) | [关于内卷的思考](https://looechao.com/posts/2024/involution/)
 
-## TRIP
+## **TRIP**
 
 <div style="position: relative; width: 100%; max-width: 900px; padding-bottom: 60%; height: 0; overflow: hidden;">
   <iframe 
