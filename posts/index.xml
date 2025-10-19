@@ -151,25 +151,25 @@
 &lt;h3 id=&#34;specs&#34;&gt;SPECS&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;CPU：AMD R5 7500F&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CPU&lt;/strong&gt;：AMD R5 7500F&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;GPU：AMD 7650GRE&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GPU&lt;/strong&gt;：AMD 7650GRE&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;内存：KingBank 16GBx2 6000Mhz DDR5&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;内存&lt;/strong&gt;：KingBank 16GBx2 6000Mhz DDR5&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;主板：MSI B650M BOMBER WIFI&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;主板&lt;/strong&gt;：MSI B650M BOMBER WIFI&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;硬盘：SN5000 1TB&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;硬盘&lt;/strong&gt;：SN5000 1TB&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;电源：ENERMAX GN650&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;电源&lt;/strong&gt;：ENERMAX GN650&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;机箱：SAMA M2 MESH&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;机箱&lt;/strong&gt;：SAMA M2 MESH&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;figure class=&#34;image-medium center-image&#34;&gt;
@@ -417,25 +417,25 @@
       <description>&lt;h1 id=&#34;basic-settings&#34;&gt;Basic Settings&lt;/h1&gt;
 &lt;p&gt;My personal fedora setup&lt;/p&gt;
 &lt;h2 id=&#34;terminal-shortcuts&#34;&gt;Terminal shortcuts&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gnome-terminal
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gnome-terminal
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;ssh-service-for-winscpxshell&#34;&gt;SSH service for winscp/xshell&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;install openssh-server&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo dnf install openssh-server
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo dnf install openssh-server
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;start ssh service to ensure that port 22 is not refused&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo systemctl start sshd
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo systemctl start sshd
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or use the enable command to set this service to start by default&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo systemctl &lt;span class=&#34;nb&#34;&gt;enable&lt;/span&gt; sshd
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo systemctl &lt;span style=&#34;color:#6639ba&#34;&gt;enable&lt;/span&gt; sshd
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;now we can get access to host by  using SSH service&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;soft-link&#34;&gt;Soft Link&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ln -s src linkname
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ln -s src linkname
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;valgrind-tool-package&#34;&gt;Valgrind tool package&lt;/h2&gt;
 &lt;p&gt;Installation&lt;/p&gt;</description>
     </item>

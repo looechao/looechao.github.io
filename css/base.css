@@ -21,6 +21,10 @@
     --color-white: #ffffff;
     /* 纯白色，背景或高亮 */
 
+    /* 水彩强调色 */
+    --color-link-light: #FFCCBC99; 
+    --color-link-superlight: #FFCCBC33;
+
     /* 布局 */
     --content-width: 600px;
 

@@ -42,7 +42,7 @@
     <div class="profile">
         <a href="https://looechao.com/" class="avatar">
             
-            <img src="/images/profile.png" alt="Looe" />
+            <img src="https://static.looechao.com/profile/profile-purple.png/profile.png" alt="Looe" />
             
         </a>
         <div class="profile-text">
@@ -567,14 +567,14 @@
 </li>
 <li>
 <p>Epoll文件对象有<strong>监听集合</strong>和<strong>就序集合</strong>构成，监听集合中的数据结构使用的是红黑树（<strong>大小无限制</strong>），保证了轮询效率 O(logN)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">epoll文件对象
-</span></span><span class="line"><span class="cl"><span class="p">|</span>监听集合<span class="p">|</span>就绪集合<span class="p">|</span>      
-</span></span><span class="line"><span class="cl">   <span class="p">|</span>        <span class="p">|</span>
-</span></span><span class="line"><span class="cl"> 红黑树    线性表
-</span></span><span class="line"><span class="cl">------------<span class="p">|</span>----
-</span></span><span class="line"><span class="cl">            <span class="p">|</span>
-</span></span><span class="line"><span class="cl">         <span class="o">[][][][]</span>
-</span></span><span class="line"><span class="cl">用户只需要遍历用户集合即可，效率非常高
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>epoll文件对象
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">|</span>监听集合<span style="color:#1f2328">|</span>就绪集合<span style="color:#1f2328">|</span>      
+</span></span><span style="display:flex;"><span>   <span style="color:#1f2328">|</span>        <span style="color:#1f2328">|</span>
+</span></span><span style="display:flex;"><span> 红黑树    线性表
+</span></span><span style="display:flex;"><span>------------<span style="color:#1f2328">|</span>----
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">|</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#0550ae">[][][][]</span>
+</span></span><span style="display:flex;"><span>用户只需要遍历用户集合即可，效率非常高
 </span></span></code></pre></div></li>
 <li>
 <p>监听和就绪分离</p>
@@ -594,107 +594,107 @@
 <li>
 <p>epoll_wait 陷入等待，类比select</p>
 <p><strong>注意</strong>：要先准备好一个epoll_event数组来保存就绪事件，返回值是event的长度</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">                 <span class="err">文件对象</span>                   <span class="n">events数组</span>     <span class="err">数组长度</span>      <span class="err">超时时间</span>
-</span></span><span class="line"><span class="cl">                    <span class="o">|</span>                          <span class="o">|</span>           <span class="o">|</span>             <span class="o">|</span>     
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">epoll_wait</span><span class="p">(</span><span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="k">struct</span> <span class="n">epoll_event</span> <span class="o">*</span><span class="n">events</span><span class="p">,</span><span class="kt">int</span> <span class="n">maxevents</span><span class="p">,</span> <span class="kt">int</span> <span class="n">timeout</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"> <span class="o">|</span>
-</span></span><span class="line"><span class="cl"><span class="err">描述有多少个</span><span class="n">fd就绪</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>                 <span style="color:#f6f8fa;background-color:#82071e">文件对象</span>                   events数组     <span style="color:#f6f8fa;background-color:#82071e">数组长度</span>      <span style="color:#f6f8fa;background-color:#82071e">超时时间</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#0550ae">|</span>                          <span style="color:#0550ae">|</span>           <span style="color:#0550ae">|</span>             <span style="color:#0550ae">|</span>     
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">epoll_wait</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> epfd<span style="color:#1f2328">,</span> <span style="color:#cf222e">struct</span> epoll_event <span style="color:#0550ae">*</span>events<span style="color:#1f2328">,</span><span style="color:#cf222e">int</span> maxevents<span style="color:#1f2328">,</span> <span style="color:#cf222e">int</span> timeout<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span> <span style="color:#0550ae">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#f6f8fa;background-color:#82071e">描述有多少个</span>fd就绪
 </span></span></code></pre></div><p>epoll_events数组将要存储就绪集合，当epoll_wait返回时，用户需要遍历events（这样做比遍历fd_set效率高很多）</p>
 </li>
 <li>
 <p>epoll_ctl</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">                 <span class="err">文件对象</span>  <span class="err">操作</span>                   <span class="err">事件</span>
-</span></span><span class="line"><span class="cl">                   <span class="o">|</span>       <span class="o">|</span>                     <span class="o">|</span> 
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">epoll_ctl</span><span class="p">(</span><span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="kt">int</span> <span class="n">op</span><span class="p">,</span> <span class="kt">int</span> <span class="n">fd</span><span class="p">,</span><span class="k">struct</span> <span class="n">epoll_event</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">event</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>                 <span style="color:#f6f8fa;background-color:#82071e">文件对象</span>  <span style="color:#f6f8fa;background-color:#82071e">操作</span>                   <span style="color:#f6f8fa;background-color:#82071e">事件</span>
+</span></span><span style="display:flex;"><span>                   <span style="color:#0550ae">|</span>       <span style="color:#0550ae">|</span>                     <span style="color:#0550ae">|</span> 
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">epoll_ctl</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> epfd<span style="color:#1f2328">,</span> <span style="color:#cf222e">int</span> op<span style="color:#1f2328">,</span> <span style="color:#cf222e">int</span> fd<span style="color:#1f2328">,</span><span style="color:#cf222e">struct</span> epoll_event <span style="color:#0550ae">*</span>_Nullable event<span style="color:#1f2328">);</span>
 </span></span></code></pre></div></li>
 </ul>
 <h2 id="案例-用epoll的即时聊天">案例-用epoll的即时聊天</h2>
 <p>用epoll取代select操作的server</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;func.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// ./2_azhen.c 192.168.68.128 1234
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">ARGS_CHECK</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="nf">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span><span class="p">;</span> <span class="c1">//服务端地址的结构体初始化
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//向ip结构体中传入ip地址和端口号参数
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="nf">htons</span><span class="p">(</span><span class="nf">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
-</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="nf">inet_addr</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="nf">bind</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">addr</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;bind&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">listen</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>   <span class="c1">//DDOS攻击的点
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">clientAddr</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">socklen_t</span> <span class="n">clientAddrSize</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">);</span> <span class="c1">//该变量必须初始化
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">netfd</span> <span class="o">=</span>  <span class="nf">accept</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">clientAddr</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">clientAddrSize</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;netfd = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">netfd</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;client ip = %s, port = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">           <span class="nf">inet_ntoa</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">),</span> <span class="nf">ntohs</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_port</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//1 fd_set rdset;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">epfd</span> <span class="o">=</span> <span class="nf">epoll_create</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="c1">//epoll_create 取代定义 fd_set这个对象
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//2 设置监听 取代fd_set
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//如果使用epoll_ctl 可以在循环外面使用
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">struct</span> <span class="n">epoll_event</span> <span class="n">event</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">event</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">=</span> <span class="n">STDIN_FILENO</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">event</span><span class="p">.</span><span class="n">events</span> <span class="o">=</span> <span class="n">EPOLLIN</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_ADD</span><span class="p">,</span> <span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">event</span><span class="p">);</span> <span class="c1">//fd_set
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//每次用完event之后都要重新赋值
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">event</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">=</span> <span class="n">netfd</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">event</span><span class="p">.</span><span class="n">events</span> <span class="o">=</span> <span class="n">EPOLLIN</span><span class="p">;</span> <span class="c1">//读事件
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_ADD</span><span class="p">,</span> <span class="n">netfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">event</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">4096</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">//FD_ZERO(&amp;rdset);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">//FD_SET(STDIN_FILENO, &amp;rdset);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">//FD_SET(netfd, &amp;rdset);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">//select(netfd+1, &amp;rdset, NULL, NULL, NULL);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">// 4 更换成epoll wait
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">// 现申请一个数组
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">struct</span> <span class="n">epoll_event</span> <span class="n">readySet</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">readyNum</span> <span class="o">=</span> <span class="nf">epoll_wait</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">readySet</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span> <span class="c1">//永久等待使用-1参数
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// if(FD_ISSET(STDIN_FILENO, &amp;rdset)){
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     //memset(buf, 0, sizeof(buf));
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     bzero(buf, sizeof(buf));
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     ssize_t sret = read(STDIN_FILENO, buf, sizeof(buf));
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     //send(sockfd, buf, strlen(buf), 0);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     send(netfd, buf, sret, 0);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// }
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// if(FD_ISSET(netfd, &amp;rdset)){
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     bzero(buf, sizeof(buf));
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     ssize_t sret = recv(netfd, buf, sizeof(buf), 0);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     printf(&#34;buf = %s\n&#34;, buf);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// }
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       
-</span></span><span class="line"><span class="cl">       <span class="c1">//从就绪事件集合中进行操作 
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">readyNum</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">==</span> <span class="n">STDIN_FILENO</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                <span class="c1">//memset(buf, 0, sizeof(buf));
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">                <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">read</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">                <span class="c1">//send(sockfd, buf, strlen(buf), 0);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="k">if</span><span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                    <span class="nf">send</span><span class="p">(</span><span class="n">netfd</span><span class="p">,</span> <span class="s">&#34;nishigehaoren&#34;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                    <span class="k">goto</span> <span class="n">end</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                <span class="nf">send</span><span class="p">(</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">sret</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">==</span> <span class="n">netfd</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">                <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;hehe</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                    <span class="k">goto</span> <span class="n">end</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;buf = %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="nl">end</span><span class="p">:</span>   
-</span></span><span class="line"><span class="cl">    <span class="nf">close</span><span class="p">(</span><span class="n">netfd</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;func.h&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> argc<span style="color:#1f2328">,</span> <span style="color:#cf222e">char</span><span style="color:#0550ae">*</span> argv<span style="color:#1f2328">[])</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">// ./2_azhen.c 192.168.68.128 1234
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#6639ba">ARGS_CHECK</span><span style="color:#1f2328">(</span>argc<span style="color:#1f2328">,</span> <span style="color:#0550ae">3</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> sockfd <span style="color:#0550ae">=</span> <span style="color:#6639ba">socket</span><span style="color:#1f2328">(</span>AF_INET<span style="color:#1f2328">,</span> SOCK_STREAM<span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">struct</span> sockaddr_in addr<span style="color:#1f2328">;</span> <span style="color:#57606a">//服务端地址的结构体初始化
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    addr<span style="color:#1f2328">.</span>sin_family <span style="color:#0550ae">=</span> AF_INET<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//向ip结构体中传入ip地址和端口号参数
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    addr<span style="color:#1f2328">.</span>sin_port <span style="color:#0550ae">=</span> <span style="color:#6639ba">htons</span><span style="color:#1f2328">(</span><span style="color:#6639ba">atoi</span><span style="color:#1f2328">(</span>argv<span style="color:#1f2328">[</span><span style="color:#0550ae">2</span><span style="color:#1f2328">]));</span>
+</span></span><span style="display:flex;"><span>    addr<span style="color:#1f2328">.</span>sin_addr<span style="color:#1f2328">.</span>s_addr <span style="color:#0550ae">=</span> <span style="color:#6639ba">inet_addr</span><span style="color:#1f2328">(</span>argv<span style="color:#1f2328">[</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> ret <span style="color:#0550ae">=</span> <span style="color:#6639ba">bind</span><span style="color:#1f2328">(</span>sockfd<span style="color:#1f2328">,</span> <span style="color:#1f2328">(</span><span style="color:#cf222e">struct</span> sockaddr <span style="color:#0550ae">*</span><span style="color:#1f2328">)</span><span style="color:#0550ae">&amp;</span>addr<span style="color:#1f2328">,</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>addr<span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">ERROR_CHECK</span><span style="color:#1f2328">(</span>ret<span style="color:#1f2328">,</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;bind&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">listen</span><span style="color:#1f2328">(</span>sockfd<span style="color:#1f2328">,</span> <span style="color:#0550ae">10</span><span style="color:#1f2328">);</span>   <span style="color:#57606a">//DDOS攻击的点
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">struct</span> sockaddr_in clientAddr<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">socklen_t</span> clientAddrSize <span style="color:#0550ae">=</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>clientAddr<span style="color:#1f2328">);</span> <span style="color:#57606a">//该变量必须初始化
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">int</span> netfd <span style="color:#0550ae">=</span>  <span style="color:#6639ba">accept</span><span style="color:#1f2328">(</span>sockfd<span style="color:#1f2328">,(</span><span style="color:#cf222e">struct</span> sockaddr <span style="color:#0550ae">*</span><span style="color:#1f2328">)</span><span style="color:#0550ae">&amp;</span>clientAddr<span style="color:#1f2328">,</span> <span style="color:#0550ae">&amp;</span>clientAddrSize<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;netfd = %d</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> netfd<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;client ip = %s, port = %d</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#6639ba">inet_ntoa</span><span style="color:#1f2328">(</span>clientAddr<span style="color:#1f2328">.</span>sin_addr<span style="color:#1f2328">),</span> <span style="color:#6639ba">ntohs</span><span style="color:#1f2328">(</span>clientAddr<span style="color:#1f2328">.</span>sin_port<span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//1 fd_set rdset;
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">int</span> epfd <span style="color:#0550ae">=</span> <span style="color:#6639ba">epoll_create</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">);</span> <span style="color:#57606a">//epoll_create 取代定义 fd_set这个对象
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#57606a">//2 设置监听 取代fd_set
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#57606a">//如果使用epoll_ctl 可以在循环外面使用
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">struct</span> epoll_event event<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    event<span style="color:#1f2328">.</span>data<span style="color:#1f2328">.</span>fd <span style="color:#0550ae">=</span> STDIN_FILENO<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    event<span style="color:#1f2328">.</span>events <span style="color:#0550ae">=</span> EPOLLIN<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">epoll_ctl</span><span style="color:#1f2328">(</span>epfd<span style="color:#1f2328">,</span> EPOLL_CTL_ADD<span style="color:#1f2328">,</span> STDIN_FILENO<span style="color:#1f2328">,</span> <span style="color:#0550ae">&amp;</span>event<span style="color:#1f2328">);</span> <span style="color:#57606a">//fd_set
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#57606a">//每次用完event之后都要重新赋值
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    event<span style="color:#1f2328">.</span>data<span style="color:#1f2328">.</span>fd <span style="color:#0550ae">=</span> netfd<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    event<span style="color:#1f2328">.</span>events <span style="color:#0550ae">=</span> EPOLLIN<span style="color:#1f2328">;</span> <span style="color:#57606a">//读事件
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#6639ba">epoll_ctl</span><span style="color:#1f2328">(</span>epfd<span style="color:#1f2328">,</span> EPOLL_CTL_ADD<span style="color:#1f2328">,</span> netfd<span style="color:#1f2328">,</span> <span style="color:#0550ae">&amp;</span>event<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">char</span> buf<span style="color:#1f2328">[</span><span style="color:#0550ae">4096</span><span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a">//FD_ZERO(&amp;rdset);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#57606a">//FD_SET(STDIN_FILENO, &amp;rdset);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#57606a">//FD_SET(netfd, &amp;rdset);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#57606a">//select(netfd+1, &amp;rdset, NULL, NULL, NULL);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#57606a">// 4 更换成epoll wait
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#57606a">// 现申请一个数组
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#cf222e">struct</span> epoll_event readySet<span style="color:#1f2328">[</span><span style="color:#0550ae">2</span><span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">int</span> readyNum <span style="color:#0550ae">=</span> <span style="color:#6639ba">epoll_wait</span><span style="color:#1f2328">(</span>epfd<span style="color:#1f2328">,</span> readySet<span style="color:#1f2328">,</span> <span style="color:#0550ae">2</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">);</span> <span style="color:#57606a">//永久等待使用-1参数
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">// if(FD_ISSET(STDIN_FILENO, &amp;rdset)){
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//     //memset(buf, 0, sizeof(buf));
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//     bzero(buf, sizeof(buf));
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//     ssize_t sret = read(STDIN_FILENO, buf, sizeof(buf));
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//     //send(sockfd, buf, strlen(buf), 0);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//     send(netfd, buf, sret, 0);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">// }
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">// if(FD_ISSET(netfd, &amp;rdset)){
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//     bzero(buf, sizeof(buf));
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//     ssize_t sret = recv(netfd, buf, sizeof(buf), 0);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//     printf(&#34;buf = %s\n&#34;, buf);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">// }
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       
+</span></span><span style="display:flex;"><span>       <span style="color:#57606a">//从就绪事件集合中进行操作 
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span> i <span style="color:#0550ae">&lt;</span> readyNum<span style="color:#1f2328">;</span> <span style="color:#0550ae">++</span>i<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>readySet<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>data<span style="color:#1f2328">.</span>fd <span style="color:#0550ae">==</span> STDIN_FILENO<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a">//memset(buf, 0, sizeof(buf));
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                <span style="color:#6639ba">bzero</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">,</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">ssize_t</span> sret <span style="color:#0550ae">=</span> <span style="color:#6639ba">read</span><span style="color:#1f2328">(</span>STDIN_FILENO<span style="color:#1f2328">,</span> buf<span style="color:#1f2328">,</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a">//send(sockfd, buf, strlen(buf), 0);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>sret <span style="color:#0550ae">==</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#6639ba">send</span><span style="color:#1f2328">(</span>netfd<span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;nishigehaoren&#34;</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">13</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#cf222e">goto</span> end<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#6639ba">send</span><span style="color:#1f2328">(</span>netfd<span style="color:#1f2328">,</span> buf<span style="color:#1f2328">,</span> sret<span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">else</span> <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>readySet<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>data<span style="color:#1f2328">.</span>fd <span style="color:#0550ae">==</span> netfd<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#6639ba">bzero</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">,</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">ssize_t</span> sret <span style="color:#0550ae">=</span> <span style="color:#6639ba">recv</span><span style="color:#1f2328">(</span>netfd<span style="color:#1f2328">,</span> buf<span style="color:#1f2328">,</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">),</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>sret <span style="color:#0550ae">==</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;hehe</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#cf222e">goto</span> end<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;buf = %s</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> buf<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">end</span><span style="color:#1f2328">:</span>   
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">close</span><span style="color:#1f2328">(</span>netfd<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><ul>
 <li>
 <p>Q:说说你的高性能服务器？高性能体现在哪里？</p>
@@ -703,120 +703,120 @@
 </ul>
 <h2 id="用epoll的聊天室">用epoll的聊天室</h2>
 <p>4_server_chatroom_epoll:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">struct</span> <span class="n">conn_s</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">netfd</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">is_alive</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">lastactive</span><span class="p">;</span> <span class="c1">//活跃时间
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="kt">conn_t</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// ./4_server_chatroom_epoll 192.168.68.128 1234
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">ARGS_CHECK</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sockfd</span> <span class="o">=</span> <span class="nf">socket</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">addr</span><span class="p">;</span> <span class="c1">//服务端地址的结构体初始化
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">addr</span><span class="p">.</span><span class="n">sin_family</span> <span class="o">=</span> <span class="n">AF_INET</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//向ip结构体中传入ip地址和端口号参数
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">addr</span><span class="p">.</span><span class="n">sin_port</span> <span class="o">=</span> <span class="nf">htons</span><span class="p">(</span><span class="nf">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
-</span></span><span class="line"><span class="cl">    <span class="n">addr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="nf">inet_addr</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="nf">bind</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="p">(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">addr</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">addr</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;bind&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">listen</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>   <span class="c1">//DDOS攻击的点
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
-</span></span><span class="line"><span class="cl">    <span class="kt">conn_t</span> <span class="n">clientArr</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>  <span class="c1">//保存所有炼乳客户端的信息
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">curidx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//保存下一个炼乳客户端的下标
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
-</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">4096</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">epfd</span> <span class="o">=</span> <span class="nf">epoll_create</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">struct</span> <span class="n">epoll_event</span> <span class="n">event</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">event</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">=</span> <span class="n">sockfd</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">event</span><span class="p">.</span><span class="n">events</span> <span class="o">=</span> <span class="n">EPOLLIN</span><span class="p">;</span> <span class="c1">//sockfd accept 对应的也是读行为
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_ADD</span><span class="p">,</span> <span class="n">sockfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">event</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">time_t</span> <span class="n">curtime</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="k">struct</span> <span class="n">epoll_event</span> <span class="n">readySet</span><span class="p">[</span><span class="mi">1024</span><span class="p">];</span> <span class="c1">//聊天室弄得大一点
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">//select(100, &amp;rdset, NULL, NULL, NULL);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">readyNum</span> <span class="o">=</span> <span class="nf">epoll_wait</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">readySet</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>  <span class="c1">//等待最多1000毫秒
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">readyNum</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">==</span> <span class="n">sockfd</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                <span class="k">struct</span> <span class="n">sockaddr_in</span> <span class="n">clientAddr</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="kt">socklen_t</span> <span class="n">clientAddrSize</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">);</span> <span class="c1">//该变量必须初始化
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="kt">int</span> <span class="n">netfd</span> <span class="o">=</span>  <span class="nf">accept</span><span class="p">(</span><span class="n">sockfd</span><span class="p">,(</span><span class="k">struct</span> <span class="n">sockaddr</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">clientAddr</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">clientAddrSize</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;netfd = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">netfd</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;client ip = %s, port = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                   <span class="nf">inet_ntoa</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_addr</span><span class="p">),</span> <span class="nf">ntohs</span><span class="p">(</span><span class="n">clientAddr</span><span class="p">.</span><span class="n">sin_port</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">                <span class="n">clientArr</span><span class="p">[</span><span class="n">curidx</span><span class="p">].</span><span class="n">netfd</span> <span class="o">=</span> <span class="n">netfd</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="n">clientArr</span><span class="p">[</span><span class="n">curidx</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//1 表示存货 0表示已经断开
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">clientArr</span><span class="p">[</span><span class="n">curidx</span><span class="p">].</span><span class="n">lastactive</span> <span class="o">=</span> <span class="nf">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>  <span class="c1">//初始化活跃时间
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">event</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span> <span class="o">=</span> <span class="n">netfd</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="n">event</span><span class="p">.</span><span class="n">events</span> <span class="o">=</span> <span class="n">EPOLLIN</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_ADD</span><span class="p">,</span> <span class="n">netfd</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">event</span><span class="p">);</span>   <span class="c1">//将新连接加入到监听当中
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="o">++</span><span class="n">curidx</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="c1">// 从readySet[i].data.fd 读取数据转发给其它所有存活的客户端
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span><span class="c1">//客户端主动断开
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">curidx</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                        <span class="k">if</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">netfd</span> <span class="o">==</span> <span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                            <span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                            <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_DEL</span><span class="p">,</span> <span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">netfd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span> <span class="c1">//移除监听
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                            <span class="nf">close</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                            <span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">curidx</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                    <span class="k">if</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">netfd</span> <span class="o">==</span> <span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                        <span class="k">continue</span><span class="p">;</span> <span class="c1">//如果是已经断开的 or 自己本身 就跳过
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                    <span class="c1">// 广播操作，发送给其它所有的活跃客户端
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="nf">send</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="nf">strlen</span><span class="p">(</span><span class="n">buf</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span><span class="n">curidx</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                    <span class="k">if</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span> <span class="o">==</span> <span class="n">readySet</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">data</span><span class="p">.</span><span class="n">fd</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                        <span class="n">clientArr</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">lastactive</span> <span class="o">=</span> <span class="nf">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                        <span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>    
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">        <span class="c1">//SELECT操作如下，如同大海捞针的轮询操作
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// for(int i = 0; i &lt; curidx; ++i){
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     if(clientArr[i].is_alive &amp;&amp; FD_ISSET(clientArr[i].netfd, &amp;rdset)){
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         //读取该客户端发送的消息并且转发给其它所有的客户端
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         bzero(buf, sizeof(buf));
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         ssize_t sret = recv(clientArr[i].netfd, buf, sizeof(buf), 0);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         if(sret == 0){
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             clientArr[i].is_alive = 0; //i号客户端已经终止
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             FD_CLR(clientArr[i].netfd, &amp;monitorset);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             close(clientArr[i].netfd);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         }
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         //转发给其他所有的客户端
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         for(int j = 0; j &lt; curidx; ++j){
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             if(j == i || clientArr[j].is_alive == 0){
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//                 continue; //发送的目标是自己或者发送的目标已经关闭，就继续
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             }
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//             //相当于做一个广播的操作
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//            send(clientArr[j].netfd, buf, strlen(buf), 0);;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//         }
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">//     }
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="c1">// }
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">curtime</span> <span class="o">=</span> <span class="nf">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">       <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;curtime = %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="nf">ctime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">curtime</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">       <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">curidx</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">           <span class="k">if</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">curtime</span> <span class="o">-</span> <span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">lastactive</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">               <span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">is_alive</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">               <span class="nf">epoll_ctl</span><span class="p">(</span><span class="n">epfd</span><span class="p">,</span> <span class="n">EPOLL_CTL_DEL</span><span class="p">,</span> <span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">               <span class="nf">close</span><span class="p">(</span><span class="n">clientArr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">netfd</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">           <span class="p">}</span>
-</span></span><span class="line"><span class="cl">       <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">close</span><span class="p">(</span><span class="n">sockfd</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">typedef</span> <span style="color:#cf222e">struct</span> conn_s<span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> netfd<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> is_alive<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> lastactive<span style="color:#1f2328">;</span> <span style="color:#57606a">//活跃时间
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#1f2328">}</span> <span style="color:#cf222e">conn_t</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> argc<span style="color:#1f2328">,</span> <span style="color:#cf222e">char</span><span style="color:#0550ae">*</span> argv<span style="color:#1f2328">[])</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">// ./4_server_chatroom_epoll 192.168.68.128 1234
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#6639ba">ARGS_CHECK</span><span style="color:#1f2328">(</span>argc<span style="color:#1f2328">,</span> <span style="color:#0550ae">3</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> sockfd <span style="color:#0550ae">=</span> <span style="color:#6639ba">socket</span><span style="color:#1f2328">(</span>AF_INET<span style="color:#1f2328">,</span> SOCK_STREAM<span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">struct</span> sockaddr_in addr<span style="color:#1f2328">;</span> <span style="color:#57606a">//服务端地址的结构体初始化
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    addr<span style="color:#1f2328">.</span>sin_family <span style="color:#0550ae">=</span> AF_INET<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//向ip结构体中传入ip地址和端口号参数
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    addr<span style="color:#1f2328">.</span>sin_port <span style="color:#0550ae">=</span> <span style="color:#6639ba">htons</span><span style="color:#1f2328">(</span><span style="color:#6639ba">atoi</span><span style="color:#1f2328">(</span>argv<span style="color:#1f2328">[</span><span style="color:#0550ae">2</span><span style="color:#1f2328">]));</span>
+</span></span><span style="display:flex;"><span>    addr<span style="color:#1f2328">.</span>sin_addr<span style="color:#1f2328">.</span>s_addr <span style="color:#0550ae">=</span> <span style="color:#6639ba">inet_addr</span><span style="color:#1f2328">(</span>argv<span style="color:#1f2328">[</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> ret <span style="color:#0550ae">=</span> <span style="color:#6639ba">bind</span><span style="color:#1f2328">(</span>sockfd<span style="color:#1f2328">,</span> <span style="color:#1f2328">(</span><span style="color:#cf222e">struct</span> sockaddr <span style="color:#0550ae">*</span><span style="color:#1f2328">)</span><span style="color:#0550ae">&amp;</span>addr<span style="color:#1f2328">,</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>addr<span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">ERROR_CHECK</span><span style="color:#1f2328">(</span>ret<span style="color:#1f2328">,</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;bind&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">listen</span><span style="color:#1f2328">(</span>sockfd<span style="color:#1f2328">,</span> <span style="color:#0550ae">10</span><span style="color:#1f2328">);</span>   <span style="color:#57606a">//DDOS攻击的点
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">conn_t</span> clientArr<span style="color:#1f2328">[</span><span style="color:#0550ae">10</span><span style="color:#1f2328">];</span>  <span style="color:#57606a">//保存所有炼乳客户端的信息
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">int</span> curidx <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span> <span style="color:#57606a">//保存下一个炼乳客户端的下标
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">char</span> buf<span style="color:#1f2328">[</span><span style="color:#0550ae">4096</span><span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> epfd <span style="color:#0550ae">=</span> <span style="color:#6639ba">epoll_create</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">struct</span> epoll_event event<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    event<span style="color:#1f2328">.</span>data<span style="color:#1f2328">.</span>fd <span style="color:#0550ae">=</span> sockfd<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    event<span style="color:#1f2328">.</span>events <span style="color:#0550ae">=</span> EPOLLIN<span style="color:#1f2328">;</span> <span style="color:#57606a">//sockfd accept 对应的也是读行为
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#6639ba">epoll_ctl</span><span style="color:#1f2328">(</span>epfd<span style="color:#1f2328">,</span> EPOLL_CTL_ADD<span style="color:#1f2328">,</span> sockfd<span style="color:#1f2328">,</span> <span style="color:#0550ae">&amp;</span>event<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">time_t</span> curtime<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">struct</span> epoll_event readySet<span style="color:#1f2328">[</span><span style="color:#0550ae">1024</span><span style="color:#1f2328">];</span> <span style="color:#57606a">//聊天室弄得大一点
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#57606a">//select(100, &amp;rdset, NULL, NULL, NULL);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">int</span> readyNum <span style="color:#0550ae">=</span> <span style="color:#6639ba">epoll_wait</span><span style="color:#1f2328">(</span>epfd<span style="color:#1f2328">,</span> readySet<span style="color:#1f2328">,</span> <span style="color:#0550ae">1024</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1000</span><span style="color:#1f2328">);</span>  <span style="color:#57606a">//等待最多1000毫秒
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span> i <span style="color:#0550ae">&lt;</span> readyNum<span style="color:#1f2328">;</span> <span style="color:#0550ae">++</span>i<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>readySet<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>data<span style="color:#1f2328">.</span>fd <span style="color:#0550ae">==</span> sockfd<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">struct</span> sockaddr_in clientAddr<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">socklen_t</span> clientAddrSize <span style="color:#0550ae">=</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>clientAddr<span style="color:#1f2328">);</span> <span style="color:#57606a">//该变量必须初始化
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                <span style="color:#cf222e">int</span> netfd <span style="color:#0550ae">=</span>  <span style="color:#6639ba">accept</span><span style="color:#1f2328">(</span>sockfd<span style="color:#1f2328">,(</span><span style="color:#cf222e">struct</span> sockaddr <span style="color:#0550ae">*</span><span style="color:#1f2328">)</span><span style="color:#0550ae">&amp;</span>clientAddr<span style="color:#1f2328">,</span> <span style="color:#0550ae">&amp;</span>clientAddrSize<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;netfd = %d</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> netfd<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;client ip = %s, port = %d</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>                   <span style="color:#6639ba">inet_ntoa</span><span style="color:#1f2328">(</span>clientAddr<span style="color:#1f2328">.</span>sin_addr<span style="color:#1f2328">),</span> <span style="color:#6639ba">ntohs</span><span style="color:#1f2328">(</span>clientAddr<span style="color:#1f2328">.</span>sin_port<span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>                clientArr<span style="color:#1f2328">[</span>curidx<span style="color:#1f2328">].</span>netfd <span style="color:#0550ae">=</span> netfd<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                clientArr<span style="color:#1f2328">[</span>curidx<span style="color:#1f2328">].</span>is_alive <span style="color:#0550ae">=</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">;</span> <span style="color:#57606a">//1 表示存货 0表示已经断开
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                clientArr<span style="color:#1f2328">[</span>curidx<span style="color:#1f2328">].</span>lastactive <span style="color:#0550ae">=</span> <span style="color:#6639ba">time</span><span style="color:#1f2328">(</span><span style="color:#6639ba">NULL</span><span style="color:#1f2328">);</span>  <span style="color:#57606a">//初始化活跃时间
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                event<span style="color:#1f2328">.</span>data<span style="color:#1f2328">.</span>fd <span style="color:#0550ae">=</span> netfd<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                event<span style="color:#1f2328">.</span>events <span style="color:#0550ae">=</span> EPOLLIN<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#6639ba">epoll_ctl</span><span style="color:#1f2328">(</span>epfd<span style="color:#1f2328">,</span> EPOLL_CTL_ADD<span style="color:#1f2328">,</span> netfd<span style="color:#1f2328">,</span> <span style="color:#0550ae">&amp;</span>event<span style="color:#1f2328">);</span>   <span style="color:#57606a">//将新连接加入到监听当中
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                <span style="color:#0550ae">++</span>curidx<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">else</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a">// 从readySet[i].data.fd 读取数据转发给其它所有存活的客户端
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                <span style="color:#cf222e">ssize_t</span> sret <span style="color:#0550ae">=</span> <span style="color:#6639ba">recv</span><span style="color:#1f2328">(</span>readySet<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>data<span style="color:#1f2328">.</span>fd<span style="color:#1f2328">,</span> buf<span style="color:#1f2328">,</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">),</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>sret <span style="color:#0550ae">==</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">){</span><span style="color:#57606a">//客户端主动断开
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                    <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> j <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span> j <span style="color:#0550ae">&lt;</span> curidx<span style="color:#1f2328">;</span> <span style="color:#0550ae">++</span>j<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>clientArr<span style="color:#1f2328">[</span>j<span style="color:#1f2328">].</span>netfd <span style="color:#0550ae">==</span> readySet<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>data<span style="color:#1f2328">.</span>fd<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                            clientArr<span style="color:#1f2328">[</span>j<span style="color:#1f2328">].</span>is_alive <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#6639ba">epoll_ctl</span><span style="color:#1f2328">(</span>epfd<span style="color:#1f2328">,</span> EPOLL_CTL_DEL<span style="color:#1f2328">,</span> clientArr<span style="color:#1f2328">[</span>j<span style="color:#1f2328">].</span>netfd<span style="color:#1f2328">,</span> <span style="color:#6639ba">NULL</span><span style="color:#1f2328">);</span> <span style="color:#57606a">//移除监听
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                            <span style="color:#6639ba">close</span><span style="color:#1f2328">(</span>clientArr<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>netfd<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                            <span style="color:#cf222e">break</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> j <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span> j <span style="color:#0550ae">&lt;</span> curidx<span style="color:#1f2328">;</span> <span style="color:#0550ae">++</span>j<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>clientArr<span style="color:#1f2328">[</span>j<span style="color:#1f2328">].</span>is_alive <span style="color:#0550ae">==</span> <span style="color:#0550ae">0</span> <span style="color:#0550ae">||</span> clientArr<span style="color:#1f2328">[</span>j<span style="color:#1f2328">].</span>netfd <span style="color:#0550ae">==</span> readySet<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>data<span style="color:#1f2328">.</span>fd<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#cf222e">continue</span><span style="color:#1f2328">;</span> <span style="color:#57606a">//如果是已经断开的 or 自己本身 就跳过
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#57606a">// 广播操作，发送给其它所有的活跃客户端
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                    <span style="color:#6639ba">send</span><span style="color:#1f2328">(</span>clientArr<span style="color:#1f2328">[</span>j<span style="color:#1f2328">].</span>netfd<span style="color:#1f2328">,</span> buf<span style="color:#1f2328">,</span> <span style="color:#6639ba">strlen</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">),</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> j <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span> j <span style="color:#0550ae">&lt;</span>curidx<span style="color:#1f2328">;</span> <span style="color:#0550ae">++</span>j<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>clientArr<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>netfd <span style="color:#0550ae">==</span> readySet<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>data<span style="color:#1f2328">.</span>fd<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                        clientArr<span style="color:#1f2328">[</span>j<span style="color:#1f2328">].</span>lastactive <span style="color:#0550ae">=</span> <span style="color:#6639ba">time</span><span style="color:#1f2328">(</span><span style="color:#6639ba">NULL</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#cf222e">break</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>    
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a">//SELECT操作如下，如同大海捞针的轮询操作
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">// for(int i = 0; i &lt; curidx; ++i){
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//     if(clientArr[i].is_alive &amp;&amp; FD_ISSET(clientArr[i].netfd, &amp;rdset)){
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//         //读取该客户端发送的消息并且转发给其它所有的客户端
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//         bzero(buf, sizeof(buf));
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//         ssize_t sret = recv(clientArr[i].netfd, buf, sizeof(buf), 0);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//         if(sret == 0){
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//             clientArr[i].is_alive = 0; //i号客户端已经终止
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//             FD_CLR(clientArr[i].netfd, &amp;monitorset);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//             close(clientArr[i].netfd);
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//         }
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//         //转发给其他所有的客户端
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//         for(int j = 0; j &lt; curidx; ++j){
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//             if(j == i || clientArr[j].is_alive == 0){
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//                 continue; //发送的目标是自己或者发送的目标已经关闭，就继续
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//             }
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//             //相当于做一个广播的操作
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//            send(clientArr[j].netfd, buf, strlen(buf), 0);;
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//         }
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">//     }
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#57606a">// }
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       curtime <span style="color:#0550ae">=</span> <span style="color:#6639ba">time</span><span style="color:#1f2328">(</span><span style="color:#6639ba">NULL</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;curtime = %s</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> <span style="color:#6639ba">ctime</span><span style="color:#1f2328">(</span><span style="color:#0550ae">&amp;</span>curtime<span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span> i <span style="color:#0550ae">&lt;</span> curidx<span style="color:#1f2328">;</span> <span style="color:#0550ae">++</span>i<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>clientArr<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>is_alive <span style="color:#0550ae">==</span> <span style="color:#0550ae">1</span> <span style="color:#0550ae">&amp;&amp;</span> curtime <span style="color:#0550ae">-</span> clientArr<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>lastactive <span style="color:#0550ae">&gt;</span> <span style="color:#0550ae">100</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>               clientArr<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>is_alive <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>               <span style="color:#6639ba">epoll_ctl</span><span style="color:#1f2328">(</span>epfd<span style="color:#1f2328">,</span> EPOLL_CTL_DEL<span style="color:#1f2328">,</span> clientArr<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>netfd<span style="color:#1f2328">,</span> <span style="color:#6639ba">NULL</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>               <span style="color:#6639ba">close</span><span style="color:#1f2328">(</span>clientArr<span style="color:#1f2328">[</span>i<span style="color:#1f2328">].</span>netfd<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">close</span><span style="color:#1f2328">(</span>sockfd<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p>断线重连问题尚未修复</p>
 <h2 id="非阻塞和阻塞的区别">非阻塞和阻塞的区别</h2>
 <p>read操作的阻塞状况</p>
@@ -846,43 +846,43 @@
       </tr>
   </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">	<span class="nf">read</span><span class="p">(</span><span class="err">磁盘文件</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">ret</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ret为0则退出</span><span class="err">；</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">recv</span><span class="p">(</span><span class="n">socket</span><span class="p">);</span> <span class="err">一旦阻塞会陷入永久阻塞</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#6639ba">read</span><span style="color:#1f2328">(</span><span style="color:#f6f8fa;background-color:#82071e">磁盘文件</span><span style="color:#1f2328">)</span><span style="color:#0550ae">-&gt;</span>ret<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    ret为0则退出<span style="color:#f6f8fa;background-color:#82071e">；</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">recv</span><span style="color:#1f2328">(</span>socket<span style="color:#1f2328">);</span> <span style="color:#f6f8fa;background-color:#82071e">一旦阻塞会陷入永久阻塞</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h3 id="把管道弄成非阻塞式">把管道弄成非阻塞式</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">setnonblock</span><span class="p">(</span><span class="kt">int</span> <span class="n">fd</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">flag</span> <span class="o">=</span> <span class="nf">fcntl</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">F_GETFL</span><span class="p">);</span> <span class="c1">//获取已经打开的fd的属性
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">flag</span> <span class="o">=</span> <span class="n">flag</span><span class="o">|</span><span class="n">O_NONBLOCK</span><span class="p">;</span> <span class="c1">//增加一个非阻塞属性
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="nf">fcntl</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">F_SETFL</span><span class="p">,</span> <span class="n">flag</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#34;fcntl&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">fd</span> <span class="o">=</span> <span class="nf">open</span><span class="p">(</span><span class="s">&#34;1.pipe&#34;</span><span class="p">,</span> <span class="n">O_RDONLY</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">setnonblock</span><span class="p">(</span><span class="n">fd</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">1024</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">ssize_t</span> <span class="n">sret</span> <span class="o">=</span> <span class="nf">read</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;sret = %ld, buf = %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">sret</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span> 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 3, <span class="nv">buf</span> <span class="o">=</span> hel
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> lo
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span> 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span> 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span> 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 0, <span class="nv">buf</span> <span class="o">=</span> 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 0, <span class="nv">buf</span> <span class="o">=</span> 
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">setnonblock</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> fd<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> flag <span style="color:#0550ae">=</span> <span style="color:#6639ba">fcntl</span><span style="color:#1f2328">(</span>fd<span style="color:#1f2328">,</span> F_GETFL<span style="color:#1f2328">);</span> <span style="color:#57606a">//获取已经打开的fd的属性
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    flag <span style="color:#0550ae">=</span> flag<span style="color:#0550ae">|</span>O_NONBLOCK<span style="color:#1f2328">;</span> <span style="color:#57606a">//增加一个非阻塞属性
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">int</span> ret <span style="color:#0550ae">=</span> <span style="color:#6639ba">fcntl</span><span style="color:#1f2328">(</span>fd<span style="color:#1f2328">,</span> F_SETFL<span style="color:#1f2328">,</span> flag<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">ERROR_CHECK</span><span style="color:#1f2328">(</span>ret<span style="color:#1f2328">,</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0a3069">&#34;fcntl&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> argc<span style="color:#1f2328">,</span> <span style="color:#cf222e">char</span><span style="color:#0550ae">*</span> argv<span style="color:#1f2328">[])</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> fd <span style="color:#0550ae">=</span> <span style="color:#6639ba">open</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;1.pipe&#34;</span><span style="color:#1f2328">,</span> O_RDONLY<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">setnonblock</span><span style="color:#1f2328">(</span>fd<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">char</span> buf<span style="color:#1f2328">[</span><span style="color:#0550ae">1024</span><span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span><span style="color:#0550ae">0</span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">bzero</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">,</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">ssize_t</span> sret <span style="color:#0550ae">=</span> <span style="color:#6639ba">read</span><span style="color:#1f2328">(</span>fd<span style="color:#1f2328">,</span> buf<span style="color:#1f2328">,</span> <span style="color:#0550ae">3</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;sret = %ld, buf = %s</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> sret<span style="color:#1f2328">,</span> buf<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">sleep</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> -1, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 3, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> hel
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> lo
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> -1, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> -1, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> -1, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 0, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 0, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> 
 </span></span></code></pre></div><h2 id="5种io模型">5种IO模型</h2>
 <ul>
 <li>同步阻塞</li>
@@ -896,84 +896,84 @@
 <ul>
 <li>
 <p>水平触发</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">数据量
-</span></span><span class="line"><span class="cl">  <span class="p">|</span>     _
-</span></span><span class="line"><span class="cl">  <span class="p">|</span>    /  <span class="se">\_</span>_
-</span></span><span class="line"><span class="cl">  <span class="p">|</span>___/_______<span class="se">\_</span>_____________t
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>数据量
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">|</span>     _
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">|</span>    /  <span style="color:#0a3069">\_</span>_
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">|</span>___/_______<span style="color:#0a3069">\_</span>_____________t
 </span></span></code></pre></div><p>只要数据量大于0，不管数据量是上升、平稳、或者下降，都会进行水平触发</p>
 <ul>
 <li></li>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
-</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> ni
-</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
-</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> sh
-</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
-</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> ig
-</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
-</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> eh
-</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
-</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> ao
-</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
-</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> re
-</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
-</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> n
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>epoll <span style="color:#6639ba">wait</span> ready!
+</span></span><span style="display:flex;"><span><span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> ni
+</span></span><span style="display:flex;"><span>epoll <span style="color:#6639ba">wait</span> ready!
+</span></span><span style="display:flex;"><span><span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> sh
+</span></span><span style="display:flex;"><span>epoll <span style="color:#6639ba">wait</span> ready!
+</span></span><span style="display:flex;"><span><span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> ig
+</span></span><span style="display:flex;"><span>epoll <span style="color:#6639ba">wait</span> ready!
+</span></span><span style="display:flex;"><span><span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> eh
+</span></span><span style="display:flex;"><span>epoll <span style="color:#6639ba">wait</span> ready!
+</span></span><span style="display:flex;"><span><span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> ao
+</span></span><span style="display:flex;"><span>epoll <span style="color:#6639ba">wait</span> ready!
+</span></span><span style="display:flex;"><span><span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> re
+</span></span><span style="display:flex;"><span>epoll <span style="color:#6639ba">wait</span> ready!
+</span></span><span style="display:flex;"><span><span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> n
 </span></span></code></pre></div><p>可以看到epoll默认情况下时水平触发的</p>
 <ul>
 <li>边缘触发的处理</li>
 </ul>
 <p>某些情况下使用边缘触发会更加公平</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">数据量
-</span></span><span class="line"><span class="cl">  <span class="p">|</span>     _
-</span></span><span class="line"><span class="cl">  <span class="p">|</span>    /<span class="p">|</span>  <span class="se">\_</span>_
-</span></span><span class="line"><span class="cl">  <span class="p">|</span>___/_<span class="p">|</span>______<span class="se">\_</span>_____________t
-</span></span><span class="line"><span class="cl">       <span class="p">|</span>
-</span></span><span class="line"><span class="cl"> 仅在该阶段进行触发
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>数据量
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">|</span>     _
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">|</span>    /<span style="color:#1f2328">|</span>  <span style="color:#0a3069">\_</span>_
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">|</span>___/_<span style="color:#1f2328">|</span>______<span style="color:#0a3069">\_</span>_____________t
+</span></span><span style="display:flex;"><span>       <span style="color:#1f2328">|</span>
+</span></span><span style="display:flex;"><span> 仅在该阶段进行触发
 </span></span></code></pre></div><p>仅当数据处于上升沿时，才会导致边缘触发</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">event</span><span class="p">.</span><span class="n">events</span> <span class="o">=</span> <span class="n">EPOLLIN</span><span class="o">|</span><span class="n">EPOLLET</span><span class="p">;</span> <span class="c1">//读数据。增加边缘触发属性
-</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
-</span></span><span class="line"><span class="cl"><span class="nv">buf</span> <span class="o">=</span> ni
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>event<span style="color:#1f2328">.</span>events <span style="color:#0550ae">=</span> EPOLLIN<span style="color:#0550ae">|</span>EPOLLET<span style="color:#1f2328">;</span> <span style="color:#57606a">//读数据。增加边缘触发属性
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>epoll <span style="color:#6639ba">wait</span> ready!
+</span></span><span style="display:flex;"><span><span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> ni
 </span></span></code></pre></div><p>如果这样操作</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">ssize_t</span> <span class="n">sret</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">    <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;buf = %s </span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">ssize_t</span> sret<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>    sret <span style="color:#0550ae">=</span> <span style="color:#6639ba">recv</span><span style="color:#1f2328">(</span>netfd<span style="color:#1f2328">,</span> buf<span style="color:#1f2328">,</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">)</span><span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;buf = %s </span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> buf<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p>虽然能够收取到所有的消息，但是会阻塞在recv函数里</p>
 <p>用while循环配合非阻塞</p>
 <p>因此需要在recv中加上MSG_DONTWAIT参数（非阻塞）</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">   <span class="nf">bzero</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">   <span class="n">sret</span> <span class="o">=</span> <span class="nf">recv</span><span class="p">(</span><span class="n">netfd</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">MSG_DONTWAIT</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">   <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;sret = %ld, buf = %s </span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">sret</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">   <span class="k">if</span><span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">       <span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">}</span>
-</span></span><span class="line"><span class="cl">   <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">sret</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">       <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;hehe</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">       <span class="k">goto</span> <span class="n">end</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">   <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ni 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> sh 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ig 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ah 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ao 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> re 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> n
-</span></span><span class="line"><span class="cl"> 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span>  
-</span></span><span class="line"><span class="cl">epoll <span class="nb">wait</span> ready!
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ni 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ha 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> oh 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> ua 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> 2, <span class="nv">buf</span> <span class="o">=</span> i
-</span></span><span class="line"><span class="cl"> 
-</span></span><span class="line"><span class="cl"><span class="nv">sret</span> <span class="o">=</span> -1, <span class="nv">buf</span> <span class="o">=</span>  
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">1</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#6639ba">bzero</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">,</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>   sret <span style="color:#0550ae">=</span> <span style="color:#6639ba">recv</span><span style="color:#1f2328">(</span>netfd<span style="color:#1f2328">,</span> buf<span style="color:#1f2328">,</span> <span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>buf<span style="color:#1f2328">)</span><span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> MSG_DONTWAIT<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;sret = %ld, buf = %s </span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> sret<span style="color:#1f2328">,</span> buf<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>sret <span style="color:#0550ae">==</span> <span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#cf222e">break</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#cf222e">else</span> <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>sret <span style="color:#0550ae">==</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;hehe</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#cf222e">goto</span> end<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>epoll <span style="color:#6639ba">wait</span> ready!
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> ni 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> sh 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> ig 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> ah 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> ao 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> re 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> n
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> -1, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span>  
+</span></span><span style="display:flex;"><span>epoll <span style="color:#6639ba">wait</span> ready!
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> ni 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> ha 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> oh 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> ua 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> 2, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span> i
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#953800">sret</span> <span style="color:#0550ae">=</span> -1, <span style="color:#953800">buf</span> <span style="color:#0550ae">=</span>  
 </span></span></code></pre></div>
     </div>
 </article>

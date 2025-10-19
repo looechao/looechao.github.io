@@ -42,7 +42,7 @@
     <div class="profile">
         <a href="https://looechao.com/" class="avatar">
             
-            <img src="/images/profile.png" alt="Looe" />
+            <img src="https://static.looechao.com/profile/profile-purple.png/profile.png" alt="Looe" />
             
         </a>
         <div class="profile-text">
@@ -572,42 +572,42 @@
 <li>避免调用函数的开销
 不使用宏函数的汇编代码：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-asm" data-lang="asm"><span class="line"><span class="cl"><span class="nl">.LC0:</span>
-</span></span><span class="line"><span class="cl">        <span class="na">.string</span> <span class="s">&#34;hello world!%d\n&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nl">main:</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">push</span>    <span class="no">rbp</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">rbp</span><span class="p">,</span> <span class="no">rsp</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">esi</span><span class="p">,</span> <span class="mi">16</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">edi</span><span class="p">,</span> <span class="no">OFFSET</span> <span class="no">FLAT</span><span class="p">:.</span><span class="no">LC0</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">eax</span><span class="p">,</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">call</span>    <span class="no">printf</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">eax</span><span class="p">,</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">pop</span>     <span class="no">rbp</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">ret</span>
-</span></span><span class="line"><span class="cl"><span class="nf">foo1</span><span class="p">(</span><span class="no">int</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">push</span>    <span class="no">rbp</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">rbp</span><span class="p">,</span> <span class="no">rsp</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">DWORD</span> <span class="no">PTR</span> <span class="p">[</span><span class="no">rbp-4</span><span class="p">],</span> <span class="no">edi</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">eax</span><span class="p">,</span> <span class="no">DWORD</span> <span class="no">PTR</span> <span class="p">[</span><span class="no">rbp-4</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">lea</span>     <span class="no">edx</span><span class="p">,</span> <span class="p">[</span><span class="no">rax</span><span class="err">+</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">eax</span><span class="p">,</span> <span class="no">DWORD</span> <span class="no">PTR</span> <span class="p">[</span><span class="no">rbp-4</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">add</span>     <span class="no">eax</span><span class="p">,</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">imul</span>    <span class="no">eax</span><span class="p">,</span> <span class="no">edx</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">pop</span>     <span class="no">rbp</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">ret</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">.LC0:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">.string</span> <span style="color:#0a3069">&#34;hello world!%d\n&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">main:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">push</span>    <span style="color:#0550ae">rbp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">rbp</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">rsp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">esi</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">16</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">edi</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">OFFSET</span> <span style="color:#0550ae">FLAT</span><span style="color:#1f2328">:.</span><span style="color:#0550ae">LC0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">eax</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">call</span>    <span style="color:#0550ae">printf</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">eax</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">pop</span>     <span style="color:#0550ae">rbp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">ret</span>
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">foo1</span><span style="color:#1f2328">(</span><span style="color:#0550ae">int</span><span style="color:#1f2328">):</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">push</span>    <span style="color:#0550ae">rbp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">rbp</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">rsp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">DWORD</span> <span style="color:#0550ae">PTR</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">rbp-4</span><span style="color:#1f2328">],</span> <span style="color:#0550ae">edi</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">eax</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">DWORD</span> <span style="color:#0550ae">PTR</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">rbp-4</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">lea</span>     <span style="color:#0550ae">edx</span><span style="color:#1f2328">,</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">rax</span><span style="color:#f6f8fa;background-color:#82071e">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">eax</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">DWORD</span> <span style="color:#0550ae">PTR</span> <span style="color:#1f2328">[</span><span style="color:#0550ae">rbp-4</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">add</span>     <span style="color:#0550ae">eax</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">imul</span>    <span style="color:#0550ae">eax</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">edx</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">pop</span>     <span style="color:#0550ae">rbp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">ret</span>
 </span></span></code></pre></div><p>使用宏函数的汇编代码：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-asm" data-lang="asm"><span class="line"><span class="cl"><span class="nl">.LC0:</span>
-</span></span><span class="line"><span class="cl">        <span class="na">.string</span> <span class="s">&#34;hello world!%d\n&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nl">main:</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">push</span>    <span class="no">rbp</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">rbp</span><span class="p">,</span> <span class="no">rsp</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">esi</span><span class="p">,</span> <span class="mi">16</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">edi</span><span class="p">,</span> <span class="no">OFFSET</span> <span class="no">FLAT</span><span class="p">:.</span><span class="no">LC0</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">eax</span><span class="p">,</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">call</span>    <span class="no">printf</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">mov</span>     <span class="no">eax</span><span class="p">,</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">pop</span>     <span class="no">rbp</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">ret</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">.LC0:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">.string</span> <span style="color:#0a3069">&#34;hello world!%d\n&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">main:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">push</span>    <span style="color:#0550ae">rbp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">rbp</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">rsp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">esi</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">16</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">edi</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">OFFSET</span> <span style="color:#0550ae">FLAT</span><span style="color:#1f2328">:.</span><span style="color:#0550ae">LC0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">eax</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">call</span>    <span style="color:#0550ae">printf</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">mov</span>     <span style="color:#0550ae">eax</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">pop</span>     <span style="color:#0550ae">rbp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">ret</span>
 </span></span></code></pre></div><p>可以很直观的看出，相同功能的函数，如果使用宏定义更高效</p>
 <hr>
 <h4 id="变量">变量</h4>
@@ -676,10 +676,10 @@
 </li>
 <li>eg：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;|%d|%5d|%-5d|%5.3d|</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;|%10.3f|%10.3e|%-10g|</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"> <span class="p">|</span>40<span class="p">|</span>   40<span class="p">|</span>40   <span class="p">|</span>  040<span class="p">|</span>
-</span></span><span class="line"><span class="cl"> <span class="p">|</span>   839.210<span class="p">|</span> 8.392e+02<span class="p">|</span>839.21    <span class="p">|</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>  <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;|%d|%5d|%-5d|%5.3d|</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> i<span style="color:#1f2328">,</span> i<span style="color:#1f2328">,</span> i<span style="color:#1f2328">,</span> i<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;|%10.3f|%10.3e|%-10g|</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> x<span style="color:#1f2328">,</span> x<span style="color:#1f2328">,</span> x<span style="color:#1f2328">);</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span> <span style="color:#1f2328">|</span>40<span style="color:#1f2328">|</span>   40<span style="color:#1f2328">|</span>40   <span style="color:#1f2328">|</span>  040<span style="color:#1f2328">|</span>
+</span></span><span style="display:flex;"><span> <span style="color:#1f2328">|</span>   839.210<span style="color:#1f2328">|</span> 8.392e+02<span style="color:#1f2328">|</span>839.21    <span style="color:#1f2328">|</span>
 </span></span></code></pre></div><h5 id="the-scanf-function">The scanf Function</h5>
 <p>本质是一个：模式匹配函数</p>
 <ul>
@@ -745,7 +745,7 @@
 <li>scanf/printf &amp;raar %c</li>
 <li>putchar / getchar
 注意getchar的惯用法（类似成语）
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="nf">getchar</span><span class="p">()</span><span class="o">!=</span><span class="sc">&#39;\n&#39;</span><span class="p">);</span> <span class="c1">//跳过这一行的空白字符
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#6639ba">getchar</span><span style="color:#1f2328">()</span><span style="color:#0550ae">!=</span><span style="color:#0a3069">&#39;\n&#39;</span><span style="color:#1f2328">);</span> <span style="color:#57606a">//跳过这一行的空白字符
 </span></span></span></code></pre></div></li>
 </ul>
 <ol start="4">
@@ -775,7 +775,7 @@
 <ul>
 <li>计算浮点数的小数部分</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">scale_factor</span><span class="o">*</span><span class="p">(</span><span class="n">temp</span><span class="o">-</span><span class="n">freezing_point</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">float</span> sum <span style="color:#0550ae">=</span> scale_factor<span style="color:#0550ae">*</span><span style="color:#1f2328">(</span>temp<span style="color:#0550ae">-</span>freezing_point<span style="color:#1f2328">)</span>
 </span></span></code></pre></div><ul>
 <li>解释说明</li>
 <li>精准控制类型的转换</li>
@@ -787,9 +787,9 @@
 <ul>
 <li>格式</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="k">typedef</span> <span class="err">类型</span> <span class="err">别名</span>
-</span></span><span class="line"><span class="cl"><span class="c1">//eg
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">typedef</span> <span class="kt">int</span> <span class="n">quantity</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#cf222e">typedef</span> <span style="color:#f6f8fa;background-color:#82071e">类型</span> <span style="color:#f6f8fa;background-color:#82071e">别名</span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">//eg
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">typedef</span> <span style="color:#cf222e">int</span> quantity
 </span></span></code></pre></div><ul>
 <li>作用
 <ol>
@@ -884,35 +884,35 @@ eg.测试0xCAFE最后 4 位中是不是最少有 3 位为 1.</li>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mh">0xCAFE</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">mask</span><span class="o">=</span><span class="mh">0x000F</span><span class="p">;</span>   <span class="c1">//掩码
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">mask</span> <span class="o">&amp;</span> <span class="n">n</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">result</span><span class="o">==</span><span class="mh">0xF</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0x7</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0xB</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0xD</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0xE</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;至少有三个1&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#57606a">#include</span><span style="color:#57606a">&lt;stdio.h&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> n <span style="color:#0550ae">=</span> <span style="color:#0550ae">0xCAFE</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> mask<span style="color:#0550ae">=</span><span style="color:#0550ae">0x000F</span><span style="color:#1f2328">;</span>   <span style="color:#57606a">//掩码
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">int</span> result <span style="color:#0550ae">=</span> mask <span style="color:#0550ae">&amp;</span> n<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">0xF</span><span style="color:#0550ae">||</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">0x7</span><span style="color:#0550ae">||</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">0xB</span><span style="color:#0550ae">||</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">0xD</span><span style="color:#0550ae">||</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">0xE</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;至少有三个1&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><ul>
 <li>移码的应用：</li>
 </ul>
 <p>eg. 逆转0xCAFE的字节序</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">left</span><span class="o">=</span><span class="mh">0xCAFE</span><span class="p">,</span><span class="n">right</span><span class="o">=</span><span class="mh">0xCAFE</span><span class="p">,</span><span class="n">n</span> <span class="o">=</span> <span class="mh">0xCAFE</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">left</span><span class="o">&lt;&lt;=</span><span class="mi">8</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">right</span><span class="o">&gt;&gt;=</span><span class="mi">8</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sum</span><span class="o">=</span><span class="n">left</span><span class="o">+</span><span class="n">right</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">mask</span><span class="o">=</span><span class="mh">0x00FFFF</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">sum</span><span class="o">&amp;=</span><span class="n">mask</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%x&#34;</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#57606a">#include</span><span style="color:#57606a">&lt;stdio.h&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> left<span style="color:#0550ae">=</span><span style="color:#0550ae">0xCAFE</span><span style="color:#1f2328">,</span>right<span style="color:#0550ae">=</span><span style="color:#0550ae">0xCAFE</span><span style="color:#1f2328">,</span>n <span style="color:#0550ae">=</span> <span style="color:#0550ae">0xCAFE</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    left<span style="color:#0550ae">&lt;&lt;=</span><span style="color:#0550ae">8</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    right<span style="color:#0550ae">&gt;&gt;=</span><span style="color:#0550ae">8</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> sum<span style="color:#0550ae">=</span>left<span style="color:#0550ae">+</span>right<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> mask<span style="color:#0550ae">=</span><span style="color:#0550ae">0x00FFFF</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    sum<span style="color:#0550ae">&amp;=</span>mask<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%x&#34;</span><span style="color:#1f2328">,</span>sum<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><ul>
 <li>异或的良好性质
 <ul>
@@ -939,42 +939,42 @@ eg.测试0xCAFE最后 4 位中是不是最少有 3 位为 1.</li>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">lsb</span><span class="o">=</span><span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">^</span><span class="n">xor</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> 
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">lsb</span><span class="o">=</span><span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">-</span><span class="n">xor</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>lsb<span style="color:#0550ae">=</span>xor<span style="color:#0550ae">&amp;</span><span style="color:#1f2328">(</span><span style="color:#0550ae">^</span>xor<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span> 
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>lsb<span style="color:#0550ae">=</span>xor<span style="color:#0550ae">&amp;</span><span style="color:#1f2328">(</span><span style="color:#0550ae">-</span>xor<span style="color:#1f2328">)</span>
 </span></span></code></pre></div></li>
 <li>eg2.筛出数组中单独的数（其余的都出现了两次）singlenum
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">nums</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">xor</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">      <span class="n">xor</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="n">xor</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> nums<span style="color:#1f2328">[</span><span style="color:#0550ae">5</span><span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span><span style="color:#0550ae">4</span><span style="color:#1f2328">,</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span><span style="color:#0550ae">2</span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> xor<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span> i<span style="color:#0550ae">&lt;</span><span style="color:#0550ae">5</span><span style="color:#1f2328">;</span> i<span style="color:#0550ae">++</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>      xor<span style="color:#0550ae">^=</span>nums<span style="color:#1f2328">[</span>i<span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%d&#34;</span><span style="color:#1f2328">,</span> xor<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#1f2328">}</span>
 </span></span></code></pre></div>不断做异或运算，可以保留得到最后唯一的那个元素</li>
 <li>eg3. 拓展：晒出数组中的两个只单独的数（其余的都出现了两次）
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">nums</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">xor</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">      <span class="n">xor</span> <span class="o">^=</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>  
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">lsb</span> <span class="o">=</span> <span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">xor</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>    <span class="c1">//last set bit;a与b在这一位上不同，用作分类
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">      <span class="k">if</span><span class="p">(</span><span class="n">lsb</span><span class="o">&amp;</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]){</span>
-</span></span><span class="line"><span class="cl">          <span class="n">a</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">      <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">          <span class="n">b</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">      <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;[%d %d]&#34;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> nums<span style="color:#1f2328">[</span><span style="color:#0550ae">6</span><span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span><span style="color:#0550ae">3</span><span style="color:#1f2328">,</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span><span style="color:#0550ae">5</span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> xor <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span> i<span style="color:#0550ae">&lt;</span><span style="color:#0550ae">6</span><span style="color:#1f2328">;</span> i<span style="color:#0550ae">++</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>      xor <span style="color:#0550ae">^=</span> nums<span style="color:#1f2328">[</span>i<span style="color:#1f2328">];</span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> lsb <span style="color:#0550ae">=</span> xor<span style="color:#0550ae">&amp;</span><span style="color:#1f2328">(</span><span style="color:#0550ae">~</span>xor<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">);</span>    <span style="color:#57606a">//last set bit;a与b在这一位上不同，用作分类
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> a<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span>b<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">&lt;</span><span style="color:#0550ae">6</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">++</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>lsb<span style="color:#0550ae">&amp;</span>nums<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]){</span>
+</span></span><span style="display:flex;"><span>          a<span style="color:#0550ae">^=</span>nums<span style="color:#1f2328">[</span>i<span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#1f2328">}</span><span style="color:#cf222e">else</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>          b<span style="color:#0550ae">^=</span>nums<span style="color:#1f2328">[</span>i<span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;[%d %d]&#34;</span><span style="color:#1f2328">,</span> a<span style="color:#1f2328">,</span>b<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div>用0与整个数组异或的结果的lsb可以将数组分为两个只包含一个唯一元素的数组，再按照eg2的方法可以筛出唯一元素</li>
 </ul>
 <h3 id="语句">语句</h3>
@@ -1035,7 +1035,7 @@ eg.测试0xCAFE最后 4 位中是不是最少有 3 位为 1.</li>
 <li>为什么索引总是从0开始
 <ul>
 <li>随机访问公式：
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">i_addr</span><span class="o">=</span><span class="n">base_addr</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="k">sizeof</span><span class="p">(</span><span class="n">elem_type</span><span class="p">)</span>  <span class="c1">//i从0开始不需要额外做减法
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>i_addr<span style="color:#0550ae">=</span>base_addr<span style="color:#0550ae">+</span>i<span style="color:#0550ae">*</span><span style="color:#cf222e">sizeof</span><span style="color:#1f2328">(</span>elem_type<span style="color:#1f2328">)</span>  <span style="color:#57606a">//i从0开始不需要额外做减法
 </span></span></span></code></pre></div></li>
 </ul>
 </li>
@@ -1047,7 +1047,7 @@ eg.测试0xCAFE最后 4 位中是不是最少有 3 位为 1.</li>
 </li>
 </ul>
 <h4 id="声明">声明</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">};</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">int</span> arr<span style="color:#1f2328">[</span><span style="color:#0550ae">10</span><span style="color:#1f2328">]</span><span style="color:#0550ae">=</span><span style="color:#1f2328">{</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span><span style="color:#0550ae">3</span><span style="color:#1f2328">,</span><span style="color:#0550ae">4</span><span style="color:#1f2328">};</span>
 </span></span></code></pre></div><ul>
 <li>变量名：arr</li>
 <li>类型: int[10]</li>
@@ -1059,15 +1059,15 @@ eg.测试0xCAFE最后 4 位中是不是最少有 3 位为 1.</li>
 <li>数组和for形影不离</li>
 <li>宏函数</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#define SIZE(a) (sizeof(a)/sizeof(a[0])
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#57606a">#define SIZE(a) (sizeof(a)/sizeof(a[0])
 </span></span></span></code></pre></div><h4 id="二维数组">二维数组</h4>
 <ul>
 <li>本质：元素是一维数组的数组，因此二维数组在内从中也连续</li>
 <li>逻辑视角：矩阵</li>
 <li>声明：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">matrix</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">7</span><span class="p">]</span><span class="o">=</span><span class="p">{{...},{...},{...}};</span>   
-</span></span><span class="line"><span class="cl"><span class="c1">//matrix是一个长度为3的由长度为7的数组构成的数组
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">int</span> matrix<span style="color:#1f2328">[</span><span style="color:#0550ae">3</span><span style="color:#1f2328">][</span><span style="color:#0550ae">7</span><span style="color:#1f2328">]</span><span style="color:#0550ae">=</span><span style="color:#1f2328">{{...},{...},{...}};</span>   
+</span></span><span style="display:flex;"><span><span style="color:#57606a">//matrix是一个长度为3的由长度为7的数组构成的数组
 </span></span></span></code></pre></div><ul>
 <li>操作
 <ul>
@@ -1108,11 +1108,11 @@ eg.测试0xCAFE最后 4 位中是不是最少有 3 位为 1.</li>
 <ul>
 <li>函数定义</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">){.....};</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">void</span> <span style="color:#6639ba">foo</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> a<span style="color:#1f2328">){.....};</span>
 </span></span></code></pre></div><ul>
 <li>函数声明</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">void</span> <span style="color:#6639ba">foo</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> a<span style="color:#1f2328">);</span>
 </span></span></code></pre></div><h5 id="例题">例题</h5>
 <h6 id="扑克牌游戏">扑克牌游戏</h6>
 <p>题目描述：写一个随机发牌的程序。用户指定发几张牌，程序打印手牌。程序的会话如下：
@@ -1123,38 +1123,38 @@ Your hand: 9c 7d 3c 5d kd</p>
 <li>用二维数组描述扑克牌</li>
 <li>用while循环模拟发牌的过程</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span> <span class="n">suits</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="sc">&#39;S&#39;</span><span class="p">,</span><span class="sc">&#39;H&#39;</span><span class="p">,</span><span class="sc">&#39;C&#39;</span><span class="p">,</span><span class="sc">&#39;D&#39;</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span> <span class="n">ranks</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="sc">&#39;2&#39;</span><span class="p">,</span><span class="sc">&#39;3&#39;</span><span class="p">,</span><span class="sc">&#39;4&#39;</span><span class="p">,</span><span class="sc">&#39;5&#39;</span><span class="p">,</span><span class="sc">&#39;6&#39;</span><span class="p">,</span><span class="sc">&#39;7&#39;</span><span class="p">,</span><span class="sc">&#39;8&#39;</span><span class="p">,</span><span class="sc">&#39;9&#39;</span><span class="p">,</span><span class="sc">&#39;T&#39;</span><span class="p">,</span><span class="sc">&#39;J&#39;</span><span class="p">,</span><span class="sc">&#39;Q&#39;</span><span class="p">,</span><span class="sc">&#39;A&#39;</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">cards</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter number of cards in hand:&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cards</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">bool</span> <span class="n">in_hands</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">13</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="nb">false</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="c1">//发牌
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;your hands:&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="nf">srand</span><span class="p">(</span><span class="nf">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="n">cards</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="nf">rand</span><span class="p">()</span><span class="o">%</span><span class="mi">4</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="nf">rand</span><span class="p">()</span><span class="o">%</span><span class="mi">13</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">in_hands</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]){</span>
-</span></span><span class="line"><span class="cl">            <span class="n">in_hands</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="n">cards</span><span class="o">--</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%c%c &#34;</span><span class="p">,</span><span class="n">suits</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">ranks</span><span class="p">[</span><span class="n">j</span><span class="p">]);</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">const</span> <span style="color:#cf222e">char</span> suits<span style="color:#1f2328">[</span><span style="color:#0550ae">4</span><span style="color:#1f2328">]</span><span style="color:#0550ae">=</span><span style="color:#1f2328">{</span><span style="color:#0a3069">&#39;S&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;H&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;C&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;D&#39;</span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">const</span> <span style="color:#cf222e">char</span> ranks<span style="color:#1f2328">[</span><span style="color:#0550ae">13</span><span style="color:#1f2328">]</span><span style="color:#0550ae">=</span><span style="color:#1f2328">{</span><span style="color:#0a3069">&#39;2&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;3&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;4&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;5&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;6&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;7&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;8&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;9&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;T&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;J&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;Q&#39;</span><span style="color:#1f2328">,</span><span style="color:#0a3069">&#39;A&#39;</span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> cards<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Enter number of cards in hand:&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">scanf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%d&#34;</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">&amp;</span>cards<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">bool</span> in_hands<span style="color:#1f2328">[</span><span style="color:#0550ae">4</span><span style="color:#1f2328">][</span><span style="color:#0550ae">13</span><span style="color:#1f2328">]</span><span style="color:#0550ae">=</span><span style="color:#1f2328">{</span><span style="color:#6639ba">false</span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//发牌
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;your hands:&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">srand</span><span style="color:#1f2328">(</span><span style="color:#6639ba">time</span><span style="color:#1f2328">(</span><span style="color:#6639ba">NULL</span><span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span>cards<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#6639ba">rand</span><span style="color:#1f2328">()</span><span style="color:#0550ae">%</span><span style="color:#0550ae">4</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">int</span> j<span style="color:#0550ae">=</span><span style="color:#6639ba">rand</span><span style="color:#1f2328">()</span><span style="color:#0550ae">%</span><span style="color:#0550ae">13</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span><span style="color:#0550ae">!</span>in_hands<span style="color:#1f2328">[</span>i<span style="color:#1f2328">][</span>j<span style="color:#1f2328">]){</span>
+</span></span><span style="display:flex;"><span>            in_hands<span style="color:#1f2328">[</span>i<span style="color:#1f2328">][</span>j<span style="color:#1f2328">]</span><span style="color:#0550ae">=</span><span style="color:#6639ba">true</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            cards<span style="color:#0550ae">--</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%c%c &#34;</span><span style="color:#1f2328">,</span>suits<span style="color:#1f2328">[</span>i<span style="color:#1f2328">],</span>ranks<span style="color:#1f2328">[</span>j<span style="color:#1f2328">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p>总结</p>
 <ul>
 <li>注意srand()和time()的组合使用
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;time.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nf">srand</span><span class="p">(</span><span class="nf">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">));</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#57606a">#include</span><span style="color:#57606a">&lt;stdlib.h&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">#include</span><span style="color:#57606a">&lt;time.h&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#6639ba">srand</span><span style="color:#1f2328">(</span><span style="color:#6639ba">time</span><span style="color:#1f2328">(</span><span style="color:#6639ba">NULL</span><span style="color:#1f2328">));</span>
 </span></span></code></pre></div></li>
 </ul>
 <h6 id="掷骰子游戏理解面向过程">掷骰子游戏（理解面向过程）</h6>
@@ -1171,60 +1171,60 @@ Your hand: 9c 7d 3c 5d kd</p>
 </li>
 <li>在main函数中使用do&hellip;while循环执行play_game函数</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">again</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">roll_dices</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">dice1</span><span class="o">=</span><span class="nf">rand</span><span class="p">()</span><span class="o">%</span><span class="mi">6</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">dice2</span><span class="o">=</span><span class="nf">rand</span><span class="p">()</span><span class="o">%</span><span class="mi">6</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dice1</span><span class="o">+</span><span class="n">dice2</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">play_game</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">srand</span><span class="p">(</span><span class="nf">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">result</span><span class="o">=</span><span class="nf">roll_dices</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;you rolled:%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">result</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">result</span><span class="o">==</span><span class="mi">7</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mi">11</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;you win!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">result</span><span class="o">==</span><span class="mi">2</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mi">3</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mi">12</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;you lose!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">point</span> <span class="o">=</span> <span class="n">result</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;your point is %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">point</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">new_roll</span><span class="o">=</span><span class="nf">roll_dices</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;you rolled %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">new_roll</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">new_roll</span><span class="o">==</span><span class="mi">7</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;you lose!&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">do</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">new_roll</span><span class="o">=</span><span class="nf">roll_dices</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;you rolled %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">new_roll</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">new_roll</span><span class="o">==</span><span class="n">point</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;you win!</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">new_roll</span><span class="o">==</span><span class="mi">7</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">            <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;you lose!&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span><span class="k">while</span><span class="p">(</span><span class="n">new_roll</span><span class="o">!=</span><span class="mi">7</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">wins</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">losses</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">play_game</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="k">do</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">play_game</span><span class="p">()</span><span class="o">?</span> <span class="n">wins</span><span class="o">++:</span><span class="n">losses</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">Play again?&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">again</span> <span class="o">=</span> <span class="nf">getchar</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">getchar</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="n">again</span> <span class="o">==</span> <span class="sc">&#39;y&#39;</span><span class="o">||</span><span class="n">again</span> <span class="o">==</span><span class="sc">&#39;Y&#39;</span><span class="p">)</span> <span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;wins:%d losses:%d&#34;</span><span class="p">,</span><span class="n">wins</span><span class="p">,</span> <span class="n">losses</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>    
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">char</span> again<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">roll_dices</span><span style="color:#1f2328">(</span><span style="color:#cf222e">void</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> dice1<span style="color:#0550ae">=</span><span style="color:#6639ba">rand</span><span style="color:#1f2328">()</span><span style="color:#0550ae">%</span><span style="color:#0550ae">6</span><span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> dice2<span style="color:#0550ae">=</span><span style="color:#6639ba">rand</span><span style="color:#1f2328">()</span><span style="color:#0550ae">%</span><span style="color:#0550ae">6</span><span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> dice1<span style="color:#0550ae">+</span>dice2<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">bool</span> <span style="color:#6639ba">play_game</span><span style="color:#1f2328">(</span><span style="color:#cf222e">void</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">srand</span><span style="color:#1f2328">(</span><span style="color:#6639ba">time</span><span style="color:#1f2328">(</span><span style="color:#6639ba">NULL</span><span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> result<span style="color:#0550ae">=</span><span style="color:#6639ba">roll_dices</span><span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;you rolled:%d</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> result<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">7</span><span style="color:#0550ae">||</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">11</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;you win!</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#6639ba">true</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span><span style="color:#cf222e">else</span> <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">2</span><span style="color:#0550ae">||</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">3</span><span style="color:#0550ae">||</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">12</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;you lose!</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#6639ba">false</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span><span style="color:#cf222e">else</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">int</span> point <span style="color:#0550ae">=</span> result<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;your point is %d</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> point<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">int</span> new_roll<span style="color:#0550ae">=</span><span style="color:#6639ba">roll_dices</span><span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;you rolled %d</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> new_roll<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>new_roll<span style="color:#0550ae">==</span><span style="color:#0550ae">7</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;you lose!&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">return</span> <span style="color:#6639ba">false</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">do</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">int</span> new_roll<span style="color:#0550ae">=</span><span style="color:#6639ba">roll_dices</span><span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;you rolled %d</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> new_roll<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>new_roll<span style="color:#0550ae">==</span>point<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;you win!</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">return</span> <span style="color:#6639ba">true</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>new_roll<span style="color:#0550ae">==</span><span style="color:#0550ae">7</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;you lose!&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">return</span> <span style="color:#6639ba">false</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span><span style="color:#cf222e">while</span><span style="color:#1f2328">(</span>new_roll<span style="color:#0550ae">!=</span><span style="color:#0550ae">7</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(</span><span style="color:#cf222e">void</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> wins<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> losses<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">play_game</span><span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">do</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">play_game</span><span style="color:#1f2328">()</span><span style="color:#0550ae">?</span> wins<span style="color:#0550ae">++:</span>losses<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">Play again?&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        again <span style="color:#0550ae">=</span> <span style="color:#6639ba">getchar</span><span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">getchar</span><span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span> <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span>again <span style="color:#0550ae">==</span> <span style="color:#0a3069">&#39;y&#39;</span><span style="color:#0550ae">||</span>again <span style="color:#0550ae">==</span><span style="color:#0a3069">&#39;Y&#39;</span><span style="color:#1f2328">)</span> <span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;wins:%d losses:%d&#34;</span><span style="color:#1f2328">,</span>wins<span style="color:#1f2328">,</span> losses<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>    
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h4 id="参数传递">参数传递</h4>
 <ul>
 <li>传递什么： 实参传递给形参</li>
@@ -1393,29 +1393,29 @@ Your hand: 9c 7d 3c 5d kd</p>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">hanoi</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">char</span> <span class="n">start</span><span class="p">,</span> <span class="kt">char</span> <span class="n">middle</span><span class="p">,</span> <span class="kt">char</span> <span class="n">target</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//边界条件，最后一个盘子移动到目标盘子
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%c-&gt;%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">target</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//递归公式
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//将n-1个盘子，经过目标盘子，移动到中间盘子；
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">hanoi</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">target</span><span class="p">,</span><span class="n">middle</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//将最大的盘子移动到目标盘子
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%c-&gt;%c</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">target</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//将n-1个盘子，经过起始盘子，移动到目标盘子；
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">hanoi</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">middle</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">target</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">//s(1)=1
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//s(n)=s(n-1)+1+s(n-1)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//s(n)=2s(n-1)+1
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//s(n)+1=2s(n-1)+2
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//s(1)+1=2  s(n)+1=2^n  s(n)=2^2-1
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//打印移动次数
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Total steps = %lld&#34;</span><span class="p">,</span> <span class="p">(</span><span class="mi">1ll</span><span class="o">&lt;&lt;</span><span class="n">n</span><span class="p">)</span><span class="o">-</span> <span class="mi">1</span> <span class="p">);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">void</span> <span style="color:#6639ba">hanoi</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> n<span style="color:#1f2328">,</span> <span style="color:#cf222e">char</span> start<span style="color:#1f2328">,</span> <span style="color:#cf222e">char</span> middle<span style="color:#1f2328">,</span> <span style="color:#cf222e">char</span> target<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//边界条件，最后一个盘子移动到目标盘子
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>n<span style="color:#0550ae">==</span><span style="color:#0550ae">1</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%c-&gt;%c</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> start<span style="color:#1f2328">,</span> target<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//递归公式
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#57606a">//将n-1个盘子，经过目标盘子，移动到中间盘子；
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#6639ba">hanoi</span><span style="color:#1f2328">(</span>n<span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span>start<span style="color:#1f2328">,</span>target<span style="color:#1f2328">,</span>middle<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//将最大的盘子移动到目标盘子
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%c-&gt;%c</span><span style="color:#0a3069">\n</span><span style="color:#0a3069">&#34;</span><span style="color:#1f2328">,</span> start<span style="color:#1f2328">,</span> target<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//将n-1个盘子，经过起始盘子，移动到目标盘子；
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#6639ba">hanoi</span><span style="color:#1f2328">(</span>n<span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span>middle<span style="color:#1f2328">,</span>start<span style="color:#1f2328">,</span>target<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//s(1)=1
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#57606a">//s(n)=s(n-1)+1+s(n-1)
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#57606a">//s(n)=2s(n-1)+1
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#57606a">//s(n)+1=2s(n-1)+2
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#57606a">//s(1)+1=2  s(n)+1=2^n  s(n)=2^2-1
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//打印移动次数
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;Total steps = %lld&#34;</span><span style="color:#1f2328">,</span> <span style="color:#1f2328">(</span><span style="color:#0550ae">1ll</span><span style="color:#0550ae">&lt;&lt;</span>n<span style="color:#1f2328">)</span><span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span> <span style="color:#1f2328">);</span>
 </span></span></code></pre></div><h6 id="joseph环问题">Joseph环问题</h6>
 <p>思路：</p>
 <ul>
@@ -1468,21 +1468,21 @@ Your hand: 9c 7d 3c 5d kd</p>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">joseph</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">m</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">//边界条件
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span><span class="k">else</span><span class="p">{</span>   <span class="c1">//递归
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="k">return</span> <span class="p">((</span><span class="nf">joseph</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">m</span><span class="p">))</span><span class="o">+</span><span class="n">m</span><span class="p">)</span><span class="o">%</span><span class="n">n</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;请输入人数n和间隔m:&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d %d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">m</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;存活的人的编号是：%d&#34;</span><span class="p">,</span><span class="nf">joseph</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">joseph</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> n<span style="color:#1f2328">,</span> <span style="color:#cf222e">int</span> m<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//边界条件
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>n<span style="color:#0550ae">==</span><span style="color:#0550ae">1</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span><span style="color:#cf222e">else</span><span style="color:#1f2328">{</span>   <span style="color:#57606a">//递归
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>       <span style="color:#cf222e">return</span> <span style="color:#1f2328">((</span><span style="color:#6639ba">joseph</span><span style="color:#1f2328">(</span>n<span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span>m<span style="color:#1f2328">))</span><span style="color:#0550ae">+</span>m<span style="color:#1f2328">)</span><span style="color:#0550ae">%</span>n<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> n<span style="color:#1f2328">,</span>m<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;请输入人数n和间隔m:&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">scanf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%d %d&#34;</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">&amp;</span>n<span style="color:#1f2328">,</span> <span style="color:#0550ae">&amp;</span>m<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;存活的人的编号是：%d&#34;</span><span style="color:#1f2328">,</span><span style="color:#6639ba">joseph</span><span style="color:#1f2328">(</span>n<span style="color:#1f2328">,</span>m<span style="color:#1f2328">)</span><span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div>
     </div>
 </article>

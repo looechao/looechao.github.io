@@ -246,7 +246,18 @@ body.dark-mode {
     transition: var(--transition-fast);
 }
 
-
+/* 粗体字渐变样式 */
+.article-content b,
+.article-content strong {
+    font-weight: bolder;
+    margin: 0 -.1em;
+    padding: 0 .1em;
+    border-radius: .3em .15em;
+    background: transparent;
+    background-image: linear-gradient(to right, var(--color-link-light), var(--color-link-superlight));
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
 
 /* 表格样式 */
 .article-content table {

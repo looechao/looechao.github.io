@@ -42,7 +42,7 @@
     <div class="profile">
         <a href="https://looechao.com/" class="avatar">
             
-            <img src="/images/profile.png" alt="Looe" />
+            <img src="https://static.looechao.com/profile/profile-purple.png/profile.png" alt="Looe" />
             
         </a>
         <div class="profile-text">
@@ -560,58 +560,58 @@
     padding: 2px;">SRP</div>
 </center>
 </div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Rectangle</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Rectangle</span><span class="p">(</span><span class="kt">double</span> <span class="n">w</span><span class="p">,</span> <span class="kt">double</span> <span class="n">h</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="o">:</span><span class="n">_width</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">,</span><span class="n">_height</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="nf">area</span><span class="p">()</span> <span class="k">const</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">_width</span><span class="o">*</span><span class="n">_height</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="nf">getWidth</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">_width</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="nf">getHeight</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">_height</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="k">protected</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">_width</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">_height</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">RectangleGUI</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Rectangle</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">RectangleGUI</span><span class="p">(</span><span class="kt">double</span> <span class="n">w</span><span class="p">,</span> <span class="kt">double</span> <span class="n">h</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="o">:</span><span class="n">Rectangle</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="n">h</span><span class="p">){}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">draw</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;rectangle&#39;s&#34;</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;width:&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">getWidth</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span>
-</span></span><span class="line"><span class="cl">            <span class="o">&lt;&lt;</span> <span class="s">&#34;rectangle&#39;s&#34;</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;height:&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">getHeight</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">test0</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Rectangle</span> <span class="n">rect</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;area: &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">rect</span><span class="p">.</span><span class="n">area</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">RectangleGUI</span> <span class="n">rectdraw</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">rectdraw</span><span class="p">.</span><span class="n">draw</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">test0</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>cout<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Rectangle</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    Rectangle<span style="color:#1f2328">(</span><span style="color:#cf222e">double</span> w<span style="color:#1f2328">,</span> <span style="color:#cf222e">double</span> h<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">:</span>_width<span style="color:#1f2328">(</span>w<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">,</span>_height<span style="color:#1f2328">(</span>h<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">double</span> <span style="color:#6639ba">area</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> _width<span style="color:#0550ae">*</span>_height<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">double</span> <span style="color:#6639ba">getWidth</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> _width<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">double</span> <span style="color:#6639ba">getHeight</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> _height<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">protected</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> _width<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> _height<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">RectangleGUI</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> Rectangle<span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    RectangleGUI<span style="color:#1f2328">(</span><span style="color:#cf222e">double</span> w<span style="color:#1f2328">,</span> <span style="color:#cf222e">double</span> h<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">:</span>Rectangle<span style="color:#1f2328">(</span>w<span style="color:#1f2328">,</span>h<span style="color:#1f2328">){}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> <span style="color:#6639ba">draw</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;rectangle&#39;s&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;width:&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> getWidth<span style="color:#1f2328">()</span> <span style="color:#0550ae">&lt;&lt;</span> endl
+</span></span><span style="display:flex;"><span>            <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;rectangle&#39;s&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;height:&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> getHeight<span style="color:#1f2328">()</span> <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">void</span> <span style="color:#6639ba">test0</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>    Rectangle rect<span style="color:#1f2328">(</span><span style="color:#0550ae">10</span><span style="color:#1f2328">,</span><span style="color:#0550ae">5</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;area: &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> rect<span style="color:#1f2328">.</span>area<span style="color:#1f2328">()</span> <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    RectangleGUI rectdraw<span style="color:#1f2328">(</span><span style="color:#0550ae">10</span><span style="color:#1f2328">,</span><span style="color:#0550ae">5</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    rectdraw<span style="color:#1f2328">.</span>draw<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    test0<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h2 id="02-开放闭合原则openclosed-principle-ocp">02 开放闭合原则(Open/Closed Principle, OCP)</h2>
 <ul>
 <li>Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.</li>
@@ -629,63 +629,63 @@
     padding: 2px;">OCP</div>
 </center>
 </div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Calculator</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="k">virtual</span> <span class="o">~</span><span class="n">Calculator</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">virtual</span> <span class="kt">double</span> <span class="nf">getResult</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">PlusCalculator</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Calculator</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">getResult</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="k">const</span> <span class="k">override</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MinusCalculator</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Calculator</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">getResult</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="k">const</span> <span class="k">override</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MultiCalculator</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Calculator</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">getResult</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="k">const</span> <span class="k">override</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">DevideCalculator</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Calculator</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">getResult</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">double</span> <span class="n">b</span><span class="p">)</span> <span class="k">const</span> <span class="k">override</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">test0</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="n">PlusCalculator</span> <span class="n">plusCalc</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">MinusCalculator</span> <span class="n">minusCalc</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">MultiCalculator</span> <span class="n">multiCalc</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">DevideCalculator</span> <span class="n">devideCalc</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;plus: &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">plusCalc</span><span class="p">.</span><span class="n">getResult</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;minus: &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">minusCalc</span><span class="p">.</span><span class="n">getResult</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;multi: &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">multiCalc</span><span class="p">.</span><span class="n">getResult</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;devide: &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">devideCalc</span><span class="p">.</span><span class="n">getResult</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">test0</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>cout<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Calculator</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">virtual</span> <span style="color:#0550ae">~</span>Calculator<span style="color:#1f2328">()</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">default</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">virtual</span> <span style="color:#cf222e">double</span> <span style="color:#6639ba">getResult</span><span style="color:#1f2328">(</span><span style="color:#cf222e">double</span> a<span style="color:#1f2328">,</span> <span style="color:#cf222e">double</span> b<span style="color:#1f2328">)</span> <span style="color:#cf222e">const</span> <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">PlusCalculator</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> Calculator<span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">double</span> getResult<span style="color:#1f2328">(</span><span style="color:#cf222e">double</span> a<span style="color:#1f2328">,</span> <span style="color:#cf222e">double</span> b<span style="color:#1f2328">)</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> a <span style="color:#0550ae">+</span> b<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">MinusCalculator</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> Calculator<span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">double</span> getResult<span style="color:#1f2328">(</span><span style="color:#cf222e">double</span> a<span style="color:#1f2328">,</span> <span style="color:#cf222e">double</span> b<span style="color:#1f2328">)</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> a <span style="color:#0550ae">-</span> b<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">MultiCalculator</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> Calculator<span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">double</span> getResult<span style="color:#1f2328">(</span><span style="color:#cf222e">double</span> a<span style="color:#1f2328">,</span> <span style="color:#cf222e">double</span> b<span style="color:#1f2328">)</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> a <span style="color:#0550ae">*</span> b<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">DevideCalculator</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> Calculator<span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">double</span> getResult<span style="color:#1f2328">(</span><span style="color:#cf222e">double</span> a<span style="color:#1f2328">,</span> <span style="color:#cf222e">double</span> b<span style="color:#1f2328">)</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> a <span style="color:#0550ae">/</span> b<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">void</span> <span style="color:#6639ba">test0</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>    PlusCalculator plusCalc<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    MinusCalculator minusCalc<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    MultiCalculator multiCalc<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    DevideCalculator devideCalc<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;plus: &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> plusCalc<span style="color:#1f2328">.</span>getResult<span style="color:#1f2328">(</span><span style="color:#0550ae">10</span><span style="color:#1f2328">,</span><span style="color:#0550ae">5</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">&lt;&lt;</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;minus: &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> minusCalc<span style="color:#1f2328">.</span>getResult<span style="color:#1f2328">(</span><span style="color:#0550ae">10</span><span style="color:#1f2328">,</span><span style="color:#0550ae">5</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">&lt;&lt;</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;multi: &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> multiCalc<span style="color:#1f2328">.</span>getResult<span style="color:#1f2328">(</span><span style="color:#0550ae">10</span><span style="color:#1f2328">,</span><span style="color:#0550ae">5</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">&lt;&lt;</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;devide: &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> devideCalc<span style="color:#1f2328">.</span>getResult<span style="color:#1f2328">(</span><span style="color:#0550ae">10</span><span style="color:#1f2328">,</span><span style="color:#0550ae">5</span><span style="color:#1f2328">)</span> <span style="color:#0550ae">&lt;&lt;</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    test0<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h2 id="03-里氏替换原则liskov-substitution-principle-lsp">03 里氏替换原则(Liskov Substitution Principle, LSP)</h2>
 <ul>
 <li>Subtypes must be substitutable for their base types.</li>
@@ -715,67 +715,67 @@
     padding: 2px;">LSP2</div>
 </center>
 </div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">User</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">User</span><span class="p">(</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="kt">float</span> <span class="n">score</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="o">:</span><span class="n">_name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">,</span><span class="n">_score</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">virtual</span> <span class="kt">void</span> <span class="nf">consume</span><span class="p">(</span><span class="kt">float</span> <span class="n">amount</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="n">_score</span> <span class="o">-=</span> <span class="n">amount</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">_name</span> <span class="o">&lt;&lt;</span> <span class="s">&#34; consumed &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">amount</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;remaining score is &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">_score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="k">protected</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">string</span> <span class="n">_name</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">_score</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">VipUser</span> <span class="o">:</span> <span class="k">public</span> <span class="n">User</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">VipUser</span><span class="p">(</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="kt">float</span> <span class="n">score</span><span class="p">,</span> <span class="kt">float</span> <span class="n">discount</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="o">:</span><span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">score</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">,</span><span class="n">_discount</span><span class="p">(</span><span class="n">discount</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">//重命名consume 满足里氏替换原则
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">void</span> <span class="nf">vipconsume</span><span class="p">(</span><span class="kt">float</span> <span class="n">amount</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">float</span> <span class="n">discountedAmount</span> <span class="o">=</span> <span class="n">amount</span> <span class="o">*</span> <span class="n">_discount</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">User</span><span class="o">::</span><span class="n">consume</span><span class="p">(</span><span class="n">discountedAmount</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;VIP user: &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">_name</span> <span class="o">&lt;&lt;</span> <span class="s">&#34; consumed &#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">discountedAmount</span> <span class="o">&lt;&lt;</span> <span class="s">&#34; with discount&#34;</span><span class="o">&lt;&lt;</span> <span class="n">endl</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;remaining score is &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">_score</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">updateDiscount</span><span class="p">(</span><span class="kt">float</span> <span class="n">newDiscount</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="n">_discount</span> <span class="o">=</span> <span class="n">newDiscount</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">_discount</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">test0</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="n">string</span> <span class="n">name1</span> <span class="o">=</span> <span class="s">&#34;jhon&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">string</span> <span class="n">name2</span> <span class="o">=</span> <span class="s">&#34;evan&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">User</span> <span class="n">user</span><span class="p">(</span><span class="n">name1</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">user</span><span class="p">.</span><span class="n">consume</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">VipUser</span> <span class="n">vipuser</span><span class="p">(</span><span class="n">name2</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">vipuser</span><span class="p">.</span><span class="n">vipconsume</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">test0</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;string&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>cout<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>string<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">User</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    User<span style="color:#1f2328">(</span>string<span style="color:#0550ae">&amp;</span> name<span style="color:#1f2328">,</span> <span style="color:#cf222e">float</span> score<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">:</span>_name<span style="color:#1f2328">(</span>name<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">,</span>_score<span style="color:#1f2328">(</span>score<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">virtual</span> <span style="color:#cf222e">void</span> <span style="color:#6639ba">consume</span><span style="color:#1f2328">(</span><span style="color:#cf222e">float</span> amount<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        _score <span style="color:#0550ae">-=</span> amount<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        cout <span style="color:#0550ae">&lt;&lt;</span> _name <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34; consumed &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> amount <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;remaining score is &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> _score <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">protected</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    string _name<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">float</span> _score<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">VipUser</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> User<span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    VipUser<span style="color:#1f2328">(</span>string<span style="color:#0550ae">&amp;</span> name<span style="color:#1f2328">,</span> <span style="color:#cf222e">float</span> score<span style="color:#1f2328">,</span> <span style="color:#cf222e">float</span> discount<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">:</span>User<span style="color:#1f2328">(</span>name<span style="color:#1f2328">,</span> score<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">,</span>_discount<span style="color:#1f2328">(</span>discount<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">//重命名consume 满足里氏替换原则
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">void</span> <span style="color:#6639ba">vipconsume</span><span style="color:#1f2328">(</span><span style="color:#cf222e">float</span> amount<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">float</span> discountedAmount <span style="color:#0550ae">=</span> amount <span style="color:#0550ae">*</span> _discount<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        User<span style="color:#0550ae">::</span>consume<span style="color:#1f2328">(</span>discountedAmount<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;VIP user: &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> _name <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34; consumed &#34;</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        cout <span style="color:#0550ae">&lt;&lt;</span> discountedAmount <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34; with discount&#34;</span><span style="color:#0550ae">&lt;&lt;</span> endl <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;remaining score is &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> _score <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> <span style="color:#6639ba">updateDiscount</span><span style="color:#1f2328">(</span><span style="color:#cf222e">float</span> newDiscount<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        _discount <span style="color:#0550ae">=</span> newDiscount<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">private</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">float</span> _discount<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">void</span> <span style="color:#6639ba">test0</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>    string name1 <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;jhon&#34;</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    string name2 <span style="color:#0550ae">=</span> <span style="color:#0a3069">&#34;evan&#34;</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    User user<span style="color:#1f2328">(</span>name1<span style="color:#1f2328">,</span> <span style="color:#0550ae">100</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    user<span style="color:#1f2328">.</span>consume<span style="color:#1f2328">(</span><span style="color:#0550ae">20</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    VipUser vipuser<span style="color:#1f2328">(</span>name2<span style="color:#1f2328">,</span> <span style="color:#0550ae">100</span><span style="color:#1f2328">,</span> <span style="color:#0550ae">0.8</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    vipuser<span style="color:#1f2328">.</span>vipconsume<span style="color:#1f2328">(</span><span style="color:#0550ae">20</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    test0<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h2 id="04-接口分离原则interface-segregation-principle-isp">04 接口分离原则(Interface Segregation Principle, ISP)</h2>
 <ul>
 <li>Clients should not be forced to depend on interfaces they do not use.</li>
@@ -799,74 +799,74 @@
 <p>FlyingBird新增fly()</p>
 <p>这是Crow可以继承Flyingbird 而 Ostrich可以继承Bird</p>
 <p>用CPP模拟这个原则</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="c1">// 基类 Bird
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">Bird</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="k">virtual</span> <span class="o">~</span><span class="n">Bird</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">virtual</span> <span class="kt">void</span> <span class="nf">eat</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Bird is eating.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">virtual</span> <span class="kt">void</span> <span class="nf">walk</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Bird is walking.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">virtual</span> <span class="kt">void</span> <span class="nf">chirp</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Bird is chirping.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// 派生类 FlyingBird
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">FlyingBird</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Bird</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">fly</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;FlyingBird is flying.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// Crow 继承 FlyingBird
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">Crow</span> <span class="o">:</span> <span class="k">public</span> <span class="n">FlyingBird</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="n">fly</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Crow is flying.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">chirp</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Crow is cawing.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// Ostrich 继承 Bird
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">Ostrich</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Bird</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="n">walk</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Ostrich is walking.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">chirp</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Ostrich is grunting.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Crow</span> <span class="n">crow</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">crow</span><span class="p">.</span><span class="n">eat</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="n">crow</span><span class="p">.</span><span class="n">walk</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="n">crow</span><span class="p">.</span><span class="n">chirp</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="n">crow</span><span class="p">.</span><span class="n">fly</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">Ostrich</span> <span class="n">ostrich</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ostrich</span><span class="p">.</span><span class="n">eat</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ostrich</span><span class="p">.</span><span class="n">walk</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="n">ostrich</span><span class="p">.</span><span class="n">chirp</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">// 基类 Bird
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Bird</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">virtual</span> <span style="color:#0550ae">~</span>Bird<span style="color:#1f2328">()</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">default</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">virtual</span> <span style="color:#cf222e">void</span> <span style="color:#6639ba">eat</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Bird is eating.&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">virtual</span> <span style="color:#cf222e">void</span> <span style="color:#6639ba">walk</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Bird is walking.&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">virtual</span> <span style="color:#cf222e">void</span> <span style="color:#6639ba">chirp</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Bird is chirping.&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">// 派生类 FlyingBird
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">class</span> <span style="color:#1f2328">FlyingBird</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> Bird <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">virtual</span> <span style="color:#cf222e">void</span> fly<span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;FlyingBird is flying.&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">// Crow 继承 FlyingBird
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Crow</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> FlyingBird <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> fly<span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Crow is flying.&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> <span style="color:#6639ba">chirp</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Crow is cawing.&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">// Ostrich 继承 Bird
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Ostrich</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> Bird <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> walk<span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Ostrich is walking.&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> <span style="color:#6639ba">chirp</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Ostrich is grunting.&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    Crow crow<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    crow<span style="color:#1f2328">.</span>eat<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    crow<span style="color:#1f2328">.</span>walk<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    crow<span style="color:#1f2328">.</span>chirp<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    crow<span style="color:#1f2328">.</span>fly<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Ostrich ostrich<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    ostrich<span style="color:#1f2328">.</span>eat<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    ostrich<span style="color:#1f2328">.</span>walk<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    ostrich<span style="color:#1f2328">.</span>chirp<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h2 id="05-依赖倒置原则dependency-inversion-principle-dip">05 依赖倒置原则(Dependency Inversion Principle, DIP)</h2>
 <ul>
 <li>High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.</li>
@@ -884,58 +884,58 @@
     padding: 2px;">DIP</div>
 </center>
 </div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="c1">// 抽象类 BankWorker
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">BankWorker</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="k">virtual</span> <span class="o">~</span><span class="n">BankWorker</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// 纯虚函数 doBusiness
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">virtual</span> <span class="kt">void</span> <span class="nf">doBusiness</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// SaveBusiness 类实现 doBusiness
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">SaveBusiness</span> <span class="o">:</span> <span class="k">public</span> <span class="n">BankWorker</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="n">doBusiness</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Performing save business.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// PayBusiness 类实现 doBusiness
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">PayBusiness</span> <span class="o">:</span> <span class="k">public</span> <span class="n">BankWorker</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="n">doBusiness</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Performing pay business.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// TransferBusiness 类实现 doBusiness
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">class</span> <span class="nc">TransferBusiness</span> <span class="o">:</span> <span class="k">public</span> <span class="n">BankWorker</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="n">doBusiness</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Performing transfer business.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// 高层模块依赖于抽象类 BankWorker
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">performBusiness</span><span class="p">(</span><span class="k">const</span> <span class="n">BankWorker</span><span class="o">&amp;</span> <span class="n">worker</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">worker</span><span class="p">.</span><span class="n">doBusiness</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">SaveBusiness</span> <span class="n">saveWorker</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">PayBusiness</span> <span class="n">payWorker</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">TransferBusiness</span> <span class="n">transferWorker</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">performBusiness</span><span class="p">(</span><span class="n">saveWorker</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">performBusiness</span><span class="p">(</span><span class="n">payWorker</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">performBusiness</span><span class="p">(</span><span class="n">transferWorker</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;string&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">// 抽象类 BankWorker
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">class</span> <span style="color:#1f2328">BankWorker</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">virtual</span> <span style="color:#0550ae">~</span>BankWorker<span style="color:#1f2328">()</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">default</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">// 纯虚函数 doBusiness
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">virtual</span> <span style="color:#cf222e">void</span> <span style="color:#6639ba">doBusiness</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">// SaveBusiness 类实现 doBusiness
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">class</span> <span style="color:#1f2328">SaveBusiness</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> BankWorker <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> doBusiness<span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Performing save business.&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">// PayBusiness 类实现 doBusiness
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">class</span> <span style="color:#1f2328">PayBusiness</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> BankWorker <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> doBusiness<span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Performing pay business.&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">// TransferBusiness 类实现 doBusiness
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">class</span> <span style="color:#1f2328">TransferBusiness</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> BankWorker <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> doBusiness<span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        std<span style="color:#0550ae">::</span>cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Performing transfer business.&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a">// 高层模块依赖于抽象类 BankWorker
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">void</span> <span style="color:#6639ba">performBusiness</span><span style="color:#1f2328">(</span><span style="color:#cf222e">const</span> BankWorker<span style="color:#0550ae">&amp;</span> worker<span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    worker<span style="color:#1f2328">.</span>doBusiness<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    SaveBusiness saveWorker<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    PayBusiness payWorker<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    TransferBusiness transferWorker<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    performBusiness<span style="color:#1f2328">(</span>saveWorker<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    performBusiness<span style="color:#1f2328">(</span>payWorker<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    performBusiness<span style="color:#1f2328">(</span>transferWorker<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h2 id="06-迪米特原则-law-of-demeter-lod">06 迪米特原则 (Law of Demeter, LoD)</h2>
 <ul>
 <li>
@@ -959,68 +959,68 @@
 </center>
 </div>
 <p>楼盘买房问题，相比于直接看3处房产让买房者找中介买不同的房子</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Property</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Property</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">address</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="o">:</span><span class="n">_address</span><span class="p">(</span><span class="n">address</span><span class="p">){}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">string</span> <span class="nf">getAddress</span><span class="p">()</span> <span class="k">const</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">_address</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">     <span class="n">string</span> <span class="n">_address</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Agent</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="n">addProperty</span><span class="p">(</span><span class="k">const</span> <span class="n">Property</span><span class="o">&amp;</span> <span class="n">property</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="n">properties</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">property</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">showProperties</span><span class="p">()</span> <span class="k">const</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="k">const</span> <span class="k">auto</span><span class="o">&amp;</span> <span class="nl">property</span> <span class="p">:</span> <span class="n">properties</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Property address: &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">property</span><span class="p">.</span><span class="n">getAddress</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="n">Property</span><span class="o">&gt;</span> <span class="n">properties</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Buyer</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Buyer</span><span class="p">(</span><span class="n">Agent</span><span class="o">&amp;</span> <span class="n">agent</span><span class="p">)</span> <span class="o">:</span> <span class="n">agent</span><span class="p">(</span><span class="n">agent</span><span class="p">){}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">viewProperties</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">agent</span><span class="p">.</span><span class="n">showProperties</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Agent</span><span class="o">&amp;</span> <span class="n">agent</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">test0</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Agent</span> <span class="n">agent</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">agent</span><span class="p">.</span><span class="n">addProperty</span><span class="p">(</span><span class="n">Property</span><span class="p">(</span><span class="s">&#34;wuhan&#34;</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">    <span class="n">agent</span><span class="p">.</span><span class="n">addProperty</span><span class="p">(</span><span class="n">Property</span><span class="p">(</span><span class="s">&#34;changsha&#34;</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">    <span class="n">agent</span><span class="p">.</span><span class="n">addProperty</span><span class="p">(</span><span class="n">Property</span><span class="p">(</span><span class="s">&#34;shenzhen&#34;</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">Buyer</span> <span class="n">buyer</span><span class="p">(</span><span class="n">agent</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">buyer</span><span class="p">.</span><span class="n">viewProperties</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">test0</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;string&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;vector&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>vector<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>cout<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>string<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Property</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    Property<span style="color:#1f2328">(</span><span style="color:#cf222e">const</span> string<span style="color:#0550ae">&amp;</span> address<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">:</span>_address<span style="color:#1f2328">(</span>address<span style="color:#1f2328">){}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    string <span style="color:#6639ba">getAddress</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> _address<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">private</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>     string _address<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Agent</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> addProperty<span style="color:#1f2328">(</span><span style="color:#cf222e">const</span> Property<span style="color:#0550ae">&amp;</span> property<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        properties<span style="color:#1f2328">.</span>push_back<span style="color:#1f2328">(</span>property<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> <span style="color:#6639ba">showProperties</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">const</span> <span style="color:#cf222e">auto</span><span style="color:#0550ae">&amp;</span> <span style="color:#900;font-weight:bold">property</span> <span style="color:#1f2328">:</span> properties<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>            cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Property address: &#34;</span> <span style="color:#0550ae">&lt;&lt;</span> property<span style="color:#1f2328">.</span>getAddress<span style="color:#1f2328">()</span> <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">private</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    vector<span style="color:#0550ae">&lt;</span>Property<span style="color:#0550ae">&gt;</span> properties<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Buyer</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    Buyer<span style="color:#1f2328">(</span>Agent<span style="color:#0550ae">&amp;</span> agent<span style="color:#1f2328">)</span> <span style="color:#0550ae">:</span> agent<span style="color:#1f2328">(</span>agent<span style="color:#1f2328">){}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> <span style="color:#6639ba">viewProperties</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        agent<span style="color:#1f2328">.</span>showProperties<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">private</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    Agent<span style="color:#0550ae">&amp;</span> agent<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">void</span> <span style="color:#6639ba">test0</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>    Agent agent<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    agent<span style="color:#1f2328">.</span>addProperty<span style="color:#1f2328">(</span>Property<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;wuhan&#34;</span><span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>    agent<span style="color:#1f2328">.</span>addProperty<span style="color:#1f2328">(</span>Property<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;changsha&#34;</span><span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>    agent<span style="color:#1f2328">.</span>addProperty<span style="color:#1f2328">(</span>Property<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;shenzhen&#34;</span><span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Buyer buyer<span style="color:#1f2328">(</span>agent<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    buyer<span style="color:#1f2328">.</span>viewProperties<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    test0<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h2 id="07-组合复用原则composition-over-inheritance-principle">07 组合复用原则Composition Over Inheritance Principle)</h2>
 <ul>
 <li>Favor composition over inheritance as a reuse mechanism.</li>
@@ -1038,76 +1038,76 @@
     padding: 2px;">COIP</div>
 </center>
 </div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Vehicle</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="k">virtual</span> <span class="o">~</span><span class="n">Vehicle</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">virtual</span> <span class="kt">void</span> <span class="nf">run</span><span class="p">()</span> <span class="k">const</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Vehicle is running&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">BYD</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Vehicle</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="n">run</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;BYD is running&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">TESLA</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Vehicle</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="n">run</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;TESLA is running&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">GEELY</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Vehicle</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="n">run</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;GEELY is running&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Person</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Person</span><span class="p">(</span><span class="n">Vehicle</span><span class="o">*</span> <span class="n">vehicle</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="o">:</span><span class="n">vehicle</span><span class="p">(</span><span class="n">vehicle</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">drive</span><span class="p">()</span> <span class="k">const</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">vehicle</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">            <span class="n">vehicle</span><span class="o">-&gt;</span><span class="n">run</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;No cat to drive&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Vehicle</span><span class="o">*</span> <span class="n">vehicle</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">test0</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="n">BYD</span> <span class="n">byd</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">TESLA</span> <span class="n">tsla</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">GEELY</span> <span class="n">gl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Person</span> <span class="n">person1</span><span class="p">(</span><span class="o">&amp;</span><span class="n">byd</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Person</span> <span class="n">person2</span><span class="p">(</span><span class="o">&amp;</span><span class="n">tsla</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Person</span> <span class="n">person3</span><span class="p">(</span><span class="o">&amp;</span><span class="n">gl</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">person1</span><span class="p">.</span><span class="n">drive</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="n">person2</span><span class="p">.</span><span class="n">drive</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="n">person3</span><span class="p">.</span><span class="n">drive</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">test0</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">#include</span> <span style="color:#57606a">&lt;iostream&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>cout<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">using</span> std<span style="color:#0550ae">::</span>endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Vehicle</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">virtual</span> <span style="color:#0550ae">~</span>Vehicle<span style="color:#1f2328">()</span> <span style="color:#0550ae">=</span> <span style="color:#cf222e">default</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">virtual</span> <span style="color:#cf222e">void</span> <span style="color:#6639ba">run</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;Vehicle is running&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">BYD</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> Vehicle<span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> run<span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;BYD is running&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">TESLA</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> Vehicle<span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> run<span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;TESLA is running&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">GEELY</span> <span style="color:#0550ae">:</span> <span style="color:#cf222e">public</span> Vehicle<span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> run<span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span> <span style="color:#cf222e">override</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;GEELY is running&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Person</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    Person<span style="color:#1f2328">(</span>Vehicle<span style="color:#0550ae">*</span> vehicle<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">:</span>vehicle<span style="color:#1f2328">(</span>vehicle<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">void</span> <span style="color:#6639ba">drive</span><span style="color:#1f2328">()</span> <span style="color:#cf222e">const</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>vehicle<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>            vehicle<span style="color:#0550ae">-&gt;</span>run<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span><span style="color:#cf222e">else</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            cout <span style="color:#0550ae">&lt;&lt;</span> <span style="color:#0a3069">&#34;No cat to drive&#34;</span> <span style="color:#0550ae">&lt;&lt;</span> endl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">private</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    Vehicle<span style="color:#0550ae">*</span> vehicle<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">void</span> <span style="color:#6639ba">test0</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>    BYD byd<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    TESLA tsla<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    GEELY gl<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    Person person1<span style="color:#1f2328">(</span><span style="color:#0550ae">&amp;</span>byd<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    Person person2<span style="color:#1f2328">(</span><span style="color:#0550ae">&amp;</span>tsla<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    Person person3<span style="color:#1f2328">(</span><span style="color:#0550ae">&amp;</span>gl<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    person1<span style="color:#1f2328">.</span>drive<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    person2<span style="color:#1f2328">.</span>drive<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    person3<span style="color:#1f2328">.</span>drive<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    test0<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div>
     </div>
 </article>

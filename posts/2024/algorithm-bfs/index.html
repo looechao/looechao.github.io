@@ -42,7 +42,7 @@
     <div class="profile">
         <a href="https://looechao.com/" class="avatar">
             
-            <img src="/images/profile.png" alt="Looe" />
+            <img src="https://static.looechao.com/profile/profile-purple.png/profile.png" alt="Looe" />
             
         </a>
         <div class="profile-text">
@@ -550,12 +550,12 @@
 <h4 id="p0101">P0101★</h4>
 <p>题目描述：  <a href="https://leetcode.cn/problems/symmetric-tree/">Symmetric Tree</a>, 判断一棵树是不是对称树</p>
 <h5 id="思路">思路</h5>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">      <span class="o">[</span>1<span class="o">]</span>
-</span></span><span class="line"><span class="cl">      /  <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>     /     <span class="se">\ </span>
-</span></span><span class="line"><span class="cl">   <span class="o">[</span>1<span class="o">]</span>     <span class="o">[</span>1<span class="o">]</span>
-</span></span><span class="line"><span class="cl">   / <span class="se">\ </span>    / <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span> <span class="o">[</span>1<span class="o">]</span> <span class="o">[</span>1<span class="o">]</span> <span class="o">[</span>1<span class="o">]</span> <span class="o">[</span>1<span class="o">]</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>      <span style="color:#0550ae">[</span>1<span style="color:#0550ae">]</span>
+</span></span><span style="display:flex;"><span>      /  <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>     /     <span style="color:#0a3069">\ </span>
+</span></span><span style="display:flex;"><span>   <span style="color:#0550ae">[</span>1<span style="color:#0550ae">]</span>     <span style="color:#0550ae">[</span>1<span style="color:#0550ae">]</span>
+</span></span><span style="display:flex;"><span>   / <span style="color:#0a3069">\ </span>    / <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span> <span style="color:#0550ae">[</span>1<span style="color:#0550ae">]</span> <span style="color:#0550ae">[</span>1<span style="color:#0550ae">]</span> <span style="color:#0550ae">[</span>1<span style="color:#0550ae">]</span> <span style="color:#0550ae">[</span>1<span style="color:#0550ae">]</span>
 </span></span></code></pre></div><ol>
 <li>
 <p>广度优先遍历：往队列中Push元素，最开始两个元素是树的根节点</p>
@@ -571,134 +571,134 @@
 </li>
 </ol>
 <h5 id="总结">总结</h5>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cm">/**
-</span></span></span><span class="line"><span class="cl"><span class="cm"> * Definition for a binary tree node.
-</span></span></span><span class="line"><span class="cl"><span class="cm"> * struct TreeNode {
-</span></span></span><span class="line"><span class="cl"><span class="cm"> *     int val;
-</span></span></span><span class="line"><span class="cl"><span class="cm"> *     TreeNode *left;
-</span></span></span><span class="line"><span class="cl"><span class="cm"> *     TreeNode *right;
-</span></span></span><span class="line"><span class="cl"><span class="cm"> *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
-</span></span></span><span class="line"><span class="cl"><span class="cm"> *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-</span></span></span><span class="line"><span class="cl"><span class="cm"> *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-</span></span></span><span class="line"><span class="cl"><span class="cm"> * };
-</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">bool</span> <span class="n">isSymmetric</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nf">check</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">root</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kt">bool</span> <span class="nf">check</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">u</span><span class="p">,</span> <span class="n">TreeNode</span><span class="o">*</span> <span class="n">v</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">//创建队列并且压入前两个节点
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">queue</span><span class="o">&lt;</span><span class="n">TreeNode</span><span class="o">*&gt;</span> <span class="n">q</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">u</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">//遍历队列进行判断
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
-</span></span><span class="line"><span class="cl">            <span class="c1">//取出一双对称位置节点
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">u</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">            <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">            <span class="n">v</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">            <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">            <span class="c1">//判断对称性
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">u</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">v</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        	<span class="k">if</span><span class="p">((</span><span class="o">!</span><span class="n">u</span> <span class="o">||</span> <span class="o">!</span><span class="n">v</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">val</span> <span class="o">!=</span> <span class="n">v</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">))</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="c1">//将子节点按照对称序入队
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">            <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">v</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">            <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">            <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">v</span><span class="o">-&gt;</span><span class="n">lefy</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#57606a">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"> * Definition for a binary tree node.
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"> * struct TreeNode {
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"> *     int val;
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"> *     TreeNode *left;
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"> *     TreeNode *right;
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"> *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"> *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"> *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"> * };
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Solution</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">bool</span> isSymmetric<span style="color:#1f2328">(</span>TreeNode<span style="color:#0550ae">*</span> root<span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#6639ba">check</span><span style="color:#1f2328">(</span>root<span style="color:#1f2328">,</span> root<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">bool</span> <span style="color:#6639ba">check</span><span style="color:#1f2328">(</span>TreeNode<span style="color:#0550ae">*</span> u<span style="color:#1f2328">,</span> TreeNode<span style="color:#0550ae">*</span> v<span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a">//创建队列并且压入前两个节点
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        queue<span style="color:#0550ae">&lt;</span>TreeNode<span style="color:#0550ae">*&gt;</span> q<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        q<span style="color:#1f2328">.</span>push<span style="color:#1f2328">(</span>u<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        q<span style="color:#1f2328">.</span>push<span style="color:#1f2328">(</span>v<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a">//遍历队列进行判断
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">!</span>q<span style="color:#1f2328">.</span>empty<span style="color:#1f2328">()){</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a">//取出一双对称位置节点
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>            u <span style="color:#0550ae">=</span> q<span style="color:#1f2328">.</span>front<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>            q<span style="color:#1f2328">.</span>pop<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>            v <span style="color:#0550ae">=</span> q<span style="color:#1f2328">.</span>front<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>            q<span style="color:#1f2328">.</span>pop<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a">//判断对称性
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>            <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span><span style="color:#0550ae">!</span>u <span style="color:#0550ae">&amp;&amp;</span> <span style="color:#0550ae">!</span>v<span style="color:#1f2328">)</span> <span style="color:#cf222e">continue</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        	<span style="color:#cf222e">if</span><span style="color:#1f2328">((</span><span style="color:#0550ae">!</span>u <span style="color:#0550ae">||</span> <span style="color:#0550ae">!</span>v<span style="color:#1f2328">)</span> <span style="color:#0550ae">||</span> <span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>val <span style="color:#0550ae">!=</span> v<span style="color:#0550ae">-&gt;</span>val<span style="color:#1f2328">))</span> <span style="color:#cf222e">return</span> <span style="color:#6639ba">false</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a">//将子节点按照对称序入队
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>            q<span style="color:#1f2328">.</span>push<span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>left<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>            q<span style="color:#1f2328">.</span>push<span style="color:#1f2328">(</span>v<span style="color:#0550ae">-&gt;</span>right<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>            q<span style="color:#1f2328">.</span>push<span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>right<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>            q<span style="color:#1f2328">.</span>push<span style="color:#1f2328">(</span>v<span style="color:#0550ae">-&gt;</span>lefy<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#6639ba">true</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
 </span></span></code></pre></div><h4 id="p0102">P0102★</h4>
 <p>题目描述：<a href="https://leetcode.cn/problems/binary-tree-level-order-traversal/"> Binary Tree Level Order Traversal</a>，对一颗二叉树进行层序遍历</p>
 <h5 id="思路-1">思路</h5>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">      <span class="o">[</span>3<span class="o">]</span>
-</span></span><span class="line"><span class="cl">      /  <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>     /     <span class="se">\ </span>
-</span></span><span class="line"><span class="cl">   <span class="o">[</span>9<span class="o">]</span>     <span class="o">[</span>2<span class="o">]</span>
-</span></span><span class="line"><span class="cl">           / <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>         <span class="o">[</span>4<span class="o">]</span> <span class="o">[</span>7<span class="o">]</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>      <span style="color:#0550ae">[</span>3<span style="color:#0550ae">]</span>
+</span></span><span style="display:flex;"><span>      /  <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>     /     <span style="color:#0a3069">\ </span>
+</span></span><span style="display:flex;"><span>   <span style="color:#0550ae">[</span>9<span style="color:#0550ae">]</span>     <span style="color:#0550ae">[</span>2<span style="color:#0550ae">]</span>
+</span></span><span style="display:flex;"><span>           / <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>         <span style="color:#0550ae">[</span>4<span style="color:#0550ae">]</span> <span style="color:#0550ae">[</span>7<span style="color:#0550ae">]</span>
 </span></span></code></pre></div><p>使用队列的广度优先遍历思想，将每一层的节点入队，在将该层节点的数值插入到vector当中去</p>
 <h5 id="总结-1">总结</h5>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">levelOrder</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">queue</span><span class="o">&lt;</span><span class="n">TreeNode</span><span class="o">*&gt;</span> <span class="n">q</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">ret</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">root</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
-</span></span><span class="line"><span class="cl">            <span class="c1">//每一层节点的读取，放入到一个vector&lt;int&gt;当中去
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="c1">//同时构建下一层节点的元素到nq当中去
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">vec</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="n">queue</span><span class="o">&lt;</span><span class="n">TreeNode</span><span class="o">*&gt;</span> <span class="n">nq</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
-</span></span><span class="line"><span class="cl">                <span class="n">TreeNode</span><span class="o">*</span> <span class="n">u</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">                <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="n">u</span> <span class="o">!=</span> <span class="k">nullptr</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                	<span class="n">nq</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">nq</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span><span class="c1">//到这里，nq构建完成，vec也存储完成
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">vec</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
-</span></span><span class="line"><span class="cl">                <span class="n">ret</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">vec</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="n">vec</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="n">q</span> <span class="o">=</span> <span class="n">nq</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Solution</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    vector<span style="color:#0550ae">&lt;</span>vector<span style="color:#0550ae">&lt;</span><span style="color:#cf222e">int</span><span style="color:#0550ae">&gt;&gt;</span> levelOrder<span style="color:#1f2328">(</span>TreeNode<span style="color:#0550ae">*</span> root<span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        queue<span style="color:#0550ae">&lt;</span>TreeNode<span style="color:#0550ae">*&gt;</span> q<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        vector<span style="color:#0550ae">&lt;</span>vector<span style="color:#0550ae">&lt;</span><span style="color:#cf222e">int</span><span style="color:#0550ae">&gt;&gt;</span> ret<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        q<span style="color:#1f2328">.</span>push<span style="color:#1f2328">(</span>root<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">!</span>q<span style="color:#1f2328">.</span>empty<span style="color:#1f2328">()){</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a">//每一层节点的读取，放入到一个vector&lt;int&gt;当中去
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>            <span style="color:#57606a">//同时构建下一层节点的元素到nq当中去
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>            vector<span style="color:#0550ae">&lt;</span><span style="color:#cf222e">int</span><span style="color:#0550ae">&gt;</span> vec<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            queue<span style="color:#0550ae">&lt;</span>TreeNode<span style="color:#0550ae">*&gt;</span> nq<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">!</span>q<span style="color:#1f2328">.</span>empty<span style="color:#1f2328">()){</span>
+</span></span><span style="display:flex;"><span>                TreeNode<span style="color:#0550ae">*</span> u <span style="color:#0550ae">=</span> q<span style="color:#1f2328">.</span>front<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>                q<span style="color:#1f2328">.</span>pop<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>u <span style="color:#0550ae">!=</span> <span style="color:#cf222e">nullptr</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                    vec<span style="color:#1f2328">.</span>push_back<span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>val<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                	nq<span style="color:#1f2328">.</span>push<span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>left<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                    nq<span style="color:#1f2328">.</span>push<span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>right<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span><span style="color:#57606a">//到这里，nq构建完成，vec也存储完成
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>            <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span><span style="color:#0550ae">!</span>vec<span style="color:#1f2328">.</span>empty<span style="color:#1f2328">()){</span>
+</span></span><span style="display:flex;"><span>                ret<span style="color:#1f2328">.</span>push_back<span style="color:#1f2328">(</span>vec<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                vec<span style="color:#1f2328">.</span>clear<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            q <span style="color:#0550ae">=</span> nq<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> ret<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
 </span></span></code></pre></div><h4 id="p0103">P0103★</h4>
 <p>题目描述：<a href="https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/">Binary Tree Zigzag Level Order Traversal</a>, 锯齿层序遍历</p>
 <h5 id="思路-2">思路</h5>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">      <span class="o">[</span>3<span class="o">]</span>
-</span></span><span class="line"><span class="cl">      /  <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>     /     <span class="se">\ </span>
-</span></span><span class="line"><span class="cl">   <span class="o">[</span>9<span class="o">]</span>     <span class="o">[</span>20<span class="o">]</span>
-</span></span><span class="line"><span class="cl">           /  <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>        <span class="o">[</span>15<span class="o">]</span>  <span class="o">[</span>7<span class="o">]</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>      <span style="color:#0550ae">[</span>3<span style="color:#0550ae">]</span>
+</span></span><span style="display:flex;"><span>      /  <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>     /     <span style="color:#0a3069">\ </span>
+</span></span><span style="display:flex;"><span>   <span style="color:#0550ae">[</span>9<span style="color:#0550ae">]</span>     <span style="color:#0550ae">[</span>20<span style="color:#0550ae">]</span>
+</span></span><span style="display:flex;"><span>           /  <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>        <span style="color:#0550ae">[</span>15<span style="color:#0550ae">]</span>  <span style="color:#0550ae">[</span>7<span style="color:#0550ae">]</span>
 </span></span></code></pre></div><p>一开始尝试使用普通队列，但是行不通</p>
 <p>正确的做法是使用双端队列和一个bool标记进行遍历</p>
 <h5 id="总结-2">总结</h5>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">zigzagLevelOrder</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span> <span class="n">root</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">ret</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dqueue</span><span class="o">&lt;</span><span class="n">TreeNode</span><span class="o">*&gt;</span> <span class="n">q</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">q</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">root</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">//forward的默认值应该是false
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">bool</span> <span class="n">forward</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
-</span></span><span class="line"><span class="cl">            <span class="c1">//构建每一层的vec和dequeue
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">vec</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="n">deque</span><span class="o">&lt;</span><span class="n">TreeNode</span><span class="o">*&gt;</span> <span class="n">nq</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
-</span></span><span class="line"><span class="cl">                <span class="n">TreeNode</span><span class="o">*</span> <span class="n">u</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">                <span class="n">q</span><span class="p">.</span><span class="n">pop_front</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span> <span class="n">u</span> <span class="o">!=</span> <span class="k">nullptr</span> <span class="o">&amp;&amp;</span> <span class="n">forward</span> <span class="o">==</span> <span class="nb">true</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">nq</span><span class="p">.</span><span class="n">push_front</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">nq</span><span class="p">.</span><span class="n">push_front</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span> <span class="n">u</span> <span class="o">!=</span> <span class="k">nullptr</span> <span class="o">&amp;&amp;</span> <span class="n">forward</span> <span class="o">==</span> <span class="nb">false</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">vec</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">val</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">nq</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">nq</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="n">forward</span> <span class="o">=</span> <span class="o">!</span><span class="n">forward</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">vec</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
-</span></span><span class="line"><span class="cl">                <span class="n">ret</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">vec</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">                <span class="n">vec</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="n">q</span> <span class="o">=</span> <span class="n">nq</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">ret</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Solution</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    vector<span style="color:#0550ae">&lt;</span>vector<span style="color:#0550ae">&lt;</span><span style="color:#cf222e">int</span><span style="color:#0550ae">&gt;&gt;</span> zigzagLevelOrder<span style="color:#1f2328">(</span>TreeNode<span style="color:#0550ae">*</span> root<span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        vector<span style="color:#0550ae">&lt;</span>vector<span style="color:#0550ae">&lt;</span><span style="color:#cf222e">int</span><span style="color:#0550ae">&gt;&gt;</span> ret<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        dqueue<span style="color:#0550ae">&lt;</span>TreeNode<span style="color:#0550ae">*&gt;</span> q<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        q<span style="color:#1f2328">.</span>push_back<span style="color:#1f2328">(</span>root<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#57606a">//forward的默认值应该是false
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#cf222e">bool</span> forward <span style="color:#0550ae">=</span> <span style="color:#6639ba">false</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">!</span>q<span style="color:#1f2328">.</span>empty<span style="color:#1f2328">()){</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#57606a">//构建每一层的vec和dequeue
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>            vector<span style="color:#0550ae">&lt;</span><span style="color:#cf222e">int</span><span style="color:#0550ae">&gt;</span> vec<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            deque<span style="color:#0550ae">&lt;</span>TreeNode<span style="color:#0550ae">*&gt;</span> nq<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span><span style="color:#0550ae">!</span>q<span style="color:#1f2328">.</span>empty<span style="color:#1f2328">()){</span>
+</span></span><span style="display:flex;"><span>                TreeNode<span style="color:#0550ae">*</span> u <span style="color:#0550ae">=</span> q<span style="color:#1f2328">.</span>front<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>                q<span style="color:#1f2328">.</span>pop_front<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span> u <span style="color:#0550ae">!=</span> <span style="color:#cf222e">nullptr</span> <span style="color:#0550ae">&amp;&amp;</span> forward <span style="color:#0550ae">==</span> <span style="color:#6639ba">true</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                    vec<span style="color:#1f2328">.</span>push_back<span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>val<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                    nq<span style="color:#1f2328">.</span>push_front<span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>left<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                    nq<span style="color:#1f2328">.</span>push_front<span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>right<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span> u <span style="color:#0550ae">!=</span> <span style="color:#cf222e">nullptr</span> <span style="color:#0550ae">&amp;&amp;</span> forward <span style="color:#0550ae">==</span> <span style="color:#6639ba">false</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>                    vec<span style="color:#1f2328">.</span>push_back<span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>val<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                    nq<span style="color:#1f2328">.</span>push_back<span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>left<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                    nq<span style="color:#1f2328">.</span>push_back<span style="color:#1f2328">(</span>u<span style="color:#0550ae">-&gt;</span>right<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            forward <span style="color:#0550ae">=</span> <span style="color:#0550ae">!</span>forward<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span><span style="color:#0550ae">!</span>vec<span style="color:#1f2328">.</span>empty<span style="color:#1f2328">()){</span>
+</span></span><span style="display:flex;"><span>                ret<span style="color:#1f2328">.</span>push_back<span style="color:#1f2328">(</span>vec<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>                vec<span style="color:#1f2328">.</span>clear<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            q <span style="color:#0550ae">=</span> nq<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> ret<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
 </span></span></code></pre></div>
     </div>
 </article>

@@ -42,7 +42,7 @@
     <div class="profile">
         <a href="https://looechao.com/" class="avatar">
             
-            <img src="/images/profile.png" alt="Looe" />
+            <img src="https://static.looechao.com/profile/profile-purple.png/profile.png" alt="Looe" />
             
         </a>
         <div class="profile-text">
@@ -613,17 +613,17 @@
 </ul>
 <h4 id="总结-5">总结</h4>
 <p>方法很精炼</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sum</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>   <span class="c1">//sum 表示已经确定了的数的和，方便找出剩余的数
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="o">&gt;&gt;</span><span class="n">m</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">sum</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">m</span><span class="o">-</span><span class="n">i</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="s">&#34; &#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">sum</span><span class="o">+=</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">sum</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">m</span><span class="o">-</span><span class="n">i</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> sum<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>   <span style="color:#57606a">//sum 表示已经确定了的数的和，方便找出剩余的数
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    cin<span style="color:#0550ae">&gt;&gt;</span>n<span style="color:#0550ae">&gt;&gt;</span>m<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">&lt;</span>m<span style="color:#1f2328">;</span>i<span style="color:#0550ae">++</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        cout<span style="color:#0550ae">&lt;&lt;</span><span style="color:#1f2328">(</span>n<span style="color:#0550ae">-</span>sum<span style="color:#1f2328">)</span><span style="color:#0550ae">/</span><span style="color:#1f2328">(</span>m<span style="color:#0550ae">-</span>i<span style="color:#1f2328">)</span><span style="color:#0550ae">&lt;&lt;</span><span style="color:#0a3069">&#34; &#34;</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        sum<span style="color:#0550ae">+=</span><span style="color:#1f2328">(</span>n<span style="color:#0550ae">-</span>sum<span style="color:#1f2328">)</span><span style="color:#0550ae">/</span><span style="color:#1f2328">(</span>m<span style="color:#0550ae">-</span>i<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h1 id="p1888-">P1888 ★</h1>
 <p>三角函数：输入勾股数，输出较小的角的正弦值</p>
 <h4 id="思路-7">思路</h4>
@@ -635,7 +635,7 @@
 <h4 id="总结-6">总结</h4>
 <p>很水的一道题，但是有一个点没有通过测试，原来有坑，要约分
 gcd约分的函数要记牢</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="n">__gcd</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">num</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> x<span style="color:#0550ae">=</span>__gcd<span style="color:#1f2328">(</span>num<span style="color:#1f2328">[</span><span style="color:#0550ae">0</span><span style="color:#1f2328">],</span>num<span style="color:#1f2328">[</span><span style="color:#0550ae">2</span><span style="color:#1f2328">]);</span>
 </span></span></code></pre></div><h1 id="p1897-">P1897 ★★★★★</h1>
 <p>电梯里的尴尬：计算电梯的运行总时间，输入乘坐电梯的人数n和每个人要去的楼层，上一层需要6秒，开门需要5秒，每下去一个人要加1秒</p>
 <h4 id="思路-8">思路</h4>

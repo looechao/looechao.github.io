@@ -42,7 +42,7 @@
     <div class="profile">
         <a href="https://looechao.com/" class="avatar">
             
-            <img src="/images/profile.png" alt="Looe" />
+            <img src="https://static.looechao.com/profile/profile-purple.png/profile.png" alt="Looe" />
             
         </a>
         <div class="profile-text">
@@ -579,21 +579,21 @@
 <ul>
 <li>代码逻辑没有问题，有三个点tle，后续待改正；</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="n">life</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">)</span>   <span class="c1">//判断每个怪物能否被击败
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">boss</span><span class="o">-=</span><span class="n">b</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="n">life</span><span class="o">-=</span><span class="n">a</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#cf222e">while</span><span style="color:#1f2328">(</span>life<span style="color:#0550ae">&gt;=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">)</span>   <span style="color:#57606a">//判断每个怪物能否被击败
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            boss<span style="color:#0550ae">-=</span>b<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            life<span style="color:#0550ae">-=</span>a<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p>初步断定是这段代码的时间复杂度过高，每次都计算了很多次减法运算判断怪物能否被击败；</p>
 <h4 id="修改策略">修改策略</h4>
 <p>预估每个技能能攻击多少次，直接用乘法</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"> <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">!=</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">times</span><span class="o">=</span><span class="n">life</span><span class="o">/</span><span class="n">a</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="n">boss</span><span class="o">-=</span><span class="n">times</span><span class="o">*</span><span class="n">b</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="n">boss</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">boss</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span><span class="n">skill</span><span class="p">[</span><span class="n">count</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">kill</span><span class="o">=</span><span class="mi">1</span><span class="p">;}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span> <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>a<span style="color:#0550ae">!=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">int</span> times<span style="color:#0550ae">=</span>life<span style="color:#0550ae">/</span>a<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            boss<span style="color:#0550ae">-=</span>times<span style="color:#0550ae">*</span>b<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">else</span> boss<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>boss<span style="color:#0550ae">&lt;=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>skill<span style="color:#1f2328">[</span>count<span style="color:#1f2328">]</span><span style="color:#0550ae">=</span><span style="color:#0550ae">1</span><span style="color:#1f2328">;</span>kill<span style="color:#0550ae">=</span><span style="color:#0550ae">1</span><span style="color:#1f2328">;}</span>
 </span></span></code></pre></div><p>有坑: 注意一定要先判断技能消耗的法力是否位0，防止出处零RE；</p>
 <h1 id="p2043">P2043★★★★★</h1>
 <p>质因子分解：输入一个正整数，输出N！的质因子p；每行两个；
@@ -650,16 +650,16 @@
 </ul>
 <h4 id="总结-6">总结</h4>
 <p>参考了题解</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%Lf&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">)</span><span class="o">!=</span><span class="n">EOF</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">sum</span><span class="o">+=</span><span class="n">a</span><span class="o">*</span><span class="mi">1000000</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">main</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%.5Lf&#34;</span><span class="p">,</span><span class="n">sum</span><span class="o">/</span><span class="mi">1000000</span><span class="p">);</span><span class="c1">//除回来
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>scanf<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%Lf&#34;</span><span style="color:#1f2328">,</span><span style="color:#0550ae">&amp;</span>a<span style="color:#1f2328">)</span><span style="color:#0550ae">!=</span>EOF<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        sum<span style="color:#0550ae">+=</span>a<span style="color:#0550ae">*</span><span style="color:#0550ae">1000000</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        main<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">else</span> printf<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%.5Lf&#34;</span><span style="color:#1f2328">,</span>sum<span style="color:#0550ae">/</span><span style="color:#0550ae">1000000</span><span style="color:#1f2328">);</span><span style="color:#57606a">//除回来
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p>不太理解精度的影响，头一次知道main也可以递归；</p>
 <h1 id="p2394">P2394★</h1>
 <p>yyyloveschemistry:化学题目，输入x表示投入水中纳的质量，输出生成的氢气的质量</p>
@@ -672,17 +672,17 @@
 <ul>
 <li>想要延续上一题的思路，但是使用了cin直接量了，只有80</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">na</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">oxy</span><span class="o">=</span><span class="n">na</span><span class="o">/</span><span class="mi">23</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%.8Lf&#34;</span><span class="p">,</span><span class="n">oxy</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    cin<span style="color:#0550ae">&gt;&gt;</span>na<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    oxy<span style="color:#0550ae">=</span>na<span style="color:#0550ae">/</span><span style="color:#0550ae">23</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    printf<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%.8Lf&#34;</span><span style="color:#1f2328">,</span>oxy<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
 </span></span></code></pre></div><ul>
 <li>使用scanf可以强制提高精度；</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">    <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%17Lf&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">na</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">oxy</span><span class="o">=</span><span class="n">na</span><span class="o">/</span><span class="mi">23</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%.8Lf&#34;</span><span class="p">,</span><span class="n">oxy</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    scanf<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%17Lf&#34;</span><span style="color:#1f2328">,</span><span style="color:#0550ae">&amp;</span>na<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    oxy<span style="color:#0550ae">=</span>na<span style="color:#0550ae">/</span><span style="color:#0550ae">23</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    printf<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%.8Lf&#34;</span><span style="color:#1f2328">,</span>oxy<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
 </span></span></code></pre></div><h1 id="p2525">P2525★</h1>
 <p>Uim的情人节礼物2：排列礼物顺序，字典序；</p>
 <h4 id="思路-9">思路</h4>
@@ -695,13 +695,13 @@
 <ul>
 <li>找前序排列可以用函数prev_permutation(num.begin(),num.end())</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="n">prev_permutation</span><span class="p">(</span><span class="n">num</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="n">num</span><span class="p">.</span><span class="n">end</span><span class="p">()))</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="s">&#34; &#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>prev_permutation<span style="color:#1f2328">(</span>num<span style="color:#1f2328">.</span>begin<span style="color:#1f2328">(),</span>num<span style="color:#1f2328">.</span>end<span style="color:#1f2328">()))</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">&lt;</span>n<span style="color:#1f2328">;</span>i<span style="color:#0550ae">++</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            cout<span style="color:#0550ae">&lt;&lt;</span>num<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span><span style="color:#0550ae">&lt;&lt;</span><span style="color:#0a3069">&#34; &#34;</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h1 id="p2524">P2524★</h1>
 <p>uim的情人节礼物3：求自己的排序在字典序中是第几小；</p>
 <h4 id="思路-10">思路</h4>
@@ -712,17 +712,17 @@
 </ul>
 <h4 id="总结-9">总结</h4>
 <p>只要弄懂2525，这道题的逻辑就不算难</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">order</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">string</span> <span class="n">str</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">str</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">num</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">stoi</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="n">prev_permutation</span><span class="p">(</span><span class="n">num</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="n">num</span><span class="p">.</span><span class="n">end</span><span class="p">()))</span> <span class="n">order</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">order</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> n<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span>order<span style="color:#0550ae">=</span><span style="color:#0550ae">1</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cin<span style="color:#0550ae">&gt;&gt;</span>n<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    string str<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cin<span style="color:#0550ae">&gt;&gt;</span>str<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    vector<span style="color:#0550ae">&lt;</span><span style="color:#cf222e">int</span><span style="color:#0550ae">&gt;</span> num<span style="color:#1f2328">(</span>n<span style="color:#1f2328">,</span><span style="color:#0550ae">0</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">&lt;</span>n<span style="color:#1f2328">;</span>i<span style="color:#0550ae">++</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        num<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span><span style="color:#0550ae">=</span>stoi<span style="color:#1f2328">(</span>str<span style="color:#1f2328">.</span>substr<span style="color:#1f2328">(</span>i<span style="color:#1f2328">,</span><span style="color:#0550ae">1</span><span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span>prev_permutation<span style="color:#1f2328">(</span>num<span style="color:#1f2328">.</span>begin<span style="color:#1f2328">(),</span>num<span style="color:#1f2328">.</span>end<span style="color:#1f2328">()))</span> order<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    cout<span style="color:#0550ae">&lt;&lt;</span>order<span style="color:#1f2328">;</span>
 </span></span></code></pre></div>
     </div>
 </article>

@@ -42,7 +42,7 @@
     <div class="profile">
         <a href="https://looechao.com/" class="avatar">
             
-            <img src="/images/profile.png" alt="Looe" />
+            <img src="https://static.looechao.com/profile/profile-purple.png/profile.png" alt="Looe" />
             
         </a>
         <div class="profile-text">
@@ -544,100 +544,100 @@
         <h1 id="basic-settings">Basic Settings</h1>
 <p>My personal fedora setup</p>
 <h2 id="terminal-shortcuts">Terminal shortcuts</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gnome-terminal
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gnome-terminal
 </span></span></code></pre></div><h2 id="ssh-service-for-winscpxshell">SSH service for winscp/xshell</h2>
 <ul>
 <li>
 <p>install openssh-server</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo dnf install openssh-server
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo dnf install openssh-server
 </span></span></code></pre></div></li>
 <li>
 <p>start ssh service to ensure that port 22 is not refused</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo systemctl start sshd
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo systemctl start sshd
 </span></span></code></pre></div><p>or use the enable command to set this service to start by default</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo systemctl <span class="nb">enable</span> sshd
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo systemctl <span style="color:#6639ba">enable</span> sshd
 </span></span></code></pre></div></li>
 <li>
 <p>now we can get access to host by  using SSH service</p>
 </li>
 </ul>
 <h2 id="soft-link">Soft Link</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ln -s src linkname
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ln -s src linkname
 </span></span></code></pre></div><h2 id="valgrind-tool-package">Valgrind tool package</h2>
 <p>Installation</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo dnf install valgrind
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo dnf install valgrind
 </span></span></code></pre></div><p>set shortcuts</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim ~/.bashrc
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ vim ~/.bashrc
 </span></span></code></pre></div><p>add the following line of code</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">valgrind --tool<span class="o">=</span>memcheck --leak-check<span class="o">=</span>full ./a.out
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>valgrind --tool<span style="color:#0550ae">=</span>memcheck --leak-check<span style="color:#0550ae">=</span>full ./a.out
 </span></span></code></pre></div><p>add alias</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="l">alias memcheck=&#39;valgrind --tool=memcheck --leak-check=full --show-reachable=yes</span><span class="w">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>alias memcheck=&#39;valgrind --tool=memcheck --leak-check=full --show-reachable=yes<span style="color:#fff">
 </span></span></span></code></pre></div><h2 id="ps1-customize">PS1 Customize</h2>
 <p>config the file</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim ~/.bashrc
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ vim ~/.bashrc
 </span></span></code></pre></div><p>add this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s2">&#34;\[\e[1;35m\]</span>$<span class="s2">\[\e[m\] &#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6639ba">export</span> <span style="color:#953800">PS1</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;\[\e[1;35m\]</span>$<span style="color:#0a3069">\[\e[m\] &#34;</span>
 </span></span></code></pre></div><p>enable the settings</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">source</span> ~/.bashrc
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">source</span> ~/.bashrc
 </span></span></code></pre></div><h2 id="generate-pivate-key">Generate Pivate Key</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;your_email@example.com&#34;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> ~/.ssh
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ssh-keygen -t rsa -b <span style="color:#0550ae">4096</span> -C <span style="color:#0a3069">&#34;your_email@example.com&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">cd</span> ~/.ssh
 </span></span></code></pre></div><h2 id="git">Git</h2>
 <p>git global config set</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git config --global user.name <span class="s2">&#34;Your Name&#34;</span>
-</span></span><span class="line"><span class="cl">$ git config --global user.email <span class="s2">&#34;your_email@example.com&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git config --global user.name <span style="color:#0a3069">&#34;Your Name&#34;</span>
+</span></span><span style="display:flex;"><span>$ git config --global user.email <span style="color:#0a3069">&#34;your_email@example.com&#34;</span>
 </span></span></code></pre></div><p>proxy settings</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global http.proxy http://127.0.0.1:xxxx
-</span></span><span class="line"><span class="cl">git config --global https.proxy http://127.0.0.1:xxxx
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global http.proxy http://127.0.0.1:xxxx
+</span></span><span style="display:flex;"><span>git config --global https.proxy http://127.0.0.1:xxxx
 </span></span></code></pre></div><h1 id="software-settings">Software settings</h1>
 <h2 id="sdcv">SDCV</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo dnf install sdcv
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo dnf install sdcv
 </span></span></code></pre></div><p>Dowonload dicts at：https://www.nchrs.xyz/stardict/zh_CN/index.html</p>
 <p>recommand 朗道英汉字典/ 朗道汉英字典。</p>
 <p>dictionaries position: ~/.stardict/dic</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ mkdir -p ~/.stardict/dic
-</span></span><span class="line"><span class="cl">$ tar -xvf stardict-oxford-gb-2.4.2.tar.bz2 -C ~/.stardict/dic
-</span></span><span class="line"><span class="cl">$ sdcv -l
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ mkdir -p ~/.stardict/dic
+</span></span><span style="display:flex;"><span>$ tar -xvf stardict-oxford-gb-2.4.2.tar.bz2 -C ~/.stardict/dic
+</span></span><span style="display:flex;"><span>$ sdcv -l
 </span></span></code></pre></div><h2 id="snippet">snippet</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> ~/.vim/plugged/prepare-code/snippet
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">cd</span> ~/.vim/plugged/prepare-code/snippet
 </span></span></code></pre></div><h2 id="markdown-settigns">Markdown settigns</h2>
 <ol>
 <li>
 <p>inject.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cargo build --bin node-inject --release
-</span></span><span class="line"><span class="cl">$ mv target/release/node-inject /opt/typora
-</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> /opt/typora
-</span></span><span class="line"><span class="cl">$ sudo ./node-inject
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cargo build --bin node-inject --release
+</span></span><span style="display:flex;"><span>$ mv target/release/node-inject /opt/typora
+</span></span><span style="display:flex;"><span>$ <span style="color:#6639ba">cd</span> /opt/typora
+</span></span><span style="display:flex;"><span>$ sudo ./node-inject
 </span></span></code></pre></div></li>
 <li>
 <p>generator a license.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cargo run --bin license-gen --release
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cargo run --bin license-gen --release
 </span></span></code></pre></div></li>
 <li>
 <p>input license in software.</p>
 </li>
 <li>
 <p>set a desktop shortcuts</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> /usr/share/applications
-</span></span><span class="line"><span class="cl">$ vim xxx.desktop
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="p">[</span><span class="l">Desktop Entry]</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">Version=1.0</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">Type=Application</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">Name=YourAppName</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">Comment=Your application description</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">Exec=/path/to/your/executable</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">Icon=/path/to/your/icon.png</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">Terminal=false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">Categories=Utility;Application;</span><span class="w">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ <span style="color:#6639ba">cd</span> /usr/share/applications
+</span></span><span style="display:flex;"><span>$ vim xxx.desktop
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#1f2328">[</span>Desktop Entry]<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span>Version=1.0<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span>Type=Application<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span>Name=YourAppName<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span>Comment=Your application description<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span>Exec=/path/to/your/executable<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span>Icon=/path/to/your/icon.png<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span>Terminal=false<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span>Categories=Utility;Application;<span style="color:#fff">
 </span></span></span></code></pre></div></li>
 <li>
 <p>restart system to see if the software on the desktop</p>
 </li>
 <li>
 <p>set default md application</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim ~/.config/mimeapps.list
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ vim ~/.config/mimeapps.list
 </span></span></code></pre></div><p>add one line</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">text/markdown<span class="o">=</span>typora.desktop<span class="p">;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>text/markdown<span style="color:#0550ae">=</span>typora.desktop<span style="color:#1f2328">;</span>
 </span></span></code></pre></div></li>
 </ol>
 

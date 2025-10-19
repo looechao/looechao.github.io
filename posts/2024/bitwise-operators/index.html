@@ -42,7 +42,7 @@
     <div class="profile">
         <a href="https://looechao.com/" class="avatar">
             
-            <img src="/images/profile.png" alt="Looe" />
+            <img src="https://static.looechao.com/profile/profile-purple.png/profile.png" alt="Looe" />
             
         </a>
         <div class="profile-text">
@@ -586,35 +586,35 @@
 </li>
 </ul>
 <p>eg.测试0xCAFE最后 4 位中是不是最少有 3 位为 1.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mh">0xCAFE</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">mask</span><span class="o">=</span><span class="mh">0x000F</span><span class="p">;</span>   <span class="c1">//掩码
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">mask</span> <span class="o">&amp;</span> <span class="n">n</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">result</span><span class="o">==</span><span class="mh">0xF</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0x7</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0xB</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0xD</span><span class="o">||</span><span class="n">result</span><span class="o">==</span><span class="mh">0xE</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;至少有三个1&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#57606a">#include</span><span style="color:#57606a">&lt;stdio.h&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> n <span style="color:#0550ae">=</span> <span style="color:#0550ae">0xCAFE</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> mask<span style="color:#0550ae">=</span><span style="color:#0550ae">0x000F</span><span style="color:#1f2328">;</span>   <span style="color:#57606a">//掩码
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#cf222e">int</span> result <span style="color:#0550ae">=</span> mask <span style="color:#0550ae">&amp;</span> n<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">0xF</span><span style="color:#0550ae">||</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">0x7</span><span style="color:#0550ae">||</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">0xB</span><span style="color:#0550ae">||</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">0xD</span><span style="color:#0550ae">||</span>result<span style="color:#0550ae">==</span><span style="color:#0550ae">0xE</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;至少有三个1&#34;</span><span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><ul>
 <li>移码的应用：</li>
 </ul>
 <p>eg. 逆转0xCAFE的字节序</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">left</span><span class="o">=</span><span class="mh">0xCAFE</span><span class="p">,</span><span class="n">right</span><span class="o">=</span><span class="mh">0xCAFE</span><span class="p">,</span><span class="n">n</span> <span class="o">=</span> <span class="mh">0xCAFE</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">left</span><span class="o">&lt;&lt;=</span><span class="mi">8</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">right</span><span class="o">&gt;&gt;=</span><span class="mi">8</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sum</span><span class="o">=</span><span class="n">left</span><span class="o">+</span><span class="n">right</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">mask</span><span class="o">=</span><span class="mh">0x00FFFF</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">sum</span><span class="o">&amp;=</span><span class="n">mask</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%x&#34;</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#57606a">#include</span><span style="color:#57606a">&lt;stdio.h&gt;</span><span style="color:#57606a">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> left<span style="color:#0550ae">=</span><span style="color:#0550ae">0xCAFE</span><span style="color:#1f2328">,</span>right<span style="color:#0550ae">=</span><span style="color:#0550ae">0xCAFE</span><span style="color:#1f2328">,</span>n <span style="color:#0550ae">=</span> <span style="color:#0550ae">0xCAFE</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    left<span style="color:#0550ae">&lt;&lt;=</span><span style="color:#0550ae">8</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    right<span style="color:#0550ae">&gt;&gt;=</span><span style="color:#0550ae">8</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> sum<span style="color:#0550ae">=</span>left<span style="color:#0550ae">+</span>right<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">int</span> mask<span style="color:#0550ae">=</span><span style="color:#0550ae">0x00FFFF</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    sum<span style="color:#0550ae">&amp;=</span>mask<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%x&#34;</span><span style="color:#1f2328">,</span>sum<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><ul>
 <li>异或的良好性质
 <ul>
@@ -642,45 +642,45 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">lsb</span><span class="o">=</span><span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">^</span><span class="n">xor</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> 
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">lsb</span><span class="o">=</span><span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">-</span><span class="n">xor</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>lsb<span style="color:#0550ae">=</span>xor<span style="color:#0550ae">&amp;</span><span style="color:#1f2328">(</span><span style="color:#0550ae">^</span>xor<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span> 
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>lsb<span style="color:#0550ae">=</span>xor<span style="color:#0550ae">&amp;</span><span style="color:#1f2328">(</span><span style="color:#0550ae">-</span>xor<span style="color:#1f2328">)</span>
 </span></span></code></pre></div></li>
 <li>
 <p>eg2.筛出数组中单独的数（其余的都出现了两次）singlenum</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">nums</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">xor</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">      <span class="n">xor</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="n">xor</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> nums<span style="color:#1f2328">[</span><span style="color:#0550ae">5</span><span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span><span style="color:#0550ae">4</span><span style="color:#1f2328">,</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span><span style="color:#0550ae">2</span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> xor<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span> i<span style="color:#0550ae">&lt;</span><span style="color:#0550ae">5</span><span style="color:#1f2328">;</span> i<span style="color:#0550ae">++</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>      xor<span style="color:#0550ae">^=</span>nums<span style="color:#1f2328">[</span>i<span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;%d&#34;</span><span style="color:#1f2328">,</span> xor<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p>不断做异或运算，可以保留得到最后唯一的那个元素</p>
 </li>
 <li>
 <p>eg3. 拓展：筛出数组中的两个单独的数（其余的都出现了两次）</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">nums</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">xor</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">      <span class="n">xor</span> <span class="o">^=</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>  
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">lsb</span> <span class="o">=</span> <span class="n">xor</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">xor</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>    <span class="c1">//last set bit;a与b在这一位上不同，用作分类
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-</span></span><span class="line"><span class="cl">      <span class="k">if</span><span class="p">(</span><span class="n">lsb</span><span class="o">&amp;</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]){</span>
-</span></span><span class="line"><span class="cl">          <span class="n">a</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">      <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-</span></span><span class="line"><span class="cl">          <span class="n">b</span><span class="o">^=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">      <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;[%d %d]&#34;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#cf222e">int</span> <span style="color:#6639ba">main</span><span style="color:#1f2328">(){</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> nums<span style="color:#1f2328">[</span><span style="color:#0550ae">6</span><span style="color:#1f2328">]</span> <span style="color:#0550ae">=</span> <span style="color:#1f2328">{</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span><span style="color:#0550ae">1</span><span style="color:#1f2328">,</span><span style="color:#0550ae">3</span><span style="color:#1f2328">,</span><span style="color:#0550ae">2</span><span style="color:#1f2328">,</span><span style="color:#0550ae">5</span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> xor <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span> i<span style="color:#0550ae">&lt;</span><span style="color:#0550ae">6</span><span style="color:#1f2328">;</span> i<span style="color:#0550ae">++</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>      xor <span style="color:#0550ae">^=</span> nums<span style="color:#1f2328">[</span>i<span style="color:#1f2328">];</span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> lsb <span style="color:#0550ae">=</span> xor<span style="color:#0550ae">&amp;</span><span style="color:#1f2328">(</span><span style="color:#0550ae">~</span>xor<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">);</span>    <span style="color:#57606a">//last set bit;a与b在这一位上不同，用作分类
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">int</span> a<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span>b<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">&lt;</span><span style="color:#0550ae">6</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">++</span><span style="color:#1f2328">){</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>lsb<span style="color:#0550ae">&amp;</span>nums<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]){</span>
+</span></span><span style="display:flex;"><span>          a<span style="color:#0550ae">^=</span>nums<span style="color:#1f2328">[</span>i<span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#1f2328">}</span><span style="color:#cf222e">else</span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>          b<span style="color:#0550ae">^=</span>nums<span style="color:#1f2328">[</span>i<span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6639ba">printf</span><span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;[%d %d]&#34;</span><span style="color:#1f2328">,</span> a<span style="color:#1f2328">,</span>b<span style="color:#1f2328">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#cf222e">return</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p>用0与整个数组异或的结果的lsb可以将数组分为两个只包含一个唯一元素的数组，再按照eg2的方法可以筛出唯一元素</p>
 </li>
 </ul>

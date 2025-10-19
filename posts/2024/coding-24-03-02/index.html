@@ -42,7 +42,7 @@
     <div class="profile">
         <a href="https://looechao.com/" class="avatar">
             
-            <img src="/images/profile.png" alt="Looe" />
+            <img src="https://static.looechao.com/profile/profile-purple.png/profile.png" alt="Looe" />
             
         </a>
         <div class="profile-text">
@@ -557,11 +557,11 @@
 解决方法：</li>
 <li>更改最末端指针的位置：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">last</span><span class="o">=</span><span class="n">str</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>  <span class="c1">//最初始的位置
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">while</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">last</span><span class="p">)</span><span class="o">==</span><span class="sc">&#39;0&#39;</span><span class="o">&amp;&amp;</span><span class="n">last</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span>   <span class="c1">//这里的条件判定要准确
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">{</span>
-</span></span><span class="line"><span class="cl">		<span class="n">last</span><span class="o">--</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#cf222e">int</span> last<span style="color:#0550ae">=</span>str<span style="color:#1f2328">.</span>size<span style="color:#1f2328">()</span><span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">;</span>  <span style="color:#57606a">//最初始的位置
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">while</span><span style="color:#1f2328">(</span>str<span style="color:#1f2328">.</span>at<span style="color:#1f2328">(</span>last<span style="color:#1f2328">)</span><span style="color:#0550ae">==</span><span style="color:#0a3069">&#39;0&#39;</span><span style="color:#0550ae">&amp;&amp;</span>last<span style="color:#0550ae">&gt;</span><span style="color:#0550ae">0</span><span style="color:#1f2328">)</span>   <span style="color:#57606a">//这里的条件判定要准确
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>	<span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>		last<span style="color:#0550ae">--</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h4 id="总结">总结</h4>
 <ul>
 <li>要灵活使用string库中的函数：str.at(i)   str.substr(position,length)等</li>
@@ -586,36 +586,36 @@
 <li>判断该点高度与前后点的高度差的乘积是否为一负一正
 我编写的判断逻辑如下：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl">    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">count</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span>    <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">1</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">&lt;</span>n<span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">++</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>num<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span><span style="color:#0550ae">-</span>num<span style="color:#1f2328">[</span>i<span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span><span style="color:#0550ae">&lt;</span><span style="color:#0550ae">0</span><span style="color:#0550ae">&amp;&amp;</span>num<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span><span style="color:#0550ae">-</span>num<span style="color:#1f2328">[</span>i<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span><span style="color:#0550ae">&lt;=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            count<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
 </span></span></code></pre></div><p>有一个点通过不了OJ测试，发现确实有逻辑漏洞，如果最后倒数第二个点与尾端点水平，则仍然算作洼地；</p>
 <h4 id="思路2">思路2</h4>
 <p>改用while 循环，用i当作游标，一个一个遍历节点，all ac，关键在于游标的游动</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;=</span><span class="mi">1</span><span class="o">&amp;&amp;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>    <span class="c1">//改用while循环
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">)</span> <span class="c1">//该点左高右高，是典型的洼地
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">count</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="c1">//左高右平地，将标记向不断向右边移动
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">-</span><span class="n">num</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">count</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">i</span><span class="o">=</span><span class="n">j</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                    <span class="k">break</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span>i<span style="color:#0550ae">&gt;=</span><span style="color:#0550ae">1</span><span style="color:#0550ae">&amp;&amp;</span>i<span style="color:#0550ae">&lt;</span>n<span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span>    <span style="color:#57606a">//改用while循环
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>num<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span><span style="color:#0550ae">-</span>num<span style="color:#1f2328">[</span>i<span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span><span style="color:#0550ae">&lt;</span><span style="color:#0550ae">0</span><span style="color:#0550ae">&amp;&amp;</span>num<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span><span style="color:#0550ae">-</span>num<span style="color:#1f2328">[</span>i<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span><span style="color:#0550ae">&lt;</span><span style="color:#0550ae">0</span><span style="color:#1f2328">)</span> <span style="color:#57606a">//该点左高右高，是典型的洼地
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            count<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>num<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span><span style="color:#0550ae">-</span>num<span style="color:#1f2328">[</span>i<span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span><span style="color:#0550ae">&lt;</span><span style="color:#0550ae">0</span><span style="color:#0550ae">&amp;&amp;</span>num<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span><span style="color:#0550ae">-</span>num<span style="color:#1f2328">[</span>i<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span><span style="color:#0550ae">==</span><span style="color:#0550ae">0</span><span style="color:#1f2328">)</span> <span style="color:#57606a">//左高右平地，将标记向不断向右边移动
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>        <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> j<span style="color:#0550ae">=</span>i<span style="color:#0550ae">+</span><span style="color:#0550ae">2</span><span style="color:#1f2328">;</span>j<span style="color:#0550ae">&lt;</span>n<span style="color:#1f2328">;</span>j<span style="color:#0550ae">++</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>num<span style="color:#1f2328">[</span>j<span style="color:#1f2328">]</span><span style="color:#0550ae">-</span>num<span style="color:#1f2328">[</span>j<span style="color:#0550ae">-</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span><span style="color:#0550ae">&gt;</span><span style="color:#0550ae">0</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                    count<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                    i<span style="color:#0550ae">=</span>j<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#cf222e">break</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        i<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h4 id="总结-1">总结</h4>
 <p>思路不算难，细节的处理是个问题，怎么移动游标要弄清楚；</p>
 <h1 id="p1319-">P1319 ★</h1>
@@ -636,15 +636,15 @@
 <li>设定一个布尔变量，表示该向数组里填入0还是1；</li>
 <li>用for循环向数组内填充元素；</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">input</span><span class="p">)</span>  <span class="c1">//第一次用到这种while循环，边输入边操作
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">p</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">p</span><span class="o">+</span><span class="n">input</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">flag</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="o">+</span><span class="n">input</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">flag</span><span class="o">=!</span><span class="n">flag</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">p</span><span class="o">==</span><span class="n">n</span><span class="o">*</span><span class="n">n</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>   <span class="c1">//判定什么时候输入停止
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span>cin<span style="color:#0550ae">&gt;&gt;</span>input<span style="color:#1f2328">)</span>  <span style="color:#57606a">//第一次用到这种while循环，边输入边操作
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span>p<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span>i<span style="color:#1f2328">;</span>i<span style="color:#0550ae">&lt;</span>p<span style="color:#0550ae">+</span>input<span style="color:#1f2328">;</span>i<span style="color:#0550ae">++</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            num<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span><span style="color:#0550ae">=</span>flag<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        p<span style="color:#0550ae">=</span>p<span style="color:#0550ae">+</span>input<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        flag<span style="color:#0550ae">=!</span>flag<span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>p<span style="color:#0550ae">==</span>n<span style="color:#0550ae">*</span>n<span style="color:#1f2328">)</span> <span style="color:#cf222e">break</span><span style="color:#1f2328">;</span>   <span style="color:#57606a">//判定什么时候输入停止
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h4 id="总结-2">总结</h4>
 <p>思路不是很难，一些操作上卡了很久：不知道什么时候中断输入，我加了条件判定后break才能中断输入，与高赞的解法不太一样，不太清楚他那种不判定就可以结束的原理；</p>
 <h1 id="p1320-">P1320 ★★★★★</h1>
@@ -654,27 +654,27 @@
 <li>先要读入汉字点阵,但是不清楚点阵每行的元素数量;</li>
 <li>输出:用for循环计数统计,然后输出压缩码;</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">key</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">str</span><span class="p">)</span>   <span class="c1">//读入数据，按维数结束中断
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">l</span><span class="o">=</span><span class="n">str</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">        <span class="n">count</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="n">key</span><span class="o">=</span><span class="n">stoi</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">l</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">-</span><span class="sc">&#39;0&#39;</span><span class="o">==</span><span class="n">key</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="n">num</span><span class="p">[</span><span class="n">p</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="k">else</span>
-</span></span><span class="line"><span class="cl">            <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="n">p</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="n">key</span><span class="o">=</span><span class="n">str</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">-</span><span class="sc">&#39;0&#39;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">                <span class="n">num</span><span class="p">[</span><span class="n">p</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">==</span><span class="n">l</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>  <span class="c1">//行数输入够了就中断循环
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#cf222e">bool</span> key<span style="color:#0550ae">=</span><span style="color:#6639ba">false</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span>cin<span style="color:#0550ae">&gt;&gt;</span>str<span style="color:#1f2328">)</span>   <span style="color:#57606a">//读入数据，按维数结束中断
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        l<span style="color:#0550ae">=</span>str<span style="color:#1f2328">.</span>size<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>        count<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>count<span style="color:#0550ae">==</span><span style="color:#0550ae">1</span><span style="color:#1f2328">)</span> key<span style="color:#0550ae">=</span>stoi<span style="color:#1f2328">(</span>str<span style="color:#1f2328">.</span>substr<span style="color:#1f2328">(</span><span style="color:#0550ae">0</span><span style="color:#1f2328">,</span><span style="color:#0550ae">1</span><span style="color:#1f2328">));</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">&lt;</span>l<span style="color:#1f2328">;</span>i<span style="color:#0550ae">++</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>str<span style="color:#1f2328">.</span>at<span style="color:#1f2328">(</span>i<span style="color:#1f2328">)</span><span style="color:#0550ae">-</span><span style="color:#0a3069">&#39;0&#39;</span><span style="color:#0550ae">==</span>key<span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                num<span style="color:#1f2328">[</span>p<span style="color:#1f2328">]</span><span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">else</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                p<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                key<span style="color:#0550ae">=</span>str<span style="color:#1f2328">.</span>at<span style="color:#1f2328">(</span>i<span style="color:#1f2328">)</span><span style="color:#0550ae">-</span><span style="color:#0a3069">&#39;0&#39;</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>                num<span style="color:#1f2328">[</span>p<span style="color:#1f2328">]</span><span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>count<span style="color:#0550ae">==</span>l<span style="color:#1f2328">)</span> <span style="color:#cf222e">break</span><span style="color:#1f2328">;</span>  <span style="color:#57606a">//行数输入够了就中断循环
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h4 id="总结-3">总结</h4>
 <p>本地测试都没有问题,下载了测试点的数据,发现结果有偏差,可能是OJ的问题,有待进一步考虑</p>
 <h1 id="p1321-">P1321 ★</h1>
@@ -682,20 +682,20 @@
 <h4 id="思路-3">思路</h4>
 <p>没太看懂题</p>
 <h4 id="题解">题解</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">str</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="mi">2</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;b&#39;</span><span class="o">||</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;o&#39;</span><span class="o">||</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;y&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">count1</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">str</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="mi">3</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;g&#39;</span><span class="o">||</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;i&#39;</span><span class="o">||</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span><span class="o">==</span><span class="sc">&#39;r&#39;</span><span class="o">||</span><span class="n">str</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span><span class="o">==</span><span class="sc">&#39;l&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">count2</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">&lt;</span>str<span style="color:#1f2328">.</span>size<span style="color:#1f2328">()</span><span style="color:#0550ae">-</span><span style="color:#0550ae">2</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">++</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>str<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span><span style="color:#0550ae">==</span><span style="color:#0a3069">&#39;b&#39;</span><span style="color:#0550ae">||</span>str<span style="color:#1f2328">[</span>i<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span><span style="color:#0550ae">==</span><span style="color:#0a3069">&#39;o&#39;</span><span style="color:#0550ae">||</span>str<span style="color:#1f2328">[</span>i<span style="color:#0550ae">+</span><span style="color:#0550ae">2</span><span style="color:#1f2328">]</span><span style="color:#0550ae">==</span><span style="color:#0a3069">&#39;y&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            count1<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#cf222e">for</span><span style="color:#1f2328">(</span><span style="color:#cf222e">int</span> i<span style="color:#0550ae">=</span><span style="color:#0550ae">0</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">&lt;</span>str<span style="color:#1f2328">.</span>size<span style="color:#1f2328">()</span><span style="color:#0550ae">-</span><span style="color:#0550ae">3</span><span style="color:#1f2328">;</span>i<span style="color:#0550ae">++</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>str<span style="color:#1f2328">[</span>i<span style="color:#1f2328">]</span><span style="color:#0550ae">==</span><span style="color:#0a3069">&#39;g&#39;</span><span style="color:#0550ae">||</span>str<span style="color:#1f2328">[</span>i<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">]</span><span style="color:#0550ae">==</span><span style="color:#0a3069">&#39;i&#39;</span><span style="color:#0550ae">||</span>str<span style="color:#1f2328">[</span>i<span style="color:#0550ae">+</span><span style="color:#0550ae">2</span><span style="color:#1f2328">]</span><span style="color:#0550ae">==</span><span style="color:#0a3069">&#39;r&#39;</span><span style="color:#0550ae">||</span>str<span style="color:#1f2328">.</span>at<span style="color:#1f2328">(</span>i<span style="color:#0550ae">+</span><span style="color:#0550ae">3</span><span style="color:#1f2328">)</span><span style="color:#0550ae">==</span><span style="color:#0a3069">&#39;l&#39;</span><span style="color:#1f2328">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            count2<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h4 id="总结-4">总结</h4>
 <p>判断逻辑很简单,但是一开始没有弄对for循环的边界是size-2和size-3;</p>
 <h1 id="p1401-">P1401 ★</h1>
@@ -715,8 +715,8 @@
 <ul>
 <li>取绝对值的方法</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="cp">#include&lt;cmath&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="n">fabs</span><span class="p">(</span><span class="n">number</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#57606a">#include&lt;cmath&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>fabs<span style="color:#1f2328">(</span>number<span style="color:#1f2328">);</span>
 </span></span></code></pre></div><ul>
 <li>可以通过比较两种不同类型的存储方式下的值是否相等来判断是否溢出;</li>
 </ul>
@@ -729,20 +729,20 @@
 </ul>
 <h4 id="总结-6">总结</h4>
 <p>挺水的一道题</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="n">p</span><span class="o">&lt;</span><span class="n">n</span><span class="p">)</span>    <span class="c1">//p用作指针用于移动
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="n">p</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="o">==</span><span class="n">num</span><span class="p">[</span><span class="n">p</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">p</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="n">count</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">else</span>
-</span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="o">&gt;=</span><span class="n">max</span><span class="p">)</span> <span class="n">max</span><span class="o">=</span><span class="n">count</span><span class="p">;</span>   <span class="c1">//连号断了，初始化
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>  <span class="c1">//重置count的数值
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">p</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>    <span style="color:#cf222e">while</span><span style="color:#1f2328">(</span>p<span style="color:#0550ae">&lt;</span>n<span style="color:#1f2328">)</span>    <span style="color:#57606a">//p用作指针用于移动
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>num<span style="color:#1f2328">[</span>p<span style="color:#1f2328">]</span><span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#0550ae">==</span>num<span style="color:#1f2328">[</span>p<span style="color:#0550ae">+</span><span style="color:#0550ae">1</span><span style="color:#1f2328">])</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            p<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            count<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">else</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span><span style="color:#1f2328">(</span>count<span style="color:#0550ae">&gt;=</span>max<span style="color:#1f2328">)</span> max<span style="color:#0550ae">=</span>count<span style="color:#1f2328">;</span>   <span style="color:#57606a">//连号断了，初始化
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>            count<span style="color:#0550ae">=</span><span style="color:#0550ae">1</span><span style="color:#1f2328">;</span>  <span style="color:#57606a">//重置count的数值
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>            p<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
 </span></span></code></pre></div><h1 id="p1421-">P1421 ★</h1>
 <p>小玉买文具: 班主任给小玉a元b角,签字笔的价格是1元9角,求小玉最多能卖多少支笔;</p>
 <h4 id="思路-7">思路</h4>
@@ -770,9 +770,9 @@ return 0;
 <li>最后输出cost时保留一位小数</li>
 <li>保留一位小数的方法</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="line"><span class="cl"><span class="cp">#include&lt;cmath&gt;
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">double</span> <span class="n">number</span> <span class="o">=</span> <span class="mf">3.1415926</span>
-</span></span><span class="line"><span class="cl"><span class="n">number</span> <span class="o">=</span> <span class="n">round</span><span class="p">(</span><span class="n">number</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span><span class="o">/</span><span class="mi">10</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C++" data-lang="C++"><span style="display:flex;"><span><span style="color:#57606a">#include&lt;cmath&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#cf222e">double</span> number <span style="color:#0550ae">=</span> <span style="color:#0550ae">3.1415926</span>
+</span></span><span style="display:flex;"><span>number <span style="color:#0550ae">=</span> round<span style="color:#1f2328">(</span>number<span style="color:#0550ae">*</span><span style="color:#0550ae">10</span><span style="color:#1f2328">)</span><span style="color:#0550ae">/</span><span style="color:#0550ae">10</span><span style="color:#1f2328">;</span>
 </span></span></code></pre></div><h4 id="总结-8">总结</h4>
 <p>刷到目前遇到的最容易的一题；</p>
 <h1 id="p1423-">P1423 ★</h1>
