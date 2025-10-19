@@ -26,7 +26,7 @@ description = "looechao's blog."
 favicon = "/images/favicon.png"
 
 [params.profile]
-avatar = "/images/profile.png"
+avatar = "https://static.looechao.com/profile/profile-purple.png/profile.png"
 bio = "looechao"
 favicon = "/images/favicon.png"
 name = "Looe"
