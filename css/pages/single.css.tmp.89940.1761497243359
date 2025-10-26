@@ -16,6 +16,16 @@
     body .site-right-panel {
         visibility: hidden !important;
     }
+
+    /* 在文章页面，给整个容器设置最小宽度，防止被压缩 */
+    /* 这样中间内容会自动保持初始计算出的宽度 */
+    body:not(.page-about) .site-container {
+        min-width: 85rem;
+        justify-content: center;
+    }
+
+    /* 中间区域保持原有的 flex 特性，不需要额外设置 */
+    /* 它会自动占据：85rem - 16rem(左) - 18rem(右) 的空间 */
 }
 
 /* ==========================================================================

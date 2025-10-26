@@ -47,8 +47,9 @@
 
 /* 姓名样式 */
 .name {
-    font-size: 22px;      /* 字体大小 */
-    color: #333333;       /* 字体颜色 */
+    font-size: 22px;                  /* 字体大小 */
+    color: var(--text-primary);       /* 使用主要文字颜色，更深 */
+    font-weight: var(--font-weight-semibold);  /* 600 字重，更突出 */
 }
 
 /* 简介文本 */
@@ -62,7 +63,7 @@
 
 /* 个人信息文字 */
 .profile-text {
-    color: #666;
+    color: var(--text-secondary);     /* 使用次要文字颜色，比之前深 */
     text-align: right;
 }
 
@@ -78,16 +79,17 @@
 .nav a {
     padding: 0.2rem 0;
     text-decoration: none;
-    color: #666;
+    color: var(--text-secondary);           /* 使用次要文字颜色 */
     font-size: 1rem;
+    font-weight: var(--font-weight-normal); /* 400 字重 */
     border-radius: 4px;
     text-align: right;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, font-weight 0.2s ease;
 }
 
 .nav a:hover {
-    color: #333;
-    font-weight: 500;
+    color: var(--text-primary);             /* 悬停变深 */
+    font-weight: var(--font-weight-medium); /* 500 字重 */
 }
 
 /* 社交图标容器 */
@@ -103,14 +105,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #666;
+    color: var(--text-secondary);       /* 使用次要文字颜色 */
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 /* 悬停变色 */
 .site--icons a:hover {
-    color: #333;
+    color: var(--text-primary);         /* 悬停变深 */
 }
 
 /* SVG 图标样式 */

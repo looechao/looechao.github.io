@@ -17,7 +17,8 @@
    -------------------------------------------------------------------------- */
 .section-title {
     font-size: 1.75rem;
-    color: var(--primary-color);
+    font-weight: var(--font-weight-bold);    /* 使用 700 字重 */
+    color: var(--text-primary);              /* 使用主要文字颜色，更深 */
     margin-bottom: 1rem;
     padding-bottom: 0.3rem;
     border-bottom: 2px solid var(--accent-color);
@@ -38,16 +39,16 @@
    -------------------------------------------------------------------------- */
 .year {
     font-size: 1.3rem;
-    color: var(--primary-color);
+    color: var(--text-primary);              /* 使用主要文字颜色 */
     margin: 1.5rem 0 0.8rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold); /* 使用 600 字重 */
 }
 
 .tag {
     font-size: 1.3rem;
-    color: var(--primary-color);
+    color: var(--text-primary);              /* 使用主要文字颜色 */
     margin: 1.5rem 0 0.8rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold); /* 使用 600 字重 */
 }
 
 .posts-list {
@@ -75,12 +76,12 @@ body.dark-mode .post-item:hover {
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-primary);              /* 使用主要文字颜色 */
 }
 
 .post-title {
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-size: var(--font-size-base);        /* 使用 16px，与首页统一 */
+    font-weight: var(--font-weight-semibold);/* 使用 600 字重，与首页统一 */
     transition: var(--transition-fast);
 }
 
@@ -89,9 +90,9 @@ body.dark-mode .post-item:hover {
 }
 
 .post-date {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    font-weight: 300;
+    color: var(--text-tertiary);             /* 使用三级文字颜色 */
+    font-size: var(--font-size-sm);          /* 使用 14px */
+    font-weight: var(--font-weight-light);   /* 使用 300 字重 */
 }
 
 /* 分页器 - 简洁版
@@ -112,13 +113,13 @@ body.dark-mode .post-item:hover {
 .pagination span {
     padding: 0.5rem 0.75rem;
     text-decoration: none;
-    color: var(--text-light);
+    color: var(--text-tertiary);             /* 使用三级文字颜色 */
 }
 
 .pagination a:hover,
 .pagination li.page-item.active a,
 .pagination li.page-item.active span {
-    color: #333;
+    color: var(--text-primary);              /* 悬停使用主要文字颜色 */
 }
 
 /* 响应式设计

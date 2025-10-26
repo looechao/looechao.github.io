@@ -28,8 +28,7 @@
     /* 布局 */
     --content-width: 600px;
 
-    /* 字体 */
-    --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* 注意：字体相关变量已移至 typography.css 统一管理 */
 }
 
 /* 重置样式 */
@@ -40,8 +39,7 @@
 }
 
 body {
-    font-family: var(--font-main);
-    line-height: 1.6;
-    color: var(--primary-color);
+    /* 注意：所有字体相关配置（字体家族、字号、字重、行高、颜色、渲染优化）
+       已统一在 typography.css 中管理，这里只保留非字体样式 */
     background: var(--background-color);
 }

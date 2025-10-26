@@ -43,21 +43,24 @@ body.dark-mode .post-item:hover {
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    color: var(--text-color);
+    /* 使用 typography.css 定义的主要文字颜色，更深 */
+    color: var(--text-primary);
 }
 
 /* 文章标题 */
 .post-title {
-    font-size: 1.1rem;
-    font-weight: 400;
+    /* 使用 typography.css 的变量系统 */
+    font-size: var(--font-size-base);            /* 16px - 与正文一致 */
+    font-weight: var(--font-weight-semibold);    /* 600 - 用字重区分 */
     transition: var(--transition-fast);
 }
 
 /* 文章日期 */
 .post-date {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    font-weight: 300;
+    /* 使用 typography.css 的变量系统 */
+    font-size: var(--font-size-sm);              /* 14px - 较小，次要信息 */
+    font-weight: var(--font-weight-light);       /* 300 - 轻量，更柔和 */
+    color: var(--text-tertiary);                 /* 使用三级文字颜色，更淡 */
 }
 
 /* 分页器 - 简洁版 */

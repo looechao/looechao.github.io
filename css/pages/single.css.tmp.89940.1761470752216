@@ -2,20 +2,27 @@
    1. 文章页面布局控制
    ========================================================================== */
 
-/* 在文章页面隐藏左右侧边栏,但保留其占据的空间（仅在桌面端） */
-/* About 页面除外，显示左侧栏 */
-@media (min-width: 991px) {
-    body:not(.page-about) .site-sidebar {
-        visibility: hidden !important;
-    }
+/* 在文章页面隐藏左右侧边栏 */
+body .site-sidebar {
+    display: none;
+}
 
-    body.page-about .site-sidebar {
-        visibility: visible !important;
-    }
+body .site-right-panel {
+    display: none;
+}
 
-    body .site-right-panel {
-        visibility: hidden !important;
-    }
+/* 让容器居中,保持原有的阅读宽度 */
+body .site-container {
+    justify-content: center;
+}
+
+/* 保持原来三栏布局时中间内容的宽度
+   原来总宽度85rem,左侧16rem,右侧18rem,去掉padding和margin约等于中间剩余空间 */
+body .site-middle {
+    flex: 0 0 auto;
+    width: calc(85rem - 16rem - 18rem - 5rem);
+    max-width: calc(85rem - 16rem - 18rem - 5rem);
+    margin: 30px auto;
 }
 
 /* ==========================================================================
@@ -66,7 +73,7 @@ body.dark-mode {
 .single-article {
     width: 95%;
     margin: 0 auto;
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 1rem 0rem 0rem 0rem;
 }
 
 /* ==========================================================================
@@ -80,20 +87,19 @@ body.dark-mode {
 
 /* 文章标题 */
 .article-title {
-    /* 注意：字体家族、字号、字重、行高使用 typography.css 的变量 */
-    font-family: var(--font-serif);
-    font-size: var(--font-size-4xl);      /* 30px - Title，页面最大标题 */
-    font-weight: var(--font-weight-bold); /* 700 */
-    line-height: var(--line-height-tight); /* 1.25 */
+    font-family: "sans-serif";
+    font-size: 2rem;
+    font-weight: normal;
     margin-bottom: 1.5rem;
-    color: #000000;  /* 纯黑色，最突出 */
+    line-height: 1.3;
+    color: var(--heading-color);
 }
 
 /* 文章元数据容器 */
 .article-meta {
     margin-bottom: 1.5rem;
     color: var(--text-light);
-    font-size: var(--font-size-sm);  /* 使用变量：14px */
+    font-size: 0.9rem;
     border-bottom: 1px solid var(--color-light-gray);
     padding-bottom: 1rem;
 }
@@ -102,15 +108,15 @@ body.dark-mode {
 .article-meta-top {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 /* 文章页面头像 */
 .article-avatar {
     display: inline-flex;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     overflow: hidden;
     transition: transform 0.2s ease, opacity 0.2s ease;
@@ -146,26 +152,27 @@ body.dark-mode {
 .article-meta-info {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 /* 作者名字 */
 .article-author {
-    font-weight: 300;
-    font-size: 1.1rem;
+    font-weight: 400;
     color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.2s ease;
+    font-size: 0.95rem;
 }
 
-.article-author:hover {
-    color: var(--link-color);
+/* 分隔符 */
+.article-author::after {
+    content: "·";
+    margin-left: 0.5rem;
+    color: var(--text-light);
 }
 
 /* 日期 */
 .article-date {
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--text-light);
 }
 
@@ -193,35 +200,38 @@ body.dark-mode {
 
 /* 内容容器 */
 .article-content {
+    line-height: 1.8;
     margin-bottom: 0rem;
-    /* 注意：字号、字重、行高已在 typography.css 中统一管理 */
 }
 
 /* 基础文本元素 */
 .article-content p {
     margin: 0rem 0rem 1rem;
-    /* 注意：字号、字重已在 typography.css 中统一管理 */
-    /* 中文排版优化 */
-    hyphens: auto;
-    text-justify: inter-ideographic;
+    font-weight: 400;
 }
 
 /* 标题层级 */
 .article-content h2 {
-    /* 注意：字号、字重、行高已在 typography.css 中统一管理 */
+    font-size: 1.5rem;
+    font-weight: 600;
     margin: 0.7rem 0 0.5rem;
+    /* 原来是2rem 0 1rem */
     color: var(--heading-color);
 }
 
 .article-content h3 {
-    /* 注意：字号、字重、行高已在 typography.css 中统一管理 */
+    font-size: 1.3rem;
+    font-weight: 600;
     margin: 0.7rem 0 0.5rem;
+    /* 原来是1.5rem 0 1rem */
     color: var(--heading-color);
 }
 
 .article-content h4 {
-    /* 注意：字号、字重、行高已在 typography.css 中统一管理 */
+    font-size: 1.1rem;
+    font-weight: 600;
     margin: 0.7rem 0 0.5rem;
+    /* 原来是1.2rem 0 0.8rem */
     color: var(--heading-color);
 }
 
@@ -245,17 +255,9 @@ body.dark-mode {
 }
 
 /* 支持HTML align属性 */
-.article-content p[align="left"] {
-    text-align: left;
-}
-
-.article-content p[align="center"] {
-    text-align: center;
-}
-
-.article-content p[align="right"] {
-    text-align: right;
-}
+.article-content p[align="left"] { text-align: left; }
+.article-content p[align="center"] { text-align: center; }
+.article-content p[align="right"] { text-align: right; }
 
 /* neodb卡片高度优化 */
 .article-content .db-card-subject {
@@ -307,7 +309,7 @@ body.dark-mode {
 }
 
 .article-content code {
-    /* 注意：字体家族已在 typography.css 中统一管理 */
+    font-family: var(--font-code);
     background-color: var(--bg-code);
     color: var(--code-text-color);
     padding: 0.15em 0.4em;
@@ -343,18 +345,6 @@ body.dark-mode {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 }
-
-/* 中文着重号样式（可选） - 如果想使用中文传统着重号代替加粗高亮，可以取消下面的注释 */
-/*
-.article-content:lang(zh-CN) strong,
-.article-content:lang(zh-CN) b {
-    text-emphasis: filled dot;
-    text-emphasis-position: under;
-    background: none;
-    background-image: none;
-    font-weight: inherit;
-}
-*/
 
 /* 表格样式 */
 .article-content table {
@@ -472,22 +462,6 @@ body.dark-mode {
    6. 响应式调整
    ========================================================================== */
 
-@media (max-width: 990px) {
-    /* 移动端隐藏文章元数据中的头像和作者（因为顶部sidebar已有） */
-    .article-avatar {
-        display: none;
-    }
-
-    .article-author {
-        display: none;
-    }
-
-    /* 移动端减小文章容器的padding */
-    .single-article {
-        padding: 1rem 0.3rem 1rem 0.3rem;
-    }
-}
-
 @media (max-width: 768px) {
 
     /* 标题调整 */
@@ -534,29 +508,10 @@ body.dark-mode {
 }
 
 /* 图片大小控制 */
-.article-content figure.image-tiny img {
-    max-width: 15% !important;
-    width: 15% !important;
-    height: auto;
-}
-
-.article-content figure.image-small img {
-    max-width: 25% !important;
-    width: 25% !important;
-    height: auto;
-}
-
-.article-content figure.image-medium img {
-    max-width: 50% !important;
-    width: 50% !important;
-    height: auto;
-}
-
-.article-content figure.image-large img {
-    max-width: 75% !important;
-    width: 75% !important;
-    height: auto;
-}
+.article-content figure.image-tiny img   { max-width: 15% !important; width: 15% !important; height: auto; }
+.article-content figure.image-small img  { max-width: 25% !important; width: 25% !important; height: auto; }
+.article-content figure.image-medium img { max-width: 50% !important; width: 50% !important; height: auto; }
+.article-content figure.image-large img  { max-width: 75% !important; width: 75% !important; height: auto; }
 
 /* 图片对齐样式 */
 .article-content figure.center-image {

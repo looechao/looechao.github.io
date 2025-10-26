@@ -29,10 +29,11 @@
     display: inline-flex;
     align-items: center;
     background: #f8f9fa;
-    color: #495057;
+    color: var(--text-secondary);           /* 使用次要文字颜色，更深 */
     text-decoration: none;
     font-size: 0.65rem;
-    transition: none;
+    font-weight: var(--font-weight-normal); /* 400 字重 */
+    transition: background 0.2s ease, color 0.2s ease;
     border: none;
     transform: none;
     box-shadow: none;
@@ -40,19 +41,19 @@
 
 .tag-item:hover {
     background: #e9ecef;
-    color: #212529;
+    color: var(--text-primary);             /* 悬停变深 */
 }
 
 /* 去掉标签计数背景和样式 */
 .tag-count {
     margin-left: 0rem;
     background: transparent;
-    color: #6c757d;
+    color: var(--text-tertiary);           /* 使用三级文字颜色，更淡 */
     padding: 0.1rem 0.4rem 0.1rem 0.05rem;
     /* 左边距设为0 */
     border-radius: 0;
     font-size: 0.55rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium); /* 500 字重 */
     min-width: auto;
     text-align: left;
 }
@@ -80,16 +81,18 @@
 .recent-posts-module .post-item {
     display: block;
     padding: 0.5rem 0;
-    color: #495057;
+    color: var(--text-secondary);           /* 使用次要文字颜色 */
     text-decoration: none;
     border: none;
     font-size: 1rem;
+    font-weight: var(--font-weight-normal); /* 400 字重 */
     background: transparent;
+    transition: color 0.2s ease, background 0.2s ease;
 }
 
 .recent-posts-module .post-item:hover,
 .categories-module .category-item:hover {
-    color: #212529;
+    color: var(--text-primary);             /* 悬停变深 */
     background: #f8f9fa;
     margin: 0;
     padding-left: 0;
