@@ -32,7 +32,7 @@
     color: var(--text-secondary);           /* 使用次要文字颜色，更深 */
     text-decoration: none;
     font-size: 0.65rem;
-    font-weight: var(--font-weight-normal); /* 400 字重 */
+    font-weight: var(--font-weight-semibold); /* 400 字重 */
     transition: background 0.2s ease, color 0.2s ease;
     border: none;
     transform: none;

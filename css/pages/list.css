@@ -17,7 +17,7 @@
    -------------------------------------------------------------------------- */
 .section-title {
     font-size: 1.75rem;
-    font-weight: var(--font-weight-bold);    /* 使用 700 字重 */
+    font-weight: var(--font-weight-medium);    /* 使用 700 字重 */
     color: var(--text-primary);              /* 使用主要文字颜色，更深 */
     margin-bottom: 1rem;
     padding-bottom: 0.3rem;
@@ -29,7 +29,7 @@
    - 内容排版
    -------------------------------------------------------------------------- */
 .list-content {
-    margin: 1rem 0 2rem;
+    padding: 0.5rem 0.5rem;
     line-height: 1.8;
 }
 
@@ -41,14 +41,14 @@
     font-size: 1.3rem;
     color: var(--text-primary);              /* 使用主要文字颜色 */
     margin: 1.5rem 0 0.8rem;
-    font-weight: var(--font-weight-semibold); /* 使用 600 字重 */
+    font-weight: var(--font-weight-medium); /* 使用 600 字重 */
 }
 
 .tag {
     font-size: 1.3rem;
     color: var(--text-primary);              /* 使用主要文字颜色 */
     margin: 1.5rem 0 0.8rem;
-    font-weight: var(--font-weight-semibold); /* 使用 600 字重 */
+    font-weight: var(--font-weight-medium); /* 使用 600 字重 */
 }
 
 .posts-list {
@@ -58,6 +58,7 @@
 }
 
 .post-item {
+    padding: 0.5rem 2rem 0.5rem rem;
     border-bottom: 1px solid var(--border-color);
     padding: 0.5rem 0;
     transition: var(--transition-fast);
@@ -81,7 +82,7 @@ body.dark-mode .post-item:hover {
 
 .post-title {
     font-size: var(--font-size-base);        /* 使用 16px，与首页统一 */
-    font-weight: var(--font-weight-semibold);/* 使用 600 字重，与首页统一 */
+    font-weight: var(--font-weight-meidum);/* 使用 600 字重，与首页统一 */
     transition: var(--transition-fast);
 }
 

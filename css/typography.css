@@ -22,7 +22,7 @@
        ============================================ */
     --font-weight-light: 300;       /* 细体 - 适合大标题 */
     --font-weight-normal: 400;      /* 常规 - 默认文字 */
-    --font-weight-medium: 500;      /* 中等 - 正文（推荐，比 400 清晰） */
+    --font-weight-medium: 400;      /* 中等 - 正文（推荐，比 400 清晰） */
     --font-weight-semibold: 600;    /* 半粗 - 小标题、强调 */
     --font-weight-bold: 700;        /* 粗体 - 重要标题 */
     --font-weight-extrabold: 800;   /* 超粗 - 特殊强调 */

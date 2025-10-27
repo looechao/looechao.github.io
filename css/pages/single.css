@@ -2,19 +2,17 @@
    1. 文章页面布局控制
    ========================================================================== */
 
-/* 在文章页面隐藏左右侧边栏,但保留其占据的空间（仅在桌面端） */
-/* About 页面除外，显示左侧栏 */
+/* 在文章页面只隐藏右侧栏,但保留其占据的空间（仅在桌面端） */
 @media (min-width: 991px) {
-    body:not(.page-about) .site-sidebar {
-        visibility: hidden !important;
-    }
-
-    body.page-about .site-sidebar {
-        visibility: visible !important;
-    }
-
     body .site-right-panel {
         visibility: hidden !important;
+    }
+
+    /* 在文章页面隐藏左侧栏的头像和社交图标，只保留导航 */
+    /* minimal layout (page-about) 除外，保留完整左侧栏 */
+    body:not(.page-about) .sidebar .profile,
+    body:not(.page-about) .sidebar .site--icons {
+        display: none;
     }
 }
 
@@ -331,15 +329,15 @@ body.dark-mode {
     transition: var(--transition-fast);
 }
 
-/* 粗体字渐变样式 */
+/* 粗体字水彩涂鸦样式 */
 .article-content b,
 .article-content strong {
     font-weight: bolder;
-    margin: 0 -.1em;
-    padding: 0 .1em;
-    border-radius: .3em .15em;
-    background: transparent;
-    background-image: linear-gradient(to right, var(--color-link-light), var(--color-link-superlight));
+    margin: 0 -.15em;
+    padding: .1em .15em;
+    border-radius: 2px 3px 2px 3px;
+    background: rgba(255, 235, 59, 0.35);
+    box-shadow: 0 0 8px rgba(255, 235, 59, 0.2);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 }

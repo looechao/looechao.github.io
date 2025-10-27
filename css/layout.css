@@ -1,5 +1,5 @@
 body {
-    background-color: #FAFAFA;
+    background-color: #FAFAFAFA;
 }
 
 .site-container {
@@ -8,7 +8,7 @@ body {
     max-width: 85rem;
     margin: 0 auto;
     min-height: 100vh;
-    background-color: #FAFAFA;
+    background-color: #FAFAFAFA;
 }
 
 /* 调整flex order以保持视觉布局：sidebar(左) -> middle(中) -> right-panel(右) */
@@ -29,7 +29,7 @@ body {
     height: 100vh;
     position: sticky;
     top: 0;
-    background: #FAFAFA;
+    background: #FAFAFAFA;
     overflow-y: auto;
     padding: 3rem 2.5rem;
 }
@@ -44,10 +44,11 @@ body {
 }
 
 .site-content {
+    min-height: 800px;
     padding: 0rem;
     border-radius: 16px;
     background: #FFFFFF;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .site-right-panel {
@@ -58,7 +59,7 @@ body {
     height: 100vh;
     position: sticky;
     top: 0;
-    background: #FAFAFA;
+    background: #FFFFFF;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 1rem 1rem 1rem 0;
