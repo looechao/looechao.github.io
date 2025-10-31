@@ -1,5 +1,16 @@
 # Hugo
 /public/**
+/resources/_gen/
+.hugo_build.lock
 
 # macOS
 **/.DS_Store
+
+# Obsidian (配置文件，每个设备不同)
+/content/.obsidian
+
+# 可选：如果不想同步模板，取消下面的注释
+# /content/templates
+
+# 注意：_drafts 和 _notes 不需要 gitignore
+# 因为 Hugo 会自动忽略 _ 开头的目录，但它们可以被 Git 版本控制
