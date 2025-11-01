@@ -1,0 +1,62 @@
+name: Deploy Hugo site to Pages
+
+on:
+  # 当代码推送到 main 分支时触发
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'content/_drafts/**' # 忽略 _drafts 目录下的所有变更
+
+  # 允许在 GitHub Actions 页面手动触发
+  workflow_dispatch:
+
+# 为 GITHUB_TOKEN 设置权限，以允许部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许一个并发部署，自动取消正在排队但未开始的运行
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 构建任务
+  build:
+    runs-on: ubuntu-latest
+    steps:
+                - name: Checkout repository
+                  uses: actions/checkout@v4
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.147.8' # 使用您指定的版本
+          extended: true # 安装 extended 版本以支持 Sass/SCSS
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Hugo
+        run: |
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 自动上传 'public' 目录
+          path: './public'
+
+  # 部署任务
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build # 依赖 build 任务成功完成
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
