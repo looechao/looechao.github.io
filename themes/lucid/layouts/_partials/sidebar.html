@@ -1,0 +1,55 @@
+<aside class="sidebar">
+    <!-- 个人信息区域 -->
+    <div class="profile">
+        <a href="{{ .Site.BaseURL }}" class="avatar">
+            {{ if .Site.Params.profile.avatar }}
+            <img src="{{ .Site.Params.profile.avatar | relURL }}" alt="{{ .Site.Params.profile.name | default " Avatar"
+                }}" />
+            {{ else }}
+            <div class="avatar-fallback">{{ .Site.Params.profile.name | default "Avatar" | substr 0 1 | upper }}</div>
+            {{ end }}
+        </a>
+        <div class="profile-text">
+            <p class="name">{{ .Site.Params.profile.name | default .Site.Params.author | default "Your Name" }}</p>
+            <p class="bio">{{ .Site.Params.profile.bio | default .Site.Params.description | default "Your Bio" }}</p>
+        </div>
+    </div>
+
+    <!-- 导航菜单 -->
+    <nav class="nav">
+        <a href="{{ .Site.BaseURL }}" {{ if .IsHome }}class="active" {{ end }}>BLOG</a>
+        <a href="https://looechao.com/running_page/" target="_blank">MILES</a>
+        <a href="{{ "about" | relURL }}" {{ if eq .Section "about" }}class="active" {{ end }}>ABOUT</a>
+    </nav>
+
+    <!-- 社交图标 -->
+    <div class="site--icons">
+        {{ with .Site.Params.social.email }}
+        <a href="mailto:{{ . }}" target="_blank" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
+                <g id="evaEmailFill0">
+                    <g id="evaEmailFill1">
+                        <path id="evaEmailFill2" fill="currentColor"
+                            d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm0 2l-6.5 4.47a1 1 0 0 1-1 0L5 6Z" />
+                    </g>
+                </g>
+            </svg> </a>
+        {{ end }}
+        {{ with .Site.Params.social.github }}
+        <a href="{{ . }}" target="_blank" title="Github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 20 20">
+                <path fill="currentColor"
+                    d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799zm4.526-4.683c.149-.365.155-2.439-.635-4.426c0 0-1.811.199-4.551 2.08c-.575-.16-1.548-.238-2.519-.238c-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002l1.732-.002c1.506 0 7.467-.115 7.467-7.301c0-1.652-.566-2.863-1.494-3.871zm-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115c0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531c.735.676 1.045 1.49 1.045 2.369c0 3.666-2.937 4.115-6.709 4.115zm-3.207-5.606c-.718 0-1.3.807-1.3 1.799c0 .994.582 1.801 1.3 1.801c.719 0 1.301-.807 1.301-1.801c0-.992-.582-1.799-1.301-1.799z" />
+            </svg>
+        </a>
+        {{ end }}
+        {{ with .Site.Params.social.rss }}
+        <a href="{{ . }}" target="_blank" title="RSS">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M6.002 15.999a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4zM6 4a2 2 0 0 0 0 4c5.514 0 10 4.486 10 10a2 2 0 0 0 4 0c0-7.72-6.28-14-14-14zm0 6a2 2 0 0 0 0 4c2.205 0 4 1.794 4 4a2 2 0 0 0 4 0c0-4.411-3.589-8-8-8z" />
+            </svg>
+        </a>
+        {{ end }}
+    </div>
+</aside>

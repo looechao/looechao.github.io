@@ -1,0 +1,93 @@
+body {
+    background-color: #FAFAFAFA;
+}
+
+.site-container {
+    display: flex;
+    width: 100%;
+    max-width: 85rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #FAFAFAFA;
+}
+
+/* 调整flex order以保持视觉布局：sidebar(左) -> middle(中) -> right-panel(右) */
+.site-sidebar {
+    order: 1;
+}
+
+.site-middle {
+    order: 2;
+}
+
+.site-right-panel {
+    order: 3;
+}
+
+.site-sidebar {
+    flex: 0 0 16rem;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background: #FAFAFAFA;
+    overflow-y: auto;
+    padding: 3rem 2.5rem;
+}
+
+.site-middle {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 30px 5px 30px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.site-content {
+    min-height: 800px;
+    padding: 0rem;
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.site-right-panel {
+    flex: 0 0 18rem;
+    /* 固定宽度 */
+    min-width: 18rem;
+    /* 最小宽度 */
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background: #FFFFFF;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem 1rem 1rem 0;
+}
+
+
+/* 右侧自然占据剩余的 20% 空间 */
+
+@media (max-width: 990px) {
+    .site-container {
+        flex-direction: column;
+    }
+
+    .site-sidebar {
+        width: 100%;
+        flex: none;
+        height: auto;
+        position: static;
+        padding: 1rem;
+    }
+
+    .site-middle {
+        flex: 1;
+        margin: 0.5rem;
+    }
+
+    .site-right-panel {
+        display: none;
+        /* 在移动设备上隐藏右侧面板 */
+    }
+}

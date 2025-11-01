@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    {{ with .Site.Params.favicon }}
+    <link rel="icon" href="{{ . | relURL }}" type="image/png">
+    <link rel="shortcut icon" href="{{ . | relURL }}" type="image/png">
+    {{ end }}
+
+    <!-- Google Fonts 预连接优化 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 字体加载：Playfair Display (英文) + Noto Serif SC (中文) + Noto Serif (备用) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Noto+Serif+SC:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="{{ "css/components/right-panel.css" | relURL }}" as="style">
+    <link rel="stylesheet" href="{{ "css/base.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/typography.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/layout.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/components/sidebar.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/components/footer.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/components/right-panel.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/neodb.css" | relURL }}">
+    {{ if .IsHome }}
+    <link rel="stylesheet" href="{{ "css/pages/home.css" | relURL }}">
+    {{ else if or (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") }}
+    <link rel="stylesheet" href="{{ "css/pages/list.css" | relURL }}">
+    {{ else if eq .Kind "page" }}
+    <link rel="stylesheet" href="{{ "css/pages/single.css" | relURL }}">
+    {{ end }}
+    {{ if eq .Layout "archive" }}
+    <link rel="stylesheet" href="{{ "css/pages/archive.css" | relURL }}">
+    {{ end }}
+    {{ if .Site.Params.customCSS }}
+    {{ range .Site.Params.customCSS }}
+    <link rel="stylesheet" href="{{ . | relURL }}">
+    {{ end }}
+    {{ end }}
+    
+    {{ with .Site.Config.Services.GoogleAnalytics.ID }}
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ . }}');
+    </script>
+    {{ end }}
+</head>
+
+<body{{ if eq .Layout "minimal" }} class="page-about"{{ end }}>
+    <div class="site-container">
+        <aside class="site-sidebar">
+            {{ partial "sidebar.html" . }}
+        </aside>
+        <aside class="site-right-panel">
+            {{ partial "right-panel.html" . }}
+        </aside>
+        <div class="site-middle">
+            <main class="site-content">
+                {{ block "main" . }}{{ end }}
+                {{ partial "footer.html" . }}
+            </main>
+            {{ partial "comments.html" . }}
+        </div>
+    </div>
+    
+    {{ if .Store.Get "hasMermaid" }}
+      <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+      </script>
+    {{ end }}
+</body>
+
+</html>

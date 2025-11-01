@@ -1,0 +1,193 @@
+/* 侧边栏整体 */
+.sidebar {
+    padding: 0;
+    text-align: left; /* 取消 text-align 影响，改用 flex */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* 右对齐所有子元素 */
+    gap: 1.2rem;
+    margin-right: 0;
+}
+
+/* 个人信息区域 */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* 头像和文字右对齐 */
+    gap: 0.5rem;
+    margin: 0;
+}
+
+/* 头像 */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    flex-shrink: 0;
+    transform: translateX(25px);
+    border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0,0,0,0.15);
+}
+
+/* 头像内图片 */
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 姓名样式 */
+.name {
+    font-size: 22px;      /* 字体大小 */
+    color: #333333;       /* 字体颜色 */
+}
+
+/* 简介文本 */
+.bio {
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    text-align: right; 
+}
+
+/* 个人信息文字 */
+.profile-text {
+    color: #666;
+    text-align: right;
+}
+
+/* 导航菜单 */
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 100%;
+    max-width: 200px; /* 限制宽度，避免过宽 */
+}
+
+.nav a {
+    padding: 0.2rem 0;
+    text-decoration: none;
+    color: #666;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-align: right;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover {
+    color: #333;
+    font-weight: 500;
+}
+
+/* 社交图标容器 */
+.site--icons {
+    display: flex;               /* 横向排列 */
+    justify-content: flex-end;   /* 靠右对齐 */
+    gap: 1rem;                   /* 图标间距 */
+    width: 100%;
+}
+
+/* 每个图标链接 */
+.site--icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* 悬停变色 */
+.site--icons a:hover {
+    color: #333;
+}
+
+/* SVG 图标样式 */
+.site--icons svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor; /* 让 SVG 填充色跟随父元素 color */
+    transition: fill 0.2s ease;
+}
+
+/* 媒体查询：响应式布局调整 */
+@media (max-width: 900px) {
+    /* 侧边栏整体调整 */
+    .sidebar {
+        padding: 1rem 1rem 0 1rem;
+        align-items: center; /* 改为居中 */
+    }
+
+    /* 个人信息区域调整 */
+    .profile {
+        align-items: center; /* 头像和文字居中 */
+        gap: 0.25rem;
+    }
+
+    /* 头像缩小，居中 */
+    .avatar {
+        width: 70px;
+        height: 70px;
+        font-size: 1.5rem;
+        align-self: center;
+        transform: none;
+    }
+
+    /* 姓名文字居中 */
+    .name {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    /* 导航和简介隐藏 */
+    .nav {
+        display: none !important;
+    }
+
+    .bio {
+        display: none !important;
+    }
+
+    /* 社交图标居中 */
+    .site--icons {
+        justify-content: center !important;
+        width: 100%;
+        align-self: center;
+    }
+
+    /* 图标尺寸调整 */
+    .site--icons a {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* SVG 图标尺寸调整 */
+    .site--icons svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* 清除旧样式，避免影响 */
+.site-sidebar header,
+.sidebar-header,
+.profile-section,
+.sidebar-nav,
+.social-links {
+    all: unset;
+}
+
+.site-sidebar {
+    display: block;
+}

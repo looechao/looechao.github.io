@@ -1,0 +1,15 @@
+{{ if and (.Site.Params.giscus.enable) (not .Params.no_comments) (or (eq .Section "posts") (eq .Section "weekly")) (not
+.IsHome) .IsPage }}
+<div class="comments-wrapper">
+    <div id="giscus-container" class="comments-section"></div>
+    <script src="https://giscus.app/client.js" data-repo="{{ .Site.Params.giscus.repo }}"
+        data-repo-id="{{ .Site.Params.giscus.repo_id }}" data-category="{{ .Site.Params.giscus.category }}"
+        data-category-id="{{ .Site.Params.giscus.category_id }}"
+        data-mapping="{{ .Site.Params.giscus.mapping | default " pathname" }}" data-strict="0"
+        data-reactions-enabled="{{ .Site.Params.giscus.reactions_enabled | default " 1" }}"
+        data-emit-metadata="{{ .Site.Params.giscus.emit_metadata | default " 0" }}" data-input-position="top"
+        data-theme="{{ .Site.Params.giscus.theme | default " light" }}"
+        data-lang="{{ .Site.Params.giscus.lang | default " en" }}" crossorigin="anonymous" async>
+        </script>
+</div>
+{{ end }}

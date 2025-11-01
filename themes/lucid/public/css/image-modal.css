@@ -1,0 +1,174 @@
+/**
+ * 图片放大模态框样式
+ * 灰色调主题设计
+ */
+
+/* ========================================================================
+   1. 可点击图片样式
+   ======================================================================== */
+
+.article-content .zoomable-image {
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.article-content .zoomable-image:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================================================
+   2. 模态框容器
+   ======================================================================== */
+
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    
+    /* 初始状态：隐藏 */
+    opacity: 0;
+    visibility: hidden;
+    
+    /* 动画效果 */
+    transition: all 0.2s ease;
+}
+
+.image-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ========================================================================
+   3. 背景和内容区域
+   ======================================================================== */
+
+/* 背景遮罩 */
+.image-modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(64, 64, 64, 0.95);
+    backdrop-filter: blur(4px);
+}
+
+/* 内容容器 */
+.image-modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* ========================================================================
+   4. 放大的图片
+   ======================================================================== */
+
+.image-modal-img {
+    max-width: 90%;
+    max-height: 85%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    
+    /* 视觉效果 */
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    background: white;
+    
+    /* 动画效果 */
+    transition: transform 0.3s ease;
+}
+
+/* ========================================================================
+   5. 隐藏元素
+   ======================================================================== */
+
+/* 隐藏关闭按钮 */
+.image-modal-close {
+    display: none;
+}
+
+/* 隐藏图片说明 */
+.image-modal-caption {
+    display: none;
+}
+
+/* 防止背景滚动 */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .image-modal-content {
+        padding: 1rem;
+    }
+    
+    .image-modal-close {
+        top: 1rem;
+        right: 1rem;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+    
+    .image-modal-img {
+        max-width: 95%;
+        max-height: 80%;
+    }
+    
+    .image-modal-caption {
+        font-size: 0.8rem;
+        max-width: 90%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-modal-content {
+        padding: 0.5rem;
+    }
+    
+    .image-modal-close {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+    
+    .image-modal-img {
+        max-width: 98%;
+        max-height: 75%;
+    }
+}
+
+/* 动画效果 */
+.image-modal.active .image-modal-img {
+    animation: modalImageFadeIn 0.25s ease-out;
+}
+
+@keyframes modalImageFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

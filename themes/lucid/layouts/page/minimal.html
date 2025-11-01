@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article class="single-article">
+    <!-- 完全隐藏 article-header -->
+    <style>
+    .single-article .article-header {
+        display: none !important;
+    }
+    </style>
+    <div class="article-content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}

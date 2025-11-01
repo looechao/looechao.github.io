@@ -1,0 +1,205 @@
+/* ==========================================================================
+   字体排版系统 - 集中管理所有字体相关配置
+   ========================================================================== */
+
+:root {
+    /* ============================================
+       字体家族 Font Families
+       ============================================ */
+    /*
+       字体栈说明：
+       - Noto Serif: 英文衬线字体（与 Noto Serif SC 同系列，完美搭配）
+       - Noto Serif SC: 中文衬线字体
+       - Georgia: 经典衬线字体备用
+       - serif: 系统默认衬线字体
+    */
+    --font-serif: "Noto Serif", "Noto Serif SC", Georgia, serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-code: "SF Mono", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+
+    /* ============================================
+       字重系统 Font Weights
+       ============================================ */
+    --font-weight-light: 300;       /* 细体 - 适合大标题 */
+    --font-weight-normal: 400;      /* 常规 - 默认文字 */
+    --font-weight-medium: 400;      /* 中等 - 正文（推荐，比 400 清晰） */
+    --font-weight-semibold: 600;    /* 半粗 - 小标题、强调 */
+    --font-weight-bold: 700;        /* 粗体 - 重要标题 */
+    --font-weight-extrabold: 800;   /* 超粗 - 特殊强调 */
+
+    /* ============================================
+       字号系统 Font Sizes
+       完整层级：Title(30px) > H1(27px) > H2(24px) > H3(20px) > H4(18px) > 正文(16px)
+       ============================================ */
+    --font-size-xs: 0.75rem;        /* 12px - 小字、标签 */
+    --font-size-sm: 0.875rem;       /* 14px - 次要信息、日期 */
+    --font-size-base: 1.1rem;         /* 16px - 基础字号（正文）*/
+    --font-size-lg: 1.125rem;       /* 18px - H4 小标题 */
+    --font-size-xl: 1.25rem;        /* 20px - H3 中标题 */
+    --font-size-2xl: 1.5rem;        /* 24px - H2 大标题 */
+    --font-size-3xl: 1.6875rem;     /* 27px - H1 特大标题 */
+    --font-size-4xl: 1.875rem;      /* 30px - Title 页面标题 */
+
+    /* ============================================
+       行高系统 Line Heights
+       ============================================ */
+    --line-height-tight: 1.25;      /* 紧凑 - 标题 */
+    --line-height-snug: 1.375;      /* 较紧 - 短文本 */
+    --line-height-normal: 1.5;      /* 常规 - 默认 */
+    --line-height-relaxed: 1.625;   /* 舒适 - 长文本 */
+    --line-height-loose: 1.8;       /* 宽松 - 阅读体验最佳 */
+    --line-height-extra-loose: 2.0; /* 超宽松 - 特殊场景 */
+
+    /* ============================================
+       文字颜色系统 Text Colors
+       ============================================ */
+    --text-primary: #1a1a1a;        /* 主要文字 - 深黑色，对比度高 */
+    --text-secondary: #4a4a4a;      /* 次要文字 - 中灰色 */
+    --text-tertiary: #666666;       /* 三级文字 - 浅灰色 */
+    --text-quaternary: #999999;     /* 四级文字 - 更浅 */
+    --text-disabled: #cccccc;       /* 禁用文字 - 最浅 */
+
+    /* ============================================
+       文章专用配置 Article Specific
+       ============================================ */
+
+    /* 文章正文字号（关键配置！调整这里就能改变全站文章字号） */
+    --article-font-size-mobile: var(--font-size-base);    /* 移动端：16px */
+    --article-font-size-tablet: var(--font-size-base);    /* 平板：16px */
+    --article-font-size-desktop: var(--font-size-base);   /* 桌面：16px */
+
+    /* 文章正文字重 */
+    --article-font-weight: var(--font-weight-medium);     /* 正文字重：500（清晰） */
+
+    /* 文章正文行高 */
+    --article-line-height: var(--line-height-loose);      /* 正文行高：1.8（舒适） */
+
+    /* 文章标题字重 */
+    --article-heading-weight: var(--font-weight-bold); /* 标题字重：700，更突出 */
+}
+
+/* ============================================
+   全局字体配置（所有页面通用）
+   ============================================ */
+body {
+    /* 字体家族 */
+    font-family: var(--font-serif);
+
+    /* 字号和字重 */
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+
+    /* 行高 */
+    line-height: var(--line-height-normal);
+
+    /* 文字颜色（使用 typography.css 中定义的颜色） */
+    color: var(--text-primary);
+
+    /* 字体平滑 - 让字体边缘更平滑（会让字体略显细，但更优雅） */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* 文本渲染优化 - 提高可读性 */
+    text-rendering: optimizeLegibility;
+
+    /* 字距微调 */
+    letter-spacing: 0.01em;
+}
+
+/* ============================================
+   响应式字体大小系统
+   ============================================ */
+
+/* 移动端（默认）：使用基础字号 */
+.article-content,
+.article-content p {
+    font-size: var(--article-font-size-mobile);
+    font-weight: var(--article-font-weight);
+    line-height: var(--article-line-height);
+}
+
+/* 平板（≥768px）：字号增大到 18px */
+@media (min-width: 768px) {
+    .article-content,
+    .article-content p {
+        font-size: var(--article-font-size-tablet);
+    }
+}
+
+/* 桌面（≥1024px）：字号增大到 20px */
+@media (min-width: 1024px) {
+    .article-content,
+    .article-content p {
+        font-size: var(--article-font-size-desktop);
+    }
+}
+
+/* ============================================
+   标题字体系统
+   完整层级：Title(30px) > H1(27px) > H2(24px) > H3(20px) > H4(18px) > 正文(16px)
+   ============================================ */
+.article-content h1 {
+    font-size: var(--font-size-3xl);            /* 27px - H1（很少用，夹在 Title 和 H2 之间）*/
+    font-weight: var(--article-heading-weight); /* 700 */
+    line-height: var(--line-height-tight);      /* 1.25 */
+    color: #000000;  /* 纯黑色，比正文更突出 */
+}
+
+.article-content h2 {
+    font-size: var(--font-size-2xl);            /* 24px - H2（实际最常用的标题）*/
+    font-weight: var(--article-heading-weight); /* 700 */
+    line-height: var(--line-height-snug);       /* 1.375 */
+    color: #000000;  /* 纯黑色 */
+}
+
+.article-content h3 {
+    font-size: var(--font-size-xl);             /* 20px - H3（中标题）*/
+    font-weight: var(--article-heading-weight); /* 700 */
+    line-height: var(--line-height-snug);       /* 1.375 */
+    color: #000000;  /* 纯黑色 */
+}
+
+.article-content h4 {
+    font-size: var(--font-size-lg);             /* 18px - H4（和正文同字号，用字重区分）*/
+    font-weight: var(--article-heading-weight); /* 700 */
+    line-height: var(--line-height-normal);     /* 1.5 */
+    color: #000000;  /* 纯黑色 */
+}
+
+/* ============================================
+   代码字体系统
+   ============================================ */
+code,
+pre,
+.article-content code,
+.article-content pre {
+    font-family: var(--font-code);
+}
+
+/* ============================================
+   使用说明
+   ============================================ */
+
+/*
+   🎯 如何调整全站文章字号？
+
+   方法 1：调整变量值（推荐）
+   --article-font-size-mobile: var(--font-size-base);    改为 var(--font-size-lg)
+   --article-font-size-desktop: var(--font-size-xl);     改为 var(--font-size-2xl)
+
+   方法 2：直接设置具体数值
+   --article-font-size-mobile: 17px;
+   --article-font-size-desktop: 19px;
+
+   🎯 如何调整文章字重？
+
+   --article-font-weight: var(--font-weight-medium);     改为 var(--font-weight-semibold)
+
+   🎯 如何调整行高？
+
+   --article-line-height: var(--line-height-loose);      改为 var(--line-height-relaxed)
+
+   🎯 如何调整文字颜色？
+
+   --text-primary: #1a1a1a;                              改为更深的 #000000 或更浅的 #333333
+*/

@@ -1,0 +1,40 @@
+<div class="right-panel">
+    <div class="panel-module tags-module">
+        <h3 class="module-title">Tags</h3>
+        <div class="tags-cloud">
+            {{/* 字母数字标签：按字母序 */}}
+            {{ range .Site.Taxonomies.tags.Alphabetical }}
+            {{ if findRE "^[a-zA-Z0-9]" .Page.Title }}
+            <a href="{{ .Page.Permalink }}" class="tag-item tag-alphanumeric" data-count="{{ .Count }}">
+                {{ .Page.Title }}<span class="tag-count">{{ .Count }}</span>
+            </a>
+            {{ end }}
+            {{ end }}
+
+            {{/* 中文标签：按热度 */}}
+            {{ range .Site.Taxonomies.tags.ByCount }}
+            {{ if not (findRE "^[a-zA-Z0-9]" .Page.Title) }}
+            <a href="{{ .Page.Permalink }}" class="tag-item tag-chinese" data-count="{{ .Count }}">
+                {{ .Page.Title }}<span class="tag-count">{{ .Count }}</span>
+            </a>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+    <!-- 方便后续扩展 -->
+    <!-- 
+    <div class="panel-module categories-module">
+        <h3 class="module-title">分类</h3>
+        <div class="categories-list">
+            // 分类内容
+        </div>
+    </div>
+
+    <div class="panel-module recent-posts-module">
+        <h3 class="module-title">最近文章</h3>
+        <div class="recent-posts">
+            // 最近文章内容
+        </div>
+    </div>
+    -->
+</div>

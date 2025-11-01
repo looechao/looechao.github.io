@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/looe/blog/**)",
+      "Read(//Users/looe/blog/**)",
+      "Bash(mkdir:*)",
+      "Read(/Users/looe/blog/**)",
+      "Read(/Users/looe/blog/**)",
+      "Read(/Users/looe/blog/**)",
+      "Read(/Users/looe/blog/**)",
+      "Read(/Users/looe/blog/**)",
+      "Bash(find:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
