@@ -1,0 +1,97 @@
+.site-right-panel {
+    width: 20%;
+    flex: 0 0 20%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background: #FAFAFA;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.right-panel {
+    margin: 0 auto;
+    padding: 2rem 0rem 0rem 1rem;
+    min-width: 0;
+}
+
+/* 标签云简化 */
+.tags-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    line-height: 1.4;
+    width: 100%;
+    /* 新增：明确宽度 */
+}
+
+.tag-item {
+    display: inline-flex;
+    align-items: center;
+    background: #f8f9fa;
+    color: #495057;
+    text-decoration: none;
+    font-size: 0.65rem;
+    transition: none;
+    border: none;
+    transform: none;
+    box-shadow: none;
+}
+
+.tag-item:hover {
+    background: #e9ecef;
+    color: #212529;
+}
+
+/* 去掉标签计数背景和样式 */
+.tag-count {
+    margin-left: 0rem;
+    background: transparent;
+    color: #6c757d;
+    padding: 0.1rem 0.4rem 0.1rem 0.05rem;
+    /* 左边距设为0 */
+    border-radius: 0;
+    font-size: 0.55rem;
+    font-weight: 500;
+    min-width: auto;
+    text-align: left;
+}
+
+/* 去掉所有根据频率调整大小的样式 */
+/* 删除所有 .tag-item[data-count="..."] 相关样式 */
+
+/* 响应式设计保持不变 */
+@media (max-width: 1200px) {
+    .site-right-panel {
+        width: 25%;
+        flex: 0 0 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-right-panel {
+        display: none;
+        /* 在移动设备上隐藏右侧面板 */
+    }
+}
+
+/* 简化分类和最近文章模块 */
+.categories-module .category-item,
+.recent-posts-module .post-item {
+    display: block;
+    padding: 0.5rem 0;
+    color: #495057;
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.recent-posts-module .post-item:hover,
+.categories-module .category-item:hover {
+    color: #212529;
+    background: #f8f9fa;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}

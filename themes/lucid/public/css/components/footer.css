@@ -1,0 +1,15 @@
+footer {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    font-weight: 100;
+    color: var(--color-gray);
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,102 @@
+/* 变量定义（建议放在全局） */
+:root {
+    --primary-color: #333;
+    --border-color: #e0e0e0;
+    --text-color: #27272a;
+    --text-light: #888;
+    --transition-fast: all 0.3s ease;
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 主页容器 */
+.home {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1.2rem 1rem 1rem 1rem;
+}
+
+/* 文章项列表 */
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* 文章项 */
+.post-item {
+    padding: 0.5rem 0.5rem;
+    transition: var(--transition-fast);
+}
+
+.post-item:hover {
+    background-color: #f4f4f5;
+    border-radius: 10px;
+}
+
+body.dark-mode .post-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* 文章链接 */
+.post-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    /* 使用 typography.css 定义的主要文字颜色，更深 */
+    color: var(--text-primary);
+}
+
+/* 文章标题 */
+.post-title {
+    /* 使用 typography.css 的变量系统 */
+    font-size: var(--font-size-base);            /* 16px - 与正文一致 */
+    font-weight: var(--font-weight-medium);    /* 600 - 用字重区分 */
+    transition: var(--transition-fast);
+}
+
+/* 文章日期 */
+.post-date {
+    /* 使用 typography.css 的变量系统 */
+    font-size: var(--font-size-sm);              /* 14px - 较小，次要信息 */
+    font-weight: var(--font-weight-light);       /* 300 - 轻量，更柔和 */
+    color: var(--text-tertiary);                 /* 使用三级文字颜色，更淡 */
+}
+
+/* 分页器 - 简洁版 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 1.5rem 0;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination a,
+.pagination span {
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+.pagination a:hover,
+.pagination li.page-item.active a,
+.pagination li.page-item.active span {
+    color: #333;
+}
+
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .home {
+        padding: 1.5rem 1rem;
+    }
+
+    .post-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}

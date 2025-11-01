@@ -1,0 +1,142 @@
+/* 列表页样式 */
+
+/* 列表容器
+   - 最大宽度与内容区域一致
+   - 居中对齐
+   - 适当的内边距
+   -------------------------------------------------------------------------- */
+.list-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* 章节标题
+   - 统一的标题样式
+   - 下边距
+   -------------------------------------------------------------------------- */
+.section-title {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+}
+
+/* 列表内容
+   - 内容排版
+   -------------------------------------------------------------------------- */
+.list-content {
+    margin: 1rem 0 2rem;
+    line-height: 1.8;
+}
+
+/* 最新文章
+   - 年份分组
+   - 文章列表样式
+   -------------------------------------------------------------------------- */
+.year {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin: 1.5rem 0 0.8rem;
+    font-weight: 600;
+}
+
+.tag {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin: 1.5rem 0 0.8rem;
+    font-weight: 600;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.post-item {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.5rem 0;
+    transition: var(--transition-fast);
+}
+
+.post-item:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+body.dark-mode .post-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.post-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.post-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: var(--transition-fast);
+}
+
+.post-link:hover .post-title {
+    color: var(--accent-color);
+}
+
+.post-date {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* 分页器 - 简洁版
+   - 简单的分页样式
+   - 统一的颜色主题
+   -------------------------------------------------------------------------- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 1.5rem 0;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination a,
+.pagination span {
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+.pagination a:hover,
+.pagination li.page-item.active a,
+.pagination li.page-item.active span {
+    color: #333;
+}
+
+/* 响应式设计
+   - 移动端布局调整
+   - 字体大小调整
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .list-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .post-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}

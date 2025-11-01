@@ -1,0 +1,45 @@
+/* 基础变量 */
+:root {
+    /* 颜色 */
+    --primary-color: #333;
+    --border-color: #e0e0e0;
+    --text-color: #27272a;
+    --text-light: #888;
+    --transition-fast: all 0.3s ease;
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    --color-black: #1a1a1a;
+    /* 深黑色，主文字色 */
+    --color-dark-gray: #333333;
+    /* 深灰色，标题、重要元素 */
+    --color-gray: #666666;
+    /* 中灰色，次要文字 */
+    --color-light-gray: #cccccc;
+    /* 浅灰色，边框、分割线 */
+    --color-lighter-gray: #f5f5f5;
+    /* 极浅灰，背景色 */
+    --color-white: #ffffff;
+    /* 纯白色，背景或高亮 */
+
+    /* 水彩强调色 */
+    --color-link-light: #FFCCBC99; 
+    --color-link-superlight: #FFCCBC33;
+
+    /* 布局 */
+    --content-width: 600px;
+
+    /* 注意：字体相关变量已移至 typography.css 统一管理 */
+}
+
+/* 重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* 注意：所有字体相关配置（字体家族、字号、字重、行高、颜色、渲染优化）
+       已统一在 typography.css 中管理，这里只保留非字体样式 */
+    background: var(--background-color);
+}
