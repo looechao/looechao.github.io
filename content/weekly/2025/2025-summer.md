@@ -1,14 +1,11 @@
-+++
-
-title = '2025年夏'
-date = 2025-06-08T20:50:13+23:01
-draft = false
-type = "weekly"
-tags = [ "2025Weekly"]
-
-+++
-
-
+---
+title: 2025年夏
+date: "2025-06-08T20:50:13+23:01"
+draft: false
+type: weekly
+tags:
+  - 2025Weekly
+---
 ## 250727 第31周
 
 #### 生活

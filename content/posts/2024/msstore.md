@@ -1,11 +1,12 @@
-+++
-title = '用Powershell直接安装MicrosoftStore的应用'
-date = 2024-03-19T14:40:13+08:00
-draft = false
-summary = "没有商店也可以安装应用"
-tags = [ "笔记", "Microsoft Store"]
-
-+++
+---
+title: 用Powershell直接安装MicrosoftStore的应用
+date: "2024-03-19T14:40:13+08:00"
+draft: false
+summary: 没有商店也可以安装应用
+tags:
+  - 笔记
+  - Microsoft Store
+---
 很多人都喜欢禁用windows更新，禁用更新后应用商店应该是打不开的
 
 其实用 powershell 安装 appx 也可以：

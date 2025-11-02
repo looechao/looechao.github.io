@@ -1,12 +1,13 @@
-+++
-title = 'Reasoning Agent的来龙去脉'
-date = 2024-10-24T15:01:13+08:00
-draft = false
-pin = true
-tags = [ "Lectures", "Agent", "llm"]
-
-+++
-
+---
+title: Reasoning Agent的来龙去脉
+date: "2024-10-24T15:01:13+08:00"
+draft: false
+pin: true
+tags:
+  - Lectures
+  - Agent
+  - llm
+---
 ## LLM agent 的三个层次
 
 从Text Agent到 ReAct Agent

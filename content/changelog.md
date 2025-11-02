@@ -1,14 +1,11 @@
-+++
-
-title = 'Changelog'
-draft = false
-date = 1970-03-10T21:50:13+08:00
-summary = "changelog"
-type = "page"
-layout = "minimal"
-
-+++
-
+---
+title: Changelog
+draft: false
+date: "1970-03-10T21:50:13+08:00"
+summary: changelog
+type: page
+layout: minimal
+---
 ### Changelog
 
 ##### 2025-10-27

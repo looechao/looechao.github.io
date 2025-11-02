@@ -1,13 +1,11 @@
-+++
-
-title = 'About'
-draft = false
-date = 1970-03-10T21:50:13+08:00
-summary = "readme"
-type = "page"
-layout = "minimal"
-
-+++
+---
+title: About
+draft: false
+date: "1970-03-10T21:50:13+08:00"
+summary: readme
+type: page
+layout: minimal
+---
 ## **ABOUT**
 
 - Dirty Hands Dev.

@@ -1,12 +1,16 @@
-+++
-title = '网络编程-EPOLL的使用'
-date = 2024-06-17T15:38:13+08:00
-draft = false
-summary = "用EPOLL代替SELECT"
-tags = [ "技术", "Linux", "网络编程", "SELECT", "EPOLL", "海量连接处理"]
-
-+++
-
+---
+title: 网络编程-EPOLL的使用
+date: "2024-06-17T15:38:13+08:00"
+draft: false
+summary: 用EPOLL代替SELECT
+tags:
+  - 技术
+  - Linux
+  - 网络编程
+  - SELECT
+  - EPOLL
+  - 海量连接处理
+---
 # EPOLL
 
 ## select的缺陷

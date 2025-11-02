@@ -1,12 +1,11 @@
-+++
-title = '2024年春'
-date = 2024-03-10T21:50:13+08:00
-draft = false
-type = "weekly"
-tags = [ "2024Weekly"]
-
-+++
-
+---
+title: 2024年春
+date: "2024-03-10T21:50:13+08:00"
+draft: false
+type: weekly
+tags:
+  - 2024Weekly
+---
 ## 2024年第22周 06-02
 
 > 诗酒趁年华

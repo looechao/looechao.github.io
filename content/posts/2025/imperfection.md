@@ -1,12 +1,14 @@
-+++
-title = '新的一年，我会越来越不完美'
-date = 2025-02-06T15:01:13+08:00
-draft = false
-pin = false
-tags = [ "感悟", "生活", "杂谈", "成长"]
-
-+++
-
+---
+title: 新的一年，我会越来越不完美
+date: "2025-02-06T15:01:13+08:00"
+draft: false
+pin: false
+tags:
+  - 感悟
+  - 生活
+  - 杂谈
+  - 成长
+---
 避开完美主义这条崎岖的弯路
 
 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3yjCVb3jzXx6vQoUTMKxsd?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
