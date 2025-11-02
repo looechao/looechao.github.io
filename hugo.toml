@@ -80,3 +80,9 @@ reactions_enabled = true
 emit_metadata = false
 theme = "light"
 lang = "en"
+
+[module]
+[[module.mounts]]
+  source = 'content'
+  target = 'content'
+  excludeFiles = ['_templates/**']
