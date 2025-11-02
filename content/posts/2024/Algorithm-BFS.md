@@ -9,9 +9,6 @@ tags:
   - C/C++
 ---
 几则使用广度优先遍历算法求解的题目
-
-### 广度优先遍历(BFS)
-
 #### P0101★
 
 题目描述：  [Symmetric Tree](https://leetcode.cn/problems/symmetric-tree/), 判断一棵树是不是对称树
@@ -79,8 +76,6 @@ public:
     }
 };
 ```
-
-
 
 #### P0102★
 
