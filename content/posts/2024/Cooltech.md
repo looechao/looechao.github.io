@@ -1,12 +1,13 @@
-+++
-title = '时代的眼泪'
-date = 2024-04-11T21:50:13+08:00
-draft = false
-pin = false
-summary = "looe's cool digital devices..."
-tags = [ "生活",  "数码"]
-
-+++
+---
+title: 时代的眼泪
+date: "2024-04-11T21:50:13+08:00"
+draft: false
+pin: false
+summary: looe's cool digital devices...
+tags:
+  - 生活
+  - 数码
+---
 记录一下在校期间玩过的各种有趣数码产品，虽然其中很多设备都沦为了时代的眼泪（老古董），但是可玩性都不低
 
 #### PSP-E1000

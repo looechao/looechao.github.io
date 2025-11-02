@@ -1,13 +1,13 @@
-+++
-
-title = 'LifeLab Vol. 1 - 小站装修，步履不停'
-date = 2025-09-02T15:01:13+08:00
-draft = false
-pin = false
-tags = [ "部落格复兴", "生活", "运动"]
-
-+++
-
+---
+title: LifeLab Vol. 1 - 小站装修，步履不停
+date: "2025-09-02T15:01:13+08:00"
+draft: false
+pin: false
+tags:
+  - 部落格复兴
+  - 生活
+  - 运动
+---
 ### 小站装修
 
 Blog 自上线以来，一直在用 [Meik 写的主题](https://github.com/MeiK2333/github-style)，虽然有很多不错的设计（比如文章更新热力图、资料卡），但时间久了发现想要更高程度的定制还是太麻烦，不如自己重写（Vibe）一套，记录一些可以折腾的点：

@@ -1,13 +1,12 @@
-+++
-
-title = 'Hexo框架的博客搭建小记'
-date = 2023-02-25T21:31:13+08:00
-draft = false
-summary = "第一次尝试建立hexo框架的站点"
-tags = ["笔记", "hexo"]
-
-+++
-
+---
+title: Hexo框架的博客搭建小记
+date: "2023-02-25T21:31:13+08:00"
+draft: false
+summary: 第一次尝试建立hexo框架的站点
+tags:
+  - 笔记
+  - hexo
+---
 ## 概述：
 
 记录了使用Hexo框架+github pages搭建个人博客的流程，只需几分钟就可以生成并托管自己的博客文章

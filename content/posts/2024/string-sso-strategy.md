@@ -1,12 +1,14 @@
-+++
-title = '浅谈C++中string的SSO策略'
-date = 2024-07-10T22:53:13+08:00
-draft = false
-summary = "短字符串的优化策略"
-tags = [ "技术", "C/C++", "SSO" , "string"]
-
-+++
-
+---
+title: 浅谈C++中string的SSO策略
+date: "2024-07-10T22:53:13+08:00"
+draft: false
+summary: 短字符串的优化策略
+tags:
+  - 技术
+  - C/C++
+  - SSO
+  - string
+---
 ## string的存储结构
 
 ```cpp

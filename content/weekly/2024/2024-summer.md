@@ -1,13 +1,11 @@
-+++
-
-title = '2024年夏'
-date = 2024-06-09T20:50:13+23:01
-draft = false
-type = "weekly"
-tags = [ "2024Weekly"]
-
-+++
-
+---
+title: 2024年夏
+date: "2024-06-09T20:50:13+23:01"
+draft: false
+type: weekly
+tags:
+  - 2024Weekly
+---
 ## 2024年第35周 09-01
 
 #### 生活

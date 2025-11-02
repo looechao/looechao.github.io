@@ -1,10 +1,12 @@
-+++
-title = '我的成就清单'
-date = 2022-01-01T21:09:13+08:00
-draft = false
-summary = "A list of my achievements"
-tags = [ "成长", "成就"]
-+++
+---
+title: 我的成就清单
+date: "2022-01-01T21:09:13+08:00"
+draft: false
+summary: A list of my achievements
+tags:
+  - 成长
+  - 成就
+---
 ## 我的成就清单
 ##### 
 - 21年帆软杯BI赛道 全国三等奖

@@ -1,14 +1,15 @@
-+++
-
-title = 'AuroraAssetEditor使用笔记'
-date = 2023-02-25T21:31:13+08:00
-draft = false
-pin = true
-summary = "通过FTP编辑xbox360游戏的封面"
-tags = ["xbox360", "工具", "笔记", "数码"]
-
-+++
-
+---
+title: AuroraAssetEditor使用笔记
+date: "2023-02-25T21:31:13+08:00"
+draft: false
+pin: true
+summary: 通过FTP编辑xbox360游戏的封面
+tags:
+  - xbox360
+  - 工具
+  - 笔记
+  - 数码
+---
 ### 概述：
 
 在使用Aurora自制系统时，虽然可以联网自动更新封面图片，但有时会因为网络问题或者游戏过于冷门导致封面插图更新失败，因此有必要使用AuroraAssetEditor对信息进行手动编辑。

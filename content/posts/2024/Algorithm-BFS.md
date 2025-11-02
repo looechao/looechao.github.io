@@ -1,11 +1,13 @@
-+++
-title = '广度优先遍历算法的应用'
-date = 2024-07-21T14:57:13+08:00
-draft = false
-summary = "BFS探索"
-tags = [ "算法", "BFS", "C/C++"]
-
-+++
+---
+title: 广度优先遍历算法的应用
+date: "2024-07-21T14:57:13+08:00"
+draft: false
+summary: BFS探索
+tags:
+  - 算法
+  - BFS
+  - C/C++
+---
 几则使用广度优先遍历算法求解的题目
 
 ### 广度优先遍历(BFS)
