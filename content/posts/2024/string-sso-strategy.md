@@ -1,11 +1,11 @@
 ---
 title: 浅谈C++中string的SSO策略
-date: "2024-07-10T22:53:13+08:00"
+date: 2024-07-10T22:53:13+08:00
 draft: false
 summary: 短字符串的优化策略
 tags:
   - 技术
-  - C/C++
+  - C/CPP
   - SSO
   - string
 ---
@@ -82,9 +82,6 @@ graph TD
     G --> H --> I
     end
 ```
-
-
-
 
 
 - 针对16个字节以内的字符串，直接使用栈上的空间存储buffer
