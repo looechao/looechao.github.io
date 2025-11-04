@@ -9,7 +9,6 @@ tags:
   - 医疗
 ---
 记一次食物中毒的经历
-
 ### 起因
 
 元旦假期后复工第一天，在公司的楼下常去的店点了从来没有尝试过的牛肉滑蛋饭作为午餐。
@@ -38,7 +37,7 @@ Google滑蛋饭+呕吐，查到了香港食物安全中心发布的滑蛋饭引�
 
 医生根据症状诊断为急性胃肠炎，具体属于病毒性还是细菌性需要验血才能知道
 
-![](https://static.looechao.com/2025/gastroenteritis.jpg)
+![gastroenteritis center](https://static.looechao.com/2025/gastroenteritis.jpg)
 
 血常规报告显示淋巴细胞水平明显低于参考值（淋巴细胞的消耗大多是与病毒做对抗导致的），所以医生判定为病毒性急性胃肠炎
 

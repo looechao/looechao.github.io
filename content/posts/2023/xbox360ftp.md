@@ -26,36 +26,21 @@ https://github.com/XboxUnity/AuroraAssetEditor
 
 ![img](https://static.looechao.com/picserver/p2p6.jpg)
 
-
-
-
 ### 3.在Aurora菜单中确定FTP信息：
 
 ![img](https://static.looechao.com/picserver/p2p2.jpg)
-
-
-
-
-
 
 ### 4.确定机器的IP地址：
 
 ![img](https://static.looechao.com/picserver/p2p4.jpg)
 
-
-
-
 ### 5.在软件中填写相对应得到IP地址等信息：
 
 ![img](https://static.looechao.com/picserver/P2P11.png)
 
-
-
 ### 6.设定相应的封面（以秋之回忆为例）：
 
 ![img](https://static.looechao.com/picserver/p2p8.png)
-
-
 
 ### 7.实现效果:
 

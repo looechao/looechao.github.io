@@ -1,27 +1,21 @@
 ---
-title: Linux学习笔记-24年5月第一组
-date: "2024-05-18T15:38:13+08:00"
+title: Linux 课程笔记
+date: 2024-05-18T15:38:13+08:00
 draft: false
 summary: Linux基础知识-排版待整理
 tags:
   - 技术
   - Linux
 ---
-# 推荐书籍
+### 推荐书籍
+- the linux command line
+- linux 系统编程
+- linux 系统编程接口
+- APUE 
+- 操作系统导论 - 深入理解操作系统
+## 常用命令
 
-the linux command line
-
-linux 系统编程
-
-linux 系统编程接口
-
-APUE 
-
-操作系统导论 - 深入理解操作系统
-
-# 常用命令
-
-## Vim
+### Vim
 
 Vim是一种多模式的编辑器
 

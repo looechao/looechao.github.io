@@ -38,10 +38,7 @@ tags:
    >
    > eg. ReAct, AutoGPT
 
-
-
 ## 关于Question answering的问题
-
 
 
 1. 需要推理
@@ -79,7 +76,6 @@ sequenceDiagram
     end
     Agent->>User: 返回最终答案
 ```
-
 
 
 #### **推理** Reasoning
