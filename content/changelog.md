@@ -8,6 +8,10 @@ layout: minimal
 ---
 ### Changelog
 
+##### 2025-12-10
+
+- 添加 Pills (Telegram Channel) 侧边栏链接
+
 ##### 2025-10-27
 
 - 调整文章页面：展示左侧栏并隐藏其中头像部分
