@@ -1,0 +1,19 @@
+{{ define "main" }}
+<ul class="post-list">
+  {{ range where .Site.RegularPages "Section" "posts" }}
+  <li class="post-item">
+    <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+      {{ .Date.Format "2006-01-02" }}
+    </time>
+    <span class="post-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </span>
+    {{ with .Params.tags }}
+    <div class="post-tags">
+      {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
