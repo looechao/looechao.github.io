@@ -1,16 +1,15 @@
 {{ define "main" }}
-<header class="page-header">
-  <h1 class="page-title">{{ .Title }}</h1>
-  {{ with .Description }}
-  <p class="page-description">{{ . }}</p>
-  {{ end }}
-</header>
-
 <ul class="post-list">
+  {{ $lastYear := "" }}
   {{ range .Pages }}
+  {{ $year := .Date.Format "2006" }}
+  {{ if ne $year $lastYear }}
+  <li class="post-year">{{ $year }}</li>
+  {{ $lastYear = $year }}
+  {{ end }}
   <li class="post-item">
     <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
-      {{ .Date.Format "2006-01-02" }}
+      {{ .Date.Format "01-02" }}
     </time>
     <span class="post-title">
       <a href="{{ .Permalink }}">{{ .Title }}</a>
