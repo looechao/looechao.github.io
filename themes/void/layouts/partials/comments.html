@@ -10,7 +10,7 @@
       script.dataset.category = '{{ .Site.Params.giscus.category }}';
       script.dataset.categoryId = '{{ .Site.Params.giscus.category_id }}';
       script.dataset.mapping = '{{ .Site.Params.giscus.mapping | default "pathname" }}';
-      script.dataset.reactionsEnabled = '{{ if .Site.Params.giscus.reactions_enabled }}1{{ else }}0{{ end }}';
+      script.dataset.reactionsEnabled = '0';
       script.dataset.emitMetadata = '{{ if .Site.Params.giscus.emit_metadata }}1{{ else }}0{{ end }}';
       script.dataset.theme = theme;
       script.dataset.lang = '{{ .Site.Params.giscus.lang | default "en" }}';
