@@ -1,0 +1,20 @@
+<nav class="breadcrumb">
+  <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+  </button>
+  {{- if .IsHome -}}
+    <span class="breadcrumb-item active">Home</span>
+  {{- else if eq .Kind "section" -}}
+    <span class="breadcrumb-item active">{{ .Section | title }}</span>
+  {{- else if eq .Kind "taxonomy" -}}
+    <span class="breadcrumb-item active">{{ .Data.Plural | title }}</span>
+  {{- else if eq .Kind "term" -}}
+    <a href="{{ .Data.Plural | relURL }}/" class="breadcrumb-item">{{ .Data.Plural | title }}</a>
+    <span class="breadcrumb-item active has-parent">{{ .Title }}</span>
+  {{- else if .Section -}}
+    <a href="{{ .Section | relURL }}/" class="breadcrumb-item">{{ .Section | title }}</a>
+    <span class="breadcrumb-item active has-parent">{{ .Title }}</span>
+  {{- else -}}
+    <span class="breadcrumb-item active">{{ .Title }}</span>
+  {{- end -}}
+</nav>
