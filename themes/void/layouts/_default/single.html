@@ -1,10 +1,7 @@
 {{ define "main" }}
 <article>
+  {{ if .Section }}
   <header class="article-header">
-    <a href="{{ .Site.BaseURL }}" class="article-back">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-      Back
-    </a>
     <h1 class="article-title">{{ .Title }}</h1>
     <div class="article-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
@@ -17,11 +14,14 @@
       {{ end }}
     </div>
   </header>
+  {{ end }}
 
   <div class="article-content">
     {{ .Content }}
   </div>
 </article>
 
+{{ if .Section }}
 {{ partial "comments.html" . }}
+{{ end }}
 {{ end }}
