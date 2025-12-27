@@ -19,3 +19,15 @@ function toggleTheme() {
 function toggleMenu() {
   document.body.classList.toggle('menu-open');
 }
+
+document.addEventListener('keydown', (e) => {
+  // Escape 关闭菜单
+  if (e.key === 'Escape' && document.body.classList.contains('menu-open')) {
+    document.body.classList.remove('menu-open');
+  }
+
+  // M 键切换菜单（仅移动端视口，非输入状态）
+  if (e.key === 'm' && window.innerWidth <= 1024 && !e.target.closest('input, textarea, [contenteditable]')) {
+    toggleMenu();
+  }
+});

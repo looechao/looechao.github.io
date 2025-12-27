@@ -35,7 +35,7 @@
 
         /* 布局 */
         --sidebar-width: 220px;
-        --content-max: 65ch;
+        --content-max: 650px;
     }
 
     /* 基础元素 */
@@ -149,15 +149,8 @@
 
     /* 响应式 */
     @media (width <= 1024px) {
-        html,
-        body {
-            height: auto;
-            overflow: visible;
-        }
-
         .layout {
             grid-template-columns: 1fr;
-            height: auto;
         }
 
         .sidebar {
@@ -175,10 +168,6 @@
 
         .menu-open .sidebar {
             transform: translateX(0);
-        }
-
-        .main {
-            overflow: visible;
         }
     }
 }
@@ -201,6 +190,10 @@
         margin: calc(-1 * var(--space-md));
         margin-bottom: 0;
         border-bottom: 0.5px solid var(--border);
+        position: sticky;
+        top: calc(-1 * var(--space-md));
+        background: light-dark(#f9fafb, oklch(8% 0 0));
+        z-index: 10;
     }
 
     .breadcrumb-item {
@@ -363,7 +356,7 @@
 
     .featured-more {
         display: inline-block;
-        margin-top: var(--space-md);
+        margin-top: var(--space-sm);
         font-size: 0.875rem;
         color: var(--text-muted);
         text-decoration: none;
@@ -380,7 +373,7 @@
         padding: 0;
 
         li {
-            margin-bottom: var(--space-sm);
+            margin-bottom: var(--space-lg);
         }
 
         a {
@@ -396,7 +389,7 @@
     }
 
     .home-more {
-        margin-top: var(--space-md);
+        margin-top: var(--space-sm);
 
         a {
             font-size: 0.875rem;
