@@ -1,19 +1,22 @@
 {{ define "main" }}
-<ul class="post-list">
-  {{ range where .Site.RegularPages "Section" "posts" }}
-  <li class="post-item">
-    <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
-      {{ .Date.Format "2006-01-02" }}
-    </time>
-    <span class="post-title">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </span>
-    {{ with .Params.tags }}
-    <div class="post-tags">
-      {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
-    </div>
-    {{ end }}
-  </li>
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ with index $posts 0 }}
+<article class="featured-post">
+  <h2 class="featured-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  <div class="featured-meta">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+  </div>
+  <div class="featured-summary">
+    {{ .Summary }}
+  </div>
+  <a href="{{ .Permalink }}" class="featured-more">阅读全文 →</a>
+</article>
+{{ end }}
+
+<ul class="home-list">
+  {{ range first 5 (after 1 $posts) }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
+  <li class="home-more"><a href="{{ "posts/" | relURL }}">更多文章 →</a></li>
 </ul>
 {{ end }}
