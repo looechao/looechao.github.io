@@ -29,16 +29,21 @@
   <script>
     const theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
     document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
   </script>
 </head>
 
 <body>
   <div class="layout">
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
     <aside class="sidebar">
       {{ partial "sidebar.html" . }}
     </aside>
     <main class="main">
-      {{ block "main" . }}{{ end }}
+      <div class="card">
+        {{ partial "breadcrumb.html" . }}
+        {{ block "main" . }}{{ end }}
+      </div>
     </main>
   </div>
 
