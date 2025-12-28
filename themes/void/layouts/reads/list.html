@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="media-page">
+    {{ with .Content }}
+    <div class="media-intro">{{ . }}</div>
+    {{ end }}
+
+    <h2 class="media-section-title">最近读了...</h2>
+    <div class="cover-grid">
+        {{ range .Params.items }} {{ $dbUrl := .neodb }} {{ $dbApiUrl :=
+        "https://neodb.social/api/" }} {{ $dbType := "" }} {{ if ( findRE
+        `^.*neodb\.social\/.*` $dbUrl ) }} {{ $dbType = replaceRE
+        `.*neodb.social\/(.*\/.*)` "$1" $dbUrl }} {{ else }} {{ $dbType = $dbUrl
+        }} {{ $dbApiUrl = "https://neodb.social/api/catalog/fetch?url=" }} {{
+        end }} {{ $url := printf "%s%s" $dbApiUrl $dbType }} {{ $resource :=
+        resources.GetRemote $url }} {{ if $resource }} {{ $data := $resource |
+        transform.Unmarshal }} {{ if $data }}
+        <a href="{{ .url }}" class="cover-item" title="{{ $data.title }}">
+            <img
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                src="{{ $data.cover_image_url }}"
+                alt="{{ $data.title }}"
+            />
+        </a>
+        {{ end }} {{ end }} {{ end }}
+    </div>
+</div>
+{{ end }}
