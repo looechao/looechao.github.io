@@ -276,11 +276,19 @@
         margin-bottom: auto;
 
         a {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
             color: var(--text-muted);
             text-decoration: none;
+            font-size: 0.875rem;
             padding: var(--space-xs) var(--space-sm);
             margin-left: calc(-1 * var(--space-sm));
             border-radius: 4px;
+
+            svg {
+                flex-shrink: 0;
+            }
 
             &:hover,
             &.active {
