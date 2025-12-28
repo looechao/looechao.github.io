@@ -54,14 +54,19 @@ pageRef = '/posts'
 weight = 20
 
 [[menus.main]]
-name = 'Archive'
-pageRef = '/posts'
-weight = 25
+name = 'Builds'
+pageRef = '/builds'
+weight = 30
 
 [[menus.main]]
-name = 'Tags'
+name = 'Reads'
+pageRef = '/reads'
+weight = 35
+
+[[menus.main]]
+name = 'Search'
 pageRef = '/tags'
-weight = 30
+weight = 40
 
 [frontmatter]
 ## lastmod = ["lastmod", ":fileModTime", ":default"]
