@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="tags-header">
+  <div id="pagefind"></div>
+  <div class="tag-cloud">
+    {{ range .Data.Terms.Alphabetical }}
+    <a href="{{ .Page.Permalink }}" class="tag">{{ .Page.Title }}</a>
+    {{ end }}
+  </div>
+</div>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({ element: "#pagefind", showSubResults: true });
+    // 如果有 focus 参数，自动 focus 搜索框
+    if (new URLSearchParams(window.location.search).has('focus')) {
+      document.querySelector('#pagefind input')?.focus();
+    }
+  });
+</script>
+{{ end }}
