@@ -652,8 +652,8 @@
 
     .media-section-title {
         font-size: 1rem;
-        font-weight: 350;
-        color: var(--text-muted);
+        font-weight: 500;
+        color: var(--text-faint);
         margin-bottom: var(--space-md);
     }
 
