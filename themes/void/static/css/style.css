@@ -643,13 +643,65 @@
         color: var(--text-muted);
     }
 
+    /* ----- Media 页面 ----- */
+
+    .media-page {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+    }
+
+    .media-section-title {
+        font-size: 1rem;
+        font-weight: 350;
+        color: var(--text-muted);
+        margin-bottom: var(--space-md);
+    }
+
+    .cover-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: var(--space-sm);
+
+        @media (width <= 768px) {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        @media (width <= 480px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .cover-item {
+        display: block;
+
+        img {
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: opacity 0.2s ease;
+        }
+
+        &:hover img {
+            opacity: 0.8;
+        }
+    }
+
     /* ----- NeoDB 卡片 ----- */
 
     .db-card {
         background: var(--surface-alt);
         border: 1px solid var(--border);
         border-radius: 8px;
-        margin-block: var(--space-lg);
+    }
+
+    .review-grid .db-card {
+        margin: 0;
+        transition: border-color 0.2s ease;
+
+        &:hover {
+            border-color: var(--text-faint);
+        }
     }
 
     .db-card-subject {
@@ -671,7 +723,7 @@
         object-fit: cover;
     }
 
-    .db-card-title a {
+    .db-card-title {
         font-weight: 500;
     }
 
