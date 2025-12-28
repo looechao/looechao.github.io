@@ -1,8 +1,8 @@
 baseURL = 'https://looechao.com'
 buildFuture = true
 languageCode = 'zh-cn'
-title = 'looechao'
-theme = "lucid"
+title = 'Looe Chao'
+theme = "void"
 
 [markup]
 defaultMarkdownHandler = "goldmark"
@@ -23,12 +23,13 @@ block = [['\[', '\]'], ['$$', '$$']]
 inline = [['\(', '\)']]
 
 [pagination]
-pagerSize = 30
+pagerSize = 10
 
 [params]
 author = "looechao"
 description = "looechao's blog."
 favicon = "/images/favicon.png"
+images = ["/images/favicon.png"]
 
 [params.profile]
 avatar = "https://static.looechao.com/profile/profile-purple.png/profile.png"
