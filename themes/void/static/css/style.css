@@ -756,4 +756,69 @@
             }
         }
     }
+
+    /* ----- Builds 项目卡片 ----- */
+
+    .builds-page {
+        margin-inline: var(--space-lg);
+        padding-top: var(--space-lg);
+    }
+
+    .builds-intro {
+        margin-bottom: var(--space-xl);
+        font-family: "Noto Serif", "Noto Serif SC", Georgia, serif;
+        line-height: 1.8;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-md);
+
+        @media (width <= 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (width <= 640px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .project-card {
+        padding: var(--space-md);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: light-dark(#f3f4f6, #161616);
+    }
+
+    .project-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-sm);
+        margin-bottom: var(--space-md);
+    }
+
+    .project-title {
+        font-size: 0.9rem;
+        font-weight: 350;
+        margin: 0;
+        color: var(--text);
+    }
+
+    .project-desc {
+        font-size: 0.875rem;
+        color: var(--text-faint);
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .project-link {
+        color: var(--text-faint);
+        flex-shrink: 0;
+
+        &:hover {
+            color: var(--text);
+        }
+    }
 }
