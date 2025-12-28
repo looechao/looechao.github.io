@@ -7,15 +7,12 @@
     </a>
 
     <nav class="nav">
-        {{ range .Site.Menus.main }} {{ $isActive := or ($.IsMenuCurrent "main"
-        .) ($.HasMenuCurrent "main" .) (eq $.RelPermalink .URL) }}
-        <a href="{{ .URL }}" {{ if $isActive }}class="active" {{ end }}>
+        {{ range .Site.Menus.main }}
+        {{ $isActive := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) (eq $.RelPermalink .URL) }}
+        <a href="{{ .URL }}" {{ if $isActive }}class="active"{{ end }}>
             {{ .Name }}
         </a>
         {{ end }}
-        <a href="{{ "tags/" | relURL }}" {{ if eq .Section "tags" }}class="active"{{ end }}>
-            Search
-        </a>
     </nav>
 
     <div class="sidebar-footer">
