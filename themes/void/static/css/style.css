@@ -661,6 +661,7 @@
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         gap: var(--space-sm);
+        max-width: 960px;
 
         @media (width <= 768px) {
             grid-template-columns: repeat(5, 1fr);
