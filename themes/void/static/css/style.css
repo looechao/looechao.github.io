@@ -91,6 +91,7 @@
 
     .sidebar {
         padding: var(--space-md);
+        padding-right: 0;
         display: flex;
         flex-direction: column;
         background: light-dark(#f3f4f6, oklch(12% 0 0));
@@ -250,14 +251,15 @@
     }
 
     .avatar {
-        width: 32px;
-        height: 32px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         object-fit: cover;
     }
 
     .name {
-        font-weight: 500;
+        font-size: 0.9rem;
+        font-weight: 400;
     }
 
     .bio {
