@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "zh-cn" }}">
+<html lang="{{ .Site.LanguageCode | default "zh-cn" }}" data-theme="light" style="color-scheme: light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light dark">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
@@ -36,12 +35,9 @@
 
   <script>
     (function() {
-      const stored = localStorage.getItem('theme');
-      // 只在用户手动设置过主题时覆盖系统偏好
-      if (stored) {
-        document.documentElement.dataset.theme = stored;
-        document.documentElement.style.colorScheme = stored;
-      }
+      const theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
     })();
   </script>
 </head>

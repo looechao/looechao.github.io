@@ -22,7 +22,7 @@
 
     /* 颜色系统 */
     :root {
-        color-scheme: light dark;
+        color-scheme: light;
 
         /* 语义化颜色 - 使用 light-dark() 自动适应 */
         --surface: light-dark(oklch(98% 0 0), oklch(8% 0 0));
@@ -42,6 +42,10 @@
         /* 布局 */
         --sidebar-width: 220px;
         --content-max: 650px;
+    }
+
+    [data-theme="dark"] {
+        color-scheme: dark;
     }
 
     /* 基础元素 */
