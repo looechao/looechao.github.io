@@ -609,6 +609,82 @@
             border-radius: 6px;
         }
 
+        /* 图片大小控制 */
+        figure.image-tiny img {
+            max-width: 15%;
+            width: 15%;
+            height: auto;
+        }
+
+        figure.image-small img {
+            max-width: 25%;
+            width: 25%;
+            height: auto;
+        }
+
+        figure.image-medium img {
+            max-width: 50%;
+            width: 50%;
+            height: auto;
+        }
+
+        figure.image-large img {
+            max-width: 75%;
+            width: 75%;
+            height: auto;
+        }
+
+        /* 图片对齐样式 */
+        figure.center-image {
+            text-align: center;
+            margin: 0;
+            display: block;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        figure.left-image {
+            text-align: left;
+            margin: var(--space-lg) 0;
+        }
+
+        figure.right-image {
+            text-align: right;
+            margin: var(--space-lg) 0;
+        }
+
+        /* 文字环绕样式 */
+        figure.float-left {
+            float: left;
+            margin: 0 var(--space-md) var(--space-md) 0;
+            max-width: 50%;
+
+            img {
+                margin: 0;
+                display: block;
+            }
+        }
+
+        figure.float-right {
+            float: right;
+            margin: 0 0 var(--space-md) var(--space-md);
+            max-width: 50%;
+
+            img {
+                margin: 0;
+                display: block;
+            }
+        }
+
+        figure figcaption {
+            font-size: 0.875rem;
+            color: var(--text-faint);
+            margin-top: var(--space-xs);
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
