@@ -1,0 +1,49 @@
+{{- $alt := .Text -}}
+{{- $caption := .Title | default .Text -}}
+{{- $figureClass := "" -}}
+
+{{- /* 处理文字环绕 */ -}}
+{{- if strings.Contains $caption "float-left" -}}
+    {{- $figureClass = printf "%s float-left" $figureClass -}}
+    {{- $caption = strings.Replace $caption "float-left" "" -1 | strings.TrimSpace -}}
+{{- end -}}
+{{- if strings.Contains $caption "float-right" -}}
+    {{- $figureClass = printf "%s float-right" $figureClass -}}
+    {{- $caption = strings.Replace $caption "float-right" "" -1 | strings.TrimSpace -}}
+{{- end -}}
+
+{{- /* 处理大小 */ -}}
+{{- if strings.Contains $caption "tiny" -}}
+    {{- $figureClass = printf "%s image-tiny" $figureClass -}}
+    {{- $caption = strings.Replace $caption "tiny" "" -1 | strings.TrimSpace -}}
+{{- else if strings.Contains $caption "small" -}}
+    {{- $figureClass = printf "%s image-small" $figureClass -}}
+    {{- $caption = strings.Replace $caption "small" "" -1 | strings.TrimSpace -}}
+{{- else if strings.Contains $caption "medium" -}}
+    {{- $figureClass = printf "%s image-medium" $figureClass -}}
+    {{- $caption = strings.Replace $caption "medium" "" -1 | strings.TrimSpace -}}
+{{- else if strings.Contains $caption "large" -}}
+    {{- $figureClass = printf "%s image-large" $figureClass -}}
+    {{- $caption = strings.Replace $caption "large" "" -1 | strings.TrimSpace -}}
+{{- end -}}
+
+{{- /* 处理对齐方式 */ -}}
+{{- if strings.Contains $caption "center" -}}
+    {{- $figureClass = printf "%s center-image" $figureClass -}}
+    {{- $caption = strings.Replace $caption "center" "" -1 | strings.TrimSpace -}}
+{{- else if strings.Contains $caption "left" -}}
+    {{- $figureClass = printf "%s left-image" $figureClass -}}
+    {{- $caption = strings.Replace $caption "left" "" -1 | strings.TrimSpace -}}
+{{- else if strings.Contains $caption "right" -}}
+    {{- $figureClass = printf "%s right-image" $figureClass -}}
+    {{- $caption = strings.Replace $caption "right" "" -1 | strings.TrimSpace -}}
+{{- end -}}
+
+<figure{{ if $figureClass }} class="{{ strings.TrimSpace $figureClass }}"{{ end }}>
+    <img src="{{ .Destination | safeURL }}"
+         alt="{{ $caption }}"
+         {{ with .Title }}title="{{ . }}"{{ end }}>
+    {{ if $caption }}
+    <figcaption>{{ $caption }}</figcaption>
+    {{ end }}
+</figure>
