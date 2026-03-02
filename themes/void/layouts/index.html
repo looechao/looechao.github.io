@@ -14,7 +14,7 @@
 {{ end }}
 
 <ul class="home-list">
-  {{ range first 5 (after 1 $posts) }}
+  {{ range first 6 (after 1 $posts) }}
   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
   <li class="home-more"><a href="{{ "posts/" | relURL }}">更多文章 →</a></li>
