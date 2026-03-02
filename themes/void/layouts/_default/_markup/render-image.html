@@ -3,43 +3,43 @@
 {{- $figureClass := "" -}}
 
 {{- /* 处理文字环绕 */ -}}
-{{- if strings.Contains $caption "float-left" -}}
+{{- if in $caption "float-left" -}}
     {{- $figureClass = printf "%s float-left" $figureClass -}}
-    {{- $caption = strings.Replace $caption "float-left" "" -1 | strings.TrimSpace -}}
+    {{- $caption = trim (replace $caption "float-left" "") " " -}}
 {{- end -}}
-{{- if strings.Contains $caption "float-right" -}}
+{{- if in $caption "float-right" -}}
     {{- $figureClass = printf "%s float-right" $figureClass -}}
-    {{- $caption = strings.Replace $caption "float-right" "" -1 | strings.TrimSpace -}}
+    {{- $caption = trim (replace $caption "float-right" "") " " -}}
 {{- end -}}
 
 {{- /* 处理大小 */ -}}
-{{- if strings.Contains $caption "tiny" -}}
+{{- if in $caption "tiny" -}}
     {{- $figureClass = printf "%s image-tiny" $figureClass -}}
-    {{- $caption = strings.Replace $caption "tiny" "" -1 | strings.TrimSpace -}}
-{{- else if strings.Contains $caption "small" -}}
+    {{- $caption = trim (replace $caption "tiny" "") " " -}}
+{{- else if in $caption "small" -}}
     {{- $figureClass = printf "%s image-small" $figureClass -}}
-    {{- $caption = strings.Replace $caption "small" "" -1 | strings.TrimSpace -}}
-{{- else if strings.Contains $caption "medium" -}}
+    {{- $caption = trim (replace $caption "small" "") " " -}}
+{{- else if in $caption "medium" -}}
     {{- $figureClass = printf "%s image-medium" $figureClass -}}
-    {{- $caption = strings.Replace $caption "medium" "" -1 | strings.TrimSpace -}}
-{{- else if strings.Contains $caption "large" -}}
+    {{- $caption = trim (replace $caption "medium" "") " " -}}
+{{- else if in $caption "large" -}}
     {{- $figureClass = printf "%s image-large" $figureClass -}}
-    {{- $caption = strings.Replace $caption "large" "" -1 | strings.TrimSpace -}}
+    {{- $caption = trim (replace $caption "large" "") " " -}}
 {{- end -}}
 
 {{- /* 处理对齐方式 */ -}}
-{{- if strings.Contains $caption "center" -}}
+{{- if in $caption "center" -}}
     {{- $figureClass = printf "%s center-image" $figureClass -}}
-    {{- $caption = strings.Replace $caption "center" "" -1 | strings.TrimSpace -}}
-{{- else if strings.Contains $caption "left" -}}
+    {{- $caption = trim (replace $caption "center" "") " " -}}
+{{- else if in $caption "left" -}}
     {{- $figureClass = printf "%s left-image" $figureClass -}}
-    {{- $caption = strings.Replace $caption "left" "" -1 | strings.TrimSpace -}}
-{{- else if strings.Contains $caption "right" -}}
+    {{- $caption = trim (replace $caption "left" "") " " -}}
+{{- else if in $caption "right" -}}
     {{- $figureClass = printf "%s right-image" $figureClass -}}
-    {{- $caption = strings.Replace $caption "right" "" -1 | strings.TrimSpace -}}
+    {{- $caption = trim (replace $caption "right" "") " " -}}
 {{- end -}}
 
-<figure{{ if $figureClass }} class="{{ strings.TrimSpace $figureClass }}"{{ end }}>
+<figure{{ if $figureClass }} class="{{ trim $figureClass " " }}"{{ end }}>
     <img src="{{ .Destination | safeURL }}"
          alt="{{ $caption }}"
          {{ with .Title }}title="{{ . }}"{{ end }}>
