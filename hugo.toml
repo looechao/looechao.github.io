@@ -5,8 +5,6 @@ title = 'Looe Chao'
 theme = "void"
 
 [markup]
-defaultMarkdownHandler = "goldmark"
-
 [markup.highlight]
 style = 'github'  # https://swapoff.org/chroma/playground/
 lineNos = false
@@ -34,7 +32,6 @@ images = ["/images/favicon.png"]
 [params.profile]
 avatar = "https://static.looechao.com/profile/profile-purple.png/profile.png"
 bio = "looechao"
-favicon = "/images/favicon.png"
 name = "Looe"
 
 [params.social]
@@ -68,9 +65,6 @@ name = 'Search'
 pageRef = '/tags'
 weight = 40
 
-[frontmatter]
-## lastmod = ["lastmod", ":fileModTime", ":default"]
-
 [services]
 [services.googleAnalytics]
 id = 'G-9W970VLJ6X'
@@ -91,4 +85,4 @@ lang = "en"
 [[module.mounts]]
   source = 'content'
   target = 'content'
-  excludeFiles = ['_templates/**']
+  files = ['! _templates/**']
