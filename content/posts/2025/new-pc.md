@@ -8,7 +8,7 @@ tags:
   - 生活
   - 数码
 ---
-太久没玩游戏了，本着书、影、音、游一样不落的原则，计划升级一下硬件
+ 太久没玩游戏了 ，本着书、影、音、游一样不落的原则，计划升级一下硬件
 
 简单研究了一圈发现 PS5 和 XSX 都到了比较甜点的价位， 但自己还是更倾向于 PC ：
 
@@ -33,7 +33,7 @@ tags:
 
 `机箱`：SAMA M2 MESH
 
-![New PC medium center](https://static.looechao.com/2025/newpc.jpg)
+![New PC center](https://static.looechao.com/2025/newpc.jpg)
 
 ### 使用体验
 
@@ -41,6 +41,6 @@ tags:
 
 ### 外设
 
-![Xbox Series Controller medium center](https://static.looechao.com/2025/xboxcontroller.jpg)
+![Xbox Series Controller center](https://static.looechao.com/2025/xboxcontroller.jpg)
 
 Xbox Series 手柄，买了美版的，做工很好，美中不足的问题是过海关可能会被拆看检查，到手发现有遗留的灰尘。
