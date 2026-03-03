@@ -1,49 +1,9 @@
-{{- $alt := .Text -}}
 {{- $caption := .Title | default .Text -}}
-{{- $figureClass := "" -}}
-
-{{- /* 处理文字环绕 */ -}}
-{{- if in $caption "float-left" -}}
-    {{- $figureClass = printf "%s float-left" $figureClass -}}
-    {{- $caption = trim (replace $caption "float-left" "") " " -}}
-{{- end -}}
-{{- if in $caption "float-right" -}}
-    {{- $figureClass = printf "%s float-right" $figureClass -}}
-    {{- $caption = trim (replace $caption "float-right" "") " " -}}
-{{- end -}}
-
-{{- /* 处理大小 */ -}}
-{{- if in $caption "tiny" -}}
-    {{- $figureClass = printf "%s image-tiny" $figureClass -}}
-    {{- $caption = trim (replace $caption "tiny" "") " " -}}
-{{- else if in $caption "small" -}}
-    {{- $figureClass = printf "%s image-small" $figureClass -}}
-    {{- $caption = trim (replace $caption "small" "") " " -}}
-{{- else if in $caption "medium" -}}
-    {{- $figureClass = printf "%s image-medium" $figureClass -}}
-    {{- $caption = trim (replace $caption "medium" "") " " -}}
-{{- else if in $caption "large" -}}
-    {{- $figureClass = printf "%s image-large" $figureClass -}}
-    {{- $caption = trim (replace $caption "large" "") " " -}}
-{{- end -}}
-
-{{- /* 处理对齐方式 */ -}}
-{{- if in $caption "center" -}}
-    {{- $figureClass = printf "%s center-image" $figureClass -}}
-    {{- $caption = trim (replace $caption "center" "") " " -}}
-{{- else if in $caption "left" -}}
-    {{- $figureClass = printf "%s left-image" $figureClass -}}
-    {{- $caption = trim (replace $caption "left" "") " " -}}
-{{- else if in $caption "right" -}}
-    {{- $figureClass = printf "%s right-image" $figureClass -}}
-    {{- $caption = trim (replace $caption "right" "") " " -}}
-{{- end -}}
-
-<figure{{ if $figureClass }} class="{{ trim $figureClass " " }}"{{ end }}>
-    <img src="{{ .Destination | safeURL }}"
-         alt="{{ $caption }}"
-         {{ with .Title }}title="{{ . }}"{{ end }}>
-    {{ if $caption }}
+{{- if $caption -}}
+<figure>
+    <img src="{{ .Destination | safeURL }}" alt="{{ $caption }}"{{ with .Title }} title="{{ . }}"{{ end }}>
     <figcaption>{{ $caption }}</figcaption>
-    {{ end }}
 </figure>
+{{- else -}}
+<img src="{{ .Destination | safeURL }}" alt=""{{ with .Title }} title="{{ . }}"{{ end }}>
+{{- end -}}

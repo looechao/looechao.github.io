@@ -1,46 +1,74 @@
-{{- $alt := .Text -}}
 {{- $caption := .Title | default .Text -}}
 {{- $class := "zoomable" -}}
 {{- $figureClass := "" -}}
 
-{{- /* 处理文字环绕 (先处理长的关键词) */ -}}
-{{- if strings.Contains $caption "float-left" -}}
-    {{- $figureClass = printf "%s float-left" $figureClass -}}
-    {{- $caption = strings.Replace $caption "float-left" "" -1 | strings.TrimSpace -}}
-{{- end -}}
-{{- if strings.Contains $caption "float-right" -}}
-    {{- $figureClass = printf "%s float-right" $figureClass -}}
-    {{- $caption = strings.Replace $caption "float-right" "" -1 | strings.TrimSpace -}}
+{{- /* 将 caption 拆分为单词，从右往左消费关键词 */ -}}
+{{- $words := findRE "\\S+" $caption -}}
+{{- $processing := true -}}
+{{- $sizeSet := false -}}
+{{- $alignSet := false -}}
+
+{{- range seq (len $words) -}}
+  {{- if and $processing (gt (len $words) 0) -}}
+    {{- $last := index $words (sub (len $words) 1) -}}
+    {{- $rest := first (sub (len $words) 1) $words -}}
+    {{- if eq $last "float-left" -}}
+      {{- $figureClass = printf "%s float-left" $figureClass -}}
+      {{- $words = $rest -}}
+    {{- else if eq $last "float-right" -}}
+      {{- $figureClass = printf "%s float-right" $figureClass -}}
+      {{- $words = $rest -}}
+    {{- else if eq $last "tiny" -}}
+      {{- if not $sizeSet -}}
+        {{- $figureClass = printf "%s image-tiny" $figureClass -}}
+        {{- $sizeSet = true -}}
+      {{- end -}}
+      {{- $words = $rest -}}
+    {{- else if eq $last "small" -}}
+      {{- if not $sizeSet -}}
+        {{- $figureClass = printf "%s image-small" $figureClass -}}
+        {{- $sizeSet = true -}}
+      {{- end -}}
+      {{- $words = $rest -}}
+    {{- else if eq $last "medium" -}}
+      {{- if not $sizeSet -}}
+        {{- $figureClass = printf "%s image-medium" $figureClass -}}
+        {{- $sizeSet = true -}}
+      {{- end -}}
+      {{- $words = $rest -}}
+    {{- else if eq $last "large" -}}
+      {{- if not $sizeSet -}}
+        {{- $figureClass = printf "%s image-large" $figureClass -}}
+        {{- $sizeSet = true -}}
+      {{- end -}}
+      {{- $words = $rest -}}
+    {{- else if eq $last "center" -}}
+      {{- if not $alignSet -}}
+        {{- $figureClass = printf "%s center-image" $figureClass -}}
+        {{- $alignSet = true -}}
+      {{- end -}}
+      {{- $words = $rest -}}
+    {{- else if eq $last "left" -}}
+      {{- if not $alignSet -}}
+        {{- $figureClass = printf "%s left-image" $figureClass -}}
+        {{- $alignSet = true -}}
+      {{- end -}}
+      {{- $words = $rest -}}
+    {{- else if eq $last "right" -}}
+      {{- if not $alignSet -}}
+        {{- $figureClass = printf "%s right-image" $figureClass -}}
+        {{- $alignSet = true -}}
+      {{- end -}}
+      {{- $words = $rest -}}
+    {{- else -}}
+      {{- $processing = false -}}
+    {{- end -}}
+  {{- end -}}
 {{- end -}}
 
-{{- /* 处理大小 */ -}}
-{{- if strings.Contains $caption "small" -}}
-    {{- $figureClass = printf "%s image-small" $figureClass -}}
-    {{- $caption = strings.Replace $caption "small" "" -1 | strings.TrimSpace -}}
-{{- else if strings.Contains $caption "medium" -}}
-    {{- $figureClass = printf "%s image-medium" $figureClass -}}
-    {{- $caption = strings.Replace $caption "medium" "" -1 | strings.TrimSpace -}}
-{{- else if strings.Contains $caption "large" -}}
-    {{- $figureClass = printf "%s image-large" $figureClass -}}
-    {{- $caption = strings.Replace $caption "large" "" -1 | strings.TrimSpace -}}
-{{- else if strings.Contains $caption "tiny" -}}
-    {{- $figureClass = printf "%s image-tiny" $figureClass -}}
-    {{- $caption = strings.Replace $caption "tiny" "" -1 | strings.TrimSpace -}}
-{{- end -}}
+{{- $caption = delimit $words " " -}}
 
-{{- /* 处理对齐方式 */ -}}
-{{- if strings.Contains $caption "center" -}}
-    {{- $figureClass = printf "%s center-image" $figureClass -}}
-    {{- $caption = strings.Replace $caption "center" "" -1 | strings.TrimSpace -}}
-{{- else if strings.Contains $caption "left" -}}
-    {{- $figureClass = printf "%s left-image" $figureClass -}}
-    {{- $caption = strings.Replace $caption "left" "" -1 | strings.TrimSpace -}}
-{{- else if strings.Contains $caption "right" -}}
-    {{- $figureClass = printf "%s right-image" $figureClass -}}
-    {{- $caption = strings.Replace $caption "right" "" -1 | strings.TrimSpace -}}
-{{- end -}}
-
-<figure{{ if $figureClass }} class="{{ strings.TrimSpace $figureClass }}"{{ end }}>
+<figure{{ with $figureClass }} class="{{ trim . " " }}"{{ end }}>
     <img src="{{ .Destination | safeURL }}" 
          alt="{{ $caption }}" 
          {{ with .Title }}title="{{ . }}"{{ end }}
