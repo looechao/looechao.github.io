@@ -33,7 +33,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.147.8' # 使用您指定的版本
+          hugo-version: '0.157.0' # 使用您指定的版本
           extended: true # 安装 extended 版本以支持 Sass/SCSS
 
       - name: Setup Pages
