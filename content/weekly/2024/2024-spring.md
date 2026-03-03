@@ -37,11 +37,11 @@ tags:
 
 - 和大伙聚餐多次，吃湘菜
 
-  ![和 Asumi 出去玩 medium center](https://static.looechao.com/week/week22-2.png)
+  ![和 Asumi 出去玩](https://static.looechao.com/week/week22-2.png)
 
-  ![答辩 medium center](https://static.looechao.com/week/week22-3.jpg)
+  ![答辩](https://static.looechao.com/week/week22-3.jpg)
 
-  ![毕业 medium center](https://static.looechao.com/week/week22-4.jpg)
+  ![毕业](https://static.looechao.com/week/week22-4.jpg)
 
 
 
@@ -51,7 +51,7 @@ tags:
 
 - 本周最开心的事情当然是和Asumi的夏夜约会
 
-  ![约定 medium center](https://static.looechao.com/week/week22-1.jpg)
+  ![约定](https://static.looechao.com/week/week22-1.jpg)
 
 - 和四年生活中的好朋友一起拍照的时间让我感觉很幸福，感谢大家带给我的友谊和爱🙏
 
@@ -107,17 +107,17 @@ tags:
 
 - 罗森的饭团好好吃！
 
-  ![疏狐 medium center](https://static.looechao.com/week/week21-1.jpg)
+  ![疏狐](https://static.looechao.com/week/week21-1.jpg)
 
-  ![蜡笔小新饼干 medium center](https://static.looechao.com/week/week21-2.jpg)
+  ![蜡笔小新饼干](https://static.looechao.com/week/week21-2.jpg)
 
-  ![小猫 medium center](https://static.looechao.com/week/week21-3.jpg)
+  ![小猫](https://static.looechao.com/week/week21-3.jpg)
 
-  ![medium center](https://static.looechao.com/week/week21-4.jpg)
+  ![](https://static.looechao.com/week/week21-4.jpg)
 
-  ![返校 medium center](https://static.looechao.com/week/week21-5.jpg)
+  ![返校](https://static.looechao.com/week/week21-5.jpg)
 
-  ![记忆碎片 medium center](https://static.looechao.com/week/week21-6.jpg)
+  ![记忆碎片](https://static.looechao.com/week/week21-6.jpg)
 
 4. 心情
 
@@ -175,11 +175,11 @@ tags:
 
 - 终于买了一箱牛奶
 
-  ![椰香咖喱 medium center](https://static.looechao.com/week/week20-1.jpg)
+  ![椰香咖喱](https://static.looechao.com/week/week20-1.jpg)
 
-  ![宝藏店铺 medium center](https://static.looechao.com/week/week20-2.jpg)
+  ![宝藏店铺](https://static.looechao.com/week/week20-2.jpg)
 
-  ![medium center](https://static.looechao.com/week/week20-3.jpg)
+  ![](https://static.looechao.com/week/week20-3.jpg)
 
 4. 心情
 
@@ -236,11 +236,11 @@ tags:
 
 - 又尝试了血橙，感觉不如伦晚橙好吃
 
-  ![锅盔 medium center](https://static.looechao.com/week/week19-1.jpg)
+  ![锅盔](https://static.looechao.com/week/week19-1.jpg)
 
-  ![medium center](https://static.looechao.com/week/week19-2.jpg)
+  ![](https://static.looechao.com/week/week19-2.jpg)
 
-  ![血橙 medium center](https://static.looechao.com/week/week19-3.jpg)
+  ![血橙](https://static.looechao.com/week/week19-3.jpg)
 
 4. 心情
 
@@ -291,9 +291,9 @@ tags:
 
 - 研究笔记本的前置摄像头，两台相差快十年的本子居然没有太大的区别，惊了(⁠☉⁠｡⁠☉⁠)⁠!
 
-  ![medium center](https://static.looechao.com/week/week18-5.jpg)
+  ![](https://static.looechao.com/week/week18-5.jpg)
 
-  ![medium center](https://static.looechao.com/week/week18-4.jpg)
+  ![](https://static.looechao.com/week/week18-4.jpg)
 
 3. 饮食
 
@@ -307,9 +307,9 @@ tags:
 
 - 水果吃了好多，总是在吃橙子
 
-  ![medium center](https://static.looechao.com/week/week18-2.jpg)
+  ![](https://static.looechao.com/week/week18-2.jpg)
 
-  ![medium center](https://static.looechao.com/week/week18-3.jpg)
+  ![](https://static.looechao.com/week/week18-3.jpg)
 
 4. 心情
 
@@ -366,11 +366,11 @@ int** ptr2        int* ptr1
 
 - 最爱的三明治早餐
 
-  ![三明治 medium center](https://static.looechao.com/week/week17-1.jpg)
+  ![三明治](https://static.looechao.com/week/week17-1.jpg)
 
 - 周末快乐的KFC时光
 
-  ![medium center](https://static.looechao.com/week/week17-3.jpg)
+  ![](https://static.looechao.com/week/week17-3.jpg)
 
 4. 心情
 
@@ -378,7 +378,7 @@ int** ptr2        int* ptr1
 
 - 又买到了ikea的博克尔杯子，无限回购！
 
-  ![ikea medium center](https://static.looechao.com/week/week17-2.jpg)
+  ![ikea](https://static.looechao.com/week/week17-2.jpg)
 
 - 和asumi的聊天总是能够擦除我一整天的坏心情
 
@@ -414,11 +414,11 @@ int** ptr2        int* ptr1
 
 - 合租了碧桂园的房子
 
-  ![medium center](https://static.looechao.com/week/week16-1.jpg)
+  ![](https://static.looechao.com/week/week16-1.jpg)
 
-  ![metro medium center](https://static.looechao.com/week/week16-2.jpg)
+  ![metro](https://static.looechao.com/week/week16-2.jpg)
 
-  ![medium center](https://static.looechao.com/week/week16-3.jpg)
+  ![](https://static.looechao.com/week/week16-3.jpg)
 
 2. 本周的娱乐时间
 
@@ -525,7 +525,7 @@ int** ptr2        int* ptr1
 
 - 在林语吃的次数变多了，普洱牛腩还不错
 
-  ![阿姨把最后的牛腩全给我了 medium center](https://static.looechao.com/week14_3.jpg)
+  ![阿姨把最后的牛腩全给我了](https://static.looechao.com/week14_3.jpg)
 
 
 
@@ -552,9 +552,9 @@ int** ptr2        int* ptr1
 
 - 安装了地狱难度的Archlinux，安装完后会发现原来KDE Plasma这么好看
 
-  ![Archlinux medium center](https://static.looechao.com/week14_1.jpg)
+  ![Archlinux](https://static.looechao.com/week14_1.jpg)
 
-  ![medium center](https://static.looechao.com/week14_2.jpg)
+  ![](https://static.looechao.com/week14_2.jpg)
 
 
 
@@ -596,9 +596,9 @@ int** ptr2        int* ptr1
 
 - 逛了迪卡侬和宜家，去了樱花节
 
-  ![medium center](https://static.looechao.com/week13_4.jpg)
+  ![](https://static.looechao.com/week13_4.jpg)
 
-  ![medium center](https://static.looechao.com/week13_1.jpg)
+  ![](https://static.looechao.com/week13_1.jpg)
 
 3. 饮食
 
@@ -606,14 +606,14 @@ int** ptr2        int* ptr1
 
 - 意外发现原来宜家的冰淇凌这么好吃
 
-  ![icecream medium center](https://static.looechao.com/week13_5.jpg)
+  ![icecream](https://static.looechao.com/week13_5.jpg)
 
 
 
 
 - 吃了经典的寿司+鸡柳搭配
 
-  ![sushi medium center](https://static.looechao.com/week13_2.jpg)
+  ![sushi](https://static.looechao.com/week13_2.jpg)
 
 4. 心情
 
@@ -731,9 +731,9 @@ int** ptr2        int* ptr1
 
 - 居然挖掘出了豆花店的隐藏盖饭（土豆牛肉超好吃）
 
-  ![辣椒炒肉 medium center](https://static.looechao.com/doufu1.jpg)
+  ![辣椒炒肉](https://static.looechao.com/doufu1.jpg)
 
-  ![土豆牛肉 medium center](https://static.looechao.com/doufu2.jpg)
+  ![土豆牛肉](https://static.looechao.com/doufu2.jpg)
 
 - 又吃了一次沙县的炒米线，还是很好吃
 - 嚼炫迈上瘾(＠_＠:)

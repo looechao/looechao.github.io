@@ -29,7 +29,7 @@ categories:
 
 看了很多季 Futurama，脑洞非常大的科幻穿越题材的动漫连续剧，影片中有一句台词被做成了非常出圈的 Meme：
 
-![Fry center](https://uploads.dailydot.com/2024/07/shut-up-and-take-my-money-1.gif?auto=compress&fm=gif)
+![Fry](https://uploads.dailydot.com/2024/07/shut-up-and-take-my-money-1.gif?auto=compress&fm=gif)
 
 令我印象比较深的点：
 - 世界观：在 3001 年，宇宙村代替了地球村，去不同的星球和出国旅行没什么区别，Alian、Robot、人类都融洽的相处，莫名有点像今天 Fediverse 的概念；

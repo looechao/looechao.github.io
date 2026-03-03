@@ -14,7 +14,7 @@ tags:
 
 
 
-![ large center](https://static.looechao.com/2024/llm-1.png)
+![](https://static.looechao.com/2024/llm-1.png)
 
 1. Text agent
 
@@ -24,7 +24,7 @@ tags:
 
    最早的ChatBot
 
-   ![Eliza large center](https://upload.wikimedia.org/wikipedia/commons/4/4e/ELIZA_conversation.jpg)
+   ![Eliza](https://upload.wikimedia.org/wikipedia/commons/4/4e/ELIZA_conversation.jpg)
 
 2. LLM agent
 
@@ -82,11 +82,11 @@ sequenceDiagram
 
 主要是通过思维链(Chain of thoughts)增强可持续时间
 
-![Chin of Thought medium center](https://static.looechao.com/2024/llm-2.png)
+![Chin of Thought](https://static.looechao.com/2024/llm-2.png)
 
 #### **行动** Acting
 
-![Actions medium center](https://static.looechao.com/2024/llm-3.png)
+![Actions](https://static.looechao.com/2024/llm-3.png)
 
 1. RAG技术
 
