@@ -1,5 +1,6 @@
 baseURL = 'https://looechao.com'
 buildFuture = true
+ignoreFiles = ['_templates']
 languageCode = 'zh-cn'
 title = 'Looe Chao'
 theme = "void"
@@ -85,4 +86,3 @@ lang = "en"
 [[module.mounts]]
   source = 'content'
   target = 'content'
-  files = ['! _templates/**']
