@@ -6,7 +6,6 @@ pin: false
 summary: ""
 tags:
   - Tech
-  - 
 categories:
   -
 ---
