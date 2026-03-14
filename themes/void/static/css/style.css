@@ -381,6 +381,24 @@
         > * + * {
             margin-top: var(--space-lg);
         }
+
+        figure {
+            width: 100%;
+            margin: 0;
+        }
+
+        figure img {
+            border-radius: 6px;
+            width: 100%;
+            height: auto;
+        }
+
+        figure figcaption {
+            font-size: 0.875rem;
+            color: var(--text-faint);
+            margin-top: var(--space-xs);
+            text-align: center;
+        }
     }
 
     .featured-more {
@@ -642,6 +660,17 @@
             color: var(--text-faint);
             margin-top: var(--space-xs);
             text-align: center;
+        }
+
+        .footnotes hr {
+            border: none;
+            border-top: 0.5px solid var(--border);
+            margin: var(--space-lg) 0 var(--space-md);
+        }
+
+        .footnotes ol {
+            padding-left: var(--space-md);
+            font-size: 0.875rem;
         }
 
         table {
