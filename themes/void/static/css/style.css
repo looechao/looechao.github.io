@@ -399,6 +399,22 @@
             margin-top: var(--space-xs);
             text-align: center;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+        }
+
+        :is(th, td) {
+            border: 1px solid var(--border);
+            padding: var(--space-sm);
+            text-align: left;
+        }
+
+        th {
+            background: var(--surface-alt);
+        }
     }
 
     .featured-more {
