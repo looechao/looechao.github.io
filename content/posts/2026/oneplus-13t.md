@@ -5,9 +5,8 @@ draft: false
 pin: false
 summary: ""
 tags:
-  - Tech
-categories:
-  -
+  - 技术
+  - 数码
 ---
 
 

@@ -6,6 +6,7 @@ summary: 夏令营作业P01-P60，C语言和部分C++Primer相关
 tags:
   - LeetCode
   - C/CPP
+  - 算法
 ---
 # P01★
 题目描述：判断输入的不同x值，计算相应的y值。

@@ -6,8 +6,6 @@ summary: 短字符串的优化策略
 tags:
   - 技术
   - C/CPP
-  - SSO
-  - string
 ---
 ## string的存储结构
 

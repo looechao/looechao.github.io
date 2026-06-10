@@ -4,8 +4,7 @@ date: "2023-02-25T21:31:13+08:00"
 draft: false
 summary: 第一次尝试建立hexo框架的站点
 tags:
-  - 笔记
-  - hexo
+  - 技术
 ---
 ## 概述：
 

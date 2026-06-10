@@ -5,7 +5,6 @@ draft: false
 summary: BFS探索
 tags:
   - 算法
-  - BFS
   - C/CPP
 ---
 几则使用广度优先遍历算法求解的题目

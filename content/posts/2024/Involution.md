@@ -5,7 +5,7 @@ draft: false
 pin: true
 summary: 只许向上爬，不准往下走的竞争
 tags:
-  - 杂谈
+  - 生活
   - 成长
   - 内卷
 ---

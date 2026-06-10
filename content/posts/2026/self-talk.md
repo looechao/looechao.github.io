@@ -5,10 +5,9 @@ draft: false
 pin: false
 summary: ""
 tags:
-  - 习惯
   - 成长
-categories:
-  -
+  - 健康
+  - 习惯
 ---
 
 William James 在 1890 年出版过《心理学原理》，书中有一个章节比较系统地讨论了习惯，简单来说：习惯是通过重复形成的，不需要意志和注意力的自动化行为。

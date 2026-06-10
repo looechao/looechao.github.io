@@ -5,10 +5,10 @@ draft: false
 pin: false
 summary: ""
 tags:
+  - 阅读
+  - 成长
   - 认知
   - 人性
-categories:
-  -
 ---
 {{<neodb "https://neodb.social/book/6rzvcP2SvZeY86TxwhIw2t">}}
 

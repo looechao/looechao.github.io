@@ -6,9 +6,8 @@ pin: false
 summary: ""
 tags:
   - 旅行
+  - 生活
   - 香港
-categories:
-  -
 ---
 
 3月中旬，趁着天气还算凉爽，和朋友一起去香港走了麦里浩径。

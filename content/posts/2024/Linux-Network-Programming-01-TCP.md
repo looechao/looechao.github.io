@@ -7,9 +7,6 @@ tags:
   - 技术
   - Linux
   - 网络编程
-  - TCP
-  - UDP
-  - 即时通信系统
 ---
 <div style="width: 80%; margin: auto;">
     <img src="https://static.looechao.com/post/TCP-UDP.jpg" alt="shotonspf" style="width: 100%;" />

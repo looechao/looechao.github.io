@@ -7,9 +7,6 @@ tags:
   - 技术
   - Linux
   - 网络编程
-  - SELECT
-  - EPOLL
-  - 海量连接处理
 ---
 # EPOLL
 

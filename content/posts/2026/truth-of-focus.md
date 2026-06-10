@@ -5,11 +5,12 @@ draft: false
 pin: false
 summary: ""
 tags:
+  - 阅读
+  - 成长
+  - 健康
   - 专注
   - 脑科学
   - 人性
-categories:
-  -
 ---
 {{<neodb "https://neodb.social/book/6uY2LwuCT2MC0VCIeb1Vw1">}}
 

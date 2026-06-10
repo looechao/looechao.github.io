@@ -6,6 +6,7 @@ summary: leetcode刷题笔记
 tags:
   - LeetCode
   - C/CPP
+  - 算法
 ---
 # P0001★
 题目描述：two-sum

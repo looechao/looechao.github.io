@@ -5,10 +5,9 @@ draft: false
 pin: true
 summary: 通过FTP编辑xbox360游戏的封面
 tags:
-  - xbox360
   - 工具
-  - 笔记
   - 数码
+  - xbox360
 ---
 ### 概述：
 
