@@ -161,8 +161,27 @@
 
     /* 响应式 */
     @media (width <= 1024px) {
+        /* 移动端回归页面自然滚动：解除桌面端「锁死视口 + 内层容器滚动」方案，
+           避免 iOS Safari 地址栏伸缩 / 嵌套滚动手势导致页面卡住无法滚动 */
+        html,
+        body {
+            height: auto;
+            overflow: visible;
+        }
+
         .layout {
             grid-template-columns: 1fr;
+            height: auto;
+            min-height: 100dvh;
+        }
+
+        .main {
+            overflow: visible;
+        }
+
+        .card {
+            flex: none;
+            overflow-y: visible;
         }
 
         .sidebar {
