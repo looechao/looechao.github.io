@@ -652,9 +652,23 @@
             margin-top: var(--space-lg);
         }
 
-        :is(h1, h2, h3, h4) {
-            margin-top: var(--space-xl);
-            line-height: 1.3;
+        /* ---- 标题层级 - 参考 geek-death 的 em 比例与字重 ---- */
+        :is(h1, h2, h3, h4, h5, h6) {
+            line-height: 1.4;
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        h1 { font-size: 1.5em; font-weight: 800; }
+        h2 { font-size: 1.25em; font-weight: 800; }
+        h3 { font-size: 1.125em; font-weight: 700; }
+        h4 { font-size: 1em; font-weight: 700; }
+        h5 { font-size: 0.9em; font-weight: 700; }
+        h6 { font-size: 0.875em; font-weight: 600; }
+
+        /* 标题与紧随其后的内容更贴近，避免标题上下留白对称 */
+        :is(h1, h2, h3, h4, h5, h6) + *:not(:is(h1, h2, h3, h4, h5, h6)) {
+            margin-top: var(--space-md);
         }
 
         pre {
