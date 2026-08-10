@@ -18,14 +18,14 @@ categories: []
 
 {{< neodb "https://neodb.social/movie/1aF8CzGEybUgcQ8uSkL0Iw" >}}
 
-只有对白构成的电影，却浪漫到极致，看完才发现，和一个能够畅所欲言的人在一起散步是非常宝贵的体验，唱片店内小心翼翼的对视，餐馆的 Phone Call Play 都是名场面。
+以对白为主的电影，看完才发现，和一个能够畅所欲言的人在一起散步是非常宝贵的体验，唱片店内小心翼翼的对视，餐馆的 Phone Call Play 都是名场面。
 
 
 ### Before Sunset
 
 {{< neodb "https://neodb.social/movie/4583MmZvob6TDbu0Yf111q" >}}
 
-Before Trilogy 的第二部，两人成熟后的再次相遇，终究还是放不下彼此，写了很多成年人对爱情的理解，同时台词的水准依然在线：
+Before 系列的第二部，两人成熟后的再次相遇，终究还是放不下彼此，写了很多成年人对爱情的理解，同时台词的水准依然在线：
 
 - Even being alone it's better than sitting next to your lover and feeling lonely.
 - I guess when you're young, you just believe there'll be many people with whom you'll connect with. Later in life, you realize it only happens a few times.
@@ -43,7 +43,7 @@ Before Trilogy 的第二部，两人成熟后的再次相遇，终究还是放�
 
 ### [In Defense of YAML.](https://opensource.posit.co/blog/2026-05-21_in-defense-of-yaml/)
 
-作者比较详细地介绍了配置文件的简史，从 INI、XML、JSON 到如今主流的 YAML 和 TOML，并强调 YAML 历史上比较臭名昭著的问题已经在后来的版本中被解决了，比如挪威事件：挪威的国家码 no 会被解析成布尔值 false, 以及 n 和 y 会被解析成 false 和 true，这些问题在 YAML 1.2 中其实都已经被解决了；
+作者比较详细地介绍了配置文件的简史，从 INI、XML、JSON 到如今主流的 YAML 和 TOML，强调 YAML 历史上比较臭名昭著的问题已经在后来的版本中被解决了，比如挪威事件：挪威的国家码 no 会被解析成布尔值 false, 以及 n 和 y 会被解析成 false 和 true，这些问题在 YAML 1.2 中其实都已经被解决了；
 
 而 TOML 并不能说是对 YAML 的全方位升级，最大的缺点是配置层级的嵌套不易读，而且会产生大量的重复；总的来看，相对简单的配置文件，用 TOML 就好，层级深、复杂的配置，就用 YAML。
 
@@ -66,6 +66,6 @@ XDG_STATE_HOME：存放软件的状态记录，比如软件的操作历史，可
 
 ![kindle paperwhite 12th generation](https://static.looechao.com/2026/kpw6.jpg)
 
-以前读中学的时候用过 Kindle touch、KPW3，后续见证了 Boox 和 iReader 这类国产墨水屏阅读器的野蛮发展，豆豉之前说 Boox 在用一段时间之后总是容易出现卡死的问题，所以还是考虑购入 Kindle，是不能注册的版本，需要越狱才能正常使用。
+以前读中学的时候用过 Kindle touch、KPW3，后续见证了 Boox 和 iReader 这类国产墨水屏阅读器的野蛮发展，看到豆豉说 Boox 在用一段时间之后总是容易出现卡死的问题，所以还是购入了 Kindle，是不能注册的版本，需要越狱才能正常使用。
 
-其实对我来说，一个会随便删除用户书籍，把用户书籍封面改成广告的官方系统，不能注册对我来说不算什么缺点，用 KPP 打补丁能完美解决未注册的提示，官方系统的好处是稳定、排版规范，在 Koreader 上调出同样的字体和排版效果比较费心，我现在只在 Koreader 上面看 EPUB 漫画，其他书通过 Calibre 传到官方系统。
+其实对我来说，一个可以删除用户书籍，把用户书籍封面改成广告的官方系统，不能注册对我来说不算什么缺点，用 KPP 打补丁能完美解决未注册的提示，官方系统的好处是稳定、排版规范，在 Koreader 上想要调出同样的字体和排版效果比较费心，我现在只在 Koreader 上面看 EPUB 漫画，其他书通过 Calibre 传到官方系统。
