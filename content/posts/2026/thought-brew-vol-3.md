@@ -33,9 +33,7 @@ Before 系列的第二部，两人成熟后的再次相遇，终究还是放不�
 总之，Before 三部曲给我的观感都很好，许多人认为第三部更加真实，但是我最喜欢的还是前两部。
 
 
-## 真男人为什么应该练翘臀？
-
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/29Jhj7eL08UjfbmQMUio6e?utm_source=generator&si=04ef7499104d45e8" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+## [真男人为什么应该练翘臀？](https://open.spotify.com/episode/29Jhj7eL08UjfbmQMUio6e)
 
 听完这期播客，启发还挺大的，作为健身小白，确实更喜欢练习肩背胸，因为想要更快的见到成效满足自己的虚荣心，臀腿肌肉承载了更多更加重要的功能，却往往被忽视，随即想要调整健身策略；
 
