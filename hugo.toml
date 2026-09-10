@@ -6,6 +6,11 @@ languageCode = 'zh-cn'
 title = 'Looe Chao'
 theme = "void"
 
+# tag 页的 RSS 与 tag 页内容完全重复，且 XML 无法承载 noindex，直接不生成
+[outputs]
+taxonomy = ['html']
+term = ['html']
+
 [taxonomies]
 tags = 'tags'
 
