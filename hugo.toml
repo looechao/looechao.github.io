@@ -1,9 +1,13 @@
 baseURL = 'https://looechao.com'
 buildFuture = true
-ignoreFiles = ['_templates']
+enableRobotsTXT = true
+ignoreFiles = ['_templates', '_drafts']
 languageCode = 'zh-cn'
 title = 'Looe Chao'
 theme = "void"
+
+[taxonomies]
+tags = 'tags'
 
 [markup]
 [markup.highlight]
