@@ -42,7 +42,7 @@ jobs:
 
       - name: Build with Hugo
         run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --minify
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

@@ -17,6 +17,11 @@
   <meta name="description" content="{{ $metaDescription }}">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{- if or (eq .Kind "term") (eq .Kind "taxonomy") (hasPrefix .RelPermalink "/_drafts/") .Params.noindex }}
+  <meta name="robots" content="noindex, follow">
+  {{- end }}
+
   {{- partial "opengraph.html" . -}}
 
   {{- with .OutputFormats.Get "rss" }}

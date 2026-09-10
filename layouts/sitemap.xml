@@ -1,0 +1,18 @@
+{{- /* 列表页只收录 sidebar 里的四个入口；tag/taxonomy、草稿一律排除。
+       文章本身（posts、weekly 等叶子页）全部保留。 */ -}}
+{{- $sections := slice "/posts/" "/builds/" "/reads/" -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{- range .Pages }}
+  {{- $skip := or (eq .Kind "term") (eq .Kind "taxonomy") (hasPrefix .RelPermalink "/_drafts/") .Params.noindex -}}
+  {{- if and (eq .Kind "section") (not (in $sections .RelPermalink)) -}}
+    {{- $skip = true -}}
+  {{- end -}}
+  {{- if not $skip }}
+  <url>
+    <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
+    <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>{{ end }}
+  </url>
+  {{- end }}
+  {{- end }}
+</urlset>
