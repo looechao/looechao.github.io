@@ -1,9 +1,9 @@
 {{- $caption := .Title | default .Text -}}
 {{- if $caption -}}
 <figure>
-    <img src="{{ .Destination | safeURL }}" alt="{{ $caption }}"{{ with .Title }} title="{{ . }}"{{ end }}>
+    <img loading="lazy" decoding="async" src="{{ .Destination | safeURL }}" alt="{{ $caption }}"{{ with .Title }} title="{{ . }}"{{ end }}>
     <figcaption>{{ $caption }}</figcaption>
 </figure>
 {{- else -}}
-<img src="{{ .Destination | safeURL }}" alt=""{{ with .Title }} title="{{ . }}"{{ end }}>
+<img loading="lazy" decoding="async" src="{{ .Destination | safeURL }}" alt=""{{ with .Title }} title="{{ . }}"{{ end }}>
 {{- end -}}
