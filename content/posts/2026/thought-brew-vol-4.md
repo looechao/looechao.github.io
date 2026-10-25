@@ -1,5 +1,5 @@
 ---
-title: "Thought Brew Vol 4"
+title: "思绪混酿 Vol.4"
 date: 2026-10-24T15:50:31+08:00
 draft: false
 pin: false
