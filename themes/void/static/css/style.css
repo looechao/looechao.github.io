@@ -110,6 +110,8 @@
     }
 
     .main {
+        /* Allow the grid item to shrink so wide content scrolls inside the article. */
+        min-width: 0;
         padding: var(--space-md);
         display: flex;
         flex-direction: column;
