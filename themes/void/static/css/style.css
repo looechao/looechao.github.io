@@ -686,6 +686,66 @@
             font-size: 0.875em;
         }
 
+        /* Chroma token classes: shared by all fenced code languages. */
+        .chroma {
+            color: var(--text);
+            background: var(--surface-alt);
+            tab-size: 4;
+            -webkit-text-size-adjust: none;
+
+            --code-key: light-dark(#0550ae, #79c0ff);
+            --code-string: light-dark(#116329, #7ee787);
+            --code-number: light-dark(#953800, #ffa657);
+            --code-keyword: light-dark(#6639ba, #d2a8ff);
+            --code-comment: light-dark(#57606a, #8b949e);
+
+            .line { display: flex; }
+            .cl { flex: 1; }
+            .ln, .lnt {
+                color: var(--code-comment);
+                user-select: none;
+                margin-right: 0.75em;
+            }
+            .lnlinks { color: inherit; text-decoration: none; }
+            .lntable { width: auto; border-spacing: 0; }
+            .lntd { padding: 0; border: 0; vertical-align: top; }
+            .hl { background: light-dark(#ddf4ff, #163047); }
+
+            /* Keys, attributes and identifiers. */
+            .n, .na, .nb, .bp, .nx, .nt, .py,
+            .nv, .vc, .vg, .vi, .vm {
+                color: var(--code-key);
+            }
+            /* Keywords, section names, types and functions. */
+            .k, .kc, .kd, .kn, .kp, .kr, .kt,
+            .nc, .nd, .ne, .nf, .fm, .nn {
+                color: var(--code-keyword);
+            }
+            .s, .sa, .sb, .sc, .dl, .sd, .s2, .se,
+            .sh, .si, .sx, .sr, .s1, .ss {
+                color: var(--code-string);
+            }
+            .m, .mb, .mf, .mh, .mi, .il, .mo, .no, .ld {
+                color: var(--code-number);
+            }
+            .o, .ow { color: var(--code-keyword); }
+            .c, .ch, .cm, .c1, .cs, .cp, .cpf, .go, .gp {
+                color: var(--code-comment);
+            }
+            .err, .gr, .gt { color: light-dark(#cf222e, #ff7b72); }
+            .gd {
+                color: light-dark(#82071e, #ffa198);
+                background: light-dark(#ffebe9, #490202);
+            }
+            .gi {
+                color: var(--code-string);
+                background: light-dark(#dafbe1, #0f5323);
+            }
+            .ge { font-style: italic; }
+            .gs, .gh, .gu { font-weight: bold; }
+            .gl { text-decoration: underline; }
+        }
+
         blockquote {
             border-left: 2px solid var(--border);
             padding-left: var(--space-lg);

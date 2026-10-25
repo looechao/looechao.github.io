@@ -16,7 +16,7 @@ tags = 'tags'
 
 [markup]
 [markup.highlight]
-style = 'github'  # https://swapoff.org/chroma/playground/
+noClasses = false  # 配色由 void 主题 CSS 控制，随深浅色模式切换
 lineNos = false
 lineNumbersInTable = true
 
