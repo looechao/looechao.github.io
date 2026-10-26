@@ -16,7 +16,7 @@ categories: []
     alt="珠海日月贝"
     loading="lazy"
     style="width: 100%; height: auto;">
-  <figcaption><a href="https://zh.wikipedia.org/wiki/珠海大劇院">珠海日月贝</a>，位于野狸岛，非常适合秋日散步，吹海风。</figcaption>
+  <figcaption><a href="https://zh.wikipedia.org/wiki/珠海大劇院">珠海日月贝</a>，位于野狸岛，适合秋日散步、吹海风。</figcaption>
 </figure>
 
 <!--more-->
@@ -27,7 +27,7 @@ categories: []
 
 {{< neodb "https://neodb.social/tv/2IE12aPRm9r0xWgnFL6AmK" >}}
 
-从各种切片开始入坑的，看了之后就一发不可收拾，伪纪录片的形式可以让镜头语言有更多的表达空间，人物设定也非常丰满和立体，我最喜欢的是 Dwight，古怪又有趣，最后一季中 Andy 说过一段话让我印象深刻：
+从各种切片开始入坑的，看了之后就一发不可收拾，伪纪录片的形式可以让镜头语言有更多的表达空间，人物设定也非常丰满和立体，我最喜欢的是 Dwight，古怪、有趣，最后一季中 Andy 说过的一句话让我印象深刻：
 
 <figure style="max-width: 480px; margin: 0 auto;">
   <img
@@ -43,17 +43,17 @@ categories: []
 
 {{< neodb "https://neodb.social/movie/5Sd0Dw4oPFeRC5uF64tqQ4" >}}
 
-在 IMAX 影院看了两遍，我觉得比[《奥本海默》](https://zh.wikipedia.org/wiki/奧本海默_%28電影%29)更好看，配乐和画面都很有史诗感，发现一个有趣的地方是，有些时候，当角色有违反 [Xenia](https://en.wikipedia.org/wiki/Xenia_%28Greek%29) 的念头时，偶尔会有雷鸣声，也许当时的人们真的会觉得雷鸣是宙斯的愤怒，翻滚的海浪是波塞冬的惩罚……
+在 IMAX 影院看了两遍，我觉得比[《奥本海默》](https://neodb.social/movie/5VHXvvI05hLkzedOSVa4z2)更好看，配乐和画面都颇具史诗感，发现一个有趣的地方是，有些时候，当角色产生违反 [Xenia](https://en.wikipedia.org/wiki/Xenia_%28Greek%29) 的念头时，偶尔会有雷鸣声的提醒，也许当时的人们真的会觉得雷鸣是宙斯的愤怒，翻滚的海浪是波塞冬的惩罚……
 
-[忒勒玛科斯](https://zh.wikipedia.org/wiki/忒勒玛科斯)的导师叫做门托耳，英文中表示导师的 [mentor](https://www.etymonline.com/word/mentor) 一词正是源自这里。
+[忒勒玛科斯](https://zh.wikipedia.org/wiki/忒勒玛科斯)的导师叫做门托耳，英文中导师的单词 [mentor](https://www.etymonline.com/word/mentor) 正是源自这里。
 
 ### 心灵捕手
 
 {{< neodb "https://neodb.social/movie/0Wl134TQb5X1u1RzgwWEJu" >}}
 
-《奥德赛》上映之后，我看了一些[马特·达蒙](https://zh.wikipedia.org/wiki/马特·达蒙)的访谈，发现他说话非常清晰、有条理，后来才知道他曾在哈佛大学英文系读书，难怪如此。
+《奥德赛》上映之后，我看了一些[马特·达蒙](https://zh.wikipedia.org/wiki/马特·达蒙)的访谈，发现他说话非常清晰、有条理，后来才知道他曾在哈佛大学英文系读书，写过剧本。
 
-《心灵捕手》的剧本是马特·达蒙和好友一起创作的，电影中的 Will 具有和[拉马努金](https://zh.wikipedia.org/wiki/斯里尼瓦瑟·拉马努金)类似的天才般的数学直觉，但是童年受到的创伤让他难以面对自己，电影里最让人感动的是心理学家 Sean 相关的剧情，两人在湖边的对话，在办公室打开 Will 心房的瞬间，都很让人触动。
+《心灵捕手》的剧本是马特·达蒙和好友一起创作的，电影中的 Will 具有和[拉马努金](https://zh.wikipedia.org/wiki/斯里尼瓦瑟·拉马努金)类似的天才般的数学直觉，但是童年受到的创伤让他难以面对自己，电影里最让人感动的是心理学家 Sean 相关的剧情，两人在湖边的对话，在办公室打开 Will 心房的瞬间，都让人触动。
 
 另外，结局时，好朋友们一起组装了一辆车送给了 Will，这种友谊太可贵了。 
 
@@ -98,7 +98,7 @@ shift_alt = "Alt + Shift"
 
 在桌面端，可以用 [KeePassXC](https://keepassxc.org/) 管理数据库，再配合 [KeePassXC-Browser](https://github.com/keepassxreboot/keepassxc-browser) 浏览器扩展做自动填充，虽然这个方案能让用户完全掌控自己的数据，但需要额外常驻一个桌面客户端，对我来说还是有点麻烦。
 
-最终我是换到了 [Bitwarden](https://bitwarden.com/)，日常使用只需要安装浏览器扩展，不得不感慨数据自主权和方便性有时候很难同时做到极致。
+最终我换到了 [Bitwarden](https://bitwarden.com/)，日常使用只需要安装浏览器扩展，不得不感慨数据自主权和方便性有时候很难同时做到极致。
 
 ### [Mole](https://mole.fit/)
 
@@ -147,5 +147,5 @@ shift_alt = "Alt + Shift"
   </figure>
 </div>
 
-北京的美食比想象中的要好吃很多，我是吃面长大的，即使是连锁店的炸酱面也很好吃，注意第一次吃要小心放酱，小心咸。
+北京的美食比想象中的要好吃很多，我是吃面长大的，即使是连锁店的炸酱面也很好吃，注意第一次吃要谨慎放酱，小心咸。
 
