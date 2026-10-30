@@ -377,6 +377,12 @@
         display: none;
     }
 
+    /* 正文和首页文章节选共用链接样式 */
+    :is(.featured-summary, .article-content) a {
+        text-decoration-style: dashed;
+        text-decoration-thickness: 1px;
+    }
+
     /* ----- 首页精选文章 ----- */
 
     .featured-post {
