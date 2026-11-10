@@ -49,6 +49,9 @@ jobs:
         with:
           node-version: '24'
 
+      - name: Test analytics behavior
+        run: node --test scripts/test-analytics.cjs
+
       - name: Build Pagefind search index
         run: npx pagefind --site public
 

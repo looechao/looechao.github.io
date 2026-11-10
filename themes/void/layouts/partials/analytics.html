@@ -1,0 +1,32 @@
+{{ if and hugo.IsProduction (not hugo.IsServer) }}
+{{ with .Site.Config.Services.GoogleAnalytics.ID }}
+{{ $page := $ }}
+{{ $type := $page.Kind }}
+{{ if and $page.IsPage (in (slice "posts" "weekly") $page.Section) }}
+  {{ $type = "article" }}
+{{ else if eq $page.Kind "404" }}
+  {{ $type = "not_found" }}
+{{ else if $page.IsHome }}
+  {{ $type = "home" }}
+{{ end }}
+{{ $meta := dict "page_type" $type "content_group" $type "measurement_version" "2" }}
+{{ if eq $type "article" }}
+  {{ $meta = merge $meta (dict "article_id" ($page.Params.article_id | default $page.RelPermalink) "article_title" $page.Title "published_date" ($page.Date.Format "2006-01-02")) }}
+{{ end }}
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.blogAnalytics = {{ $meta }};
+  if (window.blogAnalytics.page_type === 'article') {
+    const age = Math.floor((Date.now() - Date.parse(window.blogAnalytics.published_date + 'T00:00:00+08:00')) / 86400000);
+    window.blogAnalytics.article_age_bucket = age < 0 ? 'future' : age < 7 ? '0_6d' : age < 30 ? '7_29d' : age < 90 ? '30_89d' : '90d_plus';
+  }
+  gtag('js', new Date());
+  gtag('set', window.blogAnalytics);
+  gtag('config', {{ . }});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+{{ $version := readFile "themes/void/static/js/analytics.js" | sha256 | truncate 12 "" }}
+<script defer src="{{ "js/analytics.js" | relURL }}?v={{ $version }}"></script>
+{{ end }}
+{{ end }}

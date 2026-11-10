@@ -9,7 +9,7 @@
   <div class="featured-summary">
     {{ .Summary }}
   </div>
-  <a href="{{ .Permalink }}" class="featured-more">阅读全文 →</a>
+  <a href="{{ .Permalink }}" class="featured-more" data-article-title="{{ .Title }}">阅读全文 →</a>
 </article>
 {{ end }}
 
