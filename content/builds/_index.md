@@ -1,4 +1,7 @@
 ---
+# 链接清单，不是时间流，没有订阅价值
+outputs:
+  - html
 title: Builds
 projects:
   - title: "闪念胶囊"

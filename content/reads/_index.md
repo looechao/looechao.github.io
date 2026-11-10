@@ -1,4 +1,7 @@
 ---
+# 链接清单，不是时间流，没有订阅价值
+outputs:
+  - html
 title: Reads
 items:
   - neodb: "https://neodb.social/book/6uY2LwuCT2MC0VCIeb1Vw1"
