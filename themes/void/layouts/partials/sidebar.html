@@ -1,7 +1,13 @@
+{{- $christmasOn := and .Site.Params.christmas .Site.Params.christmas.enable -}}
 <div class="sidebar-inner">
-    <a href="{{ .Site.BaseURL }}" class="profile">
+    <a href="{{ .Site.BaseURL }}" class="profile{{ if $christmasOn }} has-santa-hat{{ end }}"{{ if $christmasOn }} title="Merry Christmas!"{{ end }}>
         {{ with .Site.Params.profile.avatar }}
-        <img src="{{ . }}" alt="avatar" class="avatar" />
+        <span class="avatar-wrap">
+            <img src="{{ . }}" alt="avatar" class="avatar" />
+            {{ if $christmasOn }}
+            <img src="{{ $.Site.Params.christmas.hat | default "/images/santa-hat-classic.webp" }}" alt="" class="santa-hat" aria-hidden="true" />
+            {{ end }}
+        </span>
         {{ end }}
         <span class="name">{{ .Site.Title | default .Site.Title }}</span>
     </a>

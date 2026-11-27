@@ -44,6 +44,11 @@ avatar = "https://static.looechao.com/profile/profile-purple.png/profile.png"
 bio = "looechao"
 name = "Looe"
 
+# 节日彩蛋：圣诞期间给头像戴一顶帽子，关掉 enable 即恢复
+[params.christmas]
+enable = true
+hat = "/images/santa-hat-classic.webp"
+
 [params.social]
 email = "lu.chao.personal@gmail.com"
 github = ""
